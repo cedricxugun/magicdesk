@@ -1,0 +1,10 @@
+{
+  "cache_time_per_display_time_min": 1.0,
+  "sample_count": 54,
+  "three_openings_verified": true,
+  "critical_wall_interval_seconds": [
+    0.85,
+    1.15
+  ],
+  "cache_time_per_display_time_max": 1.0
+}

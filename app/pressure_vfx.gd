@@ -109,6 +109,11 @@ func _velocity_field(p:Vector3,t:float)->Vector3:
 	return a+b
 
 func tick(delta:float)->void:
+	tick_wall(delta)
+
+func tick_wall(delta:float)->void:
+	# Fluid advection and valve trails run in real seconds, independent of the
+	# inverse-cubic time remap used to ease the mechanical petal travel.
 	if host==null:return
 	clock+=delta
 	_sync_core_light()

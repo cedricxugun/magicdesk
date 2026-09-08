@@ -114,11 +114,11 @@ func emit_spark(origin:Vector3,velocity:Vector3,life:float)->void:
 			s.velocity=velocity;s.age=0.0;s.life=life
 			return
 
-func tick(delta:float)->void:
+func tick(delta:float,wall_delta:float=-1.0)->void:
 	clock+=delta
 	if event_time>=0:event_time+=delta
 	if core:core.tick(delta)
-	if pressure:pressure.tick(delta)
+	if pressure:pressure.tick_wall(delta if wall_delta<0.0 else wall_delta)
 	if shell_markings:shell_markings.tick(delta)
 	var power:float=host.power
 	var activation:float=host.activation_energy

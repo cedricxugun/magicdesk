@@ -28,3 +28,8 @@ review/physical_steam/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Per-frame QA images and crop metadata are regenerated; selected reviews live in review/.
+tests/**/*.png
+tests/**/native_*.json
+tests/steam_fix_live/

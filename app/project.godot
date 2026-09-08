@@ -22,6 +22,8 @@ textures/default_filters/use_nearest_mipmap_filter=false
 anti_aliasing/quality/msaa_3d=2
 environment/defaults/default_clear_color=Color(0, 0, 0, 0)
 lights_and_shadows/directional_shadow/size=4096
+rendering_device/staging_buffer/block_size_kb=4096
+rendering_device/staging_buffer/texture_download_region_size_px=512
 
 [audio]
 driver/enable_input=false

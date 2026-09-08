@@ -16,8 +16,8 @@ using System.Windows.Forms;
 [assembly: AssemblyTitle("HELIOS · 孵日器")]
 [assembly: AssemblyProduct("HELIOS Incubator")]
 [assembly: AssemblyDescription("Original interactive 3D mechanical desktop sculpture")]
-[assembly: AssemblyVersion("1.3.0.0")]
-[assembly: AssemblyFileVersion("1.3.0.0")]
+[assembly: AssemblyVersion("1.3.1.0")]
+[assembly: AssemblyFileVersion("1.3.1.0")]
 
 internal static class Native {
     [StructLayout(LayoutKind.Sequential)] public struct POINT { public int X,Y; public POINT(int x,int y){X=x;Y=y;} }
@@ -53,6 +53,25 @@ internal sealed class Frame {
     public int W,H,X,Y,CanvasW,CanvasH,BaseY,Sequence,Fade=255;
     public int[] Buttons=new int[14];
     public byte[] RGBA;
+    public double CropMilliseconds;
+    public bool Pooled;
+    private int references=1;
+    public void Retain(){Interlocked.Increment(ref references);}
+    public void Release(){if(Interlocked.Decrement(ref references)==0&&Pooled)FrameBuffers.Return(RGBA);}
+}
+
+internal static class FrameBuffers {
+    private static readonly object gate=new object();
+    private static readonly Dictionary<int,Stack<byte[]>> free=new Dictionary<int,Stack<byte[]>>();
+    private static long retained;
+    public static byte[] Rent(int length){
+        int capacity=checked(((length+1048575)/1048576)*1048576);
+        lock(gate){Stack<byte[]> bucket;if(free.TryGetValue(capacity,out bucket)&&bucket.Count>0){retained-=capacity;return bucket.Pop();}}
+        return new byte[capacity];
+    }
+    public static void Return(byte[] bytes){
+        lock(gate){if(retained+bytes.Length>64L*1024*1024)return;Stack<byte[]> bucket;if(!free.TryGetValue(bytes.Length,out bucket)){bucket=new Stack<byte[]>();free.Add(bytes.Length,bucket);}if(bucket.Count>=6)return;bucket.Push(bytes);retained+=bytes.Length;}
+    }
 }
 
 internal sealed class HeliosForm : Form {
@@ -76,6 +95,8 @@ internal sealed class HeliosForm : Form {
     private readonly string rootDir,diagnosticDir,controlFile;
     private string lastControl="";
     private bool testRun;
+    private bool performanceOnly;
+    private bool steamTest;
     private double testStart;
     private readonly Stopwatch lifetime=Stopwatch.StartNew();
     private int drawn,nonblank,updateErrors,blankFrames;
@@ -105,7 +126,9 @@ internal sealed class HeliosForm : Form {
     public HeliosForm(string[] arguments,EventWaitHandle activation){
         activateEvent=activation;
         args=arguments; rootDir=Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-        testRun=Has("--self-test");
+        steamTest=Has("--steam-test");
+        performanceOnly=Has("--performance-only")||steamTest;
+        testRun=Has("--self-test")||performanceOnly;
         diagnosticDir=Value("--diagnostics=")??Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"HeliosIncubator","logs");
         controlFile=Value("--control=")??"";
         moviePath=Value("--record=");ffmpegPath=Value("--ffmpeg=");
@@ -163,6 +186,8 @@ internal sealed class HeliosForm : Form {
             string arguments="--position -32000,-32000 --resolution 32x32 --disable-vsync";
             if(project!=null)arguments+=" --path \""+project+"\"";
             arguments+=" -- --native-port="+port;
+            if(Has("--profile"))arguments+=" --profile=\""+diagnosticDir+"\"";
+            if(Has("--legacy-alpha-crop"))arguments+=" --legacy-alpha-crop";
             var start=new ProcessStartInfo(exe,arguments);start.WorkingDirectory=Path.GetDirectoryName(exe);start.UseShellExecute=false;start.CreateNoWindow=true;start.WindowStyle=ProcessWindowStyle.Hidden;start.RedirectStandardError=true;start.RedirectStandardOutput=true;
             renderer=new Process();renderer.StartInfo=start;renderer.EnableRaisingEvents=true;
             renderer.OutputDataReceived+=delegate(object s,DataReceivedEventArgs e){if(e.Data!=null){
@@ -182,12 +207,20 @@ internal sealed class HeliosForm : Form {
     private static void ReadAll(Stream input,byte[] data){int offset=0;while(offset<data.Length){int n=input.Read(data,offset,data.Length-offset);if(n<=0)throw new EndOfStreamException();offset+=n;}}
     private void ReceiveLoop(){
         try{
-            client=listener.AcceptTcpClient();client.NoDelay=true;stream=client.GetStream();byte[] header=new byte[96];
+            client=listener.AcceptTcpClient();client.NoDelay=true;stream=client.GetStream();byte[] header=new byte[96];byte[] rawFrame=null;
             while(!closing){
                 ReadAll(stream,header);int[] h=new int[24];Buffer.BlockCopy(header,0,h,0,96);
-                if(h[0]!=0x484C5333||h[1]<1||h[2]<1||h[1]>4096||h[2]>4096||h[5]<h[1]||h[6]<h[2]||h[5]>4096||h[6]>4096)throw new InvalidDataException("Invalid frame header");
-                Frame f=new Frame{W=h[1],H=h[2],X=h[3],Y=h[4],CanvasW=h[5],CanvasH=h[6],BaseY=h[7],Sequence=h[8],Fade=h[9],RGBA=new byte[checked(h[1]*h[2]*4)]};Array.Copy(h,10,f.Buttons,0,14);ReadAll(stream,f.RGBA);
-                lock(frameLock){pending=f;}
+                if((h[0]!=0x484C5333&&h[0]!=0x484C5334)||h[1]<1||h[2]<1||h[1]>4096||h[2]>4096||h[5]<h[1]||h[6]<h[2]||h[5]>4096||h[6]>4096)throw new InvalidDataException("Invalid frame header");
+                Frame f;
+                if(h[0]==0x484C5334){
+                    int length=checked(h[1]*h[2]*4);
+                    if(rawFrame==null||rawFrame.Length!=length)rawFrame=new byte[length];
+                    ReadAll(stream,rawFrame);f=CropRawFrame(h,rawFrame);
+                    if(f==null)continue;
+                }else{
+                    f=new Frame{W=h[1],H=h[2],X=h[3],Y=h[4],CanvasW=h[5],CanvasH=h[6],BaseY=h[7],Sequence=h[8],Fade=h[9],RGBA=new byte[checked(h[1]*h[2]*4)]};Array.Copy(h,10,f.Buttons,0,14);ReadAll(stream,f.RGBA);
+                }
+                lock(frameLock){if(pending!=null)pending.Release();pending=f;}
                 Interlocked.Increment(ref receivedPackets);
                 // Present when a real rendered frame arrives. Polling it on a 15 ms
                 // WinForms timer otherwise introduces 15/30/45 ms cadence jitter.
@@ -196,6 +229,27 @@ internal sealed class HeliosForm : Form {
                 }
             }
         }catch(Exception e){if(!closing)Log("frame transport: "+e.Message);}
+    }
+    private static unsafe Frame CropRawFrame(int[] h,byte[] rgba){
+        long started=Stopwatch.GetTimestamp();int width=h[1],height=h[2];
+        int left=width,right=-1,top=height,bottom=-1;
+        fixed(byte* bytes=rgba){uint* pixels=(uint*)bytes;
+            for(int y=0;y<height;y++){
+                int rowLeft=width,rowRight=-1,offset=y*width;
+                for(int x=0;x<width;x++)if((pixels[offset+x]&0xFF000000U)!=0){rowLeft=x;break;}
+                if(rowLeft==width)continue;
+                for(int x=width-1;x>=rowLeft;x--)if((pixels[offset+x]&0xFF000000U)!=0){rowRight=x;break;}
+                if(rowLeft<left)left=rowLeft;if(rowRight>right)right=rowRight;
+                if(y<top)top=y;bottom=y;
+            }
+        }
+        if(right<left||bottom<top)return null;
+        left=Math.Max(0,left-2);top=Math.Max(0,top-2);right=Math.Min(width-1,right+2);bottom=Math.Min(height-1,bottom+2);
+        Frame f=new Frame{W=right-left+1,H=bottom-top+1,X=h[3]+left,Y=h[4]+top,CanvasW=h[5],CanvasH=h[6],BaseY=h[7],Sequence=h[8],Fade=h[9]};
+        f.RGBA=FrameBuffers.Rent(checked(f.W*f.H*4));f.Pooled=true;Array.Copy(h,10,f.Buttons,0,14);
+        for(int y=0;y<f.H;y++)Buffer.BlockCopy(rgba,((top+y)*width+left)*4,f.RGBA,y*f.W*4,f.W*4);
+        f.CropMilliseconds=(Stopwatch.GetTimestamp()-started)*1000.0/Stopwatch.Frequency;
+        return f;
     }
     private void EnsureDib(int width,int height){
         if(memoryDC!=IntPtr.Zero&&width<=dibWidth&&height<=dibHeight)return;
@@ -252,7 +306,7 @@ internal sealed class HeliosForm : Form {
             if(firstFrame){current=frame;ResetAnchor();firstFrame=false;testStart=lifetime.Elapsed.TotalSeconds;Log("first frame "+frame.W+"x"+frame.H+" at "+anchor);}
             // Reserve the canonical backing once; the visible window still uses
             // only the alpha crop. Opening petals and wide VFX must not allocate GDI memory.
-            EnsureDib(frame.CanvasW,frame.CanvasH);CopyPixels(frame);current=frame;Present(anchor.X+frame.X,anchor.Y+frame.Y,frame.W,frame.H);
+            EnsureDib(frame.CanvasW,frame.CanvasH);CopyPixels(frame);Frame previous=current;current=frame;if(previous!=null&&!Object.ReferenceEquals(previous,frame))previous.Release();Present(anchor.X+frame.X,anchor.Y+frame.Y,frame.W,frame.H);
             if(movie!=null){
                 if(!movieStarted){movie.Start(moviePath,ffmpegPath,frame.CanvasW,frame.CanvasH);movieStarted=true;}
                 movie.Submit(frame);
@@ -260,7 +314,7 @@ internal sealed class HeliosForm : Form {
             drawn++;lastSequence=frame.Sequence;
             double now=lifetime.Elapsed.TotalSeconds;
             if(firstFrameTime==0)firstFrameTime=now;
-            if(lastFrameTime>0&&now-firstFrameTime>1){double gap=now-lastFrameTime;frameGaps.Add(gap);maxPresentationGap=Math.Max(maxPresentationGap,gap);if(testRun)frameTrace.Add(String.Format(System.Globalization.CultureInfo.InvariantCulture,"{0:F4},{1:F3},{2},{3},{4},{5}",now-firstFrameTime,gap*1000,frame.Sequence,frame.W,frame.H,bitmapAllocations));}
+            if(lastFrameTime>0&&now-firstFrameTime>1){double gap=now-lastFrameTime;frameGaps.Add(gap);maxPresentationGap=Math.Max(maxPresentationGap,gap);if(testRun)frameTrace.Add(String.Format(System.Globalization.CultureInfo.InvariantCulture,"{0:F4},{1:F3},{2},{3},{4},{5},{6:F3},{7}",now-firstFrameTime,gap*1000,frame.Sequence,frame.W,frame.H,bitmapAllocations,frame.CropMilliseconds,GC.CollectionCount(2)));}
             lastFrameTime=now;
             if(testRun)Measure(frame);
             if(workerWindow==IntPtr.Zero&&renderer!=null&&drawn%60==1){try{renderer.Refresh();if(renderer.MainWindowHandle!=IntPtr.Zero){workerWindow=renderer.MainWindowHandle;HideWorkerWindow();}}catch{}}
@@ -304,12 +358,13 @@ internal sealed class HeliosForm : Form {
     protected override void OnPaint(PaintEventArgs e){}
 
     private void SaveFrame(string name){
-        if(current==null)return;Frame f=current;Point snapshotAnchor=anchor;long snapshotHandle=Handle.ToInt64();
-        ThreadPool.QueueUserWorkItem(delegate{try{SaveFrameData(name,f,snapshotAnchor,snapshotHandle);}catch(Exception e){Log("snapshot: "+e.Message);}});
+        if(performanceOnly)return;
+        if(current==null)return;Frame f=current;f.Retain();Point snapshotAnchor=anchor;long snapshotHandle=Handle.ToInt64();
+        ThreadPool.QueueUserWorkItem(delegate{try{SaveFrameData(name,f,snapshotAnchor,snapshotHandle);}catch(Exception e){Log("snapshot: "+e.Message);}finally{f.Release();}});
     }
     private void SaveFrameData(string name,Frame f,Point snapshotAnchor,long snapshotHandle){
         using(Bitmap image=new Bitmap(f.W,f.H,PixelFormat.Format32bppArgb)){
-            BitmapData data=image.LockBits(new Rectangle(0,0,f.W,f.H),ImageLockMode.WriteOnly,PixelFormat.Format32bppArgb);byte[] bgra=new byte[f.RGBA.Length];
+            BitmapData data=image.LockBits(new Rectangle(0,0,f.W,f.H),ImageLockMode.WriteOnly,PixelFormat.Format32bppArgb);byte[] bgra=new byte[f.W*f.H*4];
             for(int i=0;i<bgra.Length;i+=4){bgra[i]=f.RGBA[i+2];bgra[i+1]=f.RGBA[i+1];bgra[i+2]=f.RGBA[i];bgra[i+3]=f.RGBA[i+3];}
             Marshal.Copy(bgra,0,data.Scan0,bgra.Length);image.UnlockBits(data);image.Save(Path.Combine(diagnosticDir,name+".png"),ImageFormat.Png);
         }
@@ -324,10 +379,21 @@ internal sealed class HeliosForm : Form {
             else if(command[0]=="quit")Close();
         }catch(Exception ex){Log("control: "+ex.Message);}
     }
-    private void Measure(Frame f){int visible=0;for(int i=3;i<f.RGBA.Length;i+=4)if(f.RGBA[i]>16)visible++;if(visible<4000)blankFrames++;else nonblank++;}
+    private void Measure(Frame f){if(performanceOnly)return;int visible=0;for(int i=3;i<f.W*f.H*4;i+=4)if(f.RGBA[i]>16)visible++;if(visible<4000)blankFrames++;else nonblank++;}
     private bool Once(string key,double seconds){if(current==null||lifetime.Elapsed.TotalSeconds-testStart<seconds||testEvents.ContainsKey(key))return false;testEvents[key]=true;return true;}
     private void TestTick(){
         if(current==null)return;
+        if(steamTest){
+            if(Once("pause",1))ClickTestButton(5);
+            if(Once("open_first",3))ClickTestButton(1);
+            if(Once("close_first",10))ClickTestButton(1);
+            if(Once("open_second",14))ClickTestButton(1);
+            if(Once("close_second",21))ClickTestButton(1);
+            if(Once("open_third",25))ClickTestButton(1);
+            if(Once("close_third",32))ClickTestButton(1);
+            if(Once("shutdown",36)){ClickTestButton(6);shutdownStarted=lifetime.Elapsed.TotalSeconds;shutdownRequested=true;}
+            return;
+        }
         if(Once("closed",3)){SaveFrame("native_closed");testBefore=current;TestAlphaHit();testButtonDesktop=new Point[6];for(int i=0;i<6;i++)testButtonDesktop[i]=new Point(anchor.X+current.Buttons[i*2],anchor.Y+current.Buttons[i*2+1]);ClickTestButton(5);}
         if(Once("bloom",8))ClickTestButton(1);
         if(Once("purge",8.7))SaveFrame("native_pressure");
@@ -351,6 +417,7 @@ internal sealed class HeliosForm : Form {
         events.Add("native_click_button="+(i+1));Log("test native click "+i);
     }
     private void TestAlphaHit(){
+        if(performanceOnly)return;
         if(current==null)return;Frame f=current;int transparent=0,opaque=0,pass=0,own=0;
         for(int y=8;y<f.H-8;y+=29)for(int x=8;x<f.W-8;x+=29){int a=f.RGBA[(y*f.W+x)*4+3];if(a!=0&&a<250)continue;
             var p=new Native.POINT(anchor.X+f.X+x,anchor.Y+f.Y+y);IntPtr hit=Native.WindowFromPoint(p);
@@ -363,7 +430,7 @@ internal sealed class HeliosForm : Form {
     protected override void OnFormClosing(FormClosingEventArgs e){
         if(!forceClose&&renderer!=null&&!renderer.HasExited&&!firstFrame){e.Cancel=true;if(!shutdownRequested)SendAction(6);return;}
         if(movie!=null&&!movie.IsCompleted){if(!movieFinishing){movieFinishing=true;movie.Stop();Log("finalizing movie");}e.Cancel=true;return;}
-        if(testRun&&!verificationWritten){
+        if(testRun&&!performanceOnly&&!verificationWritten){
             verificationWritten=true;events.Add("same_window_handle="+(expectedHandle==Handle));events.Add("blank_frames="+blankFrames);events.Add("UpdateLayeredWindow_errors="+updateErrors);events.Add("presented_frames="+drawn);events.Add("all_received_frames_have_model="+(blankFrames==0));events.Add("transparent_hit_failures="+hitTransparentFailures);events.Add("opaque_hit_failures="+hitOpaqueFailures);events.Add("shutdown_completed="+(renderer!=null&&renderer.HasExited));
             events.Add("worker_window_concealed="+WorkerConcealed());events.Add("shutdown_seconds="+(lifetime.Elapsed.TotalSeconds-shutdownStarted).ToString("F2",System.Globalization.CultureInfo.InvariantCulture));File.WriteAllLines(Path.Combine(diagnosticDir,"native_verification.txt"),events.ToArray());
         }
@@ -372,10 +439,10 @@ internal sealed class HeliosForm : Form {
             var ci=System.Globalization.CultureInfo.InvariantCulture;
             string metrics="{\"presented_frames\":"+drawn+",\"received_frames\":"+receivedPackets+",\"average_fps\":"+(drawn/Math.Max(.01,lastFrameTime-firstFrameTime)).ToString("F2",ci)+",\"median_frame_ms\":"+(median*1000).ToString("F2",ci)+",\"p95_frame_ms\":"+(p95*1000).ToString("F2",ci)+",\"max_gap_ms\":"+(maxPresentationGap*1000).ToString("F2",ci)+"}";
             File.WriteAllText(Path.Combine(diagnosticDir,"performance.json"),metrics);
-            if(testRun){frameTrace.Insert(0,"elapsed_seconds,present_gap_ms,frame_id,width,height,bitmap_allocations");File.WriteAllLines(Path.Combine(diagnosticDir,"frame_trace.csv"),frameTrace.ToArray());}
+            if(testRun){frameTrace.Insert(0,"elapsed_seconds,present_gap_ms,frame_id,width,height,bitmap_allocations,native_crop_ms,generation2_collections");File.WriteAllLines(Path.Combine(diagnosticDir,"frame_trace.csv"),frameTrace.ToArray());}
         }
         if(!closing){Send("{\"type\":\"quit\"}");closing=true;timer.Stop();tray.Visible=false;tray.Dispose();try{if(client!=null)client.Close();listener.Stop();}catch{}
-            if(renderer!=null){try{if(!renderer.WaitForExit(1500))renderer.Kill();}catch{}}FreeDib();Log("closed; presented="+drawn+" errors="+updateErrors);log.Dispose();}
+            if(renderer!=null){try{if(!renderer.WaitForExit(1500))renderer.Kill();}catch{}}lock(frameLock){if(pending!=null){pending.Release();pending=null;}}if(current!=null){current.Release();current=null;}FreeDib();Log("closed; presented="+drawn+" errors="+updateErrors);log.Dispose();}
         base.OnFormClosing(e);
     }
 }

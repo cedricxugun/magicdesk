@@ -1,0 +1,26 @@
+[
+  {
+    "OpeningStart": 3,
+    "Frames": 300,
+    "MedianMs": 16.635,
+    "P95Ms": 18.193,
+    "MaxMs": 32.128,
+    "Gen2Change": 0
+  },
+  {
+    "OpeningStart": 14,
+    "Frames": 299,
+    "MedianMs": 16.631,
+    "P95Ms": 18.599,
+    "MaxMs": 22.438,
+    "Gen2Change": 0
+  },
+  {
+    "OpeningStart": 25,
+    "Frames": 300,
+    "MedianMs": 16.677,
+    "P95Ms": 17.945,
+    "MaxMs": 23.014,
+    "Gen2Change": 0
+  }
+]

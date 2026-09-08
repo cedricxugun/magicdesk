@@ -1,0 +1,44 @@
+[
+  {
+    "Metric": "gpu_ms",
+    "Median": 8.627,
+    "P95": 12.162,
+    "Max": 14.655
+  },
+  {
+    "Metric": "render_cpu_ms",
+    "Median": 2.698,
+    "P95": 3.631,
+    "Max": 5.916
+  },
+  {
+    "Metric": "readback_ms",
+    "Median": 36.005,
+    "P95": 38.896,
+    "Max": 45.89
+  },
+  {
+    "Metric": "alpha_scan_ms",
+    "Median": 0.001,
+    "P95": 0.002,
+    "Max": 0.005
+  },
+  {
+    "Metric": "crop_ms",
+    "Median": 0.001,
+    "P95": 0.002,
+    "Max": 0.018
+  },
+  {
+    "Metric": "tcp_ms",
+    "Median": 5.44,
+    "P95": 7.396,
+    "Max": 11.914
+  },
+  {
+    "Metric": "publish_ms",
+    "Median": 5.443,
+    "P95": 7.399,
+    "Max": 11.916
+  }
+]

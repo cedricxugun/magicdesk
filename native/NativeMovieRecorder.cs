@@ -52,10 +52,10 @@ internal sealed class NativeMovieRecorder : IDisposable {
             Interlocked.Increment(ref s.RejectedFrames);
             return;
         }
-        // Header copied cheaply; pixel array retained. The existing receiver allocates a new
-        // immutable byte[] per packet, so cloning several MB on the UI thread is unnecessary.
+        // Retain this immutable frame until encoding finishes using it. The native
+        // display may reuse its pooled backing only after all owners release it.
         Packet p = new Packet(frame);
-        Interlocked.Exchange(ref s.Latest, p);
+        Packet replaced=Interlocked.Exchange(ref s.Latest, p);if(replaced!=null)replaced.Release();
         Interlocked.Increment(ref s.SubmittedFrames);
     }
 
@@ -90,10 +90,13 @@ internal sealed class NativeMovieRecorder : IDisposable {
     private sealed class Packet {
         internal readonly int W, H, X, Y, CanvasW, CanvasH, Fade;
         internal readonly byte[] Rgba;
+        private readonly Frame owner;
         internal Packet(Frame f) {
+            owner=f;f.Retain();
             W = f.W; H = f.H; X = f.X; Y = f.Y; CanvasW = f.CanvasW; CanvasH = f.CanvasH;
             Fade = Math.Max(0, Math.Min(255, f.Fade)); Rgba = f.RGBA;
         }
+        internal void Release(){owner.Release();}
     }
 
     private sealed class Session {
@@ -178,7 +181,6 @@ internal sealed class NativeMovieRecorder : IDisposable {
                     pixelPipe.EndWaitForConnection(connection);
                 }
                 byte[] bgra = new byte[checked(Width * Height * 4)]; FillBackground(bgra);
-                Packet composited = null;
                 Stream pipe = pixelPipe;
                 for (;;) {
                     long stop = Interlocked.Read(ref StopTimestamp);
@@ -187,10 +189,8 @@ internal sealed class NativeMovieRecorder : IDisposable {
                     long due = stop == 0 ? (long)Math.Floor(elapsed * FramesPerSecond) + 1 : Math.Max(1, (long)Math.Ceiling(elapsed * FramesPerSecond));
                     long written = Interlocked.Read(ref WrittenFrames);
                     if (written < due) {
-                        Packet latest = Interlocked.CompareExchange(ref Latest, null, null);
-                        if (latest != null && !Object.ReferenceEquals(latest, composited)) {
-                            Compose(latest, bgra, Width, Height); composited = latest;
-                        }
+                        Packet latest = Interlocked.Exchange(ref Latest, null);
+                        if (latest != null) {try{Compose(latest, bgra, Width, Height);}finally{latest.Release();}}
                         // When encoder scheduling misses a tick, duplicate the most recent real
                         // rendered frame rather than shortening video time or inventing motion.
                         pipe.Write(bgra, 0, bgra.Length);
@@ -226,7 +226,7 @@ internal sealed class NativeMovieRecorder : IDisposable {
                     if (process != null) { process.Dispose(); process = null; }
                 }
                 if (!committed && temporary != null) { try { File.Delete(temporary); } catch { } }
-                Interlocked.Exchange(ref Latest, null);
+                Packet remaining=Interlocked.Exchange(ref Latest, null);if(remaining!=null)remaining.Release();
                 Completed.Set();
             }
         }

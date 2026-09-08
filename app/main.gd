@@ -46,6 +46,7 @@ var toast_timer := 0.0
 var toolbar: HBoxContainer
 var menu: PopupMenu
 var sound_players: Array[AudioStreamPlayer] = []
+var audio_streams:Dictionary={}
 var hum: AudioStreamPlayer
 var sample_clock := 0.0
 var tray: StatusIndicator
@@ -398,6 +399,8 @@ func _make_ui() -> void:
 	get_window().close_requested.connect(_quit)
 
 func _make_audio() -> void:
+	for audio_name in ["assemble","click","explode","hum","ignition","open","overload","pressure_open","seal_close","shutdown","wake"]:
+		audio_streams[audio_name]=load("res://assets/"+audio_name+".wav")
 	for i in range(6):
 		var p := AudioStreamPlayer.new()
 		p.volume_db = -19
@@ -418,7 +421,7 @@ func sound(name_string: String, pitch := 1.0) -> void:
 	var chosen: AudioStreamPlayer = sound_players[0]
 	for p in sound_players:
 		if not p.playing: chosen = p; break
-	chosen.stream = load("res://assets/"+name_string+".wav")
+	chosen.stream = audio_streams.get(name_string)
 	chosen.pitch_scale = pitch
 	chosen.play()
 
@@ -500,7 +503,8 @@ func activate(index: int) -> void:
 			message("展示旋转已开启" if rotation_enabled else "展示旋转已暂停")
 		6:
 			begin_shutdown()
-	_save_settings()
+	# Mechanical buttons do not change persisted mute/topmost preferences.
+	# Avoid a synchronous filesystem write on every opening action.
 
 func begin_shutdown() -> void:
 	if shutdown_time>=0:return
@@ -513,6 +517,7 @@ func begin_shutdown() -> void:
 	message("压力释放 · 机构收拢",2.4)
 
 func _process(delta: float) -> void:
+	var wall_delta:=maxf(delta,0.0)
 	delta = minf(delta,0.05)
 	var fx_delta:=delta
 	elapsed += delta
@@ -557,7 +562,7 @@ func _process(delta: float) -> void:
 	if rotation_enabled and drag_kind != 2 and activation_time<0.0 and not pressure_active:angle+=delta*.17
 	turntable.rotation.y = angle
 	_apply_mechanism()
-	effects.tick(fx_delta)
+	effects.tick(fx_delta,wall_delta)
 	for i in range(buttons.size()):
 		var b: Dictionary = buttons[i]
 		b.press = move_toward(b.press,0.0,delta*3.4)

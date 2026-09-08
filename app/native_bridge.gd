@@ -14,11 +14,19 @@ var image_format:=Image.FORMAT_RGBA8
 var async_enabled:=true
 var format_reported:=false
 var bridge_dead:=false
+var profile_path:=""
+var profile_start:=0
+var legacy_alpha_crop:=false
+var profile_rows:=PackedStringArray(["wall_seconds,id,openness,activation_wall,steam_time,gpu_ms,render_cpu_ms,readback_ms,image_ms,convert_ms,alpha_scan_ms,crop_ms,tcp_ms,publish_ms"])
 
 func setup(owner_node: Node3D, port: int) -> void:
 	host=owner_node
 	for arg in OS.get_cmdline_user_args():
 		if arg=="--sync-readback":async_enabled=false
+		if arg=="--legacy-alpha-crop":legacy_alpha_crop=true
+		if arg.begins_with("--profile="):profile_path=arg.trim_prefix("--profile=")
+	profile_start=Time.get_ticks_usec()
+	if not profile_path.is_empty():RenderingServer.viewport_set_measure_render_time(host.render_view.get_viewport_rid(),true)
 	tcp.big_endian=false
 	tcp.connect_to_host("127.0.0.1",port)
 	RenderingServer.frame_post_draw.connect(_send_frame)
@@ -82,6 +90,13 @@ func _capture_header(size:Vector2i)->Dictionary:
 		var pt:Vector2=host.camera.unproject_position(b.mount.global_position)
 		points.append(int(pt.x));points.append(int(pt.y))
 	var snapshot:={"base_y":int(base_pt.y),"points":points,"fade":int(host.display_fade*255),"id":next_read_id,"size":size}
+	if not profile_path.is_empty():
+		snapshot["requested_us"]=Time.get_ticks_usec()
+		snapshot["openness"]=host.openness
+		snapshot["activation_wall"]=host.activation_display_time
+		snapshot["steam_time"]=host.effects.pressure.physics_time
+		snapshot["gpu_ms"]=RenderingServer.viewport_get_measured_render_time_gpu(host.render_view.get_viewport_rid())
+		snapshot["render_cpu_ms"]=RenderingServer.viewport_get_measured_render_time_cpu(host.render_view.get_viewport_rid())
 	next_read_id+=1
 	return snapshot
 
@@ -116,23 +131,35 @@ func _receive_gpu_copy(data:PackedByteArray,size:Vector2i,format:int,snapshot:Di
 		_readback_failed("Unexpected copy size "+str(data.size()));return
 	if not format_reported:
 		format_reported=true;print("HELIOS_ASYNC_READBACK_READY ",size," bytes=",data.size())
+	var received_us:=Time.get_ticks_usec()
 	var frame:=Image.create_from_data(size.x,size.y,false,format,data)
+	snapshot["readback_ms"]=(received_us-int(snapshot.get("requested_us",received_us)))/1000.0
+	snapshot["image_ms"]=(Time.get_ticks_usec()-received_us)/1000.0
 	_publish(frame,snapshot)
 
 func _publish(frame:Image,snapshot:Dictionary)->void:
 	transmitting=true
+	var t0:=Time.get_ticks_usec()
 	frame.convert(Image.FORMAT_RGBA8)
-	var used: Rect2i=frame.get_used_rect()
+	var t1:=Time.get_ticks_usec()
+	# Image.get_used_rect decodes 2.7 million Color values on the main thread.
+	# The native receive worker can inspect alpha bytes directly while Godot renders.
+	var used:Rect2i=frame.get_used_rect() if legacy_alpha_crop else Rect2i(Vector2i.ZERO,frame.get_size())
+	var t2:=Time.get_ticks_usec()
 	if used.size.x<4 or used.size.y<4:
 		transmitting=false;return
-	used=used.grow(2).intersection(Rect2i(Vector2i.ZERO,frame.get_size()))
-	var pixels: PackedByteArray=frame.get_region(used).get_data()
+	if legacy_alpha_crop:used=used.grow(2).intersection(Rect2i(Vector2i.ZERO,frame.get_size()))
+	var pixels:PackedByteArray=frame.get_region(used).get_data() if legacy_alpha_crop else frame.get_data()
+	var t3:=Time.get_ticks_usec()
 	var header:=PackedByteArray();header.resize(96)
-	var fields:Array[int]=[0x484C5333,used.size.x,used.size.y,used.position.x,used.position.y,frame.get_width(),frame.get_height(),int(snapshot.base_y),sequence,int(snapshot.fade)]
+	var fields:Array[int]=[0x484C5333 if legacy_alpha_crop else 0x484C5334,used.size.x,used.size.y,used.position.x,used.position.y,frame.get_width(),frame.get_height(),int(snapshot.base_y),sequence,int(snapshot.fade)]
 	for value in snapshot.points:fields.append(value)
 	for i in range(fields.size()):header.encode_s32(i*4,fields[i])
 	var err:=tcp.put_data(header)
 	if err==OK:err=tcp.put_data(pixels)
+	var t4:=Time.get_ticks_usec()
+	if not profile_path.is_empty() and profile_rows.size()<12000:
+		profile_rows.append("%.5f,%d,%.5f,%.5f,%.5f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f"%[(t0-profile_start)/1000000.0,int(snapshot.id),float(snapshot.openness),float(snapshot.activation_wall),float(snapshot.steam_time),float(snapshot.gpu_ms),float(snapshot.render_cpu_ms),float(snapshot.get("readback_ms",0)),float(snapshot.get("image_ms",0)),(t1-t0)/1000.0,(t2-t1)/1000.0,(t3-t2)/1000.0,(t4-t3)/1000.0,(t4-t0)/1000.0])
 	if err!=OK:get_tree().quit()
 	sequence+=1
 	last_sent_id=int(snapshot.id)
@@ -141,3 +168,6 @@ func _publish(frame:Image,snapshot:Dictionary)->void:
 func _exit_tree()->void:
 	bridge_dead=true
 	if RenderingServer.frame_post_draw.is_connected(_send_frame):RenderingServer.frame_post_draw.disconnect(_send_frame)
+	if not profile_path.is_empty():
+		DirAccess.make_dir_recursive_absolute(profile_path)
+		FileAccess.open(profile_path.path_join("bridge_trace.csv"),FileAccess.WRITE).store_string("\n".join(profile_rows))
