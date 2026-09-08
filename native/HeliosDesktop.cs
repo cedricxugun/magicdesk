@@ -16,8 +16,8 @@ using System.Windows.Forms;
 [assembly: AssemblyTitle("HELIOS · 孵日器")]
 [assembly: AssemblyProduct("HELIOS Incubator")]
 [assembly: AssemblyDescription("Original interactive 3D mechanical desktop sculpture")]
-[assembly: AssemblyVersion("1.3.1.0")]
-[assembly: AssemblyFileVersion("1.3.1.0")]
+[assembly: AssemblyVersion("1.3.2.0")]
+[assembly: AssemblyFileVersion("1.3.2.0")]
 
 internal static class Native {
     [StructLayout(LayoutKind.Sequential)] public struct POINT { public int X,Y; public POINT(int x,int y){X=x;Y=y;} }
@@ -97,6 +97,7 @@ internal sealed class HeliosForm : Form {
     private bool testRun;
     private bool performanceOnly;
     private bool steamTest;
+    private bool assemblyTest;
     private double testStart;
     private readonly Stopwatch lifetime=Stopwatch.StartNew();
     private int drawn,nonblank,updateErrors,blankFrames;
@@ -127,8 +128,9 @@ internal sealed class HeliosForm : Form {
         activateEvent=activation;
         args=arguments; rootDir=Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
         steamTest=Has("--steam-test");
+        assemblyTest=Has("--assembly-test");
         performanceOnly=Has("--performance-only")||steamTest;
-        testRun=Has("--self-test")||performanceOnly;
+        testRun=Has("--self-test")||performanceOnly||assemblyTest;
         diagnosticDir=Value("--diagnostics=")??Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"HeliosIncubator","logs");
         controlFile=Value("--control=")??"";
         moviePath=Value("--record=");ffmpegPath=Value("--ffmpeg=");
@@ -141,7 +143,7 @@ internal sealed class HeliosForm : Form {
         SetStyle(ControlStyles.AllPaintingInWmPaint|ControlStyles.UserPaint,true);
         try {Icon=Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location);} catch{}
         context=new ContextMenuStrip();
-        string[] names={"1  唤醒 / 休眠","2  绽放 / 闭合","3  核心过载","4  分解组件","5  重新组装","6  旋转 / 暂停","7  收拢并退出"};
+        string[] names={"1  唤醒 / 休眠","2  绽放 / 闭合","3  核心过载","4  分解组件","5  组装 / 收拢","6  旋转 / 暂停","7  收拢并退出"};
         for(int i=0;i<7;i++){int index=i;context.Items.Add(names[i],null,delegate{SendAction(index);});}
         context.Items.Add(new ToolStripSeparator());
         ToolStripMenuItem mute=new ToolStripMenuItem("静音");mute.CheckOnClick=true;mute.CheckedChanged+=delegate{muted=mute.Checked;Send("{\"type\":\"mute\",\"value\":"+(muted?"true":"false")+"}");};context.Items.Add(mute);
@@ -199,7 +201,7 @@ internal sealed class HeliosForm : Form {
                 }
             }};
             renderer.ErrorDataReceived+=delegate(object s,DataReceivedEventArgs e){if(e.Data!=null)Log("renderer error: "+e.Data);};
-            renderer.Exited+=delegate{if(!closing)BeginInvoke((Action)delegate{Log("renderer exit");forceClose=true;Close();});};
+            renderer.Exited+=delegate{if(!closing)BeginInvoke((Action)delegate{Log("renderer exit code="+renderer.ExitCode);forceClose=true;Close();});};
             renderer.Start();renderer.BeginOutputReadLine();renderer.BeginErrorReadLine();
             Log("native compositor started; renderer="+renderer.Id+" port="+port);
         }catch(Exception e){Log(e.ToString());MessageBox.Show("孵日器启动失败："+e.Message,"HELIOS");Close();}
@@ -383,6 +385,24 @@ internal sealed class HeliosForm : Form {
     private bool Once(string key,double seconds){if(current==null||lifetime.Elapsed.TotalSeconds-testStart<seconds||testEvents.ContainsKey(key))return false;testEvents[key]=true;return true;}
     private void TestTick(){
         if(current==null)return;
+        if(assemblyTest){
+            if(Once("pause",1))ClickTestButton(5);
+            if(Once("open",2))ClickTestButton(1);
+            if(Once("assemble_open",6.5)){ClickTestButton(4);events.Add("assemble_from_full_open_dispatched");}
+            if(Once("alive_closed",10)){SaveFrame("after_open_assembly");events.Add("alive_after_open_assembly=True");}
+            if(Once("reopen",11))ClickTestButton(1);
+            if(Once("assemble_mid_open",12.3))ClickTestButton(4);
+            if(Once("alive_mid",16)){SaveFrame("after_mid_open_assembly");events.Add("alive_after_mid_open_assembly=True");}
+            if(Once("explode",18))ClickTestButton(3);
+            if(Once("assemble_mid_explode",18.8))ClickTestButton(4);
+            if(Once("alive_explode",22)){SaveFrame("after_mid_explode_assembly");events.Add("alive_after_mid_explode_assembly=True");}
+            if(Once("open_again",24))ClickTestButton(1);
+            if(Once("overload",28))ClickTestButton(2);
+            if(Once("assemble_overload",31))ClickTestButton(4);
+            if(Once("alive_overload",35)){SaveFrame("after_overload_assembly");events.Add("alive_after_overload_assembly=True");}
+            if(Once("shutdown",37)){ClickTestButton(6);shutdownStarted=lifetime.Elapsed.TotalSeconds;shutdownRequested=true;}
+            return;
+        }
         if(steamTest){
             if(Once("pause",1))ClickTestButton(5);
             if(Once("open_first",3))ClickTestButton(1);
@@ -401,6 +421,7 @@ internal sealed class HeliosForm : Form {
         if(Once("open",12)){SaveFrame("native_open");TestFixedBase();TestAlphaHit();}
         if(Once("overload",13))ClickTestButton(2);
         if(Once("fx",14.5))SaveFrame("native_overload");
+        if(Once("fx_peak",16.5))SaveFrame("native_overload_peak");
         if(Once("explode",21))ClickTestButton(3);
         if(Once("exploded",25)){SaveFrame("native_exploded");TestAlphaHit();TestFixedBase();}
         if(Once("assemble",27))ClickTestButton(4);

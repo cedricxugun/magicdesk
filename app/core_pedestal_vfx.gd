@@ -56,10 +56,15 @@ func tick(delta:float)->void:
 	var energy:=.14+.035*sin(clock*1.6)
 	var boost:=0.0
 	if event_kind=="open":boost=smoothstep(.45,.76,open)*(1.0-smoothstep(3.8,5.5,event_time))
-	if event_kind=="overload":boost=(1.0-smoothstep(1.8,3.0,event_time))
+	var overload_left:=clampf(float(host.get("overload")),0.0,7.0)
+	var overload_envelope:=pow(sin(overload_left/7.0*PI),2.0) if overload_left>0.0 else 0.0
+	boost=maxf(boost,overload_envelope)
 	for c in channels:
 		var travel:=0.0
 		if event_kind in ["ignition","open"] and event_time<1.55:
 			travel=exp(-pow((float(c.height)-event_time*.85)*6.0,2.0))*1.7
+		if overload_left>5.45:
+			var charge_time:=7.0-overload_left
+			travel=maxf(travel,exp(-pow((float(c.height)-charge_time*.70)*6.0,2.0))*.75*charge_time)
 		var brightness:float=(energy+travel+boost*.95)*power*assembled*shutdown
 		c.mat.set_shader_parameter("energy",brightness)

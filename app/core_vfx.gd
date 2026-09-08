@@ -34,6 +34,7 @@ var support_post:Node3D
 var pedestal:Node3D
 var orbit_particles:Node3D
 var terminals:Array[Node3D]=[]
+var terminal_contacts:Array[Vector3]=[]
 var arc_material:StandardMaterial3D
 var arc_segments:Array=[]
 var random:=RandomNumberGenerator.new()
@@ -43,6 +44,7 @@ var active_endpoint:=0
 var active_branch:=false
 var arc_seed:=0.0
 var warm_ticks:=3
+var arc_is_overload:=false
 
 func setup(owner_node:Node3D)->void:
 	host=owner_node
@@ -52,7 +54,12 @@ func setup(owner_node:Node3D)->void:
 	inner_axle=host.named("P_Inner_Trunnions")
 	lower_bearing=host.named("P_Core_Bottom_Bearing")
 	support_post=host.named("P_Core_Support_Post")
-	for name in ["Thermal_Valve_Frame","Thermal_Valve_Frame.001","Thermal_Valve_Frame.002"]:terminals.append(host.named(name))
+	var mechanism:Variant=host.get("metadata")
+	var contacts:Dictionary=mechanism.get("electrical_contacts",{}) if mechanism is Dictionary else {}
+	for name in ["Thermal_Valve_Frame","Thermal_Valve_Frame.001","Thermal_Valve_Frame.002"]:
+		terminals.append(host.named(name))
+		var point:Array=contacts.get(name,[0,.59,0])
+		terminal_contacts.append(Vector3(point[0],point[1],point[2]))
 	random.seed=19551107
 	surface_material=ShaderMaterial.new()
 	surface_material.shader=load("res://core_surface.gdshader")
@@ -125,7 +132,7 @@ func trigger(kind:String)->void:
 		"open":open_time=0.0;reveal_time=-1.0;settle_time=-1.0;reveal_pending=true;reveal_events=0;shutdown_time=-1.0
 		"close", "explode", "cancel", "assemble":
 			open_time=-1.0;reveal_time=-1.0;reveal_pending=false;settle_time=-1.0;overload_time=-1.0;active_arc_life=0.0
-		"overload":overload_time=0.0;next_overload_arc=.18;shutdown_time=-1.0
+		"overload":overload_time=0.0;next_overload_arc=.80;shutdown_time=-1.0
 		"shutdown":shutdown_time=0.0;open_time=-1.0;reveal_time=-1.0;reveal_pending=false;overload_time=-1.0;active_arc_life=0.0
 
 func _envelope(age:float,duration:float)->float:
@@ -149,7 +156,11 @@ func tick(delta:float)->void:
 	if ignition_time>=0:ignition_time+=delta
 	if open_time>=0:open_time+=delta
 	if reveal_time>=0:reveal_time+=delta
-	if overload_time>=0:overload_time+=delta
+	# One clock owns the seven-second mechanical and visual overload. Never let
+	# warped opening time or a shorter local envelope move its peak forward.
+	var overload_left:=clampf(float(host.get("overload")),0.0,7.0)
+	if overload_time>=0.0:
+		overload_time=7.0-overload_left if overload_left>0.0 else -1.0
 	if shutdown_time>=0:shutdown_time+=delta
 	var opened:=clampf(float(host.openness),0.0,1.0)
 	if reveal_pending and opened>.45:
@@ -164,7 +175,7 @@ func tick(delta:float)->void:
 	var reveal:=0.0
 	if reveal_time>=0.0:
 		reveal=smoothstep(.45,.72,opened)*(1.0-smoothstep(.30,1.25,maxf(0.0,settle_time)))
-	var overload:=_envelope(overload_time,4.6)
+	var overload:=pow(sin(overload_left/7.0*PI),2.0) if overload_left>0.0 and shutdown_time<0.0 else 0.0
 	var ignition:=_envelope(ignition_time,1.6)
 	var charge:=_envelope(open_time,.80)
 	var breath:=.94+.09*sin(time*1.80)+.025*sin(time*.73+1.6)
@@ -191,20 +202,23 @@ func tick(delta:float)->void:
 		if reveal_time>=0 and reveal_events==0 and opened>.65:
 			_start_arc(1,1.10)
 			reveal_events=1
-		if overload>.2 and overload_time<2.25 and active_arc_life<=0.0 and overload_time>next_overload_arc:
-			_start_arc(random.randi_range(0,3),random.randf_range(.78,.95))
-			next_overload_arc=overload_time+random.randf_range(.86,1.02)
+		if overload_time>=.80 and overload_time<6.05 and active_arc_life<=0.0 and overload_time>=next_overload_arc:
+			var duration:=.36 if overload_time<1.55 else .56+overload*.44
+			_start_arc(random.randi_range(0,3),duration,true)
+			next_overload_arc=overload_time+duration+lerpf(.30,.025,overload)
 		if settle_time>1.3 and overload<=.01 and time>next_idle_arc and active_arc_life<=0.0:
 			_start_arc(random.randi_range(0,3),.36)
 			next_idle_arc=time+random.randf_range(3.8,6.0)
-	_update_arc(delta,heat*assembled)
+	if arc_is_overload and overload_left<=0.0:active_arc_life=0.0
+	_update_arc(delta,heat*assembled*(lerpf(.16,1.0,overload) if arc_is_overload else 1.0))
 	if pedestal:pedestal.tick(delta)
 	if orbit_particles:orbit_particles.tick(delta)
 	last_open=opened
 
-func _start_arc(endpoint:int,duration:float)->void:
+func _start_arc(endpoint:int,duration:float,from_overload:bool=false)->void:
 	active_endpoint=endpoint;active_arc_age=0.0;active_arc_life=duration
-	active_branch=overload_time>=0.0 and overload_time<4.6 and random.randf()<.22
+	arc_is_overload=from_overload
+	active_branch=from_overload
 	arc_seed=random.randf_range(0,1000)
 
 func _bearing_endpoint(index:int)->Vector3:
@@ -264,7 +278,7 @@ func _update_arc(delta:float,intensity:float)->void:
 	for channel in range(3):
 		var origin:Vector3=endpoints[2] if channel!=1 else endpoints[3]
 		var target:Vector3=center+Vector3(.85 if channel==0 else -.58,0,0)
-		if terminals[channel]!=null:target=terminals[channel].global_transform*Vector3(0,.59,0)
+		if terminals[channel]!=null:target=terminals[channel].global_transform*terminal_contacts[channel]
 		var a:Vector3=to_local(origin)
 		var b:Vector3=to_local(target)
 		starts.append(Vector4(a.x,a.y,a.z,1.0 if active_channels>1 else 0.0));ends.append(Vector4(b.x,b.y,b.z,0))

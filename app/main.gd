@@ -1,6 +1,6 @@
 extends Node3D
 
-const TITLES = ["唤醒 / 休眠", "绽放 / 闭合", "过载脉冲", "零件展开", "重新组装", "旋转 / 暂停", "收拢并退出"]
+const TITLES = ["唤醒 / 休眠", "绽放 / 闭合", "过载脉冲", "零件展开", "组装 / 收拢", "旋转 / 暂停", "收拢并退出"]
 const HINTS = ["1 · 电源与核心灯光", "2 · 六瓣外壳同步展开", "3 · 转环加速，释放能量脉冲", "4 · 按机构层次拆分真实零件", "5 · 从当前位置收拢并锁定", "6 · 只旋转上部，底座保持静止", "7 · 泄能、收拢、熄灯后关闭"]
 var metadata: Dictionary
 var model: Node3D
@@ -123,6 +123,7 @@ func _ready() -> void:
 	get_viewport().scaling_3d_scale = 1.0
 	get_window().title = "HELIOS · 孵日器"
 	var usable := DisplayServer.screen_get_usable_rect()
+	if usable.size.x<=0 or usable.size.y<=0:usable=Rect2i(0,0,1920,1040)
 	var wh := mini(940, int(usable.size.y * 0.88))
 	# Reserve enough horizontal desktop space for the open mechanism at its original scale.
 	get_window().size = Vector2i(mini(int(wh * 1.70),int(usable.size.x*.94)), wh)
@@ -156,7 +157,9 @@ func _ready() -> void:
 	for d in metadata.parts:
 		var n := named(d.name)
 		assert(n != null, "Missing real component: " + d.name)
-		parts.append({"node": n, "home": pose_transform(d.home), "offset": v3(d.offset), "stage": float(d.stage), "spin": float(d.spin)})
+		var explode_path:Array=[]
+		for keyframe in d.get("explode_path",[]):explode_path.append({"at":float(keyframe.at),"offset":v3(keyframe.offset)})
+		parts.append({"node": n, "home": pose_transform(d.home), "offset": v3(d.offset), "stage": float(d.stage), "spin": float(d.get("explode_spin",d.spin)),"explode_path":explode_path})
 	for d in metadata.controls:
 		var poses: Array[Transform3D] = []
 		for s in d.samples: poses.append(pose_transform(s))
@@ -188,10 +191,10 @@ func _ready() -> void:
 		mount.add_child(body)
 		var shape := CollisionShape3D.new()
 		var cylinder := CylinderShape3D.new()
-		cylinder.radius = 0.158
-		cylinder.height = 0.12
+		cylinder.radius = 0.118
+		cylinder.height = 0.024
 		shape.shape = cylinder
-		shape.position.y = 0.04
+		shape.position.y = 0.055
 		body.add_child(shape)
 	_collect_meshes(model)
 	_make_studio()
@@ -458,6 +461,7 @@ func start_bloom(emit_pressure:=true)->void:
 
 func activate(index: int) -> void:
 	if shutdown_time>=0:return
+	print("HELIOS_ACTION index=",index," openness=",openness," explosion=",explosion)
 	buttons[index].press = 1.0
 	sound("click",1.0 + index * .045)
 	match index:
@@ -508,6 +512,7 @@ func activate(index: int) -> void:
 
 func begin_shutdown() -> void:
 	if shutdown_time>=0:return
+	print("HELIOS_SHUTDOWN_REQUEST openness=",openness," explosion=",explosion)
 	shutdown_time=0.0
 	rotation_enabled=false
 	overload=0.0
@@ -569,7 +574,7 @@ func _process(delta: float) -> void:
 		b.cap.transform = b.home
 		b.cap.position.y -= .018*maxf(b.press,1.0 if pressed == i else 0.0)
 		var lamp_states := [power,openness,1.0 if overload>0 else 0.0,explosion,1.0 if explosion<.01 and power>.5 else 0.0,1.0 if rotation_enabled else 0.0,1.0 if shutdown_time>=0 else .20]
-		b.indicator.emission_energy_multiplier = .12+lamp_states[i]*.7+b.press*2.4
+		b.indicator.emission_energy_multiplier = .12+lamp_states[i]*.7+b.press*2.4+(.8 if hover==i else 0.0)
 	hum.volume_db = -80.0 if muted else lerpf(-65.0,-38.0,power)+boost*4.0
 	# Camera transform and lens stay fixed during every action, including bloom/explode.
 	toast_timer = maxf(0.0,toast_timer-delta)
@@ -598,20 +603,49 @@ func _apply_mechanism() -> void:
 	gyros.middle.rotation = Vector3(.6+sin(phase*.55)*.9,0,0)
 	gyros.inner.rotation = Vector3(0,.7+phase,0)
 	gyros.core.rotation = Vector3(phase*.8,0,0)
+	var choreography:Dictionary=metadata.get("explosion_choreography",{})
+	var gyro_alignment:Dictionary=metadata.get("gyro_align",{})
+	if not gyro_alignment.is_empty():
+		var aligned:=smooth01(explosion/maxf(.001,float(choreography.get("align_end",.18))))
+		for key in gyro_alignment:
+			if gyros.has(key):gyros[key].quaternion=gyros[key].quaternion.slerp(q4(gyro_alignment[key]),aligned)
 	for p in parts:
 		var amount := smooth01((explosion-p.stage)/.70)
 		var n: Node3D = p.node
-		var local_offset: Vector3 = n.get_parent().global_basis.inverse()*turntable.global_basis*p.offset
+		var offset:Vector3=p.offset*amount
+		var path:Array=p.explode_path
+		if not path.is_empty():
+			offset=path[0].offset
+			for i in range(path.size()-1):
+				var a:Dictionary=path[i];var b:Dictionary=path[i+1]
+				if explosion>=float(b.at):offset=b.offset;continue
+				if explosion>=float(a.at):offset=(a.offset as Vector3).lerp(b.offset,smooth01((explosion-float(a.at))/maxf(.0001,float(b.at)-float(a.at))))
+				break
+		var local_offset: Vector3 = n.get_parent().global_basis.inverse()*turntable.global_basis*offset
 		n.transform = p.home
-		n.position += local_offset*amount
+		n.position += local_offset
 		n.quaternion = p.home.basis.get_rotation_quaternion()*Quaternion(Vector3.UP,p.spin*amount)
 
 func hit_button(screen_pos: Vector2) -> int:
-	var from := camera.project_ray_origin(screen_pos)
-	var end := from + camera.project_ray_normal(screen_pos)*50
-	var query := PhysicsRayQueryParameters3D.create(from,end,1)
-	var hit := get_world_3d().direct_space_state.intersect_ray(query)
-	return int(hit.collider.get_meta("button",-1)) if not hit.is_empty() else -1
+	var origin:=camera.project_ray_origin(screen_pos)
+	var direction:=camera.project_ray_normal(screen_pos)
+	var nearest:=INF
+	var selected:=-1
+	for i in range(buttons.size()):
+		var cap:Node3D=buttons[i].cap
+		var inverse:=cap.global_transform.affine_inverse()
+		var local_origin:=inverse*origin
+		var local_direction:=inverse.basis*direction
+		# Test the actual front of the cylindrical cap, not an enlarged invisible
+		# collider. Godot Y is the cap axis after the Blender Z-up conversion.
+		if local_direction.y>=-.00001:continue
+		var distance:=(.008-local_origin.y)/local_direction.y
+		if distance<=0.0 or distance>=nearest:continue
+		var point:=local_origin+local_direction*distance
+		var radius:=.113 if i==6 else .118
+		if Vector2(point.x,point.z).length_squared()>radius*radius:continue
+		nearest=distance;selected=i
+	return selected
 
 func _update_hover() -> void:
 	var pointer := native_cursor if native_mode else Vector2(DisplayServer.mouse_get_position()-get_window().position+crop_rect.position)
@@ -621,7 +655,8 @@ func _update_hover() -> void:
 		hover = new_hover
 		tooltip.visible = hover >= 0
 		if hover >= 0:
-			tooltip_title.text = TITLES[hover]
+			tooltip_title.text = "关闭应用" if hover==6 else TITLES[hover]
+			tooltip_title.add_theme_color_override("font_color",Color(1.0,.28,.18) if hover==6 else Color(.95,.86,.68))
 			tooltip_text.text = HINTS[hover]
 			tooltip.reset_size()
 	if hover >= 0:

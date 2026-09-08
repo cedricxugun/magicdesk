@@ -1,0 +1,62 @@
+[
+  {
+    "explosion": 0.2,
+    "open": 0,
+    "pairs": []
+  },
+  {
+    "explosion": 0.2,
+    "open": 0.5,
+    "pairs": []
+  },
+  {
+    "explosion": 0.35,
+    "open": 0,
+    "pairs": []
+  },
+  {
+    "explosion": 0.35,
+    "open": 0.125,
+    "pairs": []
+  },
+  {
+    "explosion": 0.5,
+    "open": 0,
+    "pairs": []
+  },
+  {
+    "explosion": 0.5,
+    "open": 0,
+    "pairs": []
+  },
+  {
+    "explosion": 0.65,
+    "open": 0,
+    "pairs": []
+  },
+  {
+    "explosion": 0.65,
+    "open": 0,
+    "pairs": []
+  },
+  {
+    "explosion": 0.8,
+    "open": 0,
+    "pairs": []
+  },
+  {
+    "explosion": 0.8,
+    "open": 0,
+    "pairs": []
+  },
+  {
+    "explosion": 1.0,
+    "open": 0,
+    "pairs": []
+  },
+  {
+    "explosion": 1.0,
+    "open": 0,
+    "pairs": []
+  }
+]

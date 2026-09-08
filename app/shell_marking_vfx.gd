@@ -84,8 +84,7 @@ func tick(delta:float)->void:
 	var connected:=1.0-smoothstep(.025,.20,explosion)
 	var activation:=clampf(_host_float("activation_energy"),0.0,1.0)
 	var overload_left:=maxf(0.0,_host_float("overload"))
-	var overload_envelope:=sin(clampf(overload_left/7.0,0.0,1.0)*PI)
-	if event_kind=="overload" and event_time<5.0:overload_envelope=maxf(overload_envelope,sin(clampf(event_time/5.0,0.0,1.0)*PI))
+	var overload_envelope:=pow(sin(clampf(overload_left/7.0,0.0,1.0)*PI),2.0)
 	for marking in markings:
 		var crown:bool=marking.crown
 		var petal:int=marking.petal

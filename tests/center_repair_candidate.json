@@ -1,0 +1,397 @@
+{
+  "normal": [
+    {
+      "open": 0,
+      "phase": 0,
+      "pairs": []
+    },
+    {
+      "open": 0,
+      "phase": 1.8,
+      "pairs": []
+    },
+    {
+      "open": 0,
+      "phase": 3.6,
+      "pairs": []
+    },
+    {
+      "open": 0.1,
+      "phase": 0,
+      "pairs": []
+    },
+    {
+      "open": 0.1,
+      "phase": 1.8,
+      "pairs": []
+    },
+    {
+      "open": 0.1,
+      "phase": 3.6,
+      "pairs": []
+    },
+    {
+      "open": 0.25,
+      "phase": 0,
+      "pairs": []
+    },
+    {
+      "open": 0.25,
+      "phase": 1.8,
+      "pairs": []
+    },
+    {
+      "open": 0.25,
+      "phase": 3.6,
+      "pairs": []
+    },
+    {
+      "open": 0.5,
+      "phase": 0,
+      "pairs": []
+    },
+    {
+      "open": 0.5,
+      "phase": 1.8,
+      "pairs": []
+    },
+    {
+      "open": 0.5,
+      "phase": 3.6,
+      "pairs": []
+    },
+    {
+      "open": 0.75,
+      "phase": 0,
+      "pairs": []
+    },
+    {
+      "open": 0.75,
+      "phase": 1.8,
+      "pairs": []
+    },
+    {
+      "open": 0.75,
+      "phase": 3.6,
+      "pairs": []
+    },
+    {
+      "open": 0.9,
+      "phase": 0,
+      "pairs": []
+    },
+    {
+      "open": 0.9,
+      "phase": 1.8,
+      "pairs": []
+    },
+    {
+      "open": 0.9,
+      "phase": 3.6,
+      "pairs": []
+    },
+    {
+      "open": 1,
+      "phase": 0,
+      "pairs": []
+    },
+    {
+      "open": 1,
+      "phase": 1.8,
+      "pairs": []
+    },
+    {
+      "open": 1,
+      "phase": 3.6,
+      "pairs": []
+    }
+  ],
+  "center": [
+    {
+      "explosion": 0.18,
+      "pairs": [
+        [
+          "P_Socket_Crown",
+          "P_Core_Support_Post",
+          48
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Middle_Trunnions",
+          257
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Core_Support_Post",
+          139
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Core_Bottom_Bearing",
+          253
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Middle_Trunnions",
+          294
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Inner_Trunnions",
+          205
+        ],
+        [
+          "P_Gimbal_2_Ring",
+          "P_Inner_Trunnions",
+          256
+        ],
+        [
+          "P_Gimbal_2_Ring",
+          "P_Solar_Lattice",
+          299
+        ],
+        [
+          "P_Core_Support_Post",
+          "P_Core_Bottom_Bearing",
+          48
+        ]
+      ]
+    },
+    {
+      "explosion": 0.3,
+      "pairs": [
+        [
+          "P_Socket_Crown",
+          "P_Core_Support_Post",
+          48
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Middle_Trunnions",
+          254
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Core_Bottom_Bearing",
+          249
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Middle_Trunnions",
+          296
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Inner_Trunnions",
+          202
+        ],
+        [
+          "P_Gimbal_2_Ring",
+          "P_Inner_Trunnions",
+          236
+        ],
+        [
+          "P_Gimbal_2_Ring",
+          "P_Solar_Lattice",
+          299
+        ]
+      ]
+    },
+    {
+      "explosion": 0.4,
+      "pairs": [
+        [
+          "P_Socket_Crown",
+          "P_Core_Support_Post",
+          48
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Middle_Trunnions",
+          253
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Core_Bottom_Bearing",
+          250
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Middle_Trunnions",
+          424
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Inner_Trunnions",
+          202
+        ],
+        [
+          "P_Gimbal_2_Ring",
+          "P_Inner_Trunnions",
+          204
+        ],
+        [
+          "P_Gimbal_2_Ring",
+          "P_Solar_Lattice",
+          284
+        ]
+      ]
+    },
+    {
+      "explosion": 0.5,
+      "pairs": [
+        [
+          "P_Gimbal_0_Ring",
+          "P_Middle_Trunnions",
+          253
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Core_Bottom_Bearing",
+          250
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Inner_Trunnions",
+          204
+        ]
+      ]
+    },
+    {
+      "explosion": 0.6,
+      "pairs": [
+        [
+          "P_Gimbal_0_Ring",
+          "P_Middle_Trunnions",
+          253
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Core_Bottom_Bearing",
+          250
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Inner_Trunnions",
+          203
+        ]
+      ]
+    },
+    {
+      "explosion": 0.7,
+      "pairs": [
+        [
+          "P_Gimbal_0_Ring",
+          "P_Middle_Trunnions",
+          253
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Core_Bottom_Bearing",
+          250
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Inner_Trunnions",
+          207
+        ]
+      ]
+    },
+    {
+      "explosion": 0.8,
+      "pairs": [
+        [
+          "P_Gimbal_0_Ring",
+          "P_Middle_Trunnions",
+          255
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Core_Bottom_Bearing",
+          251
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Inner_Trunnions",
+          205
+        ]
+      ]
+    },
+    {
+      "explosion": 0.9,
+      "pairs": [
+        [
+          "P_Gimbal_0_Ring",
+          "P_Middle_Trunnions",
+          256
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Core_Bottom_Bearing",
+          252
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Inner_Trunnions",
+          205
+        ]
+      ]
+    },
+    {
+      "explosion": 1,
+      "pairs": [
+        [
+          "P_Gimbal_0_Ring",
+          "P_Middle_Trunnions",
+          256
+        ],
+        [
+          "P_Gimbal_0_Ring",
+          "P_Core_Bottom_Bearing",
+          252
+        ],
+        [
+          "P_Gimbal_1_Ring",
+          "P_Inner_Trunnions",
+          204
+        ]
+      ]
+    }
+  ],
+  "valves": [
+    {
+      "name": "P_Thermal_Valve_1",
+      "new_blender": [
+        0.041977979242801666,
+        0.21595796942710876,
+        1.2000000476837158
+      ],
+      "disc_radius": 0.09,
+      "disc_thickness": 0.026,
+      "disc_centers": [
+        1.231,
+        1.278,
+        1.325,
+        1.372
+      ],
+      "anode_top": 1.47
+    },
+    {
+      "name": "P_Thermal_Valve_2",
+      "new_blender": [
+        -0.18021343648433685,
+        0.1261868178844452,
+        1.2000000476837158
+      ],
+      "disc_radius": 0.09,
+      "disc_thickness": 0.026,
+      "disc_centers": [
+        1.231,
+        1.278,
+        1.325,
+        1.372
+      ],
+      "anode_top": 1.47
+    }
+  ]
+}

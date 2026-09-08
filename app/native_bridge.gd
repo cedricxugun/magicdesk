@@ -61,6 +61,7 @@ func _command(command: Dictionary) -> void:
 		var pt:=Vector2(float(command.x),float(command.y))
 		last_mouse=pt;host.native_cursor=pt
 		host.pressed=host.hit_button(pt)
+		print("HELIOS_POINTER_DOWN hit=",host.pressed," position=",pt)
 		if host.pressed<0:host.drag_kind=2 if bool(command.get("upper",false)) else 1
 	elif kind=="up":
 		var pt:=Vector2(float(command.x),float(command.y))
@@ -87,7 +88,7 @@ func _capture_header(size:Vector2i)->Dictionary:
 	var base_pt:Vector2=host.camera.unproject_position(Vector3(0,.62,1.0))
 	var points:PackedInt32Array=[]
 	for b in host.buttons:
-		var pt:Vector2=host.camera.unproject_position(b.mount.global_position)
+		var pt:Vector2=host.camera.unproject_position(b.cap.to_global(Vector3(0,.008,0)))
 		points.append(int(pt.x));points.append(int(pt.y))
 	var snapshot:={"base_y":int(base_pt.y),"points":points,"fade":int(host.display_fade*255),"id":next_read_id,"size":size}
 	if not profile_path.is_empty():
@@ -160,7 +161,9 @@ func _publish(frame:Image,snapshot:Dictionary)->void:
 	var t4:=Time.get_ticks_usec()
 	if not profile_path.is_empty() and profile_rows.size()<12000:
 		profile_rows.append("%.5f,%d,%.5f,%.5f,%.5f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f"%[(t0-profile_start)/1000000.0,int(snapshot.id),float(snapshot.openness),float(snapshot.activation_wall),float(snapshot.steam_time),float(snapshot.gpu_ms),float(snapshot.render_cpu_ms),float(snapshot.get("readback_ms",0)),float(snapshot.get("image_ms",0)),(t1-t0)/1000.0,(t2-t1)/1000.0,(t3-t2)/1000.0,(t4-t3)/1000.0,(t4-t0)/1000.0])
-	if err!=OK:get_tree().quit()
+	if err!=OK:
+		push_error("HELIOS_TRANSPORT_SEND_FAILED code="+str(err)+" sequence="+str(sequence))
+		get_tree().quit()
 	sequence+=1
 	last_sent_id=int(snapshot.id)
 	transmitting=false

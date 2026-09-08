@@ -66,7 +66,7 @@ func trigger(kind:String)->void:
 	match kind:
 		"open":reveal_pending=true;cancelled=false;burst_time=-1.0
 		"ignition":cancelled=false
-		"overload":cancelled=false;burst_time=0.0;burst_next=0.0;emitted=0
+		"overload":cancelled=false
 		"close","shutdown","explode","cancel","assemble":
 			cancelled=true;reveal_pending=false;burst_time=-1.0
 			for p in particles:
@@ -82,7 +82,7 @@ func _emit()->void:
 		var a:=Vector3(cos(skew),sin(skew),0)
 		var b:=Vector3(0,sin(tilt),cos(tilt)).normalized()
 		p.a=a;p.b=b;p.center=core.global_position+Vector3(0,rng.randf_range(.28,.43),0)
-		p.age=0.0;p.life=rng.randf_range(8.0,11.5)
+		p.age=0.0;p["orbit_age"]=0.0;p.life=rng.randf_range(8.0,11.5)
 		p.r=rng.randf_range(2.20,2.48);p["minor"]=rng.randf_range(.94,1.20)
 		p.turn=rng.randf_range(.70,.95)*(-1 if spawn_serial%3==0 else 1)
 		p.lift=theta;p.scale=rng.randf_range(.84,1.12);p.phase=rng.randf_range(0,TAU)
@@ -91,6 +91,8 @@ func _emit()->void:
 
 func tick(delta:float)->void:
 	clock+=delta
+	var overload_left:=clampf(float(host.get("overload")),0.0,7.0)
+	var overload_envelope:=pow(sin(overload_left/7.0*PI),2.0) if overload_left>0.0 else 0.0
 	var allowed:=not cancelled and float(host.openness)>.52 and float(host.power)>.15 and float(host.explosion)<.04
 	if reveal_pending and allowed:
 		reveal_pending=false;burst_time=0.0;burst_next=0.0;emitted=0
@@ -101,15 +103,16 @@ func tick(delta:float)->void:
 		if emitted>=10:burst_time=-1.0
 	elif allowed:
 		steady_timer+=delta
-		if steady_timer>.75:_emit();steady_timer=0.0
+		if steady_timer>lerpf(.75,.28,overload_envelope):_emit();steady_timer=0.0
 	for p in particles:
 		if float(p.life)<=0.0:continue
 		p.age+=delta
+		p.orbit_age+=delta*(1.0+overload_envelope*.42)
 		if float(p.cancel)>=0.0:p.cancel-=delta
 		if float(p.age)>=float(p.life) or (float(p.cancel)<0.0 and float(p.cancel)>-delta*1.1):
 			p.life=0.0;p.node.hide();p.halo.hide();p.trail.clear();continue
 		var u:float=p.age/p.life
-		var sweep:float=p.lift+p.turn*float(p.age)
+		var sweep:float=p.lift+p.turn*float(p.orbit_age)
 		var entry:=smoothstep(0.0,.85,float(p.age))
 		var orbit_position:Vector3=p.center+p.a*cos(sweep)*float(p.r)+p.b*sin(sweep)*float(p.minor)
 		var seed_position:Vector3=core.global_position+(orbit_position-core.global_position).normalized()*.27
@@ -119,8 +122,8 @@ func tick(delta:float)->void:
 		var fade:=smoothstep(0.0,.10,float(p.age))*(1.0-smoothstep(float(p.life)-.8,float(p.life),float(p.age)))
 		if float(p.cancel)>=0.0:fade*=smoothstep(0.0,.65,p.cancel)
 		p.node.scale=Vector3.ONE*float(p.scale)*maxf(.01,sqrt(fade))
-		p.mat.set_shader_parameter("strength",fade)
-		p.halo.global_position=position;p.halo.scale=Vector3.ONE*float(p.scale);p.halo_mat.set_shader_parameter("strength",fade*.82)
+		p.mat.set_shader_parameter("strength",fade*(1.0+overload_envelope*.28))
+		p.halo.global_position=position;p.halo.scale=Vector3.ONE*float(p.scale);p.halo_mat.set_shader_parameter("strength",fade*(.82+overload_envelope*.14))
 		p.trail.append({"p":position,"time":clock})
 		while p.trail.size()>2 and (clock-float(p.trail[0].time)>1.12 or p.trail.size()>70):p.trail.pop_front()
 		p["fade"]=fade
