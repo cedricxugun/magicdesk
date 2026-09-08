@@ -4,6 +4,8 @@
 
 ![实际 EXE 过载画面](review/native_overload.png)
 
+[查看 A / B / C / D 四款装置设计图与制作状态](concepts/README.md) · [查看特效设计图库](review/vfx_variants/README.md)
+
 ## 运行
 
 先安装 Git LFS，再克隆并取回大文件：
@@ -34,6 +36,7 @@ Windows x64；运行已打包 EXE 无需安装 Godot 或 Blender。模型、贴�
 
 ## 项目结构
 
+- `concepts/`：四款桌面机械装置的原始设定图、方案说明、动画规划与完整提示词，供选择下一款制作。
 - `app/`：Godot 项目、实时材质、动画状态逻辑、蒸汽与红色电气特效，以及完整运行资源。
 - `blender/Helios_Incubator.blend`：可编辑模型、材质、分件层级和600帧演示动画；同目录保留建模、校验与流体烘焙脚本。
 - `native/`：Windows 原生透明窗口、输入桥接、单实例控制和单文件打包源码。
