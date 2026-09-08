@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://main.gd" id="1"]
+
+[node name="DesktopPresentation" type="SubViewportContainer"]
+stretch = false
+
+[node name="Render" type="SubViewport" parent="."]
+transparent_bg = true
+own_world_3d = true
+size = Vector2i(1920, 1400)
+render_target_update_mode = 4
+
+[node name="HeliosDesktop" type="Node3D" parent="Render"]
+script = ExtResource("1")

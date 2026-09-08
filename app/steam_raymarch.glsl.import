@@ -1,0 +1,13 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://d12y3r1ddiqih"
+path="res://.godot/imported/steam_raymarch.glsl-433ab3b707dc190638d7689d04ff9bff.res"
+
+[deps]
+
+source_file="res://steam_raymarch.glsl"
+dest_files=["res://.godot/imported/steam_raymarch.glsl-433ab3b707dc190638d7689d04ff9bff.res"]
+
+[params]

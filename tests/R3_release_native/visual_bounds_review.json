@@ -1,0 +1,38 @@
+{
+  "native_open": {
+    "size": [
+      1142,
+      906
+    ],
+    "strong_alpha_bbox": [
+      9,
+      5,
+      1076,
+      821
+    ],
+    "edge_alpha_max": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    }
+  },
+  "native_overload": {
+    "size": [
+      1072,
+      692
+    ],
+    "strong_alpha_bbox": [
+      2,
+      2,
+      1069,
+      689
+    ],
+    "edge_alpha_max": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    }
+  }
+}

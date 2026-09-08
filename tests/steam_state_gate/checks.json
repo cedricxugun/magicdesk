@@ -1,0 +1,44 @@
+{
+  "all_passed": true,
+  "compute": {
+    "error": "",
+    "frames": 201,
+    "full_size": "(2304, 1680)",
+    "low_size": "(1152, 840)",
+    "ready": true
+  },
+  "tests": [
+    {
+      "name": "startup_never_starts_ground_steam",
+      "passed": true
+    },
+    {
+      "name": "closed_overload_never_starts_ground_steam",
+      "passed": true
+    },
+    {
+      "name": "duplicate_open_does_not_restart_cache",
+      "passed": true
+    },
+    {
+      "name": "active_overload_does_not_restart_cache",
+      "passed": true
+    },
+    {
+      "name": "natural_tail_finishes",
+      "passed": true
+    },
+    {
+      "name": "spent_open_overload_does_not_restart",
+      "passed": true
+    },
+    {
+      "name": "close_does_not_create_new_steam",
+      "passed": true
+    },
+    {
+      "name": "inactive_shutdown_does_not_create_steam",
+      "passed": true
+    }
+  ]
+}

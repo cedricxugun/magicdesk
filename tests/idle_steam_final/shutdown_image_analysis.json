@@ -1,0 +1,69 @@
+{
+  "03_reverse": {
+    "steam_alpha_mass": 24336,
+    "steam_visible_pixels": 4912,
+    "bounds": [
+      773,
+      510,
+      1173,
+      867
+    ],
+    "near_valve_alpha_mass": 9343,
+    "upper_tail_alpha_mass": 7125
+  },
+  "off_01": {
+    "steam_alpha_mass": 9823,
+    "steam_visible_pixels": 3660,
+    "bounds": [
+      772,
+      508,
+      1171,
+      860
+    ],
+    "near_valve_alpha_mass": 1758,
+    "upper_tail_alpha_mass": 5241
+  },
+  "off_03": {
+    "steam_alpha_mass": 7410,
+    "steam_visible_pixels": 3644,
+    "bounds": [
+      770,
+      503,
+      1171,
+      860
+    ],
+    "near_valve_alpha_mass": 1088,
+    "upper_tail_alpha_mass": 3867
+  },
+  "off_09": {
+    "steam_alpha_mass": 3264,
+    "steam_visible_pixels": 2495,
+    "bounds": [
+      777,
+      506,
+      1168,
+      860
+    ],
+    "near_valve_alpha_mass": 731,
+    "upper_tail_alpha_mass": 1214
+  },
+  "off_18": {
+    "steam_alpha_mass": 671,
+    "steam_visible_pixels": 625,
+    "bounds": [
+      797,
+      563,
+      1154,
+      806
+    ],
+    "near_valve_alpha_mass": 276,
+    "upper_tail_alpha_mass": 0
+  },
+  "off_27": {
+    "steam_alpha_mass": 0,
+    "steam_visible_pixels": 0,
+    "bounds": [],
+    "near_valve_alpha_mass": 0,
+    "upper_tail_alpha_mass": 0
+  }
+}

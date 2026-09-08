@@ -1,0 +1,13 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://03fp80rmeksk"
+path="res://.godot/imported/steam_composite.glsl-91b573d99845aaef05b8f3f0b77d3959.res"
+
+[deps]
+
+source_file="res://steam_composite.glsl"
+dest_files=["res://.godot/imported/steam_composite.glsl-91b573d99845aaef05b8f3f0b77d3959.res"]
+
+[params]

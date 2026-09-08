@@ -1,0 +1,173 @@
+{
+  "compiled": {
+    "error": "",
+    "frames": 332,
+    "full_size": "(2304, 1680)",
+    "low_size": "(922, 672)",
+    "ready": true
+  },
+  "shutdown": {
+    "idle_active": false,
+    "gain": 0.0,
+    "source_off_elapsed": 0.9
+  },
+  "stages": {
+    "60": {
+      "birth_0": 0.0,
+      "birth_2": 0.0,
+      "birth_4": 0.0,
+      "burst": false,
+      "gain": 1.0,
+      "gpu_ms": 11.28600025177,
+      "idle_active": true,
+      "source_off_elapsed": -1.0,
+      "time": 2.01666666666667,
+      "yaw": 0.0
+    },
+    "150": {
+      "birth_0": 1.79999995231628,
+      "birth_2": 0.600000023841858,
+      "birth_4": 0.0,
+      "burst": false,
+      "gain": 1.0,
+      "gpu_ms": 11.4090003967285,
+      "idle_active": true,
+      "source_off_elapsed": -1.0,
+      "time": 5.01666666666666,
+      "yaw": 1.8
+    },
+    "210": {
+      "birth_0": 1.79999995231628,
+      "birth_2": 1.79166662693024,
+      "birth_4": 0.600000023841858,
+      "burst": false,
+      "gain": 1.0,
+      "gpu_ms": 11.2799997329712,
+      "idle_active": true,
+      "source_off_elapsed": -1.0,
+      "time": 7.01666666666665,
+      "yaw": 1.8
+    },
+    "300": {
+      "birth_0": -1.73472347597681e-16,
+      "birth_2": 1.20000004768372,
+      "birth_4": 1.79999995231628,
+      "burst": false,
+      "gain": 1.0,
+      "gpu_ms": 11.2390003204346,
+      "idle_active": true,
+      "source_off_elapsed": -1.0,
+      "time": 10.0166666666666,
+      "yaw": -1.73472347597681e-16
+    },
+    "303": {
+      "birth_0": -1.73472347597681e-16,
+      "birth_2": 1.13999998569489,
+      "birth_4": 1.79999995231628,
+      "burst": false,
+      "gain": 0.875,
+      "gpu_ms": 9.1870002746582,
+      "idle_active": true,
+      "source_off_elapsed": 0.1,
+      "time": 10.1166666666666,
+      "yaw": -1.73472347597681e-16
+    },
+    "309": {
+      "birth_0": -1.73472347597681e-16,
+      "birth_2": 1.01999998092651,
+      "birth_4": 1.79999995231628,
+      "burst": false,
+      "gain": 0.625,
+      "gpu_ms": 10.8330001831055,
+      "idle_active": true,
+      "source_off_elapsed": 0.3,
+      "time": 10.3166666666666,
+      "yaw": -1.73472347597681e-16
+    },
+    "324": {
+      "birth_0": -1.73472347597681e-16,
+      "birth_2": 0.720000028610229,
+      "birth_4": 1.79999995231628,
+      "burst": false,
+      "gain": 3.7470027081099e-16,
+      "gpu_ms": 10.9820003509521,
+      "idle_active": false,
+      "source_off_elapsed": 0.8,
+      "time": 10.8166666666666,
+      "yaw": -1.73472347597681e-16
+    },
+    "327": {
+      "birth_0": -1.73472347597681e-16,
+      "birth_2": 0.660000026226044,
+      "birth_4": 1.79999995231628,
+      "burst": false,
+      "gain": 0.0,
+      "gpu_ms": 10.1969995498657,
+      "idle_active": false,
+      "source_off_elapsed": 0.9,
+      "time": 10.9166666666666,
+      "yaw": -1.73472347597681e-16
+    }
+  },
+  "gpu_all_active_median_p95_max": [
+    11.1590003967285,
+    11.71399965286253,
+    12.5229997634888
+  ],
+  "corners": {
+    "00_idle.png": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "01_rotate.png": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "02_pause.png": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "03_reverse.png": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "off_01.png": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "off_03.png": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "off_09.png": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "off_18.png": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "off_27.png": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

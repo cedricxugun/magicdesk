@@ -1,0 +1,17 @@
+{
+  "DuplicateExitCode": 0,
+  "Processes": [
+    {
+      "ProcessId": 27984,
+      "Name": "HELIOS.exe",
+      "ExecutablePath": "H:\\model\\output\\helios_incubator\\dist\\HELIOS.exe"
+    },
+    {
+      "ProcessId": 41268,
+      "Name": "HeliosRenderer.exe",
+      "ExecutablePath": "C:\\Users\\user\\AppData\\Local\\HeliosIncubator\\runtime\\feaa519b6e204d7fac64c0c8b90fe978\\HeliosRenderer.exe"
+    }
+  ],
+  "HostCount": 1,
+  "RendererCount": 1
+}

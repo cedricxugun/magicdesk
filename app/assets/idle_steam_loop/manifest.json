@@ -1,0 +1,404 @@
+{
+  "axis_mapping": "Godot (x,y,z) = Blender (x,z,-y); texture layers Z, rows Y, columns X",
+  "bounds_max": [
+    1.55,
+    4.25,
+    1.55
+  ],
+  "bounds_min": [
+    -1.55,
+    0.5,
+    -1.55
+  ],
+  "crossfade_already_baked": true,
+  "density_scale": 1.0,
+  "format": "R16F",
+  "fps": 12.0,
+  "frame_bounds": [
+    [
+      [
+        -1.3175,
+        0.5,
+        -1.20125
+      ],
+      [
+        1.51125,
+        3.3515625,
+        1.27875
+      ]
+    ],
+    [
+      [
+        -1.35625,
+        0.5,
+        -1.24
+      ],
+      [
+        1.55,
+        3.390625,
+        1.20125
+      ]
+    ],
+    [
+      [
+        -1.395,
+        0.5,
+        -1.24
+      ],
+      [
+        1.55,
+        3.390625,
+        1.20125
+      ]
+    ],
+    [
+      [
+        -1.395,
+        0.5,
+        -1.27875
+      ],
+      [
+        1.55,
+        3.390625,
+        1.27875
+      ]
+    ],
+    [
+      [
+        -1.43375,
+        0.5,
+        -1.3175
+      ],
+      [
+        1.55,
+        3.390625,
+        1.35625
+      ]
+    ],
+    [
+      [
+        -1.4725,
+        0.5,
+        -1.27875
+      ],
+      [
+        1.55,
+        3.3125,
+        1.35625
+      ]
+    ],
+    [
+      [
+        -1.43375,
+        0.5,
+        -1.3175
+      ],
+      [
+        1.55,
+        3.3125,
+        1.35625
+      ]
+    ],
+    [
+      [
+        -1.395,
+        0.5,
+        -1.35625
+      ],
+      [
+        1.55,
+        3.3125,
+        1.3175
+      ]
+    ],
+    [
+      [
+        -1.35625,
+        0.5,
+        -1.35625
+      ],
+      [
+        1.55,
+        3.3515625,
+        1.27875
+      ]
+    ],
+    [
+      [
+        -1.3175,
+        0.5,
+        -1.395
+      ],
+      [
+        1.55,
+        3.3515625,
+        1.27875
+      ]
+    ],
+    [
+      [
+        -1.3175,
+        0.5,
+        -1.43375
+      ],
+      [
+        1.55,
+        3.3125,
+        1.27875
+      ]
+    ],
+    [
+      [
+        -1.27875,
+        0.5,
+        -1.43375
+      ],
+      [
+        1.55,
+        3.2734375,
+        1.27875
+      ]
+    ],
+    [
+      [
+        -1.27875,
+        0.5,
+        -1.4725
+      ],
+      [
+        1.55,
+        3.3125,
+        1.27875
+      ]
+    ],
+    [
+      [
+        -1.24,
+        0.5,
+        -1.4725
+      ],
+      [
+        1.55,
+        3.3125,
+        1.27875
+      ]
+    ],
+    [
+      [
+        -1.24,
+        0.5,
+        -1.395
+      ],
+      [
+        1.55,
+        3.2734375,
+        1.27875
+      ]
+    ],
+    [
+      [
+        -1.27875,
+        0.5,
+        -1.20125
+      ],
+      [
+        1.55,
+        3.2734375,
+        1.3175
+      ]
+    ],
+    [
+      [
+        -1.27875,
+        0.5,
+        -1.1625
+      ],
+      [
+        1.4725,
+        3.3125,
+        1.3175
+      ]
+    ],
+    [
+      [
+        -1.3175,
+        0.5,
+        -1.20125
+      ],
+      [
+        1.51125,
+        3.3515625,
+        1.3175
+      ]
+    ]
+  ],
+  "frame_times": [
+    0.0,
+    0.0833333333333333,
+    0.166666666666667,
+    0.25,
+    0.333333333333333,
+    0.416666666666667,
+    0.5,
+    0.583333333333333,
+    0.666666666666667,
+    0.75,
+    0.833333333333333,
+    0.916666666666667,
+    1.0,
+    1.08333333333333,
+    1.16666666666667,
+    1.25,
+    1.33333333333333,
+    1.41666666666667
+  ],
+  "frames": [
+    "frame_000.res",
+    "frame_001.res",
+    "frame_002.res",
+    "frame_003.res",
+    "frame_004.res",
+    "frame_005.res",
+    "frame_006.res",
+    "frame_007.res",
+    "frame_008.res",
+    "frame_009.res",
+    "frame_010.res",
+    "frame_011.res",
+    "frame_012.res",
+    "frame_013.res",
+    "frame_014.res",
+    "frame_015.res",
+    "frame_016.res",
+    "frame_017.res"
+  ],
+  "loop_crossfade_seconds": 0.0,
+  "loop_duration_seconds": 1.5,
+  "loop_end_time": 1.5,
+  "loop_start_time": 0.0,
+  "method": "Seamless scalar-field crossfade of independent continuous low-flow Mantaflow standby simulation",
+  "occupancy": "occupancy.res",
+  "occupancy_resolution": [
+    20.0,
+    24.0,
+    20.0
+  ],
+  "occupied_macro_fraction": 0.42,
+  "resolution": [
+    80.0,
+    96.0,
+    80.0
+  ],
+  "statistics": [
+    {
+      "maximum": 0.11181640625,
+      "minimum": 0.0,
+      "nonzero_voxels": 25091.0,
+      "source": "density_0001.f32"
+    },
+    {
+      "maximum": 0.1171875,
+      "minimum": 0.0,
+      "nonzero_voxels": 26532.0,
+      "source": "density_0002.f32"
+    },
+    {
+      "maximum": 0.11663818359375,
+      "minimum": 0.0,
+      "nonzero_voxels": 27966.0,
+      "source": "density_0003.f32"
+    },
+    {
+      "maximum": 0.10968017578125,
+      "minimum": 0.0,
+      "nonzero_voxels": 29151.0,
+      "source": "density_0004.f32"
+    },
+    {
+      "maximum": 0.1185302734375,
+      "minimum": 0.0,
+      "nonzero_voxels": 30136.0,
+      "source": "density_0005.f32"
+    },
+    {
+      "maximum": 0.11126708984375,
+      "minimum": 0.0,
+      "nonzero_voxels": 31060.0,
+      "source": "density_0006.f32"
+    },
+    {
+      "maximum": 0.11688232421875,
+      "minimum": 0.0,
+      "nonzero_voxels": 31707.0,
+      "source": "density_0007.f32"
+    },
+    {
+      "maximum": 0.115966796875,
+      "minimum": 0.0,
+      "nonzero_voxels": 32363.0,
+      "source": "density_0008.f32"
+    },
+    {
+      "maximum": 0.11639404296875,
+      "minimum": 0.0,
+      "nonzero_voxels": 32765.0,
+      "source": "density_0009.f32"
+    },
+    {
+      "maximum": 0.1148681640625,
+      "minimum": 0.0,
+      "nonzero_voxels": 32985.0,
+      "source": "density_0010.f32"
+    },
+    {
+      "maximum": 0.1224365234375,
+      "minimum": 0.0,
+      "nonzero_voxels": 33223.0,
+      "source": "density_0011.f32"
+    },
+    {
+      "maximum": 0.12127685546875,
+      "minimum": 0.0,
+      "nonzero_voxels": 33343.0,
+      "source": "density_0012.f32"
+    },
+    {
+      "maximum": 0.122802734375,
+      "minimum": 0.0,
+      "nonzero_voxels": 33079.0,
+      "source": "density_0013.f32"
+    },
+    {
+      "maximum": 0.110204629600048,
+      "minimum": 0.0,
+      "nonzero_voxels": 33700.0,
+      "source": "density_0014.f32"
+    },
+    {
+      "maximum": 0.109747990965843,
+      "minimum": 0.0,
+      "nonzero_voxels": 32823.0,
+      "source": "density_0015.f32"
+    },
+    {
+      "maximum": 0.10955810546875,
+      "minimum": 0.0,
+      "nonzero_voxels": 30205.0,
+      "source": "density_0016.f32"
+    },
+    {
+      "maximum": 0.106393322348595,
+      "minimum": 0.0,
+      "nonzero_voxels": 27475.0,
+      "source": "density_0017.f32"
+    },
+    {
+      "maximum": 0.109734430909157,
+      "minimum": 0.0,
+      "nonzero_voxels": 25882.0,
+      "source": "density_0018.f32"
+    }
+  ],
+  "time_offset": 0.0,
+  "warmup_handoff_source_time": 2.5
+}

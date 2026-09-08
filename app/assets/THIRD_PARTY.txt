@@ -1,0 +1,9 @@
+Studio Small 09 HDRI
+Author: Sergej Majboroda / Poly Haven
+Source: https://polyhaven.com/a/studio_small_09
+Asset file: studio_small_09_4k.exr
+License: CC0 1.0 Universal
+License reference: https://polyhaven.com/license
+Used as a lighting and reflection environment, not as a model or background picture.
+
+All HELIOS geometry, mechanism data, enamel/metal textures, icon and sounds in this project were created for this project.

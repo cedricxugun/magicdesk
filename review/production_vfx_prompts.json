@@ -1,0 +1,17 @@
+{
+  "tool": "built-in image_gen",
+  "prompts": [
+    {
+      "key": "lightning_texture",
+      "prompt": "Production VFX texture asset, not a concept scene. A single naturally branching electrical discharge traveling horizontally from the far left center to far right center, on a genuinely transparent alpha canvas, wide landscape 3:1 aspect. High-end AAA cinematic electricity texture: extremely bright thin irregular white-hot main filament, several elegant finer branching filaments growing and tapering from it, pale warm yellow near the core, narrow crimson-red inner corona and an extremely soft subtle red outer optical halo. Organic natural lightning with hierarchical fine branching, no regular zigzag, no geometric sine wave, no thick cartoon stroke, no big lens flare balls. The branches are contained comfortably inside the canvas with generous transparent margins. The main bolt remains mostly in the horizontal center third so this can map onto a real-time ribbon. The bolt enters the left border and exits the right border, but the corona softly attenuates toward those ends. Fine subfilament and ionization detail. No labels, no grid, no frame, no object, no white or black solid background, no checkerboard; actual transparency required. Create only this usable textured electrical beam asset."
+    },
+    {
+      "key": "core_texture",
+      "prompt": "A seamless tileable square 3D material texture, flat orthographic albedo/emission map, no sphere rendering and no lighting baked from an external source. Ultra detailed contained crimson solar-plasma energy surface for a high-end cinematic sci-fi core: deep ruby red translucent-looking turbulent cellular regions, rich flowing scarlet currents and dark gaps, very fine molten filaments weaving along organic cell boundaries, a few narrow ivory-white incandescent ridges occupying at most 12 percent of area, small dark-red eddies and delicate curl detail. Surface should feel energetic and expensive, controlled like an engineered miniature star, not meat, lava rock, cotton, veins, flames or noise/static. Organic multi-scale plasma convection with soft volumetric gradients and precise fine filament edges. No directional illumination, no cast shadow, no objects, no text, no border, no orange lava pools, no large flat white hotspots. Repeat seamlessly on all four edges. This will be sampled triplanar on a real 3D faceted crystal and animated slowly; preserve readable red intensity variation without clipping."
+    }
+  ],
+  "files": [
+    "app/assets/lightning_beam.png",
+    "app/assets/core_plasma.png"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "found_nodes": 3,
+  "asset": "app/assets/helios_model.glb",
+  "endpoints": [
+    {
+      "name": "Thermal_Valve_Frame",
+      "found": true,
+      "closed_pose_endpoint_global": [
+        0.8899999856948853,
+        2.6099999809265135,
+        -0.10000000149011612
+      ],
+      "source_geometry": "detail_helios.py Valve_Anode beam z=.48 to .59; Blender local z becomes Godot y"
+    },
+    {
+      "name": "Thermal_Valve_Frame.001",
+      "found": true,
+      "closed_pose_endpoint_global": [
+        0.13547438383102417,
+        1.639999952316284,
+        -0.6969552636146545
+      ],
+      "source_geometry": "detail_helios.py Valve_Anode beam z=.48 to .59; Blender local z becomes Godot y"
+    },
+    {
+      "name": "Thermal_Valve_Frame.002",
+      "found": true,
+      "closed_pose_endpoint_global": [
+        -0.5815979242324829,
+        1.639999952316284,
+        -0.40723925828933716
+      ],
+      "source_geometry": "detail_helios.py Valve_Anode beam z=.48 to .59; Blender local z becomes Godot y"
+    }
+  ],
+  "runtime_note": "Nodes remain under their real moving component hierarchy; runtime recalculates each global endpoint every tick."
+}

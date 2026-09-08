@@ -1,0 +1,73 @@
+{
+  "exact_image_equal": true,
+  "image_max_delta": 0,
+  "visible_changed_pixels": 0,
+  "before_first_button": {
+    "burst": {
+      "allocation_count": 1,
+      "allocation_during_prewarm": true,
+      "error": "",
+      "frames": 1,
+      "full_size": "(2304, 1680)",
+      "low_size": "(1152, 840)",
+      "pipeline_init_ms": 1.421,
+      "ready": true,
+      "volume_allocation_ms": 0.025,
+      "warm_pair_count": 61,
+      "warmed": true,
+      "warmup_cpu_ms": 0.934,
+      "warmup_visible_writes": 0
+    },
+    "idle": {
+      "allocation_count": 1,
+      "allocation_during_prewarm": true,
+      "error": "",
+      "frames": 1,
+      "full_size": "(2304, 1680)",
+      "low_size": "(922, 672)",
+      "pipeline_init_ms": 3.681,
+      "ready": true,
+      "volume_allocation_ms": 0.032,
+      "warm_pair_count": 18,
+      "warmed": true,
+      "warmup_cpu_ms": 0.479,
+      "warmup_visible_writes": 0
+    }
+  },
+  "after_first_button": {
+    "burst": {
+      "allocation_count": 1,
+      "allocation_during_prewarm": true,
+      "error": "",
+      "first_active_allocation_count": 1,
+      "first_active_cpu_ms": 0.125,
+      "frames": 151,
+      "full_size": "(2304, 1680)",
+      "low_size": "(1152, 840)",
+      "pipeline_init_ms": 1.421,
+      "ready": true,
+      "volume_allocation_ms": 0.025,
+      "warm_pair_count": 61,
+      "warmed": true,
+      "warmup_cpu_ms": 0.934,
+      "warmup_visible_writes": 0
+    },
+    "idle": {
+      "allocation_count": 1,
+      "allocation_during_prewarm": true,
+      "error": "",
+      "frames": 1,
+      "full_size": "(2304, 1680)",
+      "low_size": "(922, 672)",
+      "pipeline_init_ms": 3.681,
+      "ready": true,
+      "volume_allocation_ms": 0.032,
+      "warm_pair_count": 18,
+      "warmed": true,
+      "warmup_cpu_ms": 0.479,
+      "warmup_visible_writes": 0
+    }
+  },
+  "no_allocation_on_button": true,
+  "no_visible_prewarm_writes": true
+}

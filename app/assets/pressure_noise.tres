@@ -1,0 +1,16 @@
+[gd_resource type="NoiseTexture3D" load_steps=2 format=3]
+
+[sub_resource type="FastNoiseLite" id="Turbulence"]
+seed = 195507
+frequency = 0.068
+fractal_octaves = 4
+fractal_lacunarity = 2.08
+fractal_gain = 0.51
+
+[resource]
+width = 64
+height = 64
+depth = 64
+seamless = true
+normalize = true
+noise = SubResource("Turbulence")

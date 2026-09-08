@@ -1,0 +1,145 @@
+{
+  "frames_sampled": 34,
+  "actuators": 6,
+  "maximum_joint_animation_error": 1.3429344461118329e-05,
+  "total_triangle_intersections": 0,
+  "states": [
+    {
+      "frame": 50,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 53,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 56,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 59,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 62,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 65,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 68,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 71,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 74,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 77,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 80,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 83,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 86,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 89,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 92,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 95,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 98,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 101,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 104,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 107,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 110,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 113,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 116,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 119,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 122,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 125,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 128,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 131,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 134,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 137,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 140,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 143,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 146,
+      "triangle_intersections": 0
+    },
+    {
+      "frame": 149,
+      "triangle_intersections": 0
+    }
+  ],
+  "passed": true
+}

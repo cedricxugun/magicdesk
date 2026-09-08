@@ -1,0 +1,30 @@
+# Godot regenerates its import cache from the tracked source and .import settings.
+.godot/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.blend1
+*.blend2
+__pycache__/
+*.py[cod]
+
+# Intermediate renderer and local development host; dist/HELIOS.exe is versioned with LFS.
+native/*.exe
+native/*.pdb
+native/*.pck
+
+# Raw fluid simulation and conversion intermediates. Production R16F .res volumes are tracked.
+app/assets/physical_steam/
+app/assets/pressure_physics_preview/
+app/assets/pressure_physics_96/
+app/assets/pressure_physics_burst64/
+app/assets/pressure_physics_ground64/
+tools/*_prepared/
+tools/*.rgba
+review/physical_steam/
+
+.DS_Store
+Thumbs.db
+Desktop.ini

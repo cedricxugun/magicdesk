@@ -1,0 +1,30 @@
+[
+  {
+    "Phase": "Idle",
+    "Count": 360,
+    "MedianMs": 18.963,
+    "P95Ms": 23.181,
+    "MaxMs": 31.313
+  },
+  {
+    "Phase": "Opening burst",
+    "Count": 50,
+    "MedianMs": 19.354,
+    "P95Ms": 34.386,
+    "MaxMs": 35.82
+  },
+  {
+    "Phase": "Core reveal",
+    "Count": 134,
+    "MedianMs": 22.154,
+    "P95Ms": 25.21,
+    "MaxMs": 38.422
+  },
+  {
+    "Phase": "Overload",
+    "Count": 227,
+    "MedianMs": 21.946,
+    "P95Ms": 23.841,
+    "MaxMs": 26.203
+  }
+]

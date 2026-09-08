@@ -1,0 +1,719 @@
+{
+  "samples": 101,
+  "petals": 6,
+  "part_count": 70,
+  "minimum_shell_clearance": 0.04666386890411377,
+  "minimum_pivot_distance": 0.48888321391898354,
+  "maximum_endpoint_error": 3.9020802086847137e-07,
+  "actual_geometry_triangle_intersections": 0,
+  "states": [
+    {
+      "openness": 0.0,
+      "axis_distance": 0.8481305109686935,
+      "barrel_to_upper_pivot": 0.5445305109686935,
+      "min_shell_clearance": 0.10826955783367156,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.01,
+      "axis_distance": 0.8420313709886826,
+      "barrel_to_upper_pivot": 0.5384313709886827,
+      "min_shell_clearance": 0.10826966214179992,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.02,
+      "axis_distance": 0.8359350935286352,
+      "barrel_to_upper_pivot": 0.5323350935286352,
+      "min_shell_clearance": 0.10826940882205963,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.03,
+      "axis_distance": 0.8298425676800325,
+      "barrel_to_upper_pivot": 0.5262425676800325,
+      "min_shell_clearance": 0.10826949822902679,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.04,
+      "axis_distance": 0.8237546545253188,
+      "barrel_to_upper_pivot": 0.5201546545253188,
+      "min_shell_clearance": 0.10826955783367156,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.05,
+      "axis_distance": 0.8176723865131951,
+      "barrel_to_upper_pivot": 0.5140723865131951,
+      "min_shell_clearance": 0.10826949822902679,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.06,
+      "axis_distance": 0.811596716775312,
+      "barrel_to_upper_pivot": 0.507996716775312,
+      "min_shell_clearance": 0.10826957273483276,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.07,
+      "axis_distance": 0.8055289045306303,
+      "barrel_to_upper_pivot": 0.5019289045306303,
+      "min_shell_clearance": 0.10826949822902679,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.08,
+      "axis_distance": 0.7994696319376003,
+      "barrel_to_upper_pivot": 0.49586963193760036,
+      "min_shell_clearance": 0.10826949822902679,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.09,
+      "axis_distance": 0.7934201275973354,
+      "barrel_to_upper_pivot": 0.4898201275973354,
+      "min_shell_clearance": 0.10826952803134918,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.1,
+      "axis_distance": 0.7873815439839212,
+      "barrel_to_upper_pivot": 0.48378154398392126,
+      "min_shell_clearance": 0.10826958763599395,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.11,
+      "axis_distance": 0.7813549066680863,
+      "barrel_to_upper_pivot": 0.4777549066680863,
+      "min_shell_clearance": 0.10826954293251037,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.12,
+      "axis_distance": 0.7753413398511185,
+      "barrel_to_upper_pivot": 0.47174133985111855,
+      "min_shell_clearance": 0.10826952803134918,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.13,
+      "axis_distance": 0.7693420313070605,
+      "barrel_to_upper_pivot": 0.4657420313070605,
+      "min_shell_clearance": 0.10826951313018798,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.14,
+      "axis_distance": 0.7633582541941936,
+      "barrel_to_upper_pivot": 0.4597582541941936,
+      "min_shell_clearance": 0.10826951313018798,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.15,
+      "axis_distance": 0.7573909471875645,
+      "barrel_to_upper_pivot": 0.4537909471875645,
+      "min_shell_clearance": 0.10826955783367156,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.16,
+      "axis_distance": 0.7514418610249,
+      "barrel_to_upper_pivot": 0.4478418610249,
+      "min_shell_clearance": 0.10826949822902679,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.17,
+      "axis_distance": 0.7455117816934319,
+      "barrel_to_upper_pivot": 0.4419117816934319,
+      "min_shell_clearance": 0.10826952803134918,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.18,
+      "axis_distance": 0.7396023047167593,
+      "barrel_to_upper_pivot": 0.43600230471675927,
+      "min_shell_clearance": 0.1082694684267044,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.19,
+      "axis_distance": 0.7337145879508753,
+      "barrel_to_upper_pivot": 0.4301145879508753,
+      "min_shell_clearance": 0.10826957273483276,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.2,
+      "axis_distance": 0.727850254761723,
+      "barrel_to_upper_pivot": 0.42425025476172307,
+      "min_shell_clearance": 0.10826940882205963,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.21,
+      "axis_distance": 0.7220102361028762,
+      "barrel_to_upper_pivot": 0.4184102361028762,
+      "min_shell_clearance": 0.10826961743831634,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.22,
+      "axis_distance": 0.7161965519833812,
+      "barrel_to_upper_pivot": 0.4125965519833812,
+      "min_shell_clearance": 0.10826949822902679,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.23,
+      "axis_distance": 0.7104101845416648,
+      "barrel_to_upper_pivot": 0.40681018454166484,
+      "min_shell_clearance": 0.10826951313018798,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.24,
+      "axis_distance": 0.7046529592266082,
+      "barrel_to_upper_pivot": 0.4010529592266082,
+      "min_shell_clearance": 0.10826955783367156,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.25,
+      "axis_distance": 0.6989262997544189,
+      "barrel_to_upper_pivot": 0.3953262997544189,
+      "min_shell_clearance": 0.1082694684267044,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.26,
+      "axis_distance": 0.6932317589458912,
+      "barrel_to_upper_pivot": 0.3896317589458912,
+      "min_shell_clearance": 0.10826934921741485,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.27,
+      "axis_distance": 0.6875709475409331,
+      "barrel_to_upper_pivot": 0.3839709475409331,
+      "min_shell_clearance": 0.10826951313018798,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.28,
+      "axis_distance": 0.6819454484346473,
+      "barrel_to_upper_pivot": 0.37834544843464735,
+      "min_shell_clearance": 0.10826958763599395,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.29,
+      "axis_distance": 0.6763570900983177,
+      "barrel_to_upper_pivot": 0.3727570900983177,
+      "min_shell_clearance": 0.10826964724063873,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.3,
+      "axis_distance": 0.6708076226794533,
+      "barrel_to_upper_pivot": 0.3672076226794533,
+      "min_shell_clearance": 0.1082694833278656,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.31,
+      "axis_distance": 0.6652986801167055,
+      "barrel_to_upper_pivot": 0.3616986801167055,
+      "min_shell_clearance": 0.10826949822902679,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.32,
+      "axis_distance": 0.6598320791453083,
+      "barrel_to_upper_pivot": 0.3562320791453083,
+      "min_shell_clearance": 0.10826942372322082,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.33,
+      "axis_distance": 0.654409677830878,
+      "barrel_to_upper_pivot": 0.350809677830878,
+      "min_shell_clearance": 0.1082694684267044,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.34,
+      "axis_distance": 0.6490332383165732,
+      "barrel_to_upper_pivot": 0.34543323831657324,
+      "min_shell_clearance": 0.10826967704296112,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.35,
+      "axis_distance": 0.6437049539786691,
+      "barrel_to_upper_pivot": 0.34010495397866913,
+      "min_shell_clearance": 0.10826961743831634,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.36,
+      "axis_distance": 0.6384266373750737,
+      "barrel_to_upper_pivot": 0.3348266373750737,
+      "min_shell_clearance": 0.10826961743831634,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.37,
+      "axis_distance": 0.6332003264509485,
+      "barrel_to_upper_pivot": 0.3296003264509485,
+      "min_shell_clearance": 0.10826954293251037,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.38,
+      "axis_distance": 0.6280280432195247,
+      "barrel_to_upper_pivot": 0.3244280432195247,
+      "min_shell_clearance": 0.10826943862438201,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.39,
+      "axis_distance": 0.6229117196076941,
+      "barrel_to_upper_pivot": 0.3193117196076941,
+      "min_shell_clearance": 0.10826952803134918,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.4,
+      "axis_distance": 0.617853722554985,
+      "barrel_to_upper_pivot": 0.31425372255498507,
+      "min_shell_clearance": 0.10826951313018798,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.41,
+      "axis_distance": 0.6128561283709587,
+      "barrel_to_upper_pivot": 0.3092561283709587,
+      "min_shell_clearance": 0.10826951313018798,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.42,
+      "axis_distance": 0.6079211130648509,
+      "barrel_to_upper_pivot": 0.3043211130648509,
+      "min_shell_clearance": 0.10826954293251037,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.43,
+      "axis_distance": 0.6030507936435596,
+      "barrel_to_upper_pivot": 0.29945079364355964,
+      "min_shell_clearance": 0.10826951313018798,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.44,
+      "axis_distance": 0.5982478336736577,
+      "barrel_to_upper_pivot": 0.29464783367365777,
+      "min_shell_clearance": 0.10826943862438201,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.45,
+      "axis_distance": 0.5935141069724983,
+      "barrel_to_upper_pivot": 0.2899141069724983,
+      "min_shell_clearance": 0.10826949822902679,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.46,
+      "axis_distance": 0.5888521309567794,
+      "barrel_to_upper_pivot": 0.28525213095677937,
+      "min_shell_clearance": 0.10826951313018798,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.47,
+      "axis_distance": 0.5842644138043597,
+      "barrel_to_upper_pivot": 0.2806644138043597,
+      "min_shell_clearance": 0.1082694833278656,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.48,
+      "axis_distance": 0.5797531296422267,
+      "barrel_to_upper_pivot": 0.2761531296422267,
+      "min_shell_clearance": 0.10826960253715515,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.49,
+      "axis_distance": 0.575320944156871,
+      "barrel_to_upper_pivot": 0.271720944156871,
+      "min_shell_clearance": 0.10826960253715515,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.5,
+      "axis_distance": 0.570970195237079,
+      "barrel_to_upper_pivot": 0.26737019523707906,
+      "min_shell_clearance": 0.10826957273483276,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.51,
+      "axis_distance": 0.5667035605070199,
+      "barrel_to_upper_pivot": 0.2631035605070199,
+      "min_shell_clearance": 0.1082694684267044,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.52,
+      "axis_distance": 0.5625232718210137,
+      "barrel_to_upper_pivot": 0.2589232718210137,
+      "min_shell_clearance": 0.10826958763599395,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.53,
+      "axis_distance": 0.5584320688010258,
+      "barrel_to_upper_pivot": 0.2548320688010258,
+      "min_shell_clearance": 0.10826960253715515,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.54,
+      "axis_distance": 0.5544324207780639,
+      "barrel_to_upper_pivot": 0.2508324207780639,
+      "min_shell_clearance": 0.10826961743831634,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.55,
+      "axis_distance": 0.5505269728444256,
+      "barrel_to_upper_pivot": 0.24692697284442566,
+      "min_shell_clearance": 0.10826952803134918,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.56,
+      "axis_distance": 0.5467181457642663,
+      "barrel_to_upper_pivot": 0.24311814576426627,
+      "min_shell_clearance": 0.10826967704296112,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.57,
+      "axis_distance": 0.543008789123092,
+      "barrel_to_upper_pivot": 0.23940878912309205,
+      "min_shell_clearance": 0.10826960253715515,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.58,
+      "axis_distance": 0.5394011691387709,
+      "barrel_to_upper_pivot": 0.23580116913877092,
+      "min_shell_clearance": 0.10826952803134918,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.59,
+      "axis_distance": 0.5358981051299043,
+      "barrel_to_upper_pivot": 0.23229810512990434,
+      "min_shell_clearance": 0.10826960253715515,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.6,
+      "axis_distance": 0.5325020173531592,
+      "barrel_to_upper_pivot": 0.22890201735315918,
+      "min_shell_clearance": 0.10826960253715515,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.61,
+      "axis_distance": 0.5292155636200719,
+      "barrel_to_upper_pivot": 0.22561556362007196,
+      "min_shell_clearance": 0.10826943862438201,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.62,
+      "axis_distance": 0.5260409616396373,
+      "barrel_to_upper_pivot": 0.22244096163963734,
+      "min_shell_clearance": 0.10826955783367156,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.63,
+      "axis_distance": 0.5229810532284354,
+      "barrel_to_upper_pivot": 0.21938105322843537,
+      "min_shell_clearance": 0.1082694833278656,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.64,
+      "axis_distance": 0.5200380707064196,
+      "barrel_to_upper_pivot": 0.21643807070641963,
+      "min_shell_clearance": 0.10826966214179992,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.65,
+      "axis_distance": 0.5172146438551809,
+      "barrel_to_upper_pivot": 0.21361464385518092,
+      "min_shell_clearance": 0.10826955783367156,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.66,
+      "axis_distance": 0.5145130594688822,
+      "barrel_to_upper_pivot": 0.21091305946888217,
+      "min_shell_clearance": 0.10826960253715515,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.67,
+      "axis_distance": 0.5119355885252622,
+      "barrel_to_upper_pivot": 0.20833558852526224,
+      "min_shell_clearance": 0.10826954293251037,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.68,
+      "axis_distance": 0.5094842755522943,
+      "barrel_to_upper_pivot": 0.20588427555229427,
+      "min_shell_clearance": 0.10826964724063873,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.69,
+      "axis_distance": 0.5071617137890342,
+      "barrel_to_upper_pivot": 0.2035617137890342,
+      "min_shell_clearance": 0.10826957273483276,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.7,
+      "axis_distance": 0.5049697240403056,
+      "barrel_to_upper_pivot": 0.20136972404030562,
+      "min_shell_clearance": 0.10826951313018798,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.71,
+      "axis_distance": 0.5029104655027564,
+      "barrel_to_upper_pivot": 0.19931046550275644,
+      "min_shell_clearance": 0.10826961743831634,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.72,
+      "axis_distance": 0.5009857608181247,
+      "barrel_to_upper_pivot": 0.19738576081812476,
+      "min_shell_clearance": 0.10826952803134918,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.73,
+      "axis_distance": 0.49919750962419507,
+      "barrel_to_upper_pivot": 0.1955975096241951,
+      "min_shell_clearance": 0.10826958763599395,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.74,
+      "axis_distance": 0.49754734045298726,
+      "barrel_to_upper_pivot": 0.19394734045298728,
+      "min_shell_clearance": 0.1082694684267044,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.75,
+      "axis_distance": 0.4960369655820817,
+      "barrel_to_upper_pivot": 0.19243696558208173,
+      "min_shell_clearance": 0.1082694833278656,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.76,
+      "axis_distance": 0.4946678688542343,
+      "barrel_to_upper_pivot": 0.19106786885423432,
+      "min_shell_clearance": 0.10826961743831634,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.77,
+      "axis_distance": 0.49344138100434476,
+      "barrel_to_upper_pivot": 0.18984138100434478,
+      "min_shell_clearance": 0.10826957273483276,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.78,
+      "axis_distance": 0.49235881367129364,
+      "barrel_to_upper_pivot": 0.18875881367129366,
+      "min_shell_clearance": 0.10826939392089843,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.79,
+      "axis_distance": 0.4914211293683321,
+      "barrel_to_upper_pivot": 0.18782112936833212,
+      "min_shell_clearance": 0.10826954293251037,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.8,
+      "axis_distance": 0.4906293941714087,
+      "barrel_to_upper_pivot": 0.18702939417140874,
+      "min_shell_clearance": 0.1082694684267044,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.81,
+      "axis_distance": 0.48998445242305794,
+      "barrel_to_upper_pivot": 0.18638445242305796,
+      "min_shell_clearance": 0.1082694684267044,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.82,
+      "axis_distance": 0.48948684250489816,
+      "barrel_to_upper_pivot": 0.18588684250489818,
+      "min_shell_clearance": 0.10826952803134918,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.83,
+      "axis_distance": 0.48913726539841174,
+      "barrel_to_upper_pivot": 0.18553726539841175,
+      "min_shell_clearance": 0.1082694833278656,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.84,
+      "axis_distance": 0.4889359567168757,
+      "barrel_to_upper_pivot": 0.1853359567168757,
+      "min_shell_clearance": 0.10826955783367156,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.85,
+      "axis_distance": 0.48888321391898354,
+      "barrel_to_upper_pivot": 0.18528321391898356,
+      "min_shell_clearance": 0.10657976913452148,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.86,
+      "axis_distance": 0.48897896127832113,
+      "barrel_to_upper_pivot": 0.18537896127832115,
+      "min_shell_clearance": 0.10264692056179046,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.87,
+      "axis_distance": 0.4892233134001752,
+      "barrel_to_upper_pivot": 0.18562331340017524,
+      "min_shell_clearance": 0.09873362231254577,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.88,
+      "axis_distance": 0.4896157643723168,
+      "barrel_to_upper_pivot": 0.18601576437231682,
+      "min_shell_clearance": 0.09484605836868286,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.89,
+      "axis_distance": 0.4901560553646709,
+      "barrel_to_upper_pivot": 0.1865560553646709,
+      "min_shell_clearance": 0.09096987891197204,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.9,
+      "axis_distance": 0.4908436071026878,
+      "barrel_to_upper_pivot": 0.18724360710268784,
+      "min_shell_clearance": 0.08708849895000458,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.91,
+      "axis_distance": 0.49167762375566204,
+      "barrel_to_upper_pivot": 0.18807762375566206,
+      "min_shell_clearance": 0.08319554078578949,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.92,
+      "axis_distance": 0.4926574125164293,
+      "barrel_to_upper_pivot": 0.18905741251642932,
+      "min_shell_clearance": 0.0792851333618164,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.93,
+      "axis_distance": 0.4937818896808738,
+      "barrel_to_upper_pivot": 0.1901818896808738,
+      "min_shell_clearance": 0.07535139071941375,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.94,
+      "axis_distance": 0.4950496347229024,
+      "barrel_to_upper_pivot": 0.19144963472290244,
+      "min_shell_clearance": 0.07138793516159057,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.95,
+      "axis_distance": 0.4964598202429661,
+      "barrel_to_upper_pivot": 0.1928598202429661,
+      "min_shell_clearance": 0.06738905954360962,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.96,
+      "axis_distance": 0.4980108631428683,
+      "barrel_to_upper_pivot": 0.19441086314286832,
+      "min_shell_clearance": 0.06334887790679931,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.97,
+      "axis_distance": 0.49970114892535694,
+      "barrel_to_upper_pivot": 0.19610114892535696,
+      "min_shell_clearance": 0.05926147449016571,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.98,
+      "axis_distance": 0.5015291026098745,
+      "barrel_to_upper_pivot": 0.1979291026098745,
+      "min_shell_clearance": 0.05512202131748199,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 0.99,
+      "axis_distance": 0.5034929112430329,
+      "barrel_to_upper_pivot": 0.19989291124303288,
+      "min_shell_clearance": 0.05092430460453033,
+      "triangle_intersections": 0
+    },
+    {
+      "openness": 1.0,
+      "axis_distance": 0.5055909042730427,
+      "barrel_to_upper_pivot": 0.20199090427304267,
+      "min_shell_clearance": 0.04666386890411377,
+      "triangle_intersections": 0
+    }
+  ],
+  "passed": true
+}
