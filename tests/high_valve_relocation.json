@@ -1,0 +1,24 @@
+{
+  "part": "P_Thermal_Valve_0",
+  "delta_blender": [
+    0.25999999046325684,
+    -0.10000000149011612,
+    0.0
+  ],
+  "delta_godot": [
+    0.26,
+    0.0,
+    0.1
+  ],
+  "source_location_keys_updated": 900,
+  "only_glb_node_translation_changed": true,
+  "geometry_bin_sha256": "393f801aa6b534639a618b8b821d38d8331437bf356a1ff755be682147fcb9bb",
+  "part_count": 70,
+  "button_count": 7,
+  "porcelain_radius_unchanged": 0.09,
+  "steam_source_godot": [
+    1.15,
+    2.62,
+    0
+  ]
+}

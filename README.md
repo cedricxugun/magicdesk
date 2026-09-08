@@ -2,7 +2,7 @@
 
 以复古科幻机械为方向制作的可交互三维桌面摆件。上部机械旋转展示，底座固定；支持六瓣同步绽放、核心过载、70组零件拆解与重组，以及收拢熄灯后退出。
 
-![实际 EXE 过载画面](review/mechanism_fixed_overload.png)
+![实际 EXE 过载画面](review/final_star_peak.png)
 
 [查看 A / B / C / D 四款装置设计图与制作状态](concepts/README.md) · [查看特效设计图库](review/vfx_variants/README.md)
 
@@ -32,7 +32,7 @@ Windows x64；运行已打包 EXE 无需安装 Godot 或 Blender。模型、贴�
 
 拖动底座移动摆件，拖动上部手动旋转。使用 Windows 原生逐像素透明显示，透明区域可点透；开合时镜头不缩放。重复启动会唤起已有应用。
 
-[最新版机构与过载演示](review/mechanism_fix_demo.mp4) · [蒸汽修复演示](review/steam_fix_demo.mp4) · [详细使用说明](使用说明.md)
+[最新版完整演示](review/final_choreography_demo.mp4) · [蒸汽修复演示](review/steam_fix_demo.mp4) · [详细使用说明](使用说明.md)
 
 ## 项目结构
 
@@ -60,6 +60,8 @@ Windows x64；运行已打包 EXE 无需安装 Godot 或 Blender。模型、贴�
 历史验证记录可能含原制作机器的路径；不影响生产运行。Blender 主文件是当前模型的编辑源，建模辅助脚本保留制作过程，运行整个早期建模流程可能覆盖后续人工调整。
 
 ## 当前验证结果
+
+1.3.3 将开花收尾合为连续行程，去掉84%开度的停顿；星群在过载高潮共同加速、拉长尾迹并外扩，高潮期间不再随机消失。高位陶瓷阀与长管移到两瓣之间，11个开合位置避让检查通过，待机蒸汽同步到新出口。见 [最新动作与高阀修复记录](tests/final_choreography_report.md)。
 
 1.3.2 将过载光效与7秒机械过程对齐，3–4秒为高潮；修正低位陶瓷端子的位置和形状，中心转环与核心改为先对齐再分层抽出。按钮按真实帽面命中，组装与关闭的提示分开；全开、中途展开、中途拆解、过载四种状态下组装后继续运行均已验证。见 [机构与交互修复记录](tests/mechanism_fix_report.md)。
 

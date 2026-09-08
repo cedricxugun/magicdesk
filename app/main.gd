@@ -79,15 +79,14 @@ var activation_start := 0.0
 var closing_time := -1.0
 var activation_display_time := -1.0
 
-func choreography_time(display_time:float)->float:
-	if display_time<.40:return display_time*.80
-	if display_time<.85:return .32+(display_time-.40)*(.38/.45)
-	if display_time<2.80:
-		var u:=clampf((display_time-.85)/1.95,0,1)
-		var quintic:=u*u*u*(10.0+u*(-15.0+6.0*u))
-		return .70+.80*(1.0-pow(maxf(0.0,1.0-quintic),1.0/3.0))
-	if display_time<3.50:return 1.50+(display_time-2.80)
-	return 2.20+(display_time-3.50)*.90
+func opening_fraction(display_time:float)->float:
+	if display_time<.40:return 0.0
+	if display_time<.85:return .035*smooth01((display_time-.40)/.45)
+	# One continuous stroke after unlocking. The previous 84% hand-off stopped
+	# the petals before starting a second easing segment, creating a false hitch.
+	var u:=clampf((display_time-.85)/2.65,0.0,1.0)
+	var quintic:=u*u*u*(10.0+u*(-15.0+6.0*u))
+	return .035+.965*quintic
 
 func v3(a: Array) -> Vector3:
 	return Vector3(float(a[0]), float(a[1]), float(a[2]))
@@ -535,19 +534,12 @@ func _process(delta: float) -> void:
 			_save_settings();get_tree().quit();return
 	power = move_toward(power,power_target,delta*.7)
 	if activation_time>=0:
-		var old_time:=activation_time
 		activation_display_time+=delta
-		activation_time=choreography_time(activation_display_time)
-		fx_delta=maxf(0.0,activation_time-old_time)
+		activation_time=activation_display_time
 		var t:=activation_time
-		var value:=0.0
-		if t<.32:value=0.0
-		elif t<.70:value=.035*smooth01((t-.32)/.38)
-		elif t<1.50:value=lerpf(.035,.84,1.0-pow(1.0-clampf((t-.70)/.80,0,1),3.0))
-		elif t<2.20:value=lerpf(.84,1.0,smooth01((t-1.50)/.70))
-		else:value=1.0
+		var value:=opening_fraction(t)
 		openness=lerpf(activation_start,1.0,value)
-		activation_energy=exp(-pow((t-1.22)/.56,2.0))
+		activation_energy=smoothstep(.30,.65,value)*(1.0-smoothstep(3.30,4.70,t))
 		if t>5.5:activation_time=-1.0;activation_display_time=-1.0;activation_energy=0.0;_fit_window(false)
 	if not transition.is_empty():
 		transition.time += delta

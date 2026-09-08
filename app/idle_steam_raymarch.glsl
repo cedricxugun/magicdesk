@@ -22,6 +22,7 @@ layout(std430,set=0,binding=7) readonly buffer BirthHistory {
     vec4 lower_source; // six emitters: radius, height, initial up velocity, buoyancy
     vec4 valve_source; // single valve local xyz, plume selector width
     vec4 valve_flow; // initial up velocity, buoyancy, attached nozzle length, radial flow speed
+    vec4 valve_displacement; // new fixed mount minus the original cache mount, in turntable space
     float angles[64]; // continuous yaw, newest first; no modulo discontinuity
 } h;
 
@@ -58,17 +59,35 @@ vec4 historical_cache_point(vec3 wp){
 }
 
 vec3 view_at(vec2 uv,float depth){vec4 v=p.inv_projection*vec4(uv*2.0-1.0,depth,1.0);return v.xyz/v.w;}
-float density(vec3 wp){
-    vec4 parcel=historical_cache_point(wp);
-    vec3 cp=parcel.xyz;
+float reference_density(vec3 cp){
     if(cp.y<0.0)return 0.0;
     vec3 uv=(cp-p.cache_min_step.xyz)/(p.cache_max_mix.xyz-p.cache_min_step.xyz);
     if(any(lessThan(uv,vec3(0)))||any(greaterThan(uv,vec3(1))))return 0.0;
     float d=mix(textureLod(density_a,uv,0.0).r,textureLod(density_b,uv,0.0).r,p.cache_max_mix.w);
-    // Close the actual source first: no parcel may be younger than the elapsed
-    // shutoff time. Existing older tails remain and dissipate with global gain.
-    float source_gate=p.occupancy_size.x<0.0?1.0:smoothstep(p.occupancy_size.x,p.occupancy_size.x+.08,parcel.w);
-    return max(0.0,d*p.world_min_gain.w*p.world_max_density.w)*source_gate;
+    return max(0.0,d*p.world_min_gain.w*p.world_max_density.w);
+}
+float source_gate(float age){
+    return p.occupancy_size.x<0.0?1.0:smoothstep(p.occupancy_size.x,p.occupancy_size.x+.08,age);
+}
+float valve_region(vec3 cp){
+    float age=rise_age(cp.y-h.valve_source.y,h.valve_flow.x,h.valve_flow.y);
+    float vertical=smoothstep(h.valve_source.y-.16,h.valve_source.y-.015,cp.y);
+    return vertical*(1.0-smoothstep(.20,h.valve_source.w+.08*age,length(cp.xz-h.valve_source.xz)));
+}
+float density(vec3 wp){
+    vec4 parcel=historical_cache_point(wp);
+    float base=reference_density(parcel.xyz)*source_gate(parcel.w);
+    if(dot(h.valve_displacement.xyz,h.valve_displacement.xyz)<.000001)return base;
+    // The lower six source mouths retain the original cache and birth history.
+    // Only the upper plume is retargeted; blended cache regions are partitioned
+    // smoothly because the saved density volume has no per-source labels.
+    base*=1.0-valve_region(parcel.xyz);
+    vec3 point=(p.world_to_cache*vec4(wp,1.0)).xyz;
+    float age=rise_age(point.y-h.valve_source.y-h.valve_displacement.y,h.valve_flow.x,h.valve_flow.y);
+    vec3 upper=undo_yaw(point,birth_yaw(age))-h.valve_displacement.xyz;
+    float weight=valve_region(upper);
+    if(weight>.0001)base+=reference_density(upper)*weight*source_gate(age);
+    return base;
 }
 void main(){
     ivec2 pixel=ivec2(gl_GlobalInvocationID.xy),sz=ivec2(p.sizes.zw);

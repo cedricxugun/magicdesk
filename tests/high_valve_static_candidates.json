@@ -1,0 +1,147 @@
+{
+  "colliding_pairs_by_candidate": {
+    "1.12": 0,
+    "1.15": 0,
+    "1.18": 0
+  },
+  "states": {
+    "1.12": [
+      {
+        "openness": 0.0,
+        "pairs": []
+      },
+      {
+        "openness": 0.1,
+        "pairs": []
+      },
+      {
+        "openness": 0.2,
+        "pairs": []
+      },
+      {
+        "openness": 0.3,
+        "pairs": []
+      },
+      {
+        "openness": 0.4,
+        "pairs": []
+      },
+      {
+        "openness": 0.5,
+        "pairs": []
+      },
+      {
+        "openness": 0.6,
+        "pairs": []
+      },
+      {
+        "openness": 0.7,
+        "pairs": []
+      },
+      {
+        "openness": 0.8,
+        "pairs": []
+      },
+      {
+        "openness": 0.9,
+        "pairs": []
+      },
+      {
+        "openness": 1.0,
+        "pairs": []
+      }
+    ],
+    "1.15": [
+      {
+        "openness": 0.0,
+        "pairs": []
+      },
+      {
+        "openness": 0.1,
+        "pairs": []
+      },
+      {
+        "openness": 0.2,
+        "pairs": []
+      },
+      {
+        "openness": 0.3,
+        "pairs": []
+      },
+      {
+        "openness": 0.4,
+        "pairs": []
+      },
+      {
+        "openness": 0.5,
+        "pairs": []
+      },
+      {
+        "openness": 0.6,
+        "pairs": []
+      },
+      {
+        "openness": 0.7,
+        "pairs": []
+      },
+      {
+        "openness": 0.8,
+        "pairs": []
+      },
+      {
+        "openness": 0.9,
+        "pairs": []
+      },
+      {
+        "openness": 1.0,
+        "pairs": []
+      }
+    ],
+    "1.18": [
+      {
+        "openness": 0.0,
+        "pairs": []
+      },
+      {
+        "openness": 0.1,
+        "pairs": []
+      },
+      {
+        "openness": 0.2,
+        "pairs": []
+      },
+      {
+        "openness": 0.3,
+        "pairs": []
+      },
+      {
+        "openness": 0.4,
+        "pairs": []
+      },
+      {
+        "openness": 0.5,
+        "pairs": []
+      },
+      {
+        "openness": 0.6,
+        "pairs": []
+      },
+      {
+        "openness": 0.7,
+        "pairs": []
+      },
+      {
+        "openness": 0.8,
+        "pairs": []
+      },
+      {
+        "openness": 0.9,
+        "pairs": []
+      },
+      {
+        "openness": 1.0,
+        "pairs": []
+      }
+    ]
+  }
+}

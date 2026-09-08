@@ -84,7 +84,7 @@ func _initialize()->bool:
 	sampler.min_filter=RenderingDevice.SAMPLER_FILTER_NEAREST
 	_nearest=_rd.sampler_create(sampler)
 	_parameters=_rd.storage_buffer_create(336)
-	_history=_rd.storage_buffer_create(320)
+	_history=_rd.storage_buffer_create(336)
 	var format:=RDTextureFormat.new();format.width=8;format.height=8;format.format=RenderingDevice.DATA_FORMAT_R16G16B16A16_SFLOAT
 	format.usage_bits=RenderingDevice.TEXTURE_USAGE_STORAGE_BIT
 	_warm_color=_rd.texture_create(format,RDTextureView.new(),[])
@@ -129,6 +129,8 @@ func _render_callback(callback_type:int,render_data:RenderData)->void:
 	var valve_source:Vector4=snapshot.get("valve_source",Vector4(.89,2.62,-.10,.62))
 	var valve_flow:Vector4=snapshot.get("valve_flow",Vector4(.16,.22,.055,.25))
 	for row in [lower_source,valve_source,valve_flow]:history_data.append_array(PackedFloat32Array([row.x,row.y,row.z,row.w]))
+	var valve_displacement:Vector3=snapshot.get("valve_displacement",Vector3.ZERO)
+	history_data.append_array(PackedFloat32Array([valve_displacement.x,valve_displacement.y,valve_displacement.z,0.0]))
 	for index in range(64):history_data.append(angles[mini(index,angle_count-1)])
 	var history_bytes:=history_data.to_byte_array()
 	_rd.buffer_update(_history,0,history_bytes.size(),history_bytes)

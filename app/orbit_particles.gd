@@ -15,6 +15,12 @@ var particles:Array=[]
 var rng:=RandomNumberGenerator.new()
 var trail_mesh:=ImmediateMesh.new()
 var trail_node:MeshInstance3D
+var overload_fill:=false
+var protected_until:=-1.0
+var overload_speed:=1.0
+var overload_drive:=0.0
+var overload_expansion:=0.0
+var trail_seconds:=1.12
 
 func setup(owner:Node3D)->void:
 	host=owner;core=host.named("P_Solar_Crystal");rng.seed=731905
@@ -66,9 +72,14 @@ func trigger(kind:String)->void:
 	match kind:
 		"open":reveal_pending=true;cancelled=false;burst_time=-1.0
 		"ignition":cancelled=false
-		"overload":cancelled=false
+		"overload":
+			cancelled=false;overload_fill=true;steady_timer=.06
+			protected_until=clock+8.0
+			# Existing stars keep their phase and trails, and survive the full peak.
+			for p in particles:
+				if float(p.life)>0:p.life=maxf(float(p.life),float(p.age)+8.0)
 		"close","shutdown","explode","cancel","assemble":
-			cancelled=true;reveal_pending=false;burst_time=-1.0
+			cancelled=true;reveal_pending=false;burst_time=-1.0;overload_fill=false;protected_until=-1.0
 			for p in particles:
 				if float(p.life)>0:p.cancel=.65
 
@@ -83,16 +94,29 @@ func _emit()->void:
 		var b:=Vector3(0,sin(tilt),cos(tilt)).normalized()
 		p.a=a;p.b=b;p.center=core.global_position+Vector3(0,rng.randf_range(.28,.43),0)
 		p.age=0.0;p["orbit_age"]=0.0;p.life=rng.randf_range(8.0,11.5)
+		p.life=maxf(float(p.life),protected_until-clock)
 		p.r=rng.randf_range(2.20,2.48);p["minor"]=rng.randf_range(.94,1.20)
 		p.turn=rng.randf_range(.70,.95)*(-1 if spawn_serial%3==0 else 1)
 		p.lift=theta;p.scale=rng.randf_range(.84,1.12);p.phase=rng.randf_range(0,TAU)
-		p.cancel=-1.0;p.trail.clear();p.node.global_position=core.global_position+a*.27;p.node.show();p.halo.show()
+		p.cancel=-1.0;p["visibility"]=0.0;p.trail.clear();p.node.global_position=core.global_position+a*.27;p.node.show();p.halo.show()
 		return
 
 func tick(delta:float)->void:
 	clock+=delta
 	var overload_left:=clampf(float(host.get("overload")),0.0,7.0)
-	var overload_envelope:=pow(sin(overload_left/7.0*PI),2.0) if overload_left>0.0 else 0.0
+	var overload_elapsed:=7.0-overload_left
+	var charge:=0.0;var drive:=0.0;var expansion:=0.0
+	if overload_left>0.0 and not cancelled:
+		charge=smoothstep(0.0,1.4,overload_elapsed)*(1.0-smoothstep(4.0,7.0,overload_elapsed))
+		drive=smoothstep(1.4,3.2,overload_elapsed)*(1.0-smoothstep(4.0,7.0,overload_elapsed))
+		expansion=smoothstep(2.6,3.25,overload_elapsed)*(1.0-smoothstep(4.0,5.5,overload_elapsed))*.13
+	else:overload_fill=false
+	overload_drive=drive
+	overload_speed=1.0+.10*charge*(1.0-drive)+1.80*drive
+	# Radius is shared by the constellation and changes continuously even when
+	# overload is retriggered or cancelled halfway through its expansion pulse.
+	overload_expansion=move_toward(overload_expansion,expansion,delta*.28)
+	trail_seconds=1.12+.38*drive
 	var allowed:=not cancelled and float(host.openness)>.52 and float(host.power)>.15 and float(host.explosion)<.04
 	if reveal_pending and allowed:
 		reveal_pending=false;burst_time=0.0;burst_next=0.0;emitted=0
@@ -103,29 +127,32 @@ func tick(delta:float)->void:
 		if emitted>=10:burst_time=-1.0
 	elif allowed:
 		steady_timer+=delta
-		if steady_timer>lerpf(.75,.28,overload_envelope):_emit();steady_timer=0.0
+		if steady_timer>(.06 if overload_fill else .75):_emit();steady_timer=0.0
 	for p in particles:
 		if float(p.life)<=0.0:continue
 		p.age+=delta
-		p.orbit_age+=delta*(1.0+overload_envelope*.42)
+		p.orbit_age+=delta*overload_speed
+		if protected_until>clock and not cancelled:p.life=maxf(float(p.life),float(p.age)+protected_until-clock)
 		if float(p.cancel)>=0.0:p.cancel-=delta
 		if float(p.age)>=float(p.life) or (float(p.cancel)<0.0 and float(p.cancel)>-delta*1.1):
 			p.life=0.0;p.node.hide();p.halo.hide();p.trail.clear();continue
 		var u:float=p.age/p.life
 		var sweep:float=p.lift+p.turn*float(p.orbit_age)
 		var entry:=smoothstep(0.0,.85,float(p.age))
-		var orbit_position:Vector3=p.center+p.a*cos(sweep)*float(p.r)+p.b*sin(sweep)*float(p.minor)
+		var orbit_position:Vector3=p.center+(p.a*cos(sweep)*float(p.r)+p.b*sin(sweep)*float(p.minor))*(1.0+overload_expansion)
 		var seed_position:Vector3=core.global_position+(orbit_position-core.global_position).normalized()*.27
 		var position:Vector3=seed_position.lerp(orbit_position,entry)
 		position+=Vector3(0,sin(float(p.age)*1.35+p.phase)*.022,0)
 		p.node.global_position=position
 		var fade:=smoothstep(0.0,.10,float(p.age))*(1.0-smoothstep(float(p.life)-.8,float(p.life),float(p.age)))
 		if float(p.cancel)>=0.0:fade*=smoothstep(0.0,.65,p.cancel)
+		p.visibility=move_toward(float(p.get("visibility",fade)),fade,delta*5.0)
+		fade=float(p.visibility)
 		p.node.scale=Vector3.ONE*float(p.scale)*maxf(.01,sqrt(fade))
-		p.mat.set_shader_parameter("strength",fade*(1.0+overload_envelope*.28))
-		p.halo.global_position=position;p.halo.scale=Vector3.ONE*float(p.scale);p.halo_mat.set_shader_parameter("strength",fade*(.82+overload_envelope*.14))
+		p.mat.set_shader_parameter("strength",fade*(1.0+drive*.80))
+		p.halo.global_position=position;p.halo.scale=Vector3.ONE*float(p.scale)*(1.0+drive*.32);p.halo_mat.set_shader_parameter("strength",fade*(.82+drive*.38))
 		p.trail.append({"p":position,"time":clock})
-		while p.trail.size()>2 and (clock-float(p.trail[0].time)>1.12 or p.trail.size()>70):p.trail.pop_front()
+		while p.trail.size()>2 and (clock-float(p.trail[0].time)>trail_seconds or p.trail.size()>100):p.trail.pop_front()
 		p["fade"]=fade
 	_render_trails()
 
@@ -141,8 +168,8 @@ func _render_trails()->void:
 			var a:Vector3=p.trail[i].p;var b:Vector3=p.trail[i+1].p
 			if a.distance_squared_to(b)<.0000001:continue
 			var normal:Vector3=(b-a).normalized().cross((camera.global_position-(a+b)*.5).normalized()).normalized()
-			var tail:=float(i+1)/float(p.trail.size());var width:=.0085*float(p.scale)*(.35+.65*tail)
-			var alpha:=float(p.fade)*pow(tail,.68)*.92
+			var tail:=float(i+1)/float(p.trail.size());var width:=.0085*float(p.scale)*(.35+.65*tail)*(1.0+overload_drive*.18)
+			var alpha:=minf(1.0,float(p.fade)*pow(tail,.68)*(.92+overload_drive*.22))
 			var points:Array[Vector3]=[a-normal*width,b-normal*width,b+normal*width,a-normal*width,b+normal*width,a+normal*width]
 			var uvs:Array[Vector2]=[Vector2(0,0),Vector2(1,0),Vector2(1,1),Vector2(0,0),Vector2(1,1),Vector2(0,1)]
 			for j in range(6):

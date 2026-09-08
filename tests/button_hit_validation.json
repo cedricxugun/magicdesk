@@ -1,5 +1,7 @@
 {
   "all_passed": true,
   "checks": 153,
-  "failures": []
+  "failures": [],
+  "opening_finishes_at_3_5s": true,
+  "opening_speed_at_2_8s": 0.412747461024487
 }

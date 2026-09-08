@@ -25,7 +25,14 @@ func run()->void:
 			var pixel:Vector2=host.camera.unproject_position(quit_cap.to_global(Vector3(cos(a)*.140,.008,sin(a)*.140)))
 			checks+=1
 			if host.hit_button(pixel)==6:failures.append({"pose":pose,"invisible_close_margin":angle})
-	var report:={"checks":checks,"all_passed":failures.is_empty(),"failures":failures}
+	var last:=0.0
+	for sample in range(351):
+		var value:float=host.opening_fraction(float(sample)/100.0)
+		if value<last-.000001 or value<0.0 or value>1.000001:failures.append({"non_monotonic_opening":sample})
+		last=value
+	var speed_at_old_stop:float=(host.opening_fraction(2.801)-host.opening_fraction(2.799))/.002
+	if speed_at_old_stop<.2:failures.append({"opening_pauses_at_old_handoff":speed_at_old_stop})
+	var report:={"checks":checks,"all_passed":failures.is_empty(),"failures":failures,"opening_speed_at_2_8s":speed_at_old_stop,"opening_finishes_at_3_5s":absf(host.opening_fraction(3.5)-1.0)<.000001}
 	var path:=ProjectSettings.globalize_path("res://../tests/button_hit_validation.json")
 	FileAccess.open(path,FileAccess.WRITE).store_string(JSON.stringify(report,"  "))
 	print("BUTTON_HIT_CHECK ",JSON.stringify(report))

@@ -1,0 +1,49 @@
+[
+  {
+    "open": 0,
+    "pairs": [
+      [
+        "P_Petal_02_Enamel",
+        472
+      ],
+      [
+        "P_Petal_02_Liner",
+        17
+      ],
+      [
+        "P_Petal_02_RibFrame",
+        618
+      ]
+    ]
+  },
+  {
+    "open": 0.25,
+    "pairs": [
+      [
+        "P_Petal_02_Liner",
+        10
+      ],
+      [
+        "P_Petal_02_RibFrame",
+        81
+      ]
+    ]
+  },
+  {
+    "open": 0.5,
+    "pairs": []
+  },
+  {
+    "open": 0.75,
+    "pairs": []
+  },
+  {
+    "open": 1,
+    "pairs": [
+      [
+        "P_Petal_02_RibFrame",
+        23
+      ]
+    ]
+  }
+]

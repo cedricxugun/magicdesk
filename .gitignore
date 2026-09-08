@@ -34,3 +34,4 @@ tests/**/*.png
 tests/**/native_*.json
 tests/steam_fix_live/
 tests/mechanism_live/
+tests/choreography_live/

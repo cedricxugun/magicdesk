@@ -33,6 +33,7 @@ var _resolution_scale:=.4
 var _max_steps:=96
 var _step_multiplier:=.90
 var last_error:=""
+var valve_displacement:=Vector3.ZERO
 
 func setup(owner:Node3D)->void:
 	if is_instance_valid(host):return
@@ -42,6 +43,9 @@ func setup(owner:Node3D)->void:
 	var camera:Camera3D=host.get("camera")
 	if turntable==null or camera==null:
 		last_error="Idle steam requires the existing turntable and Camera3D.";push_error(last_error);return
+	var valve:Node3D=host.named("Thermal_Valve_Frame")
+	if valve!=null:
+		valve_displacement=turntable.to_local(valve.to_global(Vector3(0,.60,0)))-Vector3(.89,2.62,-.10)
 	_previous_raw_yaw=turntable.rotation.y
 	_unwrapped_yaw=_previous_raw_yaw
 	for i in range(HISTORY_COUNT):history.append(PackedFloat64Array([-HISTORY_SPAN+i*HISTORY_STEP,_unwrapped_yaw]))
@@ -180,6 +184,7 @@ func tick(delta:float)->void:
 	var yaw:=turntable.rotation.y
 	var anchor_to_world:=turntable.global_transform*Transform3D(Basis(Vector3.UP,-yaw),Vector3.ZERO)
 	var half_radius:=Vector2(maxf(absf(cache_bounds.position.x),absf(cache_bounds.end.x)),maxf(absf(cache_bounds.position.z),absf(cache_bounds.end.z))).length()
+	half_radius+=Vector2(valve_displacement.x,valve_displacement.z).length()
 	var all_yaw_bounds:=AABB(Vector3(-half_radius,cache_bounds.position.y,-half_radius),Vector3(half_radius*2,cache_bounds.size.y,half_radius*2))
 	var snapshot:Dictionary={
 		"active":true,"gain":gain,"frame_a":physics_frames[index],"frame_b":physics_frames[next_index],"mix":blend,
@@ -188,7 +193,7 @@ func tick(delta:float)->void:
 		"world_to_anchor":anchor_to_world.affine_inverse(),"density_scale":density_scale,
 		"birth_angles":get_birth_angles(),"history_step":HISTORY_STEP,"current_angle":wrapf(_unwrapped_yaw,-PI,PI),
 		"step":cell_size*_step_multiplier,"max_steps":_max_steps,"resolution_scale":_resolution_scale,"core_shadow_steps":3,
-		"lower_source":Vector4(.66,1.10,.085,.30),"valve_source":Vector4(.89,2.62,-.10,.62),"valve_flow":Vector4(.16,.22,.055,.25)}
+		"lower_source":Vector4(.66,1.10,.085,.30),"valve_source":Vector4(.89,2.62,-.10,.62),"valve_flow":Vector4(.16,.22,.055,.25),"valve_displacement":valve_displacement}
 	var effects:Variant=host.get("effects")
 	if is_instance_valid(effects):
 		var core:Variant=effects.get("core")
