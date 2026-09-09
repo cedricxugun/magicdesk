@@ -37,7 +37,7 @@
   "shared_structure": "One App, one authoritative fixed pedestal, selected mechanical extending plaque rack, model-specific operation cassettes",
   "entry_refinement": "Clearly visible ivory curved cowl with real hinge support, rail deployment and physical plaques; latest HANDOFF overrides old thin pressure-strip wording.",
   "art_reference": "Atomic Heart",
-  "production_status": "F-focused 0.3.0: coupled constrained mechanics, wheel/linear input, dedicated calibration art assets and runtime/Blender animation. Finish F before refining the next upper assembly; seven other upper models remain first-pass.",
+  "production_status": "0.3.1: F retained, G received sequential dedicated refinement: persistent indexed leaves, geometric optical registration, hold-to-write, 3D memory relief and native/Blender animation. I/J/K/L/M/N remain first-pass; continue I only after the current G work/feedback.",
   "art_pipeline": "Every selected object needs visual motion/VFX keyframes and authored visual assets before final Godot integration. Pure Godot procedural placeholder effects are not accepted as final visual quality.",
   "additional_candidates_status": {
     "M": "v3 concept complete for review: orbiting planets -> infall -> devour -> reconstruction; same open hardware exploded sheet provided",
@@ -53,7 +53,7 @@
   "user_delivery_feedback": {
     "M": "Windows 0.2.2 exported EXE selection/input replay passed; user visual acceptance and Mac rebuild still pending.",
     "N": "Windows 0.2.2 exported EXE selection/input replay passed; user visual acceptance and Mac rebuild still pending.",
-    "all_except_B": "F received dedicated physical/visual reconstruction and validation; G I J K L M N await sequential upper-model refinement.",
+    "all_except_B": "F and G received dedicated physical/visual reconstruction and validation; I J K L M N await sequential upper-model refinement. Technical pass is separate from user visual acceptance.",
     "art_tool_permission": "User explicitly requires all future images through built-in image_gen; replaces the earlier Sunburst API preference."
   }
 }

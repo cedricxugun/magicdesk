@@ -1,0 +1,142 @@
+{
+  "actions": [],
+  "active": "G",
+  "angle": 0.0234597166666667,
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "buttons": [
+    719,
+    1042,
+    770,
+    1074,
+    843,
+    1099,
+    1028,
+    1107,
+    1112,
+    1089,
+    934,
+    1110,
+    1178,
+    1061
+  ],
+  "control_band": [
+    696.9560546875,
+    998.220703125,
+    509.875854492188,
+    138.589477539063
+  ],
+  "control_hits": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5
+  },
+  "drag_kind": 0,
+  "error": "",
+  "held": -1,
+  "load_metrics": {
+    "G_all_effect_pools_warmed": true,
+    "archive_started_ms": 2977,
+    "commit_base_ms": 4,
+    "commit_controls_ms": 6,
+    "commit_total_ms": 11,
+    "gpu_warm_ms": 107,
+    "id": "G",
+    "resource_ready_ms": 396,
+    "setup_ms": 224,
+    "started_ms": 45629,
+    "stow_started_ms": 945,
+    "total_ms": 8517
+  },
+  "module": {
+    "authored_fx": "res://assets/collection/art/G/optical_atlas.png",
+    "base_owned": false,
+    "burst": 0.0,
+    "controls": 8,
+    "explosion": 0.0,
+    "finite": true,
+    "id": "G",
+    "openness": 1.0,
+    "parts": 13
+  },
+  "play": {
+    "active": true,
+    "g_instrument": {
+      "actual": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "alignment": 1.0,
+      "bank_quality": [
+        1.0,
+        1.0
+      ],
+      "blocked": false,
+      "folds": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "optics": "world ray -> actual leaf plane -> bore radius AND collimator angle",
+      "peak_count": 1,
+      "peak_time": 2.06190766666667,
+      "pins": 1.0,
+      "projection": 1.0,
+      "ready_to_fold": false,
+      "records": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selected": 0,
+      "stage": "memory_relief",
+      "writers": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "writing": false
+    },
+    "gain": 1.0,
+    "values": {
+      "fold": 0.5,
+      "imprint": 0.0,
+      "leaf": 0.0
+    }
+  },
+  "power": 1.0,
+  "region_count": 9,
+  "requested": "",
+  "selector": 0.0,
+  "state": "idle",
+  "targets": [
+    {
+      "kind": "entry",
+      "x": 755.842834472656,
+      "y": 996.60791015625
+    }
+  ],
+  "time_ms": 71970,
+  "tooltip_rect": [
+    815.893920898438,
+    870.220703125,
+    272.000122070313,
+    100.0
+  ],
+  "tooltip_visible": false
+}

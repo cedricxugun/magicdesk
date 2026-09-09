@@ -17,6 +17,7 @@ func setup(owner:Node3D)->void:
 	definitions=JSON.parse_string(FileAccess.get_file_as_string("res://assets/collection/control_profiles.json")).models
 
 func profile(slot:int)->Dictionary:
+	if service.active_id=="G" and slot==3:return {"index":3,"key":"gauge","label":"光路对准表","gesture":"gauge","min":0.0,"max":1.0,"default":0.0,"readonly":true,"hint":"向右表示三页光孔已对准；折角回到中央可对准，再按住写入。"}
 	if service.active_id=="F" and slot==3:return {"index":3,"key":"gauge","label":"合衡表","gesture":"gauge","min":0.0,"max":1.0,"default":0.0,"readonly":true,"hint":"指针越靠左，平衡越稳定；稳定后自动校准。"}
 	if service.active_id!="B" and slot==3:return {"index":3,"key":"gauge","label":"状态仪表","gesture":"gauge","min":0.0,"max":1.0,"default":0.0,"readonly":true,"hint":"显示装置当前状态，无需点击"}
 	if service.active_id!="B" and slot==4:return {"index":4,"key":"service","label":"拆装拨杆","gesture":"service","axis":"x","min":-1.0,"max":1.0,"default":0.0,"hint":"向左拖动拆解，向右拖动组装；松手回中"}

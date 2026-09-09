@@ -62,7 +62,7 @@ func _collect(node:Node)->void:
 		meshes.append(node)
 		var body:=StaticBody3D.new();body.collision_layer=4;body.collision_mask=0
 		var shape:=CollisionShape3D.new()
-		if play.instrument:
+		if play.instrument or play.g_instrument:
 			# These shapes serve pointer picking, not mechanism dynamics. Avoid
 			# cooking hundreds of thousands of detail triangles on first select.
 			var box:=BoxShape3D.new();var bounds:AABB=node.mesh.get_aabb();box.size=bounds.size.max(Vector3.ONE*.002)
@@ -86,6 +86,12 @@ func _collect(node:Node)->void:
 			if original.roughness_texture:mat.set_shader_parameter("roughness_map",original.roughness_texture)
 			if original.normal_texture:mat.set_shader_parameter("normal_map",original.normal_texture)
 			mat.set_shader_parameter("coat",.38 if original.resource_name.contains("Ivory") else .10)
+			if play.g_instrument:
+				mat.set_shader_parameter("coat",.55 if original.resource_name.contains("Porcelain") else .12)
+				mat.set_shader_parameter("normal_depth",.065)
+				mat.set_shader_parameter("anisotropy_strength",.23 if original.metallic>.8 else 0.0)
+				if original.resource_name.contains("Signal"):
+					mat.set_shader_parameter("emission_color",Color(1,.57,.19));mat.set_shader_parameter("emission_energy",1.5);emissive_materials.append(mat)
 			if play.instrument:
 				mat.set_shader_parameter("roughness_scale",.88 if original.metallic>.8 else 1.0)
 				mat.set_shader_parameter("roughness_floor",.13 if original.metallic>.8 else .18)
@@ -162,6 +168,7 @@ func apply_pose()->void:
 		var lo:=int(f);var desired:Transform3D=c.samples[lo].interpolate_with(c.samples[mini(lo+1,c.samples.size()-1)],f-lo)
 		if c.node.transform!=desired:c.node.transform=desired
 	if play.instrument:_apply_f_kinematics()
+	if play.g_instrument:play.g_instrument.apply()
 	for m in motions:
 		var desired:Transform3D=m.home;desired.basis=m.home.basis*Basis(m.pose)
 		if m.node.transform!=desired:m.node.transform=desired

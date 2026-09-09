@@ -1,0 +1,56 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "misregistration_blocks_writer",
+      "detail": 0.0,
+      "passed": true
+    },
+    {
+      "check": "release_preserves_partial_record",
+      "detail": 0.307017543859649,
+      "passed": true
+    },
+    {
+      "check": "per_leaf_fold_recalled",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "other_leaf_fold_retained",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "earned_memory_relief",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "rewind_clears_pins_head_projection_before_fold",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "full_service_extraction",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "exact_reassembly",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "mid_open_reverse_returns_to_rest",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "signature_visited",
+      "detail": null,
+      "passed": true
+    }
+  ],
+  "offline_take_not_fps_benchmark": true
+}

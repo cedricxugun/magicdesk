@@ -1,0 +1,42 @@
+{
+  "version": "0.3.1 G",
+  "all_checks_passed": true,
+  "checks": {
+    "mechanism": true,
+    "endpoint": true,
+    "clearance": true,
+    "native": true
+  },
+  "native_errors": [],
+  "shutdown_exit_zero": true,
+  "all_frames": {
+    "frames": 4850,
+    "fps": 57.82,
+    "median_ms": 16.846,
+    "p95_ms": 26.527,
+    "maximum_ms": 236.415
+  },
+  "after_G_ready": {
+    "frames": 2295,
+    "fps": 59.66,
+    "median_ms": 16.631,
+    "p95_ms": 20.808,
+    "maximum_ms": 27.46
+  },
+  "performance_scope": "Native desktop compositor, RTX 3060, including original-speed 30 fps recording; startup separated from operation.",
+  "blender": {
+    "frames": 1441,
+    "fps": 30,
+    "optical_quads": 24,
+    "chips_glints": 64,
+    "relief_layers": 28,
+    "baked_from": "review/G_complete/mechanical_take.json"
+  },
+  "video": {
+    "path": "review/G_complete/native/G_showcase.mp4",
+    "trimmed_start_seconds": 34.409,
+    "speed": 1.0,
+    "source": "native compositor RGBA, app-owned native input replay"
+  },
+  "executable_sha256": "e608cc490c3e815381c1c6211bd81aa3b1bc6b6298d88825f85001361c647e01"
+}

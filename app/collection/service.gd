@@ -510,11 +510,16 @@ func _prepare(packed:PackedScene,definition:Dictionary,version:int)->void:
 	if candidate.play.instrument:
 		candidate.openness=1;candidate.play.instrument.physics.theta=candidate.play.instrument.physics.RELEASE;candidate.apply_pose()
 		candidate.effect.f_visuals.force_warm=true;candidate.effect.tick(0)
+	if candidate.play.g_instrument:
+		candidate.openness=1;candidate.apply_pose();candidate.effect.g_visuals.force_warm=true;candidate.effect.tick(0)
 	for i in range(4):await RenderingServer.frame_post_draw
 	if candidate.play.instrument:
 		candidate.openness=0;candidate.play.instrument.physics.transport(0,0,10);candidate.apply_pose()
 		candidate.effect.f_visuals.force_warm=false;candidate.effect.tick(0)
 		load_metrics["F_all_effect_pools_warmed"]=true
+	if candidate.play.g_instrument:
+		candidate.openness=0;candidate.apply_pose();candidate.effect.g_visuals.force_warm=false;candidate.effect.tick(0)
+		load_metrics["G_all_effect_pools_warmed"]=true
 	load_metrics.gpu_warm_ms=Time.get_ticks_msec()-gpu_started
 	if version!=ticket or closing:
 		candidate.queue_free();warming.queue_free()
@@ -687,6 +692,7 @@ func tick(delta:float)->void:
 	seam.visible=not hit.is_empty() or selector_amount>.01 or state!="idle" or intro_pending
 	for c in custom_controls:
 		if int(c.index)==3 and current:c["input_value"]=current.play.gauge_value()
+		if active_id=="G" and int(c.index)==2 and current:c["input_value"]=current.play.number("fold")
 		if not control_driver.held(int(c.index)):c.press=move_toward(c.press,0,delta*4)
 		if c.node.transform!=c.home:c.node.transform=c.home
 		c.turn=move_toward(c.turn,c.turn_target,delta*4)

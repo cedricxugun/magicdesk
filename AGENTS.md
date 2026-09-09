@@ -1,5 +1,7 @@
 # MagicDesk 制作约定
 
+- 当前已继续完成 G 专项制作流程，来源在 `production/G_complete/`、`G_complete.blend` 与对应 GLB，运行时专用 `g_instrument/g_visuals`。新轮次先看 HANDOFF 顶部与 G 实机反馈；下一款是 I，不要重复从旧 G 灰模开始。测试通过不能代替用户的视觉验收。
+
 - 最新用户优先级：先把 F 的物理、操作手感、模型和完整特效做好，再做下一款；不要凭基础接口/测试通过宣称达到 AAA。F 的最新来源在 `production/F_complete/`、`F_complete.blend` 与对应 GLB。新轮次先读 HANDOFF 顶部，旧 F/F_refined 保留。
 
 - 2026-09-09 用户最新决定：只使用订阅自带的内置生图。图稿与视觉资产使用内置 `image_gen`；不要调用、查询、探测或使用任何 apilink 服务或外部图片 API。不得把内置工具的输出声称为已指定某个不可验证的底层模型。

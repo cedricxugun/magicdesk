@@ -1,0 +1,8 @@
+{
+  "all_passed": true,
+  "frames": 165,
+  "actual_porcelain_meshes": 8,
+  "method": "evaluated world-space triangle BVH, epsilon 0.02 mm",
+  "scope": "leaf/leaf and cover/leaf through unfold, selected fold, rewind, extraction and reassembly; intentional metal bearings excluded",
+  "failures": []
+}

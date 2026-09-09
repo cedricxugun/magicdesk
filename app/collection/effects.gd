@@ -29,9 +29,13 @@ var throat_pose_a:=Transform3D()
 var throat_pose_b:=Transform3D()
 var capillaries:Array[ShaderMaterial]=[]
 var f_visuals:Node3D
+var g_visuals:Node3D
 
 func setup(owner:Node3D)->void:
 	module=owner
+	if module.play.g_instrument:
+		g_visuals=load("res://collection/g_visuals.gd").new();add_child(g_visuals);g_visuals.setup(module);g_visuals.tick(0,0)
+		atlas=g_visuals.atlas;return
 	if module.play.instrument:
 		f_visuals=load("res://collection/f_visuals.gd").new();add_child(f_visuals);f_visuals.setup(module);f_visuals.tick(0,0)
 		atlas=f_visuals.atlas
@@ -81,6 +85,7 @@ func request_quiet()->void:
 	if probe_t>.001:probe_running=false;probe_returning=true
 
 func ready_to_fold()->bool:
+	if g_visuals:return quiet and quiet_gain<.001 and module.play.g_instrument.ready_to_fold()
 	if f_visuals:return quiet and quiet_gain<.001 and module.play.instrument.ready_to_fold()
 	return quiet and quiet_gain<.001 and not probe_returning
 
@@ -91,6 +96,9 @@ func _socket(key:String)->Node3D:
 	return module.named(str(module.data.sockets[key]))
 
 func tick(delta:float)->void:
+	if g_visuals:
+		quiet_gain=move_toward(quiet_gain,0.0 if quiet else 1.0,delta*1.8)
+		g_visuals.tick(delta,quiet_gain);return
 	if f_visuals:
 		quiet_gain=move_toward(quiet_gain,0.0 if quiet else 1.0,delta*1.8)
 		f_visuals.tick(delta,quiet_gain);return

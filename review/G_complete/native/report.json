@@ -1,0 +1,77 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "dedicated_G_mechanism_loaded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "every_controller_hittable",
+      "passed": true,
+      "detail": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "help_above_entire_row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wheel_hides_hint_immediately",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wheel_indexes_page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "misalignment_blocks_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "release_stops_and_preserves_partial_record",
+      "passed": true,
+      "detail": 0.298233684210527
+    },
+    {
+      "check": "page_local_fold_and_record_recall",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "complete_record_earns_relief",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assemble_rewinds_without_exiting",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "service_explodes_mechanism",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exact_reassembly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "shutdown_from_opening_requested",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "input_path": "native form input replay -> bridge -> projected 3D controls"
+}

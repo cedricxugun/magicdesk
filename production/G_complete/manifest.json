@@ -1,0 +1,20 @@
+{
+  "channel": "subscription built-in image_gen",
+  "model_id": "not exposed; unverified",
+  "files": [
+    {
+      "path": "production/G_complete/images/G_motion_vfx.png",
+      "sha256": "5309bc649c0533dd6c1e0b70ada0a750b9c1bee156e65b0d8669cceb29e74f7f"
+    },
+    {
+      "path": "app/assets/collection/art/G/optical_atlas.png",
+      "sha256": "67f21093ea8e6e024bec9cdb1c38d439c692a131b4cd3fb3a6b386c8f81eedf9"
+    }
+  ],
+  "prompts": [
+    "production/G_complete/prompts/motion.txt",
+    "production/G_complete/prompts/atlas.txt"
+  ],
+  "audio_source": "tools/make_g_inscription.py; original PCM comb-tone synthesis",
+  "volumetric_geometry": "blender/collection/complete_g.py, 28 authored contour layers; not a flat image projection"
+}

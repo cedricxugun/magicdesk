@@ -54,8 +54,8 @@
       "id": "G",
       "title": "折维书匣",
       "legacy": false,
-      "scene": "res://assets/collection/models/G.glb",
-      "metadata": "res://assets/collection/models/G.json",
+      "scene": "res://assets/collection/models/G_complete.glb",
+      "metadata": "res://assets/collection/models/G_complete.json",
       "thumbnail": "res://assets/collection/thumbs/G.png",
       "actions": [
         "唤醒 / 休眠",

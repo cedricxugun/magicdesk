@@ -63,3 +63,12 @@ review/F_complete/final/collection_probe.json
 review/F_complete/final/F_native_full.mp4
 review/F_complete/live/
 review/interaction_native/final_smoke/performance.json
+
+# G regenerated motion samples, unedited raw recording, temporary live commands.
+review/G_complete/mechanical_take.json
+review/G_complete/frame_*.png
+review/G_complete/memory_relief.png
+review/G_complete/native/commands.txt
+review/G_complete/native/collection_probe.json
+review/G_complete/native/G_native_full.mp4
+review/G_complete/live/

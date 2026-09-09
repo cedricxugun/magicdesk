@@ -6,6 +6,7 @@ var module:Node3D
 var active:=false
 var gain:=0.0
 var instrument:RefCounted
+var g_instrument:RefCounted
 var values:Dictionary={}
 var response:Dictionary={"angle":.22,"velocity":0.0,"balance":0.0,"pressure":0.0,"echo":0.0,"echo_delay":-1.0,"imprint":0.0,"growth":[.15,.15,.15],"ink":0.0,"feed_motion":0.0,"aim":Vector2.ZERO,"focus_quality":0.0,"capture_age":-1.0,"captured_floor":0.0,"rebuild":-1.0,"probe_target":0.0}
 
@@ -16,6 +17,8 @@ func setup(owner:Node3D)->void:
 		values[item.key]=Vector2(item.default[0],item.default[1]) if item.default is Array else float(item.default)
 	if module.data.id=="F" and module.data.has("f_physics"):
 		instrument=load("res://collection/f_instrument.gd").new();instrument.setup(module)
+	if module.data.id=="G" and module.data.has("g_mechanism"):
+		g_instrument=load("res://collection/g_instrument.gd").new();g_instrument.setup(module)
 
 func value(key:String)->Variant:return values.get(key,0.0)
 func number(key:String)->float:return float(values.get(key,0.0))
@@ -24,6 +27,7 @@ func input(key:String,requested:Variant,event:String)->void:
 	var before:Variant=values.get(key,0.0)
 	values[key]=requested
 	if instrument:instrument.changed(key,before,requested,event)
+	if g_instrument:g_instrument.changed(key,before,requested,event)
 	if event=="cancel":return
 	if key=="service":
 		if event=="change" and float(requested)<-.55 and float(before)>=-.55:module.activate(3)
@@ -55,6 +59,8 @@ func input(key:String,requested:Variant,event:String)->void:
 				else:module.stow()
 
 func tick(delta:float)->void:
+	if g_instrument:
+		g_instrument.tick(delta);gain=module.openness;response.imprint=g_instrument.records[g_instrument.selected];return
 	if instrument:
 		instrument.tick(delta)
 		gain=move_toward(gain,1.0 if module.openness>.99 and not module.stowing else 0.0,delta*2.5)
@@ -103,6 +109,7 @@ func tick(delta:float)->void:
 			response.probe_target=minf(number("probe"),.14 if aligned<.8 else 1.0)
 
 func pose_fraction(name:String,base:float)->float:
+	if g_instrument:return base
 	if instrument:return base
 	if gain<=.001:return base
 	var desired:=base
@@ -128,10 +135,12 @@ func motion_angle(name:String,fallback:float)->float:
 	return lerpf(fallback,target,gain)
 
 func diagnostics()->Dictionary:
+	if g_instrument:return {"active":active,"values":values.duplicate(),"gain":gain,"g_instrument":g_instrument.diagnostics()}
 	if instrument:return {"active":active,"values":values.duplicate(),"response":response.duplicate(true),"gain":gain,"instrument":instrument.diagnostics()}
 	return {"active":active,"values":values.duplicate(),"response":response.duplicate(true),"gain":gain,"art_status":"interaction prototype; revised geometry pending per-device art review"}
 
 func gauge_value()->float:
+	if g_instrument:return g_instrument.alignment
 	match str(module.data.id):
 		"F":return float(response.balance)
 		"G":return float(response.imprint)

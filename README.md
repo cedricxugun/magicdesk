@@ -1,5 +1,9 @@
 # MagicDesk · 桌面机械装置
 
+**0.3.1 · G 折维书匣：** 六页独立选页与折角、真实通孔对准、按住刻写/松手续写、三维记忆浮雕及逆序回收。已提供完整 Blender 源动画、Windows EXE、实际运行录像和验证资料。
+
+[G 图稿与实机对照](production/G_complete/index.html) · [G 操作与制作说明](production/G_complete/README.md) · [G 机构和光学定义](production/G_complete/MECHANISM.md) · [运行 MagicDesk](dist/MagicDesk.exe)
+
 **0.3.0 · F 专项更新：** 闭合四连杆与双悬挂动力学、摩擦制动、滚轮/直线拖动、提示避让，以及与物理稳定关联的完整校准演出。Blender 和运行时使用同一套运动数据；其余装置的上部精修仍按款推进。
 
 [查看 F 图稿与实机对照](production/F_complete/index.html) · [F 制作与操作说明](production/F_complete/README.md) · [物理定义](production/F_complete/PHYSICS.md) · [F Blender 源文件](blender/collection/F_complete.blend)

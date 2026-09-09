@@ -1,0 +1,29 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "finished": 1.0,
+      "passed": true,
+      "peaks": 1,
+      "start": 0.9989
+    },
+    {
+      "finished": 1.0,
+      "passed": true,
+      "peaks": 1,
+      "start": 0.99901
+    },
+    {
+      "finished": 1.0,
+      "passed": true,
+      "peaks": 1,
+      "start": 0.99996
+    },
+    {
+      "finished": 1.0,
+      "passed": true,
+      "peaks": 1,
+      "start": 0.9999999
+    }
+  ]
+}

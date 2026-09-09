@@ -16,8 +16,8 @@ using System.Windows.Forms;
 [assembly: AssemblyTitle("MagicDesk · 机械藏品")]
 [assembly: AssemblyProduct("MagicDesk")]
 [assembly: AssemblyDescription("Original interactive 3D mechanical desktop sculpture")]
-[assembly: AssemblyVersion("0.3.0.0")]
-[assembly: AssemblyFileVersion("0.3.0.0")]
+[assembly: AssemblyVersion("0.3.1.0")]
+[assembly: AssemblyFileVersion("0.3.1.0")]
 
 internal static class Native {
     [StructLayout(LayoutKind.Sequential)] public struct POINT { public int X,Y; public POINT(int x,int y){X=x;Y=y;} }
