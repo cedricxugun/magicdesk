@@ -88,6 +88,10 @@ func _collect(node:Node)->void:
 			mat.set_shader_parameter("coat",.38 if original.resource_name.contains("Ivory") else .10)
 			if play.g_instrument:
 				mat.set_shader_parameter("coat",.55 if original.resource_name.contains("Porcelain") else .12)
+				if original.resource_name.contains("OpticalGlass"):
+					mat.set_shader_parameter("coat",.65);mat.set_shader_parameter("roughness_floor",.08)
+				if original.resource_name.contains("PlayerPorcelain"):mat.set_shader_parameter("coat",.55)
+				if original.resource_name.contains("RecordBlack"):mat.set_shader_parameter("record_vinyl",true)
 				mat.set_shader_parameter("normal_depth",.065)
 				mat.set_shader_parameter("anisotropy_strength",.23 if original.metallic>.8 else 0.0)
 				if original.resource_name.contains("Signal"):
@@ -147,11 +151,11 @@ func tick(delta:float,enabled_power:float)->void:
 	# Fold before extracting, reassemble before opening. The two operations
 	# cannot fight over the same assembly during interrupted actions.
 	if explode_target>0:
-		openness=move_toward(openness,0,delta*.55)
+		openness=move_toward(openness,0,delta*(1.5 if data.has("record_player") else .55))
 		if openness<=.001 and _motion_neutral():explosion=move_toward(explosion,1,delta*.42)
 	else:
 		explosion=move_toward(explosion,0,delta*.50)
-		if explosion<=.001:openness=move_toward(openness,open_target,delta*.42)
+		if explosion<=.001:openness=move_toward(openness,open_target,delta*(1.5 if data.has("record_player") else .42))
 	if pending_burst and openness>.999 and explosion<.001:
 		pending_burst=false;burst=7.0
 		if effect:effect.trigger_burst()

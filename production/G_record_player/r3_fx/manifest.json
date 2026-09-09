@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-10",
+  "status": "four dedicated VFX boards and two generated texture assets; not integrated in model or EXE",
+  "channel": "subscription built-in image_gen",
+  "backend_model": "not exposed; unverified",
+  "design": "README.md",
+  "prompts": "prompts.json",
+  "superseded": [
+    "04_recovery_draft.png"
+  ],
+  "files": [
+    {
+      "path": "01_optical_capture.png",
+      "width": 1942,
+      "height": 809,
+      "mode": "RGB",
+      "sha256": "c68a2fe58729ab580b51df24db1265099e9e96756809e097d0ed573e0b643f93",
+      "bytes": 1750844
+    },
+    {
+      "path": "02_groove_decode.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "sha256": "b91a80f04fd4a5dab7af30c92fe633618ab3278926eb6ebdf6bb94e7bd5d4424",
+      "bytes": 1884995
+    },
+    {
+      "path": "03_materialization.png",
+      "width": 1942,
+      "height": 809,
+      "mode": "RGB",
+      "sha256": "e969ab766855007762af58f8a5ec5f3bd94deab88abc3d9ca86068d59009e933",
+      "bytes": 2218055
+    },
+    {
+      "path": "04_safe_recovery.png",
+      "width": 1942,
+      "height": 809,
+      "mode": "RGB",
+      "sha256": "00b0c342845b31e08ed9c68cf30befb566d51e15925e18a13e91d002aba28fbf",
+      "bytes": 1778389
+    },
+    {
+      "path": "assets/field_strands.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "sha256": "67660a1e9139da090be47276618a608e12f92aa2306924cf72dfe82a4e64bebb",
+      "bytes": 1019387,
+      "runtime_copy": "app\\assets\\collection\\art\\G_AI\\field_strands.png",
+      "runtime_integrated": false,
+      "texture_semantics": "black-backed monochrome intensity mask; not alpha footage"
+    },
+    {
+      "path": "assets/groove_traces.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "sha256": "ee0016bdb3b780950bb9b86c043d8bc974b2a2a80825812881eb1047ed4bbcce",
+      "bytes": 965824,
+      "runtime_copy": "app\\assets\\collection\\art\\G_AI\\groove_traces.png",
+      "runtime_integrated": false,
+      "texture_semantics": "black-backed monochrome intensity mask; not alpha footage"
+    }
+  ]
+}

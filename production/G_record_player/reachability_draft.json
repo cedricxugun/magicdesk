@@ -1,0 +1,81 @@
+{
+  "scope": "Analytic 2D reach only; not 3D collision validation",
+  "all_reachable": true,
+  "poses": [
+    {
+      "stage": "pick_tcp",
+      "tcp": [
+        -0.1926,
+        1.245
+      ],
+      "reachable": true,
+      "reach": 0.6633971359600522,
+      "elbow": [
+        -0.13668062429610062,
+        1.922696852155067
+      ],
+      "shoulder_deg": 33.554976245573776,
+      "elbow_deg": -118.83796688895346
+    },
+    {
+      "stage": "lift_tcp",
+      "tcp": [
+        -0.1926,
+        1.575
+      ],
+      "reachable": true,
+      "reach": 0.5726218298318708,
+      "elbow": [
+        0.1567378410866351,
+        2.1584064387585458
+      ],
+      "shoulder_deg": 68.89364676654768,
+      "elbow_deg": -127.98090109625971
+    },
+    {
+      "stage": "flip_clear",
+      "tcp": [
+        -0.2,
+        1.7
+      ],
+      "reachable": true,
+      "reach": 0.592283715798434,
+      "elbow": [
+        0.2711095661475647,
+        2.1903629030465632
+      ],
+      "shoulder_deg": 79.88469330652518,
+      "elbow_deg": -126.03187907247056
+    },
+    {
+      "stage": "over_platter",
+      "tcp": [
+        -0.72,
+        1.7
+      ],
+      "reachable": true,
+      "reach": 1.1065260954898444,
+      "elbow": [
+        -0.09801734511017379,
+        1.9748410031567403
+      ],
+      "shoulder_deg": 39.55661216003085,
+      "elbow_deg": -63.39623541055278
+    },
+    {
+      "stage": "place_tcp",
+      "tcp": [
+        -0.72,
+        1.035
+      ],
+      "reachable": true,
+      "reach": 1.227609465587489,
+      "elbow": [
+        -0.23637141171458487,
+        1.5130202805248503
+      ],
+      "shoulder_deg": -6.2018701843338855,
+      "elbow_deg": -38.463986312410555
+    }
+  ]
+}

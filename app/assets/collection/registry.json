@@ -52,16 +52,16 @@
     },
     {
       "id": "G",
-      "title": "折维书匣",
+      "title": "六瓣换片机",
       "legacy": false,
-      "scene": "res://assets/collection/models/G_complete.glb",
-      "metadata": "res://assets/collection/models/G_complete.json",
+      "scene": "res://assets/collection/models/G_record_player.glb",
+      "metadata": "res://assets/collection/models/G_record_player.json",
       "thumbnail": "res://assets/collection/thumbs/G.png",
       "actions": [
         "唤醒 / 休眠",
-        "折维 / 合匣",
-        "重写空间",
-        "拆解书匣",
+        "取片 / 归片",
+        "当前藏品演示",
+        "唱片慢转 / 停转",
         "重新组装",
         "旋转 / 暂停",
         "收拢并退出"

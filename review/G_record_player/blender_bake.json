@@ -1,0 +1,12 @@
+{
+  "frames": 3523,
+  "fps": 30,
+  "animated_objects": 111,
+  "optical_layers": 4,
+  "glints": 32,
+  "specimens": 6,
+  "physical_controls": 5,
+  "model_sha256": "f4ce5e3453a61d17db169bba97c78405f67ff668da1a55f886e2b5347e2dcee7",
+  "metadata_sha256": "99a597c1b228c078d596a75f9f2962c4add6b60f8a616d136db4e1944cdc2f78",
+  "print_method": "platter-local height shader; fixed object scale"
+}

@@ -105,7 +105,7 @@ func apply()->void:
 		leaf.writer.position.y=.50-writers[i]
 		leaf.pin.position.z=.025*pins*side
 		for rod in leaf.supports:
-			var a:Vector3=rod.anchor;var end:Vector3=leaf.node.position+Vector3(side*.06,float(rod.height),0)
+			var a:Vector3=rod.anchor;var end:Vector3=leaf.node.transform*Vector3(side*.06,float(rod.height),0)
 			var v:Vector3=end-a
 			rod.node.transform=Transform3D(Basis(Quaternion(Vector3.UP,v.normalized()))*Basis.from_scale(Vector3(1,v.length(),1)),(a+end)*.5)
 	for cover in covers:

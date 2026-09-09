@@ -53,7 +53,7 @@ try:
     v=probe();check('wheel_hides_hint_immediately',not v['tooltip_visible'])
     v=wait(lambda x:x['module']['openness']>.999)
     if a.select_only:
-        point('down',paddle);time.sleep(4.5);point('up',paddle);command('rotation');print('G_READY_FOR_USER',flush=True);raise SystemExit(0)
+        print('G_READY_FOR_USER_PAUSED',flush=True);raise SystemExit(0)
     check('wheel_indexes_page',state(v)['selected']==0)
     drag(fold,55);time.sleep(.75);point('down',paddle);time.sleep(.7);v=probe()
     check('misalignment_blocks_record',state(v)['blocked'] and state(v)['records'][0]==0);capture('03_misregistered');point('up',paddle)

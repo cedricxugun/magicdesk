@@ -1,0 +1,26 @@
+{
+  "status": "design revision after explicit rejection of first runtime; AI geometry and new VFX not integrated",
+  "channel": "subscription built-in image_gen",
+  "backend_model": "not exposed; unverified",
+  "current_images": [
+    "AI_optical_curator_hero.png",
+    "AI_print_peak_correct_scale.png",
+    "AI_iris_personality.png"
+  ],
+  "runtime_texture": "app/assets/collection/art/G_AI/optical_field_atlas.png",
+  "texture_integrated": false,
+  "rejected_drafts": [
+    "draft_print_bad_disc_scale.png",
+    "superseded_claw_proportion_study.png"
+  ],
+  "source_prompts": "prompts.json",
+  "design": "ART_AND_BEHAVIOR.md",
+  "dimensions": {
+    "unchanged_base_diameter": 2.74,
+    "unchanged_base_height": 0.670608,
+    "target_record_diameter": 0.84,
+    "target_platter_diameter": 0.9,
+    "requires_geometric_validation": true
+  },
+  "controls": "physical console only; no floating panel"
+}

@@ -1,0 +1,307 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "page_1_auto_reads_own_specimen",
+      "detail": {
+        "action_count": 0,
+        "action_energy": 0.0,
+        "display_amount": 1.0,
+        "loaded_index": 0,
+        "parameters": [
+          0.5,
+          0.75,
+          0.5,
+          0.35,
+          0.5,
+          0.7
+        ],
+        "platform_amount": 1.0,
+        "playback_paused": false,
+        "presentation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "read_progress": 1.0,
+        "ready_to_fold": false,
+        "selected": 0,
+        "stage": "playing",
+        "times": [
+          4.32499999999999,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "title": "发条钟塔",
+        "workflow": "open book -> physically present selected media -> extend platen -> read -> reconstruct -> play"
+      },
+      "passed": true
+    },
+    {
+      "check": "page_1_own_action_responds",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "page_2_auto_reads_own_specimen",
+      "detail": {
+        "action_count": 1,
+        "action_energy": 0.0,
+        "display_amount": 1.0,
+        "loaded_index": 1,
+        "parameters": [
+          0.2,
+          0.75,
+          0.5,
+          0.35,
+          0.5,
+          0.7
+        ],
+        "platform_amount": 1.0,
+        "playback_paused": false,
+        "presentation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "read_progress": 1.0,
+        "ready_to_fold": false,
+        "selected": 1,
+        "stage": "playing",
+        "times": [
+          12.65,
+          0.925,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "title": "瓷翼机械蝶",
+        "workflow": "open book -> physically present selected media -> extend platen -> read -> reconstruct -> play"
+      },
+      "passed": true
+    },
+    {
+      "check": "page_2_own_action_responds",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "page_3_auto_reads_own_specimen",
+      "detail": {
+        "action_count": 2,
+        "action_energy": 0.0,
+        "display_amount": 1.0,
+        "loaded_index": 2,
+        "parameters": [
+          0.2,
+          0.8,
+          0.5,
+          0.35,
+          0.5,
+          0.7
+        ],
+        "platform_amount": 1.0,
+        "playback_paused": false,
+        "presentation": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "read_progress": 1.0,
+        "ready_to_fold": false,
+        "selected": 2,
+        "stage": "playing",
+        "times": [
+          12.65,
+          9.25,
+          0.925,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "title": "潮汐帆船",
+        "workflow": "open book -> physically present selected media -> extend platen -> read -> reconstruct -> play"
+      },
+      "passed": true
+    },
+    {
+      "check": "page_3_own_action_responds",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "page_4_auto_reads_own_specimen",
+      "detail": {
+        "action_count": 3,
+        "action_energy": 0.0,
+        "display_amount": 1.0,
+        "loaded_index": 3,
+        "parameters": [
+          0.2,
+          0.8,
+          0.2,
+          0.35,
+          0.5,
+          0.7
+        ],
+        "platform_amount": 1.0,
+        "playback_paused": false,
+        "presentation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "read_progress": 1.0,
+        "ready_to_fold": false,
+        "selected": 3,
+        "stage": "playing",
+        "times": [
+          12.65,
+          9.25,
+          9.25,
+          0.925,
+          0.0,
+          0.0
+        ],
+        "title": "发条花园",
+        "workflow": "open book -> physically present selected media -> extend platen -> read -> reconstruct -> play"
+      },
+      "passed": true
+    },
+    {
+      "check": "page_4_own_action_responds",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "page_5_auto_reads_own_specimen",
+      "detail": {
+        "action_count": 4,
+        "action_energy": 0.0,
+        "display_amount": 1.0,
+        "loaded_index": 4,
+        "parameters": [
+          0.2,
+          0.8,
+          0.2,
+          0.8,
+          0.5,
+          0.7
+        ],
+        "platform_amount": 1.0,
+        "playback_paused": false,
+        "presentation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "read_progress": 1.0,
+        "ready_to_fold": false,
+        "selected": 4,
+        "stage": "playing",
+        "times": [
+          12.65,
+          9.25,
+          9.25,
+          9.25,
+          0.925,
+          0.0
+        ],
+        "title": "三环星轨仪",
+        "workflow": "open book -> physically present selected media -> extend platen -> read -> reconstruct -> play"
+      },
+      "passed": true
+    },
+    {
+      "check": "page_5_own_action_responds",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "page_6_auto_reads_own_specimen",
+      "detail": {
+        "action_count": 5,
+        "action_energy": 0.0,
+        "display_amount": 1.0,
+        "loaded_index": 5,
+        "parameters": [
+          0.2,
+          0.8,
+          0.2,
+          0.8,
+          0.2,
+          0.7
+        ],
+        "platform_amount": 1.0,
+        "playback_paused": false,
+        "presentation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "read_progress": 1.0,
+        "ready_to_fold": false,
+        "selected": 5,
+        "stage": "playing",
+        "times": [
+          12.65,
+          9.25,
+          9.25,
+          9.25,
+          9.25,
+          0.493333333333333
+        ],
+        "title": "回环阶梯",
+        "workflow": "open book -> physically present selected media -> extend platen -> read -> reconstruct -> play"
+      },
+      "passed": true
+    },
+    {
+      "check": "page_6_own_action_responds",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "sleep_is_fully_closed_and_platen_retracted",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "complete_service_disassembly",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "interrupted_opening_returns_to_sealed_sleep",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "read_reconstruct_and_closure_order",
+      "detail": [],
+      "passed": true
+    }
+  ]
+}

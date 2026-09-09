@@ -1,0 +1,232 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "no_floating_operator_panel",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_five_physical_controls_hittable",
+      "passed": true,
+      "detail": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "hover_has_no_tooltip_or_toast",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "physical_power_wakes_selected_media",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "physical_stop_stays_stopped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "physical_start_resumes_slow_turn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dial_tap_selects_next",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wheel_selects_previous",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_1_original_disc_on_platter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_1_parameter_wheel",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manipulation_stops_spin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_1_pressure_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "release_outside_control_recovers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_2_original_disc_on_platter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_2_parameter_wheel",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manipulation_stops_spin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_2_pressure_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "release_outside_control_recovers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_3_original_disc_on_platter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_3_parameter_wheel",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manipulation_stops_spin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_3_pressure_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "release_outside_control_recovers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_4_original_disc_on_platter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_4_parameter_wheel",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manipulation_stops_spin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_4_pressure_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "release_outside_control_recovers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_5_original_disc_on_platter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_5_parameter_wheel",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manipulation_stops_spin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_5_pressure_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "release_outside_control_recovers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_6_original_disc_on_platter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_6_parameter_wheel",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manipulation_stops_spin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "media_6_pressure_action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "release_outside_control_recovers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "six_to_one_wraps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "one_to_six_wraps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tap_left_returns_media_then_disassembles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tap_right_assembles_without_quitting",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "physical_power_returns_and_sleeps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "physical_close_during_pick_requested",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "input_path": "native desktop form -> bridge -> physical console raycast; no Canvas controls"
+}

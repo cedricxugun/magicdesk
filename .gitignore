@@ -72,3 +72,19 @@ review/G_complete/native/commands.txt
 review/G_complete/native/collection_probe.json
 review/G_complete/native/G_native_full.mp4
 review/G_complete/live/
+
+# Archive rework captures are regenerated; selected evidence remains tracked.
+review/G_archive/archive_take.json
+review/G_archive/native/commands.txt
+review/G_archive/native/collection_probe.json
+review/G_archive/native/G_archive_full.mp4
+review/G_archive/live/
+
+# Regenerable record-player takes and machine-local preview/input channels.
+review/G_record_player/record_take.json
+review/G_record_player/blender_control.json
+review/G_record_player/blender_ack.json
+review/G_record_player/native_console/commands.txt
+review/G_record_player/native_console/collection_probe.json
+review/G_record_player/native_console/.*.recording-*.mp4
+review/G_record_player/live/

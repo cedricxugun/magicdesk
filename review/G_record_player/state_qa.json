@@ -1,0 +1,331 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "record_1_load_read_print",
+      "detail": "playing",
+      "passed": true
+    },
+    {
+      "check": "record_1_only_its_slot_empty",
+      "detail": [
+        "platter",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot"
+      ],
+      "passed": true
+    },
+    {
+      "check": "record_2_load_read_print",
+      "detail": "playing",
+      "passed": true
+    },
+    {
+      "check": "record_2_only_its_slot_empty",
+      "detail": [
+        "slot",
+        "platter",
+        "slot",
+        "slot",
+        "slot",
+        "slot"
+      ],
+      "passed": true
+    },
+    {
+      "check": "record_3_load_read_print",
+      "detail": "playing",
+      "passed": true
+    },
+    {
+      "check": "record_3_only_its_slot_empty",
+      "detail": [
+        "slot",
+        "slot",
+        "platter",
+        "slot",
+        "slot",
+        "slot"
+      ],
+      "passed": true
+    },
+    {
+      "check": "record_4_load_read_print",
+      "detail": "playing",
+      "passed": true
+    },
+    {
+      "check": "record_4_only_its_slot_empty",
+      "detail": [
+        "slot",
+        "slot",
+        "slot",
+        "platter",
+        "slot",
+        "slot"
+      ],
+      "passed": true
+    },
+    {
+      "check": "record_5_load_read_print",
+      "detail": "playing",
+      "passed": true
+    },
+    {
+      "check": "record_5_only_its_slot_empty",
+      "detail": [
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "platter",
+        "slot"
+      ],
+      "passed": true
+    },
+    {
+      "check": "record_6_load_read_print",
+      "detail": "playing",
+      "passed": true
+    },
+    {
+      "check": "record_6_only_its_slot_empty",
+      "detail": [
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "platter"
+      ],
+      "passed": true
+    },
+    {
+      "check": "sixty_second_turn_rate",
+      "detail": 1.04719755119658,
+      "passed": true
+    },
+    {
+      "check": "stop_remains_stopped",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "sleep_returns_all_original_records",
+      "detail": [
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot"
+      ],
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_indexing",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_approaching_record",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_lowering_gripper",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_clamping_record",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_lifting_record",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_levelling_record",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_carrying_record",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_placing_record",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_releasing_record",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_clearing_platter",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_parking_gripper",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_positioning_tonearm",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_lowering_tonearm",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_reading",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_lifting_tonearm",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_parking_tonearm",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_printing",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_playing",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_erasing",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_braking_record",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_return_approach",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_return_lower_gripper",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_return_clamp",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_return_lift",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_return_unwind",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_return_carry",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_return_tilt",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_return_to_slot",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_return_release",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_return_clear",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_return_park",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "safe_exit_from_parking_magazine",
+      "detail": "sleep",
+      "passed": true
+    },
+    {
+      "check": "continuous_ownership_reach_and_print_gates",
+      "detail": [],
+      "passed": true
+    }
+  ],
+  "stages": [
+    "indexing",
+    "approaching_record",
+    "lowering_gripper",
+    "clamping_record",
+    "lifting_record",
+    "levelling_record",
+    "carrying_record",
+    "placing_record",
+    "releasing_record",
+    "clearing_platter",
+    "parking_gripper",
+    "positioning_tonearm",
+    "lowering_tonearm",
+    "reading",
+    "lifting_tonearm",
+    "parking_tonearm",
+    "printing",
+    "playing",
+    "erasing",
+    "braking_record",
+    "return_approach",
+    "return_lower_gripper",
+    "return_clamp",
+    "return_lift",
+    "return_unwind",
+    "return_carry",
+    "return_tilt",
+    "return_to_slot",
+    "return_release",
+    "return_clear",
+    "return_park",
+    "sleep",
+    "parking_magazine",
+    "return_safe_lift",
+    "return_carry_home"
+  ]
+}

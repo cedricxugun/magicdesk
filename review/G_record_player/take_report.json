@@ -1,0 +1,39 @@
+{
+  "all_played": true,
+  "frames": 3523,
+  "owners": [
+    "slot",
+    "slot",
+    "slot",
+    "slot",
+    "slot",
+    "slot"
+  ],
+  "settled": true,
+  "visited": [
+    {
+      "id": 1,
+      "played": true
+    },
+    {
+      "id": 0,
+      "played": true
+    },
+    {
+      "id": 2,
+      "played": true
+    },
+    {
+      "id": 3,
+      "played": true
+    },
+    {
+      "id": 4,
+      "played": true
+    },
+    {
+      "id": 5,
+      "played": true
+    }
+  ]
+}

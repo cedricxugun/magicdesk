@@ -1,0 +1,23 @@
+{
+  "status": "first runtime art rejected; current revision is spherical AI optical curator concept and VFX assets, not yet integrated",
+  "current_revision": "production/G_record_player/r2/manifest.json",
+  "current_effects": "production/G_record_player/r3_fx/manifest.json",
+  "channel": "subscription built-in image_gen",
+  "model_id": "not exposed; unverified",
+  "images": [
+    {
+      "path": "production/G_record_player/images/G_record_rest_read.png",
+      "sha256": "9736cac3f202b2430edf0b4d7c883bf2d7bb1f37a5af0c1ba5e0f8d0ff8c30bd"
+    },
+    {
+      "path": "production/G_record_player/images/G_print_sequence.png",
+      "sha256": "a1386eef27c3248a0a554ab79b1d9d292c91f84c76979b2e7201abf5ae95cb08"
+    }
+  ],
+  "rotation": {
+    "seconds_per_turn": 60,
+    "degrees_per_second": 6,
+    "shared_disc_specimen_pivot": true
+  },
+  "previous_book": "paused; not delivered as the new device"
+}

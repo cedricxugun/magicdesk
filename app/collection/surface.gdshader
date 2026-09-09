@@ -25,6 +25,15 @@ uniform float scan_min=.62;
 uniform float scan_max=3.8;
 uniform sampler2D scan_fabric:source_color,filter_linear_mipmap_anisotropic,repeat_enable;
 uniform float formation=1.0;
+uniform bool record_print=false;
+uniform float print_progress=1.0;
+uniform float print_height=1.0;
+uniform vec3 print_origin=vec3(0.0);
+uniform vec3 print_x=vec3(1,0,0);
+uniform vec3 print_y=vec3(0,1,0);
+uniform vec3 print_z=vec3(0,0,1);
+uniform float print_power=1.0;
+uniform bool record_vinyl=false;
 uniform bool clip_enabled=false;
 uniform vec3 clip_normal=vec3(0,0,1);
 uniform float clip_d=0.0;
@@ -32,6 +41,10 @@ varying float world_y;
 varying vec3 world_position;
 void vertex(){world_position=(MODEL_MATRIX*vec4(VERTEX,1.0)).xyz;world_y=world_position.y;}
 void fragment(){
+ vec3 record_local=vec3(dot(world_position-print_origin,print_x),dot(world_position-print_origin,print_y),dot(world_position-print_origin,print_z));
+ float build_height=clamp(record_local.y/max(.01,print_height),0.0,1.0);
+ bool record_ghost=record_print && build_height>print_progress;
+ if(record_ghost && (metallic<.8 || build_height>print_progress+.38 || print_progress<.001))discard;
  if(clip_enabled && dot(world_position,clip_normal)+clip_d<0.0)discard;
  vec3 forming=vec3(0.0);float formation_mask=0.0;
  if(formation<.9999){
@@ -50,6 +63,12 @@ void fragment(){
  ROUGHNESS=clamp((has_roughness?texture(roughness_map,UV).g:roughness)*roughness_scale,roughness_floor,.8);
  if(has_normal){NORMAL_MAP=texture(normal_map,UV).rgb;NORMAL_MAP_DEPTH=normal_depth;}
  ANISOTROPY=anisotropy_strength;ANISOTROPY_FLOW=vec2(1,0);
+ if(record_vinyl){
+  vec2 disc_uv=(UV-vec2(.5))*2.0;float radius=length(disc_uv);
+  float detail=1.0-smoothstep(.006,.025,fwidth(radius));float groove=sin(radius*402.1239)*detail;
+  ALBEDO*=.82+groove*.06;ROUGHNESS=.30+groove*.025;
+  ANISOTROPY=.48;ANISOTROPY_FLOW=length(disc_uv)>.001?normalize(vec2(-disc_uv.y,disc_uv.x)):vec2(1,0);
+ }
  CLEARCOAT=coat;CLEARCOAT_ROUGHNESS=.13;
  EMISSION=emission_color.rgb*emission_energy*power;
  if(instrument_gain>=0.0){
@@ -60,4 +79,9 @@ void fragment(){
  if(scan_amount>0.0){float edge=1.0-smoothstep(.0,.010,abs(height-boundary));EMISSION+=vec3(5.0,.22,.04)*edge;}
  if(scaffold){ALBEDO=vec3(.08,.02,.008);METALLIC=0.;EMISSION=archive*vec3(6.,1.3,.4);}
  if(formation<.9999){float edge=1.0-smoothstep(.0,.12,abs(formation_mask-formation));EMISSION+=(vec3(1.0,.48,.16)*edge+forming*2.0)*(1.0-formation)*3.0;}
+ if(record_print && print_progress<.9999){
+  float edge=1.0-smoothstep(.0,.018,abs(record_local.y-print_progress*print_height));
+  EMISSION+=vec3(1.0,.55,.19)*edge*7.0*print_power;
+  if(record_ghost){ALBEDO=vec3(.006,.016,.022);METALLIC=0.0;ROUGHNESS=.7;EMISSION=vec3(.14,.48,.80)*print_power*2.4;}
+ }
 }

@@ -90,7 +90,7 @@ func _command(command: Dictionary) -> void:
 	elif kind=="leave":host.native_cursor=Vector2(-10000,-10000)
 	elif kind=="probe" and not qa_directory.is_empty():_write_probe()
 	elif kind=="mute":host.muted=bool(command.value)
-	elif kind=="reset":host.angle=0;host.rotation_enabled=true
+	elif kind=="reset":host.angle=0;host.rotation_enabled=not (host.collection!=null and host.collection.current!=null and host.collection.current.data.has("record_player"))
 	elif kind=="quit":host.begin_shutdown()
 
 func _send_frame() -> void:
@@ -130,6 +130,7 @@ func _write_probe()->void:
 	info["angle"]=host.angle;info["power"]=host.power;info["drag_kind"]=host.drag_kind
 	info["time_ms"]=Time.get_ticks_msec();info["buttons"]=_capture_header(host.render_view.size).points
 	info["tooltip_visible"]=host.tooltip.visible;info["tooltip_rect"]=[host.tooltip.position.x,host.tooltip.position.y,host.tooltip.size.x,host.tooltip.size.y]
+	info["toast_visible"]=host.toast.visible
 	if host.collection!=null:
 		var band:Rect2=host.collection.control_band();info["control_band"]=[band.position.x,band.position.y,band.size.x,band.size.y]
 	var targets:Array=[]
@@ -161,10 +162,17 @@ func _write_probe()->void:
 		info["targets"]=targets
 		info["region_count"]=service.native_regions.size()
 		info["control_hits"]={}
+		info["console_targets"]={}
 		if service.current!=null:
 			for i in range(1,6):
 				var point:Vector2=host.camera.unproject_position(service.action_anchor(i))
 				info.control_hits[str(i)]=service.hit_control(point)
+			for c in service.custom_controls:
+				if c.index!=4:continue
+				for side in [-1,1]:
+					var local:=Vector3(float(side)*.040,0,.082)
+					var point:Vector2=host.camera.unproject_position(c.node.to_global(local))
+					info.console_targets["disassemble" if side<0 else "assemble"]=[point.x,point.y]
 	DirAccess.make_dir_recursive_absolute(qa_directory)
 	FileAccess.open(qa_directory.path_join("collection_probe.json"),FileAccess.WRITE).store_string(JSON.stringify(info,"  "))
 

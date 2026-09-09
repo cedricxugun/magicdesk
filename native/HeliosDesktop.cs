@@ -16,8 +16,8 @@ using System.Windows.Forms;
 [assembly: AssemblyTitle("MagicDesk · 机械藏品")]
 [assembly: AssemblyProduct("MagicDesk")]
 [assembly: AssemblyDescription("Original interactive 3D mechanical desktop sculpture")]
-[assembly: AssemblyVersion("0.3.1.0")]
-[assembly: AssemblyFileVersion("0.3.1.0")]
+[assembly: AssemblyVersion("0.4.0.0")]
+[assembly: AssemblyFileVersion("0.4.0.0")]
 
 internal static class Native {
     [StructLayout(LayoutKind.Sequential)] public struct POINT { public int X,Y; public POINT(int x,int y){X=x;Y=y;} }
@@ -341,7 +341,7 @@ internal sealed class HeliosForm : Form {
         if(!String.IsNullOrEmpty(controlFile))ReadControl();
         if(movieFinishing&&movie.IsCompleted){Log("movie complete: "+movie.FramesWritten+" frames; "+(movie.LastError??"OK"));forceClose=true;Close();return;}
         if(testRun)TestTick();
-        if(shutdownRequested&&lifetime.Elapsed.TotalSeconds-shutdownStarted>9){forceClose=true;Close();}
+        if(shutdownRequested&&lifetime.Elapsed.TotalSeconds-shutdownStarted>14){forceClose=true;Close();}
         if(firstFrame&&lifetime.Elapsed.TotalSeconds>45){Log("No rendered frame after 45s");Close();}
     }
     private void Send(string json){try{lock(sendLock){if(stream==null)return;byte[] data=Encoding.UTF8.GetBytes(json+"\n");stream.Write(data,0,data.Length);}}catch(Exception e){Log("input: "+e.Message);}}

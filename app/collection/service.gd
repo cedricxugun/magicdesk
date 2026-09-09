@@ -66,9 +66,12 @@ var selector_wait:=false
 var pending_action:=-1
 var selected_slot:=-1
 var control_driver:RefCounted
+var g_operator:Control
 var native_regions:Array[Rect2i]=[]
 var regions_clock:=0.0
 var control_library:Node3D
+var record_control_library:Node3D
+var record_console:RefCounted
 var read_time:=-1.0
 var help_index:=-1
 var help_since_ms:=0
@@ -86,6 +89,7 @@ func _pose(p:Dictionary)->Transform3D:
 func setup(owner:Node3D)->void:
 	host=owner
 	control_driver=load("res://collection/control_driver.gd").new();control_driver.setup(self)
+	g_operator=load("res://collection/g_operator.gd").new();host.tooltip.get_parent().add_child(g_operator);g_operator.setup(self)
 	var config:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/collection/registry.json"))
 	registry=config.models
 	base_display=host.named("BASE_FIXED_DisplayMesh");original_base_mesh=base_display.mesh
@@ -170,6 +174,8 @@ func _setup_selector()->void:
 	for kind in selector_data.widgets:widget_templates[kind]=selector.find_child(selector_data.widgets[kind],true,false)
 	if ResourceLoader.exists("res://assets/collection/control_library.glb"):
 		control_library=load("res://assets/collection/control_library.glb").instantiate();add_child(control_library);control_library.hide()
+	if ResourceLoader.exists("res://assets/collection/record_controls.glb"):
+		record_control_library=load("res://assets/collection/record_controls.glb").instantiate();add_child(record_control_library);record_control_library.hide()
 	selector.find_child("S_WIDGET_LIBRARY",true,false).hide()
 	selector.find_child("S_PANEL",true,false).hide()
 	_smoke_glass(selector)
@@ -206,6 +212,10 @@ func _smoke_glass(node:Node)->void:
 	for child in node.get_children():_smoke_glass(child)
 
 func update_hover_ui()->bool:
+	if current and current.data.has("record_player") and selector_amount<.01:
+		host.tooltip.hide();host.toast.hide();host.hover=-1;return true
+	if g_operator and g_operator.visible and (not g_operator.held.is_empty() or g_operator.panel.has_point(pointer_position())):
+		host.tooltip.hide();host.hover=-1;return true
 	if control_driver.index>=0 or host.drag_kind!=0 or host.pressed>=0 or state!="idle":
 		host.tooltip.hide();help_index=-1;help_since_ms=Time.get_ticks_msec();help_owned=true;host.hover=-1
 		return true
@@ -279,6 +289,8 @@ func toggle_selector()->void:
 	host.sound("click",.82)
 
 func toggle_rotation()->void:
+	if current and current.data.has("record_player"):
+		host.rotation_enabled=false;current.play.g_instrument.toggle_spin();host.message("唱片慢转已开启 · 60 秒一圈" if current.play.g_instrument.spin_enabled else "唱片已停转",1.5);return
 	host.rotation_enabled=not host.rotation_enabled
 	host.message("展示旋转已开启" if host.rotation_enabled else "展示旋转已暂停",1.5)
 
@@ -298,6 +310,8 @@ func browse(direction:int)->void:
 	browse_pending=direction;browse_time=0;host.sound("click",1.10)
 
 func consume_input(event:InputEvent)->bool:
+	if control_driver.index>=0:return control_driver.consume(event)
+	if g_operator and g_operator.consume(event):return true
 	if control_driver.consume(event):return true
 	if event is InputEventMouseMotion and index_dragging:
 		index_drag_distance+=event.relative.y
@@ -333,6 +347,7 @@ func consume_input(event:InputEvent)->bool:
 func _build_controls()->void:
 	if custom_panel:custom_panel.queue_free()
 	custom_controls.clear()
+	record_console=null
 	if active_id=="B":return
 	custom_panel=Node3D.new();add_child(custom_panel)
 	var plate:Node3D=selector.find_child("S_PANEL",true,false).duplicate();custom_panel.add_child(plate);plate.show()
@@ -350,6 +365,7 @@ func _build_controls()->void:
 			var shape:String=profile.gesture
 			if shape=="slider":shape+="_"+str(profile.get("axis","y"))
 			var authored:Node3D=control_library.find_child("CTRL_"+shape,true,false)
+			if current.data.has("record_player") and record_control_library:authored=record_control_library.find_child("GCTRL_"+shape,true,false)
 			if authored:template=authored
 		var widget:Node3D=template.duplicate();custom_panel.add_child(widget);widget.show()
 		var slot:int=layout.find(i)+1
@@ -371,7 +387,19 @@ func _build_controls()->void:
 		if profile.get("gesture","") in ["rotary","crank"]:
 			initial_turn=float(initial)*TAU if profile.gesture=="crank" else inverse_lerp(float(profile.min),float(profile.max),float(initial))*PI*1.6
 			if active_id=="F" and profile.gesture=="rotary":initial_turn-=PI*.8
-		custom_controls.append({"node":widget,"home":widget.transform,"index":i,"kind":kind,"press":0.0,"moving":moving,"turn":initial_turn,"turn_target":initial_turn,"input_value":initial})
+			if profile.get("cyclic",false):initial_turn=float(initial)*TAU/float(profile.steps)
+		custom_controls.append({"node":widget,"home":widget.transform,"index":i,"kind":kind,"press":0.0,"moving":moving,"turn":initial_turn,"turn_target":initial_turn,"input_value":initial,"rocker_pose":0.0,"rocker_hold":0.0,"rocker_target":0.0})
+	if current.data.has("record_player"):
+		record_console=load("res://collection/record_console.gd").new();record_console.setup(self)
+
+func control_local_point(index:int,point:Vector2)->Vector3:
+	for c in custom_controls:
+		if c.index!=index:continue
+		var origin:Vector3=c.node.to_local(host.camera.project_ray_origin(point))
+		var direction:Vector3=c.node.global_basis.inverse()*host.camera.project_ray_normal(point)
+		if absf(direction.z)<.00001:return Vector3.ZERO
+		return origin+direction*((.06-origin.z)/direction.z)
+	return Vector3.ZERO
 
 func hit_control(point:Vector2)->int:
 	if active_id=="B" or state!="idle":return -1
@@ -411,12 +439,15 @@ func prewarm_shared_surfaces()->void:
 	if not host.native_mode or RenderingServer.get_rendering_device()==null:return
 	var started:=Time.get_ticks_msec()
 	_prepare_control_shapes(control_library)
+	if record_control_library:_prepare_control_shapes(record_control_library)
 	_prepare_control_shapes(selector.find_child("S_PANEL",true,false))
 	var view:=SubViewport.new();view.size=Vector2i(96,96);view.own_world_3d=true;view.transparent_bg=true;view.msaa_3d=Viewport.MSAA_4X;view.render_target_update_mode=SubViewport.UPDATE_ALWAYS;add_child(view)
 	var scene:=Node3D.new();view.add_child(scene)
 	var camera:=Camera3D.new();scene.add_child(camera);camera.position=Vector3(1.4,2.0,4);camera.look_at(Vector3(.65,.8,0));camera.current=true
 	var world:=WorldEnvironment.new();world.environment=host.env;scene.add_child(world)
 	var library:Node3D=control_library.duplicate();scene.add_child(library);library.show();library.position.y=1.0
+	if record_control_library:
+		var record_library:Node3D=record_control_library.duplicate();scene.add_child(record_library);record_library.show();record_library.position.y=.5
 	var plate:Node3D=selector.find_child("S_PANEL",true,false).duplicate();scene.add_child(plate);plate.show()
 	var base:=MeshInstance3D.new();base.mesh=base_mesh_cache.shared;scene.add_child(base)
 	for i in range(base_frames.variants.shared.source_surfaces.size()):base.set_surface_override_material(i,base_materials[int(base_frames.variants.shared.source_surfaces[i])])
@@ -438,6 +469,11 @@ func dispatch(index:int)->bool:
 	if index!=6 and (selector_amount>.15 or selector_wait):
 		pending_action=index;selector_wait=false;selector_target=0;return true
 	if active_id=="B":return false
+	if current.data.has("record_player") and index==0:
+		if current.open_target>.5 and not current.stowing:current.stow();sleep_pending=true
+		else:host.power_target=1;current.stowing=false;current.explode_target=0;current.open_target=1;current.effect.resume();sleep_pending=false
+		host.sound("click",.92);return true
+	if current.data.has("record_player") and index==3:toggle_rotation();return true
 	action_log.append({"id":active_id,"action":index,"time":Time.get_ticks_msec()})
 	for c in custom_controls:
 		if c.index==index:
@@ -450,6 +486,8 @@ func dispatch(index:int)->bool:
 	elif index==5:
 		if active_id=="N":current.effect.orbit_time+=.7
 		else:toggle_rotation()
+	elif active_id=="G" and current.data.has("g_archive") and index==2:
+		host.power_target=1;host.rotation_enabled=false;current.stowing=false;current.explode_target=0;current.open_target=1;current.effect.resume();current.play.g_instrument.pulse_action()
 	else:
 		host.power_target=1;current.activate(index)
 		host.sound("assemble" if index==4 else "explode" if index==3 else "open" if index==1 else "overload")
@@ -463,6 +501,7 @@ func request_model(id:String)->void:
 	var definition:=_definition(id)
 	if definition.is_empty():return
 	control_driver.cancel()
+	if g_operator:g_operator.cancel()
 	_acknowledge_intro()
 	_abandon_loading()
 	ticket+=1;requested=id;state="loading";state_time=0;last_error=""
@@ -588,6 +627,7 @@ func _commit()->void:
 	if current:current.queue_free();current=null
 	_restore_scan();_legacy_set_visible(false)
 	active_id=requested;requested=""
+	if active_id=="G":host.rotation_enabled=false;host.angle=0
 	if active_id=="B":
 		_set_base_frame("helios");_legacy_set_visible(true);_set_scan(1.0)
 		host.effects.hide();_legacy_panel_depth(.36)
@@ -608,7 +648,7 @@ func _legacy_panel_depth(depth:float)->void:
 
 func _update_actions()->void:
 	var definition:=_definition(active_id)
-	host.menu.set_item_text(host.menu.get_item_index(0),"MagicDesk 0.3.0 · "+active_id+" "+str(definition.title))
+	host.menu.set_item_text(host.menu.get_item_index(0),"MagicDesk 0.4.0 · "+active_id+" "+str(definition.title))
 	host.TITLES=definition.actions.duplicate()
 	host.HINTS=[]
 	for i in range(definition.actions.size()):
@@ -692,10 +732,16 @@ func tick(delta:float)->void:
 	seam.visible=not hit.is_empty() or selector_amount>.01 or state!="idle" or intro_pending
 	for c in custom_controls:
 		if int(c.index)==3 and current:c["input_value"]=current.play.gauge_value()
+		if record_console and int(c.index)==1:
+			c["input_value"]=current.play.number("leaf");c.turn_target=c.turn+angle_difference(c.turn,current.play.number("leaf")*TAU/6.0)
 		if active_id=="G" and int(c.index)==2 and current:c["input_value"]=current.play.number("fold")
 		if not control_driver.held(int(c.index)):c.press=move_toward(c.press,0,delta*4)
 		if c.node.transform!=c.home:c.node.transform=c.home
 		c.turn=move_toward(c.turn,c.turn_target,delta*4)
+		if record_console:
+			c.rocker_hold=maxf(0.0,c.rocker_hold-delta)
+			if c.rocker_hold<=0:c.rocker_target=float(c.input_value)
+			c.rocker_pose=move_toward(c.rocker_pose,c.rocker_target,delta*10.0)
 		for item in c.moving:
 			var movement:=Transform3D.IDENTITY
 			var profile:Dictionary=control_driver.profile(int(c.index))
@@ -704,10 +750,11 @@ func tick(delta:float)->void:
 			if gesture in ["rotary","crank"]:movement.basis=Basis(Vector3.BACK,c.turn)
 			elif gesture=="joystick" and input_value is Vector2:movement.basis=Basis.from_euler(Vector3(-input_value.y*.3,input_value.x*.3,0))
 			elif gesture=="gauge":movement.basis=Basis(Vector3.BACK,lerpf(-1.0,1.0,float(input_value)))
-			elif gesture=="service":movement.basis=Basis(Vector3.UP,float(input_value)*.26)
+			elif gesture=="service":movement.basis=Basis(Vector3.UP,(c.rocker_pose if record_console else float(input_value))*.26)
+			elif gesture=="hold" and record_console:movement.origin.z=-c.press*.015
 			elif gesture in ["slider","pump","detent"]:
 				var normalized:float=inverse_lerp(float(profile.min),float(profile.max),float(input_value))
-				if gesture=="detent":movement.basis=Basis(Vector3.RIGHT,(normalized-.5)*.65)
+				if gesture=="detent":movement.basis=Basis(Vector3.RIGHT,((c.rocker_pose if record_console else normalized)-.5)*.65)
 				else:movement.origin=Vector3((normalized-.5)*.075,0,0) if profile.get("axis","y")=="x" else Vector3(0,(normalized-.5)*.075,0)
 			elif c.kind=="knob":movement.basis=Basis(Vector3.BACK,c.turn)
 			elif c.kind=="lever":
@@ -716,6 +763,8 @@ func tick(delta:float)->void:
 			else:movement.origin.z=-c.press*.014
 			var desired:Transform3D=movement*item.home
 			if item.node.transform!=desired:item.node.transform=desired
+	if g_operator:g_operator.update_state(delta)
+	if record_console:record_console.tick(delta)
 	regions_clock+=delta
 	if regions_clock>.05:native_regions=_input_regions();regions_clock=0.0
 	if current:
@@ -762,7 +811,7 @@ func tick(delta:float)->void:
 			if settled:state="shutdown_final";host._start_final_shutdown()
 
 func diagnostics()->Dictionary:
-	return {"active":active_id,"state":state,"requested":requested,"selector":selector_amount,"base_instances":_count_bases(host),"base_bounds":str(base_display.mesh.get_aabb()),"error":last_error,"module":current.diagnostics() if current else {"id":"B","parts":host.parts.size()},"play":current.play.diagnostics() if current else {},"actions":action_log,"load_metrics":load_metrics}
+	return {"active":active_id,"state":state,"requested":requested,"selector":selector_amount,"base_instances":_count_bases(host),"base_bounds":str(base_display.mesh.get_aabb()),"error":last_error,"module":current.diagnostics() if current else {"id":"B","parts":host.parts.size()},"play":current.play.diagnostics() if current else {},"actions":action_log,"load_metrics":load_metrics,"g_operator":g_operator.diagnostics() if g_operator else {}}
 
 func pointer_position()->Vector2:
 	return host.native_cursor if host.native_mode else host.get_viewport().get_mouse_position()
@@ -792,6 +841,7 @@ func _input_regions()->Array[Rect2i]:
 	if current and state=="idle":
 		for control in custom_controls:roots.append(control.node)
 	var regions:Array[Rect2i]=[]
+	if g_operator and g_operator.visible:regions.append(Rect2i(g_operator.panel))
 	for node in roots:
 		if node==null:continue
 		var points:Array[Vector2]=[];_screen_points(node,points)

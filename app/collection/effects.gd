@@ -33,8 +33,10 @@ var g_visuals:Node3D
 
 func setup(owner:Node3D)->void:
 	module=owner
+	if module.data.has("record_player"):
+		g_visuals=load("res://collection/record_visuals.gd").new();add_child(g_visuals);g_visuals.setup(module);g_visuals.tick(0,0);atlas=g_visuals.atlas;return
 	if module.play.g_instrument:
-		g_visuals=load("res://collection/g_visuals.gd").new();add_child(g_visuals);g_visuals.setup(module);g_visuals.tick(0,0)
+		g_visuals=load("res://collection/g_archive_visuals.gd" if module.data.has("g_archive") else "res://collection/g_visuals.gd").new();add_child(g_visuals);g_visuals.setup(module);g_visuals.tick(0,0)
 		atlas=g_visuals.atlas;return
 	if module.play.instrument:
 		f_visuals=load("res://collection/f_visuals.gd").new();add_child(f_visuals);f_visuals.setup(module);f_visuals.tick(0,0)
