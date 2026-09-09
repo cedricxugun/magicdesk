@@ -1,0 +1,70 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "F_physical_card_visible",
+      "passed": true,
+      "details": {
+        "hit": true,
+        "id": "F",
+        "kind": "card",
+        "slot": 1,
+        "x": 405.332061767578,
+        "y": 946.062927246094
+      }
+    },
+    {
+      "check": "F_single_base",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_all_controls_hit",
+      "passed": true,
+      "details": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "F_pointer_captured",
+      "passed": true,
+      "details": 1
+    },
+    {
+      "check": "F_drag_changes_control",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_release_clears_capture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_hold_is_sustained",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_release_stops_hold",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_gauge_readonly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_assemble_keeps_app_open",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "verification": "Application-owned input replay through native form, TCP bridge and 3D raycast; not physical mouse automation.",
+  "visual_acceptance": false
+}

@@ -7,6 +7,8 @@ var sequence := 0
 var ready_to_send := false
 var transmitting := false
 var last_mouse := Vector2.ZERO
+var collection_capture:=false
+var qa_directory:=""
 var pending_reads:=0
 var next_read_id:=0
 var last_sent_id:=-1
@@ -22,6 +24,7 @@ var profile_rows:=PackedStringArray(["wall_seconds,id,openness,activation_wall,s
 func setup(owner_node: Node3D, port: int) -> void:
 	host=owner_node
 	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("--collection-qa="):qa_directory=arg.trim_prefix("--collection-qa=")
 		if arg=="--sync-readback":async_enabled=false
 		if arg=="--legacy-alpha-crop":legacy_alpha_crop=true
 		if arg.begins_with("--profile="):profile_path=arg.trim_prefix("--profile=")
@@ -55,19 +58,36 @@ func _command(command: Dictionary) -> void:
 	if kind=="action":host.activate(int(command.index))
 	elif kind=="move":
 		var pt:=Vector2(float(command.x),float(command.y))
-		if host.drag_kind==2:host.angle+=(pt.x-last_mouse.x)*.008
+		var event:=InputEventMouseMotion.new();event.position=pt;event.relative=pt-last_mouse
+		var consumed:bool=host.collection!=null and host.collection.consume_input(event)
+		if not consumed and host.drag_kind==2:host.angle+=(pt.x-last_mouse.x)*.008
 		last_mouse=pt;host.native_cursor=pt
 	elif kind=="down":
 		var pt:=Vector2(float(command.x),float(command.y))
 		last_mouse=pt;host.native_cursor=pt
+		var event:=InputEventMouseButton.new();event.button_index=MOUSE_BUTTON_LEFT;event.position=pt;event.pressed=true
+		collection_capture=host.collection!=null and host.collection.consume_input(event)
+		if collection_capture:host.pressed=-1;host.drag_kind=0;return
 		host.pressed=host.hit_button(pt)
 		print("HELIOS_POINTER_DOWN hit=",host.pressed," position=",pt)
 		if host.pressed<0:host.drag_kind=2 if bool(command.get("upper",false)) else 1
 	elif kind=="up":
 		var pt:=Vector2(float(command.x),float(command.y))
-		if host.pressed>=0 and host.hit_button(pt)==host.pressed:host.activate(host.pressed)
+		var event:=InputEventMouseButton.new();event.button_index=MOUSE_BUTTON_LEFT;event.position=pt;event.pressed=false
+		var consumed:bool=host.collection!=null and host.collection.consume_input(event)
+		if not consumed and not collection_capture and host.pressed>=0 and host.hit_button(pt)==host.pressed:host.activate(host.pressed)
+		collection_capture=false
 		host.pressed=-1;host.drag_kind=0;host.native_cursor=pt
+	elif kind=="wheel" and host.collection!=null:
+		var event:=InputEventMouseButton.new();event.position=Vector2(float(command.x),float(command.y));event.pressed=true
+		event.button_index=MOUSE_BUTTON_WHEEL_UP if int(command.delta)>0 else MOUSE_BUTTON_WHEEL_DOWN
+		host.collection.consume_input(event)
+	elif kind=="selector" and host.collection!=null:host.collection.toggle_selector()
+	elif kind=="rotation":
+		if host.collection!=null:host.collection.toggle_rotation()
+		else:host.rotation_enabled=not host.rotation_enabled
 	elif kind=="leave":host.native_cursor=Vector2(-10000,-10000)
+	elif kind=="probe" and not qa_directory.is_empty():_write_probe()
 	elif kind=="mute":host.muted=bool(command.value)
 	elif kind=="reset":host.angle=0;host.rotation_enabled=true
 	elif kind=="quit":host.begin_shutdown()
@@ -87,10 +107,13 @@ func _send_frame() -> void:
 func _capture_header(size:Vector2i)->Dictionary:
 	var base_pt:Vector2=host.camera.unproject_position(Vector3(0,.62,1.0))
 	var points:PackedInt32Array=[]
-	for b in host.buttons:
-		var pt:Vector2=host.camera.unproject_position(b.cap.to_global(Vector3(0,.008,0)))
+	for i in range(host.buttons.size()):
+		var b:Dictionary=host.buttons[i]
+		var anchor:Vector3=host.collection.action_anchor(i) if host.collection!=null and host.collection.current!=null and i in range(1,6) else b.cap.to_global(Vector3(0,.008,0))
+		var pt:Vector2=host.camera.unproject_position(anchor)
 		points.append(int(pt.x));points.append(int(pt.y))
 	var snapshot:={"base_y":int(base_pt.y),"points":points,"fade":int(host.display_fade*255),"id":next_read_id,"size":size}
+	snapshot["regions"]=host.collection.native_regions.duplicate() if host.collection!=null else []
 	if not profile_path.is_empty():
 		snapshot["requested_us"]=Time.get_ticks_usec()
 		snapshot["openness"]=host.openness
@@ -100,6 +123,46 @@ func _capture_header(size:Vector2i)->Dictionary:
 		snapshot["render_cpu_ms"]=RenderingServer.viewport_get_measured_render_time_cpu(host.render_view.get_viewport_rid())
 	next_read_id+=1
 	return snapshot
+
+func _write_probe()->void:
+	var info:Dictionary=host.collection.diagnostics() if host.collection!=null else {}
+	info["angle"]=host.angle;info["power"]=host.power;info["drag_kind"]=host.drag_kind
+	info["time_ms"]=Time.get_ticks_msec();info["buttons"]=_capture_header(host.render_view.size).points
+	var targets:Array=[]
+	if host.collection!=null:
+		var service:Node3D=host.collection
+		info["held"]=service.control_driver.index
+		for label in service.selector_data.get("click_surfaces",[]):
+			var node:Node3D=service.selector.find_child(label,true,false)
+			if node==null:continue
+			var points:Array[Vector2]=[];service._screen_points(node,points)
+			if points.is_empty():continue
+			var box:=Rect2(points[0],Vector2.ZERO)
+			for point in points:box=box.expand(point)
+			# Find an actually visible entry hit within the projected mesh; an AABB
+			# midpoint may land in empty space for a curved cowl.
+			for y in range(1,10):
+				for x in range(1,10):
+					var point:=box.position+box.size*Vector2(x/10.0,y/10.0)
+					var hit:Dictionary=service._selector_ray(point)
+					if not hit.is_empty() and hit.collider.has_meta("entry"):
+						targets.append({"kind":"entry","x":point.x,"y":point.y});break
+				if not targets.is_empty():break
+			if not targets.is_empty():break
+		if service.selector_amount>.95:
+			for i in range(service.card_nodes.size()):
+				var p:Vector2=host.camera.unproject_position(service.card_nodes[i].node.to_global(Vector3(0,.21,.02)))
+				var hit:Dictionary=service._selector_ray(p)
+				targets.append({"kind":"card","id":str(service.registry[(service.browse_start+i)%service.registry.size()].id),"slot":i,"x":p.x,"y":p.y,"hit":not hit.is_empty() and int(hit.collider.get_meta("card_slot",-1))==i})
+		info["targets"]=targets
+		info["region_count"]=service.native_regions.size()
+		info["control_hits"]={}
+		if service.current!=null:
+			for i in range(1,6):
+				var point:Vector2=host.camera.unproject_position(service.action_anchor(i))
+				info.control_hits[str(i)]=service.hit_control(point)
+	DirAccess.make_dir_recursive_absolute(qa_directory)
+	FileAccess.open(qa_directory.path_join("collection_probe.json"),FileAccess.WRITE).store_string(JSON.stringify(info,"  "))
 
 func _request_gpu_copy(texture:RID,size:Vector2i,snapshot:Dictionary)->void:
 	var rd:=RenderingServer.get_rendering_device()
@@ -153,10 +216,17 @@ func _publish(frame:Image,snapshot:Dictionary)->void:
 	var pixels:PackedByteArray=frame.get_region(used).get_data() if legacy_alpha_crop else frame.get_data()
 	var t3:=Time.get_ticks_usec()
 	var header:=PackedByteArray();header.resize(96)
-	var fields:Array[int]=[0x484C5333 if legacy_alpha_crop else 0x484C5334,used.size.x,used.size.y,used.position.x,used.position.y,frame.get_width(),frame.get_height(),int(snapshot.base_y),sequence,int(snapshot.fade)]
+	var fields:Array[int]=[0x484C5333 if legacy_alpha_crop else 0x484C5335,used.size.x,used.size.y,used.position.x,used.position.y,frame.get_width(),frame.get_height(),int(snapshot.base_y),sequence,int(snapshot.fade)]
 	for value in snapshot.points:fields.append(value)
 	for i in range(fields.size()):header.encode_s32(i*4,fields[i])
 	var err:=tcp.put_data(header)
+	if err==OK and not legacy_alpha_crop:
+		var region_data:=PackedByteArray();var regions:Array=snapshot.get("regions",[])
+		region_data.resize(4+regions.size()*16);region_data.encode_s32(0,regions.size())
+		for i in range(regions.size()):
+			var r:Rect2i=regions[i]
+			for j in range(4):region_data.encode_s32(4+i*16+j*4,[r.position.x,r.position.y,r.size.x,r.size.y][j])
+		err=tcp.put_data(region_data)
 	if err==OK:err=tcp.put_data(pixels)
 	var t4:=Time.get_ticks_usec()
 	if not profile_path.is_empty() and profile_rows.size()<12000:

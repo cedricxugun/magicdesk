@@ -1,0 +1,352 @@
+{
+  "date": "2026-09-09",
+  "channel": "subscription built-in image_gen",
+  "underlying_model": "not exposed by tool; unverified",
+  "generated_images_are_runtime": false,
+  "models": [
+    {
+      "id": "F",
+      "title": "拉格朗日天平",
+      "concept": "images/F_structure_controls.png",
+      "prompt": "prompts/F.txt",
+      "sha256": "dfa44c94557c4ec4a2ac20c8dadf4eebbf1351508bb8e37734e45705d9cd3196",
+      "runtime": "../../review/interaction_native/release/F_operating.png",
+      "controls": [
+        {
+          "index": 1,
+          "key": "trim",
+          "label": "差动配重",
+          "gesture": "rotary",
+          "min": -1,
+          "max": 1,
+          "default": 0.25,
+          "hint": "拖动转轮改变配重；松手保留调节"
+        },
+        {
+          "index": 2,
+          "key": "brake",
+          "label": "制动夹",
+          "gesture": "hold",
+          "min": 0,
+          "max": 1,
+          "default": 0,
+          "hint": "持续按住抑制摆动，释放后恢复惯性"
+        },
+        {
+          "index": 5,
+          "key": "polarity",
+          "label": "力场方向",
+          "gesture": "detent",
+          "min": -1,
+          "max": 1,
+          "default": 1,
+          "steps": 3,
+          "hint": "上下拖动切换反向、中立、正向"
+        }
+      ],
+      "status": "第一轮机构精修；待继续校准"
+    },
+    {
+      "id": "G",
+      "title": "折维书匣",
+      "concept": "images/G_structure_controls.png",
+      "prompt": "prompts/G.txt",
+      "sha256": "c1ea6c9bd1df0f0be020c16bf12b3fa9eba244bcbedf681353945b492d59178c",
+      "runtime": "../../review/interaction_native/release/G_operating.png",
+      "controls": [
+        {
+          "index": 1,
+          "key": "leaf",
+          "label": "选页轮",
+          "gesture": "rotary",
+          "min": 0,
+          "max": 5,
+          "default": 0,
+          "steps": 6,
+          "hint": "拖动旋转选择一片书页"
+        },
+        {
+          "index": 2,
+          "key": "fold",
+          "label": "页片角度",
+          "gesture": "slider",
+          "axis": "x",
+          "min": 0,
+          "max": 1,
+          "default": 0.5,
+          "hint": "左右拖动调整选中页片，支杆同步跟随"
+        },
+        {
+          "index": 5,
+          "key": "imprint",
+          "label": "压印手柄",
+          "gesture": "hold",
+          "min": 0,
+          "max": 1,
+          "default": 0,
+          "hint": "按住写入，松手停止，页片对齐时强化读取反馈"
+        }
+      ],
+      "status": "控制已接入；上部模型待逐款精修"
+    },
+    {
+      "id": "I",
+      "title": "回声海螺",
+      "concept": "images/I_structure_controls.png",
+      "prompt": "prompts/I.txt",
+      "sha256": "f344c247cefe0272701919cc5075b229b3c6cf6fcabf3ca739150160d3f84bf8",
+      "runtime": "../../review/interaction_native/release/I_operating.png",
+      "controls": [
+        {
+          "index": 1,
+          "key": "frequency",
+          "label": "膜片调频",
+          "gesture": "rotary",
+          "min": 0,
+          "max": 1,
+          "default": 0.25,
+          "hint": "拖动转轮调节共振频率"
+        },
+        {
+          "index": 2,
+          "key": "bellows",
+          "label": "气囊压板",
+          "gesture": "hold",
+          "min": 0,
+          "max": 1,
+          "default": 0,
+          "hint": "按住蓄压，松开释放回声"
+        },
+        {
+          "index": 5,
+          "key": "throat",
+          "label": "喉口开度",
+          "gesture": "slider",
+          "axis": "x",
+          "min": 0,
+          "max": 1,
+          "default": 0.7,
+          "hint": "左右拖动改变喉闸开度"
+        }
+      ],
+      "status": "控制已接入；上部模型待逐款精修"
+    },
+    {
+      "id": "J",
+      "title": "汞芽温室",
+      "concept": "images/J_structure_controls.png",
+      "prompt": "prompts/J.txt",
+      "sha256": "300fb3dd6f1dbccea64586c8657eb6303091d9f321161662184de6ff7a95b840",
+      "runtime": "../../review/interaction_native/release/J_operating.png",
+      "controls": [
+        {
+          "index": 1,
+          "key": "feed",
+          "label": "供液泵杆",
+          "gesture": "pump",
+          "min": 0,
+          "max": 1,
+          "default": 0,
+          "hint": "上下往复拖动泵杆，向选中枝芽输液"
+        },
+        {
+          "index": 2,
+          "key": "light",
+          "label": "授光遮板",
+          "gesture": "slider",
+          "axis": "y",
+          "min": 0,
+          "max": 1,
+          "default": 0.5,
+          "hint": "上下拖动调整授光量"
+        },
+        {
+          "index": 5,
+          "key": "branch",
+          "label": "枝芽分流",
+          "gesture": "rotary",
+          "min": 0,
+          "max": 2,
+          "default": 0,
+          "steps": 3,
+          "hint": "转动选择三条枝芽中的一条"
+        }
+      ],
+      "status": "控制已接入；上部模型待逐款精修"
+    },
+    {
+      "id": "K",
+      "title": "星图刻写机",
+      "concept": "images/K_structure_controls.png",
+      "prompt": "prompts/K.txt",
+      "sha256": "025c643283c4517da8f3a9432b2ae894a2559d4f0e18759cecd1ca7e20a7e5bc",
+      "runtime": "../../review/interaction_native/release/K_operating.png",
+      "controls": [
+        {
+          "index": 1,
+          "key": "feed",
+          "label": "走带手摇柄",
+          "gesture": "crank",
+          "min": -1000,
+          "max": 1000,
+          "default": 0,
+          "hint": "沿圆周拖动摇柄；反向摇动倒带"
+        },
+        {
+          "index": 2,
+          "key": "stylus",
+          "label": "刻针锁柄",
+          "gesture": "detent",
+          "min": 0,
+          "max": 1,
+          "default": 0,
+          "steps": 2,
+          "hint": "上推落针、下拉抬针；松手保持档位，再摇动走带"
+        },
+        {
+          "index": 5,
+          "key": "channel",
+          "label": "刻针通道",
+          "gesture": "rotary",
+          "min": 0,
+          "max": 2,
+          "default": 0,
+          "steps": 3,
+          "hint": "转动选择三支刻针之一"
+        }
+      ],
+      "status": "控制已接入；上部模型待逐款精修"
+    },
+    {
+      "id": "L",
+      "title": "三相窥镜",
+      "concept": "images/L_structure_controls.png",
+      "prompt": "prompts/L.txt",
+      "sha256": "2aa2e24ca57bbfdce857f55337a2728f33ad1d8f0baddb3deacf56e014bcde74",
+      "runtime": "../../review/interaction_native/release/L_operating.png",
+      "controls": [
+        {
+          "index": 1,
+          "key": "focus",
+          "label": "粗细对焦",
+          "gesture": "rotary",
+          "min": 0,
+          "max": 1,
+          "default": 0.25,
+          "hint": "拖动对焦轮，观察三束光的汇聚"
+        },
+        {
+          "index": 2,
+          "key": "aperture",
+          "label": "虹膜压板",
+          "gesture": "hold",
+          "min": 0,
+          "max": 1,
+          "default": 0,
+          "hint": "按住打开观察光路，松手闭合"
+        },
+        {
+          "index": 5,
+          "key": "aim",
+          "label": "双轴观察杆",
+          "gesture": "joystick",
+          "default": [
+            0,
+            0
+          ],
+          "hint": "向不同方向拖动，改变观察目标；松手摇杆归中"
+        }
+      ],
+      "status": "控制已接入；上部模型待逐款精修"
+    },
+    {
+      "id": "M",
+      "title": "星噬仪",
+      "concept": "images/M_structure_controls.png",
+      "prompt": "prompts/M.txt",
+      "sha256": "a4ab214c2fd906506a5dc6c25fbf71f82e35cca0a5be5f8c3f9bd18d57b6804c",
+      "runtime": "../../review/interaction_native/release/M_operating.png",
+      "controls": [
+        {
+          "index": 1,
+          "key": "orbit",
+          "label": "公转调速",
+          "gesture": "rotary",
+          "min": 0.2,
+          "max": 2,
+          "default": 1,
+          "hint": "拖动转轮连续改变行星公转速度"
+        },
+        {
+          "index": 2,
+          "key": "gravity",
+          "label": "引力锁杆",
+          "gesture": "slider",
+          "axis": "y",
+          "min": 0,
+          "max": 1,
+          "default": 0,
+          "hint": "向上推过档位增强引力，向下拉回收束"
+        },
+        {
+          "index": 5,
+          "key": "reseed",
+          "label": "重构摇柄",
+          "gesture": "crank",
+          "min": 0,
+          "max": 1000,
+          "default": 0,
+          "hint": "拖动摇柄重建原来的三颗行星"
+        }
+      ],
+      "status": "控制已接入；上部模型待逐款精修"
+    },
+    {
+      "id": "N",
+      "title": "裂隙回廊",
+      "concept": "images/N_structure_controls.png",
+      "prompt": "prompts/N.txt",
+      "sha256": "5f770cbf0e5ce891091cd47b54d67bb88abbf9a027753730b94f5ad8781fa73f",
+      "runtime": "../../review/interaction_native/release/N_operating.png",
+      "controls": [
+        {
+          "index": 1,
+          "key": "phase",
+          "label": "桥接相位",
+          "gesture": "rotary",
+          "min": 0,
+          "max": 1,
+          "default": 0.25,
+          "hint": "旋转调相，接近中位时桥接更稳定"
+        },
+        {
+          "index": 2,
+          "key": "probe",
+          "label": "探针推杆",
+          "gesture": "slider",
+          "axis": "x",
+          "min": 0,
+          "max": 1,
+          "default": 0,
+          "hint": "左右拖动同一根探针；相位未对齐时只能试探"
+        },
+        {
+          "index": 5,
+          "key": "bridge",
+          "label": "双颌桥接柄",
+          "gesture": "detent",
+          "min": 0,
+          "max": 1,
+          "default": 0,
+          "steps": 2,
+          "hint": "向上拖开桥，向下拖合；先退探针再闭合"
+        }
+      ],
+      "status": "控制已接入；上部模型待逐款精修"
+    }
+  ],
+  "corrections": {
+    "G": "prompts/G_panel_correction.txt",
+    "K": "Stylus is now a latching detent for one-pointer use; concept-panel correction pending."
+  }
+}

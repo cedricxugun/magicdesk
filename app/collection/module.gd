@@ -26,6 +26,8 @@ var scan := 0.0
 var bounds := AABB()
 var stowing := false
 var interactive:=true
+var play:RefCounted
+var interactive_rig:Array=[]
 
 func v3(v:Array)->Vector3:return Vector3(v[0],v[1],v[2])
 
@@ -36,6 +38,7 @@ func named(label:String)->Node3D:return asset.find_child(label,true,false) as No
 
 func setup(owner:Node3D,definition:Dictionary,packed:PackedScene)->void:
 	host=owner;data=definition
+	play=load("res://collection/play_state.gd").new();play.setup(self)
 	asset=packed.instantiate();add_child(asset)
 	for p in data.parts:
 		var node:=named(p.name)
@@ -46,6 +49,7 @@ func setup(owner:Node3D,definition:Dictionary,packed:PackedScene)->void:
 		for sample in c.samples:samples.append(pose(sample))
 		controls.append({"node":named(c.name),"samples":samples})
 	for m in data.motions:motions.append({"node":named(m.name),"home":named(m.name).transform,"axis":m.axis,"speed":float(m.speed),"amplitude":float(m.amplitude),"phase":float(m.phase),"pose":Quaternion.IDENTITY})
+	for item in data.get("interactive_rig",[]):interactive_rig.append({"node":named(item.name),"kind":str(item.kind),"home":pose(item.home)})
 	_collect(asset)
 	apply_pose()
 	bounds=_bounds()
@@ -111,6 +115,7 @@ func settled()->bool:
 
 func tick(delta:float,enabled_power:float)->void:
 	clock+=delta;power=enabled_power
+	play.tick(delta)
 	_update_motions(delta)
 	for mat in emissive_materials:mat.set_shader_parameter("power",power*(effect.quiet_gain if effect else 1.0))
 	if open_target==0 and (stowing or explode_target>0 or openness>.001 or explosion>.001) and effect and not effect.ready_to_fold():
@@ -133,8 +138,9 @@ func tick(delta:float,enabled_power:float)->void:
 	_sync_colliders()
 
 func apply_pose()->void:
+	_apply_interactive_rig()
 	for c in controls:
-		var f:float=clampf(openness,0,1)*(c.samples.size()-1)
+		var f:float=clampf(play.pose_fraction(str(c.node.name),openness),0,1)*(c.samples.size()-1)
 		var lo:=int(f);var desired:Transform3D=c.samples[lo].interpolate_with(c.samples[mini(lo+1,c.samples.size()-1)],f-lo)
 		if c.node.transform!=desired:c.node.transform=desired
 	for m in motions:
@@ -151,10 +157,28 @@ func apply_pose()->void:
 					desired.origin+=v3(first.offset).lerp(v3(last.offset),smoothstep(float(first.at),float(last.at),explosion));break
 		if p.node.transform!=desired:p.node.transform=desired
 
+func _apply_interactive_rig()->void:
+	if interactive_rig.is_empty():return
+	var trim:float=lerpf(.25,play.number("trim"),play.gain)
+	var brake:float=play.number("brake")*play.gain
+	for item in interactive_rig:
+		var desired:Transform3D=item.home
+		match item.kind:
+			"trim_gear":desired.basis=item.home.basis*Basis(Vector3.BACK,-(trim-.25)*2.2)
+			"counter_gear":desired.basis=item.home.basis*Basis(Vector3.BACK,(trim-.25)*3.6)
+			"trim_carriage":
+				var a:=deg_to_rad(141.0-trim*28.0)
+				desired.origin=Vector3(-.1+.836*cos(a),1.8+.836*sin(a),.147)
+				desired.basis=Basis(Vector3.BACK,a)
+			"brake_left":desired.origin.x+=.014*brake
+			"brake_right":desired.origin.x-=.014*brake
+		item.node.transform=desired
+
 func _update_motions(delta:float)->void:
 	for m in motions:
 		var value:float=phase*m.speed+m.phase
 		if m.amplitude>0:value=sin(value)*m.amplitude
+		if open_target>.01 and not stowing:value=play.motion_angle(str(m.node.name),value)
 		if explode_target>0 or explosion>.001 or stowing:value=0
 		var axis:=Vector3.UP if m.axis=="y" else Vector3.RIGHT if m.axis=="x" else Vector3.BACK
 		var target:=Quaternion(axis,value)

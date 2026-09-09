@@ -35,9 +35,9 @@
     "N"
   ],
   "shared_structure": "One App, one authoritative fixed pedestal, selected mechanical extending plaque rack, model-specific operation cassettes",
-  "entry_refinement": "Flush rim segment, seam light, latch response, extending rail and sequential plaque deployment",
+  "entry_refinement": "Clearly visible ivory curved cowl with real hinge support, rail deployment and physical plaques; latest HANDOFF overrides old thin pressure-strip wording.",
   "art_reference": "Atomic Heart",
-  "production_status": "0.2.1 shared-selector rework in progress; latest geometry/shader refinements not replayed or exported. Prior 0.2.0 engineering checks do not prove visual completion or actual user-visible integration.",
+  "production_status": "Windows 0.2.2 interaction preview exported and tested through physical cowl/plaque paths. Eight built-in review boards archived. F first mechanism refinement delivered as sibling assets; seven other upper assemblies remain first-pass art.",
   "art_pipeline": "Every selected object needs visual motion/VFX keyframes and authored visual assets before final Godot integration. Pure Godot procedural placeholder effects are not accepted as final visual quality.",
   "additional_candidates_status": {
     "M": "v3 concept complete for review: orbiting planets -> infall -> devour -> reconstruction; same open hardware exploded sheet provided",
@@ -45,15 +45,15 @@
   },
   "selection_version": {
     "structure": "mechanical rail and physical plaques",
-    "entry": "flush rim pressure strip, no standalone round menu button",
+    "entry": "Visible ivory curved cowl, full cowl clickable; no standalone menu button",
     "feedback": "seam trace -> latch -> telescoping rail -> staggered plaques",
     "swap": "stow/archive scan -> recast -> operation cassette exchange"
   },
   "quality_target": "AAA-level visual target with real-render review, exact assembly return, sampled continuous clearance and reversible transitions; no claim of achievement until verified.",
   "user_delivery_feedback": {
-    "M": "User says not integrated in actual App; verify through real visible selector before marking integrated.",
-    "N": "User says not integrated in actual App; verify through real visible selector before marking integrated.",
+    "M": "Windows 0.2.2 exported EXE selection/input replay passed; user visual acceptance and Mac rebuild still pending.",
+    "N": "Windows 0.2.2 exported EXE selection/input replay passed; user visual acceptance and Mac rebuild still pending.",
     "all_except_B": "Various problems; refine one device at a time.",
-    "art_tool_permission": "User allows image2.5 sunburst for image-based refinement; verify available tool/API on receiving device."
+    "art_tool_permission": "User explicitly requires all future images through built-in image_gen; replaces the earlier Sunburst API preference."
   }
 }

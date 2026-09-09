@@ -1,6 +1,10 @@
 # MagicDesk · 桌面机械装置
 
-**跨设备继续开发先读 [HANDOFF.md](HANDOFF.md)。当前源码为 0.2.1 切换机制返工中的检查点，不是已完成版本。用户确认 M/N 尚未实际加入 App，除 B 外所有模型需逐款精修；旧测试报告不代表当前完成度。**
+**跨设备继续开发先读 [HANDOFF.md](HANDOFF.md)。Windows 0.2.2 交互评估版现已包含九款集合、新控制器和 F 首轮机构精修；M/N 已通过导出 EXE 的入口回放。八款最终美术仍未完成，Mac 尚未重新导出本次版本。**
+
+[运行 Windows 交互评估版](dist/MagicDesk.exe) · [设计图 / 实机对照](production/interaction_refinement/index.html) · [原速实机演示](review/interaction_native/release/review_walkthrough.mp4) · [本轮制作状态](production/interaction_refinement/README.md)
+
+点击底座左前白色舱罩展开实体铭牌，滚轮翻阅并点击选择。新控制器支持按住、拖动、旋转、档位与摇杆；悬停查看对应手势。右侧双向拨杆左推拆解、右推组装，最右 X 收拢退出。原 `dist/HELIOS.exe` 保持原版，以下保留其说明。
 
 本机 Mac 开发构建 0.2.0 已接入 B 孵日器与 F/G/I/J/K/L/M/N 八款装置，共用固定底座、机械铭牌机关与透明桌面窗口。动作分镜、实际贴图资产、Blender 源文件和验证记录见 [首批制作记录](production/batch1/WORKLOG.md)。以下 HELIOS 说明也保留为原有 Windows 版本基准。
 

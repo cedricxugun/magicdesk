@@ -1,0 +1,481 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "F_physical_card_visible",
+      "passed": true,
+      "details": {
+        "hit": true,
+        "id": "F",
+        "kind": "card",
+        "slot": 1,
+        "x": 405.332061767578,
+        "y": 946.062927246094
+      }
+    },
+    {
+      "check": "F_single_base",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_all_controls_hit",
+      "passed": true,
+      "details": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "F_pointer_captured",
+      "passed": true,
+      "details": 1
+    },
+    {
+      "check": "F_drag_changes_control",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_release_clears_capture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_hold_is_sustained",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_release_stops_hold",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_gauge_readonly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "F_assemble_keeps_app_open",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "G_physical_card_visible",
+      "passed": true,
+      "details": {
+        "hit": true,
+        "id": "G",
+        "kind": "card",
+        "slot": 2,
+        "x": 467.723297119141,
+        "y": 948.334899902344
+      }
+    },
+    {
+      "check": "G_single_base",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "G_all_controls_hit",
+      "passed": true,
+      "details": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "G_pointer_captured",
+      "passed": true,
+      "details": 1
+    },
+    {
+      "check": "G_drag_changes_control",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "G_release_clears_capture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "G_gauge_readonly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "G_assemble_keeps_app_open",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "I_physical_card_visible",
+      "passed": true,
+      "details": {
+        "hit": true,
+        "id": "I",
+        "kind": "card",
+        "slot": 3,
+        "x": 530.561889648438,
+        "y": 950.618041992188
+      }
+    },
+    {
+      "check": "I_single_base",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "I_all_controls_hit",
+      "passed": true,
+      "details": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "I_pointer_captured",
+      "passed": true,
+      "details": 1
+    },
+    {
+      "check": "I_drag_changes_control",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "I_release_clears_capture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "I_hold_is_sustained",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "I_release_stops_hold",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "I_gauge_readonly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "I_assemble_keeps_app_open",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "J_physical_card_visible",
+      "passed": true,
+      "details": {
+        "hit": true,
+        "id": "J",
+        "kind": "card",
+        "slot": 4,
+        "x": 593.851623535156,
+        "y": 952.912475585938
+      }
+    },
+    {
+      "check": "J_single_base",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "J_all_controls_hit",
+      "passed": true,
+      "details": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "J_pointer_captured",
+      "passed": true,
+      "details": 1
+    },
+    {
+      "check": "J_drag_changes_control",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "J_release_clears_capture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "J_gauge_readonly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "J_assemble_keeps_app_open",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "K_physical_card_visible",
+      "passed": true,
+      "details": {
+        "hit": true,
+        "id": "K",
+        "kind": "card",
+        "slot": 5,
+        "x": 657.596557617188,
+        "y": 955.218505859375
+      }
+    },
+    {
+      "check": "K_single_base",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "K_all_controls_hit",
+      "passed": true,
+      "details": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "K_pointer_captured",
+      "passed": true,
+      "details": 1
+    },
+    {
+      "check": "K_drag_changes_control",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "K_release_clears_capture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "K_needle_latches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "K_one_pointer_writes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "K_gauge_readonly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "K_assemble_keeps_app_open",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "L_physical_card_visible",
+      "passed": true,
+      "details": {
+        "hit": true,
+        "id": "L",
+        "kind": "card",
+        "slot": 5,
+        "x": 657.596557617188,
+        "y": 955.218505859375
+      }
+    },
+    {
+      "check": "L_single_base",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "L_all_controls_hit",
+      "passed": true,
+      "details": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "L_pointer_captured",
+      "passed": true,
+      "details": 1
+    },
+    {
+      "check": "L_drag_changes_control",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "L_release_clears_capture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "L_hold_is_sustained",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "L_release_stops_hold",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "L_gauge_readonly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "L_assemble_keeps_app_open",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "M_physical_card_visible",
+      "passed": true,
+      "details": {
+        "hit": true,
+        "id": "M",
+        "kind": "card",
+        "slot": 5,
+        "x": 657.596557617188,
+        "y": 955.218505859375
+      }
+    },
+    {
+      "check": "M_single_base",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "M_all_controls_hit",
+      "passed": true,
+      "details": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "M_pointer_captured",
+      "passed": true,
+      "details": 1
+    },
+    {
+      "check": "M_drag_changes_control",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "M_release_clears_capture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "M_gravity_changes_orbits",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "M_reseed_clears_gravity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "M_gauge_readonly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "M_assemble_keeps_app_open",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "N_physical_card_visible",
+      "passed": true,
+      "details": {
+        "hit": true,
+        "id": "N",
+        "kind": "card",
+        "slot": 5,
+        "x": 657.596557617188,
+        "y": 955.218505859375
+      }
+    },
+    {
+      "check": "N_single_base",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "N_all_controls_hit",
+      "passed": true,
+      "details": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "N_pointer_captured",
+      "passed": true,
+      "details": 1
+    },
+    {
+      "check": "N_drag_changes_control",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "N_release_clears_capture",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "N_gauge_readonly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "N_assemble_keeps_app_open",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "verification": "Application-owned input replay through native form, TCP bridge and 3D raycast; not physical mouse automation.",
+  "visual_acceptance": false
+}

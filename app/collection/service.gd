@@ -62,6 +62,10 @@ var transition_vfx:Node3D
 var selector_wait:=false
 var pending_action:=-1
 var selected_slot:=-1
+var control_driver:RefCounted
+var native_regions:Array[Rect2i]=[]
+var regions_clock:=0.0
+var control_library:Node3D
 var read_time:=-1.0
 var signal_materials:Array[ShaderMaterial]=[]
 var legacy_mount_homes:Array[Transform3D]=[]
@@ -74,6 +78,7 @@ func _pose(p:Dictionary)->Transform3D:
 
 func setup(owner:Node3D)->void:
 	host=owner
+	control_driver=load("res://collection/control_driver.gd").new();control_driver.setup(self)
 	var config:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/collection/registry.json"))
 	registry=config.models
 	base_display=host.named("BASE_FIXED_DisplayMesh");original_base_mesh=base_display.mesh
@@ -150,6 +155,8 @@ func _setup_selector()->void:
 		var index_body:=StaticBody3D.new();index_body.collision_layer=8;index_body.collision_mask=0;index_body.set_meta("index_spindle",true);index_spindle.add_child(index_body)
 		var shape:=CollisionShape3D.new();var cylinder:=CylinderShape3D.new();cylinder.radius=.069;cylinder.height=.07;shape.shape=cylinder;index_body.add_child(shape)
 	for kind in selector_data.widgets:widget_templates[kind]=selector.find_child(selector_data.widgets[kind],true,false)
+	if ResourceLoader.exists("res://assets/collection/control_library.glb"):
+		control_library=load("res://assets/collection/control_library.glb").instantiate();add_child(control_library);control_library.hide()
 	selector.find_child("S_WIDGET_LIBRARY",true,false).hide()
 	selector.find_child("S_PANEL",true,false).hide()
 	_smoke_glass(selector)
@@ -188,6 +195,17 @@ func _smoke_glass(node:Node)->void:
 func update_hover_ui()->bool:
 	if selector_hit.is_empty():
 		if card_hint_active:card_hint_active=false;host.hover=-2
+		if current and state=="idle" and selector_amount<.01:
+			var index:int=hit_control(pointer_position())
+			var info:Dictionary=control_driver.profile(index)
+			if not info.is_empty():
+				host.hover=-1;host.tooltip.visible=true
+				host.tooltip_title.text=str(info.label)
+				var value:Variant=current.play.gauge_value() if info.gesture=="gauge" else current.play.value(str(info.key))
+				host.tooltip_text.text=str(info.hint)+"\n"+("%.2f"%float(value) if not value is Vector2 else "X %.2f / Y %.2f"%[value.x,value.y])
+				var point:Vector2=host.camera.unproject_position(action_anchor(index))
+				host.tooltip.position=point-Vector2(125,80)
+				return true
 		return false
 	card_hint_active=true;host.hover=-1;host.tooltip.visible=true
 	var body:StaticBody3D=selector_hit.collider
@@ -215,6 +233,7 @@ func _refresh_cards()->void:
 
 func toggle_selector()->void:
 	if closing:return
+	control_driver.cancel()
 	_acknowledge_intro()
 	if selector_target>0 or selector_wait:
 		selector_wait=false;selector_target=0
@@ -246,6 +265,7 @@ func browse(direction:int)->void:
 	browse_pending=direction;browse_time=0;host.sound("click",1.10)
 
 func consume_input(event:InputEvent)->bool:
+	if control_driver.consume(event):return true
 	if event is InputEventMouseMotion and index_dragging:
 		index_drag_distance+=event.relative.y
 		if absf(index_drag_distance)>14:browse(1 if index_drag_distance>0 else -1);index_drag_distance=0
@@ -285,18 +305,39 @@ func _build_controls()->void:
 	var plate:Node3D=selector.find_child("S_PANEL",true,false).duplicate();custom_panel.add_child(plate);plate.show()
 	_add_control_colliders(plate,-1,2)
 	var definition:=_definition(active_id)
+	var layout:Array=[1,2,5,3,4]
+	if active_id in ["J","L"]:layout=[1,5,2,3,4]
+	elif active_id=="M":layout=[1,2,3,5,4]
+	elif active_id=="N":layout=[5,1,2,3,4]
 	for i in range(1,6):
 		var kind:String=definition.widgets[i-1]
-		var widget:Node3D=widget_templates[kind].duplicate();custom_panel.add_child(widget);widget.show()
-		var point:Vector3=host.buttons[i].mount.global_position
+		var profile:Dictionary=control_driver.profile(i)
+		var template:Node3D=widget_templates[kind]
+		if control_library and not profile.is_empty():
+			var shape:String=profile.gesture
+			if shape=="slider":shape+="_"+str(profile.get("axis","y"))
+			var authored:Node3D=control_library.find_child("CTRL_"+shape,true,false)
+			if authored:template=authored
+		var widget:Node3D=template.duplicate();custom_panel.add_child(widget);widget.show()
+		var slot:int=layout.find(i)+1
+		var mount:Node3D=host.buttons[slot].mount
+		# The outgoing cassette is already retracted during _commit. Its live
+		# transform would bury new controls inside the ivory base panel.
+		var home:Transform3D=legacy_mount_homes[slot-1]
+		var point:Vector3=mount.get_parent().to_global(home.origin)
 		widget.global_position=point;widget.look_at(point+Vector3(point.x,0,point.z).normalized(),Vector3.UP,true)
 		_add_control_colliders(widget,i,16)
+		_skin_control(widget)
 		var moving:Array=[]
 		for node in widget.get_children():
 			var label:String=str(node.name)
 			if label.contains("WidgetSocket") or label.contains("WidgetRim"):continue
 			if node is Node3D:moving.append({"node":node,"home":node.transform})
-		custom_controls.append({"node":widget,"home":widget.transform,"index":i,"kind":kind,"press":0.0,"moving":moving,"turn":0.0,"turn_target":0.0})
+		var initial:Variant=current.play.value(str(profile.key)) if current and profile.has("key") else 0.0
+		var initial_turn:=0.0
+		if profile.get("gesture","") in ["rotary","crank"]:
+			initial_turn=float(initial)*TAU if profile.gesture=="crank" else inverse_lerp(float(profile.min),float(profile.max),float(initial))*PI*1.6
+		custom_controls.append({"node":widget,"home":widget.transform,"index":i,"kind":kind,"press":0.0,"moving":moving,"turn":initial_turn,"turn_target":initial_turn,"input_value":initial})
 
 func hit_control(point:Vector2)->int:
 	if active_id=="B" or state!="idle":return -1
@@ -312,7 +353,7 @@ func _add_control_colliders(node:Node,index:int,layer:int)->void:
 
 func action_anchor(index:int)->Vector3:
 	for c in custom_controls:
-		if c.index==index:return c.node.global_position
+		if c.index==index:return c.node.to_global(Vector3(0,0,.045))
 	return host.buttons[index].mount.global_position
 
 func dispatch(index:int)->bool:
@@ -346,6 +387,7 @@ func request_model(id:String)->void:
 	if state not in ["idle","loading"]:return
 	var definition:=_definition(id)
 	if definition.is_empty():return
+	control_driver.cancel()
 	_acknowledge_intro()
 	_abandon_loading()
 	ticket+=1;requested=id;state="loading";state_time=0;last_error=""
@@ -474,7 +516,7 @@ func _legacy_panel_depth(depth:float)->void:
 
 func _update_actions()->void:
 	var definition:=_definition(active_id)
-	host.menu.set_item_text(host.menu.get_item_index(0),"MagicDesk 0.2.1 · "+active_id+" "+str(definition.title))
+	host.menu.set_item_text(host.menu.get_item_index(0),"MagicDesk 0.2.2 · "+active_id+" "+str(definition.title))
 	host.TITLES=definition.actions.duplicate()
 	host.HINTS=[]
 	for i in range(definition.actions.size()):
@@ -486,6 +528,7 @@ func _update_actions()->void:
 func request_shutdown()->bool:
 	if active_id=="B" and state=="idle":return false
 	if closing:return true
+	control_driver.cancel()
 	_abandon_loading();closing=true;ticket+=1;requested="";selector_target=0;state="shutdown_wait"
 	selector_wait=false;scanner_target=0;transition_vfx.finish()
 	if current:current.stow()
@@ -537,7 +580,7 @@ func tick(delta:float)->void:
 			var anchor:Vector2=host.camera.unproject_position(card_nodes[0].node.to_global(Vector3(-.13,.48,0)))
 			archive_guide.position=Vector2(clampf(anchor.x,12,host.canonical_size.x-archive_guide.size.x-12),anchor.y-archive_guide.size.y-10)
 	for c in card_nodes:c.body.collision_layer=8 if selector_amount>.9 else 0
-	var cursor:=Vector2(DisplayServer.mouse_get_position()-host.get_window().position+host.crop_rect.position)
+	var cursor:=pointer_position()
 	var hit:=_selector_ray(cursor)
 	selector_hit=hit
 	for i in range(card_nodes.size()):
@@ -556,18 +599,32 @@ func tick(delta:float)->void:
 		material.set_shader_parameter("travel",-maxf(0,read_time)*.8)
 	seam.visible=not hit.is_empty() or selector_amount>.01 or state!="idle" or intro_pending
 	for c in custom_controls:
-		c.press=move_toward(c.press,0,delta*4)
+		if int(c.index)==3 and current:c["input_value"]=current.play.gauge_value()
+		if not control_driver.held(int(c.index)):c.press=move_toward(c.press,0,delta*4)
 		if c.node.transform!=c.home:c.node.transform=c.home
 		c.turn=move_toward(c.turn,c.turn_target,delta*4)
 		for item in c.moving:
 			var movement:=Transform3D.IDENTITY
-			if c.kind=="knob":movement.basis=Basis(Vector3.BACK,c.turn)
+			var profile:Dictionary=control_driver.profile(int(c.index))
+			var gesture:String=profile.get("gesture","")
+			var input_value:Variant=c.get("input_value",0.0)
+			if gesture in ["rotary","crank"]:movement.basis=Basis(Vector3.BACK,c.turn)
+			elif gesture=="joystick" and input_value is Vector2:movement.basis=Basis.from_euler(Vector3(-input_value.y*.3,input_value.x*.3,0))
+			elif gesture=="gauge":movement.basis=Basis(Vector3.BACK,lerpf(-1.0,1.0,float(input_value)))
+			elif gesture=="service":movement.basis=Basis(Vector3.UP,float(input_value)*.26)
+			elif gesture in ["slider","pump","detent"]:
+				var normalized:float=inverse_lerp(float(profile.min),float(profile.max),float(input_value))
+				if gesture=="detent":movement.basis=Basis(Vector3.RIGHT,(normalized-.5)*.65)
+				else:movement.origin=Vector3((normalized-.5)*.075,0,0) if profile.get("axis","y")=="x" else Vector3(0,(normalized-.5)*.075,0)
+			elif c.kind=="knob":movement.basis=Basis(Vector3.BACK,c.turn)
 			elif c.kind=="lever":
 				var pivot:=Vector3(0,-.025,.03);movement=Transform3D(Basis(Vector3.RIGHT,-c.press*.36),pivot)*Transform3D(Basis.IDENTITY,-pivot)
 			elif c.kind=="rocker":movement.basis=Basis(Vector3.RIGHT,c.press*.16)
 			else:movement.origin.z=-c.press*.014
 			var desired:Transform3D=movement*item.home
 			if item.node.transform!=desired:item.node.transform=desired
+	regions_clock+=delta
+	if regions_clock>.05:native_regions=_input_regions();regions_clock=0.0
 	if current:
 		if current.rotation.y!=host.angle:current.rotation.y=host.angle
 		current.tick(delta,host.power)
@@ -612,7 +669,44 @@ func tick(delta:float)->void:
 			if settled:state="shutdown_final";host._start_final_shutdown()
 
 func diagnostics()->Dictionary:
-	return {"active":active_id,"state":state,"requested":requested,"selector":selector_amount,"base_instances":_count_bases(host),"base_bounds":str(base_display.mesh.get_aabb()),"error":last_error,"module":current.diagnostics() if current else {"id":"B","parts":host.parts.size()},"actions":action_log,"load_metrics":load_metrics}
+	return {"active":active_id,"state":state,"requested":requested,"selector":selector_amount,"base_instances":_count_bases(host),"base_bounds":str(base_display.mesh.get_aabb()),"error":last_error,"module":current.diagnostics() if current else {"id":"B","parts":host.parts.size()},"play":current.play.diagnostics() if current else {},"actions":action_log,"load_metrics":load_metrics}
+
+func pointer_position()->Vector2:
+	return host.native_cursor if host.native_mode else host.get_viewport().get_mouse_position()
+
+func _skin_control(node:Node)->void:
+	if node is MeshInstance3D:
+		for surface in range(node.mesh.get_surface_count()):
+			var material:Material=node.get_active_material(surface)
+			if material and host.surface_materials.has(material.resource_name):node.set_surface_override_material(surface,host.surface_materials[material.resource_name])
+	for child in node.get_children():_skin_control(child)
+
+func _screen_points(node:Node,points:Array[Vector2])->void:
+	if node is Node3D and not node.is_visible_in_tree():return
+	if node is MeshInstance3D:
+		var box:AABB=node.get_aabb()
+		for x in [0,1]:
+			for y in [0,1]:
+				for z in [0,1]:points.append(host.camera.unproject_position(node.to_global(box.position+box.size*Vector3(x,y,z))))
+	for child in node.get_children():_screen_points(child,points)
+
+func _input_regions()->Array[Rect2i]:
+	var roots:Array[Node]=[]
+	for label in selector_data.get("click_surfaces",[]):roots.append(selector.find_child(label,true,false))
+	if selector_amount>.8:
+		if index_spindle:roots.append(index_spindle)
+		for card in card_nodes:roots.append(card.node)
+	if current and state=="idle":
+		for control in custom_controls:roots.append(control.node)
+	var regions:Array[Rect2i]=[]
+	for node in roots:
+		if node==null:continue
+		var points:Array[Vector2]=[];_screen_points(node,points)
+		if points.is_empty():continue
+		var box:=Rect2(points[0],Vector2.ZERO)
+		for point in points:box=box.expand(point)
+		regions.append(Rect2i(box.grow(10)))
+	return regions
 
 func _count_bases(node:Node)->int:
 	var count:=1 if str(node.name)=="BASE_FIXED" else 0

@@ -1,0 +1,38 @@
+{
+  "version": "0.2.2 Windows interaction preview",
+  "exe": "dist/MagicDesk.exe",
+  "sha256": "ADF1C78846B667BFD26FBAB3BADF18D623F1A1F9BEEF21CB7D06577C162D5C12",
+  "native_checks": 74,
+  "native_passed": true,
+  "logic_checks": 26,
+  "logic_passed": true,
+  "window_handles": [
+    35988038
+  ],
+  "anchor_x": [
+    0
+  ],
+  "anchor_y": [
+    -180
+  ],
+  "native_update_errors": 0,
+  "second_launch_exited": true,
+  "second_launch_reactivated_existing_window": true,
+  "final_art_acceptance": false,
+  "mac_0_2_2_verified": false,
+  "fps": {
+    "presented_frames": 23264,
+    "received_frames": 23264,
+    "average_fps": 59.04,
+    "median_frame_ms": 16.6,
+    "p95_frame_ms": 21.71,
+    "max_gap_ms": 786.71
+  },
+  "replay_exe_sha256": "35EE92990207738D23453394717CC0B233D49FD038390586195722B0B2DD432B",
+  "final_revision": "Adds release on native mouse-capture loss and cancels active holds before opening archive; same art as full 74-check replay.",
+  "final_exe_smoke": {
+    "checks": 10,
+    "passed": true,
+    "report": "review/interaction_native/final_smoke/interaction_report.json"
+  }
+}

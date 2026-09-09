@@ -80,6 +80,7 @@ var closing_time := -1.0
 var activation_display_time := -1.0
 var mac_desktop := false
 var collection:Node3D
+var collection_enabled:=true
 
 func opening_fraction(display_time:float)->float:
 	if display_time<.40:return 0.0
@@ -108,6 +109,9 @@ func smooth01(t: float) -> float:
 
 func _ready() -> void:
 	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("--collection-qa="):
+			get_tree().set_meta("collection_skip_intro",true);get_tree().set_meta("collection_no_save",true)
+		if arg=="--helios-only":collection_enabled=false
 		if arg == "--self-test": test_mode = true
 		if arg == "--demo": demo_mode = true
 		if arg == "--render-probe":native_mode=true
@@ -222,12 +226,12 @@ func _ready() -> void:
 	get_window().mouse_passthrough_polygon = PackedVector2Array()
 	if test_mode: _run_tests()
 	if not capture_dir.is_empty(): DirAccess.make_dir_recursive_absolute(capture_dir)
-	if native_mode and native_port>0:
-		native_bridge=Node.new();native_bridge.set_script(load("res://native_bridge.gd"));add_child(native_bridge);native_bridge.setup(self,native_port)
-	if mac_desktop and not test_mode:
+	if collection_enabled and not test_mode:
 		if ResourceLoader.exists("res://assets/collection/models/S.glb"):
 			collection=load("res://collection/service.gd").new();add_child(collection);collection.setup(self)
 		else:message("装置档案未能加载，请重新打开完整的 MagicDesk App。",12)
+	if native_mode and native_port>0:
+		native_bridge=Node.new();native_bridge.set_script(load("res://native_bridge.gd"));add_child(native_bridge);native_bridge.setup(self,native_port)
 
 func _collect_meshes(node: Node) -> void:
 	if node is MeshInstance3D:

@@ -85,9 +85,14 @@ func _socket(key:String)->Node3D:
 	return module.named(str(module.data.sockets[key]))
 
 func tick(delta:float)->void:
+	var manual:bool=module.play!=null and module.play.gain>.001 and not quiet
+	if manual and module.data.id=="M":
+		orbit_speed=module.play.number("orbit")
+		burst_age=float(module.play.response.capture_age)
+		reseed_age=float(module.play.response.rebuild)
 	if not quiet and not orbit_paused:orbit_time+=delta*orbit_speed
-	if burst_age>=0:burst_age+=delta
-	if reseed_age>=0:reseed_age+=delta
+	if burst_age>=0 and not (manual and module.data.id=="M"):burst_age+=delta
+	if reseed_age>=0 and not (manual and module.data.id=="M"):reseed_age+=delta
 	if probe_returning:
 		probe_t=move_toward(probe_t,0,delta*.55)
 		if probe_t<=0:probe_returning=false
@@ -103,33 +108,40 @@ func tick(delta:float)->void:
 		"F":
 			field.visible=false
 			var tip:Vector3=_socket("weight_tip").global_position
-			_update_links([tip],Vector3(tip.x,origin.global_position.y,tip.z),active*1.8)
+			_update_links([tip],Vector3(tip.x,origin.global_position.y,tip.z),active*(.4+float(module.play.response.balance)*1.8) if manual else active*1.8)
 		"G":
 			field.scale=Vector3(.78,.86,1)
+			if manual:field_mat.set_shader_parameter("strength",active*(.10+float(module.play.response.imprint)*1.8))
 			_update_links([_socket("page_0").global_position,_socket("page_2").global_position,_socket("page_4").global_position],origin.global_position,active)
 		"I":
-			field.scale=Vector3.ONE*(.72+.2*sin(module.clock*1.3))
+			field.scale=Vector3.ONE*(.72+.2*sin(module.clock*(.7+module.play.number("frequency")*2.0))) if manual else Vector3.ONE*(.72+.2*sin(module.clock*1.3))
+			if manual:field_mat.set_shader_parameter("strength",active*(.08+float(module.play.response.echo)*1.8))
 			field.global_position+=origin.global_basis.z*.10
 		"J":
 			field.visible=false
 			for i in range(capillaries.size()):
 				capillaries[i].set_shader_parameter("pulse",module.clock*.32-i*.12)
-				capillaries[i].set_shader_parameter("strength",active*(.55+climax*1.5))
+				capillaries[i].set_shader_parameter("strength",active*(.22+module.play.number("light")*(1.2 if i%3==int(module.play.number("branch")) else .25)) if manual else active*(.55+climax*1.5))
 		"K":
 			field.rotate_object_local(Vector3.RIGHT,-PI/2);field.scale=Vector3(1.0,.23,1)
 			field_mat.set_shader_parameter("image_scale",Vector2(1,.25))
-			field_mat.set_shader_parameter("flow",fmod(module.phase*.035,1.0))
+			field_mat.set_shader_parameter("flow",fposmod(module.play.number("feed")*.12,1.0) if manual else fmod(module.phase*.035,1.0))
 			var tips:Array=[];var points:Array=[]
 			for i in range(3):
 				var stylus:Node3D=module.named("K_C_StylusLift"+str(i))
-				stylus.position.y-=.055*maxf(0,sin(module.phase*4+i*TAU/3))*module.openness
+				var contact:float=module.play.number("stylus") if manual and i==int(module.play.number("channel")) else 0.0 if manual else maxf(0,sin(module.phase*4+i*TAU/3))
+				stylus.position.y-=.055*contact*module.openness
 				var tip:Vector3=_socket("needle_"+str(i)).global_position
 				tips.append(tip);points.append(Vector3(tip.x,origin.global_position.y,tip.z))
-			_update_links(tips,points,active)
+			_update_links(tips,points,active*module.play.number("stylus")*clampf(float(module.play.response.feed_motion)*12,0,1) if manual else active)
 		"L":
 			field.scale=Vector3(.16,.16,1)
-			_aim_lenses(origin.global_position)
-			_update_links([_socket("lens_0").global_position,_socket("lens_1").global_position,_socket("lens_2").global_position],origin.global_position,active*smoothstep(.90,.995,float(module.openness)))
+			var target:Vector3=origin.global_position
+			if manual:target+=Vector3(module.play.response.aim.x,module.play.response.aim.y,0);field.global_position=target
+			_aim_lenses(target)
+			var endpoints:Array=[]
+			for i in range(3):endpoints.append(target+Vector3((i-1)*.24,abs(i-1)*.12,0)*(1.0-float(module.play.response.focus_quality)) if manual else target)
+			_update_links([_socket("lens_0").global_position,_socket("lens_1").global_position,_socket("lens_2").global_position],endpoints,active*module.play.number("aperture") if manual else active*smoothstep(.90,.995,float(module.openness)))
 		"M":_tick_worlds(delta,power,origin)
 		"N":_tick_rift(delta,active)
 	if module.data.id not in ["M","N"]:field.scale*=float(module.data.get("display_calibration",{}).get("scale",1.0))
@@ -232,8 +244,11 @@ func _tick_rift(delta:float,active:float)->void:
 	if probe_running:
 		probe_t=move_toward(probe_t,1,delta*.36)
 		if probe_t>=1:probe_running=false
+	if module.play.gain>.001 and not quiet:
+		probe_running=false
+		probe_t=move_toward(probe_t,float(module.play.response.probe_target) if module.openness>.95 else 0.0,delta*.85)
 	throat.visible=active>.02
-	throat_mat.set_shader_parameter("strength",active*.9)
+	throat_mat.set_shader_parameter("strength",active*(.30+.60*float(module.play.response.focus_quality)) if module.play.gain>.001 else active*.9)
 	throat_mat.set_shader_parameter("flow",fmod(orbit_time*.035,1.0))
 	if active>.02 and (throat.mesh==null or not a.transform.is_equal_approx(throat_pose_a) or not b.transform.is_equal_approx(throat_pose_b)):
 		_build_throat(a,b);throat_pose_a=a.transform;throat_pose_b=b.transform

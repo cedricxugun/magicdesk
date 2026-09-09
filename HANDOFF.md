@@ -1,5 +1,30 @@
 # MagicDesk 接手说明
 
+## 2026-09-09 Windows 更新：0.2.2 交互评估版（优先于下方旧 Mac 交接）
+
+用户最新要求：所有图片只用订阅自带内置 image_gen，不调用、查询或探测 apilink/外部图片 API。官方已有 Flare/Sunburst，但当前工具没有型号选择或可核验返回，所有新图只标内置生图。
+
+- `production/interaction_refinement/index.html`：八款结构/控制概念与实际 EXE 画面对照；原图、提示词和 manifest 已归档。不是八款精修完成。
+- `dist/MagicDesk.exe`：新的独立 Windows x64 交互评估版；原 `dist/HELIOS.exe` 保留。使用 `tools/build_windows.ps1 -GodotPath <Godot 4.7.1>` 构建，默认不覆盖 B。
+- 集合现在在 Windows 正常运行初始化，原生窗体支持实体舱罩、铭牌、滚轮翻页与控制器连续输入。M/N 已通过导出 EXE 的实际入口选择回放；下方“未接入”的旧判断已被本轮证据更新。
+- 新控制器由 `blender/collection/Control_Library.blend` / `control_library.glb` 制作，旋转、持续按住、滑杆、摇杆、档位开关、只读仪表各有输入。不是换外形的统一点击。
+- 修复新操作匣继承旧匣缩回位置而埋入白色面板；安装点使用保存的固定基准。原生桥 HLS5 帧携带实际输入区域，拖控件不拖窗口。
+- K 刻针改为锁定档位，松手后可以再操作手摇柄；M 公共“组装”使用 stow，不误走旧的行星重构动作。
+- F 开始逐款实体精修：`blender/collection/F_refined.blend`、`app/assets/collection/models/F_refined.{glb,json}`；原 F.blend/F.glb 不动。新增双齿轮、弧形游标滑座、制动卡钳、轴承、卷边瓷壳、泪滴配重。5 个专用节点由真实控制驱动，GLB 刚体合批 494 → 31 网格；源文件仍保留分件。制作脚本 `refine_f.py` 直接读原源文件，新建兄弟文件，不运行旧整模脚本。
+- F 源动画保留旧开合/拆解，并在 385–529 帧增加差动/制动操作演示；553 帧收拢。原 B 源文件、模型、EXE 和公共底座尺寸均保留。
+
+验证：`tests/collection/gesture_logic_report.json` 的 26 项控制因果/机构/拆装回位检查通过；`review/interaction_native/release/interaction_report.json` 的 74 项在导出 EXE 自身窗体输入处理 → TCP 桥 → 3D 射线上回放通过。覆盖八款铭牌、控件命中、按住/释放、K 单鼠标刻写、M 坠入/重构、组装不退出。Computer Use 的运行环境初始化失败，因此这是应用自身输入回放，不能称为人工鼠标录像。
+
+连续实机原速视频：`review/interaction_native/release/review_walkthrough.mp4`，从完整 `native_walkthrough.mp4` 只裁去首尾等待，无加速。真实截图同目录；目录中的 `F_archive_scan.png` 也暴露了当前归档线框仍偏弱的问题，不要据此宣称特效已达标。
+
+本机 RTX 3060，录制期间平均 59.04 FPS，P95 帧间隔 21.71 ms，最长间隔 786.71 ms；统计包含首次装置切换/载入，未定位该最大间隔的具体阶段，不能说全程无卡顿。原生窗口 UpdateLayeredWindow 返回错误为 0。此轮没有重做 B 的蒸汽。
+
+**接下来仍必须做：** F 对照图稿继续完善体积、机构连接与完整招牌演出；G/I/J/K/L/M/N 上部仍为旧第一版，逐款精修；K 图稿按新锁柄补一致性修正；公共扫描/重建光效仍偏弱，操作匣旋转鼓交换仍未完成；首次切换的大帧间隔继续定位。Mac 尚未重新导出或验证 0.2.2，不能把 Windows 证据套到 Mac。
+
+---
+
+## 旧 Mac 交接记录（历史背景）
+
 更新时间：2026-09-09。用户要求先推送 Git，改到另一台设备继续。**这是开发中交接，不是完成或发布。先读本文，再读 AGENTS.md、PRODUCTION_ART.md。**
 
 ## 用户最新判断与优先级

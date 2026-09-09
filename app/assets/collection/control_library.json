@@ -1,0 +1,66 @@
+{
+  "gestures": [
+    {
+      "gesture": "rotary",
+      "root": "CTRL_rotary",
+      "moving": "MovingGrip",
+      "static": "WidgetSocket"
+    },
+    {
+      "gesture": "hold",
+      "root": "CTRL_hold",
+      "moving": "MovingGrip",
+      "static": "WidgetSocket"
+    },
+    {
+      "gesture": "slider_x",
+      "root": "CTRL_slider_x",
+      "moving": "MovingGrip",
+      "static": "WidgetSocket"
+    },
+    {
+      "gesture": "slider_y",
+      "root": "CTRL_slider_y",
+      "moving": "MovingGrip",
+      "static": "WidgetSocket"
+    },
+    {
+      "gesture": "detent",
+      "root": "CTRL_detent",
+      "moving": "MovingGrip",
+      "static": "WidgetSocket"
+    },
+    {
+      "gesture": "pump",
+      "root": "CTRL_pump",
+      "moving": "MovingGrip",
+      "static": "WidgetSocket"
+    },
+    {
+      "gesture": "crank",
+      "root": "CTRL_crank",
+      "moving": "MovingGrip",
+      "static": "WidgetSocket"
+    },
+    {
+      "gesture": "joystick",
+      "root": "CTRL_joystick",
+      "moving": "MovingGrip",
+      "static": "WidgetSocket"
+    },
+    {
+      "gesture": "gauge",
+      "root": "CTRL_gauge",
+      "moving": "MovingGrip",
+      "static": "WidgetSocket"
+    },
+    {
+      "gesture": "service",
+      "root": "CTRL_service",
+      "moving": "MovingGrip",
+      "static": "WidgetSocket"
+    }
+  ],
+  "source": "blender/collection/Control_Library.blend",
+  "shared_base_modified": false
+}

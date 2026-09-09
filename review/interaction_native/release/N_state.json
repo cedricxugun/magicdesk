@@ -1,0 +1,99 @@
+{
+  "actions": [],
+  "active": "N",
+  "angle": 0.0252159866666667,
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "buttons": [
+    719,
+    1042,
+    843,
+    1099,
+    934,
+    1110,
+    1028,
+    1107,
+    1112,
+    1089,
+    770,
+    1074,
+    1178,
+    1061
+  ],
+  "control_hits": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5
+  },
+  "drag_kind": 0,
+  "error": "",
+  "held": -1,
+  "load_metrics": {
+    "archive_started_ms": 1736,
+    "gpu_warm_ms": 68,
+    "id": "N",
+    "resource_ready_ms": 874,
+    "setup_ms": 130,
+    "started_ms": 249827,
+    "stow_started_ms": 1074,
+    "total_ms": 7166
+  },
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 0.0,
+    "controls": 4,
+    "explosion": 0.0,
+    "finite": true,
+    "id": "N",
+    "openness": 1.0,
+    "parts": 25
+  },
+  "play": {
+    "active": true,
+    "art_status": "interaction prototype; revised geometry pending per-device art review",
+    "gain": 1.0,
+    "response": {
+      "aim": "(0.0, 0.0)",
+      "angle": 0.22,
+      "balance": 0.0,
+      "capture_age": -1.0,
+      "captured_floor": 0.0,
+      "echo": 0.0,
+      "echo_delay": -1.0,
+      "feed_motion": 0.0,
+      "focus_quality": 1.0,
+      "growth": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "imprint": 0.0,
+      "ink": 0.0,
+      "pressure": 0.0,
+      "probe_target": 0.0,
+      "rebuild": -1.0,
+      "velocity": 0.0
+    },
+    "values": {
+      "bridge": 1.0,
+      "phase": 0.530112699841736,
+      "probe": 0.0
+    }
+  },
+  "power": 1.0,
+  "region_count": 9,
+  "requested": "",
+  "selector": 0.0,
+  "state": "idle",
+  "targets": [
+    {
+      "kind": "entry",
+      "x": 755.842834472656,
+      "y": 996.60791015625
+    }
+  ],
+  "time_ms": 265544
+}

@@ -1,0 +1,136 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "collection_available_on_this_platform",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_authored_gear_driven",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_carriage_moves_on_authored_rail",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_caliper_closes_without_overshoot",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_hold_brake_changes_damping",
+      "detail": "{ \"angle\": 0.56071404364532, \"velocity\": -0.04432283304754, \"balance\": 0.0, \"pressure\": 0.0, \"echo\": 0.0, \"echo_delay\": -1.0, \"imprint\": 0.0, \"growth\": [0.15, 0.15, 0.15], \"ink\": 0.0, \"feed_motion\": 0.0, \"aim\": (0.0, 0.0), \"focus_quality\": 0.0, \"capture_age\": -1.0, \"captured_floor\": 0.0, \"rebuild\": -1.0, \"probe_target\": 0.0 }",
+      "passed": true
+    },
+    {
+      "check": "F_trim_changes_linkage_pose",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_release_brake",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_service_explodes_refined_parts",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_service_returns_every_part_home",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_selected_leaf_angle_changes",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_hold_imprints",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_release_stops_imprint",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_hold_builds_pressure",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_release_emits_echo",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_pump_routes_to_selected_bud",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_feed_without_contact_no_ink",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_crank_with_contact_writes",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_latched_needle_allows_one_pointer_crank",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_raise_needle_stops_writing",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_two_axis_aim_changes_target",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_focus_converges",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_orbit_wheel_controls_rate",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_gravity_drives_infall",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_crank_reconstructs_same_worlds",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_unaligned_probe_meets_stop",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_aligned_probe_follows_slider",
+      "detail": "",
+      "passed": true
+    }
+  ],
+  "visual_acceptance": false
+}

@@ -43,3 +43,11 @@ dist/HELIOS-macOS*.zip
 dist/HELIOS-macOS*.sha256
 dist/MagicDesk-macOS*.zip
 dist/MagicDesk-macOS*.sha256
+
+# Superseded local input-debug captures; the verified EXE replay is retained.
+review/interaction_native/r1/
+review/interaction_native/r2/
+review/interaction_native/release/commands.txt
+review/interaction_native/release/collection_probe.json
+review/interaction_native/final_smoke/commands.txt
+review/interaction_native/final_smoke/collection_probe.json

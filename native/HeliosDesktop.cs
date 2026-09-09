@@ -13,11 +13,11 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
-[assembly: AssemblyTitle("HELIOS · 孵日器")]
-[assembly: AssemblyProduct("HELIOS Incubator")]
+[assembly: AssemblyTitle("MagicDesk · 机械藏品")]
+[assembly: AssemblyProduct("MagicDesk")]
 [assembly: AssemblyDescription("Original interactive 3D mechanical desktop sculpture")]
-[assembly: AssemblyVersion("1.3.3.0")]
-[assembly: AssemblyFileVersion("1.3.3.0")]
+[assembly: AssemblyVersion("0.2.2.0")]
+[assembly: AssemblyFileVersion("0.2.2.0")]
 
 internal static class Native {
     [StructLayout(LayoutKind.Sequential)] public struct POINT { public int X,Y; public POINT(int x,int y){X=x;Y=y;} }
@@ -54,6 +54,7 @@ internal sealed class Frame {
     public int[] Buttons=new int[14];
     public byte[] RGBA;
     public double CropMilliseconds;
+    public Rectangle[] InteractiveRegions=new Rectangle[0];
     public bool Pooled;
     private int references=1;
     public void Retain(){Interlocked.Increment(ref references);}
@@ -137,20 +138,25 @@ internal sealed class HeliosForm : Form {
         if(moviePath!=null&&ffmpegPath!=null)movie=new NativeMovieRecorder();
         Directory.CreateDirectory(diagnosticDir);
         log=new StreamWriter(Path.Combine(diagnosticDir,"native.log"),false,Encoding.UTF8);log.AutoFlush=true;
-        Text="HELIOS · 孵日器";FormBorderStyle=FormBorderStyle.None;ShowInTaskbar=true;TopMost=testRun;
+        Text="MagicDesk · 机械藏品";FormBorderStyle=FormBorderStyle.None;ShowInTaskbar=true;TopMost=testRun;
         StartPosition=FormStartPosition.Manual;Size=new Size(1,1);Location=new Point(-32000,-32000);
         AutoScaleMode=AutoScaleMode.None;KeyPreview=true;
         SetStyle(ControlStyles.AllPaintingInWmPaint|ControlStyles.UserPaint,true);
         try {Icon=Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location);} catch{}
         context=new ContextMenuStrip();
         string[] names={"1  唤醒 / 休眠","2  绽放 / 闭合","3  核心过载","4  分解组件","5  组装 / 收拢","6  旋转 / 暂停","7  收拢并退出"};
-        for(int i=0;i<7;i++){int index=i;context.Items.Add(names[i],null,delegate{SendAction(index);});}
+        if(Has("--helios-only"))for(int i=0;i<7;i++){int index=i;context.Items.Add(names[i],null,delegate{SendAction(index);});}
+        else{
+            context.Items.Add("唤醒 / 休眠",null,delegate{SendAction(0);});
+            context.Items.Add("展开 / 收起装置档案",null,delegate{Send("{\"type\":\"selector\"}");});
+            context.Items.Add("展示旋转 / 暂停",null,delegate{Send("{\"type\":\"rotation\"}");});
+        }
         context.Items.Add(new ToolStripSeparator());
         ToolStripMenuItem mute=new ToolStripMenuItem("静音");mute.CheckOnClick=true;mute.CheckedChanged+=delegate{muted=mute.Checked;Send("{\"type\":\"mute\",\"value\":"+(muted?"true":"false")+"}");};context.Items.Add(mute);
         ToolStripMenuItem top=new ToolStripMenuItem("始终置顶");top.CheckOnClick=true;top.CheckedChanged+=delegate{TopMost=top.Checked;};context.Items.Add(top);
         context.Items.Add("重置位置与朝向",null,delegate{ResetAnchor();Send("{\"type\":\"reset\"}");});
         context.Items.Add("退出",null,delegate{Close();});
-        tray=new NotifyIcon();tray.Icon=Icon??SystemIcons.Application;tray.Text="HELIOS · 孵日器";tray.ContextMenuStrip=context;tray.Visible=true;
+        tray=new NotifyIcon();tray.Icon=Icon??SystemIcons.Application;tray.Text="MagicDesk · 机械藏品";tray.ContextMenuStrip=context;tray.Visible=true;
         tray.DoubleClick+=delegate{ResetAnchor();};
         timer=new System.Windows.Forms.Timer();timer.Interval=15;timer.Tick+=OnTick;
         Load+=delegate{
@@ -188,6 +194,8 @@ internal sealed class HeliosForm : Form {
             string arguments="--position -32000,-32000 --resolution 32x32 --disable-vsync";
             if(project!=null)arguments+=" --path \""+project+"\"";
             arguments+=" -- --native-port="+port;
+            if(Has("--helios-only"))arguments+=" --helios-only";
+            if(Has("--collection-qa"))arguments+=" --collection-qa=\""+diagnosticDir+"\"";
             if(Has("--profile"))arguments+=" --profile=\""+diagnosticDir+"\"";
             if(Has("--legacy-alpha-crop"))arguments+=" --legacy-alpha-crop";
             var start=new ProcessStartInfo(exe,arguments);start.WorkingDirectory=Path.GetDirectoryName(exe);start.UseShellExecute=false;start.CreateNoWindow=true;start.WindowStyle=ProcessWindowStyle.Hidden;start.RedirectStandardError=true;start.RedirectStandardOutput=true;
@@ -212,9 +220,16 @@ internal sealed class HeliosForm : Form {
             client=listener.AcceptTcpClient();client.NoDelay=true;stream=client.GetStream();byte[] header=new byte[96];byte[] rawFrame=null;
             while(!closing){
                 ReadAll(stream,header);int[] h=new int[24];Buffer.BlockCopy(header,0,h,0,96);
-                if((h[0]!=0x484C5333&&h[0]!=0x484C5334)||h[1]<1||h[2]<1||h[1]>4096||h[2]>4096||h[5]<h[1]||h[6]<h[2]||h[5]>4096||h[6]>4096)throw new InvalidDataException("Invalid frame header");
+                if((h[0]!=0x484C5333&&h[0]!=0x484C5334&&h[0]!=0x484C5335)||h[1]<1||h[2]<1||h[1]>4096||h[2]>4096||h[5]<h[1]||h[6]<h[2]||h[5]>4096||h[6]>4096)throw new InvalidDataException("Invalid frame header");
+                Rectangle[] regions=new Rectangle[0];
+                if(h[0]==0x484C5335){
+                    byte[] countBytes=new byte[4];ReadAll(stream,countBytes);int count=BitConverter.ToInt32(countBytes,0);
+                    if(count<0||count>32)throw new InvalidDataException("Invalid interaction region count");
+                    byte[] regionBytes=new byte[count*16];ReadAll(stream,regionBytes);regions=new Rectangle[count];
+                    for(int i=0;i<count;i++)regions[i]=new Rectangle(BitConverter.ToInt32(regionBytes,i*16),BitConverter.ToInt32(regionBytes,i*16+4),BitConverter.ToInt32(regionBytes,i*16+8),BitConverter.ToInt32(regionBytes,i*16+12));
+                }
                 Frame f;
-                if(h[0]==0x484C5334){
+                if(h[0]==0x484C5334||h[0]==0x484C5335){
                     int length=checked(h[1]*h[2]*4);
                     if(rawFrame==null||rawFrame.Length!=length)rawFrame=new byte[length];
                     ReadAll(stream,rawFrame);f=CropRawFrame(h,rawFrame);
@@ -222,6 +237,7 @@ internal sealed class HeliosForm : Form {
                 }else{
                     f=new Frame{W=h[1],H=h[2],X=h[3],Y=h[4],CanvasW=h[5],CanvasH=h[6],BaseY=h[7],Sequence=h[8],Fade=h[9],RGBA=new byte[checked(h[1]*h[2]*4)]};Array.Copy(h,10,f.Buttons,0,14);ReadAll(stream,f.RGBA);
                 }
+                f.InteractiveRegions=regions;
                 lock(frameLock){if(pending!=null)pending.Release();pending=f;}
                 Interlocked.Increment(ref receivedPackets);
                 // Present when a real rendered frame arrives. Polling it on a 15 ms
@@ -337,6 +353,7 @@ internal sealed class HeliosForm : Form {
         mouseDown=true;Capture=true;Point p=syntheticClickPoint??PointerCanonical();baseDrag=p.Y>=current.BaseY;
         // Every physical button is forwarded through the same raycast as normal 3D input.
         for(int i=0;i<7;i++){int dx=p.X-current.Buttons[i*2],dy=p.Y-current.Buttons[i*2+1];if(dx*dx+dy*dy<31*31){baseDrag=false;break;}}
+        foreach(Rectangle region in current.InteractiveRegions)if(region.Contains(p)){baseDrag=false;break;}
         mouseOrigin=Cursor.Position;anchorOrigin=anchor;SendMouse("down",p,!baseDrag);
     }
     protected override void OnMouseMove(MouseEventArgs e){
@@ -346,7 +363,12 @@ internal sealed class HeliosForm : Form {
     }
     protected override void OnMouseUp(MouseEventArgs e){base.OnMouseUp(e);if(e.Button==MouseButtons.Left){bool synthetic=syntheticClickPoint.HasValue;SendMouse("up",syntheticClickPoint??PointerCanonical(),false);syntheticClickPoint=null;mouseDown=false;baseDrag=false;Capture=false;if(synthetic)Send("{\"type\":\"leave\"}");}}
     protected override void OnMouseLeave(EventArgs e){base.OnMouseLeave(e);if(!mouseDown)Send("{\"type\":\"leave\"}");}
-    protected override void OnKeyDown(KeyEventArgs e){base.OnKeyDown(e);if(e.KeyCode>=Keys.D1&&e.KeyCode<=Keys.D7){SendAction((int)e.KeyCode-(int)Keys.D1);e.Handled=true;}if(e.KeyCode==Keys.Space){SendAction(5);e.Handled=true;}if(e.KeyCode==Keys.Escape)context.Show(Cursor.Position);}
+    protected override void OnMouseCaptureChanged(EventArgs e){
+        base.OnMouseCaptureChanged(e);
+        if(!Capture&&mouseDown){SendMouse("up",syntheticClickPoint??PointerCanonical(),false);mouseDown=false;baseDrag=false;syntheticClickPoint=null;}
+    }
+    protected override void OnMouseWheel(MouseEventArgs e){base.OnMouseWheel(e);Point p=PointerCanonical();Send("{\"type\":\"wheel\",\"delta\":"+e.Delta+",\"x\":"+p.X+",\"y\":"+p.Y+"}");}
+    protected override void OnKeyDown(KeyEventArgs e){base.OnKeyDown(e);if(e.KeyCode>=Keys.D1&&e.KeyCode<=Keys.D7&&(Has("--helios-only")||e.KeyCode==Keys.D1||e.KeyCode==Keys.D7)){SendAction((int)e.KeyCode-(int)Keys.D1);e.Handled=true;}if(e.KeyCode==Keys.Space){Send("{\"type\":\"rotation\"}");e.Handled=true;}if(e.KeyCode==Keys.Tab){Send("{\"type\":\"selector\"}");e.Handled=true;}if(e.KeyCode==Keys.Escape)context.Show(Cursor.Position);}
     protected override void WndProc(ref Message m){
         if(m.Msg==WM_ERASEBKGND){m.Result=(IntPtr)1;return;}
         if(m.Msg==WM_NCHITTEST&&current!=null&&!Capture){
@@ -370,12 +392,25 @@ internal sealed class HeliosForm : Form {
             for(int i=0;i<bgra.Length;i+=4){bgra[i]=f.RGBA[i+2];bgra[i+1]=f.RGBA[i+1];bgra[i+2]=f.RGBA[i];bgra[i+3]=f.RGBA[i+3];}
             Marshal.Copy(bgra,0,data.Scan0,bgra.Length);image.UnlockBits(data);image.Save(Path.Combine(diagnosticDir,name+".png"),ImageFormat.Png);
         }
-        File.WriteAllText(Path.Combine(diagnosticDir,name+".json"),"{\"width\":"+f.W+",\"height\":"+f.H+",\"crop_x\":"+f.X+",\"crop_y\":"+f.Y+",\"desktop_x\":"+(snapshotAnchor.X+f.X)+",\"desktop_y\":"+(snapshotAnchor.Y+f.Y)+",\"sequence\":"+f.Sequence+",\"window_handle\":"+snapshotHandle+"}");
+        File.WriteAllText(Path.Combine(diagnosticDir,name+".json"),"{\"width\":"+f.W+",\"height\":"+f.H+",\"crop_x\":"+f.X+",\"crop_y\":"+f.Y+",\"desktop_x\":"+(snapshotAnchor.X+f.X)+",\"desktop_y\":"+(snapshotAnchor.Y+f.Y)+",\"anchor_x\":"+snapshotAnchor.X+",\"anchor_y\":"+snapshotAnchor.Y+",\"sequence\":"+f.Sequence+",\"window_handle\":"+snapshotHandle+",\"region_count\":"+f.InteractiveRegions.Length+",\"buttons\":["+String.Join(",",f.Buttons)+"]}");
     }
     private void ReadControl(){
         try{if(!File.Exists(controlFile))return;string text=File.ReadAllText(controlFile).Trim();if(text==lastControl)return;lastControl=text;
             string[] command=text.Split(' ');if(command[0]=="action")SendAction(Int32.Parse(command[1]));
             else if(command[0]=="capture")SaveFrame(command[1]);
+            else if(Has("--collection-qa")&&command[0]=="probe")Send("{\"type\":\"probe\"}");
+            else if(Has("--collection-qa")&&command[0]=="wheel")Send("{\"type\":\"wheel\",\"delta\":"+Int32.Parse(command[1])+",\"x\":0,\"y\":0}");
+            else if(Has("--collection-qa")&&command[0]=="rotation")Send("{\"type\":\"rotation\"}");
+            else if(Has("--collection-qa")&&command[0]=="point"){
+                // Test-owned input follows the production form handlers and the
+                // same bridge/raycast. It never moves the user's mouse cursor.
+                Point p=new Point(Int32.Parse(command[2]),Int32.Parse(command[3]));
+                syntheticClickPoint=p;
+                var e=new MouseEventArgs(MouseButtons.Left,1,p.X-current.X,p.Y-current.Y,0);
+                if(command[1]=="down"){OnMouseDown(e);Log("qa pointer down base_drag="+baseDrag);}
+                else if(command[1]=="move"){SendMouse("move",p,!baseDrag);Log("qa pointer move base_drag="+baseDrag);}
+                else if(command[1]=="up")OnMouseUp(e);
+            }
             else if(command[0]=="reset"){ResetAnchor();Send("{\"type\":\"reset\"}");}
             else if(command[0]=="test"){testRun=true;testStart=lifetime.Elapsed.TotalSeconds;drawn=0;blankFrames=0;nonblank=0;testEvents.Clear();events.Clear();}
             else if(command[0]=="quit")Close();
