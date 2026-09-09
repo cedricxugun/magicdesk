@@ -1,0 +1,17 @@
+{
+  "app/assets/helios_model.glb": {
+    "unchanged": true,
+    "sha256": "a113215111d527ab71bd5130d55d19712ae0ae130ab0b5875f90082d45d274d4"
+  },
+  "blender/Helios_Incubator.blend": {
+    "unchanged": true,
+    "sha256": "b8492ba714e4d3927fd554cbab2396c3ca1d392822f57d2c53742d0b27242de5"
+  },
+  "build": {
+    "pck_sha256": "d3d286e539ad5ba6f615aae94b02ab414a9c263d83c5e5735aad6d4fc44d12f7",
+    "zip_sha256": "e1cdf60b6d7962dddb68f71b3e7edb4a9e8a84cc5e1f3a872af5e24940390ce3",
+    "arch": "arm64",
+    "app_bytes": 439230744,
+    "zip_bytes": 293439836
+  }
+}

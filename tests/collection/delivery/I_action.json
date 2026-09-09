@@ -1,0 +1,122 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "F",
+      "time": 15965
+    },
+    {
+      "action": 2,
+      "id": "F",
+      "time": 18745
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 20935
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 25887
+    },
+    {
+      "action": 1,
+      "id": "F",
+      "time": 27856
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 28398
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 29510
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 30415
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 37717
+    },
+    {
+      "action": 2,
+      "id": "G",
+      "time": 40544
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 42899
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 47820
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 49755
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 50273
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 51454
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 52337
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 59006
+    },
+    {
+      "action": 2,
+      "id": "I",
+      "time": 61805
+    }
+  ],
+  "active": "I",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "error": "",
+  "load_metrics": {
+    "archive_started_ms": 1072,
+    "gpu_warm_ms": 34,
+    "id": "I",
+    "resource_ready_ms": 641,
+    "setup_ms": 371,
+    "started_ms": 55064,
+    "stow_started_ms": 1064,
+    "total_ms": 3332
+  },
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 4.99854700000001,
+    "controls": 31,
+    "explosion": 0.0,
+    "finite": true,
+    "id": "I",
+    "openness": 1.0,
+    "parts": 15
+  },
+  "requested": "",
+  "selector": 0.0,
+  "state": "idle"
+}

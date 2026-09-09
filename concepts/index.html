@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MagicDesk · 装置选型画廊</title><link rel="stylesheet" href="gallery.css"></head>
+<body>
+<header><nav><a class="brand" href="#models">MAGICDESK</a><a href="#models">模型库</a><a href="#base">共同底座</a><a href="#mechanism">切换演出</a><a href="collection_20260909/动画与操作设计.md">动作脚本</a></nav>
+<h1>下一台机械生命</h1><p class="intro">同一个底座，不同的性格。以《原子之心》的复古未来机械为参照，每款装置都有自己的操作面板和动作语言。</p>
+<p class="notice">首批已确定 F、G、I、J、K、L、M、N，现有 B 保留，正在制作同一个 Mac App。下方保留概念图作为视觉目标；实际模型、连续动作与材料品质仍按制作检查逐项校正。</p>
+<p class="constraint">尺寸以真实 HELIOS 底座为准。设定图中的底座存在生成偏差，不能分别照图制作；上部装置仍需按统一尺寸适配。</p></header>
+<main>
+<section id="models"><div class="section-head"><h2>装置档案</h2><div class="filters" aria-label="筛选模型"><button data-filter="all" aria-pressed="true">全部 14 款</button><button data-filter="new" aria-pressed="false">新增 E–H</button><button data-filter="extra" aria-pressed="false">追加 I–L</button><button data-filter="cosmic" aria-pressed="false">黑洞 / 虫洞</button><button data-filter="selected" aria-pressed="false">我的候选</button></div></div><div id="grid" class="grid"></div><p id="empty" hidden>还没有候选，先从全部模型中挑选喜欢的装置。</p></section>
+<div id="selection" class="selection" hidden><span id="chosen" aria-live="polite"></span><button id="compare">并排比较</button><button id="clear">清空</button></div>
+<section id="base" class="section"><h2>底座只有一份</h2><p>真实 GLB 的外径为 2.74，固定底座总高约 0.671 个场景单位。将外径定义为 1D，所有模型共用同一外壳、同一安装接口、同一桌面锚点。可变的是规定区域内的操作匣。</p><img src="shared_base/真实底座基准.png" alt="从实际 GLB 移除上部装置后渲染的共享底座" loading="lazy" style="display:block;width:min(100%,680px);height:auto"><p class="notice">这是实际底座网格的单独渲染。新时空器具仅参考此底座，不再沿用完整孵日器的蛋形轮廓。</p><div class="base-rules"><p><b>外壳与位置固定</b><br>不能为高模型加厚，也不能为宽模型扩大底盘。</p><p><b>控制器按模型变化</b><br>拨片、滚轮、按键和拨杆都应装在同一操作匣空间内。</p><p><b>先验证内部收纳</b><br>六张实体铭牌已完成收纳包络核对；完整机构仍在动态检查。</p></div><a href="shared_base/底座尺寸契约.md">查看真实尺寸、每款包络与适配问题</a></section>
+<section id="mechanism" class="section"><h2>机械档案匣 · 归档与重铸</h2><p>保留已选定的机械伸出结构。入口藏在底座环沿的一段金属压条里：靠近时接缝透出红光，按下后压条下沉、盖板退让、导轨伸出、实体铭牌逐张翻立。选牌后，旧模型收势归档，新模型逐层重铸，操作匣机械翻换。</p><p class="notice">下图保留已认可的展开结构；图上的独立圆形菜单键属于早期探索，入口将按环沿压条方案细化。所有状态必须在同一份真实底座与同一相机上展示。</p><div class="boards"><button class="image-button" data-board="selector" aria-label="放大机械档案匣"><img src="shared_base/机械档案匣.png" alt="档案机关的收起、展开、点选与换匣概念" loading="lazy"></button><button class="image-button" data-board="transition" aria-label="放大归档与重铸"><img src="shared_base/归档与重铸.png" alt="从孵日器切换到折维书匣的六阶段演出分镜" loading="lazy"></button></div>
+<div class="base-rules"><p><b>伸出实体铭牌</b><br>牌架每次展示六张，收起时位于同一规格底座的内部腔体。直接转动索引轴浏览，不加左右按钮。</p><p><b>先收势，再扫描</b><br>每款先按自己的关节收拢，扫描层再执行归档与重铸。</p><p><b>最后锁匣到位</b><br>相机和底座始终固定，新控制器就位后才恢复操作。</p></div><p class="notice">这些是演出概念分镜。图中部分铭牌字母和中间帧仍有生成简化，最终结构、牌片数量与零件时序以尺寸契约和灰模为准。</p><a href="shared_base/统一底座与切换演出.md">查看完整切换节奏与实现边界</a></section>
+<footer><p>可以一次选多款，在对话中告诉我编号或名称，作为同一批制作并共用底座与切换系统。加入候选仅保存在此画廊，不会自动启动制作。</p><a href="collection_20260909/动画与操作设计.md">逐款动画脚本</a>　<a href="collection_20260909/图稿核对.md">图稿核对与待改问题</a>　<a href="collection_20260909/prompts_complete.json">生成与修订提示词</a></footer>
+</main>
+<dialog id="viewer"><div class="dialog-head"><h2 id="dialogTitle"></h2><button id="closeDialog" aria-label="关闭放大预览">关闭</button></div><div id="dialogContent"></div></dialog>
+<script src="catalog.js"></script><script src="gallery.js"></script>
+</body></html>

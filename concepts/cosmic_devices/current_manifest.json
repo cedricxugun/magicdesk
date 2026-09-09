@@ -1,0 +1,36 @@
+{
+  "generator": "built-in image_gen",
+  "current_files": [
+    {
+      "file": "M_星噬仪_v3.png",
+      "sha256": "2e232dace2a0b288b216a9e323c9496840f5d164ff91b9195300bea59c68d59d"
+    },
+    {
+      "file": "M_开放收束_拆解.png",
+      "sha256": "0412b145af8abafcbb546f34f31ffcd5bda85af29a05fc94062603ad0e5996eb"
+    },
+    {
+      "file": "N_裂隙回廊_v3.png",
+      "sha256": "45dc268d89e1ec72662ebab2b32da967349c78bfb8ad6d3bc112c161b0aae2dd"
+    },
+    {
+      "file": "N_裂隙回廊_拆解_v3.png",
+      "sha256": "1d6f73b02266fb9d318a499ee3b6cbf3d414a38aaa7b3f53f784ba8076699349"
+    }
+  ],
+  "base_reference": "../shared_base/真实底座基准.png",
+  "prompts": [
+    "redesign_v3_prompts.json",
+    "exploded_prompts.json",
+    "N_v3_exploded_prompt.json"
+  ],
+  "limitations": [
+    "Control icons in concept images are not fully mapped to final functions.",
+    "Generated diagrams do not constitute exact shared-mesh dimensional validation."
+  ],
+  "deferred": [
+    "E2",
+    "E3"
+  ],
+  "first_batch": "Await user final selection"
+}

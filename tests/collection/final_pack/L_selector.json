@@ -1,0 +1,272 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "F",
+      "time": 16768
+    },
+    {
+      "action": 2,
+      "id": "F",
+      "time": 19541
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 21745
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 26688
+    },
+    {
+      "action": 1,
+      "id": "F",
+      "time": 28671
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 29206
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 30345
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 31233
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 38604
+    },
+    {
+      "action": 2,
+      "id": "G",
+      "time": 41502
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 43842
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 48812
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 50779
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 51330
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 52482
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 53379
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 60327
+    },
+    {
+      "action": 2,
+      "id": "I",
+      "time": 63135
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 65402
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 70361
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 72344
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 72881
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 74028
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 74919
+    },
+    {
+      "action": 1,
+      "id": "J",
+      "time": 81827
+    },
+    {
+      "action": 2,
+      "id": "J",
+      "time": 84627
+    },
+    {
+      "action": 3,
+      "id": "J",
+      "time": 86950
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 91905
+    },
+    {
+      "action": 1,
+      "id": "J",
+      "time": 93873
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 94425
+    },
+    {
+      "action": 3,
+      "id": "J",
+      "time": 95573
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 96470
+    },
+    {
+      "action": 1,
+      "id": "K",
+      "time": 103313
+    },
+    {
+      "action": 2,
+      "id": "K",
+      "time": 106192
+    },
+    {
+      "action": 3,
+      "id": "K",
+      "time": 108453
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 113413
+    },
+    {
+      "action": 1,
+      "id": "K",
+      "time": 115383
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 115937
+    },
+    {
+      "action": 3,
+      "id": "K",
+      "time": 117071
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 117964
+    },
+    {
+      "action": 1,
+      "id": "L",
+      "time": 125191
+    },
+    {
+      "action": 2,
+      "id": "L",
+      "time": 128015
+    },
+    {
+      "action": 3,
+      "id": "L",
+      "time": 130277
+    },
+    {
+      "action": 4,
+      "id": "L",
+      "time": 135300
+    },
+    {
+      "action": 1,
+      "id": "L",
+      "time": 137234
+    },
+    {
+      "action": 4,
+      "id": "L",
+      "time": 137812
+    },
+    {
+      "action": 3,
+      "id": "L",
+      "time": 138934
+    },
+    {
+      "action": 4,
+      "id": "L",
+      "time": 139818
+    }
+  ],
+  "active": "L",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "error": "",
+  "load_metrics": {
+    "archive_started_ms": 1807,
+    "gpu_warm_ms": 34,
+    "id": "L",
+    "resource_ready_ms": 735,
+    "setup_ms": 412,
+    "started_ms": 120407,
+    "stow_started_ms": 1183,
+    "total_ms": 4131
+  },
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 0.0,
+    "controls": 3,
+    "explosion": 0.0,
+    "finite": true,
+    "id": "L",
+    "openness": 0.0,
+    "parts": 9
+  },
+  "requested": "",
+  "selector": 1.0,
+  "state": "idle"
+}

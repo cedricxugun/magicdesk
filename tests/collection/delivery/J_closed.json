@@ -1,0 +1,152 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "F",
+      "time": 15965
+    },
+    {
+      "action": 2,
+      "id": "F",
+      "time": 18745
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 20935
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 25887
+    },
+    {
+      "action": 1,
+      "id": "F",
+      "time": 27856
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 28398
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 29510
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 30415
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 37717
+    },
+    {
+      "action": 2,
+      "id": "G",
+      "time": 40544
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 42899
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 47820
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 49755
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 50273
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 51454
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 52337
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 59006
+    },
+    {
+      "action": 2,
+      "id": "I",
+      "time": 61805
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 64052
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 69019
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 70990
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 71536
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 72686
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 73597
+    }
+  ],
+  "active": "J",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "error": "",
+  "load_metrics": {
+    "archive_started_ms": 1467,
+    "gpu_warm_ms": 41,
+    "id": "J",
+    "resource_ready_ms": 663,
+    "setup_ms": 322,
+    "started_ms": 76063,
+    "stow_started_ms": 1034,
+    "total_ms": 3800
+  },
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 0.0,
+    "controls": 25,
+    "explosion": 0.0,
+    "finite": true,
+    "id": "J",
+    "openness": 0.0,
+    "parts": 30
+  },
+  "requested": "",
+  "selector": 0.0,
+  "state": "idle"
+}

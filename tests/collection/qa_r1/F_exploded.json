@@ -1,0 +1,37 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "F",
+      "time": 17603
+    },
+    {
+      "action": 2,
+      "id": "F",
+      "time": 20329
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 22397
+    }
+  ],
+  "active": "F",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.80256)]",
+  "base_instances": 1,
+  "error": "",
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 0.0,
+    "controls": 14,
+    "explosion": 1.0,
+    "finite": true,
+    "id": "F",
+    "openness": 0.0,
+    "parts": 14
+  },
+  "requested": "",
+  "selector": 0.0,
+  "state": "idle"
+}

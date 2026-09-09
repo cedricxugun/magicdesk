@@ -1,0 +1,42 @@
+{
+  "camera_fov": 48.9636840820312,
+  "collection": {
+    "actions": [],
+    "active": "F",
+    "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+    "base_instances": 1,
+    "error": "",
+    "load_metrics": {
+      "gpu_warm_ms": 3262,
+      "id": "F",
+      "resource_ready_ms": 862,
+      "setup_ms": 580,
+      "started_ms": 87403,
+      "total_ms": 18745
+    },
+    "module": {
+      "authored_fx": "res://assets/collection/art/fx_atlas.png",
+      "base_owned": false,
+      "burst": 0.0,
+      "controls": 14,
+      "explosion": 0.0,
+      "finite": true,
+      "id": "F",
+      "openness": 0.0,
+      "parts": 14
+    },
+    "requested": "",
+    "selector": 0.0,
+    "state": "idle"
+  },
+  "fps": 54.0,
+  "vertices": 571828,
+  "window_position": [
+    510,
+    232
+  ],
+  "window_size": [
+    1920,
+    1400
+  ]
+}

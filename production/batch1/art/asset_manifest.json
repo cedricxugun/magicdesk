@@ -1,0 +1,64 @@
+{
+  "generator": "built-in image_gen",
+  "base": {
+    "diameter": 2.74,
+    "height": 0.670608
+  },
+  "assets": [
+    {
+      "path": "production/batch1/art/board_F.png",
+      "role": "motion direction, not a runtime texture",
+      "sha256": "d0c0685cdd46a94b4991450c099c281b83186f7a1801591716e352deb69cf9f0"
+    },
+    {
+      "path": "production/batch1/art/board_G.png",
+      "role": "motion direction, not a runtime texture",
+      "sha256": "c51121db1cb9a290933be08a8946d1a0e87f52a4a503a545bcd12f1b7cee187f"
+    },
+    {
+      "path": "production/batch1/art/board_I.png",
+      "role": "motion direction, not a runtime texture",
+      "sha256": "3ef5bb290263ffc98846c8b27fe0ab35b9f2b17e57b07eefc4d4bbd459ca5e20"
+    },
+    {
+      "path": "production/batch1/art/board_J.png",
+      "role": "motion direction, not a runtime texture",
+      "sha256": "7ac999c659ee73e84a012643e36e5af4431caf32cd0c46c113331e1ac73047f4"
+    },
+    {
+      "path": "production/batch1/art/board_K.png",
+      "role": "motion direction, not a runtime texture",
+      "sha256": "874eae7da35ad71e52e34de8a78dc0dd2255343342e45a87df5768beb52ac00d"
+    },
+    {
+      "path": "production/batch1/art/board_L.png",
+      "role": "motion direction, not a runtime texture",
+      "sha256": "1c743915e691434d450777ae22cc748db5bc9b9602f91035407f5a2b15f6ba4a"
+    },
+    {
+      "path": "production/batch1/art/board_M.png",
+      "role": "motion direction, not a runtime texture",
+      "sha256": "2e232dace2a0b288b216a9e323c9496840f5d164ff91b9195300bea59c68d59d"
+    },
+    {
+      "path": "production/batch1/art/board_N.png",
+      "role": "motion direction, not a runtime texture",
+      "sha256": "45dc268d89e1ec72662ebab2b32da967349c78bfb8ad6d3bc112c161b0aae2dd"
+    },
+    {
+      "path": "app/assets/collection/art/fx_atlas.png",
+      "role": "eight per-model FX tiles; F plumb, G lattice, I acoustic waves, J capillary pulse, K star tape, L focus, M accretion, N aperture edge",
+      "sha256": "f2880e7c8a4be3fff6d07bb6ab07321e39aa5b868c6756cd57698acbe153b754"
+    },
+    {
+      "path": "app/assets/collection/art/planet_atlas.png",
+      "role": "three orbiting planets UV bands",
+      "sha256": "727ab182c61547d6c7e30672ba77e701ea9065d742e05054eccac92b69730c9d"
+    },
+    {
+      "path": "app/assets/collection/art/wormhole_fabric.png",
+      "role": "N spatial throat, archive/recast scaffold, M reconstruction mask",
+      "sha256": "05f6fa1b17176ab436eb6dee1dfe5b7658efe032f8440514ee0f504ed2b6ef6e"
+    }
+  ]
+}

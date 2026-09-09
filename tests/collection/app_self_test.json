@@ -1,0 +1,122 @@
+{
+  "all_passed": true,
+  "parts": 70,
+  "renderer": "forward_plus",
+  "tests": [
+    {
+      "detail": "70",
+      "passed": true,
+      "test": "component_count"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "test": "pressure_system_loaded"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "test": "red_core_system_loaded"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "test": "ceramic_is_dielectric"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "test": "ceramic_uses_new_glaze"
+    },
+    {
+      "detail": "0",
+      "passed": true,
+      "test": "physical_button_1"
+    },
+    {
+      "detail": "1",
+      "passed": true,
+      "test": "physical_button_2"
+    },
+    {
+      "detail": "2",
+      "passed": true,
+      "test": "physical_button_3"
+    },
+    {
+      "detail": "3",
+      "passed": true,
+      "test": "physical_button_4"
+    },
+    {
+      "detail": "4",
+      "passed": true,
+      "test": "physical_button_5"
+    },
+    {
+      "detail": "5",
+      "passed": true,
+      "test": "physical_button_6"
+    },
+    {
+      "detail": "6",
+      "passed": true,
+      "test": "physical_button_7"
+    },
+    {
+      "detail": "0.0",
+      "passed": true,
+      "test": "exact_reassembly"
+    },
+    {
+      "detail": "0.00000015885278",
+      "passed": true,
+      "test": "six_petals_synchronized"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "test": "stationary_pedestal"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "test": "no_camera_zoom_or_motion"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "test": "pedestal_screen_position_fixed"
+    },
+    {
+      "detail": "0.0",
+      "passed": true,
+      "test": "crop_preserves_desktop_model_position"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "test": "fixed_pixel_focal_length"
+    },
+    {
+      "detail": "95",
+      "passed": true,
+      "test": "exact_surface_hit_testing"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "test": "interrupted_assembly_continuity"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "test": "seven_actions_dispatch"
+    },
+    {
+      "detail": "",
+      "passed": true,
+      "test": "transparent_window"
+    }
+  ]
+}

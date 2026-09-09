@@ -1,0 +1,37 @@
+{
+  "method": "Blender exact CSG; coordinates and original material slots retained",
+  "source": "res://assets/helios_model.glb",
+  "source_node": "BASE_FIXED_DisplayMesh",
+  "variants": {
+    "helios": {
+      "bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.80256)]",
+      "external_bounds_error": 0.0,
+      "path": "res://assets/collection/base_helios.res",
+      "source_surfaces": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "shared": {
+      "bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+      "external_bounds_error": 0.0,
+      "path": "res://assets/collection/base_shared.res",
+      "source_surfaces": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  }
+}

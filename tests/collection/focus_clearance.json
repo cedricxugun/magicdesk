@@ -1,0 +1,7 @@
+{
+  "model": "L",
+  "source": "actual runtime focus solver poses, including interrupted motion",
+  "samples": 200,
+  "all_clear": true,
+  "intersections": []
+}

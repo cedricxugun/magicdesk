@@ -1,0 +1,242 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "F",
+      "time": 20985
+    },
+    {
+      "action": 2,
+      "id": "F",
+      "time": 23797
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 25920
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 30874
+    },
+    {
+      "action": 1,
+      "id": "F",
+      "time": 32847
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 33402
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 34558
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 35454
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 42867
+    },
+    {
+      "action": 2,
+      "id": "G",
+      "time": 45810
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 48012
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 53003
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 54938
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 55489
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 56674
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 57573
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 64460
+    },
+    {
+      "action": 2,
+      "id": "I",
+      "time": 67239
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 69418
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 74361
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 76351
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 76894
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 78020
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 78920
+    },
+    {
+      "action": 1,
+      "id": "J",
+      "time": 86213
+    },
+    {
+      "action": 2,
+      "id": "J",
+      "time": 88947
+    },
+    {
+      "action": 3,
+      "id": "J",
+      "time": 90983
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 95900
+    },
+    {
+      "action": 1,
+      "id": "J",
+      "time": 97851
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 98402
+    },
+    {
+      "action": 3,
+      "id": "J",
+      "time": 99512
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 100403
+    },
+    {
+      "action": 1,
+      "id": "K",
+      "time": 107190
+    },
+    {
+      "action": 2,
+      "id": "K",
+      "time": 110001
+    },
+    {
+      "action": 3,
+      "id": "K",
+      "time": 112084
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 117030
+    },
+    {
+      "action": 1,
+      "id": "K",
+      "time": 118980
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 119531
+    },
+    {
+      "action": 3,
+      "id": "K",
+      "time": 120696
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 121570
+    },
+    {
+      "action": 1,
+      "id": "L",
+      "time": 128535
+    },
+    {
+      "action": 2,
+      "id": "L",
+      "time": 131309
+    }
+  ],
+  "active": "L",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "error": "",
+  "load_metrics": {
+    "archive_started_ms": 1780,
+    "gpu_warm_ms": 38,
+    "id": "L",
+    "resource_ready_ms": 718,
+    "setup_ms": 409,
+    "started_ms": 123906,
+    "stow_started_ms": 1172,
+    "total_ms": 4061
+  },
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 5.08707933333334,
+    "controls": 3,
+    "explosion": 0.0,
+    "finite": true,
+    "id": "L",
+    "openness": 1.0,
+    "parts": 9
+  },
+  "requested": "",
+  "selector": 0.0,
+  "state": "idle"
+}

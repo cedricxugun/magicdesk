@@ -1,7 +1,7 @@
 extends Node3D
 
-const TITLES = ["唤醒 / 休眠", "绽放 / 闭合", "过载脉冲", "零件展开", "组装 / 收拢", "旋转 / 暂停", "收拢并退出"]
-const HINTS = ["1 · 电源与核心灯光", "2 · 六瓣外壳同步展开", "3 · 转环加速，释放能量脉冲", "4 · 按机构层次拆分真实零件", "5 · 从当前位置收拢并锁定", "6 · 只旋转上部，底座保持静止", "7 · 泄能、收拢、熄灯后关闭"]
+var TITLES = ["唤醒 / 休眠", "绽放 / 闭合", "过载脉冲", "零件展开", "组装 / 收拢", "旋转 / 暂停", "收拢并退出"]
+var HINTS = ["1 · 电源与核心灯光", "2 · 六瓣外壳同步展开", "3 · 转环加速，释放能量脉冲", "4 · 按机构层次拆分真实零件", "5 · 从当前位置收拢并锁定", "6 · 只旋转上部，底座保持静止", "7 · 泄能、收拢、熄灯后关闭"]
 var metadata: Dictionary
 var model: Node3D
 var turntable: Node3D
@@ -78,6 +78,8 @@ var activation_energy := 0.0
 var activation_start := 0.0
 var closing_time := -1.0
 var activation_display_time := -1.0
+var mac_desktop := false
+var collection:Node3D
 
 func opening_fraction(display_time:float)->float:
 	if display_time<.40:return 0.0
@@ -95,7 +97,7 @@ func q4(a: Array) -> Quaternion:
 	return Quaternion(float(a[0]), float(a[1]), float(a[2]), float(a[3])).normalized()
 
 func pose_transform(data: Dictionary) -> Transform3D:
-	return Transform3D(Basis(q4(data.q)).scaled(v3(data.s)), v3(data.p))
+	return Transform3D(Basis(q4(data.q))*Basis.from_scale(v3(data.s)), v3(data.p))
 
 func named(name_string: String) -> Node3D:
 	return model.find_child(name_string, true, false) as Node3D
@@ -113,6 +115,11 @@ func _ready() -> void:
 		if arg.begins_with("--control="): control_path = arg.trim_prefix("--control=")
 		if arg.begins_with("--native-port="):
 			native_port=int(arg.trim_prefix("--native-port="));native_mode=true
+	mac_desktop = OS.get_name() == "macOS" and not native_mode
+	if mac_desktop:
+		# Cmd-Q and Dock Quit must finish the same shutdown as the red X.
+		get_tree().auto_accept_quit = false
+		Engine.max_fps = 60
 	if test_mode: get_window().mode=Window.MODE_MINIMIZED
 	get_window().transparent = true
 	get_window().borderless = true
@@ -124,6 +131,8 @@ func _ready() -> void:
 	var usable := DisplayServer.screen_get_usable_rect()
 	if usable.size.x<=0 or usable.size.y<=0:usable=Rect2i(0,0,1920,1040)
 	var wh := mini(940, int(usable.size.y * 0.88))
+	if mac_desktop:
+		canonical_size = Vector2i(mini(1920,usable.size.x),mini(1400,usable.size.y))
 	# Reserve enough horizontal desktop space for the open mechanism at its original scale.
 	get_window().size = Vector2i(mini(int(wh * 1.70),int(usable.size.x*.94)), wh)
 	get_window().position = usable.position + (usable.size - get_window().size) / 2
@@ -215,6 +224,10 @@ func _ready() -> void:
 	if not capture_dir.is_empty(): DirAccess.make_dir_recursive_absolute(capture_dir)
 	if native_mode and native_port>0:
 		native_bridge=Node.new();native_bridge.set_script(load("res://native_bridge.gd"));add_child(native_bridge);native_bridge.setup(self,native_port)
+	if mac_desktop and not test_mode:
+		if ResourceLoader.exists("res://assets/collection/models/S.glb"):
+			collection=load("res://collection/service.gd").new();add_child(collection);collection.setup(self)
+		else:message("装置档案未能加载，请重新打开完整的 MagicDesk App。",12)
 
 func _collect_meshes(node: Node) -> void:
 	if node is MeshInstance3D:
@@ -342,10 +355,11 @@ func _make_ui() -> void:
 	var layer := CanvasLayer.new()
 	add_child(layer)
 	var font := SystemFont.new()
-	font.font_names = PackedStringArray(["Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI"])
+	font.font_names = PackedStringArray(["PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI"])
 	var theme := Theme.new()
+	var ui_scale:float=DisplayServer.screen_get_scale() if mac_desktop else 1.0
 	theme.default_font = font
-	theme.default_font_size = 14
+	theme.default_font_size = int(14*ui_scale)
 	var root := Control.new()
 	root.theme = theme
 	root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -370,14 +384,14 @@ func _make_ui() -> void:
 	tooltip_title = Label.new()
 	tooltip_title.add_theme_color_override("font_color",Color(.95,.87,.70))
 	tooltip_text = Label.new()
-	tooltip_text.add_theme_font_size_override("font_size",12)
+	tooltip_text.add_theme_font_size_override("font_size",int(12*ui_scale))
 	tooltip_text.add_theme_color_override("font_color",Color(.70,.66,.57))
 	rows.add_child(tooltip_title)
 	rows.add_child(tooltip_text)
 	tooltip.hide()
 	toast = Label.new()
 	toast.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	toast.add_theme_font_size_override("font_size",13)
+	toast.add_theme_font_size_override("font_size",int(13*ui_scale))
 	toast.add_theme_color_override("font_color",Color(.95,.87,.73))
 	toast.add_theme_color_override("font_shadow_color",Color(0,0,0,.95))
 	toast.add_theme_constant_override("shadow_offset_x",1)
@@ -389,6 +403,9 @@ func _make_ui() -> void:
 	menu.add_item("HELIOS · 孵日器",0)
 	menu.set_item_disabled(0,true)
 	menu.add_separator()
+	if mac_desktop:
+		menu.add_item("装置档案 · 切换模型（Tab）",25)
+		menu.add_separator()
 	for i in range(TITLES.size()): menu.add_item(str(i+1)+"   "+TITLES[i],10+i)
 	menu.add_separator()
 	menu.add_check_item("静音",21)
@@ -459,7 +476,9 @@ func start_bloom(emit_pressure:=true)->void:
 	_fit_window(true)
 
 func activate(index: int) -> void:
+	if index<0 or index>=7:return
 	if shutdown_time>=0:return
+	if collection and collection.dispatch(index):return
 	print("HELIOS_ACTION index=",index," openness=",openness," explosion=",explosion)
 	buttons[index].press = 1.0
 	sound("click",1.0 + index * .045)
@@ -510,6 +529,10 @@ func activate(index: int) -> void:
 	# Avoid a synchronous filesystem write on every opening action.
 
 func begin_shutdown() -> void:
+	if collection and collection.request_shutdown():return
+	_start_final_shutdown()
+
+func _start_final_shutdown() -> void:
 	if shutdown_time>=0:return
 	print("HELIOS_SHUTDOWN_REQUEST openness=",openness," explosion=",explosion)
 	shutdown_time=0.0
@@ -556,10 +579,12 @@ func _process(delta: float) -> void:
 	var pressure_active:=false
 	if effects!=null and effects.pressure!=null:
 		pressure_active=effects.pressure.is_burst_active() if effects.pressure.has_method("is_burst_active") else effects.pressure.active_volume_count>0
-	if rotation_enabled and drag_kind != 2 and activation_time<0.0 and not pressure_active:angle+=delta*.17
+	if rotation_enabled and drag_kind != 2 and activation_time<0.0 and not pressure_active and (collection==null or (collection.selector_amount<.01 and collection.state=="idle")):angle+=delta*.17
 	turntable.rotation.y = angle
-	_apply_mechanism()
-	effects.tick(fx_delta,wall_delta)
+	if collection==null or collection.active_id=="B":
+		_apply_mechanism()
+		effects.tick(fx_delta,wall_delta)
+	if collection:collection.tick(delta)
 	for i in range(buttons.size()):
 		var b: Dictionary = buttons[i]
 		b.press = move_toward(b.press,0.0,delta*3.4)
@@ -619,11 +644,15 @@ func _apply_mechanism() -> void:
 		n.quaternion = p.home.basis.get_rotation_quaternion()*Quaternion(Vector3.UP,p.spin*amount)
 
 func hit_button(screen_pos: Vector2) -> int:
+	if collection and collection.active_id!="B":
+		var control:int=collection.hit_control(screen_pos)
+		if control>=0:return control
 	var origin:=camera.project_ray_origin(screen_pos)
 	var direction:=camera.project_ray_normal(screen_pos)
 	var nearest:=INF
 	var selected:=-1
 	for i in range(buttons.size()):
+		if collection and collection.active_id!="B" and i>0 and i<6:continue
 		var cap:Node3D=buttons[i].cap
 		var inverse:=cap.global_transform.affine_inverse()
 		var local_origin:=inverse*origin
@@ -640,6 +669,7 @@ func hit_button(screen_pos: Vector2) -> int:
 	return selected
 
 func _update_hover() -> void:
+	if collection and collection.update_hover_ui():return
 	var pointer := native_cursor if native_mode else Vector2(DisplayServer.mouse_get_position()-get_window().position+crop_rect.position)
 	var new_hover := hit_button(pointer)
 	if drag_kind != 0 or menu.visible: new_hover = -1
@@ -652,16 +682,21 @@ func _update_hover() -> void:
 			tooltip_text.text = HINTS[hover]
 			tooltip.reset_size()
 	if hover >= 0:
-		var pt := camera.unproject_position(buttons[hover].mount.global_position)
+		var anchor:Vector3=collection.action_anchor(hover) if collection and collection.active_id!="B" else buttons[hover].mount.global_position
+		var pt := camera.unproject_position(anchor)
 		tooltip.position = Vector2(clampf(pt.x-tooltip.size.x*.5,crop_rect.position.x+8,crop_rect.end.x-tooltip.size.x-8),pt.y-tooltip.size.y-25)
 	if not native_mode:Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND if hover >= 0 else Input.CURSOR_ARROW)
 
 func _input(event: InputEvent) -> void:
 	if native_mode:return
+	if collection and collection.consume_input(event):
+		get_viewport().set_input_as_handled();return
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.keycode >= KEY_1 and event.keycode <= KEY_7: activate(event.keycode-KEY_1)
 		if event.keycode == KEY_ESCAPE: _show_menu()
-		if event.keycode == KEY_SPACE: activate(5)
+		if event.keycode == KEY_SPACE:
+			if collection:collection.toggle_rotation()
+			else:activate(5)
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_RIGHT and event.pressed: _show_menu(); return
 		if event.button_index == MOUSE_BUTTON_LEFT:
@@ -691,6 +726,8 @@ func _show_menu() -> void:
 	menu.popup()
 
 func _menu_action(id: int) -> void:
+	if id==24 and collection:collection.toggle_rotation()
+	if id==25 and collection:collection.toggle_selector()
 	if id >= 10 and id <= 16: activate(id-10)
 	if id == 21: muted = not muted; _save_settings()
 	if id == 22: get_window().always_on_top = not get_window().always_on_top; _save_settings()
@@ -707,7 +744,7 @@ func _update_hit_region() -> void:
 	# Raycast actual 3D surfaces. Empty spaces between petals also pass clicks through.
 	var cursor := Vector2(DisplayServer.mouse_get_position()-get_window().position+crop_rect.position)
 	var from:=camera.project_ray_origin(cursor)
-	var query:=PhysicsRayQueryParameters3D.create(from,from+camera.project_ray_normal(cursor)*50,3)
+	var query:=PhysicsRayQueryParameters3D.create(from,from+camera.project_ray_normal(cursor)*50,31)
 	var on_model:=not get_world_3d().direct_space_state.intersect_ray(query).is_empty()
 	var on_ui:=tooltip.visible and tooltip.get_global_rect().has_point(cursor)
 	var should_pass := not on_model and not on_ui and drag_kind==0 and pressed<0 and not menu.visible
@@ -729,6 +766,18 @@ func _model_bounds() -> Rect2:
 
 func _fit_window(include_path: bool) -> void:
 	if native_mode:return
+	if mac_desktop:
+		# Keep the entire transparent render canvas resident. Mesh-only cropping
+		# clips the orbit/steam and resizing a Cocoa window can move its anchor.
+		# The existing surface raycast passes empty desktop space through.
+		var canvas_rect := Rect2i(Vector2i.ZERO,canonical_size)
+		if crop_rect == canvas_rect and get_window().size == canonical_size:return
+		crop_rect = canvas_rect
+		presentation.position = Vector2.ZERO
+		if get_window().size != canonical_size:get_window().size = canonical_size
+		get_window().position = desktop_anchor
+		desktop_anchor = get_window().position
+		return
 	# Crop the fixed-resolution 3D render, preserving the model's exact desktop pixels.
 	# Only resize before/after a mechanical action, never on every animation frame.
 	var old_open:=openness
@@ -763,6 +812,8 @@ func _live_commands() -> void:
 	var cmd = JSON.parse_string(FileAccess.get_file_as_string(control_path))
 	if not cmd is Dictionary: return
 	if cmd.has("action"): activate(int(cmd.action))
+	if cmd.has("model") and collection:collection.request_model(str(cmd.model))
+	if cmd.has("selector") and collection:collection.selector_target=1.0 if cmd.selector else 0.0
 	if cmd.has("capture"): capture(str(cmd.capture))
 	if cmd.has("hide_ui"):
 		toast_timer=0.0;native_cursor=Vector2(-10000,-10000)
@@ -807,6 +858,7 @@ func capture(name_string: String) -> void:
 	await RenderingServer.frame_post_draw
 	get_tree().root.get_texture().get_image().save_png(capture_dir.path_join(name_string+".png"))
 	var info := {"window_position":[get_window().position.x,get_window().position.y],"window_size":[get_window().size.x,get_window().size.y],"camera_fov":camera.fov,"fps":Engine.get_frames_per_second(),"vertices":RenderingServer.get_rendering_info(RenderingServer.RENDERING_INFO_TOTAL_PRIMITIVES_IN_FRAME)}
+	if collection:info["collection"]=collection.diagnostics()
 	FileAccess.open(capture_dir.path_join(name_string+".json"),FileAccess.WRITE).store_string(JSON.stringify(info,"  "))
 
 func _demo() -> void:

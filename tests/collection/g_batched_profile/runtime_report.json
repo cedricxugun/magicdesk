@@ -1,0 +1,227 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "collection_loaded",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_closed_visible",
+      "detail": "[P: (703, 327), S: (535, 837)]",
+      "passed": true
+    },
+    {
+      "check": "B_closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_closed_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_closed_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_selector_visible",
+      "detail": "[P: (350, 327), S: (895, 837)]",
+      "passed": true
+    },
+    {
+      "check": "B_selector_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_selector_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_selector_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_switch",
+      "detail": "idle",
+      "passed": true
+    },
+    {
+      "check": "G_closed_visible",
+      "detail": "[P: (703, 464), S: (511, 700)]",
+      "passed": true
+    },
+    {
+      "check": "G_closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_closed_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_closed_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_opened",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_open_visible",
+      "detail": "[P: (622, 462), S: (666, 702)]",
+      "passed": true
+    },
+    {
+      "check": "G_open_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_open_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_open_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_action_visible",
+      "detail": "[P: (622, 462), S: (666, 702)]",
+      "passed": true
+    },
+    {
+      "check": "G_action_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_action_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_action_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_exploded_visible",
+      "detail": "[P: (703, 323), S: (511, 841)]",
+      "passed": true
+    },
+    {
+      "check": "G_exploded_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_exploded_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_exploded_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_assemble",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "G_interrupt_open",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_interrupt_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "G_selector_visible",
+      "detail": "[P: (350, 464), S: (864, 700)]",
+      "passed": true
+    },
+    {
+      "check": "G_selector_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_selector_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_selector_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "return_B",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_returned_visible",
+      "detail": "[P: (703, 327), S: (538, 837)]",
+      "passed": true
+    },
+    {
+      "check": "B_returned_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_returned_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_returned_one_base",
+      "detail": "",
+      "passed": true
+    }
+  ],
+  "device": "Apple M5 (Apple9)",
+  "engine": "4.7.1-stable (official)",
+  "is_art_acceptance": false,
+  "performance": {
+    "G": {
+      "frames": 109,
+      "includes_first_action_compilation": true,
+      "max_ms": 24.9449999999995,
+      "median_ms": 16.6666666666667,
+      "p95_ms": 22.634
+    }
+  }
+}

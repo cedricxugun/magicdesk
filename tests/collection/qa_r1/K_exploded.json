@@ -1,0 +1,197 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "F",
+      "time": 17603
+    },
+    {
+      "action": 2,
+      "id": "F",
+      "time": 20329
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 22397
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 27314
+    },
+    {
+      "action": 1,
+      "id": "F",
+      "time": 29283
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 29837
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 30972
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 31865
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 38594
+    },
+    {
+      "action": 2,
+      "id": "G",
+      "time": 41437
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 43551
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 48503
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 50455
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 51006
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 52153
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 53040
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 59552
+    },
+    {
+      "action": 2,
+      "id": "I",
+      "time": 62280
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 64396
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 69327
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 71297
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 71848
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 73001
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 73898
+    },
+    {
+      "action": 1,
+      "id": "J",
+      "time": 80479
+    },
+    {
+      "action": 2,
+      "id": "J",
+      "time": 83185
+    },
+    {
+      "action": 3,
+      "id": "J",
+      "time": 85196
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 90065
+    },
+    {
+      "action": 1,
+      "id": "J",
+      "time": 92016
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 92567
+    },
+    {
+      "action": 3,
+      "id": "J",
+      "time": 93716
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 94618
+    },
+    {
+      "action": 1,
+      "id": "K",
+      "time": 101037
+    },
+    {
+      "action": 2,
+      "id": "K",
+      "time": 103788
+    },
+    {
+      "action": 3,
+      "id": "K",
+      "time": 105817
+    }
+  ],
+  "active": "K",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.80256)]",
+  "base_instances": 1,
+  "error": "",
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 0.0,
+    "controls": 5,
+    "explosion": 1.0,
+    "finite": true,
+    "id": "K",
+    "openness": 0.0,
+    "parts": 9
+  },
+  "requested": "",
+  "selector": 0.0,
+  "state": "idle"
+}

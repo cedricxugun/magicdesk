@@ -1,0 +1,27 @@
+{
+  "generator": "built-in image_gen",
+  "fx_grid": [
+    4,
+    2
+  ],
+  "fx_tiles": {
+    "F": 0,
+    "G": 1,
+    "I": 2,
+    "J": 3,
+    "K": 4,
+    "L": 5,
+    "M": 6,
+    "N": 7
+  },
+  "planet_rows": [
+    "grey",
+    "blue",
+    "ochre"
+  ],
+  "alpha_mode": "shader luminance from authored black-background VFX atlas",
+  "files": {
+    "fx_atlas.png": "f2880e7c8a4be3fff6d07bb6ab07321e39aa5b868c6756cd57698acbe153b754",
+    "planet_atlas.png": "727ab182c61547d6c7e30672ba77e701ea9065d742e05054eccac92b69730c9d"
+  }
+}

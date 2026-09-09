@@ -1,0 +1,342 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "F",
+      "time": 20985
+    },
+    {
+      "action": 2,
+      "id": "F",
+      "time": 23797
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 25920
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 30874
+    },
+    {
+      "action": 1,
+      "id": "F",
+      "time": 32847
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 33402
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 34558
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 35454
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 42867
+    },
+    {
+      "action": 2,
+      "id": "G",
+      "time": 45810
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 48012
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 53003
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 54938
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 55489
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 56674
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 57573
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 64460
+    },
+    {
+      "action": 2,
+      "id": "I",
+      "time": 67239
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 69418
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 74361
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 76351
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 76894
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 78020
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 78920
+    },
+    {
+      "action": 1,
+      "id": "J",
+      "time": 86213
+    },
+    {
+      "action": 2,
+      "id": "J",
+      "time": 88947
+    },
+    {
+      "action": 3,
+      "id": "J",
+      "time": 90983
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 95900
+    },
+    {
+      "action": 1,
+      "id": "J",
+      "time": 97851
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 98402
+    },
+    {
+      "action": 3,
+      "id": "J",
+      "time": 99512
+    },
+    {
+      "action": 4,
+      "id": "J",
+      "time": 100403
+    },
+    {
+      "action": 1,
+      "id": "K",
+      "time": 107190
+    },
+    {
+      "action": 2,
+      "id": "K",
+      "time": 110001
+    },
+    {
+      "action": 3,
+      "id": "K",
+      "time": 112084
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 117030
+    },
+    {
+      "action": 1,
+      "id": "K",
+      "time": 118980
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 119531
+    },
+    {
+      "action": 3,
+      "id": "K",
+      "time": 120696
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 121570
+    },
+    {
+      "action": 1,
+      "id": "L",
+      "time": 128535
+    },
+    {
+      "action": 2,
+      "id": "L",
+      "time": 131309
+    },
+    {
+      "action": 3,
+      "id": "L",
+      "time": 133384
+    },
+    {
+      "action": 4,
+      "id": "L",
+      "time": 138332
+    },
+    {
+      "action": 1,
+      "id": "L",
+      "time": 140310
+    },
+    {
+      "action": 4,
+      "id": "L",
+      "time": 140857
+    },
+    {
+      "action": 3,
+      "id": "L",
+      "time": 142006
+    },
+    {
+      "action": 4,
+      "id": "L",
+      "time": 142886
+    },
+    {
+      "action": 2,
+      "id": "M",
+      "time": 149633
+    },
+    {
+      "action": 2,
+      "id": "M",
+      "time": 152347
+    },
+    {
+      "action": 3,
+      "id": "M",
+      "time": 157972
+    },
+    {
+      "action": 4,
+      "id": "M",
+      "time": 162864
+    },
+    {
+      "action": 3,
+      "id": "M",
+      "time": 164815
+    },
+    {
+      "action": 4,
+      "id": "M",
+      "time": 165700
+    },
+    {
+      "action": 1,
+      "id": "N",
+      "time": 172512
+    },
+    {
+      "action": 2,
+      "id": "N",
+      "time": 175307
+    },
+    {
+      "action": 3,
+      "id": "N",
+      "time": 181032
+    },
+    {
+      "action": 4,
+      "id": "N",
+      "time": 187787
+    },
+    {
+      "action": 1,
+      "id": "N",
+      "time": 189755
+    },
+    {
+      "action": 4,
+      "id": "N",
+      "time": 190288
+    },
+    {
+      "action": 3,
+      "id": "N",
+      "time": 191446
+    },
+    {
+      "action": 4,
+      "id": "N",
+      "time": 192316
+    }
+  ],
+  "active": "N",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "error": "",
+  "load_metrics": {
+    "archive_started_ms": 1259,
+    "gpu_warm_ms": 114,
+    "id": "N",
+    "resource_ready_ms": 700,
+    "setup_ms": 440,
+    "started_ms": 168436,
+    "stow_started_ms": 1257,
+    "total_ms": 3549
+  },
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 0.0,
+    "controls": 4,
+    "explosion": 0.0,
+    "finite": true,
+    "id": "N",
+    "openness": 0.0,
+    "parts": 25
+  },
+  "requested": "",
+  "selector": 1.0,
+  "state": "idle"
+}

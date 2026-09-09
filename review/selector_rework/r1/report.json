@@ -1,0 +1,62 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "visible_porcelain_cowl_is_entry",
+      "detail": "(-1.020443, 0.644668, 1.11979)",
+      "passed": true
+    },
+    {
+      "check": "cowl_opening_has_intermediate_pose",
+      "detail": "0.26042533333333",
+      "passed": true
+    },
+    {
+      "check": "plaque_deployment",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "archive_started",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "recast_started",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "switch_to_G",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "reopen_archive",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "retraction_has_intermediate_pose",
+      "detail": "0.65",
+      "passed": true
+    },
+    {
+      "check": "retraction_finishes",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "base_and_camera_fixed",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "single_base",
+      "detail": "",
+      "passed": true
+    }
+  ],
+  "not_a_performance_benchmark": false,
+  "rendered_sequence": true
+}

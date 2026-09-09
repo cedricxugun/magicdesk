@@ -1,0 +1,26 @@
+{
+  "camera_fov": 48.9636840820312,
+  "collection": {
+    "actions": [],
+    "active": "B",
+    "base_instances": 1,
+    "error": "",
+    "module": {
+      "id": "B",
+      "parts": 70
+    },
+    "requested": "",
+    "selector": 0.0862029666666667,
+    "state": "idle"
+  },
+  "fps": 26.0,
+  "vertices": 9797672,
+  "window_position": [
+    510,
+    232
+  ],
+  "window_size": [
+    1920,
+    1400
+  ]
+}

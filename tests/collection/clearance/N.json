@@ -1,0 +1,9 @@
+{
+  "id": "N",
+  "sample_count": 42,
+  "porcelain_objects": 17,
+  "lowest_porcelain_z": 0.682307779788971,
+  "intersections": [],
+  "scope": "porcelain against porcelain; same rigid group excluded; contact is reported, not automatically failure",
+  "all_clear": true
+}

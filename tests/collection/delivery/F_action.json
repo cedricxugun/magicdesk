@@ -1,0 +1,42 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "F",
+      "time": 15965
+    },
+    {
+      "action": 2,
+      "id": "F",
+      "time": 18745
+    }
+  ],
+  "active": "F",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "error": "",
+  "load_metrics": {
+    "archive_started_ms": 2640,
+    "gpu_warm_ms": 85,
+    "id": "F",
+    "resource_ready_ms": 748,
+    "setup_ms": 440,
+    "started_ms": 9780,
+    "stow_started_ms": 1280,
+    "total_ms": 5676
+  },
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 4.99181433333334,
+    "controls": 14,
+    "explosion": 0.0,
+    "finite": true,
+    "id": "F",
+    "openness": 1.0,
+    "parts": 14
+  },
+  "requested": "",
+  "selector": 0.0,
+  "state": "idle"
+}

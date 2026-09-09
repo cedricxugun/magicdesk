@@ -1,0 +1,40 @@
+{
+  "source": "res://assets/helios_model.glb",
+  "source_node": "BASE_FIXED_DisplayMesh",
+  "variants": {
+    "helios": {
+      "scene": "res://assets/collection/frame_helios.glb",
+      "node": "FRAME_helios",
+      "material_names": [
+        "Black_Polymer",
+        "Graphite",
+        "Polished_Nickel",
+        "Dark_Brushed_Steel",
+        "Ivory_Enamel",
+        "Cherry_Enamel",
+        "Warm_Nickel",
+        "Amber_Light",
+        ""
+      ],
+      "vertices": 35138,
+      "polygons": 68379
+    },
+    "shared": {
+      "scene": "res://assets/collection/frame_shared.glb",
+      "node": "FRAME_shared",
+      "material_names": [
+        "Black_Polymer",
+        "Graphite",
+        "Polished_Nickel",
+        "Dark_Brushed_Steel",
+        "Ivory_Enamel",
+        "Cherry_Enamel",
+        "Warm_Nickel",
+        "Amber_Light",
+        ""
+      ],
+      "vertices": 21255,
+      "polygons": 40242
+    }
+  }
+}

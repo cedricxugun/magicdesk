@@ -1,0 +1,77 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "F",
+      "time": 20985
+    },
+    {
+      "action": 2,
+      "id": "F",
+      "time": 23797
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 25920
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 30874
+    },
+    {
+      "action": 1,
+      "id": "F",
+      "time": 32847
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 33402
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 34558
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 35454
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 42867
+    }
+  ],
+  "active": "G",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "error": "",
+  "load_metrics": {
+    "archive_started_ms": 2025,
+    "gpu_warm_ms": 41,
+    "id": "G",
+    "resource_ready_ms": 859,
+    "setup_ms": 681,
+    "started_ms": 37959,
+    "stow_started_ms": 1605,
+    "total_ms": 4316
+  },
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 0.0,
+    "controls": 72,
+    "explosion": 0.0,
+    "finite": true,
+    "id": "G",
+    "openness": 1.0,
+    "parts": 26
+  },
+  "requested": "",
+  "selector": 0.0,
+  "state": "idle"
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "global_scale_error": 0.15453614294529,
+    "local_scale_error": 0.000000433928363463565,
+    "model": "B"
+  },
+  {
+    "global_scale_error": 0.278511703014374,
+    "local_scale_error": 0.000000206850586437213,
+    "model": "F"
+  },
+  {
+    "global_scale_error": 0.985000014305115,
+    "local_scale_error": 0.0000000298023223876953,
+    "model": "G"
+  },
+  {
+    "global_scale_error": 0.925000011920929,
+    "local_scale_error": 0.0000000596046447753906,
+    "model": "I"
+  },
+  {
+    "global_scale_error": 0.000000245756240246919,
+    "local_scale_error": 0.000000245756240246919,
+    "model": "J"
+  },
+  {
+    "global_scale_error": 0.0,
+    "local_scale_error": 0.0,
+    "model": "K"
+  },
+  {
+    "global_scale_error": 0.0,
+    "local_scale_error": 0.0,
+    "model": "L"
+  },
+  {
+    "global_scale_error": 0.0,
+    "local_scale_error": 0.0,
+    "model": "M"
+  },
+  {
+    "global_scale_error": 0.0,
+    "local_scale_error": 0.0,
+    "model": "N"
+  }
+]

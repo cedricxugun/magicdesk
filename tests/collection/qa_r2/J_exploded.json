@@ -1,0 +1,157 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "F",
+      "time": 17246
+    },
+    {
+      "action": 2,
+      "id": "F",
+      "time": 19995
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 22040
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 26960
+    },
+    {
+      "action": 1,
+      "id": "F",
+      "time": 28928
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 29486
+    },
+    {
+      "action": 3,
+      "id": "F",
+      "time": 30628
+    },
+    {
+      "action": 4,
+      "id": "F",
+      "time": 31529
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 38516
+    },
+    {
+      "action": 2,
+      "id": "G",
+      "time": 41363
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 43504
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 48387
+    },
+    {
+      "action": 1,
+      "id": "G",
+      "time": 50337
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 50890
+    },
+    {
+      "action": 3,
+      "id": "G",
+      "time": 52064
+    },
+    {
+      "action": 4,
+      "id": "G",
+      "time": 52956
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 59642
+    },
+    {
+      "action": 2,
+      "id": "I",
+      "time": 62411
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 64487
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 69454
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 71444
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 71980
+    },
+    {
+      "action": 3,
+      "id": "I",
+      "time": 73118
+    },
+    {
+      "action": 4,
+      "id": "I",
+      "time": 74013
+    },
+    {
+      "action": 1,
+      "id": "J",
+      "time": 80639
+    },
+    {
+      "action": 2,
+      "id": "J",
+      "time": 83367
+    },
+    {
+      "action": 3,
+      "id": "J",
+      "time": 85379
+    }
+  ],
+  "active": "J",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.760933)]",
+  "base_instances": 1,
+  "error": "",
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 0.0,
+    "controls": 25,
+    "explosion": 1.0,
+    "finite": true,
+    "id": "J",
+    "openness": 0.0,
+    "parts": 30
+  },
+  "requested": "",
+  "selector": 0.0,
+  "state": "idle"
+}

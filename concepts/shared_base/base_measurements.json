@@ -1,0 +1,66 @@
+{
+  "source": "app/assets/helios_model.glb",
+  "source_sha256": "a113215111d527ab71bd5130d55d19712ae0ae130ab0b5875f90082d45d274d4",
+  "method": "Actual float32 POSITION vertices transformed through the GLB node hierarchy; static imported pose.",
+  "axes": "x horizontal, y up, z depth; authored scene units, not a physical manufacturing specification",
+  "fixed_base_including_controls": {
+    "node": "BASE_FIXED",
+    "min": [
+      -1.3700000047683716,
+      0.004999998956918716,
+      -1.3700000047683716
+    ],
+    "max": [
+      1.3700000047683716,
+      0.6756084561347961,
+      1.4397119729191405
+    ],
+    "size": [
+      2.740000009536743,
+      0.6706084571778774,
+      2.8097119776875124
+    ],
+    "vertices_measured": 151620
+  },
+  "base_body": {
+    "node": "BASE_FIXED_DisplayMesh",
+    "min": [
+      -1.3700000047683716,
+      0.004999998956918716,
+      -1.3700000047683716
+    ],
+    "max": [
+      1.3700000047683716,
+      0.6756084561347961,
+      1.432559609413147
+    ],
+    "size": [
+      2.740000009536743,
+      0.6706084571778774,
+      2.8025596141815186
+    ],
+    "vertices_measured": 98862
+  },
+  "helios_closed_static": {
+    "node": "HELIOS_ROOT",
+    "min": [
+      -1.3700000047683716,
+      0.004999998956918716,
+      -1.3828252292046346
+    ],
+    "max": [
+      1.3700000047683716,
+      3.7929999828338623,
+      1.4397119729191405
+    ],
+    "size": [
+      2.740000009536743,
+      3.7879999838769436,
+      2.822537202123775
+    ],
+    "vertices_measured": 1199685
+  },
+  "normalized_base_diameter_D": 2.740000009536743,
+  "diameter_definition": "Lateral shell diameter; forward-facing fascia and controls project beyond the circular rim in z.",
+  "internal_free_volume_verified": false
+}

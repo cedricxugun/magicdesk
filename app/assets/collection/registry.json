@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "base_diameter": 2.74,
+  "models": [
+    {
+      "id": "B",
+      "title": "孵日器",
+      "legacy": true,
+      "scene": "res://assets/helios_model.glb",
+      "metadata": "res://assets/mechanism.json",
+      "thumbnail": "res://assets/collection/thumbs/B.png",
+      "actions": [
+        "唤醒 / 休眠",
+        "绽放 / 闭合",
+        "核心过载",
+        "零件拆解",
+        "组装 / 收拢",
+        "旋转 / 暂停",
+        "收拢并退出"
+      ],
+      "widgets": [
+        "button",
+        "lever",
+        "rocker",
+        "button",
+        "knob"
+      ]
+    },
+    {
+      "id": "F",
+      "title": "拉格朗日天平",
+      "legacy": false,
+      "scene": "res://assets/collection/models/F.glb",
+      "metadata": "res://assets/collection/models/F.json",
+      "thumbnail": "res://assets/collection/thumbs/F.png",
+      "actions": [
+        "唤醒 / 休眠",
+        "逆衡 / 归零",
+        "失重拍",
+        "拆解机构",
+        "重新组装",
+        "旋转 / 暂停",
+        "收拢并退出"
+      ],
+      "widgets": [
+        "knob",
+        "lever",
+        "rocker",
+        "button",
+        "knob"
+      ]
+    },
+    {
+      "id": "G",
+      "title": "折维书匣",
+      "legacy": false,
+      "scene": "res://assets/collection/models/G.glb",
+      "metadata": "res://assets/collection/models/G.json",
+      "thumbnail": "res://assets/collection/thumbs/G.png",
+      "actions": [
+        "唤醒 / 休眠",
+        "折维 / 合匣",
+        "重写空间",
+        "拆解书匣",
+        "重新组装",
+        "旋转 / 暂停",
+        "收拢并退出"
+      ],
+      "widgets": [
+        "lever",
+        "button",
+        "rocker",
+        "button",
+        "knob"
+      ]
+    },
+    {
+      "id": "I",
+      "title": "回声海螺",
+      "legacy": false,
+      "scene": "res://assets/collection/models/I.glb",
+      "metadata": "res://assets/collection/models/I.json",
+      "thumbnail": "res://assets/collection/thumbs/I.png",
+      "actions": [
+        "唤醒 / 休眠",
+        "听潮 / 收卷",
+        "回声折返",
+        "拆解海螺",
+        "重新组装",
+        "旋转 / 暂停",
+        "收拢并退出"
+      ],
+      "widgets": [
+        "knob",
+        "lever",
+        "rocker",
+        "button",
+        "knob"
+      ]
+    },
+    {
+      "id": "J",
+      "title": "汞芽温室",
+      "legacy": false,
+      "scene": "res://assets/collection/models/J.glb",
+      "metadata": "res://assets/collection/models/J.json",
+      "thumbnail": "res://assets/collection/thumbs/J.png",
+      "actions": [
+        "唤醒 / 休眠",
+        "萌发 / 收芽",
+        "授光脉冲",
+        "拆解枝芽",
+        "重新组装",
+        "旋转 / 暂停",
+        "收拢并退出"
+      ],
+      "widgets": [
+        "lever",
+        "button",
+        "rocker",
+        "button",
+        "knob"
+      ]
+    },
+    {
+      "id": "K",
+      "title": "星图刻写机",
+      "legacy": false,
+      "scene": "res://assets/collection/models/K.glb",
+      "metadata": "res://assets/collection/models/K.json",
+      "thumbnail": "res://assets/collection/thumbs/K.png",
+      "actions": [
+        "唤醒 / 休眠",
+        "开盖 / 收盖",
+        "刻写星图",
+        "拆解刻写机",
+        "重新组装",
+        "旋转 / 暂停",
+        "收拢并退出"
+      ],
+      "widgets": [
+        "rocker",
+        "lever",
+        "button",
+        "button",
+        "knob"
+      ]
+    },
+    {
+      "id": "L",
+      "title": "三相窥镜",
+      "legacy": false,
+      "scene": "res://assets/collection/models/L.glb",
+      "metadata": "res://assets/collection/models/L.json",
+      "thumbnail": "res://assets/collection/thumbs/L.png",
+      "actions": [
+        "唤醒 / 休眠",
+        "探镜 / 收镜",
+        "三相对焦",
+        "拆解潜镜",
+        "重新组装",
+        "旋转 / 暂停",
+        "收拢并退出"
+      ],
+      "widgets": [
+        "lever",
+        "knob",
+        "rocker",
+        "button",
+        "knob"
+      ]
+    },
+    {
+      "id": "M",
+      "title": "星噬仪",
+      "legacy": false,
+      "scene": "res://assets/collection/models/M.glb",
+      "metadata": "res://assets/collection/models/M.json",
+      "thumbnail": "res://assets/collection/thumbs/M.png",
+      "actions": [
+        "唤醒 / 休眠",
+        "公转 / 暂停",
+        "开启星噬",
+        "拆解磁极",
+        "重构 / 组装",
+        "旋转 / 暂停",
+        "收拢并退出"
+      ],
+      "widgets": [
+        "knob",
+        "lever",
+        "rocker",
+        "button",
+        "knob"
+      ]
+    },
+    {
+      "id": "N",
+      "title": "裂隙回廊",
+      "legacy": false,
+      "scene": "res://assets/collection/models/N.glb",
+      "metadata": "res://assets/collection/models/N.json",
+      "thumbnail": "res://assets/collection/thumbs/N.png",
+      "actions": [
+        "唤醒 / 休眠",
+        "开裂 / 闭桥",
+        "探针穿越",
+        "拆解裂口",
+        "重新组装",
+        "相位校准",
+        "收拢并退出"
+      ],
+      "widgets": [
+        "knob",
+        "lever",
+        "rocker",
+        "button",
+        "knob"
+      ]
+    }
+  ]
+}

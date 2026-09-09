@@ -1,0 +1,31 @@
+{
+  "actions": [],
+  "active": "G",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "error": "",
+  "load_metrics": {
+    "archive_started_ms": 5501,
+    "gpu_warm_ms": 2305,
+    "id": "G",
+    "resource_ready_ms": 919,
+    "setup_ms": 887,
+    "started_ms": 11670,
+    "stow_started_ms": 4142,
+    "total_ms": 8610
+  },
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 0.0,
+    "controls": 72,
+    "explosion": 0.0,
+    "finite": true,
+    "id": "G",
+    "openness": 0.0,
+    "parts": 26
+  },
+  "requested": "",
+  "selector": 0.0,
+  "state": "idle"
+}

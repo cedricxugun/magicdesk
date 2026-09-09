@@ -1,0 +1,62 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "K",
+      "time": 111432
+    },
+    {
+      "action": 2,
+      "id": "K",
+      "time": 114210
+    },
+    {
+      "action": 3,
+      "id": "K",
+      "time": 116316
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 121275
+    },
+    {
+      "action": 1,
+      "id": "K",
+      "time": 123225
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 123778
+    },
+    {
+      "action": 3,
+      "id": "K",
+      "time": 124926
+    },
+    {
+      "action": 4,
+      "id": "K",
+      "time": 125809
+    }
+  ],
+  "active": "K",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "error": "",
+  "module": {
+    "authored_fx": "res://assets/collection/art/fx_atlas.png",
+    "base_owned": false,
+    "burst": 0.0,
+    "controls": 5,
+    "explosion": 0.0,
+    "finite": true,
+    "id": "K",
+    "openness": 0.0,
+    "parts": 9
+  },
+  "requested": "",
+  "selector": 1.0,
+  "state": "idle"
+}

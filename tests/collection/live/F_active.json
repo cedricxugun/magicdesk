@@ -1,0 +1,33 @@
+{
+  "camera_fov": 48.9636840820312,
+  "collection": {
+    "actions": [],
+    "active": "F",
+    "base_instances": 1,
+    "error": "",
+    "module": {
+      "authored_fx": "res://assets/collection/art/fx_atlas.png",
+      "base_owned": false,
+      "burst": 0.0,
+      "controls": 14,
+      "explosion": 0.0,
+      "finite": true,
+      "id": "F",
+      "openness": 0.0,
+      "parts": 14
+    },
+    "requested": "",
+    "selector": 0.0,
+    "state": "idle"
+  },
+  "fps": 60.0,
+  "vertices": 472692,
+  "window_position": [
+    510,
+    232
+  ],
+  "window_size": [
+    1920,
+    1400
+  ]
+}

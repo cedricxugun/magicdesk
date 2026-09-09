@@ -1,4 +1,8 @@
-# MagicDesk · HELIOS 孵日器
+# MagicDesk · 桌面机械装置
+
+**跨设备继续开发先读 [HANDOFF.md](HANDOFF.md)。当前源码为 0.2.1 切换机制返工中的检查点，不是已完成版本。用户确认 M/N 尚未实际加入 App，除 B 外所有模型需逐款精修；旧测试报告不代表当前完成度。**
+
+本机 Mac 开发构建 0.2.0 已接入 B 孵日器与 F/G/I/J/K/L/M/N 八款装置，共用固定底座、机械铭牌机关与透明桌面窗口。动作分镜、实际贴图资产、Blender 源文件和验证记录见 [首批制作记录](production/batch1/WORKLOG.md)。以下 HELIOS 说明也保留为原有 Windows 版本基准。
 
 以复古科幻机械为方向制作的可交互三维桌面摆件。上部机械旋转展示，底座固定；支持六瓣同步绽放、核心过载、70组零件拆解与重组，以及收拢熄灯后退出。
 
@@ -33,6 +37,12 @@ Windows x64；运行已打包 EXE 无需安装 Godot 或 Blender。模型、贴�
 拖动底座移动摆件，拖动上部手动旋转。使用 Windows 原生逐像素透明显示，透明区域可点透；开合时镜头不缩放。重复启动会唤起已有应用。
 
 [最新版完整演示](review/final_choreography_demo.mp4) · [蒸汽修复演示](review/steam_fix_demo.mp4) · [详细使用说明](使用说明.md)
+
+### 当前电脑的 Mac 版本
+
+2026-09-09 本机 Apple M5 原生 arm64 开发构建：双击 `dist/macos/MagicDesk.app`，无需安装运行依赖。点击环沿压条或按 Tab 展开机械铭牌，滚轮或索引滚轴翻阅，点选装置；不同上部配各自操作匣。Mac 使用 Godot / Metal 直接呈现透明窗口；Cmd-Q 先收束再关闭。构建命令为 `bash tools/build_macos.sh`，输出 App 和 `dist/MagicDesk-macOS-arm64.zip`。旧 `HELIOS.app` 和 ZIP 保留。
+
+此版本面向当前电脑，使用本地 ad-hoc 签名。见 [Mac 使用说明](使用说明-macOS.md) 和 [本机验证记录](tests/macos_report.md)。
 
 ## 项目结构
 

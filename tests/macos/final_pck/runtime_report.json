@@ -1,0 +1,605 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "macOS_direct_presentation",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "graceful_system_quit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "component_count",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "button_count",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_cache",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "closed_visible",
+      "detail": "[P: (703, 327), S: (545, 837)]",
+      "passed": true
+    },
+    {
+      "check": "closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "closed_fixed_window",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "closed_fixed_camera",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "closed_fixed_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "closed_button_1",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "closed_button_2",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "closed_button_3",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "closed_button_4",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "closed_button_5",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "closed_button_6",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "closed_button_7",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "opening_advances",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "steam_advances",
+      "detail": "1.27555033333333",
+      "passed": true
+    },
+    {
+      "check": "pressure_visible",
+      "detail": "[P: (300, 324), S: (1218, 1074)]",
+      "passed": true
+    },
+    {
+      "check": "pressure_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_fixed_window",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_fixed_camera",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_fixed_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_button_1",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_button_2",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_button_3",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_button_4",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_button_5",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_button_6",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_button_7",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "bloom_complete",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pressure_compute_ready",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "idle_cache",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "idle_compute_ready",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "open_visible",
+      "detail": "[P: (379, 447), S: (1143, 717)]",
+      "passed": true
+    },
+    {
+      "check": "open_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "open_fixed_window",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "open_fixed_camera",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "open_fixed_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "open_button_1",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "open_button_2",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "open_button_3",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "open_button_4",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "open_button_5",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "open_button_6",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "open_button_7",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_peak",
+      "detail": "3.58296866666667",
+      "passed": true
+    },
+    {
+      "check": "overload_no_ground_burst",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_visible",
+      "detail": "[P: (379, 421), S: (1161, 743)]",
+      "passed": true
+    },
+    {
+      "check": "overload_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_fixed_window",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_fixed_camera",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_fixed_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_button_1",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_button_2",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_button_3",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_button_4",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_button_5",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_button_6",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "overload_button_7",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "assemble_during_overload",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "explode_complete",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exploded_visible",
+      "detail": "[P: (471, 213), S: (974, 1001)]",
+      "passed": true
+    },
+    {
+      "check": "exploded_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exploded_fixed_window",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exploded_fixed_camera",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exploded_fixed_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exploded_button_1",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exploded_button_2",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exploded_button_3",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exploded_button_4",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exploded_button_5",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exploded_button_6",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exploded_button_7",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "assembled_visible",
+      "detail": "[P: (703, 327), S: (546, 837)]",
+      "passed": true
+    },
+    {
+      "check": "assembled_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "assembled_fixed_window",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "assembled_fixed_camera",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "assembled_fixed_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "assembled_button_1",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "assembled_button_2",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "assembled_button_3",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "assembled_button_4",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "assembled_button_5",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "assembled_button_6",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "assembled_button_7",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "interrupt_bloom_assemble",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "interrupt_explode_assemble",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "sleep",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "wake",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "rotation",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "pause_rotation",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "system_quit_starts_shutdown",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "shutdown_animation_alive",
+      "detail": "",
+      "passed": true
+    }
+  ],
+  "device": "Apple M5 (Apple9)",
+  "engine": "4.7.1-stable (official)",
+  "exported_runtime": false,
+  "idle": {
+    "birth_angles": [
+      0.102739222347736,
+      0.102739222347736,
+      0.102739222347736,
+      0.102739222347736,
+      0.102739222347736,
+      0.102739222347736,
+      0.102739222347736,
+      0.102739222347736,
+      0.102739222347736,
+      0.102739222347736,
+      0.102739222347736,
+      0.102739222347736,
+      0.102739222347736,
+      0.0997776389122009,
+      0.0885468572378159,
+      0.0715468600392342,
+      0.0545468628406525,
+      0.0375468619167805,
+      0.0205468609929085,
+      0.00619579432532191,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "compositor": {
+      "allocation_count": 1,
+      "allocation_during_prewarm": true,
+      "error": "",
+      "first_active_allocation_count": 1,
+      "first_active_cpu_ms": 0.349,
+      "frames": 648,
+      "full_size": "(1920, 1400)",
+      "low_size": "(768, 560)",
+      "pipeline_init_ms": 13.021,
+      "ready": true,
+      "volume_allocation_ms": 0.04,
+      "warm_pair_count": 18,
+      "warmed": true,
+      "warmup_cpu_ms": 1.141,
+      "warmup_visible_writes": 0
+    },
+    "frames": 18,
+    "gain": 0.256277563131312,
+    "history_samples": 62,
+    "history_span": 6.0,
+    "idle_active": true,
+    "last_error": "",
+    "source_off_elapsed": 0.594977949494951,
+    "time": 36.1577052222224,
+    "unwrapped_yaw": 0.102739222347736
+  },
+  "os": "macOS",
+  "performance": {
+    "average_fps": 33.5424688317667,
+    "frames": 1077,
+    "includes_capture_readbacks": true,
+    "max_ms": 149.635333333332,
+    "median_ms": 29.149,
+    "p95_ms": 39.781
+  },
+  "pressure": {
+    "allocation_count": 1,
+    "allocation_during_prewarm": true,
+    "error": "",
+    "first_active_allocation_count": 1,
+    "first_active_cpu_ms": 0.068,
+    "frames": 220,
+    "full_size": "(1920, 1400)",
+    "low_size": "(960, 700)",
+    "pipeline_init_ms": 3.738,
+    "ready": true,
+    "volume_allocation_ms": 0.033,
+    "warm_pair_count": 61,
+    "warmed": true,
+    "warmup_cpu_ms": 0.926,
+    "warmup_visible_writes": 0
+  }
+}

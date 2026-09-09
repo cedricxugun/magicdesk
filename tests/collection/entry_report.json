@@ -1,0 +1,50 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "entry_real_surface",
+      "detail": "{ \"reachable\": 9, \"samples\": 15 }",
+      "passed": true
+    },
+    {
+      "check": "entry_click_opens",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_0_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_1_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_2_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_3_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_4_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_5_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "wheel_advances_index",
+      "detail": "",
+      "passed": true
+    }
+  ]
+}

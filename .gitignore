@@ -35,3 +35,11 @@ tests/**/native_*.json
 tests/steam_fix_live/
 tests/mechanism_live/
 tests/choreography_live/
+
+# Reproducible Mac bundles and local build output.
+dist/macos/
+dist/staging/
+dist/HELIOS-macOS*.zip
+dist/HELIOS-macOS*.sha256
+dist/MagicDesk-macOS*.zip
+dist/MagicDesk-macOS*.sha256

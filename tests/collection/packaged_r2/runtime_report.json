@@ -1,0 +1,1291 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "collection_loaded",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_closed_visible",
+      "detail": "[P: (703, 327), S: (535, 837)]",
+      "passed": true
+    },
+    {
+      "check": "B_closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_closed_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_closed_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_selector_visible",
+      "detail": "[P: (350, 327), S: (895, 837)]",
+      "passed": true
+    },
+    {
+      "check": "B_selector_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_selector_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_selector_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_switch",
+      "detail": "idle",
+      "passed": true
+    },
+    {
+      "check": "F_closed_visible",
+      "detail": "[P: (678, 407), S: (536, 757)]",
+      "passed": true
+    },
+    {
+      "check": "F_closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_closed_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_closed_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_opened",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_open_visible",
+      "detail": "[P: (678, 407), S: (600, 757)]",
+      "passed": true
+    },
+    {
+      "check": "F_open_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_open_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_open_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_action_visible",
+      "detail": "[P: (678, 407), S: (600, 757)]",
+      "passed": true
+    },
+    {
+      "check": "F_action_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_action_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_action_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_exploded_visible",
+      "detail": "[P: (564, 212), S: (737, 952)]",
+      "passed": true
+    },
+    {
+      "check": "F_exploded_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_exploded_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_exploded_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_assemble",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "F_interrupt_open",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_interrupt_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "F_selector_visible",
+      "detail": "[P: (350, 407), S: (864, 757)]",
+      "passed": true
+    },
+    {
+      "check": "F_selector_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_selector_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_selector_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_switch",
+      "detail": "idle",
+      "passed": true
+    },
+    {
+      "check": "G_closed_visible",
+      "detail": "[P: (703, 464), S: (511, 700)]",
+      "passed": true
+    },
+    {
+      "check": "G_closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_closed_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_closed_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_opened",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_open_visible",
+      "detail": "[P: (622, 462), S: (666, 702)]",
+      "passed": true
+    },
+    {
+      "check": "G_open_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_open_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_open_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_action_visible",
+      "detail": "[P: (622, 462), S: (666, 702)]",
+      "passed": true
+    },
+    {
+      "check": "G_action_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_action_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_action_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_exploded_visible",
+      "detail": "[P: (703, 323), S: (511, 841)]",
+      "passed": true
+    },
+    {
+      "check": "G_exploded_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_exploded_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_exploded_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_assemble",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "G_interrupt_open",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_interrupt_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "G_selector_visible",
+      "detail": "[P: (350, 464), S: (864, 700)]",
+      "passed": true
+    },
+    {
+      "check": "G_selector_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_selector_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "G_selector_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_switch",
+      "detail": "idle",
+      "passed": true
+    },
+    {
+      "check": "I_closed_visible",
+      "detail": "[P: (703, 547), S: (511, 617)]",
+      "passed": true
+    },
+    {
+      "check": "I_closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_closed_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_closed_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_opened",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_open_visible",
+      "detail": "[P: (659, 520), S: (555, 644)]",
+      "passed": true
+    },
+    {
+      "check": "I_open_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_open_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_open_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_action_visible",
+      "detail": "[P: (659, 520), S: (555, 644)]",
+      "passed": true
+    },
+    {
+      "check": "I_action_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_action_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_action_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_exploded_visible",
+      "detail": "[P: (543, 335), S: (708, 829)]",
+      "passed": true
+    },
+    {
+      "check": "I_exploded_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_exploded_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_exploded_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_assemble",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "I_interrupt_open",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_interrupt_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "I_selector_visible",
+      "detail": "[P: (350, 547), S: (864, 617)]",
+      "passed": true
+    },
+    {
+      "check": "I_selector_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_selector_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "I_selector_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_switch",
+      "detail": "idle",
+      "passed": true
+    },
+    {
+      "check": "J_closed_visible",
+      "detail": "[P: (703, 493), S: (511, 671)]",
+      "passed": true
+    },
+    {
+      "check": "J_closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_closed_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_closed_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_opened",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_open_visible",
+      "detail": "[P: (703, 437), S: (511, 727)]",
+      "passed": true
+    },
+    {
+      "check": "J_open_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_open_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_open_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_action_visible",
+      "detail": "[P: (703, 437), S: (511, 727)]",
+      "passed": true
+    },
+    {
+      "check": "J_action_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_action_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_action_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_exploded_visible",
+      "detail": "[P: (592, 168), S: (775, 996)]",
+      "passed": true
+    },
+    {
+      "check": "J_exploded_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_exploded_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_exploded_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_assemble",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "J_interrupt_open",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_interrupt_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "J_selector_visible",
+      "detail": "[P: (350, 493), S: (864, 671)]",
+      "passed": true
+    },
+    {
+      "check": "J_selector_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_selector_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "J_selector_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_switch",
+      "detail": "idle",
+      "passed": true
+    },
+    {
+      "check": "K_closed_visible",
+      "detail": "[P: (703, 678), S: (511, 486)]",
+      "passed": true
+    },
+    {
+      "check": "K_closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_closed_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_closed_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_opened",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_open_visible",
+      "detail": "[P: (608, 564), S: (714, 600)]",
+      "passed": true
+    },
+    {
+      "check": "K_open_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_open_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_open_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_action_visible",
+      "detail": "[P: (608, 564), S: (714, 600)]",
+      "passed": true
+    },
+    {
+      "check": "K_action_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_action_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_action_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_exploded_visible",
+      "detail": "[P: (494, 550), S: (953, 614)]",
+      "passed": true
+    },
+    {
+      "check": "K_exploded_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_exploded_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_exploded_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_assemble",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_exact_reassembly",
+      "detail": "0.00000287673606",
+      "passed": true
+    },
+    {
+      "check": "K_interrupt_open",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_interrupt_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "K_selector_visible",
+      "detail": "[P: (350, 678), S: (864, 486)]",
+      "passed": true
+    },
+    {
+      "check": "K_selector_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_selector_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "K_selector_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_switch",
+      "detail": "idle",
+      "passed": true
+    },
+    {
+      "check": "L_closed_visible",
+      "detail": "[P: (703, 533), S: (511, 631)]",
+      "passed": true
+    },
+    {
+      "check": "L_closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_closed_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_closed_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_opened",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_open_visible",
+      "detail": "[P: (703, 509), S: (511, 655)]",
+      "passed": true
+    },
+    {
+      "check": "L_open_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_open_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_open_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_action_visible",
+      "detail": "[P: (703, 509), S: (511, 655)]",
+      "passed": true
+    },
+    {
+      "check": "L_action_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_action_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_action_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_exploded_visible",
+      "detail": "[P: (645, 357), S: (637, 807)]",
+      "passed": true
+    },
+    {
+      "check": "L_exploded_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_exploded_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_exploded_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_assemble",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "L_interrupt_open",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_interrupt_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "L_selector_visible",
+      "detail": "[P: (350, 533), S: (864, 631)]",
+      "passed": true
+    },
+    {
+      "check": "L_selector_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_selector_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "L_selector_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_switch",
+      "detail": "idle",
+      "passed": true
+    },
+    {
+      "check": "M_closed_visible",
+      "detail": "[P: (703, 653), S: (511, 511)]",
+      "passed": true
+    },
+    {
+      "check": "M_closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_closed_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_closed_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_opened",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_open_visible",
+      "detail": "[P: (703, 654), S: (511, 510)]",
+      "passed": true
+    },
+    {
+      "check": "M_open_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_open_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_open_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_action_visible",
+      "detail": "[P: (703, 654), S: (511, 510)]",
+      "passed": true
+    },
+    {
+      "check": "M_action_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_action_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_action_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_action_late_visible",
+      "detail": "[P: (703, 656), S: (511, 508)]",
+      "passed": true
+    },
+    {
+      "check": "M_action_late_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_action_late_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_action_late_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_exploded_visible",
+      "detail": "[P: (640, 583), S: (648, 581)]",
+      "passed": true
+    },
+    {
+      "check": "M_exploded_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_exploded_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_exploded_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_assemble",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "M_interrupt_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "M_selector_visible",
+      "detail": "[P: (350, 663), S: (864, 501)]",
+      "passed": true
+    },
+    {
+      "check": "M_selector_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_selector_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "M_selector_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_switch",
+      "detail": "idle",
+      "passed": true
+    },
+    {
+      "check": "N_closed_visible",
+      "detail": "[P: (703, 580), S: (530, 584)]",
+      "passed": true
+    },
+    {
+      "check": "N_closed_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_closed_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_closed_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_opened",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_open_visible",
+      "detail": "[P: (646, 610), S: (636, 554)]",
+      "passed": true
+    },
+    {
+      "check": "N_open_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_open_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_open_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_action_visible",
+      "detail": "[P: (646, 610), S: (636, 554)]",
+      "passed": true
+    },
+    {
+      "check": "N_action_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_action_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_action_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_action_late_visible",
+      "detail": "[P: (646, 610), S: (636, 554)]",
+      "passed": true
+    },
+    {
+      "check": "N_action_late_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_action_late_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_action_late_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_exploded_visible",
+      "detail": "[P: (539, 466), S: (877, 698)]",
+      "passed": true
+    },
+    {
+      "check": "N_exploded_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_exploded_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_exploded_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_assemble",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "N_interrupt_open",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_interrupt_explode",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_exact_reassembly",
+      "detail": "0.0",
+      "passed": true
+    },
+    {
+      "check": "N_selector_visible",
+      "detail": "[P: (350, 580), S: (883, 584)]",
+      "passed": true
+    },
+    {
+      "check": "N_selector_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_selector_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "N_selector_one_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "return_B",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_returned_visible",
+      "detail": "[P: (703, 327), S: (542, 837)]",
+      "passed": true
+    },
+    {
+      "check": "B_returned_transparent",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_returned_stable",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "B_returned_one_base",
+      "detail": "",
+      "passed": true
+    }
+  ],
+  "device": "Apple M5 (Apple9)",
+  "engine": "4.7.1-stable (official)",
+  "is_art_acceptance": false,
+  "performance": {
+    "F": {
+      "frames": 114,
+      "includes_first_action_compilation": true,
+      "max_ms": 138.865363636364,
+      "median_ms": 16.6666666666667,
+      "p95_ms": 16.6666666666667
+    },
+    "G": {
+      "frames": 100,
+      "includes_first_action_compilation": true,
+      "max_ms": 138.996666666668,
+      "median_ms": 18.0555555555556,
+      "p95_ms": 23.2647777777778
+    },
+    "I": {
+      "frames": 113,
+      "includes_first_action_compilation": true,
+      "max_ms": 137.022060606062,
+      "median_ms": 16.6666666666667,
+      "p95_ms": 18.0555555555556
+    },
+    "J": {
+      "frames": 113,
+      "includes_first_action_compilation": true,
+      "max_ms": 141.804666666667,
+      "median_ms": 16.6666666666667,
+      "p95_ms": 16.6666666666667
+    },
+    "K": {
+      "frames": 113,
+      "includes_first_action_compilation": true,
+      "max_ms": 132.941878787879,
+      "median_ms": 16.6666666666667,
+      "p95_ms": 16.6666666666667
+    },
+    "L": {
+      "frames": 112,
+      "includes_first_action_compilation": true,
+      "max_ms": 144.20633333333,
+      "median_ms": 16.666,
+      "p95_ms": 16.6666666666667
+    },
+    "M": {
+      "frames": 113,
+      "includes_first_action_compilation": true,
+      "max_ms": 141.66,
+      "median_ms": 16.6666666666667,
+      "p95_ms": 16.6666666666667
+    },
+    "N": {
+      "frames": 114,
+      "includes_first_action_compilation": true,
+      "max_ms": 134.872619047623,
+      "median_ms": 16.6666666666667,
+      "p95_ms": 16.6666666666667
+    }
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "entry_real_surface",
+      "detail": "{ \"reachable\": 11, \"samples\": 15 }",
+      "passed": true
+    },
+    {
+      "check": "entry_click_opens",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_0_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_1_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_2_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_3_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_4_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_5_hit",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "wheel_advances_index",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "card_click_selects_F",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_control_0",
+      "detail": "0",
+      "passed": true
+    },
+    {
+      "check": "F_control_1",
+      "detail": "1",
+      "passed": true
+    },
+    {
+      "check": "F_control_2",
+      "detail": "2",
+      "passed": true
+    },
+    {
+      "check": "F_control_3",
+      "detail": "3",
+      "passed": true
+    },
+    {
+      "check": "F_control_4",
+      "detail": "4",
+      "passed": true
+    },
+    {
+      "check": "F_control_5",
+      "detail": "5",
+      "passed": true
+    },
+    {
+      "check": "F_control_6",
+      "detail": "6",
+      "passed": true
+    },
+    {
+      "check": "G_control_0",
+      "detail": "0",
+      "passed": true
+    },
+    {
+      "check": "G_control_1",
+      "detail": "1",
+      "passed": true
+    },
+    {
+      "check": "G_control_2",
+      "detail": "2",
+      "passed": true
+    },
+    {
+      "check": "G_control_3",
+      "detail": "3",
+      "passed": true
+    },
+    {
+      "check": "G_control_4",
+      "detail": "4",
+      "passed": true
+    },
+    {
+      "check": "G_control_5",
+      "detail": "5",
+      "passed": true
+    },
+    {
+      "check": "G_control_6",
+      "detail": "6",
+      "passed": true
+    },
+    {
+      "check": "I_control_0",
+      "detail": "0",
+      "passed": true
+    },
+    {
+      "check": "I_control_1",
+      "detail": "1",
+      "passed": true
+    },
+    {
+      "check": "I_control_2",
+      "detail": "2",
+      "passed": true
+    },
+    {
+      "check": "I_control_3",
+      "detail": "3",
+      "passed": true
+    },
+    {
+      "check": "I_control_4",
+      "detail": "4",
+      "passed": true
+    },
+    {
+      "check": "I_control_5",
+      "detail": "5",
+      "passed": true
+    },
+    {
+      "check": "I_control_6",
+      "detail": "6",
+      "passed": true
+    },
+    {
+      "check": "J_control_0",
+      "detail": "0",
+      "passed": true
+    },
+    {
+      "check": "J_control_1",
+      "detail": "1",
+      "passed": true
+    },
+    {
+      "check": "J_control_2",
+      "detail": "2",
+      "passed": true
+    },
+    {
+      "check": "J_control_3",
+      "detail": "3",
+      "passed": true
+    },
+    {
+      "check": "J_control_4",
+      "detail": "4",
+      "passed": true
+    },
+    {
+      "check": "J_control_5",
+      "detail": "5",
+      "passed": true
+    },
+    {
+      "check": "J_control_6",
+      "detail": "6",
+      "passed": true
+    },
+    {
+      "check": "K_control_0",
+      "detail": "0",
+      "passed": true
+    },
+    {
+      "check": "K_control_1",
+      "detail": "1",
+      "passed": true
+    },
+    {
+      "check": "K_control_2",
+      "detail": "2",
+      "passed": true
+    },
+    {
+      "check": "K_control_3",
+      "detail": "3",
+      "passed": true
+    },
+    {
+      "check": "K_control_4",
+      "detail": "4",
+      "passed": true
+    },
+    {
+      "check": "K_control_5",
+      "detail": "5",
+      "passed": true
+    },
+    {
+      "check": "K_control_6",
+      "detail": "6",
+      "passed": true
+    },
+    {
+      "check": "L_control_0",
+      "detail": "0",
+      "passed": true
+    },
+    {
+      "check": "L_control_1",
+      "detail": "1",
+      "passed": true
+    },
+    {
+      "check": "L_control_2",
+      "detail": "2",
+      "passed": true
+    },
+    {
+      "check": "L_control_3",
+      "detail": "3",
+      "passed": true
+    },
+    {
+      "check": "L_control_4",
+      "detail": "4",
+      "passed": true
+    },
+    {
+      "check": "L_control_5",
+      "detail": "5",
+      "passed": true
+    },
+    {
+      "check": "L_control_6",
+      "detail": "6",
+      "passed": true
+    },
+    {
+      "check": "M_control_0",
+      "detail": "0",
+      "passed": true
+    },
+    {
+      "check": "M_control_1",
+      "detail": "1",
+      "passed": true
+    },
+    {
+      "check": "M_control_2",
+      "detail": "2",
+      "passed": true
+    },
+    {
+      "check": "M_control_3",
+      "detail": "3",
+      "passed": true
+    },
+    {
+      "check": "M_control_4",
+      "detail": "4",
+      "passed": true
+    },
+    {
+      "check": "M_control_5",
+      "detail": "5",
+      "passed": true
+    },
+    {
+      "check": "M_control_6",
+      "detail": "6",
+      "passed": true
+    },
+    {
+      "check": "N_control_0",
+      "detail": "0",
+      "passed": true
+    },
+    {
+      "check": "N_control_1",
+      "detail": "1",
+      "passed": true
+    },
+    {
+      "check": "N_control_2",
+      "detail": "2",
+      "passed": true
+    },
+    {
+      "check": "N_control_3",
+      "detail": "3",
+      "passed": true
+    },
+    {
+      "check": "N_control_4",
+      "detail": "4",
+      "passed": true
+    },
+    {
+      "check": "N_control_5",
+      "detail": "5",
+      "passed": true
+    },
+    {
+      "check": "N_control_6",
+      "detail": "6",
+      "passed": true
+    },
+    {
+      "check": "unknown_id_keeps_current",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "cancel_keeps_current",
+      "detail": "",
+      "passed": true
+    }
+  ]
+}

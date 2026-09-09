@@ -1,0 +1,15 @@
+{
+  "actions": [],
+  "active": "B",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.80256)]",
+  "base_instances": 1,
+  "error": "",
+  "load_metrics": {},
+  "module": {
+    "id": "B",
+    "parts": 70
+  },
+  "requested": "",
+  "selector": 1.0,
+  "state": "idle"
+}
