@@ -1,0 +1,114 @@
+{
+  "all_passed": false,
+  "checks": [
+    {
+      "check": "F_full_physics_loaded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "every_physical_control_is_hittable",
+      "passed": true,
+      "detail": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      }
+    },
+    {
+      "check": "tooltip_after_deliberate_hover",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "tooltip_clear_of_entire_control_band",
+      "passed": true,
+      "detail": [
+        [
+          271.875366210938,
+          822.170959472656,
+          272.0,
+          60.0
+        ],
+        [
+          696.9560546875,
+          998.220703125,
+          509.875854492188,
+          138.589477539063
+        ]
+      ]
+    },
+    {
+      "check": "wheel_changes_preload",
+      "passed": true,
+      "detail": [
+        0.0,
+        0.09
+      ]
+    },
+    {
+      "check": "scroll_hides_hint_immediately",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "press_hides_hint_and_captures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "linear_drag_without_drawing_circle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "brake_has_zero_beam_velocity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "held_hint_stays_hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "physical_balance_earns_signature",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_parks_without_exiting",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rotation_keeps_gravity_vertical",
+      "passed": true,
+      "detail": [
+        [
+          0.008305,
+          -0.999943,
+          -0.00675
+        ],
+        [
+          0.062157,
+          -0.997944,
+          0.015629
+        ]
+      ]
+    },
+    {
+      "check": "native_full_disassembly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "graceful_shutdown_requested_from_motion",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "input_path": "native form -> bridge -> actual 3D hit test"
+}

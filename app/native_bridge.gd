@@ -81,6 +81,7 @@ func _command(command: Dictionary) -> void:
 	elif kind=="wheel" and host.collection!=null:
 		var event:=InputEventMouseButton.new();event.position=Vector2(float(command.x),float(command.y));event.pressed=true
 		event.button_index=MOUSE_BUTTON_WHEEL_UP if int(command.delta)>0 else MOUSE_BUTTON_WHEEL_DOWN
+		event.factor=maxf(1.0,absf(float(command.delta))/120.0);event.shift_pressed=bool(command.get("shift",false))
 		host.collection.consume_input(event)
 	elif kind=="selector" and host.collection!=null:host.collection.toggle_selector()
 	elif kind=="rotation":
@@ -128,6 +129,9 @@ func _write_probe()->void:
 	var info:Dictionary=host.collection.diagnostics() if host.collection!=null else {}
 	info["angle"]=host.angle;info["power"]=host.power;info["drag_kind"]=host.drag_kind
 	info["time_ms"]=Time.get_ticks_msec();info["buttons"]=_capture_header(host.render_view.size).points
+	info["tooltip_visible"]=host.tooltip.visible;info["tooltip_rect"]=[host.tooltip.position.x,host.tooltip.position.y,host.tooltip.size.x,host.tooltip.size.y]
+	if host.collection!=null:
+		var band:Rect2=host.collection.control_band();info["control_band"]=[band.position.x,band.position.y,band.size.x,band.size.y]
 	var targets:Array=[]
 	if host.collection!=null:
 		var service:Node3D=host.collection

@@ -1,0 +1,80 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "single_authoritative_base",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "four_bar_has_constant_link_lengths",
+      "detail": "0.00000022888184",
+      "passed": true
+    },
+    {
+      "check": "lower_ground_pin_is_at_frame_foot",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "both_suspensions_follow_physics",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "brake_stops_beam_not_forced_mass_pose",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "earned_equilibrium_effect_occurs",
+      "detail": "{ \"stage\": \"settling\", \"coherence\": 1.0, \"charge\": 0.0, \"peak_time\": -1.0, \"peak_count\": 2, \"heat\": 0.0, \"preload_value\": 0.0, \"physics\": { \"solver\": \"closed four-bar + two spherical hangers, coupled RK4 240 Hz\", \"theta\": -0.73303815298962, \"omega\": -0.00001524624786, \"direction\": \"(0.000028, -1.0, 0.0)\", \"right_direction\": \"(0.000011, -1.0, 0.0)\", \"plumb_speed\": 0.00012588631944, \"prism_speed\": 0.00001483369579, \"energy\": 27.8638880036835, \"brake_heat\": 0.07298896845532, \"torque\": 0.000006557395, \"constraint_error\": 0.0, \"stops\": 0, \"gravity\": 9.81 } }",
+      "passed": true
+    },
+    {
+      "check": "climax_requires_physical_stability",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "held_control_defers_calibration",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "slow_small_adjustment_rearms_calibration",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "interruption_fades_instead_of_flashing",
+      "detail": "[1.0, 0.77]",
+      "passed": true
+    },
+    {
+      "check": "lost_balance_releases_the_field",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "settles_and_parks_before_fold",
+      "detail": "{ \"stage\": \"rest\", \"coherence\": 0.0, \"charge\": 0.0, \"peak_time\": -1.0, \"peak_count\": 3, \"heat\": 0.0, \"preload_value\": 0.0, \"physics\": { \"solver\": \"closed four-bar + two spherical hangers, coupled RK4 240 Hz\", \"theta\": -1.39626340159546, \"omega\": 0.0, \"direction\": \"(0.0, -1.0, 0.0)\", \"right_direction\": \"(0.0, -1.0, 0.0)\", \"plumb_speed\": 0.0, \"prism_speed\": 0.0, \"energy\": 32.7450077049197, \"brake_heat\": 0.07298896845532, \"torque\": 0.03513941010962, \"constraint_error\": 0.0, \"stops\": 0, \"gravity\": 9.81 } }",
+      "passed": true
+    },
+    {
+      "check": "rest_has_no_floating_effects",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "complete_18_part_disassembly",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "all_parts_reassemble_exactly",
+      "detail": "",
+      "passed": true
+    }
+  ]
+}

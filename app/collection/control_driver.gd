@@ -17,6 +17,7 @@ func setup(owner:Node3D)->void:
 	definitions=JSON.parse_string(FileAccess.get_file_as_string("res://assets/collection/control_profiles.json")).models
 
 func profile(slot:int)->Dictionary:
+	if service.active_id=="F" and slot==3:return {"index":3,"key":"gauge","label":"合衡表","gesture":"gauge","min":0.0,"max":1.0,"default":0.0,"readonly":true,"hint":"指针越靠左，平衡越稳定；稳定后自动校准。"}
 	if service.active_id!="B" and slot==3:return {"index":3,"key":"gauge","label":"状态仪表","gesture":"gauge","min":0.0,"max":1.0,"default":0.0,"readonly":true,"hint":"显示装置当前状态，无需点击"}
 	if service.active_id!="B" and slot==4:return {"index":4,"key":"service","label":"拆装拨杆","gesture":"service","axis":"x","min":-1.0,"max":1.0,"default":0.0,"hint":"向左拖动拆解，向右拖动组装；松手回中"}
 	for item in definitions.get(service.active_id,[]):
@@ -27,15 +28,31 @@ func held(slot:int)->bool:return index==slot
 
 func consume(event:InputEvent)->bool:
 	if service.current==null:return false
+	if event is InputEventMouseButton and event.pressed and event.button_index in [MOUSE_BUTTON_WHEEL_UP,MOUSE_BUTTON_WHEEL_DOWN] and index<0 and service.state=="idle" and service.selector_amount<.01:
+		var slot:int=service.hit_control(event.position)
+		var definition:=profile(slot)
+		if not definition.is_empty() and definition.get("gesture","") in ["rotary","crank","slider","detent"]:
+			active=definition;index=slot
+			var before:float=service.current.play.number(str(active.key))
+			var amount:float=(float(active.max)-float(active.min))*.045
+			if active.gesture=="crank":amount=1.0/12.0
+			if active.has("steps"):amount=(float(active.max)-float(active.min))/maxf(1.0,float(active.steps)-1.0)
+			elif event.shift_pressed:amount*=.2
+			amount*=maxf(1.0,event.factor)*(1 if event.button_index==MOUSE_BUTTON_WHEEL_UP else -1)
+			service.current.play.input(str(active.key),before,"begin")
+			_set_value(before+amount,"change")
+			service.current.play.input(str(active.key),service.current.play.value(str(active.key)),"release")
+			service.host.tooltip.hide();service.help_since_ms=Time.get_ticks_msec();service.host.sound("click",1.08)
+			index=-1;active={};return true
 	if event is InputEventMouseMotion and index>=0:
 		var point:Vector2=event.position
 		var relative:Vector2=point-last_pointer
 		var kind:String=active.gesture
 		if kind in ["rotary","crank"]:
-			var center:Vector2=service.host.camera.unproject_position(service.action_anchor(index))
-			var a:=last_pointer-center;var b:=point-center
-			var turn:=wrapf(b.angle()-a.angle(),-PI,PI) if minf(a.length(),b.length())>12 else (relative.x-relative.y)*.016
-			drag_value+=turn/TAU*(1.0 if kind=="crank" else float(active.max)-float(active.min))
+			# A screen-space drag remains comfortable when the 3D dial is seen
+			# obliquely. No tiny circular gesture or perspective correction.
+			var movement:float=relative.x-relative.y*.35
+			drag_value+=movement/180.0*(1.0 if kind=="crank" else float(active.max)-float(active.min))
 			_set_value(drag_value,"change")
 		elif kind in ["slider","detent","pump","service"]:
 			var movement:float=relative.x if active.get("axis","y")=="x" else -relative.y
@@ -57,6 +74,7 @@ func consume(event:InputEvent)->bool:
 		if definition.is_empty():return false
 		if definition.get("readonly",false):return true
 		active=definition;index=slot;start_pointer=event.position;last_pointer=event.position;changed=false
+		service.host.tooltip.hide()
 		origin_value=service.current.play.value(str(active.key))
 		drag_value=float(origin_value) if origin_value is float or origin_value is int else 0.0
 		_set_value(1.0 if active.gesture=="hold" else origin_value,"begin")
@@ -80,6 +98,7 @@ func _set_value(value:Variant,phase:String)->void:
 		control["input_value"]=accepted
 		if accepted is Vector2:continue
 		control.turn_target=float(accepted)*TAU if active.gesture=="crank" else inverse_lerp(float(active.min),float(active.max),float(accepted))*PI*1.6
+		if service.active_id=="F" and active.gesture=="rotary":control.turn_target-=PI*.8
 		control.press=float(accepted) if active.gesture=="hold" else 1.0 if phase=="begin" else .25
 
 func cancel()->void:

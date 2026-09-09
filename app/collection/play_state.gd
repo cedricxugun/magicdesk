@@ -5,6 +5,7 @@ extends RefCounted
 var module:Node3D
 var active:=false
 var gain:=0.0
+var instrument:RefCounted
 var values:Dictionary={}
 var response:Dictionary={"angle":.22,"velocity":0.0,"balance":0.0,"pressure":0.0,"echo":0.0,"echo_delay":-1.0,"imprint":0.0,"growth":[.15,.15,.15],"ink":0.0,"feed_motion":0.0,"aim":Vector2.ZERO,"focus_quality":0.0,"capture_age":-1.0,"captured_floor":0.0,"rebuild":-1.0,"probe_target":0.0}
 
@@ -13,6 +14,8 @@ func setup(owner:Node3D)->void:
 	var profiles:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/collection/control_profiles.json")).models
 	for item in profiles.get(str(module.data.id),[]):
 		values[item.key]=Vector2(item.default[0],item.default[1]) if item.default is Array else float(item.default)
+	if module.data.id=="F" and module.data.has("f_physics"):
+		instrument=load("res://collection/f_instrument.gd").new();instrument.setup(module)
 
 func value(key:String)->Variant:return values.get(key,0.0)
 func number(key:String)->float:return float(values.get(key,0.0))
@@ -20,6 +23,7 @@ func number(key:String)->float:return float(values.get(key,0.0))
 func input(key:String,requested:Variant,event:String)->void:
 	var before:Variant=values.get(key,0.0)
 	values[key]=requested
+	if instrument:instrument.changed(key,before,requested,event)
 	if event=="cancel":return
 	if key=="service":
 		if event=="change" and float(requested)<-.55 and float(before)>=-.55:module.activate(3)
@@ -51,6 +55,11 @@ func input(key:String,requested:Variant,event:String)->void:
 				else:module.stow()
 
 func tick(delta:float)->void:
+	if instrument:
+		instrument.tick(delta)
+		gain=move_toward(gain,1.0 if module.openness>.99 and not module.stowing else 0.0,delta*2.5)
+		response.angle=instrument.physics.theta-instrument.physics.REST;response.velocity=instrument.physics.omega;response.balance=instrument.coherence
+		return
 	var ready:bool=active and not module.stowing and module.explode_target<.001 and module.explosion<.001 and module.open_target>.01
 	gain=move_toward(gain,1.0 if ready else 0.0,delta*2.5)
 	response.echo=maxf(0.0,float(response.echo)-delta*.55)
@@ -94,6 +103,7 @@ func tick(delta:float)->void:
 			response.probe_target=minf(number("probe"),.14 if aligned<.8 else 1.0)
 
 func pose_fraction(name:String,base:float)->float:
+	if instrument:return base
 	if gain<=.001:return base
 	var desired:=base
 	match str(module.data.id):
@@ -109,6 +119,7 @@ func pose_fraction(name:String,base:float)->float:
 	return lerpf(base,desired,gain)
 
 func motion_angle(name:String,fallback:float)->float:
+	if instrument:return (instrument.coherence-.5)*1.45
 	if gain<=.001:return fallback
 	var target:=fallback
 	if module.data.id=="F":target=float(response.angle) if name.contains("PearlSwing") else -number("trim")*.7
@@ -117,6 +128,7 @@ func motion_angle(name:String,fallback:float)->float:
 	return lerpf(fallback,target,gain)
 
 func diagnostics()->Dictionary:
+	if instrument:return {"active":active,"values":values.duplicate(),"response":response.duplicate(true),"gain":gain,"instrument":instrument.diagnostics()}
 	return {"active":active,"values":values.duplicate(),"response":response.duplicate(true),"gain":gain,"art_status":"interaction prototype; revised geometry pending per-device art review"}
 
 func gauge_value()->float:

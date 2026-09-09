@@ -1,0 +1,60 @@
+{
+  "version": "0.3.0 F delivery",
+  "test_passed": {
+    "physics": true,
+    "instrument": true,
+    "lagrange": true,
+    "clearance": true,
+    "native": true
+  },
+  "native_window_errors": [],
+  "renderer_shutdown_exit_zero": true,
+  "frame_time_all": {
+    "frames": 3473,
+    "fps": 58.6,
+    "median_ms": 16.828,
+    "p95_ms": 21.445,
+    "maximum_ms": 196.961
+  },
+  "frame_time_after_F_ready": {
+    "frames": 2655,
+    "fps": 59.62,
+    "median_ms": 16.664,
+    "p95_ms": 20.524,
+    "maximum_ms": 31.216
+  },
+  "performance_scope": "Native desktop presentation while recording at 30 fps; initial load reported separately.",
+  "video": {
+    "path": "review/F_complete/final/F_showcase.mp4",
+    "trimmed_start_seconds": 3.407,
+    "speed": 1.0,
+    "source": "native compositor RGBA stream; application-owned input replay"
+  },
+  "blender": {
+    "frames": 1321,
+    "fps": 30,
+    "animated_objects": 58,
+    "field_particles": 112,
+    "phase_markers": [
+      "bias",
+      "brake",
+      "equilibrium",
+      "recover",
+      "release",
+      "rest",
+      "settling"
+    ],
+    "same_physics_as_runtime": true,
+    "original_sources_preserved": true
+  },
+  "lagrange": {
+    "samples": 96,
+    "all_passed": true,
+    "max_absolute_acceleration_difference": 1.973603855986994E-05,
+    "minimum_mass_matrix_eigenvalue": 0.06435908949153978,
+    "failures": [],
+    "method": "Independent finite-difference Euler-Lagrange mass-matrix calculation; five generalized coordinates, two spherical hangers, iterative linkage closure; includes gravity, spring, drag, sliding brake, magnetic torque, and prescribed yaw.",
+    "excluded": "Static sticking/contact impacts and motor-driven storage are nonsmooth constraints or actuated choreography and tested separately."
+  },
+  "exe_sha256": "C09EE10887D3DDDC5F376E2CBDA81C34EE1B19DA8948BB1B954BC8FACD102EE9"
+}

@@ -229,6 +229,7 @@ func _ready() -> void:
 	if collection_enabled and not test_mode:
 		if ResourceLoader.exists("res://assets/collection/models/S.glb"):
 			collection=load("res://collection/service.gd").new();add_child(collection);collection.setup(self)
+			await collection.prewarm_shared_surfaces()
 		else:message("装置档案未能加载，请重新打开完整的 MagicDesk App。",12)
 	if native_mode and native_port>0:
 		native_bridge=Node.new();native_bridge.set_script(load("res://native_bridge.gd"));add_child(native_bridge);native_bridge.setup(self,native_port)
@@ -386,8 +387,12 @@ func _make_ui() -> void:
 	rows.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	tooltip.add_child(rows)
 	tooltip_title = Label.new()
+	tooltip_title.mouse_filter=Control.MOUSE_FILTER_IGNORE
 	tooltip_title.add_theme_color_override("font_color",Color(.95,.87,.70))
 	tooltip_text = Label.new()
+	tooltip_text.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	tooltip_text.custom_minimum_size.x=240*ui_scale
+	tooltip_text.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 	tooltip_text.add_theme_font_size_override("font_size",int(12*ui_scale))
 	tooltip_text.add_theme_color_override("font_color",Color(.70,.66,.57))
 	rows.add_child(tooltip_title)
@@ -599,7 +604,7 @@ func _process(delta: float) -> void:
 	hum.volume_db = -80.0 if muted else lerpf(-65.0,-38.0,power)+boost*4.0
 	# Camera transform and lens stay fixed during every action, including bloom/explode.
 	toast_timer = maxf(0.0,toast_timer-delta)
-	toast.visible = toast_timer>0.0
+	toast.visible = toast_timer>0.0 and not tooltip.visible and drag_kind==0 and (collection==null or (collection.control_driver.index<0 and Time.get_ticks_msec()-collection.help_since_ms>600))
 	toast.modulate.a = minf(1.0,toast_timer*2.0)
 	var screen := get_viewport().get_visible_rect().size
 	var toast_anchor:=camera.unproject_position(Vector3(0,.83,.85))

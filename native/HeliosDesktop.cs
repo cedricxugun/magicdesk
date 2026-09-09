@@ -16,8 +16,8 @@ using System.Windows.Forms;
 [assembly: AssemblyTitle("MagicDesk · 机械藏品")]
 [assembly: AssemblyProduct("MagicDesk")]
 [assembly: AssemblyDescription("Original interactive 3D mechanical desktop sculpture")]
-[assembly: AssemblyVersion("0.2.2.0")]
-[assembly: AssemblyFileVersion("0.2.2.0")]
+[assembly: AssemblyVersion("0.3.0.0")]
+[assembly: AssemblyFileVersion("0.3.0.0")]
 
 internal static class Native {
     [StructLayout(LayoutKind.Sequential)] public struct POINT { public int X,Y; public POINT(int x,int y){X=x;Y=y;} }
@@ -45,6 +45,7 @@ internal static class Native {
     [DllImport("user32.dll",EntryPoint="GetWindowLongPtrW")] public static extern IntPtr GetWindowLongPtr(IntPtr h,int index);
     [DllImport("user32.dll",EntryPoint="SetWindowLongPtrW")] public static extern IntPtr SetWindowLongPtr(IntPtr h,int index,IntPtr value);
     [DllImport("user32.dll")] public static extern bool IsWindowVisible(IntPtr h);
+    [DllImport("user32.dll")] public static extern short GetAsyncKeyState(int key);
     [DllImport("user32.dll")] public static extern bool GetWindowRect(IntPtr h,out RECT rect);
     [DllImport("user32.dll")] public static extern bool SetWindowPos(IntPtr h,IntPtr after,int x,int y,int w,int height,uint flags);
 }
@@ -332,7 +333,7 @@ internal sealed class HeliosForm : Form {
             drawn++;lastSequence=frame.Sequence;
             double now=lifetime.Elapsed.TotalSeconds;
             if(firstFrameTime==0)firstFrameTime=now;
-            if(lastFrameTime>0&&now-firstFrameTime>1){double gap=now-lastFrameTime;frameGaps.Add(gap);maxPresentationGap=Math.Max(maxPresentationGap,gap);if(testRun)frameTrace.Add(String.Format(System.Globalization.CultureInfo.InvariantCulture,"{0:F4},{1:F3},{2},{3},{4},{5},{6:F3},{7}",now-firstFrameTime,gap*1000,frame.Sequence,frame.W,frame.H,bitmapAllocations,frame.CropMilliseconds,GC.CollectionCount(2)));}
+            if(lastFrameTime>0&&now-firstFrameTime>1){double gap=now-lastFrameTime;frameGaps.Add(gap);maxPresentationGap=Math.Max(maxPresentationGap,gap);if(testRun||Has("--frame-trace"))frameTrace.Add(String.Format(System.Globalization.CultureInfo.InvariantCulture,"{0:F4},{1:F3},{2},{3},{4},{5},{6:F3},{7}",now-firstFrameTime,gap*1000,frame.Sequence,frame.W,frame.H,bitmapAllocations,frame.CropMilliseconds,GC.CollectionCount(2)));}
             lastFrameTime=now;
             if(testRun)Measure(frame);
             if(workerWindow==IntPtr.Zero&&renderer!=null&&drawn%60==1){try{renderer.Refresh();if(renderer.MainWindowHandle!=IntPtr.Zero){workerWindow=renderer.MainWindowHandle;HideWorkerWindow();}}catch{}}
@@ -362,12 +363,12 @@ internal sealed class HeliosForm : Form {
         if(!syntheticClickPoint.HasValue)SendMouse("move",PointerCanonical(),!baseDrag);
     }
     protected override void OnMouseUp(MouseEventArgs e){base.OnMouseUp(e);if(e.Button==MouseButtons.Left){bool synthetic=syntheticClickPoint.HasValue;SendMouse("up",syntheticClickPoint??PointerCanonical(),false);syntheticClickPoint=null;mouseDown=false;baseDrag=false;Capture=false;if(synthetic)Send("{\"type\":\"leave\"}");}}
-    protected override void OnMouseLeave(EventArgs e){base.OnMouseLeave(e);if(!mouseDown)Send("{\"type\":\"leave\"}");}
+    protected override void OnMouseLeave(EventArgs e){base.OnMouseLeave(e);if(!mouseDown&&!syntheticClickPoint.HasValue)Send("{\"type\":\"leave\"}");}
     protected override void OnMouseCaptureChanged(EventArgs e){
         base.OnMouseCaptureChanged(e);
         if(!Capture&&mouseDown){SendMouse("up",syntheticClickPoint??PointerCanonical(),false);mouseDown=false;baseDrag=false;syntheticClickPoint=null;}
     }
-    protected override void OnMouseWheel(MouseEventArgs e){base.OnMouseWheel(e);Point p=PointerCanonical();Send("{\"type\":\"wheel\",\"delta\":"+e.Delta+",\"x\":"+p.X+",\"y\":"+p.Y+"}");}
+    protected override void OnMouseWheel(MouseEventArgs e){base.OnMouseWheel(e);Point p=syntheticClickPoint??PointerCanonical();Send("{\"type\":\"wheel\",\"delta\":"+e.Delta+",\"x\":"+p.X+",\"y\":"+p.Y+",\"shift\":"+(((Native.GetAsyncKeyState(0x10)&0x8000)!=0)?"true":"false")+"}");}
     protected override void OnKeyDown(KeyEventArgs e){base.OnKeyDown(e);if(e.KeyCode>=Keys.D1&&e.KeyCode<=Keys.D7&&(Has("--helios-only")||e.KeyCode==Keys.D1||e.KeyCode==Keys.D7)){SendAction((int)e.KeyCode-(int)Keys.D1);e.Handled=true;}if(e.KeyCode==Keys.Space){Send("{\"type\":\"rotation\"}");e.Handled=true;}if(e.KeyCode==Keys.Tab){Send("{\"type\":\"selector\"}");e.Handled=true;}if(e.KeyCode==Keys.Escape)context.Show(Cursor.Position);}
     protected override void WndProc(ref Message m){
         if(m.Msg==WM_ERASEBKGND){m.Result=(IntPtr)1;return;}
@@ -400,6 +401,10 @@ internal sealed class HeliosForm : Form {
             else if(command[0]=="capture")SaveFrame(command[1]);
             else if(Has("--collection-qa")&&command[0]=="probe")Send("{\"type\":\"probe\"}");
             else if(Has("--collection-qa")&&command[0]=="wheel")Send("{\"type\":\"wheel\",\"delta\":"+Int32.Parse(command[1])+",\"x\":0,\"y\":0}");
+            else if(Has("--collection-qa")&&command[0]=="scroll"){
+                Point p=new Point(Int32.Parse(command[2]),Int32.Parse(command[3]));syntheticClickPoint=p;
+                OnMouseWheel(new MouseEventArgs(MouseButtons.None,0,p.X-current.X,p.Y-current.Y,Int32.Parse(command[1])));syntheticClickPoint=null;
+            }
             else if(Has("--collection-qa")&&command[0]=="rotation")Send("{\"type\":\"rotation\"}");
             else if(Has("--collection-qa")&&command[0]=="point"){
                 // Test-owned input follows the production form handlers and the
@@ -495,7 +500,7 @@ internal sealed class HeliosForm : Form {
             var ci=System.Globalization.CultureInfo.InvariantCulture;
             string metrics="{\"presented_frames\":"+drawn+",\"received_frames\":"+receivedPackets+",\"average_fps\":"+(drawn/Math.Max(.01,lastFrameTime-firstFrameTime)).ToString("F2",ci)+",\"median_frame_ms\":"+(median*1000).ToString("F2",ci)+",\"p95_frame_ms\":"+(p95*1000).ToString("F2",ci)+",\"max_gap_ms\":"+(maxPresentationGap*1000).ToString("F2",ci)+"}";
             File.WriteAllText(Path.Combine(diagnosticDir,"performance.json"),metrics);
-            if(testRun){frameTrace.Insert(0,"elapsed_seconds,present_gap_ms,frame_id,width,height,bitmap_allocations,native_crop_ms,generation2_collections");File.WriteAllLines(Path.Combine(diagnosticDir,"frame_trace.csv"),frameTrace.ToArray());}
+            if(testRun||Has("--frame-trace")){frameTrace.Insert(0,"elapsed_seconds,present_gap_ms,frame_id,width,height,bitmap_allocations,native_crop_ms,generation2_collections");File.WriteAllLines(Path.Combine(diagnosticDir,"frame_trace.csv"),frameTrace.ToArray());}
         }
         if(!closing){Send("{\"type\":\"quit\"}");closing=true;timer.Stop();tray.Visible=false;tray.Dispose();try{if(client!=null)client.Close();listener.Stop();}catch{}
             if(renderer!=null){try{if(!renderer.WaitForExit(1500))renderer.Kill();}catch{}}lock(frameLock){if(pending!=null){pending.Release();pending=null;}}if(current!=null){current.Release();current=null;}FreeDib();Log("closed; presented="+drawn+" errors="+updateErrors);log.Dispose();}

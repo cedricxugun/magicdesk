@@ -18,24 +18,26 @@ func run()->void:
 		if definition.id=="B":continue
 		var data:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(definition.metadata))
 		var module:Node3D=load("res://collection/module.gd").new();host.add_child(module)
-		module.setup(host,data,load(definition.scene));module.openness=1.0;module.open_target=1.0
+		module.setup(host,data,load(definition.scene))
+		if definition.id!="F":module.openness=1.0;module.open_target=1.0
 		var play:RefCounted=module.play
 		match str(definition.id):
 			"F":
 				var gear_before:Transform3D=module.named("F2_MainGear").transform
 				var carriage_before:Vector3=module.named("F2_TrimCarriage").position
-				play.input("trim",.8,"begin");simulate(module,1.0);var before:float=play.response.velocity
+				play.input("trim",.8,"begin");simulate(module,4.0)
 				check("F_authored_gear_driven",not module.named("F2_MainGear").transform.is_equal_approx(gear_before))
 				check("F_carriage_moves_on_authored_rail",module.named("F2_TrimCarriage").position.distance_to(carriage_before)>.1)
 				var jaw_before:float=module.named("F2_BrakePad-1").position.x
 				play.input("brake",1.0,"begin");simulate(module,.35)
 				check("F_caliper_closes_without_overshoot",module.named("F2_BrakePad-1").position.x>jaw_before and module.named("F2_BrakePad-1").position.x-jaw_before<.015)
-				check("F_hold_brake_changes_damping",absf(float(play.response.velocity))<absf(before),play.response)
-				var positive:float=play.pose_fraction("F_C_Coupler",1.0);play.input("trim",-.8,"change")
-				check("F_trim_changes_linkage_pose",play.pose_fraction("F_C_Coupler",1.0)<positive)
+				check("F_friction_brake_holds_linkage",absf(float(play.response.velocity))<.006,play.response)
+				var positive:float=play.instrument.physics.theta
 				play.input("brake",0.0,"release");check("F_release_brake",play.number("brake")==0.0)
+				play.input("trim",-.8,"change");simulate(module,4.0)
+				check("F_preload_changes_physical_equilibrium",play.instrument.physics.theta<positive)
 				play.input("service",-.8,"change");simulate(module,9.0)
-				check("F_service_explodes_refined_parts",module.explosion>.999 and module.parts.size()==17)
+				check("F_service_explodes_refined_parts",module.explosion>.999 and module.parts.size()==18)
 				play.input("service",.8,"change");simulate(module,9.0)
 				check("F_service_returns_every_part_home",module.settled() and module.parts.all(func(p):return p.node.transform.is_equal_approx(p.home)))
 			"G":

@@ -29,6 +29,9 @@ var widget_templates:Dictionary={}
 var base_display:MeshInstance3D
 var base_materials:Array=[]
 var base_frames:Dictionary
+var base_collision_cache:Dictionary={}
+var base_mesh_cache:Dictionary={}
+var control_shape_cache:Dictionary={}
 var original_base_mesh:Mesh
 var legacy_bodies:Array=[]
 var legacy_control_bodies:Array=[]
@@ -67,6 +70,10 @@ var native_regions:Array[Rect2i]=[]
 var regions_clock:=0.0
 var control_library:Node3D
 var read_time:=-1.0
+var help_index:=-1
+var help_since_ms:=0
+var help_point:=Vector2.ZERO
+var help_owned:=false
 var signal_materials:Array[ShaderMaterial]=[]
 var legacy_mount_homes:Array[Transform3D]=[]
 const ARCHIVE_SECONDS:=1.55
@@ -88,6 +95,8 @@ func setup(owner:Node3D)->void:
 	for i in range(1,6):_collect_bodies(host.buttons[i].mount,legacy_control_bodies);legacy_mount_homes.append(host.buttons[i].mount.transform)
 	_setup_selector()
 	_set_base_frame("helios")
+	base_mesh_cache["shared"]=load(base_frames.variants.shared.path)
+	base_collision_cache["shared"]=base_mesh_cache.shared.create_trimesh_shape()
 	host.menu.add_separator();host.menu.add_item("展示旋转 / 暂停",24)
 	_update_actions()
 	_setup_archive_guide()
@@ -129,12 +138,16 @@ func _set_bodies(items:Array,enabled:bool)->void:
 
 func _set_base_frame(kind:String)->void:
 	var info:Dictionary=base_frames.variants[kind]
-	base_display.mesh=load(info.path)
+	# ResourceLoader's cache is weak. Keep the mesh (and its texture resources)
+	# alive after warmup so first exchange never synchronously reloads them.
+	if not base_mesh_cache.has(kind):base_mesh_cache[kind]=load(info.path)
+	base_display.mesh=base_mesh_cache[kind]
+	if not base_collision_cache.has(kind):base_collision_cache[kind]=base_display.mesh.create_trimesh_shape()
 	for i in range(info.source_surfaces.size()):base_display.set_surface_override_material(i,base_materials[int(info.source_surfaces[i])])
 	for child in base_display.get_children():
 		if child is StaticBody3D:
 			for shape in child.get_children():
-				if shape is CollisionShape3D:shape.set_deferred("shape",base_display.mesh.create_trimesh_shape())
+				if shape is CollisionShape3D:shape.set_deferred("shape",base_collision_cache[kind])
 
 func _setup_selector()->void:
 	selector_data=JSON.parse_string(FileAccess.get_file_as_string("res://assets/collection/models/S.json"))
@@ -193,19 +206,30 @@ func _smoke_glass(node:Node)->void:
 	for child in node.get_children():_smoke_glass(child)
 
 func update_hover_ui()->bool:
+	if control_driver.index>=0 or host.drag_kind!=0 or host.pressed>=0 or state!="idle":
+		host.tooltip.hide();help_index=-1;help_since_ms=Time.get_ticks_msec();help_owned=true;host.hover=-1
+		return true
 	if selector_hit.is_empty():
 		if card_hint_active:card_hint_active=false;host.hover=-2
 		if current and state=="idle" and selector_amount<.01:
 			var index:int=hit_control(pointer_position())
 			var info:Dictionary=control_driver.profile(index)
 			if not info.is_empty():
-				host.hover=-1;host.tooltip.visible=true
+				var pointer:=pointer_position()
+				if index!=help_index or pointer.distance_to(help_point)>5:
+					help_index=index;help_point=pointer;help_since_ms=Time.get_ticks_msec()
+				help_owned=true;host.hover=-1
+				if Time.get_ticks_msec()-help_since_ms<450:host.tooltip.hide();return true
+				host.tooltip.visible=true;host.toast.hide()
 				host.tooltip_title.text=str(info.label)
+				host.tooltip_title.add_theme_color_override("font_color",Color(.95,.86,.68))
 				var value:Variant=current.play.gauge_value() if info.gesture=="gauge" else current.play.value(str(info.key))
-				host.tooltip_text.text=str(info.hint)+"\n"+("%.2f"%float(value) if not value is Vector2 else "X %.2f / Y %.2f"%[value.x,value.y])
-				var point:Vector2=host.camera.unproject_position(action_anchor(index))
-				host.tooltip.position=point-Vector2(125,80)
+				host.tooltip_text.text=str(info.hint)
+				host.tooltip.reset_size()
+				var band:=control_band()
+				host.tooltip.position=Vector2(clampf(band.get_center().x-host.tooltip.size.x*.5,12,host.canonical_size.x-host.tooltip.size.x-12),band.position.y-host.tooltip.size.y-28)
 				return true
+		if help_owned:host.tooltip.hide();host.hover=-2;help_owned=false;help_index=-1
 		return false
 	card_hint_active=true;host.hover=-1;host.tooltip.visible=true
 	var body:StaticBody3D=selector_hit.collider
@@ -222,6 +246,15 @@ func update_hover_ui()->bool:
 	var screen:Vector2=host.camera.unproject_position(point)
 	host.tooltip.position=Vector2(clampf(screen.x-130,10,host.canonical_size.x-350),screen.y-75)
 	return true
+
+func control_band()->Rect2:
+	var points:Array[Vector2]=[]
+	for control in custom_controls:_screen_points(control.node,points)
+	for i in [0,6]:_screen_points(host.buttons[i].mount,points)
+	if points.is_empty():return Rect2(host.canonical_size*.5,Vector2.ONE)
+	var band:=Rect2(points[0],Vector2.ZERO)
+	for p in points:band=band.expand(p)
+	return band.grow(12)
 
 func _refresh_cards()->void:
 	for i in range(card_nodes.size()):
@@ -337,19 +370,61 @@ func _build_controls()->void:
 		var initial_turn:=0.0
 		if profile.get("gesture","") in ["rotary","crank"]:
 			initial_turn=float(initial)*TAU if profile.gesture=="crank" else inverse_lerp(float(profile.min),float(profile.max),float(initial))*PI*1.6
+			if active_id=="F" and profile.gesture=="rotary":initial_turn-=PI*.8
 		custom_controls.append({"node":widget,"home":widget.transform,"index":i,"kind":kind,"press":0.0,"moving":moving,"turn":initial_turn,"turn_target":initial_turn,"input_value":initial})
 
 func hit_control(point:Vector2)->int:
 	if active_id=="B" or state!="idle":return -1
+	if point.x<0 or point.y<0 or point.x>host.canonical_size.x or point.y>host.canonical_size.y:return -1
+	var archive_hit:=_selector_ray(point)
+	if not archive_hit.is_empty() and archive_hit.collider.has_meta("entry"):return -1
 	var hit:=_ray(point,22)
-	return int(hit.collider.get_meta("collection_action",-1)) if not hit.is_empty() else -1
+	var direct:int=int(hit.collider.get_meta("collection_action",-1)) if not hit.is_empty() else -1
+	if direct>=0:return direct
+	var chosen:=-1;var nearest:=INF
+	for c in custom_controls:
+		var points:Array[Vector2]=[];_screen_points(c.node,points)
+		if points.is_empty():continue
+		var box:=Rect2(points[0],Vector2.ZERO)
+		for p in points:box=box.expand(p)
+		if not box.grow(9).has_point(point):continue
+		var distance:float=point.distance_squared_to(box.get_center())
+		if distance<nearest:nearest=distance;chosen=int(c.index)
+	return chosen
 
 func _add_control_colliders(node:Node,index:int,layer:int)->void:
 	if node is MeshInstance3D:
 		var body:=StaticBody3D.new();body.collision_layer=layer;body.collision_mask=0;body.set_meta("collection_action",index)
-		var shape:=CollisionShape3D.new();shape.shape=node.mesh.create_trimesh_shape();body.add_child(shape);node.add_child(body)
+		var key:int=node.mesh.get_instance_id()
+		if not control_shape_cache.has(key):control_shape_cache[key]=node.mesh.create_trimesh_shape()
+		var shape:=CollisionShape3D.new();shape.shape=control_shape_cache[key];body.add_child(shape);node.add_child(body)
 	for child in node.get_children():
 		if not child is StaticBody3D:_add_control_colliders(child,index,layer)
+
+func _prepare_control_shapes(node:Node)->void:
+	if node is MeshInstance3D:
+		var key:int=node.mesh.get_instance_id()
+		if not control_shape_cache.has(key):control_shape_cache[key]=node.mesh.create_trimesh_shape()
+	for child in node.get_children():_prepare_control_shapes(child)
+
+func prewarm_shared_surfaces()->void:
+	if not host.native_mode or RenderingServer.get_rendering_device()==null:return
+	var started:=Time.get_ticks_msec()
+	_prepare_control_shapes(control_library)
+	_prepare_control_shapes(selector.find_child("S_PANEL",true,false))
+	var view:=SubViewport.new();view.size=Vector2i(96,96);view.own_world_3d=true;view.transparent_bg=true;view.msaa_3d=Viewport.MSAA_4X;view.render_target_update_mode=SubViewport.UPDATE_ALWAYS;add_child(view)
+	var scene:=Node3D.new();view.add_child(scene)
+	var camera:=Camera3D.new();scene.add_child(camera);camera.position=Vector3(1.4,2.0,4);camera.look_at(Vector3(.65,.8,0));camera.current=true
+	var world:=WorldEnvironment.new();world.environment=host.env;scene.add_child(world)
+	var library:Node3D=control_library.duplicate();scene.add_child(library);library.show();library.position.y=1.0
+	var plate:Node3D=selector.find_child("S_PANEL",true,false).duplicate();scene.add_child(plate);plate.show()
+	var base:=MeshInstance3D.new();base.mesh=base_mesh_cache.shared;scene.add_child(base)
+	for i in range(base_frames.variants.shared.source_surfaces.size()):base.set_surface_override_material(i,base_materials[int(base_frames.variants.shared.source_surfaces[i])])
+	for child in host.get_children():
+		if child is AreaLight3D:scene.add_child(child.duplicate())
+	for i in range(6):await RenderingServer.frame_post_draw
+	view.queue_free()
+	print("COLLECTION_SHARED_PREWARM ",Time.get_ticks_msec()-started," ms, shapes=",control_shape_cache.size())
 
 func action_anchor(index:int)->Vector3:
 	for c in custom_controls:
@@ -432,7 +507,14 @@ func _prepare(packed:PackedScene,definition:Dictionary,version:int)->void:
 	var candidate:Node3D=load("res://collection/module.gd").new();prepared=candidate;scene.add_child(candidate);candidate.setup(host,raw,packed);candidate.set_interactive(false)
 	load_metrics.setup_ms=Time.get_ticks_msec()-setup_started
 	var gpu_started:=Time.get_ticks_msec()
+	if candidate.play.instrument:
+		candidate.openness=1;candidate.play.instrument.physics.theta=candidate.play.instrument.physics.RELEASE;candidate.apply_pose()
+		candidate.effect.f_visuals.force_warm=true;candidate.effect.tick(0)
 	for i in range(4):await RenderingServer.frame_post_draw
+	if candidate.play.instrument:
+		candidate.openness=0;candidate.play.instrument.physics.transport(0,0,10);candidate.apply_pose()
+		candidate.effect.f_visuals.force_warm=false;candidate.effect.tick(0)
+		load_metrics["F_all_effect_pools_warmed"]=true
 	load_metrics.gpu_warm_ms=Time.get_ticks_msec()-gpu_started
 	if version!=ticket or closing:
 		candidate.queue_free();warming.queue_free()
@@ -496,6 +578,7 @@ func _set_scan(value:float)->void:
 		for mat in scan_materials:mat.set_shader_parameter("collection_cut",lerpf(3.9,.59,value))
 
 func _commit()->void:
+	var commit_start:=Time.get_ticks_msec()
 	transition_vfx.finish()
 	if current:current.queue_free();current=null
 	_restore_scan();_legacy_set_visible(false)
@@ -505,10 +588,14 @@ func _commit()->void:
 		host.effects.hide();_legacy_panel_depth(.36)
 	else:
 		current=prepared;prepared=null;current.show();current.set_scan(1.0);current.stowing=true;current.effect.request_quiet();current.effect.quiet_gain=0;current.effect.tick(0);current.set_interactive(false);_set_base_frame("shared")
+	load_metrics["commit_base_ms"]=Time.get_ticks_msec()-commit_start
+	var control_start:=Time.get_ticks_msec()
 	_build_controls();_update_actions();_refresh_cards();state="revealing";state_time=0
+	load_metrics["commit_controls_ms"]=Time.get_ticks_msec()-control_start
 	if custom_panel:custom_panel.position.z=-.36
 	transition_vfx.begin(current.asset if current else host.turntable);transition_vfx.update(1.0,true,0)
 	host.power_target=1;host.sound("wake")
+	load_metrics["commit_total_ms"]=Time.get_ticks_msec()-commit_start
 
 func _legacy_panel_depth(depth:float)->void:
 	for i in range(1,6):
@@ -516,7 +603,7 @@ func _legacy_panel_depth(depth:float)->void:
 
 func _update_actions()->void:
 	var definition:=_definition(active_id)
-	host.menu.set_item_text(host.menu.get_item_index(0),"MagicDesk 0.2.2 · "+active_id+" "+str(definition.title))
+	host.menu.set_item_text(host.menu.get_item_index(0),"MagicDesk 0.3.0 · "+active_id+" "+str(definition.title))
 	host.TITLES=definition.actions.duplicate()
 	host.HINTS=[]
 	for i in range(definition.actions.size()):
@@ -626,7 +713,7 @@ func tick(delta:float)->void:
 	regions_clock+=delta
 	if regions_clock>.05:native_regions=_input_regions();regions_clock=0.0
 	if current:
-		if current.rotation.y!=host.angle:current.rotation.y=host.angle
+		current.advance_yaw(delta,host.angle)
 		current.tick(delta,host.power)
 	if sleep_pending and current and current.settled():host.power_target=0;sleep_pending=false
 	if pending_action>=0 and selector_amount==0:

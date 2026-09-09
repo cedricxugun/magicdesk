@@ -30,8 +30,8 @@
       "id": "F",
       "title": "拉格朗日天平",
       "legacy": false,
-      "scene": "res://assets/collection/models/F_refined.glb",
-      "metadata": "res://assets/collection/models/F_refined.json",
+      "scene": "res://assets/collection/models/F_complete.glb",
+      "metadata": "res://assets/collection/models/F_complete.json",
       "thumbnail": "res://assets/collection/thumbs/F.png",
       "actions": [
         "唤醒 / 休眠",

@@ -1,0 +1,42 @@
+{
+  "channel": "subscription built-in image_gen",
+  "model_id": "not exposed; unverified",
+  "files": [
+    {
+      "path": "production/F_complete/images/F_motion_vfx.png",
+      "sha256": "3b9c3ec08a0d6f3ca7c428ab623b97d10b83dabfa35971f9d109ef7ba44fca3c"
+    },
+    {
+      "path": "production/F_complete/images/F_calibration_signature.png",
+      "sha256": "4fe6fc3e0ddb3b0b284dfd01720fd9673e29386f25b817574f447d3fa660fe7f"
+    },
+    {
+      "path": "app/assets/collection/art/F/field_atlas.png",
+      "sha256": "dd98e63dada49bfa4a19560e9090449be272a76d818d0dfa1ff278d571fd5cfa"
+    }
+  ],
+  "prompts": [
+    "production/F_complete/prompts/F_motion_vfx.txt",
+    "production/F_complete/prompts/F_calibration_signature.txt",
+    "production/F_complete/prompts/F_field_atlas.txt"
+  ],
+  "atlas_centers": [
+    [
+      0.4948,
+      0.4993
+    ],
+    [
+      0.5003,
+      0.5
+    ],
+    [
+      0.4909,
+      0.4509
+    ],
+    [
+      0.3764,
+      0.4557
+    ]
+  ],
+  "audio_source": "tools/make_f_resonance.py; original PCM modal synthesis"
+}

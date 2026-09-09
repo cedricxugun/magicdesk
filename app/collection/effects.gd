@@ -28,9 +28,14 @@ var light:OmniLight3D
 var throat_pose_a:=Transform3D()
 var throat_pose_b:=Transform3D()
 var capillaries:Array[ShaderMaterial]=[]
+var f_visuals:Node3D
 
 func setup(owner:Node3D)->void:
 	module=owner
+	if module.play.instrument:
+		f_visuals=load("res://collection/f_visuals.gd").new();add_child(f_visuals);f_visuals.setup(module);f_visuals.tick(0,0)
+		atlas=f_visuals.atlas
+		return
 	atlas=load("res://assets/collection/art/fx_atlas.png")
 	var id:String=module.data.id
 	var tiles:Dictionary={"F":0,"G":1,"I":2,"J":3,"K":4,"L":5,"M":6,"N":7}
@@ -76,6 +81,7 @@ func request_quiet()->void:
 	if probe_t>.001:probe_running=false;probe_returning=true
 
 func ready_to_fold()->bool:
+	if f_visuals:return quiet and quiet_gain<.001 and module.play.instrument.ready_to_fold()
 	return quiet and quiet_gain<.001 and not probe_returning
 
 func reseed()->void:
@@ -85,6 +91,9 @@ func _socket(key:String)->Node3D:
 	return module.named(str(module.data.sockets[key]))
 
 func tick(delta:float)->void:
+	if f_visuals:
+		quiet_gain=move_toward(quiet_gain,0.0 if quiet else 1.0,delta*1.8)
+		f_visuals.tick(delta,quiet_gain);return
 	var manual:bool=module.play!=null and module.play.gain>.001 and not quiet
 	if manual and module.data.id=="M":
 		orbit_speed=module.play.number("orbit")

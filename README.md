@@ -1,5 +1,9 @@
 # MagicDesk · 桌面机械装置
 
+**0.3.0 · F 专项更新：** 闭合四连杆与双悬挂动力学、摩擦制动、滚轮/直线拖动、提示避让，以及与物理稳定关联的完整校准演出。Blender 和运行时使用同一套运动数据；其余装置的上部精修仍按款推进。
+
+[查看 F 图稿与实机对照](production/F_complete/index.html) · [F 制作与操作说明](production/F_complete/README.md) · [物理定义](production/F_complete/PHYSICS.md) · [F Blender 源文件](blender/collection/F_complete.blend)
+
 **跨设备继续开发先读 [HANDOFF.md](HANDOFF.md)。Windows 0.2.2 交互评估版现已包含九款集合、新控制器和 F 首轮机构精修；M/N 已通过导出 EXE 的入口回放。八款最终美术仍未完成，Mac 尚未重新导出本次版本。**
 
 [运行 Windows 交互评估版](dist/MagicDesk.exe) · [设计图 / 实机对照](production/interaction_refinement/index.html) · [原速实机演示](review/interaction_native/release/review_walkthrough.mp4) · [本轮制作状态](production/interaction_refinement/README.md)

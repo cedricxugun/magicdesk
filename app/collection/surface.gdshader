@@ -10,6 +10,13 @@ uniform bool has_normal=false;
 uniform float metallic=0.0;
 uniform float roughness=.3;
 uniform float coat=.25;
+uniform float roughness_scale=1.0;
+uniform float roughness_floor=.18;
+uniform float normal_depth=.14;
+uniform float anisotropy_strength=0.0;
+uniform float instrument_gain=-1.0;
+uniform float instrument_time=0.0;
+uniform sampler2D instrument_profile:source_color,filter_linear_mipmap;
 uniform vec4 emission_color:source_color=vec4(0.0);
 uniform float emission_energy=0.0;
 uniform float power=1.0;
@@ -40,10 +47,16 @@ void fragment(){
  if(scaffold && (height>boundary+.055 || max(archive.r,max(archive.g,archive.b))<.18))discard;
  ALBEDO=tint.rgb*(has_color?texture(color_map,UV).rgb:vec3(1.0));
  METALLIC=metallic;
- ROUGHNESS=clamp(has_roughness?texture(roughness_map,UV).g:roughness,.18,.8);
- if(has_normal){NORMAL_MAP=texture(normal_map,UV).rgb;NORMAL_MAP_DEPTH=.14;}
+ ROUGHNESS=clamp((has_roughness?texture(roughness_map,UV).g:roughness)*roughness_scale,roughness_floor,.8);
+ if(has_normal){NORMAL_MAP=texture(normal_map,UV).rgb;NORMAL_MAP_DEPTH=normal_depth;}
+ ANISOTROPY=anisotropy_strength;ANISOTROPY_FLOW=vec2(1,0);
  CLEARCOAT=coat;CLEARCOAT_ROUGHNESS=.13;
  EMISSION=emission_color.rgb*emission_energy*power;
+ if(instrument_gain>=0.0){
+  vec3 filament=texture(instrument_profile,vec2(.75,.08+fract(UV.y*.75-instrument_time*.13)*.34)).rgb;
+  float chase=pow(.5+.5*sin(world_y*8.0+world_position.x*3.0-instrument_time*5.0),5.0);
+  EMISSION+=vec3(1.0,.62,.23)*instrument_gain*power*(.60+chase*.8)*(vec3(.50)+filament);
+ }
  if(scan_amount>0.0){float edge=1.0-smoothstep(.0,.010,abs(height-boundary));EMISSION+=vec3(5.0,.22,.04)*edge;}
  if(scaffold){ALBEDO=vec3(.08,.02,.008);METALLIC=0.;EMISSION=archive*vec3(6.,1.3,.4);}
  if(formation<.9999){float edge=1.0-smoothstep(.0,.12,abs(formation_mask-formation));EMISSION+=(vec3(1.0,.48,.16)*edge+forming*2.0)*(1.0-formation)*3.0;}

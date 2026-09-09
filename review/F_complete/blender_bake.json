@@ -1,0 +1,17 @@
+{
+  "frames": 1321,
+  "fps": 30,
+  "animated_objects": 58,
+  "field_particles": 112,
+  "phase_markers": [
+    "bias",
+    "brake",
+    "equilibrium",
+    "recover",
+    "release",
+    "rest",
+    "settling"
+  ],
+  "same_physics_as_runtime": true,
+  "original_sources_preserved": true
+}

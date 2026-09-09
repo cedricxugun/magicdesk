@@ -22,17 +22,17 @@
       "passed": true
     },
     {
-      "check": "F_hold_brake_changes_damping",
-      "detail": "{ \"angle\": 0.56071404364532, \"velocity\": -0.04432283304754, \"balance\": 0.0, \"pressure\": 0.0, \"echo\": 0.0, \"echo_delay\": -1.0, \"imprint\": 0.0, \"growth\": [0.15, 0.15, 0.15], \"ink\": 0.0, \"feed_motion\": 0.0, \"aim\": (0.0, 0.0), \"focus_quality\": 0.0, \"capture_age\": -1.0, \"captured_floor\": 0.0, \"rebuild\": -1.0, \"probe_target\": 0.0 }",
-      "passed": true
-    },
-    {
-      "check": "F_trim_changes_linkage_pose",
-      "detail": "",
+      "check": "F_friction_brake_holds_linkage",
+      "detail": "{ \"angle\": -0.00876679145763, \"velocity\": 0.0, \"balance\": 0.0, \"pressure\": 0.0, \"echo\": 0.0, \"echo_delay\": -1.0, \"imprint\": 0.0, \"growth\": [0.15, 0.15, 0.15], \"ink\": 0.0, \"feed_motion\": 0.0, \"aim\": (0.0, 0.0), \"focus_quality\": 0.0, \"capture_age\": -1.0, \"captured_floor\": 0.0, \"rebuild\": -1.0, \"probe_target\": 0.0 }",
       "passed": true
     },
     {
       "check": "F_release_brake",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "F_preload_changes_physical_equilibrium",
       "detail": "",
       "passed": true
     },

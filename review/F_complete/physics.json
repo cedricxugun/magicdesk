@@ -1,0 +1,66 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "unforced_energy_conservation",
+      "detail": "0.00000412331792",
+      "passed": true
+    },
+    {
+      "check": "unit_length_pendulum_constraint",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "30_120_fps_same_dynamics",
+      "detail": "[-0.731115597344, -0.731115597344]",
+      "passed": true
+    },
+    {
+      "check": "drag_dissipates_energy",
+      "detail": "[23.231883303522, 23.2200129269165]",
+      "passed": true
+    },
+    {
+      "check": "friction_brake_catches",
+      "detail": "[0.24852436202647, 0.0, 0.01673621838844]",
+      "passed": true
+    },
+    {
+      "check": "static_brake_holds_torque",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "release_restores_gravity_response",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "plumb_returns_towards_world_gravity",
+      "detail": "[0.95568060874939, (-0.022404, -0.999697, 0.010218)]",
+      "passed": true
+    },
+    {
+      "check": "yaw_keeps_both_masses_under_world_gravity",
+      "detail": "{ \"solver\": \"closed four-bar + two spherical hangers, coupled RK4 240 Hz\", \"theta\": -0.73296487903929, \"omega\": 0.00664579368857, \"direction\": \"(0.001044, -0.999997, 0.002228)\", \"right_direction\": \"(0.007797, -0.999896, -0.012101)\", \"plumb_speed\": 0.02110716514289, \"prism_speed\": 0.07051675766706, \"energy\": 23.2206786442207, \"brake_heat\": 0.0, \"torque\": -0.01030933261106, \"constraint_error\": 0.0, \"stops\": 0, \"gravity\": 9.81 }",
+      "passed": true
+    },
+    {
+      "check": "no_fake_swing_without_forces",
+      "detail": "",
+      "passed": true
+    },
+    {
+      "check": "visible_length_has_correct_gravity_period",
+      "detail": "[0.3375, 0.37083333333333]",
+      "passed": true
+    },
+    {
+      "check": "actuated_transport_can_capture",
+      "detail": "{ \"solver\": \"closed four-bar + two spherical hangers, coupled RK4 240 Hz\", \"theta\": -0.73303828907167, \"omega\": -0.00000000000505, \"direction\": \"(-0.0, -1.0, 0.0)\", \"right_direction\": \"(-0.0, -1.0, 0.0)\", \"plumb_speed\": 0.00000000011489, \"prism_speed\": 0.00000000253814, \"energy\": 23.2199068246191, \"brake_heat\": 0.0, \"torque\": -0.00000000006144, \"constraint_error\": 0.0, \"stops\": 0, \"gravity\": 9.81 }",
+      "passed": true
+    }
+  ],
+  "scope": "Reduced-coordinate point masses and massless rigid links; not a manufacturing or finite-element model."
+}

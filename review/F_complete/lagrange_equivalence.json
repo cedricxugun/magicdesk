@@ -1,0 +1,9 @@
+{
+  "samples": 96,
+  "all_passed": true,
+  "max_absolute_acceleration_difference": 1.973603855986994e-05,
+  "minimum_mass_matrix_eigenvalue": 0.06435908949153978,
+  "failures": [],
+  "method": "Independent finite-difference Euler-Lagrange mass-matrix calculation; five generalized coordinates, two spherical hangers, iterative linkage closure; includes gravity, spring, drag, sliding brake, magnetic torque, and prescribed yaw.",
+  "excluded": "Static sticking/contact impacts and motor-driven storage are nonsmooth constraints or actuated choreography and tested separately."
+}

@@ -28,6 +28,8 @@ var stowing := false
 var interactive:=true
 var play:RefCounted
 var interactive_rig:Array=[]
+var yaw_velocity:=0.0
+var instrument_materials:Array[ShaderMaterial]=[]
 
 func v3(v:Array)->Vector3:return Vector3(v[0],v[1],v[2])
 
@@ -59,7 +61,14 @@ func _collect(node:Node)->void:
 	if node is MeshInstance3D:
 		meshes.append(node)
 		var body:=StaticBody3D.new();body.collision_layer=4;body.collision_mask=0
-		var shape:=CollisionShape3D.new();shape.shape=node.mesh.create_trimesh_shape();body.add_child(shape);node.add_child(body);bodies.append(body)
+		var shape:=CollisionShape3D.new()
+		if play.instrument:
+			# These shapes serve pointer picking, not mechanism dynamics. Avoid
+			# cooking hundreds of thousands of detail triangles on first select.
+			var box:=BoxShape3D.new();var bounds:AABB=node.mesh.get_aabb();box.size=bounds.size.max(Vector3.ONE*.002)
+			shape.shape=box;shape.position=bounds.get_center()
+		else:shape.shape=node.mesh.create_trimesh_shape()
+		body.add_child(shape);node.add_child(body);bodies.append(body)
 		for surface in range(node.mesh.get_surface_count()):
 			var original:Material=node.get_active_material(surface)
 			if not original is StandardMaterial3D:continue
@@ -77,6 +86,15 @@ func _collect(node:Node)->void:
 			if original.roughness_texture:mat.set_shader_parameter("roughness_map",original.roughness_texture)
 			if original.normal_texture:mat.set_shader_parameter("normal_map",original.normal_texture)
 			mat.set_shader_parameter("coat",.38 if original.resource_name.contains("Ivory") else .10)
+			if play.instrument:
+				mat.set_shader_parameter("roughness_scale",.88 if original.metallic>.8 else 1.0)
+				mat.set_shader_parameter("roughness_floor",.13 if original.metallic>.8 else .18)
+				mat.set_shader_parameter("normal_depth",.075)
+				mat.set_shader_parameter("anisotropy_strength",.32 if original.resource_name.contains("Chrome") else .12 if original.metallic>.8 else 0.0)
+				if original.resource_name.contains("Signal"):
+					mat.set_shader_parameter("instrument_gain",0.0)
+					mat.set_shader_parameter("instrument_profile",load("res://assets/collection/art/F/field_atlas.png"))
+					instrument_materials.append(mat)
 			if original.resource_name.contains("Glow"):
 				mat.set_shader_parameter("emission_color",Color(1,.09,.025))
 				mat.set_shader_parameter("emission_energy",1.0)
@@ -143,6 +161,7 @@ func apply_pose()->void:
 		var f:float=clampf(play.pose_fraction(str(c.node.name),openness),0,1)*(c.samples.size()-1)
 		var lo:=int(f);var desired:Transform3D=c.samples[lo].interpolate_with(c.samples[mini(lo+1,c.samples.size()-1)],f-lo)
 		if c.node.transform!=desired:c.node.transform=desired
+	if play.instrument:_apply_f_kinematics()
 	for m in motions:
 		var desired:Transform3D=m.home;desired.basis=m.home.basis*Basis(m.pose)
 		if m.node.transform!=desired:m.node.transform=desired
@@ -159,7 +178,7 @@ func apply_pose()->void:
 
 func _apply_interactive_rig()->void:
 	if interactive_rig.is_empty():return
-	var trim:float=lerpf(.25,play.number("trim"),play.gain)
+	var trim:float=play.instrument.preload_value if play.instrument else lerpf(.25,play.number("trim"),play.gain)
 	var brake:float=play.number("brake")*play.gain
 	for item in interactive_rig:
 		var desired:Transform3D=item.home
@@ -173,6 +192,41 @@ func _apply_interactive_rig()->void:
 			"brake_left":desired.origin.x+=.014*brake
 			"brake_right":desired.origin.x-=.014*brake
 		item.node.transform=desired
+
+func advance_yaw(delta:float,target:float)->void:
+	if not play.instrument:rotation.y=target;return
+	var error:=wrapf(target-rotation.y,-PI,PI)
+	var desired:=clampf(error*7.0,-1.5,1.5)
+	yaw_velocity=move_toward(yaw_velocity,desired,delta*3.0)
+	rotation.y+=yaw_velocity*delta
+
+func _apply_f_kinematics()->void:
+	var physics:RefCounted=play.instrument.physics
+	var angle:float=physics.theta
+	var h:Vector3=physics.H;var q:Vector3=physics.Q
+	var k:Array=physics.right_kinematics(angle)
+	var top:Vector3=k[3];var lower:Vector3=k[0]
+	var delta:=lerpf(-65.0*PI/180.0,physics.DELTA,smoothstep(0.0,1.0,openness))
+	var left_start:=h+Vector3(0,0,physics.counter_depth)
+	var left_end:=left_start+Vector3(physics.left_length*cos(angle+delta),physics.left_length*sin(angle+delta),0)
+	var links:={"F_C_UpperFourBar":[h,top],"F_C_LowerFourBar":[q,lower],"F_C_Coupler":[top,lower],"F_C_CounterArm":[left_start,left_end]}
+	for label in links:
+		var a:Vector3=links[label][0];var b:Vector3=links[label][1];var direction:=b-a
+		var node:Node3D=named(label)
+		node.transform=Transform3D(Basis(Quaternion(Vector3.UP,direction.normalized()))*Basis.from_scale(Vector3(1,direction.length(),1)),(a+b)*.5)
+		for i in range(2):named(label+"_end"+str(i)).position=links[label][i]
+	named("F_C_PrismHanger").position=lower;named("F_C_PearlHanger").position=left_end
+	var unrotate:=Basis(Vector3.UP,-rotation.y)
+	named(str(data.f_physics.plumb_pivot)).basis=Basis(Quaternion(Vector3.DOWN,(unrotate*physics.direction).normalized()))
+	named(str(data.f_physics.prism_pivot)).basis=Basis(Quaternion(Vector3.DOWN,(unrotate*physics.right_direction).normalized()))
+	var latch:float=play.instrument.travel_latch
+	named(str(data.f_physics.spring_preload)).basis=Basis(Vector3.BACK,-play.instrument.preload_value*.60)
+	named(str(data.f_physics.receiver_lift)).position.y=.24*smoothstep(.10,.65,openness)
+	named(str(data.f_physics.receiver_slide)).position.z=-.245*smoothstep(.65,1.0,openness)
+	named(str(data.f_physics.brake_rotor)).basis=Basis(Vector3.BACK,angle)
+	for item in data.f_physics.get("transport_guides",[]):
+		var node:Node3D=named(item.name)
+		node.position=v3(item.home)+Vector3(float(item.sign)*.040*(1.0-latch),0,0)
 
 func _update_motions(delta:float)->void:
 	for m in motions:
