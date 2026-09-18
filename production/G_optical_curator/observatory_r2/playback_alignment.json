@@ -1,0 +1,8 @@
+{
+  "first_play_frame": 293,
+  "platter_angle": 0.388185809585476,
+  "camera_heading": 0.09352148188718157,
+  "mount_yaw": -0.2946643276982944,
+  "source_model_sha256": "c15d3f04656453db6138e9a3e96c4903c1e6c290b13759dd1eb0296c22a6fd94",
+  "reason": "Face the first archival facade toward the fixed app camera at first playback; no counter-rotation after that."
+}

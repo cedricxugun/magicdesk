@@ -1,0 +1,11 @@
+{
+  "panel": 6,
+  "end_depth": 0.3,
+  "base_report": "review/I_refinement/nautilus_r1/scan_caps_runtime_r43/readable/build.json",
+  "expected_parent_source_sha256": "8767879e0dbcf46b8839afd97d99614913662a136dadd2faee82dd46d6cf3952",
+  "out": "review/I_refinement/nautilus_r1/uniform_front06_r49",
+  "source": "blender/collection/I_nautilus_uniform_front06_r49.blend",
+  "component": "app/assets/collection/components/I_nautilus_uniform_front06_r49.glb",
+  "uniform_loft": true,
+  "art": "app/assets/collection/art/I/uniform_front06_r49"
+}

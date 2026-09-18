@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "check": "reveal_started",
+      "passed": true
+    },
+    {
+      "check": "current_I_arrived",
+      "passed": true
+    },
+    {
+      "check": "current_rig_not_old_I",
+      "passed": true
+    },
+    {
+      "check": "reviewed_materials_restored",
+      "passed": true
+    },
+    {
+      "check": "optical_attachments_survive_transfer",
+      "passed": true
+    },
+    {
+      "check": "music_control_profile",
+      "passed": true
+    },
+    {
+      "check": "music_starts_after_unfolding",
+      "passed": true
+    },
+    {
+      "check": "cancel_pressure",
+      "passed": true
+    },
+    {
+      "check": "reverse_close",
+      "passed": true
+    },
+    {
+      "check": "music_restarts",
+      "passed": true
+    },
+    {
+      "check": "music_stows_before_archive",
+      "passed": true
+    },
+    {
+      "check": "outgoing_audio_stopped",
+      "passed": true
+    },
+    {
+      "check": "returned_B",
+      "passed": true
+    },
+    {
+      "check": "same_base_and_camera",
+      "passed": true
+    },
+    {
+      "check": "B_light_restored",
+      "passed": true
+    },
+    {
+      "check": "warming_for_cancel",
+      "passed": true
+    },
+    {
+      "check": "cancel_preserves_B",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Actual main scene/service, existing selector transition, real renderer, synthetic dispatch and explicit cancellation; Dummy audio. No native pointer or final visual acceptance."
+}

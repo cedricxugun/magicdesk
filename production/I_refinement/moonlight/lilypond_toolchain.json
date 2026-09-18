@@ -1,0 +1,5 @@
+{
+  "url": "https://gitlab.com/api/v4/projects/lilypond%2Flilypond/packages/generic/lilypond/2.26.0/lilypond-2.26.0-darwin-arm64.tar.gz",
+  "sha256": "18ffc454fef3753c26a015d95a3c232f89b22f052b897c046e0198740a1221be",
+  "directory": "/tmp/magicdesk-lilypond"
+}

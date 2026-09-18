@@ -1,0 +1,26 @@
+{
+  "failures": [],
+  "maximum": 0.000000292001942625575,
+  "tracks": [
+    {
+      "keys": 313,
+      "path": "IS71_MotionRoot/IS71_rear_bolt_-1",
+      "type": 1
+    },
+    {
+      "keys": 313,
+      "path": "IS71_MotionRoot/IS71_rear_bolt_1",
+      "type": 1
+    },
+    {
+      "keys": 313,
+      "path": "IS71_MotionRoot/IS71_cassette03",
+      "type": 1
+    },
+    {
+      "keys": 313,
+      "path": "IS71_MotionRoot/IS71_rear_shell03",
+      "type": 1
+    }
+  ]
+}

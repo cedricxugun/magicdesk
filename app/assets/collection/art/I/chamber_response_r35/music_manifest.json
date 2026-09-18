@@ -1,0 +1,43 @@
+{
+  "work": "Beethoven Op.27 No.2 Moonlight Sonata",
+  "scope": "complete_three_movements",
+  "status": "independent_audio_transport_candidate",
+  "movements": [
+    {
+      "movement": 1,
+      "audio": "res://assets/collection/art/I/moonlight_candidate/pitman_movement_1.ogg",
+      "duration": 335.7678004535147,
+      "audio_sha256": "035a31b8d67de4b0574110592a6f8ce2f6e51dfc7f884e16f918e47e327d7d66",
+      "alignment": "res://assets/collection/art/I/moonlight_candidate/alignment1_tail_r2.json",
+      "previous_alignment": "res://assets/collection/art/I/moonlight_candidate/alignment1.json"
+    },
+    {
+      "movement": 2,
+      "audio": "res://assets/collection/art/I/moonlight_candidate/pitman_movement_2.ogg",
+      "duration": 131.5526530612245,
+      "audio_sha256": "41b9b2021e6f9d7f8b4c32aca20fdbbb84f774c01db2be448b348604c5ec6344",
+      "alignment": "res://assets/collection/art/I/moonlight_candidate/alignment2.json"
+    },
+    {
+      "movement": 3,
+      "audio": "res://assets/collection/art/I/moonlight_candidate/pitman_movement_3_clean.mp3",
+      "duration": 493.714294433594,
+      "audio_sha256": "bb42ee8980337b27373c96b96344e189eff7b6d90947369abe1930f74441a38e",
+      "alignment": "res://assets/collection/art/I/moonlight_candidate/alignment3_tail_r2.json",
+      "original_audio": "res://assets/collection/art/I/moonlight_candidate/pitman_movement_3_original.mp3",
+      "original_audio_sha256": "a4c16b5e2c5ee548be14e74136b687f8586e619fd1c06abc566ebeeae511066f",
+      "cleanup_evidence": "review/I_refinement/moonlight/mp3_clean/report.json",
+      "previous_alignment": "res://assets/collection/art/I/moonlight_candidate/alignment3_clean.json"
+    }
+  ],
+  "attribution": "Ludwig van Beethoven, performed by Paul Pitman; courtesy of Musopen https://musopen.org/; sources Wikimedia Commons / Internet Archive",
+  "total_duration": 961.0347479483332,
+  "warnings": [
+    "Alignment remains estimated except for four locally reviewed tail anchors.",
+    "Current mouth preview only; full conch and art acceptance remain unfinished."
+  ],
+  "response_envelope": "res://assets/collection/art/I/moonlight_candidate/response_envelopes_r1.json",
+  "response_envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+  "chamber_response_envelope": "res://assets/collection/art/I/chamber_response_r35/response_bands.json",
+  "chamber_response_envelope_sha256": "37708a3496d734c2481d5bce6a72b9de717ef81bec8b62b3f2637299b3f9e2d5"
+}

@@ -1,0 +1,14 @@
+{
+  "generator": "built-in image_gen",
+  "status": "Production reference; implementation and visual review in progress",
+  "files": [
+    {
+      "path": "production/G_optical_curator/head_service/structure_and_explode_target.png",
+      "sha256": "3d71ae3adbf0db5d620bd097f65b2896785d128586bd4f5b20e755ad72854405"
+    },
+    {
+      "path": "production/G_optical_curator/head_service/prompt.txt",
+      "sha256": "49a1003496ca4f4dce1facfd707d24f77a4a007b2a1894539a7ebccda3f30c2f"
+    }
+  ]
+}

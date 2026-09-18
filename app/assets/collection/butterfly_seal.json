@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "source_sha256": "c7ec9164680c73618e81bd18d95c3b12ed219922abf4a9417cda4363e097c916",
+  "method": "Distance outside the projected metal radius of actual front spars, rim and inlay seats; wing-local X/Z data, not color or noise",
+  "image_v": "Blender pixels bottom-up; shader flips normalized local height to PNG top-down",
+  "wings": {
+    "upper": {
+      "texture": "res://assets/collection/art/G_AI/butterfly_upper_seal.png",
+      "bounds": [
+        0.0284917950630188,
+        0.008978906087577343,
+        0.358918160200119,
+        0.432021108455956
+      ],
+      "max_distance": 0.05057615041732788,
+      "paths": 7,
+      "seal_phase": [
+        0.54,
+        0.86
+      ],
+      "red_phase": [
+        0.88,
+        0.98
+      ],
+      "metal_phase": [
+        0.28,
+        0.54
+      ],
+      "texture_sha256": "762bfc6a22581991092254f51421cbc2fa625c4b0a849ce5eb526c69274c5d69"
+    },
+    "lower": {
+      "texture": "res://assets/collection/art/G_AI/butterfly_lower_seal.png",
+      "bounds": [
+        0.03907812759280205,
+        -0.2579062283039093,
+        0.2397218830883503,
+        0.2624062281101942
+      ],
+      "max_distance": 0.036767326295375824,
+      "paths": 7,
+      "seal_phase": [
+        0.6,
+        0.9
+      ],
+      "red_phase": [
+        0.92,
+        0.995
+      ],
+      "metal_phase": [
+        0.32,
+        0.58
+      ],
+      "texture_sha256": "d6ba277735a85bb4c97e7e4f154a6f7cfeb00bc149101e7f36c97fd790b13bba"
+    }
+  }
+}

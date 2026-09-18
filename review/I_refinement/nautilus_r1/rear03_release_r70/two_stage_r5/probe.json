@@ -1,0 +1,4579 @@
+{
+  "source_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b",
+  "partial_bolt_release": true,
+  "two_step_shell": true,
+  "shell_waypoints": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0.03008390963077545,
+      0.03994643688201904,
+      -0.1090836375951767
+    ],
+    [
+      0.03008390963077545,
+      0.839946448802948,
+      -0.1090836375951767
+    ]
+  ],
+  "groups": [
+    {
+      "id": "rear_bolt_-1",
+      "names": [
+        "IN2_Cassette03BodyBolt-1Bolt",
+        "IN2_Cassette03BodyBolt-1OuterWasher"
+      ],
+      "normal": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "park": [
+        0.08400998264551163,
+        -0.0,
+        0.09920849651098251
+      ]
+    },
+    {
+      "id": "rear_bolt_1",
+      "names": [
+        "IN2_Cassette03BodyBolt1Bolt",
+        "IN2_Cassette03BodyBolt1OuterWasher"
+      ],
+      "normal": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "park": [
+        -0.08400998264551163,
+        0.0,
+        -0.09920849651098251
+      ]
+    },
+    {
+      "id": "cassette03",
+      "names": [
+        "IN2_Cassette03Crosshead",
+        "IN2_Cassette03PinBush-1",
+        "IN2_Cassette03PinBush1",
+        "IN2_Cassette03PressurePistonRod",
+        "IN2_Cassette03PressurePistonSeal",
+        "IN2_Cassette03PressureRodThrust",
+        "IN2_Cassette03ThrustWasher-1",
+        "IN2_Cassette03ThrustWasher1",
+        "IN2_Guide03RetainingBolt-1",
+        "IN2_Guide03RetainingBolt1",
+        "IN2_Guide03RetainingWasher-1",
+        "IN2_Guide03RetainingWasher1",
+        "IN2_Guide03Rod-1",
+        "IN2_Guide03Rod1",
+        "IN2_Cassette03BackBlock",
+        "IN2_Cassette03PressureGlandSeal",
+        "IN2_Cassette03PressureHousing",
+        "IN2_Cassette03PressureMountBolt-1",
+        "IN2_Cassette03PressureMountBolt1",
+        "IN2_Cassette03PressureMountWasher-1",
+        "IN2_Cassette03PressureMountWasher1",
+        "IN2_Guide03Bronze-1",
+        "IN2_Guide03Bronze1",
+        "IN2_Guide03Jacket-1",
+        "IN2_Guide03Jacket1"
+      ],
+      "normal": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ]
+    },
+    {
+      "id": "rear_shell03",
+      "names": [
+        "IN1_FixedRearShell_03",
+        "IN2_Cassette03BodyBolt-1BoreLiner",
+        "IN2_Cassette03BodyBolt-1InnerWasher",
+        "IN2_Cassette03BodyBolt-1ThreadedInsert",
+        "IN2_Cassette03BodyBolt1BoreLiner",
+        "IN2_Cassette03BodyBolt1InnerWasher",
+        "IN2_Cassette03BodyBolt1ThreadedInsert"
+      ],
+      "normal": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ]
+    }
+  ],
+  "front_reference_sha256": "0ba13905c764f4420306f1539604574303cdbf42f78d0436f92f0fe35c7baaa0",
+  "front_pose_max_scalar_error": 4.209578037261963e-07,
+  "front_members": [
+    "IN1_PanelRim_2_2_0_-1382",
+    "IN1_PanelRim_2_2_0_-153",
+    "IN1_PorcelainPanel_03",
+    "IN2_Cassette03CaptivePin",
+    "IN2_Cassette03CoverBolt-1Bolt",
+    "IN2_Cassette03CoverBolt-1BoreLiner",
+    "IN2_Cassette03CoverBolt-1InnerWasher",
+    "IN2_Cassette03CoverBolt-1OuterWasher",
+    "IN2_Cassette03CoverBolt-1ThreadedInsert",
+    "IN2_Cassette03CoverBolt1Bolt",
+    "IN2_Cassette03CoverBolt1BoreLiner",
+    "IN2_Cassette03CoverBolt1InnerWasher",
+    "IN2_Cassette03CoverBolt1OuterWasher",
+    "IN2_Cassette03CoverBolt1ThreadedInsert",
+    "IN2_Cassette03PinHead-1",
+    "IN2_Cassette03PinHead1",
+    "IN2_Cassette03RotatingTongue"
+  ],
+  "prepared_support_plan_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b",
+  "samples": [
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.0,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.01,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.02,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.03,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.04,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.05,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.06,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.07,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.08,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.09,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.1,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.11,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.12,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.13,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.14,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.15,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.16,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.17,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.18,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.19,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.2,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.21,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.22,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.23,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.24,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.25,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.26,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.27,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.28,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.29,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.3,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.31,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.32,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.33,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.34,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.35,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.36,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.37,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.38,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.39,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.4,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.41,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.42,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.43,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.44,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.45,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.46,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.47,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.48,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.49,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.5,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.51,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.52,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.53,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.54,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.55,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.56,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.57,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.58,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.59,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.6,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.61,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.62,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.63,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.64,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.65,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.66,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.67,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.68,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.69,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.7,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.71,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.72,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.73,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.74,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.75,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.76,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.77,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.78,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.79,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.8,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.81,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.82,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.83,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.84,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.85,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.86,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.87,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.88,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.89,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.9,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.91,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.92,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.93,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.94,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.95,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.96,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.97,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.98,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.99,
+      "contacts": []
+    },
+    {
+      "phase": 0,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 1.0,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.0,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.01,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.02,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.03,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.04,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.05,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.06,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.07,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.08,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.09,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.1,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.11,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.12,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.13,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.14,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.15,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.16,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.17,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.18,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.19,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.2,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.21,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.22,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.23,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.24,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.25,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.26,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.27,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.28,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.29,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.3,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.31,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.32,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.33,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.34,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.35,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.36,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.37,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.38,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.39,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.4,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.41,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.42,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.43,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.44,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.45,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.46,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.47,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.48,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.49,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.5,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.51,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.52,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.53,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.54,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.55,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.56,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.57,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.58,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.59,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.6,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.61,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.62,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.63,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.64,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.65,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.66,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.67,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.68,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.69,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.7,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.71,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.72,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.73,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.74,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.75,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.76,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.77,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.78,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.79,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.8,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.81,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.82,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.83,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.84,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.85,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.86,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.87,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.88,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.89,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.9,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.91,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.92,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.93,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.94,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.95,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.96,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.97,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.98,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.99,
+      "contacts": []
+    },
+    {
+      "phase": 1,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 1.0,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.0,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.01,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.02,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.03,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.04,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.05,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.06,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.07,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.08,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.09,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.1,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.11,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.12,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.13,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.14,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.15,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.16,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.17,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.18,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.19,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.2,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.21,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.22,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.23,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.24,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.25,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.26,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.27,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.28,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.29,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.3,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.31,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.32,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.33,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.34,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.35,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.36,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.37,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.38,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.39,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.4,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.41,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.42,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.43,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.44,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.45,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.46,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.47,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.48,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.49,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.5,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.51,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.52,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.53,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.54,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.55,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.56,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.57,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.58,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.59,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.6,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.61,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.62,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.63,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.64,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.65,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.66,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.67,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.68,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.69,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.7,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.71,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.72,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.73,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.74,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.75,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.76,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.77,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.78,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.79,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.8,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.81,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.82,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.83,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.84,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.85,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.86,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.87,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.88,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.89,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.9,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.91,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.92,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.93,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.94,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.95,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.96,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.97,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.98,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.99,
+      "contacts": []
+    },
+    {
+      "phase": 2,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 1.0,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.0,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.01,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.02,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.03,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.04,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.05,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.06,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.07,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.08,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.09,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.1,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.11,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.12,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.13,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.14,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.15,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.16,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.17,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.18,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.19,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.2,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.21,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.22,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.23,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.24,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.25,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.26,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.27,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.28,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.29,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.3,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.31,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.32,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.33,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.34,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.35,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.36,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.37,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.38,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.39,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.4,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.41,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.42,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.43,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.44,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.45,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.46,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.47,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.48,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.49,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.5,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.51,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.52,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.53,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.54,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.55,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.56,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.57,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.58,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.59,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.6,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.61,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.62,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.63,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.64,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.65,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.66,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.67,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.68,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.69,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.7,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.71,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.72,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.73,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.74,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.75,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.76,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.77,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.78,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.79,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.8,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.81,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.82,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.83,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.84,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.85,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.86,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.87,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.88,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.89,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.9,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.91,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.92,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.93,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.94,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.95,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.96,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.97,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.98,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 0.99,
+      "contacts": []
+    },
+    {
+      "phase": 3,
+      "route": "two_step",
+      "shell_direction": [
+        0.7475625276565552,
+        0.39197805523872375,
+        -0.5361934900283813
+      ],
+      "fraction": 1.0,
+      "contacts": []
+    }
+  ],
+  "scope": "Partial bolt loosening .010, bolts follow cassette without lateral parking; then rear shell with retained liners/inserts. Includes actual parked front/support/port meshes and original base. Finite translation samples, not source-animation compatibility, thread simulation, full service or art acceptance."
+}

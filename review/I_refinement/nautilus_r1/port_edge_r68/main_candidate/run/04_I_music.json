@@ -1,0 +1,305 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "I",
+      "time": 23988
+    }
+  ],
+  "active": "I",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.751)]",
+  "base_instances": 1,
+  "error": "",
+  "g_operator": {
+    "held": "",
+    "panel": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation_enabled": false,
+    "targets": [],
+    "visible": false
+  },
+  "help_index": -1,
+  "load_metrics": {
+    "archive_started_ms": 8803,
+    "commit_base_ms": 61,
+    "commit_controls_ms": 23,
+    "commit_total_ms": 91,
+    "display_msaa": 1,
+    "gpu_warm_ms": 229,
+    "id": "I",
+    "legacy_scan_materials": 281,
+    "legacy_scan_shader_variants": 5,
+    "legacy_scan_wrap_ms": 65.478,
+    "resource_ready_ms": 4833,
+    "setup_ms": 1335,
+    "started_ms": 8842,
+    "stow_started_ms": 6408,
+    "total_ms": 14615,
+    "transition_ghost_meshes": 1249,
+    "transition_ghost_setup_ms": 7.222,
+    "warm_area_lights": 3,
+    "warm_msaa": 1
+  },
+  "module": {
+    "archive": {
+      "active": false,
+      "settled_uses_originals": true,
+      "shader_variants": 6,
+      "unique_materials": 0,
+      "wrapped_surfaces": 0
+    },
+    "assembly": {
+      "chambers": {
+        "authored_mask_sha256": "62efaeb17be28aa90a371febb6891037fc36630e9897ed634b72c326866aebd7",
+        "bands": [
+          0.374642789363861,
+          0.102669887244701,
+          0.0547039248049259
+        ],
+        "clock": 7.72717941394043,
+        "frames": 12,
+        "levels": [
+          0.366904646158218,
+          0.10416603833437,
+          0.0564660243690014
+        ],
+        "light_floor": 0.639999999999992,
+        "membranes": [
+          {
+            "maximum_world_stroke": 0.000801798888152131,
+            "mesh": "IN1_CellDiaphragm_01",
+            "velocity": 0.677253947052436,
+            "weight": 0.26726629605071
+          },
+          {
+            "maximum_world_stroke": 0.000244994591133186,
+            "mesh": "IN1_CellDiaphragm_02",
+            "velocity": 0.0266664129599566,
+            "weight": 0.0816648637110619
+          },
+          {
+            "maximum_world_stroke": 0.000122389589026994,
+            "mesh": "IN1_CellDiaphragm_03",
+            "velocity": -0.0121594667094538,
+            "weight": 0.0407965296756647
+          },
+          {
+            "maximum_world_stroke": 0.000801798888152131,
+            "mesh": "IN1_CellDiaphragm_04",
+            "velocity": 0.677253947052436,
+            "weight": 0.26726629605071
+          },
+          {
+            "maximum_world_stroke": 0.000244994591133186,
+            "mesh": "IN1_CellDiaphragm_05",
+            "velocity": 0.0266664129599566,
+            "weight": 0.0816648637110619
+          },
+          {
+            "maximum_world_stroke": 0.000122389589026994,
+            "mesh": "IN1_CellDiaphragm_06",
+            "velocity": -0.0121594667094538,
+            "weight": 0.0407965296756647
+          },
+          {
+            "maximum_world_stroke": 0.000801798888152131,
+            "mesh": "IN1_CellDiaphragm_07",
+            "velocity": 0.677253947052436,
+            "weight": 0.26726629605071
+          },
+          {
+            "maximum_world_stroke": 0.000244994591133186,
+            "mesh": "IN1_CellDiaphragm_08",
+            "velocity": 0.0266664129599566,
+            "weight": 0.0816648637110619
+          },
+          {
+            "maximum_world_stroke": 0.000122389589026994,
+            "mesh": "IN1_CellDiaphragm_09",
+            "velocity": -0.0121594667094538,
+            "weight": 0.0407965296756647
+          },
+          {
+            "maximum_world_stroke": 0.000801798888152131,
+            "mesh": "IN1_CellDiaphragm_10",
+            "velocity": 0.677253947052436,
+            "weight": 0.26726629605071
+          },
+          {
+            "maximum_world_stroke": 0.000244994591133186,
+            "mesh": "IN1_CellDiaphragm_11",
+            "velocity": 0.0266664129599566,
+            "weight": 0.0816648637110619
+          },
+          {
+            "maximum_world_stroke": 0.000122389589026994,
+            "mesh": "IN1_CellDiaphragm_12",
+            "velocity": -0.0121594667094538,
+            "weight": 0.0407965296756647
+          }
+        ],
+        "motion": "authored_membrane_shapes",
+        "opening": 1.0,
+        "playing": true,
+        "source_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b"
+      },
+      "component_sha256": "2b577986ee76a550bc5958108ea7ee6b97dd6c23a1b416b4075651a172468211",
+      "mouth_component_sha256": "9e57f33fa026d042c74918e13e9fa8bca73e54a8c0232e347bed000c137486c1",
+      "music": {
+        "active": true,
+        "close_pending": false,
+        "pause_pending": false,
+        "response_level": 0.163038730496062,
+        "reveal": 1.0,
+        "staff": {
+          "cache_size": 4,
+          "first_tile": 0,
+          "movement": 1,
+          "note_x": 186.85699138465,
+          "offset": 47.6903247179834,
+          "pending_tiles": 0,
+          "playhead": 0.5,
+          "quarter_estimate": 2.84623531592384,
+          "ready": true,
+          "reveal": 1.0,
+          "scan_intensity": 0.537279047872047,
+          "scan_level": 0.163038730496062,
+          "scan_playing": true,
+          "scanner_caps": {
+            "attached": 3,
+            "component_sha256": "7f677b661bafb656cb528bab0530102b7bcd00b03fecc96bb7c215c47e956daf",
+            "source_sha256": "7f75d8fbb1608da067b673868ca0c51c620a0cf10731fed4ec6ff51c6555a422"
+          },
+          "valid_tiles": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "width": 278.333333333333
+        },
+        "starting": false,
+        "transport": {
+          "alignment_status": "estimated_requires_musical_review",
+          "clock_mode": "realtime_audio_compensated",
+          "duration": 961.036178588867,
+          "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+          "local_seconds": 7.72717941394043,
+          "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+          "movement": 1,
+          "score_quarter_estimate": 2.84623531592384,
+          "state": "playing",
+          "total_seconds": 7.72717941394043
+        }
+      },
+      "sequence": {
+        "desired_open": true,
+        "mouth_closing_held": false,
+        "mouth_open": 1.0,
+        "shell_open": 1.0,
+        "stage": "ready"
+      },
+      "source_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b"
+    },
+    "base_owned": false,
+    "exploded_service_view": "pending",
+    "explosion": 0.0,
+    "id": "I",
+    "openness": 1.0,
+    "pick_bodies": 1,
+    "runtime": "nautilus_r59",
+    "source_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b"
+  },
+  "play": {
+    "active": true,
+    "gain": 1.0,
+    "music": {
+      "active": true,
+      "close_pending": false,
+      "pause_pending": false,
+      "response_level": 0.163038730496062,
+      "reveal": 1.0,
+      "staff": {
+        "cache_size": 4,
+        "first_tile": 0,
+        "movement": 1,
+        "note_x": 186.85699138465,
+        "offset": 47.6903247179834,
+        "pending_tiles": 0,
+        "playhead": 0.5,
+        "quarter_estimate": 2.84623531592384,
+        "ready": true,
+        "reveal": 1.0,
+        "scan_intensity": 0.537279047872047,
+        "scan_level": 0.163038730496062,
+        "scan_playing": true,
+        "scanner_caps": {
+          "attached": 3,
+          "component_sha256": "7f677b661bafb656cb528bab0530102b7bcd00b03fecc96bb7c215c47e956daf",
+          "source_sha256": "7f75d8fbb1608da067b673868ca0c51c620a0cf10731fed4ec6ff51c6555a422"
+        },
+        "valid_tiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "width": 278.333333333333
+      },
+      "starting": false,
+      "transport": {
+        "alignment_status": "estimated_requires_musical_review",
+        "clock_mode": "realtime_audio_compensated",
+        "duration": 961.036178588867,
+        "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+        "local_seconds": 7.72717941394043,
+        "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+        "movement": 1,
+        "score_quarter_estimate": 2.84623531592384,
+        "state": "playing",
+        "total_seconds": 7.72717941394043
+      }
+    },
+    "sequence": {
+      "desired_open": true,
+      "mouth_closing_held": false,
+      "mouth_open": 1.0,
+      "shell_open": 1.0,
+      "stage": "ready"
+    },
+    "values": {
+      "bellows": 0.0,
+      "gauge": 0.0,
+      "music": 1.0,
+      "shell": 1.0,
+      "volume": 1.0
+    }
+  },
+  "pointer_canvas": "(174.0, 758.0)",
+  "pointer_subviewport": "(174.0, 758.0)",
+  "requested": "",
+  "rotation_hologram": {
+    "action_art": "res://assets/collection/art/shared_rotation/contrast_r3/rotate.svg",
+    "face_gain": 0.68,
+    "face_reveal": 1.0,
+    "held": false,
+    "hit_radius": 50.486572265625,
+    "hover": false,
+    "port_world": [
+      1.34268999099731,
+      0.144999995827675,
+      0.272179991006851
+    ],
+    "rotation": false,
+    "screen_center": [
+      1498.6455078125,
+      1382.90588378906
+    ],
+    "visible_amount": 0.28
+  },
+  "selector": 0.0,
+  "state": "idle",
+  "tooltip_visible": false
+}

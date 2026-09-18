@@ -1,0 +1,31 @@
+{
+  "rows": [
+    {
+      "meshes": 1218,
+      "position_max_error": 0.000000547300828657171,
+      "stage": 0
+    },
+    {
+      "meshes": 1218,
+      "position_max_error": 0.000000547300828657171,
+      "stage": 1
+    },
+    {
+      "meshes": 1218,
+      "position_max_error": 0.000000547300828657171,
+      "stage": 2
+    },
+    {
+      "meshes": 1218,
+      "position_max_error": 0.000000547300828657171,
+      "stage": 3
+    },
+    {
+      "meshes": 1218,
+      "position_max_error": 0.000000547300828657171,
+      "stage": 4
+    }
+  ],
+  "scope": "Actual imported geometry in measured static preparation and rear-release poses. Not an authored motion, full service demonstration or main App interaction.",
+  "source_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b"
+}

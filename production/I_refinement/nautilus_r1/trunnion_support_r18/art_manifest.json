@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "asset": "production/I_refinement/nautilus_r1/trunnion_support_r18/trunnion_and_foot_finish_r1.png",
+  "source": "/Users/cedric/.codex/generated_images/01a081b1-905f-7c82-a411-7499958dad6e/exec-9845d58f-ecbb-46b4-9115-ef565c998eaa.png",
+  "sha256": "3b5f07f9864fc8c1038e58f92d7c9e8275bd678a536a58c48577318849fb59c6",
+  "prompt": "production/I_refinement/nautilus_r1/trunnion_support_r18/PROMPT.txt",
+  "role": "Local clevis, thrust ring, satin-metal body and formed-foot workmanship only",
+  "critique": "Generation incorrectly relocates the upper pivot onto an exterior hub and moves the feet outward. Do not copy those placements, the base or body proportions. Real coordinates and hinge planes remain the route_r2 source measurements."
+}

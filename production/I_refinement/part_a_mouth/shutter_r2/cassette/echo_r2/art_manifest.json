@@ -1,0 +1,9 @@
+{
+  "generator": "built_in_image_gen",
+  "storyboard": "echo_storyboard.png",
+  "storyboard_sha256": "d791071ee82029a462f85e1ad9b81802a59c9d22a1d68c1d77e3001b00b50a19",
+  "crest": "app/assets/collection/art/I/echo_r2/crest_mask.png",
+  "crest_sha256": "6a741c535989e63e5e0f0f835a3ee654d9b3e77e41b6b437ff405ddf74052eba",
+  "prompts": "PROMPTS.md",
+  "scope": "Generated local VFX concept and dedicated unlit luminance mask. Carrier authored separately in Blender. Storyboard arrow direction is not authoritative; actual mouth -Y axis controls departure."
+}

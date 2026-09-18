@@ -1,0 +1,12 @@
+{
+  "mode": "built-in image_gen",
+  "reference": "concepts/collection_20260909/I_\u56de\u58f0\u6d77\u87ba.png",
+  "derived_image": "production/I_refinement/conch_r11/closed_form_reference.png",
+  "sha256": "a681cedfb0b6828742b9718993f2fdb3f124da6b0d6ec45d67bc8a77c0e7714b",
+  "prompt": "production/I_refinement/conch_r11/prompt.txt",
+  "limitations": [
+    "Generated SIDE is another perspective, not a measured orthographic view.",
+    "Original selected reference remains authoritative; generated base dimensions must not override shared real base.",
+    "Images are reconstruction guides, not finished geometry."
+  ]
+}

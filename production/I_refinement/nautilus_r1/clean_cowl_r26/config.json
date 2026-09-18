@@ -1,0 +1,11 @@
+{
+  "panel": 5,
+  "base_report": "review/I_refinement/nautilus_r1/cowl_precision_r25/build.json",
+  "expected_parent_source_sha256": "7412e113d125dd1aeb5197b691db1af1a56265742bf72c39fe8e4f6209bbf396",
+  "out": "review/I_refinement/nautilus_r1/clean_cowl_r26",
+  "source": "blender/collection/I_nautilus_clean_cowl_r26.blend",
+  "component": "app/assets/collection/components/I_nautilus_clean_cowl_r26.glb",
+  "fixed_cheek_name": "IN1_FixedMouthCheek05",
+  "fixed_cheek_height": 1.70,
+  "fixed_cheek_gap": 0.004
+}

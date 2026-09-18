@@ -1,0 +1,12 @@
+{
+  "generator": "built-in image_gen",
+  "image": "production/I_refinement/nautilus_r1/rear03_release_r70/rear_release_storyboard_r1.png",
+  "sha256": "852505af8c9825381320408d95a6639022b5514cb01d10b4e4aaeee88fbbebad",
+  "prompt": "production/I_refinement/nautilus_r1/rear03_release_r70/PROMPT.txt",
+  "references": [
+    "review/I_refinement/nautilus_r1/rear03_release_r70/two_stage_r5/views/stage_0.png",
+    "review/I_refinement/nautilus_r1/rear03_release_r70/two_stage_r5/views/stage_4.png"
+  ],
+  "adopted_scope": "Prepared-state continuity, staged cassette/rear-shell release, restrained pauses and reversible motion direction. Actual geometry, axes and waypoints come from the source checks.",
+  "not_adopted": "Generated macro insets invent oversized cylindrical stud construction and cannot replace actual bolts, liners, inserts or guide hardware. No dimensions are accepted from the image."
+}

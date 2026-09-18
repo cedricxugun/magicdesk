@@ -1,0 +1,14 @@
+{
+  "status": "active",
+  "reliable_body_source": "0ba13905c764f4420306f1539604574303cdbf42f78d0436f92f0fe35c7baaa0",
+  "files": {
+    "blender/collection/probe_i_cradle_release_r65.py": "5d963fb130e12a665694f4522256f2a219b656ad71ce034f7a26bc8cf27986d0",
+    "blender/collection/probe_i_support_withdrawal_r65.py": "a91533c27516e43c0fd1f09f427edeb515bb7e6ae1ad361ca802a44e4ab7eb81",
+    "blender/collection/build_i_port_escape_r65.py": "b3b23aee5f40a601d65fa1f9923d55855e4fcfd67a8d27856d6ac97d8d0e21af",
+    "tests/collection/i_support_release_r65_review.gd": "129bc764de4b91454e63414dd16d5c9aacb9cb609459323d66e33992496c80b2"
+  },
+  "main_app_updated": false,
+  "new_body_candidate_saved": false,
+  "previous_goal_turn": "progress: separable seam stud candidates and fixed-shell/support dependency found",
+  "current_turn": "progress: source-consistent retained-stand/upper-lift/leg-withdrawal poses and renders; first port liner still invalid, exact failure evidence retained"
+}

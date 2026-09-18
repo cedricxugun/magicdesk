@@ -1,0 +1,151 @@
+00:03.173  blend            | Read blend: "/Users/cedric/Desktop/magic desk/blender/collection/I_nautilus_seam_release_r73.blend"
+00:32:04 | INFO: Data are loaded, start creating Blender stuff
+00:32:05 | INFO: Blender create Mesh node BASE_FIXED_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh.001
+00:32:05 | INFO: Blender create Mesh node Button_Index
+00:32:05 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh
+00:32:05 | INFO: Blender create Mesh node Button_Index.001
+00:32:05 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh.003
+00:32:05 | INFO: Blender create Mesh node Button_Index.002
+00:32:05 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh.004
+00:32:05 | INFO: Blender create Mesh node Button_Index.003
+00:32:05 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh.002
+00:32:05 | INFO: Blender create Mesh node Button_Index.004
+00:32:05 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh.005
+00:32:05 | INFO: Blender create Mesh node Button_Index.005
+00:32:05 | INFO: Blender create Mesh node BUTTON_06_CAP_Mesh
+00:32:05 | INFO: Blender create Mesh node Button_6_Bezel_Mesh
+00:32:05 | INFO: Blender create Mesh node Button_6_Index
+00:32:05 | INFO: Blender create Mesh node Deck_Serial
+00:32:05 | INFO: Blender create Mesh node P_Actuator_00_Barrel_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Actuator_00_Rod_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Actuator_01_Barrel_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Actuator_01_Rod_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Actuator_02_Barrel_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Actuator_02_Rod_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Actuator_03_Barrel_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Actuator_03_Rod_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Actuator_04_Barrel_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Actuator_04_Rod_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Actuator_05_Barrel_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Actuator_05_Rod_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node Icosphere
+00:32:05 | INFO: Blender create Mesh node P_Solar_Lattice_JoinedMesh
+00:32:05 | INFO: Blender create Mesh node P_Gimbal_2_Ring_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Gimbal_1_Ring_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Inner_Trunnions_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Core_Bottom_Bearing_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Gimbal_0_Ring_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Middle_Trunnions_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Core_Support_Post_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Lower_Stator_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_00_BaseJoint_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_01_BaseJoint_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_02_BaseJoint_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_03_BaseJoint_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_04_BaseJoint_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_05_BaseJoint_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Socket_Crown_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Thermal_Valve_0_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Thermal_Valve_1_JoinedMesh_CompactFeedthrough
+00:32:06 | INFO: Blender create Mesh node P_Thermal_Valve_2_JoinedMesh_CompactFeedthrough
+00:32:06 | INFO: Blender create Mesh node P_Crown_Sector_00_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Inspection_Filament_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Inspection_Window_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_00_Enamel_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_00_HingeCap_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_00_Latch_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node Petal_00_InnerSkin_Mesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_00_RibFrame_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Crown_Sector_01_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_01_Enamel_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_01_HingeCap_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_01_Latch_JoinedMesh
+00:32:06 | INFO: Blender create Mesh node Petal_01_InnerSkin_Mesh
+00:32:06 | INFO: Blender create Mesh node P_Petal_01_RibFrame_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Crown_Sector_02_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_02_Enamel_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_02_HingeCap_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_02_Latch_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node Petal_02_InnerSkin_Mesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_02_RibFrame_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Crown_Sector_03_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_03_Enamel_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_03_HingeCap_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_03_Latch_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node Petal_03_InnerSkin_Mesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_03_RibFrame_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Crown_Sector_04_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_04_Enamel_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_04_HingeCap_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_04_Latch_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node Petal_04_InnerSkin_Mesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_04_RibFrame_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Crown_Sector_05_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_05_Enamel_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_05_HingeCap_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_05_Latch_JoinedMesh
+00:32:07 | INFO: Blender create Mesh node Petal_05_InnerSkin_Mesh
+00:32:07 | INFO: Blender create Mesh node P_Petal_05_RibFrame_JoinedMesh
+00:32:08 | INFO: Blender create Mesh node TURNTABLE_JoinedMesh
+00:32:08 | INFO: glTF import finished in 3.25s
+CLAMP_RELEASE 0 0.0 [('socket_-1 / fixed', 753), ('right_stud / fixed', 154), ('socket_1 / upper_collar', 45)]
+CLAMP_RELEASE 0 0.0125 [('right_stud / fixed', 154), ('socket_-1 / upper_collar', 5418), ('socket_1 / right_stud', 5437)]
+CLAMP_RELEASE 0 0.025 [('right_stud / fixed', 154), ('socket_-1 / upper_collar', 5499), ('socket_1 / right_stud', 5502)]
+CLAMP_RELEASE 0 0.05 [('right_stud / fixed', 154), ('socket_-1 / upper_collar', 4872), ('socket_1 / right_stud', 4875)]
+CLAMP_RELEASE 0 0.075 [('right_stud / fixed', 154), ('socket_-1 / upper_collar', 4572), ('socket_1 / right_stud', 4564)]
+CLAMP_RELEASE 0 0.1 [('right_stud / fixed', 154), ('socket_-1 / upper_collar', 4224), ('socket_1 / right_stud', 4230)]
+CLAMP_RELEASE 0 0.15 [('right_stud / fixed', 154), ('socket_-1 / upper_collar', 3857), ('socket_1 / right_stud', 3839)]
+CLAMP_RELEASE 0 0.2 [('right_stud / fixed', 154), ('socket_-1 / upper_collar', 2878), ('socket_1 / right_stud', 2874)]
+CLAMP_RELEASE 0 0.3 [('right_stud / fixed', 154), ('socket_-1 / upper_collar', 1492), ('socket_1 / right_stud', 1498)]
+CLAMP_RELEASE 0 0.4 [('right_stud / fixed', 154)]
+CLAMP_RELEASE 0 0.5 [('right_stud / fixed', 154)]
+CLAMP_RELEASE 0 0.65 [('right_stud / fixed', 154)]
+CLAMP_RELEASE 0 0.8 [('right_stud / fixed', 154)]
+CLAMP_RELEASE 0 1.0 [('right_stud / fixed', 154)]
+CLAMP_RELEASE 1 0.0 [('right_stud / fixed', 154)]
+CLAMP_RELEASE 1 0.0125 []
+CLAMP_RELEASE 1 0.025 []
+CLAMP_RELEASE 1 0.05 []
+CLAMP_RELEASE 1 0.075 []
+CLAMP_RELEASE 1 0.1 []
+CLAMP_RELEASE 1 0.15 []
+CLAMP_RELEASE 1 0.2 []
+CLAMP_RELEASE 1 0.3 []
+CLAMP_RELEASE 1 0.4 []
+CLAMP_RELEASE 1 0.5 []
+CLAMP_RELEASE 1 0.65 [('right_stud / fixed', 35)]
+CLAMP_RELEASE 1 0.8 [('right_stud / fixed', 91)]
+CLAMP_RELEASE 1 1.0 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.0 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.0125 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.025 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.05 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.075 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.1 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.15 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.2 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.3 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.4 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.5 [('right_stud / fixed', 129)]
+CLAMP_RELEASE 2 0.65 [('right_stud / fixed', 129), ('upper_coupling / fixed', 66)]
+CLAMP_RELEASE 2 0.8 [('right_stud / fixed', 129), ('upper_coupling / fixed', 222)]
+CLAMP_RELEASE 2 1.0 [('right_stud / fixed', 129), ('upper_coupling / fixed', 411)]
+CLAMP_RELEASE 3 0.0 [('right_stud / fixed', 129), ('upper_coupling / fixed', 411)]
+CLAMP_RELEASE 3 0.0125 [('right_stud / fixed', 129), ('upper_coupling / fixed', 411)]
+CLAMP_RELEASE 3 0.025 [('right_stud / fixed', 129), ('upper_coupling / fixed', 411)]
+CLAMP_RELEASE 3 0.05 [('right_stud / fixed', 129), ('upper_coupling / fixed', 411), ('upper_collar / fixed', 272)]
+CLAMP_RELEASE 3 0.075 [('right_stud / fixed', 129), ('upper_coupling / fixed', 411), ('upper_collar / fixed', 354)]
+CLAMP_RELEASE 3 0.1 [('socket_1 / fixed', 22), ('right_stud / fixed', 129), ('upper_coupling / fixed', 411), ('upper_collar / fixed', 504)]
+CLAMP_RELEASE 3 0.15 [('socket_1 / fixed', 98), ('right_stud / fixed', 129), ('upper_coupling / fixed', 411), ('upper_collar / fixed', 780)]
+CLAMP_RELEASE 3 0.2 [('socket_1 / fixed', 156), ('right_stud / fixed', 129), ('upper_coupling / fixed', 411), ('upper_collar / fixed', 889)]
+CLAMP_RELEASE 3 0.3 [('socket_1 / fixed', 387), ('right_stud / fixed', 129), ('upper_coupling / fixed', 411), ('upper_collar / fixed', 1268)]
+CLAMP_RELEASE 3 0.4 [('socket_1 / fixed', 683), ('right_stud / fixed', 129), ('upper_coupling / fixed', 411), ('upper_collar / fixed', 1386)]
+CLAMP_RELEASE 3 0.5 [('socket_1 / fixed', 130), ('right_stud / fixed', 129), ('upper_coupling / fixed', 411), ('upper_collar / fixed', 1745)]
+CLAMP_RELEASE 3 0.65 [('right_stud / fixed', 129), ('upper_coupling / fixed', 411), ('upper_collar / fixed', 2002)]
+CLAMP_RELEASE 3 0.8 [('socket_1 / fixed', 564), ('right_stud / fixed', 129), ('upper_coupling / fixed', 411), ('upper_collar / fixed', 1813)]
+CLAMP_RELEASE 3 1.0 [('socket_1 / fixed', 98), ('right_stud / fixed', 129), ('upper_coupling / fixed', 411), ('upper_collar / fixed', 1922)]
+THREAD_INTERLOCK [{'socket': 'IC73_SeamSocket_-1', 'helical_contacts': 5300, 'axial_only_contacts': 5319}, {'socket': 'IC73_SeamSocket_1', 'helical_contacts': 5290, 'axial_only_contacts': 5332}]
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

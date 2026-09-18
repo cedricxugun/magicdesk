@@ -1,0 +1,5 @@
+00:02.344  blend            | Read blend: "/Users/cedric/Desktop/magic desk/blender/collection/I_nautilus_seam_release_r73.blend"
+BASELINE_COLLARS [{"name": "IC1_CollarUpper", "nonmanifold": 0, "volume": 0.0040929348737194175, "self_contacts": 2, "pairs": [[7196, 10933], [7196, 11003]]}, {"name": "IC1_CollarLower", "nonmanifold": 0, "volume": 0.004300185531939914, "self_contacts": 0, "pairs": []}]
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

@@ -1,0 +1,939 @@
+{
+  "version": 1,
+  "updated_on": "2026-09-18",
+  "authorization": "Latest user direction: finish the tidal ship G2 first, then pause G and do F/I/J/K/L/M/N; return to remaining G last. Continue autonomously without per-stage prompts.",
+  "automation_id": "magicdesk",
+  "status": "active",
+  "order": [
+    "G2",
+    "F",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "G_remaining"
+  ],
+  "preserve": "B",
+  "current_model": "I",
+  "current_work": "Git handoff: main R68 unchanged. R73 independent seam-thread candidate has corrected radial interlock and passing local scaled-helical checks; early whole-clamp probe has invalid screw sign/unit assumptions. R74 intact mouth+closed collar path clears 82 old-source poses but does not prove coupling thread disengagement. R75 six true short coupling threads failed collar topology/self checks before save; no R75 model exists. Continue actual thread/bore joins and old upper-collar contacts, then real full-mouth extraction and complete service. R71 animation and entire refinement goal remain active.",
+  "quality_target": "AAA game quality target; completion requires real visual and interaction evidence, not script pass or concept images.",
+  "models": [
+    {
+      "id": "G",
+      "status": "deferred_remaining_after_N",
+      "stages": {
+        "design_match": {
+          "status": "partial",
+          "evidence": [
+            "review/G_optical_curator/observatory_r2/component_front.png",
+            "review/G_optical_curator/observatory_r2/component_side.png",
+            "review/G_optical_curator/observatory_r2/component_rear.png",
+            "review/G_optical_curator/observatory_r2/app/play_1.png"
+          ],
+          "remaining": "G0/G1 have first rebuilt development passes; G2 independent source begun; whole G incomplete."
+        },
+        "structure_and_clearance": {
+          "status": "partial",
+          "evidence": [
+            "review/G_optical_curator/service/sweep_report.json",
+            "review/G_optical_curator/connection_report.json",
+            "review/G_optical_curator/source_animation_report.json",
+            "review/G_optical_curator/operating/reader_clearance.json",
+            "review/G_optical_curator/operating/reader_other_motion_fingerprint.json",
+            "review/G_optical_curator/observatory_r2/gear_clearance.json",
+            "review/G_optical_curator/observatory_r2/mount_clearance.json",
+            "review/G_optical_curator/observatory_r2/external_clearance.json",
+            "review/G_optical_curator/butterfly_r2/hardware_clearance.json",
+            "review/G_optical_curator/butterfly_r2/player_clearance.json"
+          ],
+          "remaining": "Initial contact pairs still need close-up inspection; full curiosity mechanisms are not covered by this pass."
+        },
+        "detail": {
+          "status": "partial",
+          "evidence": [
+            "review/G_optical_curator/butterfly_r2/component_rear.png",
+            "review/G_optical_curator/butterfly_r2/hinge_detail.png"
+          ],
+          "remaining": "Independent G1 rear and hinge hardware detailed; whole G/remaining curiosities and runtime visible quality still incomplete."
+        },
+        "materials": {
+          "status": "partial",
+          "evidence": [
+            "review/G_optical_curator/lighting/08_coated_optical_candidate_head.png",
+            "app/assets/collection/lighting_profiles.json",
+            "production/G_optical_curator/observatory_materials/README.md",
+            "review/G_optical_curator/observatory_materials/after_close.png",
+            "review/G_optical_curator/observatory_materials/after_desktop.png",
+            "review/G_optical_curator/observatory_materials/source_finish_sync.json",
+            "app/assets/collection/butterfly_materials.json",
+            "review/G_optical_curator/butterfly_r2/materials/after_close.png"
+          ],
+          "remaining": "G0 received separate porcelain/brass/nickel/copper/enamel finishes; whole machine and remaining curiosities still need refinement."
+        },
+        "lighting": {
+          "status": "partial",
+          "evidence": [
+            "production/G_optical_curator/LIGHTING_REVIEW.md",
+            "review/G_optical_curator/lighting/probe.json",
+            "review/G_optical_curator/lighting/profile_qa.json",
+            "review/G_optical_curator/service/03_full_service.png"
+          ],
+          "remaining": "Normal reading/printing/recovery states and curiosity-specific lighting remain to inspect; service pose re-rendered with current profile."
+        },
+        "vfx": {
+          "status": "partial",
+          "evidence": [
+            "production/G_optical_curator/OPERATING_REVIEW.md",
+            "review/G_optical_curator/operating/flow_qa.json",
+            "review/G_optical_curator/operating/flow_only_mechanical_fingerprint.json",
+            "production/G_optical_curator/observatory_interaction/storyboard.png",
+            "review/G_optical_curator/observatory_interaction/04_resonate.png",
+            "production/G_optical_curator/butterfly_runtime/README.md",
+            "review/G_optical_curator/butterfly_r2/runtime/panel_seal_review.mp4"
+          ],
+          "remaining": "G0 authored calibration mask and local resonance cues integrated; normal desktop-size readability, full creation/recovery and GPU source VFX remain incomplete."
+        },
+        "performance_animation": {
+          "status": "partial",
+          "evidence": [
+            "production/G_optical_curator/observatory_interaction/README.md",
+            "review/G_optical_curator/observatory_interaction/interaction_qa.json",
+            "review/G_optical_curator/observatory_interaction/source_sync.json",
+            "review/G_optical_curator/butterfly_r2/runtime/candidate_qa.json",
+            "review/G_optical_curator/butterfly_r2/full_take/source_animation_report.json"
+          ],
+          "remaining": "Only G0 time adjustment and resonance revised; other curiosities, full presentation and native physical input remain."
+        },
+        "controls_and_force": {
+          "status": "partial",
+          "evidence": [
+            "production/G_optical_curator/observatory_interaction/README.md",
+            "review/G_optical_curator/observatory_interaction/interaction_qa.json",
+            "review/G_optical_curator/observatory_interaction/source_sync.json",
+            "review/G_optical_curator/observatory_interaction/desktop/interaction_qa.json",
+            "production/G_optical_curator/observatory_controls/README.md",
+            "review/G_optical_curator/observatory_controls/gesture_qa.json"
+          ],
+          "remaining": "G0 has precise wheel/drag response and physical readout; native small text and the remaining five curiosities need refinement."
+        },
+        "native_mac_review": {
+          "status": "partial",
+          "evidence": [
+            "review/G_optical_curator/native_controls/native_input_report.json",
+            "review/G_optical_curator/butterfly_r2/native/native_input_report.json"
+          ],
+          "remaining": "Independent arm64 review bundle only; G0 native pointer/quit verified. Whole-device/all-model performance, full choreography and release acceptance pending."
+        }
+      },
+      "issues": [
+        "G0/G1 and G2 R3 are first development passes, not whole G or AAA acceptance.",
+        "Remaining curiosities and whole-G polish deferred until after F/I/J/K/L/M/N by latest user direction."
+      ],
+      "curiosities": [
+        {
+          "index": 0,
+          "status": "first_pass_pending_whole_G_review",
+          "reference": "production/G_optical_curator/observatory_r2/modeling_reference.png",
+          "next": "Revisit during whole-G polish for small native lettering, performance, complete VFX and final source/runtime parity.",
+          "issues": [
+            "Native lettering remains small despite clearer labels/readout.",
+            "Native captured FPS 42-44 is below a 60 FPS target; snapshots are not a benchmark.",
+            "Complete VFX, runtime text source parity and final acceptance remain pending."
+          ],
+          "geometry_pass": "integrated",
+          "source": "blender/collection/G_observatory_r2.blend",
+          "implementation": "production/G_optical_curator/observatory_r2/IMPLEMENTATION.md",
+          "interaction_pass": "integrated_pending_native_review",
+          "interaction_evidence": "production/G_optical_curator/observatory_interaction/README.md",
+          "material_pass": "integrated_with_source_sync",
+          "material_evidence": "production/G_optical_curator/observatory_materials/README.md",
+          "native_input_pass": "partial"
+        },
+        {
+          "index": 1,
+          "status": "first_pass_pending_whole_G_review",
+          "title": "瓷翼机械蝶",
+          "next": "Revisit whole-G native lettering/performance, sustained native hold and mid-print cancellation. Proceed to G2.",
+          "reference": "production/G_optical_curator/butterfly_r2/structure_and_motion.png",
+          "source": "blender/collection/G_butterfly_runtime_candidate.blend",
+          "implementation": "production/G_optical_curator/butterfly_r2/README.md",
+          "issues": [
+            "Initial G1 selection before resumed session was not performed by this review",
+            "Attempted partial-print native cancel arrived after printing completed; partial native cancellation unverified",
+            "Exact exported PCK headless control replay passes partial cancel; distinct from native input",
+            "Native gesture recorded no nonzero charge sample; sustained hold peak is only covered by scripted replay",
+            "Not stable 60 FPS; frame intervals include CUA capture and OS scheduling",
+            "Small physical lettering and whole-G choreography remain to refine",
+            "No final visual/AAA acceptance; curiosities 2-5 remain old"
+          ],
+          "geometry_pass": "integrated_with_animated_source",
+          "evidence": [
+            "review/G_optical_curator/butterfly_r2/component_open.png",
+            "review/G_optical_curator/butterfly_r2/component_rear.png",
+            "review/G_optical_curator/butterfly_r2/drive_closure.json",
+            "review/G_optical_curator/butterfly_r2/wing_clearance.json",
+            "review/G_optical_curator/butterfly_r2/hinge_detail.png",
+            "review/G_optical_curator/butterfly_r2/mount_socket.png",
+            "review/G_optical_curator/butterfly_r2/hardware_clearance.json",
+            "review/G_optical_curator/butterfly_r2/player_clearance.json",
+            "review/G_optical_curator/butterfly_r2/runtime/candidate_qa.json",
+            "review/G_optical_curator/butterfly_r2/runtime/open.png",
+            "production/G_optical_curator/butterfly_runtime/fabrication_storyboard.png",
+            "review/G_optical_curator/butterfly_r2/runtime/panel_seal_review.mp4",
+            "review/G_optical_curator/butterfly_r2/runtime/seal_field_qa.json",
+            "review/G_optical_curator/butterfly_r2/runtime/panel_seal_report.json",
+            "production/G_optical_curator/butterfly_runtime/MATERIAL_SOURCE.md",
+            "review/G_optical_curator/butterfly_r2/materials/after_close.png",
+            "review/G_optical_curator/butterfly_r2/full_take/blender_bake.json",
+            "review/G_optical_curator/butterfly_r2/full_take/source_animation_report.json",
+            "review/G_optical_curator/butterfly_r2/native/native_input_report.json",
+            "review/G_optical_curator/butterfly_r2/promotion.json",
+            "review/G_optical_curator/butterfly_r2/promoted/candidate_qa.json"
+          ],
+          "runtime_candidate": "app/assets/collection/models/G_optical_curator_butterfly_candidate.glb",
+          "runtime_evidence": "production/G_optical_curator/butterfly_runtime/README.md",
+          "panel_seal_pass": "candidate_visual_iteration",
+          "material_pass": "candidate_and_source_synced",
+          "source_pass": "mechanical_face_console_and_panel_seal_baked",
+          "native_input_pass": "partial",
+          "native_evidence": "production/G_optical_curator/butterfly_runtime/NATIVE_CHECKPOINT.md"
+        },
+        {
+          "index": 2,
+          "status": "in_progress",
+          "title": "潮汐帆船",
+          "reference": "production/G_optical_curator/ship_r2/structure_and_motion.png",
+          "source": "blender/collection/G_ship_r2.blend",
+          "next": "New source art and rebuild of physically legible wave drive, then source/runtime/native verification. Existing bake is a superseded functional baseline, not an approved finished ship.",
+          "implementation": "production/G_optical_curator/ship_r2/README.md",
+          "evidence": [
+            "production/G_optical_curator/ship_r2/structure_and_motion.png",
+            "review/G_optical_curator/ship_r2/component_calm.png",
+            "review/G_optical_curator/ship_r2/component_tide.png",
+            "review/G_optical_curator/ship_r2/source_check.json",
+            "review/G_optical_curator/ship_r2/hardware_clearance.json",
+            "review/G_optical_curator/ship_r2/player_clearance.json",
+            "review/G_optical_curator/ship_r2/runtime/after_close.png",
+            "production/G_optical_curator/ship_r2/fabrication_storyboard.png",
+            "review/G_optical_curator/ship_r2/drive/headless_qa.json",
+            "review/G_optical_curator/ship_r2/drive/gpu_qa.json",
+            "app/assets/collection/ship_fabrication.json"
+          ],
+          "geometry_pass": "independent_source_initial_bounded_checks",
+          "issues": [
+            "User rejects wave-drive detail and visible physical wave motion; current 0.006 eccentric travel is too subtle at desktop scale.",
+            "Main/native app still uses old ship; isolated candidate now has new realtime drive and first authored fabrication implementation.",
+            "Full edited-source motion/VFX synchronization not complete.",
+            "Actual GPU fabrication visual inspection and further native input/performance remain.",
+            "Sampled surface checks are not a guarantee for every internal contact or continuous dynamic extreme."
+          ]
+        },
+        {
+          "index": 3,
+          "status": "pending",
+          "next": "Deferred until F/I/J/K/L/M/N have completed their passes per latest user priority."
+        },
+        {
+          "index": 4,
+          "status": "pending",
+          "next": "Deferred until F/I/J/K/L/M/N have completed their passes per latest user priority."
+        },
+        {
+          "index": 5,
+          "status": "pending",
+          "next": "Deferred until F/I/J/K/L/M/N have completed their passes per latest user priority."
+        }
+      ],
+      "g2_checkpoint": "review/G_optical_curator/ship_r3/promotion.json"
+    },
+    {
+      "id": "F",
+      "status": "first_refinement_pass_reviewed_pending_global_acceptance",
+      "stages": {
+        "design_match": {
+          "status": "current_reference_visually_compared_partial",
+          "evidence": [
+            "production/F_complete/revision_20260911/VISUAL_AUDIT.md",
+            "review/F_complete/revision_20260911/guidance_render/F_arrived.png",
+            "review/F_complete/revision_20260911/native/db057_live/08_service_left.png"
+          ],
+          "remaining": "Close-up final art acceptance and all-part continuous-motion checks remain."
+        },
+        "structure_and_clearance": {
+          "status": "partial_actual_installation_sweep",
+          "evidence": [
+            "review/F_complete/revision_20260911/console_clearance.json",
+            "review/F_complete/revision_20260911/installation/selector_sweep_check.json",
+            "review/F_complete/revision_20260911/upper_base_clearance.json",
+            "review/F_complete/revision_20260911/gears/mesh_check.json",
+            "review/F_complete/revision_20260911/gears/neighbor_check.json",
+            "review/F_complete/revision_20260911/gears/dense_service_check.json"
+          ],
+          "remaining": "All-part and continuous-volume clearance, including full reversal paths; sampled upper/base and cowl/control subsets are now recorded."
+        },
+        "detail": {
+          "status": "gears_and_console_refined_reviewed",
+          "evidence": [
+            "review/F_complete/revision_20260911/console_clearance.json",
+            "review/F_complete/revision_20260911/lighting/E_console_neutral.png",
+            "production/F_complete/revision_20260911/GEARS.md",
+            "review/F_complete/revision_20260911/gears/render/B_involute_neutral.png"
+          ],
+          "remaining": "Final all-device visual acceptance and very small detail readability; current tooth-profile issue corrected."
+        },
+        "materials": {
+          "status": "per_part_finish_applied_with_source_sync",
+          "evidence": [
+            "production/F_complete/revision_20260911/FINISH.md",
+            "review/F_complete/revision_20260911/finish/review.json",
+            "review/F_complete/revision_20260911/finish/source_sync.json",
+            "review/F_complete/revision_20260911/finish/package_binding.json"
+          ],
+          "remaining": "Normal desktop final visual review, broad reflection and very small feature readability. Not AAA acceptance."
+        },
+        "lighting": {
+          "status": "configured_after_gpu_ab",
+          "evidence": [
+            "review/F_complete/revision_20260911/lighting/review.json",
+            "review/F_complete/revision_20260911/lighting_profile_qa.json",
+            "review/F_complete/revision_20260911/lighting/canvas_white.png",
+            "review/F_complete/revision_20260911/lighting/canvas_dark.png"
+          ],
+          "remaining": "Complete all action/recovery states, source sync and native check; no visual acceptance claim."
+        },
+        "vfx": {
+          "status": "configured_after_gpu_ab",
+          "evidence": [
+            "production/F_complete/revision_20260911/lighting_and_controls.png",
+            "review/F_complete/revision_20260911/lighting/D_defined_tuned_fx.png",
+            "review/F_complete/revision_20260911/full_take/source_peak.png",
+            "review/F_complete/revision_20260911/full_take/gpu_capture_parity.json",
+            "review/F_complete/revision_20260911/optical_probe/comparison.json",
+            "review/F_complete/revision_20260911/full_take/optical_preview_sync.json"
+          ],
+          "remaining": "Whole-scene appearance/post-processing and native checks; backend-specific atlas probe now matched closely, not full pixel parity."
+        },
+        "performance_animation": {
+          "status": "isolated_source_baked_with_sampled_parity",
+          "evidence": [
+            "review/F_complete/revision_20260911/full_take/candidate_bake.json",
+            "review/F_complete/revision_20260911/full_take/source_verification.json",
+            "review/F_complete/revision_20260911/full_take/gpu_capture_parity.json",
+            "review/F_complete/revision_20260911/cancel_rise_qa.json",
+            "review/F_complete/revision_20260911/cancel_rise_gpu.json",
+            "review/F_complete/revision_20260911/reversal_qa.json",
+            "review/F_complete/revision_20260911/movie/F_refinement.mp4",
+            "review/F_complete/revision_20260911/idle_effect_before.json",
+            "review/F_complete/revision_20260911/idle_effect_qa.json",
+            "review/F_complete/revision_20260911/gears/post_bake_binding.json",
+            "review/F_complete/revision_20260911/gears/render/review.json"
+          ],
+          "remaining": "Native review and real runtime frame timing; fixed-step movie is not a performance benchmark."
+        },
+        "controls_and_force": {
+          "status": "native_adjustment_and_contextual_guidance_checked",
+          "evidence": [
+            "review/F_complete/revision_20260911/control_response_baseline.json",
+            "review/F_complete/revision_20260911/console_runtime_qa.json",
+            "review/F_complete/revision_20260911/calibration_feedback.json",
+            "review/F_complete/revision_20260911/instrument_qa.json",
+            "review/F_complete/revision_20260911/native/db057_live/native_input_report.json",
+            "review/F_complete/revision_20260911/guidance_qa.json",
+            "review/F_complete/revision_20260911/guidance_render/F_help.png"
+          ],
+          "finding": "Original input ranges do not sustain stop contact across 15 tested endpoint/neutral combinations; steady angles -47.26 to -37.36 degrees. Blind force reduction would reduce readability. Improve control feedback and earned-calibration behavior first; production physics unchanged."
+        },
+        "native_mac_review": {
+          "status": "daily_package_native_partial_verified",
+          "evidence": [
+            "review/F_complete/revision_20260911/native/build.json",
+            "review/F_complete/revision_20260911/native/packed_checks/pack_binding.json",
+            "review/F_complete/revision_20260911/native/packed_checks/console_qa.json",
+            "review/F_complete/revision_20260911/native/db057_live/native_input_report.json",
+            "review/F_complete/revision_20260911/native/guidance_live/build.json",
+            "review/macos_current/f_guidance_native/native_input_report.json",
+            "review/F_complete/revision_20260911/native/guidance_live/native_help_report.json",
+            "review/F_complete/revision_20260911/gears/native/native_input_report.json"
+          ],
+          "remaining": "Sustained brake hold, actual proximity hover, final performance and final art review. No longer awaiting manual unlock."
+        }
+      },
+      "issues": [
+        "First refinement pass reviewed, not final AAA acceptance.",
+        "Sustained native brake/proximity hover and representative stable frame timing remain for global regression.",
+        "Very small detail/whole-scene reflections and final multi-model art review remain."
+      ]
+    },
+    {
+      "id": "I",
+      "status": "one_actual_nautilus_hinge_candidate_others_and_art_pending",
+      "stages": {
+        "design_match": {
+          "status": "mouth_relation_corrected_candidate_unlocked",
+          "evidence": [
+            "production/I_refinement/r1/structure_and_motion.png",
+            "review/I_refinement/r1/hero_closed.png",
+            "production/I_refinement/service_r7/split_cage_storyboard.png",
+            "concepts/collection_20260909/I_回声海螺.png",
+            "production/I_refinement/DESIGN_DRIFT_AUDIT.md",
+            "production/I_refinement/part_a_mouth/shutter_r2/shutter_motion_r2.png",
+            "review/I_refinement/part_a_mouth/shutter_r2/runtime/rest_oblique.png",
+            "production/I_refinement/part_a_mouth/shutter_r2/cassette/front_guides/guide_return_detail_r1.png",
+            "production/I_refinement/part_a_mouth/shutter_r2/cassette/diaphragm/suspension_motion_r1.png"
+          ],
+          "remaining": "Front guide/return detail is designed and instantiated locally, but the whole A silhouette/craft and original conch are not accepted. Continue local visual/performance refinement, then B/C and full-device comparison."
+        },
+        "structure_and_clearance": {
+          "status": "front_guides_and_returns_sampled_pass_full_clearance_pending",
+          "evidence": [
+            "review/I_refinement/r1/structure_check.json",
+            "review/I_refinement/r1/iris_check.json",
+            "review/I_refinement/r1/cam_check.json",
+            "review/I_refinement/r1/shell_clearance.json",
+            "review/I_refinement/r2/pneumatic_check.json",
+            "review/I_refinement/r2/hardware_shell_check.json",
+            "review/I_refinement/support_r3/support_check.json",
+            "review/I_refinement/support_r3/base_probe.json",
+            "review/I_refinement/service_r4/clearance.json",
+            "review/I_refinement/assembly_r5/manufacturing_check.json",
+            "review/I_refinement/assembly_r5/clearance.json",
+            "review/I_refinement/service_r7/clearance.json",
+            "review/I_refinement/service_r7/reservoir_exit.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/rest_geometry.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/cassettes/geometry_check.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/cassettes/hardware_check.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/cassettes/preservation.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/front_guides/geometry_check.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/front_guides/hardware_check.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/metal_finish/geometry_check.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/metal_finish/hardware_check.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/diaphragm/geometry_check.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/diaphragm/suspension_check.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/diaphragm/checkpoint.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/diaphragm/combination_check.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/diaphragm/glb_geometry_check.json"
+          ],
+          "remaining": "61 source foil frames, nine relative-hardware samples and actual bearing/mount checks pass. Continuous collision, volume containment, full source disassembly, complete conch and art acceptance not certified."
+        },
+        "detail": {
+          "status": "attached_guides_and_open_returns_candidate",
+          "evidence": [
+            "review/I_refinement/part_a_mouth/shutter_r2/cassettes/runtime/cassette_0_isolated.png",
+            "review/I_refinement/part_a_mouth/shutter_r2/cassettes/runtime/cassette_0_motor_cutaway.png",
+            "review/I_refinement/part_a_mouth/shutter_r2/front_guides/runtime/front_guide_detail.png",
+            "review/I_refinement/part_a_mouth/shutter_r2/front_guides/runtime/return_detail_000.png",
+            "review/I_refinement/part_a_mouth/shutter_r2/front_guides/runtime/return_detail_050.png",
+            "review/I_refinement/part_a_mouth/shutter_r2/metal_finish/studio/grille_detail.png"
+          ],
+          "remaining": "Refine cast/formed surface quality, side details and full-mouth visual composition against the design; do not equate source passes with final craft."
+        },
+        "materials": {
+          "status": "guard_authored_brushing_and_metal_layers_candidate",
+          "evidence": [
+            "review/I_refinement/part_a_mouth/shutter_r2/metal_finish/studio/reference_100.png",
+            "review/I_refinement/part_a_mouth/shutter_r2/metal_finish/studio/return_detail.png"
+          ],
+          "remaining": "Local guard finish verified in same studio. Whole A materials, rear structures and original conch art still incomplete."
+        },
+        "lighting": {
+          "status": "isolated_mouth_studio_revised_full_device_pending",
+          "evidence": [
+            "production/I_refinement/part_a_mouth/shutter_r2/cassette/studio/README.md",
+            "review/I_refinement/part_a_mouth/shutter_r2/studio_r1/review.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/studio_r1/checkpoint.json"
+          ],
+          "remaining": "Fine macro shadow grain remains. New studio only wired to independent viewer source; not exported native package or main collection. Materials and whole-device performance/visual acceptance remain."
+        },
+        "vfx": {
+          "status": "current_mouth_authored_wavefront_and_cues_candidate",
+          "evidence": [
+            "production/I_refinement/r1/acoustic_atlas.png",
+            "production/I_refinement/r1/atlas_manifest.json",
+            "production/I_refinement/r1/BEHAVIOR.md",
+            "review/I_refinement/r2/echo_preview.json",
+            "review/I_refinement/r2/return_visibility.json",
+            "review/I_refinement/r2/runtime_echo/review.json",
+            "production/I_refinement/part_a_mouth/shutter_r2/cassette/echo_r2/README.md",
+            "review/I_refinement/part_a_mouth/shutter_r2/echo_r2/checkpoint.json"
+          ],
+          "remaining": "Current wavefront/cue candidate reviewed offline in Metal; native audio/visual refinement and music coordination remain. Full conch and final art acceptance not complete."
+        },
+        "performance_animation": {
+          "status": "connected_suspension_load_rebound_cancel_candidate",
+          "evidence": [
+            "review/I_refinement/r2/runtime/review.json",
+            "review/I_refinement/support_r3/morph_runtime/review.json",
+            "review/I_refinement/service_r4/runtime/review.json",
+            "review/I_refinement/assembly_r5/runtime/review.json",
+            "review/I_refinement/service_r7/runtime/review.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/tongue_probe/feedback_take.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/cassettes/runtime/review.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/cassettes/checkpoint.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/front_guides/source_poses.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/front_guides/runtime_pose_qa.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/front_guides/runtime/review.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/metal_finish/runtime_pose_qa.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/diaphragm/response_qa.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/diaphragm/runtime/review.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/diaphragm/motion/video.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/diaphragm/rig_qa.json"
+          ],
+          "remaining": "Complete suspension x tongue x disassembly combinations, actual source/runtime morph fidelity, real controls/audio and original-art performance acceptance. New module has not been connected to old six-leaf acoustics or main App."
+        },
+        "controls_and_force": {
+          "status": "coupled_mouth_aperture_pressure_suspension_preview",
+          "evidence": [
+            "review/I_refinement/r2/acoustics_qa.json",
+            "review/I_refinement/r2/pneumatic_take.json",
+            "production/I_refinement/console_r1/build.json",
+            "review/I_refinement/console_r1/clearance.json",
+            "review/I_refinement/console_r1/runtime/review.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/diaphragm/measured_acoustics_qa.json",
+            "production/I_refinement/part_a_mouth/shutter_r2/cassette/diaphragm/NATIVE_RESPONSE.md",
+            "production/I_refinement/moonlight/current_mouth/READABILITY.md"
+          ],
+          "remaining": "Measured three-tongue aperture bound in independent engine; true audio, native controls and full combined visible rig still to connect. Main App legacy behavior retained."
+        },
+        "native_mac_review": {
+          "status": "current_mouth_music_play_pause_stop_observed_full_acceptance_pending",
+          "evidence": [
+            "review/I_refinement/part_a_mouth/shutter_r2/tongue_set/native/native_check.json",
+            "review/I_refinement/part_a_mouth/shutter_r2/diaphragm/native/native_check.json",
+            "review/I_refinement/moonlight/current_mouth/native/native_check.json",
+            "review/I_refinement/moonlight/current_mouth/readability/native/native_check.json"
+          ],
+          "remaining": "Manual H hold, focus cancellation and full native story/whole App acceptance remain. Exported part viewer intentionally has no audio or full conch."
+        }
+      },
+      "issues": [
+        "Continue from R8 69b82a67: compact rear flange, hollow core and machined receiver pocket pass their scoped topology/mating/9-pose checks. Whole I remains unfinished: old chamber islands and 39 attachment contacts, real end seats/load path, three cover mechanisms, local thin regions and music view/materials/native checks. Next build real chamber seats; do not resume rejected blanket wall trials as the production baseline.",
+        "Mouth relation correction d84b7d87: side-front mounting and swept cowl, fixed lower cheek and three upper covers. Nine sampled exterior poses pass; disconnected core/cowl islands, actual supports, cassette refit and new oblique staff readability remain. Not locked or exported to native App.",
+        "Latest user rejects nautilus mouth orientation, location and connection to shell. Correct primary volume against centered_r2 target before native packaging or power detail. Preserve four-cassette source 3024d92e; previous checks do not validate corrected geometry.",
+        "Three other cassettes and their real mounting footprints",
+        "Guide-jacket retention, power drive, rotary drive and stops",
+        "Final housings, material assets and musical chamber VFX",
+        "Fine thread representation, full-A/optics/base/plaque/containment/continuous checks",
+        "Whole native App/input/performance/art acceptance",
+        "Full Moonlight score/audio mapping remains estimated; central score placement is retained.",
+        "New round shape and current neutral materials remain unaccepted; old C3 was rejected."
+      ],
+      "intake": "production/I_refinement/INTAKE.md",
+      "baseline_native": "review/I_refinement/intake/",
+      "production": "production/I_refinement/moonlight/current_mouth/READABILITY.md",
+      "source": "blender/collection/I_diaphragm_response.blend",
+      "music": {
+        "work": "Beethoven Piano Sonata No.14 Op.27 No.2 Moonlight",
+        "scope": "complete_three_movements",
+        "status": "four_tail_anchors_corrected_full_alignment_review_pending",
+        "reference": "production/I_refinement/moonlight/README.md",
+        "art": "production/I_refinement/restore_r9/moonlight_motion_r2.png",
+        "implementation": "production/I_refinement/moonlight/current_mouth/README.md",
+        "full_take": "review/I_refinement/moonlight/full_take.json",
+        "latest_user_reminder": "2026-09-13: Do not forget full Moonlight Sonata and real synchronized staff at the conch mouth. Mechanical cues must not interfere with music.",
+        "preservation_evidence": "review/I_refinement/moonlight/reminder_preservation_20260913.json",
+        "native_evidence": "review/I_refinement/moonlight/current_mouth/readability/native/native_check.json",
+        "local_alignment_review": "production/I_refinement/moonlight/onset_refinement/README.md",
+        "audio_cleanup": "review/I_refinement/moonlight/mp3_clean/report.json"
+      },
+      "rejected_source": "blender/collection/I_restore_r9.blend",
+      "reference": "concepts/collection_20260909/I_回声海螺.png",
+      "shape_contract": "production/I_refinement/conch_r13/shape_contract.json",
+      "part_order": [
+        "A_mouth",
+        "B_shell_mechanism",
+        "C_core_support",
+        "integrate_music_and_full_device"
+      ],
+      "superseded_issues": [
+        "Internally rejected radial six/nine leaf layout after original image comparison. Latest Part A asymmetric REST fixes a form interpretation error; not user art acceptance. Nine-leaf source retains known nonmanifold foil edges and is not a fallback accepted version.",
+        "Original selected I supersedes later generated R7/R8 references. Split-cage maintenance emphasis and sparse core drift from spiral breathing shell and acoustic response; correct normal-operation design first.",
+        "R7 solves the trapped-reservoir layout with opening half-cages; actual hinge hardware and full initial/transit clearances remain mandatory before acceptance or App promotion.",
+        "R5 front manufacturing and4 guide mounts fixed without new sampled contact pairs; whole initial/transit geometry remains unaccepted, including3 unshifted guide/cage interfaces.",
+        "R4 service endpoints spaced but initial/transit intergroup contacts remain; inspection passed=false. Do not promote or repeat R1/R3 instead of repairing these.",
+        "Lower support gaps repaired in independent R3; remaining old upper joints, full service disassembly, main module/audio/input still pending.",
+        "New pneumatic hardware versus porcelain checked at21 openings/rest and charged; other geometry scopes remain.",
+        "Receiver arrival now visible in isolated Metal preview; overall materials and visual refinement remain below final target.",
+        "Physical console/audio/main module integration and native input not yet done."
+      ],
+      "current_entry": "production/I_refinement/nautilus_r1/receiver_pocket_r8/README.md",
+      "latest_checkpoint": "review/I_refinement/nautilus_r1/receiver_pocket_r8/checkpoint.json"
+    },
+    {
+      "id": "J",
+      "status": "queued",
+      "stages": {
+        "design_match": {
+          "status": "pending",
+          "evidence": []
+        },
+        "structure_and_clearance": {
+          "status": "pending",
+          "evidence": []
+        },
+        "detail": {
+          "status": "pending",
+          "evidence": []
+        },
+        "materials": {
+          "status": "pending",
+          "evidence": []
+        },
+        "lighting": {
+          "status": "pending",
+          "evidence": []
+        },
+        "vfx": {
+          "status": "pending",
+          "evidence": []
+        },
+        "performance_animation": {
+          "status": "pending",
+          "evidence": []
+        },
+        "controls_and_force": {
+          "status": "pending",
+          "evidence": []
+        },
+        "native_mac_review": {
+          "status": "pending",
+          "evidence": []
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "K",
+      "status": "queued",
+      "stages": {
+        "design_match": {
+          "status": "pending",
+          "evidence": []
+        },
+        "structure_and_clearance": {
+          "status": "pending",
+          "evidence": []
+        },
+        "detail": {
+          "status": "pending",
+          "evidence": []
+        },
+        "materials": {
+          "status": "pending",
+          "evidence": []
+        },
+        "lighting": {
+          "status": "pending",
+          "evidence": []
+        },
+        "vfx": {
+          "status": "pending",
+          "evidence": []
+        },
+        "performance_animation": {
+          "status": "pending",
+          "evidence": []
+        },
+        "controls_and_force": {
+          "status": "pending",
+          "evidence": []
+        },
+        "native_mac_review": {
+          "status": "pending",
+          "evidence": []
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "L",
+      "status": "queued",
+      "stages": {
+        "design_match": {
+          "status": "pending",
+          "evidence": []
+        },
+        "structure_and_clearance": {
+          "status": "pending",
+          "evidence": []
+        },
+        "detail": {
+          "status": "pending",
+          "evidence": []
+        },
+        "materials": {
+          "status": "pending",
+          "evidence": []
+        },
+        "lighting": {
+          "status": "pending",
+          "evidence": []
+        },
+        "vfx": {
+          "status": "pending",
+          "evidence": []
+        },
+        "performance_animation": {
+          "status": "pending",
+          "evidence": []
+        },
+        "controls_and_force": {
+          "status": "pending",
+          "evidence": []
+        },
+        "native_mac_review": {
+          "status": "pending",
+          "evidence": []
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "M",
+      "status": "queued",
+      "stages": {
+        "design_match": {
+          "status": "pending",
+          "evidence": []
+        },
+        "structure_and_clearance": {
+          "status": "pending",
+          "evidence": []
+        },
+        "detail": {
+          "status": "pending",
+          "evidence": []
+        },
+        "materials": {
+          "status": "pending",
+          "evidence": []
+        },
+        "lighting": {
+          "status": "pending",
+          "evidence": []
+        },
+        "vfx": {
+          "status": "pending",
+          "evidence": []
+        },
+        "performance_animation": {
+          "status": "pending",
+          "evidence": []
+        },
+        "controls_and_force": {
+          "status": "pending",
+          "evidence": []
+        },
+        "native_mac_review": {
+          "status": "pending",
+          "evidence": []
+        }
+      },
+      "issues": []
+    },
+    {
+      "id": "N",
+      "status": "queued",
+      "stages": {
+        "design_match": {
+          "status": "pending",
+          "evidence": []
+        },
+        "structure_and_clearance": {
+          "status": "pending",
+          "evidence": []
+        },
+        "detail": {
+          "status": "pending",
+          "evidence": []
+        },
+        "materials": {
+          "status": "pending",
+          "evidence": []
+        },
+        "lighting": {
+          "status": "pending",
+          "evidence": []
+        },
+        "vfx": {
+          "status": "pending",
+          "evidence": []
+        },
+        "performance_animation": {
+          "status": "pending",
+          "evidence": []
+        },
+        "controls_and_force": {
+          "status": "pending",
+          "evidence": []
+        },
+        "native_mac_review": {
+          "status": "pending",
+          "evidence": []
+        }
+      },
+      "issues": []
+    }
+  ],
+  "iterations": [
+    {
+      "id": "20260910-lighting-coating",
+      "model": "G",
+      "result": "Captured correct baseline after quality_lighting override, compared six lighting variants, integrated separate G profile and optical coating, tested interrupted transition and B/F restoration.",
+      "next": "G operating-state lighting and curiosity 0 design match."
+    },
+    {
+      "id": "20260910-operating-flow",
+      "model": "G",
+      "result": "Captured operating closeups; corrected recovery flow and field retraction with actual-VFX checks. Then separately corrected measured reader penetration, retook 3805 actual frames, and updated only reader source height keys; other motion unchanged. Generated and critically reviewed observatory modeling reference.",
+      "next": "Build the more accurate observatory component, then its ordered construction guides and materials."
+    },
+    {
+      "id": "20260910-observatory-component",
+      "model": "G",
+      "result": "Built independent arcade/dome/armillary/connected-stair geometry, authored ordered construction guides, tested teeth and mount/external clearances, rendered true source views and actual app views, baked the new component while preserving other motion, and promoted the working geometry with backups.",
+      "next": "G0 detail/material/action polish; G and all-model pass are not complete."
+    },
+    {
+      "id": "20260910-observatory-interaction",
+      "model": "G",
+      "result": "Authored storyboard and calibration texture; limited time bias to +/-30 minutes with bounded response; eased existing resonance acceleration and return, added surface/local-light feedback. Actual GPU replay verifies warm trace pixel differences, charge/release and clean stow. Synced only nine source rigs plus console emission; other motion unchanged.",
+      "next": "G0 close-up material/craft and normal-size native interaction; then remaining curiosities. G and full queue remain in progress."
+    },
+    {
+      "id": "20260910-observatory-materials",
+      "model": "G",
+      "result": "Separated six finish families on 73 actual surfaces using existing authored ceramic/metal maps. Captured close-up and normal-camera A/B; no outside material/cache mutations. Synced both Blender sources with unchanged geometry/pose/animation fingerprints; saved-source verification passed. Replayed interaction at both camera sizes; normal-camera time cue remains too subtle despite visible pixel differences.",
+      "next": "G0 physical-control feedback and native input; then curiosity 1. No whole-G or AAA acceptance."
+    },
+    {
+      "id": "20260910-observatory-controls-native",
+      "model": "G",
+      "result": "Added G0-specific physical legends/readout, one-minute wheel steps and shorter bounded drag; improved authored trace subpixel coverage. Seven InputEvent gesture checks passed. Exported independent arm64 review App, tested actual native load/drag/wheel/paddle release and Cmd-Q. Native lettering remains small; FPS snapshots 42-44 recorded without claiming benchmark.",
+      "next": "Begin curiosity 1 mechanical butterfly. Carry G0 text/performance/full-VFX concerns into whole-G review."
+    },
+    {
+      "id": "20260910-butterfly-structure",
+      "model": "G",
+      "result": "Captured old actual butterfly, authored structure/motion sheet, built independent four-clevis/fixed-length four-bar drive with 541 source frames. Fitted wing surface veins/inlays, corrected shell rippling and leg crossings, reduced micro fastener tessellation and batched GLB. 37 wing shell/body pose samples now pass, narrower scope than full mechanism/player clearance.",
+      "next": "G1 rear detail and drive-bearing support, hardware/player clearances, then candidate integration and per-wing fabrication paths."
+    },
+    {
+      "id": "20260910-butterfly-rear-hardware-mount",
+      "model": "G",
+      "result": "Added fitted rear ribs and fixed support routing. Corrected obstructed wing pin, solid-overlap rod ends, crossmembers attached to moving hubs and antenna interference; hollow cups and offset link planes now sampled clear. Real player check found undersized foot recess against the original spindle collar; measured radii, widened blind socket and fixed column seating. 55 hardware poses and 120 wing/platter combinations pass their bounded surface checks.",
+      "next": "G1 runtime adapter, ordered wing construction paths and isolated candidate. No main G/App replacement or AAA acceptance."
+    },
+    {
+      "id": "20260910-butterfly-runtime-candidate",
+      "model": "G",
+      "result": "Authored dedicated fabrication/recovery storyboard; assembled an isolated candidate and mapped four-bar poses to Godot. Added 34 curve-derived local fabrication paths, fold-before-erase and partial-print cancellation. Reduced intrusive global feed rays, fixed a RefCounted ownership cycle, and verified endpoint/cup orientation and cleanup in actual scene replay. Hard enamel slice boundary remains visibly insufficient.",
+      "next": "Refine panel sealing/reverse appearance, material/light parity, final source bake and native review before promotion."
+    },
+    {
+      "id": "20260910-butterfly-panel-seal",
+      "model": "G",
+      "result": "Baked two formation data textures from actual wing ribs/rims and metal radius, replacing a wing-wide planar cut with inward panel sealing. Retimed metal/porcelain/red phases and reversed recovery; fixed initial rim stippling. Verified 884 imported guide samples, replayed full and partial cancellation, recorded 10.17-second actual candidate close-up, and retained G0 input regression.",
+      "next": "G1 material/light parity and normal-size readability, final runtime/source sync and native review before promotion."
+    },
+    {
+      "id": "20260910-butterfly-finish-source-bake",
+      "model": "G",
+      "result": "Separated six finish families and compared same-state runtime images. Synchronized G1 source finish while preserving geometry/motion; copied main into isolated animated candidate and baked 3859 runtime frames, face/console and eight panel-seal materials. Verified 5805 mechanical and 430 widget transforms, missing resources and source sealing views. Main source remains unchanged; runtime GPU composition boundary documented.",
+      "next": "Isolated Mac candidate visual/input/performance review before G1 promotion."
+    },
+    {
+      "id": "20260911-butterfly-native-promotion-ship-start",
+      "model": "G",
+      "result": "Exported independent G1 arm64 review, tested real physical controls/load/completed cancellation and measured bounded frame intervals. Saved native coverage limits, verified exact exported PCK and promoted equivalent main resources with backups. Began G2 authored design and independent hull/sail/cam source.",
+      "next": "G2 source visual/clearance refinement, materials and authored runtime formation; carry G1 native and performance limits to whole-G review."
+    },
+    {
+      "id": "20260911-ship-hardware-pbr-candidate",
+      "model": "G",
+      "result": "Repaired moving/fixed hardware, actual bores and guided travel; replaced straight penetrating ropes with tangent winch wraps and seated winches. Bounded source/player checks pass. Authored cloth/crest maps and VFX storyboard, baked portable PBR, built static GPU candidate, fixed red overlay flicker and collapsed apex. Added opt-in sail metal-map sampling and preserved G0 finish isolation. Mac apparent-size logic diagnosed after user question.",
+      "next": "GPU sail shading diagnosis, realtime ship rig and authored formation; shared display scale fix remains unimplemented."
+    },
+    {
+      "id": "20260911-mac-shared-display",
+      "model": "shared",
+      "result": "Implemented logical-point common-base sizing, persisted user zoom, native menu/shortcuts. Narrowed transparent canvas, checked 80 authored poses and native B/G interactions, updated local App with backups. Stable 60 FPS remains unmet.",
+      "next": "Resume G2 shadow correction, realtime rig and authored VFX without awaiting another user message."
+    }
+  ],
+  "display_issue": {
+    "status": "implemented_native_checked",
+    "feedback": "User reports Mac app looks too small and asks how scale is calculated.",
+    "cause": "main.gd caps focal framing reference wh at 940 render pixels, keeps a large transparent Mac canvas, does not apply display backing scale to apparent model size; zoom variable is not wired to projection.",
+    "evidence": [
+      "production/desktop_scale/README.md",
+      "review/desktop_scale/scale_qa.json",
+      "review/desktop_scale/all_model_bounds.json",
+      "review/desktop_scale/native/native_input_report.json"
+    ],
+    "direction": "Choose common base apparent width in macOS logical points, offer persistent whole-app display scale, preserve same base size during model changes and validate selector/explosion/particle clipping plus hit-test coordinates. Do not resize individual device assets.",
+    "remaining": "Stable 60 FPS, full dynamics/VFX extrema and broader native controls still pending; only B/G limited native input checked."
+  },
+  "shared_rotation_control": {
+    "status": "implemented_native_pointer_pending",
+    "direction": "Shared right-side hovering holographic rotation/pause control from concealed emitter integrated into existing base; subtle idle, proximity reveal, clear running/paused states and click feedback. Preserve actual base dimensions and avoid selector sweep.",
+    "constraint": "Do not repurpose device-specific mechanics such as wind trim or the ship wave drive; audit record platter rotation versus common display rotation separately.",
+    "latest_review": "review/shared_rotation/contrast_r2/"
+  },
+  "pending_native_checks": [
+    "Sustained native F brake and G2 pressure holds",
+    "Actual proximity hover; CUA restores pointer after gestures, so snapshots do not prove sustained hover",
+    "Final all-model native performance and visual review"
+  ],
+  "latest_mac_build": "review/macos_current/build.json",
+  "workstation_keepawake": {
+    "pid": 36607,
+    "started": "2026-09-14T06:05:53.435490+08:00",
+    "expires": "2026-09-14T14:05:53.435490+08:00",
+    "duration_seconds": 28800,
+    "previous_pid": 30174,
+    "scope": "Temporary keepawake for authorized continuous work; no security setting changes",
+    "started_at": "2026-09-14T23:55:44+08:00",
+    "expires_at": "2026-09-15T07:55:44+08:00"
+  },
+  "latest_f_review_build": "review/F_complete/revision_20260911/native/build.json",
+  "latest_i_mouth_review_build": "review/I_refinement/part_a_mouth/shutter_r2/collar_clamps/native/build.json",
+  "latest_i_music_response": "production/I_refinement/nautilus_r1/chamber_motion_r36/README.md",
+  "latest_i_collar_candidate": "production/I_refinement/part_a_mouth/shutter_r2/cassette/collar_clamps/README.md",
+  "current_i_entry": "production/I_refinement/nautilus_r1/cap_lower_trim_r55/README.md",
+  "latest_i_shell_candidate": "review/I_refinement/part_b_shell/linkage_b3/build.json",
+  "latest_i_shell_remaining": "R29 e5fe1561: broad 05 streaks removed in actual render; four rebuilt cowl self/triangle and sampled A/cover checks pass. Coupled reversal video exists without music. R30 complete nickel front rim has 26 self contacts and is not adopted. Continue explicit rim contact repair, lower transition, final material/light, oblique central score/full Moonlight, rotary power/supply, native and full queue. Not art accepted.",
+  "latest_i_support_candidate": "review/I_refinement/part_c_core/support_c2/build.json",
+  "latest_i_conch_review_build": "review/I_refinement/part_c_core/continuous_c3/native/build.json",
+  "latest_i_nautilus_form": "review/I_refinement/nautilus_r1/build.json",
+  "latest_i_central_scan": "production/I_refinement/moonlight/central_scan_r1/README.md",
+  "latest_i_chambers_checkpoint": "review/I_refinement/nautilus_r1/chambers_checkpoint.json",
+  "latest_i_hinge_checkpoint": "review/I_refinement/nautilus_r1/hinge_r1/checkpoint.json",
+  "latest_i_cassettes_candidate": "review/I_refinement/nautilus_r1/cassettes_r2/build.json",
+  "latest_i_mouth_relation_checkpoint": "review/I_refinement/nautilus_r1/mouth_relation_r3/checkpoint.json",
+  "latest_i_core_bridge": "review/I_refinement/nautilus_r1/core_bridge_r4/build.json",
+  "latest_i_receiver_checkpoint": "review/I_refinement/nautilus_r1/receiver_pocket_r8/checkpoint.json",
+  "latest_i_seats_checkpoint": "review/I_refinement/nautilus_r1/chamber_seats_r10/checkpoint.json",
+  "latest_i_hub_checkpoint": "review/I_refinement/nautilus_r1/throat_chambers_r11/checkpoint.json",
+  "latest_i_sockets_checkpoint": "review/I_refinement/nautilus_r1/throat_sockets_r13/checkpoint.json",
+  "latest_i_core_support_study": "production/I_refinement/nautilus_r1/core_saddle_r14/README.md",
+  "latest_i_terminations_checkpoint": "review/I_refinement/nautilus_r1/throat_terminations_r16/triangles/checkpoint.json",
+  "latest_i_end_finish_study": "production/I_refinement/nautilus_r1/end_finish_r17/",
+  "latest_i_chamber04_checkpoint": "review/I_refinement/nautilus_r1/chamber04_r15/checkpoint.json",
+  "latest_i_trunnion_support_checkpoint": "review/I_refinement/nautilus_r1/trunnion_support_r18/checkpoint.json",
+  "latest_i_cassettes_checkpoint": "review/I_refinement/nautilus_r1/upper_cassettes_r19/checkpoint.json",
+  "latest_i_linear_drives_checkpoint": "review/I_refinement/nautilus_r1/linear_drives_r20/checkpoint.json",
+  "latest_i_cowl_finish_checkpoint": "review/I_refinement/nautilus_r1/mouth_finish_r21/checkpoint.json",
+  "latest_i_cowl_rims": "review/I_refinement/nautilus_r1/cowl_rims_r22/build.json",
+  "latest_i_fixed_cowl": "review/I_refinement/nautilus_r1/cowl_precision_r25/build.json",
+  "latest_i_complete_cowl_candidate": "review/I_refinement/nautilus_r1/cowl_precision_r27/build.json",
+  "latest_i_uniform_cowl_candidate": "review/I_refinement/nautilus_r1/uniform_cowl_r28/build.json",
+  "latest_i_uniform_cowl_checkpoint": "review/I_refinement/nautilus_r1/uniform_precision_r29/checkpoint.json",
+  "latest_i_front_cowl_rim_study": "production/I_refinement/nautilus_r1/front_cowl_rim_r31/README.md",
+  "latest_i_oblique_score_checkpoint": "review/I_refinement/moonlight/oblique_score_r34/checkpoint.json",
+  "latest_i_chamber_response_checkpoint": "review/I_refinement/nautilus_r1/chamber_response_r35/checkpoint.json",
+  "latest_i_chamber_motion_checkpoint": "review/I_refinement/nautilus_r1/chamber_motion_r36/checkpoint.json",
+  "latest_i_capture_reliability_checkpoint": "review/I_refinement/nautilus_r1/capture_reliability_r37/checkpoint.json",
+  "current_i_light_checkpoint": "review/I_refinement/nautilus_r1/cap_lower_trim_r55/checkpoint.json"
+}

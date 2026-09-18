@@ -1,0 +1,15 @@
+{
+  "source_generator": "blender/collection/build_i_conch_r11.py",
+  "source_generator_sha256": "9e80a78a2311255e1bbaf14e2b8a8717f1d981980a0bd9aaf74a8f5c2064f2f0",
+  "baseline_source_sha256": "2af199dc2ad0efbd0854875c59af72fbbf0373301d49c04e5087d304bfa14999",
+  "shell_radius_scale": 0.88,
+  "mouth_uniform_scale": 0.9,
+  "fixed": [
+    "mouth anchor",
+    "apex anchor",
+    "world Z profile",
+    "base",
+    "fixed cameras"
+  ],
+  "status": "unlocked shape hypothesis"
+}

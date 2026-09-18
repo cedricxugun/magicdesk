@@ -1,0 +1,21 @@
+{
+  "status": "active",
+  "files": {
+    "app/collection/rotation_hologram.gd": "8cd643e74f9d9e4426fe0b02a2b29d1345b1df249acb6628d8e5f578adb19b9c",
+    "app/collection/rotation_hologram.gdshader": "5a544c21a6452969d376bf51b97cd07374167779b14e6c61e58c7c32193319a5",
+    "app/collection/service.gd": "67c873d595a3d044065c0444bb8f18253afc4a161345d5d36a112e9086422ea1",
+    "app/main.gd": "bf7734cacdb4b859a7d88a48d7f3d4c185f6d9a8bb59920fb2dfaba03ece50ce",
+    "app/assets/collection/art/shared_rotation/contrast_r3/rotate.svg": "ae3066aeb3069caba54a57385aa2fd105f5c33ae683ada65b752ad0208ac6bbc",
+    "app/assets/collection/art/shared_rotation/contrast_r3/pause.svg": "cd4fd2ebb8f5e523c6a400c1d9914a2e9cc10a6da6842c516370288bd7a9e853",
+    "app/assets/collection/art/shared_rotation/contrast_r3/orbit.svg": "2fe827bb11262c0a939a77ae5f7035381c6963822c7e8f8fe369db5563be7712",
+    "tests/collection/rotation_contrast_r62.gd": "c2610e8b435fb65b6141c6c727f38a7f6768f64d42a0d25209d1337b9b924db5",
+    "tests/collection/rotation_main_r62.gd": "7aa2e313f2cee2641042afcc88e1f3a468242b96bee5486b1c45b24849c6af4b"
+  },
+  "body_source_unchanged": "0ba13905c764f4420306f1539604574303cdbf42f78d0436f92f0fe35c7baaa0",
+  "art_reference": "production/shared_rotation/concept_v2.png",
+  "emitter_sha256": "522ed7c8ee24f8eb8ea39febcf438614ad7c2f38648949bed4e83bd21fcf8a18",
+  "evidence": "review/shared_rotation/contrast_r3",
+  "installed_app_updated": false,
+  "previous_goal_turn": "progress: actual I curved front end cap and independent membrane reference test fix",
+  "scope": "Shared control visibility/cancellation/rotation separation, whole multi-model goal still active"
+}

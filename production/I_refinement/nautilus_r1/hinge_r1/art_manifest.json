@@ -1,0 +1,12 @@
+{
+  "mode": "built_in_image_gen",
+  "image": "production/I_refinement/nautilus_r1/hinge_r1/slide_and_hinge_r1.png",
+  "sha256": "487c752e322051153feb85abaf5fc8cf2f0b37534b026e8d662927066a793f8d",
+  "prompt": "production/I_refinement/nautilus_r1/hinge_r1/PROMPT.txt",
+  "scope": "Twin telescoping guides, moving hinge carriage, seated/lifted/open local mechanism reference. Actual placement/dimensions derive from nautilus geometry.",
+  "limits": [
+    "Generated cover and base shoe are illustrative local forms, not replacements for whole selected shape.",
+    "Pin interfaces/bores, rod engagement and source/runtime motion require actual construction and checking.",
+    "No final articulated module exists merely because this image was generated."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "generator": "built-in image_gen only",
+  "structure_image": "production/I_refinement/r1/structure_and_motion.png",
+  "structure_prompt": "production/I_refinement/r1/prompt.txt",
+  "atlas": "app/assets/collection/art/I/acoustic_atlas_r1.png",
+  "atlas_prompt": "production/I_refinement/r1/atlas_prompt.txt",
+  "source": "blender/collection/I_helix_r1.blend",
+  "source_sha256": "422af92f8bf42ebd8d00fc9227fc2174303e3e7496bf9b6cbe47ddca5495d7d8",
+  "component": "app/assets/collection/components/I_helix_r1.glb",
+  "component_sha256": "ee09b3a094b8271c94e78230a999742ec6d8042ae5bbb451ac6943d4fa9fe191",
+  "original_I_glb_preserved": true,
+  "status": "Independent geometry/anatomy candidate; not integrated in main app; pressure dynamics, runtime VFX, custom controls and full assembly review remain."
+}

@@ -1,0 +1,27 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+Metal 4.0 - Forward+ - Using Device #0: Apple - Apple M5 (Apple9)
+
+PRESSURE_PHYSICS_CACHE_LOADED 61 frames [128.0, 78.0, 128.0]
+IDLE_STEAM_GPU_PREWARM { "ready": true, "frames": 1, "error": "", &"pipeline_init_ms": 11.697, &"volume_allocation_ms": 0.031, &"allocation_during_prewarm": true, &"allocation_count": 1, &"full_size": "(2048, 1728)", &"low_size": "(820, 692)", &"warmed": true, &"warm_pair_count": 18, &"warmup_cpu_ms": 0.531, &"warmup_visible_writes": 0 }
+STEAM_GPU_PREWARM { "ready": true, "frames": 1, "error": "", &"pipeline_init_ms": 2.16, &"volume_allocation_ms": 0.019, &"allocation_during_prewarm": true, &"allocation_count": 1, &"full_size": "(2048, 1728)", &"low_size": "(1024, 864)", &"warmed": true, &"warm_pair_count": 61, &"warmup_cpu_ms": 0.725, &"warmup_visible_writes": 0 }
+COLLECTION_SHARED_PREWARM 1213 ms, shapes=153
+I_MAIN_QA reveal_started true
+COLLECTION_LOAD {"archive_started_ms":8803,"commit_base_ms":61,"commit_controls_ms":23,"commit_total_ms":91,"display_msaa":1,"gpu_warm_ms":229,"id":"I","legacy_scan_materials":281,"legacy_scan_shader_variants":5,"legacy_scan_wrap_ms":65.478,"resource_ready_ms":4833,"setup_ms":1335,"started_ms":8842,"stow_started_ms":6408,"total_ms":14615,"transition_ghost_meshes":1249,"transition_ghost_setup_ms":7.222,"warm_area_lights":3,"warm_msaa":1}
+I_MAIN_QA current_I_arrived true
+I_MAIN_QA current_rig_not_old_I true
+I_MAIN_QA reviewed_materials_restored true
+I_MAIN_QA optical_attachments_survive_transfer true
+I_MAIN_QA music_control_profile true
+I_MAIN_QA music_starts_after_unfolding true
+I_MAIN_QA cancel_pressure true
+I_MAIN_QA reverse_close true
+I_MAIN_QA music_restarts true
+I_MAIN_QA music_stows_before_archive true
+I_MAIN_QA outgoing_audio_stopped true
+COLLECTION_LOAD {"archive_started_ms":7327,"commit_base_ms":19,"commit_controls_ms":1,"commit_total_ms":22,"id":"B","legacy_scan_materials":281,"legacy_scan_shader_variants":5,"legacy_scan_wrap_ms":15.265,"started_ms":40441,"stow_started_ms":0,"total_ms":13612,"transition_ghost_meshes":113,"transition_ghost_setup_ms":1.51}
+I_MAIN_QA returned_B true
+I_MAIN_QA same_base_and_camera true
+I_MAIN_QA B_light_restored true
+I_MAIN_QA warming_for_cancel true
+I_MAIN_QA cancel_preserves_B true
+I_MAIN_QA_RESULT true

@@ -1,0 +1,17 @@
+{
+  "method": "built_in_image_gen",
+  "image": "guide_return_detail_r1.png",
+  "image_sha256": "d10fa2eaa104646739c1380e8aaa93db65e03e6fddd081ecd2ab8033a945b38b",
+  "prompt": "PROMPT.md",
+  "references": [
+    {
+      "path": "production/I_refinement/part_a_mouth/shutter_r2/cassette/tongue_cassette_r1.png",
+      "sha256": "65455d78a079f7c072d976b9debbad6de077d36dbb183d93f47174fbdc7b44c6"
+    },
+    {
+      "path": "review/I_refinement/part_a_mouth/shutter_r2/cassettes/runtime/reference_050.png",
+      "sha256": "dcd1bf87398dc09c62301dd57c2b9ec06d0113b5c04721790771aee688568943"
+    }
+  ],
+  "scope": "Local craft/detail study for guide bearings and return channels. Not dimensional authority, locked shape, user approval or completed runtime art."
+}

@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "design": "production/I_refinement/nautilus_r1/chambers_r1/chambers_and_response_r1.png",
+  "asset": "app/assets/collection/art/I/chamber_response_r35/conductor_mask.png",
+  "sha256": "62efaeb17be28aa90a371febb6891037fc36630e9897ed634b72c326866aebd7",
+  "prompt": "production/I_refinement/nautilus_r1/chamber_response_r35/MASK_PROMPT.txt",
+  "purpose": "Grayscale conductor filament mapped to actual acoustic chamber edges. Runtime supplies gold color and audio-timed strength."
+}

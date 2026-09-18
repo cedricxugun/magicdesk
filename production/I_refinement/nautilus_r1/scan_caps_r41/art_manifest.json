@@ -1,0 +1,6 @@
+{
+  "tool": "built-in image_gen",
+  "image_sha256": "278e1be365999feac8890cf3a7210ddc280cd7f6d7f77f63a571ee5791ac5e28",
+  "prompt_sha256": "7f43ac9ad63fc07e388750340a908571931d466bb549e036aed1f96aba336ae5",
+  "role": "Local optical cap finishing concept; not whole-device geometry"
+}

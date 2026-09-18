@@ -1,0 +1,60 @@
+{
+  "source": "blender/collection/I_Controls_r1.blend",
+  "source_sha256": "21d2291e8561cec1494a8fe8f67cf76aa13e472b7b94a4b4d49633bce10e183c",
+  "component": "app/assets/collection/components/I_controls_r1.glb",
+  "component_sha256": "039b4b632f31476ccf26c24d6a784eed73fe20d6eee99bdefd69c72f4a8619db",
+  "reference": "production/I_refinement/r1/structure_and_motion.png",
+  "rig": {
+    "frequency": {
+      "root": "ICTRL_frequency",
+      "moving": "MovingGrip",
+      "label": "ICTRL_Label_frequency",
+      "angle_range": [
+        -2.5132741228718345,
+        2.5132741228718345
+      ]
+    },
+    "pressure": {
+      "root": "ICTRL_pressure",
+      "moving": "MovingGrip.001",
+      "label": "ICTRL_Label_pressure",
+      "stroke": 0.015,
+      "indicator": "ICTRL_PressureFloat",
+      "indicator_travel": 0.058
+    },
+    "throat": {
+      "root": "ICTRL_throat",
+      "moving": "MovingGrip.002",
+      "label": "ICTRL_Label_throat",
+      "pivot": [
+        0,
+        0,
+        0.039
+      ],
+      "angle_range": [
+        -0.52,
+        0.52
+      ]
+    },
+    "gauge": {
+      "root": "ICTRL_gauge",
+      "moving": "MovingGrip.003",
+      "label": "ICTRL_Label_gauge",
+      "outgoing": "ICTRL_OutgoingReed",
+      "return": "ICTRL_ReturnReed",
+      "travel": 0.052
+    },
+    "service": {
+      "root": "ICTRL_service",
+      "moving": "MovingGrip.004",
+      "label": "ICTRL_Label_service",
+      "pivot": [
+        0,
+        0,
+        0.04
+      ]
+    }
+  },
+  "shared_base_modified": false,
+  "scope": "Independent authored I control assets. Mounting, collision, native input and final material review pending."
+}

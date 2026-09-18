@@ -1,0 +1,2306 @@
+{
+  "source_sha256": "0ba13905c764f4420306f1539604574303cdbf42f78d0436f92f0fe35c7baaa0",
+  "component_sha256": "7fbc14774406908ffaa1bc7a71085fa04b559dcf4c47fd99142b781d8ca18b1d",
+  "prepared_opening": 1.0,
+  "groups": [
+    {
+      "id": "mouth",
+      "roots": [
+        "IAM_MODULE"
+      ],
+      "stage": 0,
+      "label": "Complete acoustic mouth cassette",
+      "meshes": [
+        "IAM_BronzeRetainerBead_0011",
+        "IAM_BronzeRetainerBead_0013",
+        "IAM_BronzeRetainerBead_0015",
+        "IAM_BronzeRetainerBead_0017",
+        "IAM_GuardBoltShank_0021",
+        "IAM_GuardBoltShank_0024",
+        "IAM_GuardBoltShank_0027",
+        "IAM_GuardBoltShank_0030",
+        "IAM_GuardBoltShank_0033",
+        "IAM_GuardBoltShank_0036",
+        "IAM_GuardBoltShank_0039",
+        "IAM_GuardBoltShank_0042",
+        "IAM_GuardBoltShank_0045",
+        "IAM_GuardBoltShank_0048",
+        "IAM_GuardBoltShank_0051",
+        "IAM_GuardBoltShank_0054",
+        "IAM_GuardFastenerSeat_0020",
+        "IAM_GuardFastenerSeat_0023",
+        "IAM_GuardFastenerSeat_0026",
+        "IAM_GuardFastenerSeat_0029",
+        "IAM_GuardFastenerSeat_0032",
+        "IAM_GuardFastenerSeat_0035",
+        "IAM_GuardFastenerSeat_0038",
+        "IAM_GuardFastenerSeat_0041",
+        "IAM_GuardFastenerSeat_0044",
+        "IAM_GuardFastenerSeat_0047",
+        "IAM_GuardFastenerSeat_0050",
+        "IAM_GuardFastenerSeat_0053",
+        "IAM_GuardHexHead_0022",
+        "IAM_GuardHexHead_0025",
+        "IAM_GuardHexHead_0028",
+        "IAM_GuardHexHead_0031",
+        "IAM_GuardHexHead_0034",
+        "IAM_GuardHexHead_0037",
+        "IAM_GuardHexHead_0040",
+        "IAM_GuardHexHead_0043",
+        "IAM_GuardHexHead_0046",
+        "IAM_GuardHexHead_0049",
+        "IAM_GuardHexHead_0052",
+        "IAM_GuardHexHead_0055",
+        "IAM_GuardOuterSeat_0056",
+        "IAM_InnerGuard_0009",
+        "IAM_MiddleGuard_0008",
+        "IAM_OuterGuard_0007",
+        "IAM_SteppedGuardRetainer_0010",
+        "IAM_SteppedGuardRetainer_0012",
+        "IAM_SteppedGuardRetainer_0014",
+        "IAM_SteppedGuardRetainer_0016",
+        "IAM_SteppedScreenBridge_0018",
+        "IAM_SteppedScreenBridge_0019",
+        "IAM_Cassette0_CarrierFootL",
+        "IAM_Cassette0_CarrierFootR",
+        "IAM_Cassette0_CarrierPillarL",
+        "IAM_Cassette0_CarrierPillarR",
+        "IAM_Cassette0_GuideRailL",
+        "IAM_Cassette0_GuideRailR",
+        "IAM_Cassette0_MountScrewL-0.005",
+        "IAM_Cassette0_MountScrewL0.005",
+        "IAM_Cassette0_MountScrewR-0.005",
+        "IAM_Cassette0_MountScrewR0.005",
+        "IAM_Cassette0_RailBridgeL",
+        "IAM_Cassette0_RailBridgeR",
+        "IAM_Cassette0_TravelStopL",
+        "IAM_Cassette0_TravelStopR",
+        "IAM_Cassette1_CarrierFootL",
+        "IAM_Cassette1_CarrierFootR",
+        "IAM_Cassette1_CarrierPillarL",
+        "IAM_Cassette1_CarrierPillarR",
+        "IAM_Cassette1_GuideRailL",
+        "IAM_Cassette1_GuideRailR",
+        "IAM_Cassette1_MountScrewL-0.005",
+        "IAM_Cassette1_MountScrewL0.005",
+        "IAM_Cassette1_MountScrewR-0.005",
+        "IAM_Cassette1_MountScrewR0.005",
+        "IAM_Cassette1_RailBridgeL",
+        "IAM_Cassette1_RailBridgeR",
+        "IAM_Cassette1_TravelStopL",
+        "IAM_Cassette1_TravelStopR",
+        "IAM_Cassette2_CarrierFootL",
+        "IAM_Cassette2_CarrierFootR",
+        "IAM_Cassette2_CarrierPillarL",
+        "IAM_Cassette2_CarrierPillarR",
+        "IAM_Cassette2_GuideRailL",
+        "IAM_Cassette2_GuideRailR",
+        "IAM_Cassette2_MountScrewL-0.005",
+        "IAM_Cassette2_MountScrewL0.005",
+        "IAM_Cassette2_MountScrewR-0.005",
+        "IAM_Cassette2_MountScrewR0.005",
+        "IAM_Cassette2_RailBridgeL",
+        "IAM_Cassette2_RailBridgeR",
+        "IAM_Cassette2_TravelStopL",
+        "IAM_Cassette2_TravelStopR",
+        "IAM_ClearApertureFineLip_0005",
+        "IAM_Collar0_CamAndSpine",
+        "IAM_Collar0_RedEnamelGrip",
+        "IAM_Collar0_CarrierInsert",
+        "IAM_Collar0_ContinuousDrawStud",
+        "IAM_Collar0_FittedPressureShoe",
+        "IAM_Collar0_HingeCap-1",
+        "IAM_Collar0_HingeCap1",
+        "IAM_Collar0_HingeThrust-1",
+        "IAM_Collar0_HingeThrust1",
+        "IAM_Collar0_PorcelainBoreLiner",
+        "IAM_Collar0_RearHexNut",
+        "IAM_Collar0_RearLoadWasher",
+        "IAM_Collar0_SeatedGasket",
+        "IAM_Collar0_ShoeLocator",
+        "IAM_Collar0_TransverseHingePin",
+        "IAM_Collar1_CamAndSpine",
+        "IAM_Collar1_RedEnamelGrip",
+        "IAM_Collar1_CarrierInsert",
+        "IAM_Collar1_ContinuousDrawStud",
+        "IAM_Collar1_FittedPressureShoe",
+        "IAM_Collar1_HingeCap-1",
+        "IAM_Collar1_HingeCap1",
+        "IAM_Collar1_HingeThrust-1",
+        "IAM_Collar1_HingeThrust1",
+        "IAM_Collar1_PorcelainBoreLiner",
+        "IAM_Collar1_RearHexNut",
+        "IAM_Collar1_RearLoadWasher",
+        "IAM_Collar1_SeatedGasket",
+        "IAM_Collar1_ShoeLocator",
+        "IAM_Collar1_TransverseHingePin",
+        "IAM_Collar2_CamAndSpine",
+        "IAM_Collar2_RedEnamelGrip",
+        "IAM_Collar2_CarrierInsert",
+        "IAM_Collar2_ContinuousDrawStud",
+        "IAM_Collar2_FittedPressureShoe",
+        "IAM_Collar2_HingeCap-1",
+        "IAM_Collar2_HingeCap1",
+        "IAM_Collar2_HingeThrust-1",
+        "IAM_Collar2_HingeThrust1",
+        "IAM_Collar2_PorcelainBoreLiner",
+        "IAM_Collar2_RearHexNut",
+        "IAM_Collar2_RearLoadWasher",
+        "IAM_Collar2_SeatedGasket",
+        "IAM_Collar2_ShoeLocator",
+        "IAM_Collar2_TransverseHingePin",
+        "IAM_Collar3_CamAndSpine",
+        "IAM_Collar3_RedEnamelGrip",
+        "IAM_Collar3_CarrierInsert",
+        "IAM_Collar3_ContinuousDrawStud",
+        "IAM_Collar3_FittedPressureShoe",
+        "IAM_Collar3_HingeCap-1",
+        "IAM_Collar3_HingeCap1",
+        "IAM_Collar3_HingeThrust-1",
+        "IAM_Collar3_HingeThrust1",
+        "IAM_Collar3_PorcelainBoreLiner",
+        "IAM_Collar3_RearHexNut",
+        "IAM_Collar3_RearLoadWasher",
+        "IAM_Collar3_SeatedGasket",
+        "IAM_Collar3_ShoeLocator",
+        "IAM_Collar3_TransverseHingePin",
+        "IAM_Collar4_CamAndSpine",
+        "IAM_Collar4_RedEnamelGrip",
+        "IAM_Collar4_CarrierInsert",
+        "IAM_Collar4_ContinuousDrawStud",
+        "IAM_Collar4_FittedPressureShoe",
+        "IAM_Collar4_HingeCap-1",
+        "IAM_Collar4_HingeCap1",
+        "IAM_Collar4_HingeThrust-1",
+        "IAM_Collar4_HingeThrust1",
+        "IAM_Collar4_PorcelainBoreLiner",
+        "IAM_Collar4_RearHexNut",
+        "IAM_Collar4_RearLoadWasher",
+        "IAM_Collar4_SeatedGasket",
+        "IAM_Collar4_ShoeLocator",
+        "IAM_Collar4_TransverseHingePin",
+        "IAM_Collar5_CamAndSpine",
+        "IAM_Collar5_RedEnamelGrip",
+        "IAM_Collar5_CarrierInsert",
+        "IAM_Collar5_ContinuousDrawStud",
+        "IAM_Collar5_FittedPressureShoe",
+        "IAM_Collar5_HingeCap-1",
+        "IAM_Collar5_HingeCap1",
+        "IAM_Collar5_HingeThrust-1",
+        "IAM_Collar5_HingeThrust1",
+        "IAM_Collar5_PorcelainBoreLiner",
+        "IAM_Collar5_RearHexNut",
+        "IAM_Collar5_RearLoadWasher",
+        "IAM_Collar5_SeatedGasket",
+        "IAM_Collar5_ShoeLocator",
+        "IAM_Collar5_TransverseHingePin",
+        "IAM_ConcaveMachinedMask_0004",
+        "IAM_DiaphragmFixedSeat_0073",
+        "IAM_CentralResonatorCap_Axial",
+        "IAM_DiaphragmFormedBead_0069",
+        "IAM_DiaphragmFormedBead_0070",
+        "IAM_DiaphragmFormedBead_0071",
+        "IAM_DomedDiaphragm_0068",
+        "IAM_Response0_FrontCupRim",
+        "IAM_Response0_PressureBoss",
+        "IAM_Response0_PressureFoot",
+        "IAM_Response1_FrontCupRim",
+        "IAM_Response1_PressureBoss",
+        "IAM_Response1_PressureFoot",
+        "IAM_Response2_FrontCupRim",
+        "IAM_Response2_PressureBoss",
+        "IAM_Response2_PressureFoot",
+        "IAM_SpringSeat_0082",
+        "IAM_SpringSeat_0085",
+        "IAM_SpringSeat_0088",
+        "IAM_TineEnamelAxial_0",
+        "IAM_TineEnamelAxial_1",
+        "IAM_TineEnamelAxial_2",
+        "IAM_TineRoundedAxial_0",
+        "IAM_TineRoundedAxial_1",
+        "IAM_TineRoundedAxial_2",
+        "IAM_TineSocketAxial_0",
+        "IAM_TineSocketAxial_1",
+        "IAM_TineSocketAxial_2",
+        "IAM_TineStemAxial_0",
+        "IAM_TineStemAxial_1",
+        "IAM_TineStemAxial_2",
+        "IAM_DiaphragmRubberSurround_0072",
+        "IAM_EyelidFixedCarrier",
+        "IAM_FrontGuide0_LinerSaddleL",
+        "IAM_FrontGuide0_LinerSaddleLFastenerHead-1",
+        "IAM_FrontGuide0_LinerSaddleLFastenerHead1",
+        "IAM_FrontGuide0_LinerSaddleLFastenerStem-1",
+        "IAM_FrontGuide0_LinerSaddleLFastenerStem1",
+        "IAM_FrontGuide0_LinerSaddleR",
+        "IAM_FrontGuide0_LinerSaddleRFastenerHead-1",
+        "IAM_FrontGuide0_LinerSaddleRFastenerHead1",
+        "IAM_FrontGuide0_LinerSaddleRFastenerStem-1",
+        "IAM_FrontGuide0_LinerSaddleRFastenerStem1",
+        "IAM_FrontGuide0_ReturnBridge",
+        "IAM_FrontGuide0_ReturnChannel",
+        "IAM_FrontGuide0_ReturnLiner",
+        "IAM_FrontGuide0_ReturnSaddle",
+        "IAM_FrontGuide0_ReturnSaddleFastenerHead-1",
+        "IAM_FrontGuide0_ReturnSaddleFastenerHead1",
+        "IAM_FrontGuide0_ReturnSaddleFastenerStem-1",
+        "IAM_FrontGuide0_ReturnSaddleFastenerStem1",
+        "IAM_FrontGuide0_ReturnStop",
+        "IAM_FrontGuide1_LinerSaddleL",
+        "IAM_FrontGuide1_LinerSaddleLFastenerHead-1",
+        "IAM_FrontGuide1_LinerSaddleLFastenerHead1",
+        "IAM_FrontGuide1_LinerSaddleLFastenerStem-1",
+        "IAM_FrontGuide1_LinerSaddleLFastenerStem1",
+        "IAM_FrontGuide1_LinerSaddleR",
+        "IAM_FrontGuide1_LinerSaddleRFastenerHead-1",
+        "IAM_FrontGuide1_LinerSaddleRFastenerHead1",
+        "IAM_FrontGuide1_LinerSaddleRFastenerStem-1",
+        "IAM_FrontGuide1_LinerSaddleRFastenerStem1",
+        "IAM_FrontGuide1_ReturnBridge",
+        "IAM_FrontGuide1_ReturnChannel",
+        "IAM_FrontGuide1_ReturnLiner",
+        "IAM_FrontGuide1_ReturnSaddle",
+        "IAM_FrontGuide1_ReturnSaddleFastenerHead-1",
+        "IAM_FrontGuide1_ReturnSaddleFastenerHead1",
+        "IAM_FrontGuide1_ReturnSaddleFastenerStem-1",
+        "IAM_FrontGuide1_ReturnSaddleFastenerStem1",
+        "IAM_FrontGuide1_ReturnStop",
+        "IAM_FrontGuide2_LinerSaddleL",
+        "IAM_FrontGuide2_LinerSaddleLFastenerHead-1",
+        "IAM_FrontGuide2_LinerSaddleLFastenerHead1",
+        "IAM_FrontGuide2_LinerSaddleLFastenerStem-1",
+        "IAM_FrontGuide2_LinerSaddleLFastenerStem1",
+        "IAM_FrontGuide2_LinerSaddleR",
+        "IAM_FrontGuide2_LinerSaddleRFastenerHead-1",
+        "IAM_FrontGuide2_LinerSaddleRFastenerHead1",
+        "IAM_FrontGuide2_LinerSaddleRFastenerStem-1",
+        "IAM_FrontGuide2_LinerSaddleRFastenerStem1",
+        "IAM_FrontGuide2_ReturnBridge",
+        "IAM_FrontGuide2_ReturnChannel",
+        "IAM_FrontGuide2_ReturnLiner",
+        "IAM_FrontGuide2_ReturnSaddle",
+        "IAM_FrontGuide2_ReturnSaddleFastenerHead-1",
+        "IAM_FrontGuide2_ReturnSaddleFastenerHead1",
+        "IAM_FrontGuide2_ReturnSaddleFastenerStem-1",
+        "IAM_FrontGuide2_ReturnSaddleFastenerStem1",
+        "IAM_FrontGuide2_ReturnStop",
+        "IAM_GuardToRearStandoff_0075",
+        "IAM_GuardToRearStandoff_0076",
+        "IAM_GuardToRearStandoff_0077",
+        "IAM_GuardToRearStandoff_0078",
+        "IAM_GuardToRearStandoff_0079",
+        "IAM_GuardToRearStandoff_0080",
+        "IAM_HeadAcousticNeck",
+        "IAM_IrisOuterCase_Fitted",
+        "IAM_PorcelainLower_0002",
+        "IAM_PorcelainUpper_0001",
+        "IAM_RearMountFlange_0074",
+        "IAM_Response0_RearCupRim",
+        "IAM_Response0_RearSeatBoss",
+        "IAM_Response0_ReturnSpring",
+        "IAM_Response1_RearCupRim",
+        "IAM_Response1_RearSeatBoss",
+        "IAM_Response1_ReturnSpring",
+        "IAM_Response2_RearCupRim",
+        "IAM_Response2_RearSeatBoss",
+        "IAM_Response2_ReturnSpring",
+        "IAM_RolledNickelEdge_0003",
+        "IAM_SpringSeat_0083",
+        "IAM_SpringSeat_0086",
+        "IAM_SpringSeat_0089",
+        "IAM_Tongue1_Foil0",
+        "IAM_Tongue1_Foil1",
+        "IAM_FrontGuide1_BearingL",
+        "IAM_FrontGuide1_BearingR",
+        "IAM_FrontGuide1_CaptiveCollarL",
+        "IAM_FrontGuide1_CaptiveCollarR",
+        "IAM_FrontGuide1_CheekL",
+        "IAM_FrontGuide1_CheekR",
+        "IAM_FrontGuide1_EnamelWitnessL",
+        "IAM_FrontGuide1_EnamelWitnessR",
+        "IAM_FrontGuide1_RollerShoulderL",
+        "IAM_FrontGuide1_RollerShoulderR",
+        "IAM_Tongue1_GuideFlange",
+        "IAM_Tongue1_GuideFlange.001",
+        "IAM_Tongue1_GuideMandrel",
+        "IAM_FrontGuide1_Shaft",
+        "IAM_Cassette1_BearingL",
+        "IAM_Cassette1_BearingR",
+        "IAM_Cassette1_LinearBushingL",
+        "IAM_Cassette1_LinearBushingR",
+        "IAM_Cassette1_MotorStator",
+        "IAM_Cassette1_MovingCrossBrace",
+        "IAM_Cassette1_SlidingYokeL",
+        "IAM_Cassette1_SlidingYokeR",
+        "IAM_Cassette1_StatorMount",
+        "IAM_Cassette1_StatorMountBoss",
+        "IAM_Cassette1_StatorSupport",
+        "IAM_Cassette1_StatorWinding0",
+        "IAM_Cassette1_StatorWinding1",
+        "IAM_Cassette1_StatorWinding2",
+        "IAM_Cassette1_StatorWinding3",
+        "IAM_Cassette1_StatorWinding4",
+        "IAM_Cassette1_StatorWinding5",
+        "IAM_Cassette1_StatorWinding6",
+        "IAM_Cassette1_StatorWinding7",
+        "IAM_Cassette1_YokeScrewL0.034",
+        "IAM_Cassette1_YokeScrewL0.112",
+        "IAM_Cassette1_YokeScrewR0.034",
+        "IAM_Cassette1_YokeScrewR0.112",
+        "IAM_Cassette1_DrumDriveWeb",
+        "IAM_Cassette1_FlangeHub-1",
+        "IAM_Cassette1_FlangeHub1",
+        "IAM_Cassette1_HubScrew-1_0",
+        "IAM_Cassette1_HubScrew-1_1",
+        "IAM_Cassette1_HubScrew-1_2",
+        "IAM_Cassette1_HubScrew1_0",
+        "IAM_Cassette1_HubScrew1_1",
+        "IAM_Cassette1_HubScrew1_2",
+        "IAM_Cassette1_MotorRotor",
+        "IAM_Cassette1_Spindle",
+        "IAM_Tongue1_LeaderBridge",
+        "IAM_Tongue1_LeaderInnerJaw",
+        "IAM_Tongue1_LeaderOuterJaw",
+        "IAM_Tongue1_SpoolCore",
+        "IAM_Tongue1_SpoolFlange",
+        "IAM_Tongue1_SpoolFlange.001",
+        "IAM_Tongue2_Foil0",
+        "IAM_Tongue2_Foil1",
+        "IAM_FrontGuide2_BearingL",
+        "IAM_FrontGuide2_BearingR",
+        "IAM_FrontGuide2_CaptiveCollarL",
+        "IAM_FrontGuide2_CaptiveCollarR",
+        "IAM_FrontGuide2_CheekL",
+        "IAM_FrontGuide2_CheekR",
+        "IAM_FrontGuide2_EnamelWitnessL",
+        "IAM_FrontGuide2_EnamelWitnessR",
+        "IAM_FrontGuide2_RollerShoulderL",
+        "IAM_FrontGuide2_RollerShoulderR",
+        "IAM_Tongue2_GuideFlange",
+        "IAM_Tongue2_GuideFlange.001",
+        "IAM_Tongue2_GuideMandrel",
+        "IAM_FrontGuide2_Shaft",
+        "IAM_Cassette2_BearingL",
+        "IAM_Cassette2_BearingR",
+        "IAM_Cassette2_LinearBushingL",
+        "IAM_Cassette2_LinearBushingR",
+        "IAM_Cassette2_MotorStator",
+        "IAM_Cassette2_MovingCrossBrace",
+        "IAM_Cassette2_SlidingYokeL",
+        "IAM_Cassette2_SlidingYokeR",
+        "IAM_Cassette2_StatorMount",
+        "IAM_Cassette2_StatorMountBoss",
+        "IAM_Cassette2_StatorSupport",
+        "IAM_Cassette2_StatorWinding0",
+        "IAM_Cassette2_StatorWinding1",
+        "IAM_Cassette2_StatorWinding2",
+        "IAM_Cassette2_StatorWinding3",
+        "IAM_Cassette2_StatorWinding4",
+        "IAM_Cassette2_StatorWinding5",
+        "IAM_Cassette2_StatorWinding6",
+        "IAM_Cassette2_StatorWinding7",
+        "IAM_Cassette2_YokeScrewL0.034",
+        "IAM_Cassette2_YokeScrewL0.112",
+        "IAM_Cassette2_YokeScrewR0.034",
+        "IAM_Cassette2_YokeScrewR0.112",
+        "IAM_Cassette2_DrumDriveWeb",
+        "IAM_Cassette2_FlangeHub-1",
+        "IAM_Cassette2_FlangeHub1",
+        "IAM_Cassette2_HubScrew-1_0",
+        "IAM_Cassette2_HubScrew-1_1",
+        "IAM_Cassette2_HubScrew-1_2",
+        "IAM_Cassette2_HubScrew1_0",
+        "IAM_Cassette2_HubScrew1_1",
+        "IAM_Cassette2_HubScrew1_2",
+        "IAM_Cassette2_MotorRotor",
+        "IAM_Cassette2_Spindle",
+        "IAM_Tongue2_LeaderBridge",
+        "IAM_Tongue2_LeaderInnerJaw",
+        "IAM_Tongue2_LeaderOuterJaw",
+        "IAM_Tongue2_SpoolCore",
+        "IAM_Tongue2_SpoolFlange",
+        "IAM_Tongue2_SpoolFlange.001",
+        "IAM_TongueFoil_0",
+        "IAM_TongueFoil_1",
+        "IAM_FrontGuide0_BearingL",
+        "IAM_FrontGuide0_BearingR",
+        "IAM_FrontGuide0_CaptiveCollarL",
+        "IAM_FrontGuide0_CaptiveCollarR",
+        "IAM_FrontGuide0_CheekL",
+        "IAM_FrontGuide0_CheekR",
+        "IAM_FrontGuide0_EnamelWitnessL",
+        "IAM_FrontGuide0_EnamelWitnessR",
+        "IAM_FrontGuide0_RollerShoulderL",
+        "IAM_FrontGuide0_RollerShoulderR",
+        "IAM_TongueGuideFlange",
+        "IAM_TongueGuideFlange.001",
+        "IAM_TongueGuideMandrel",
+        "IAM_FrontGuide0_Shaft",
+        "IAM_Cassette0_BearingL",
+        "IAM_Cassette0_BearingR",
+        "IAM_Cassette0_LinearBushingL",
+        "IAM_Cassette0_LinearBushingR",
+        "IAM_Cassette0_MotorStator",
+        "IAM_Cassette0_MovingCrossBrace",
+        "IAM_Cassette0_SlidingYokeL",
+        "IAM_Cassette0_SlidingYokeR",
+        "IAM_Cassette0_StatorMount",
+        "IAM_Cassette0_StatorMountBoss",
+        "IAM_Cassette0_StatorSupport",
+        "IAM_Cassette0_StatorWinding0",
+        "IAM_Cassette0_StatorWinding1",
+        "IAM_Cassette0_StatorWinding2",
+        "IAM_Cassette0_StatorWinding3",
+        "IAM_Cassette0_StatorWinding4",
+        "IAM_Cassette0_StatorWinding5",
+        "IAM_Cassette0_StatorWinding6",
+        "IAM_Cassette0_StatorWinding7",
+        "IAM_Cassette0_YokeScrewL0.034",
+        "IAM_Cassette0_YokeScrewL0.112",
+        "IAM_Cassette0_YokeScrewR0.034",
+        "IAM_Cassette0_YokeScrewR0.112",
+        "IAM_Cassette0_DrumDriveWeb",
+        "IAM_Cassette0_FlangeHub-1",
+        "IAM_Cassette0_FlangeHub1",
+        "IAM_Cassette0_HubScrew-1_0",
+        "IAM_Cassette0_HubScrew-1_1",
+        "IAM_Cassette0_HubScrew-1_2",
+        "IAM_Cassette0_HubScrew1_0",
+        "IAM_Cassette0_HubScrew1_1",
+        "IAM_Cassette0_HubScrew1_2",
+        "IAM_Cassette0_MotorRotor",
+        "IAM_Cassette0_Spindle",
+        "IAM_TongueLeaderInnerJaw",
+        "IAM_TongueLeaderJawBridge",
+        "IAM_TongueLeaderOuterJaw",
+        "IAM_TongueSpoolCore",
+        "IAM_TongueSpoolFlange",
+        "IAM_TongueSpoolFlange.001"
+      ],
+      "mesh_count": 465,
+      "bounds_blender": [
+        [
+          -1.3275129795074463,
+          -0.6237968802452087,
+          0.9536287784576416
+        ],
+        [
+          -0.2751883566379547,
+          0.5083267688751221,
+          2.204082727432251
+        ]
+      ],
+      "offset_blender": [
+        -0.8404518365859985,
+        -0.6250860691070557,
+        -0.07353926450014114
+      ],
+      "duration": 1.6,
+      "start": 0.25
+    },
+    {
+      "id": "cover_03",
+      "roots": [
+        "IN1_PanelPivot_03",
+        "IN2_Cassette03_Rotor"
+      ],
+      "stage": 1,
+      "label": "Front cover and bolted rotor tongue; carriage and pressure cylinder retained",
+      "meshes": [
+        "IN1_PanelRim_2_2_0_-1382",
+        "IN1_PanelRim_2_2_0_-153",
+        "IN1_PorcelainPanel_03",
+        "IN2_Cassette03CoverBolt-1Bolt",
+        "IN2_Cassette03CoverBolt-1BoreLiner",
+        "IN2_Cassette03CoverBolt-1InnerWasher",
+        "IN2_Cassette03CoverBolt-1OuterWasher",
+        "IN2_Cassette03CoverBolt-1ThreadedInsert",
+        "IN2_Cassette03CoverBolt1Bolt",
+        "IN2_Cassette03CoverBolt1BoreLiner",
+        "IN2_Cassette03CoverBolt1InnerWasher",
+        "IN2_Cassette03CoverBolt1OuterWasher",
+        "IN2_Cassette03CoverBolt1ThreadedInsert",
+        "IN2_Cassette03RotatingTongue"
+      ],
+      "mesh_count": 14,
+      "bounds_blender": [
+        [
+          0.3496460020542145,
+          -1.0310962200164795,
+          0.8047993183135986
+        ],
+        [
+          1.2669233083724976,
+          0.09499258548021317,
+          2.2311408519744873
+        ]
+      ],
+      "offset_blender": [
+        1.0,
+        -0.8999999761581421,
+        0.18000000715255737
+      ],
+      "duration": 1.6,
+      "start": 1.65,
+      "release_offset_blender": [
+        -0.07696715742349625,
+        -0.06502419710159302,
+        0.06517598032951355
+      ]
+    },
+    {
+      "id": "cover_04",
+      "roots": [
+        "IN1_PanelPivot_04",
+        "IN1_FixedRearShell_04",
+        "IN2_Cassette04_Frame"
+      ],
+      "stage": 1,
+      "label": "Cover, matching rear shell and entire lift cassette",
+      "meshes": [
+        "IN1_PanelRim_3_3_0_-125",
+        "IN1_PanelRim_3_3_0_1312",
+        "IN1_PorcelainPanel_04",
+        "IN1_FixedRearShell_04",
+        "IN2_Cassette04CoverBolt-1Bolt",
+        "IN2_Cassette04CoverBolt-1BoreLiner",
+        "IN2_Cassette04CoverBolt-1InnerWasher",
+        "IN2_Cassette04CoverBolt-1OuterWasher",
+        "IN2_Cassette04CoverBolt-1ThreadedInsert",
+        "IN2_Cassette04CoverBolt1Bolt",
+        "IN2_Cassette04CoverBolt1BoreLiner",
+        "IN2_Cassette04CoverBolt1InnerWasher",
+        "IN2_Cassette04CoverBolt1OuterWasher",
+        "IN2_Cassette04CoverBolt1ThreadedInsert",
+        "IN2_Cassette04RotatingTongue",
+        "IN2_Cassette04CaptivePin",
+        "IN2_Cassette04Crosshead",
+        "IN2_Cassette04PinBush-1",
+        "IN2_Cassette04PinBush1",
+        "IN2_Cassette04PinHead-1",
+        "IN2_Cassette04PinHead1",
+        "IN2_Cassette04PressurePistonRod",
+        "IN2_Cassette04PressurePistonSeal",
+        "IN2_Cassette04PressureRodThrust",
+        "IN2_Cassette04ThrustWasher-1",
+        "IN2_Cassette04ThrustWasher1",
+        "IN2_Guide04RetainingBolt-1",
+        "IN2_Guide04RetainingBolt1",
+        "IN2_Guide04RetainingWasher-1",
+        "IN2_Guide04RetainingWasher1",
+        "IN2_Guide04Rod-1",
+        "IN2_Guide04Rod1",
+        "IN2_Cassette04BackBlock",
+        "IN2_Cassette04BodyBolt-1Bolt",
+        "IN2_Cassette04BodyBolt-1BoreLiner",
+        "IN2_Cassette04BodyBolt-1InnerWasher",
+        "IN2_Cassette04BodyBolt-1OuterWasher",
+        "IN2_Cassette04BodyBolt-1ThreadedInsert",
+        "IN2_Cassette04BodyBolt1Bolt",
+        "IN2_Cassette04BodyBolt1BoreLiner",
+        "IN2_Cassette04BodyBolt1InnerWasher",
+        "IN2_Cassette04BodyBolt1OuterWasher",
+        "IN2_Cassette04BodyBolt1ThreadedInsert",
+        "IN2_Cassette04PressureGlandSeal",
+        "IN2_Cassette04PressureHousing",
+        "IN2_Cassette04PressureMountBolt-1",
+        "IN2_Cassette04PressureMountBolt1",
+        "IN2_Cassette04PressureMountWasher-1",
+        "IN2_Cassette04PressureMountWasher1",
+        "IN2_Guide04Bronze-1",
+        "IN2_Guide04Bronze1",
+        "IN2_Guide04Jacket-1",
+        "IN2_Guide04Jacket1"
+      ],
+      "mesh_count": 53,
+      "bounds_blender": [
+        [
+          0.04246412217617035,
+          -1.0795347690582275,
+          1.3532541990280151
+        ],
+        [
+          1.2305580377578735,
+          0.8387677669525146,
+          3.1818575859069824
+        ]
+      ],
+      "offset_blender": [
+        0.6873706579208374,
+        0.0,
+        0.40929409861564636
+      ],
+      "duration": 1.6,
+      "start": 1.65
+    },
+    {
+      "id": "cover_05",
+      "roots": [
+        "IN1_PanelPivot_05",
+        "IN1_FixedRearShell_05",
+        "IN2_Cassette05_Frame"
+      ],
+      "stage": 1,
+      "label": "Cover, matching rear shell and entire lift cassette",
+      "meshes": [
+        "IN1_PanelRim_4_4_0_1340",
+        "IN1_PorcelainPanel_05",
+        "I53_CapMetal_05",
+        "I61_FrontReturn_05",
+        "IN1_FixedRearShell_05",
+        "IN2_Cassette05CoverBolt-1Bolt",
+        "IN2_Cassette05CoverBolt-1BoreLiner",
+        "IN2_Cassette05CoverBolt-1InnerWasher",
+        "IN2_Cassette05CoverBolt-1OuterWasher",
+        "IN2_Cassette05CoverBolt-1ThreadedInsert",
+        "IN2_Cassette05CoverBolt1Bolt",
+        "IN2_Cassette05CoverBolt1BoreLiner",
+        "IN2_Cassette05CoverBolt1InnerWasher",
+        "IN2_Cassette05CoverBolt1OuterWasher",
+        "IN2_Cassette05CoverBolt1ThreadedInsert",
+        "IN2_Cassette05RotatingTongue",
+        "IN2_Cassette05CaptivePin",
+        "IN2_Cassette05Crosshead",
+        "IN2_Cassette05PinBush-1",
+        "IN2_Cassette05PinBush1",
+        "IN2_Cassette05PinHead-1",
+        "IN2_Cassette05PinHead1",
+        "IN2_Cassette05PressurePistonRod",
+        "IN2_Cassette05PressurePistonSeal",
+        "IN2_Cassette05PressureRodThrust",
+        "IN2_Cassette05ThrustWasher-1",
+        "IN2_Cassette05ThrustWasher1",
+        "IN2_Guide05RetainingBolt-1",
+        "IN2_Guide05RetainingBolt1",
+        "IN2_Guide05RetainingWasher-1",
+        "IN2_Guide05RetainingWasher1",
+        "IN2_Guide05Rod-1",
+        "IN2_Guide05Rod1",
+        "IN2_Cassette05BackBlock",
+        "IN2_Cassette05BodyBolt-1Bolt",
+        "IN2_Cassette05BodyBolt-1BoreLiner",
+        "IN2_Cassette05BodyBolt-1InnerWasher",
+        "IN2_Cassette05BodyBolt-1OuterWasher",
+        "IN2_Cassette05BodyBolt-1ThreadedInsert",
+        "IN2_Cassette05BodyBolt1Bolt",
+        "IN2_Cassette05BodyBolt1BoreLiner",
+        "IN2_Cassette05BodyBolt1InnerWasher",
+        "IN2_Cassette05BodyBolt1OuterWasher",
+        "IN2_Cassette05BodyBolt1ThreadedInsert",
+        "IN2_Cassette05PressureGlandSeal",
+        "IN2_Cassette05PressureHousing",
+        "IN2_Cassette05PressureMountBolt-1",
+        "IN2_Cassette05PressureMountBolt1",
+        "IN2_Cassette05PressureMountWasher-1",
+        "IN2_Cassette05PressureMountWasher1",
+        "IN2_Guide05Bronze-1",
+        "IN2_Guide05Bronze1",
+        "IN2_Guide05Jacket-1",
+        "IN2_Guide05Jacket1"
+      ],
+      "mesh_count": 54,
+      "bounds_blender": [
+        [
+          -1.1225016117095947,
+          -1.1582106351852417,
+          2.008338451385498
+        ],
+        [
+          0.7324583530426025,
+          0.8351086974143982,
+          3.2913706302642822
+        ]
+      ],
+      "offset_blender": [
+        0.05000000074505806,
+        0.15000000596046448,
+        1.0
+      ],
+      "duration": 1.6,
+      "start": 1.65
+    },
+    {
+      "id": "pin_cap_03",
+      "roots": [
+        "IN2_Cassette03PinHead-1"
+      ],
+      "stage": 0,
+      "label": "Remove negative hinge end retainer first",
+      "start": 0.05,
+      "duration": 0.5,
+      "meshes": [
+        "IN2_Cassette03PinHead-1"
+      ],
+      "mesh_count": 1,
+      "bounds_blender": [
+        [
+          1.0216573476791382,
+          0.06100187450647354,
+          1.1282511949539185
+        ],
+        [
+          1.0451818704605103,
+          0.08899811655282974,
+          1.1489700078964233
+        ]
+      ],
+      "offset_blender": [
+        0.07754768431186676,
+        -2.6822088994293836e-09,
+        0.09157705307006836
+      ]
+    },
+    {
+      "id": "pin_03",
+      "roots": [
+        "IN2_Cassette03CaptivePin",
+        "IN2_Cassette03PinHead1"
+      ],
+      "stage": 0,
+      "label": "Withdraw captive hinge pin toward positive end",
+      "start": 0.55,
+      "duration": 0.6,
+      "meshes": [
+        "IN2_Cassette03CaptivePin",
+        "IN2_Cassette03PinHead1"
+      ],
+      "mesh_count": 2,
+      "bounds_blender": [
+        [
+          0.9337700009346008,
+          0.061001889407634735,
+          1.0244637727737427
+        ],
+        [
+          1.0381463766098022,
+          0.08899813145399094,
+          1.1421682834625244
+        ]
+      ],
+      "offset_blender": [
+        -0.11632153391838074,
+        4.023313682210983e-09,
+        -0.13736557960510254
+      ]
+    }
+  ],
+  "fixed_meshes": [
+    "IF12_C05_L_Front_Bolt0",
+    "IF12_C05_L_Front_Bolt0_InnerWasher",
+    "IF12_C05_L_Front_Bolt0_Nut",
+    "IF12_C05_L_Front_Bolt0_Washer",
+    "IF12_C05_L_Front_Bolt1",
+    "IF12_C05_L_Front_Bolt1_InnerWasher",
+    "IF12_C05_L_Front_Bolt1_Nut",
+    "IF12_C05_L_Front_Bolt1_Washer",
+    "IF12_C05_L_Front_InnerBacking",
+    "IF12_C05_L_Front_OuterStand",
+    "IF12_C05_L_Front_UpperClamp",
+    "IF12_C05_L_Front_VisibleCap",
+    "IF12_C05_L_Rear_Bolt0",
+    "IF12_C05_L_Rear_Bolt0_InnerWasher",
+    "IF12_C05_L_Rear_Bolt0_Nut",
+    "IF12_C05_L_Rear_Bolt0_Washer",
+    "IF12_C05_L_Rear_Bolt1",
+    "IF12_C05_L_Rear_Bolt1_InnerWasher",
+    "IF12_C05_L_Rear_Bolt1_Nut",
+    "IF12_C05_L_Rear_Bolt1_Washer",
+    "IF12_C05_L_Rear_InnerBacking",
+    "IF12_C05_L_Rear_OuterStand",
+    "IF12_C05_L_Rear_UpperClamp",
+    "IF12_C05_L_Rear_VisibleCap",
+    "IF12_C05_R_Front_Bolt0",
+    "IF12_C05_R_Front_Bolt0_InnerWasher",
+    "IF12_C05_R_Front_Bolt0_Nut",
+    "IF12_C05_R_Front_Bolt0_Washer",
+    "IF12_C05_R_Front_Bolt1",
+    "IF12_C05_R_Front_Bolt1_InnerWasher",
+    "IF12_C05_R_Front_Bolt1_Nut",
+    "IF12_C05_R_Front_Bolt1_Washer",
+    "IF12_C05_R_Front_InnerBacking",
+    "IF12_C05_R_Front_OuterStand",
+    "IF12_C05_R_Front_UpperClamp",
+    "IF12_C05_R_Front_VisibleCap",
+    "IF12_C05_R_Rear_Bolt0",
+    "IF12_C05_R_Rear_Bolt0_InnerWasher",
+    "IF12_C05_R_Rear_Bolt0_Nut",
+    "IF12_C05_R_Rear_Bolt0_Washer",
+    "IF12_C05_R_Rear_Bolt1",
+    "IF12_C05_R_Rear_Bolt1_InnerWasher",
+    "IF12_C05_R_Rear_Bolt1_Nut",
+    "IF12_C05_R_Rear_Bolt1_Washer",
+    "IF12_C05_R_Rear_InnerBacking",
+    "IF12_C05_R_Rear_OuterStand",
+    "IF12_C05_R_Rear_UpperClamp",
+    "IF12_C05_R_Rear_VisibleCap",
+    "IF12_C06_L_Front_Bolt0",
+    "IF12_C06_L_Front_Bolt0_InnerWasher",
+    "IF12_C06_L_Front_Bolt0_Nut",
+    "IF12_C06_L_Front_Bolt0_Washer",
+    "IF12_C06_L_Front_Bolt1",
+    "IF12_C06_L_Front_Bolt1_InnerWasher",
+    "IF12_C06_L_Front_Bolt1_Nut",
+    "IF12_C06_L_Front_Bolt1_Washer",
+    "IF12_C06_L_Front_InnerBacking",
+    "IF12_C06_L_Front_OuterStand",
+    "IF12_C06_L_Front_UpperClamp",
+    "IF12_C06_L_Front_VisibleCap",
+    "IF12_C06_L_Rear_Bolt0",
+    "IF12_C06_L_Rear_Bolt0_InnerWasher",
+    "IF12_C06_L_Rear_Bolt0_Nut",
+    "IF12_C06_L_Rear_Bolt0_Washer",
+    "IF12_C06_L_Rear_Bolt1",
+    "IF12_C06_L_Rear_Bolt1_InnerWasher",
+    "IF12_C06_L_Rear_Bolt1_Nut",
+    "IF12_C06_L_Rear_Bolt1_Washer",
+    "IF12_C06_L_Rear_InnerBacking",
+    "IF12_C06_L_Rear_OuterStand",
+    "IF12_C06_L_Rear_UpperClamp",
+    "IF12_C06_L_Rear_VisibleCap",
+    "IF12_C06_R_Front_Bolt0",
+    "IF12_C06_R_Front_Bolt0_InnerWasher",
+    "IF12_C06_R_Front_Bolt0_Nut",
+    "IF12_C06_R_Front_Bolt0_Washer",
+    "IF12_C06_R_Front_Bolt1",
+    "IF12_C06_R_Front_Bolt1_InnerWasher",
+    "IF12_C06_R_Front_Bolt1_Nut",
+    "IF12_C06_R_Front_Bolt1_Washer",
+    "IF12_C06_R_Front_InnerBacking",
+    "IF12_C06_R_Front_OuterStand",
+    "IF12_C06_R_Front_UpperClamp",
+    "IF12_C06_R_Front_VisibleCap",
+    "IF12_C06_R_Rear_Bolt0",
+    "IF12_C06_R_Rear_Bolt0_InnerWasher",
+    "IF12_C06_R_Rear_Bolt0_Nut",
+    "IF12_C06_R_Rear_Bolt0_Washer",
+    "IF12_C06_R_Rear_Bolt1",
+    "IF12_C06_R_Rear_Bolt1_InnerWasher",
+    "IF12_C06_R_Rear_Bolt1_Nut",
+    "IF12_C06_R_Rear_Bolt1_Washer",
+    "IF12_C06_R_Rear_InnerBacking",
+    "IF12_C06_R_Rear_OuterStand",
+    "IF12_C06_R_Rear_UpperClamp",
+    "IF12_C06_R_Rear_VisibleCap",
+    "IF12_C07_L_Front_Bolt0",
+    "IF12_C07_L_Front_Bolt0_InnerWasher",
+    "IF12_C07_L_Front_Bolt0_Nut",
+    "IF12_C07_L_Front_Bolt0_Washer",
+    "IF12_C07_L_Front_Bolt1",
+    "IF12_C07_L_Front_Bolt1_InnerWasher",
+    "IF12_C07_L_Front_Bolt1_Nut",
+    "IF12_C07_L_Front_Bolt1_Washer",
+    "IF12_C07_L_Front_InnerBacking",
+    "IF12_C07_L_Front_OuterStand",
+    "IF12_C07_L_Front_UpperClamp",
+    "IF12_C07_L_Front_VisibleCap",
+    "IF12_C07_L_Rear_Bolt0",
+    "IF12_C07_L_Rear_Bolt0_InnerWasher",
+    "IF12_C07_L_Rear_Bolt0_Nut",
+    "IF12_C07_L_Rear_Bolt0_Washer",
+    "IF12_C07_L_Rear_Bolt1",
+    "IF12_C07_L_Rear_Bolt1_InnerWasher",
+    "IF12_C07_L_Rear_Bolt1_Nut",
+    "IF12_C07_L_Rear_Bolt1_Washer",
+    "IF12_C07_L_Rear_InnerBacking",
+    "IF12_C07_L_Rear_OuterStand",
+    "IF12_C07_L_Rear_UpperClamp",
+    "IF12_C07_L_Rear_VisibleCap",
+    "IF12_C07_R_Front_Bolt0",
+    "IF12_C07_R_Front_Bolt0_InnerWasher",
+    "IF12_C07_R_Front_Bolt0_Nut",
+    "IF12_C07_R_Front_Bolt0_Washer",
+    "IF12_C07_R_Front_Bolt1",
+    "IF12_C07_R_Front_Bolt1_InnerWasher",
+    "IF12_C07_R_Front_Bolt1_Nut",
+    "IF12_C07_R_Front_Bolt1_Washer",
+    "IF12_C07_R_Front_InnerBacking",
+    "IF12_C07_R_Front_OuterStand",
+    "IF12_C07_R_Front_UpperClamp",
+    "IF12_C07_R_Front_VisibleCap",
+    "IF12_C07_R_Rear_Bolt0",
+    "IF12_C07_R_Rear_Bolt0_InnerWasher",
+    "IF12_C07_R_Rear_Bolt0_Nut",
+    "IF12_C07_R_Rear_Bolt0_Washer",
+    "IF12_C07_R_Rear_Bolt1",
+    "IF12_C07_R_Rear_Bolt1_InnerWasher",
+    "IF12_C07_R_Rear_Bolt1_Nut",
+    "IF12_C07_R_Rear_Bolt1_Washer",
+    "IF12_C07_R_Rear_InnerBacking",
+    "IF12_C07_R_Rear_OuterStand",
+    "IF12_C07_R_Rear_UpperClamp",
+    "IF12_C07_R_Rear_VisibleCap",
+    "IF12_C08_L_Front_Bolt0",
+    "IF12_C08_L_Front_Bolt0_InnerWasher",
+    "IF12_C08_L_Front_Bolt0_Nut",
+    "IF12_C08_L_Front_Bolt0_Washer",
+    "IF12_C08_L_Front_Bolt1",
+    "IF12_C08_L_Front_Bolt1_InnerWasher",
+    "IF12_C08_L_Front_Bolt1_Nut",
+    "IF12_C08_L_Front_Bolt1_Washer",
+    "IF12_C08_L_Front_InnerBacking",
+    "IF12_C08_L_Front_OuterStand",
+    "IF12_C08_L_Front_UpperClamp",
+    "IF12_C08_L_Front_VisibleCap",
+    "IF12_C08_L_Rear_Bolt0",
+    "IF12_C08_L_Rear_Bolt0_InnerWasher",
+    "IF12_C08_L_Rear_Bolt0_Nut",
+    "IF12_C08_L_Rear_Bolt0_Washer",
+    "IF12_C08_L_Rear_Bolt1",
+    "IF12_C08_L_Rear_Bolt1_InnerWasher",
+    "IF12_C08_L_Rear_Bolt1_Nut",
+    "IF12_C08_L_Rear_Bolt1_Washer",
+    "IF12_C08_L_Rear_InnerBacking",
+    "IF12_C08_L_Rear_OuterStand",
+    "IF12_C08_L_Rear_UpperClamp",
+    "IF12_C08_L_Rear_VisibleCap",
+    "IF12_C08_R_Front_Bolt0",
+    "IF12_C08_R_Front_Bolt0_InnerWasher",
+    "IF12_C08_R_Front_Bolt0_Nut",
+    "IF12_C08_R_Front_Bolt0_Washer",
+    "IF12_C08_R_Front_Bolt1",
+    "IF12_C08_R_Front_Bolt1_InnerWasher",
+    "IF12_C08_R_Front_Bolt1_Nut",
+    "IF12_C08_R_Front_Bolt1_Washer",
+    "IF12_C08_R_Front_InnerBacking",
+    "IF12_C08_R_Front_OuterStand",
+    "IF12_C08_R_Front_UpperClamp",
+    "IF12_C08_R_Front_VisibleCap",
+    "IF12_C08_R_Rear_Bolt0",
+    "IF12_C08_R_Rear_Bolt0_InnerWasher",
+    "IF12_C08_R_Rear_Bolt0_Nut",
+    "IF12_C08_R_Rear_Bolt0_Washer",
+    "IF12_C08_R_Rear_Bolt1",
+    "IF12_C08_R_Rear_Bolt1_InnerWasher",
+    "IF12_C08_R_Rear_Bolt1_Nut",
+    "IF12_C08_R_Rear_Bolt1_Washer",
+    "IF12_C08_R_Rear_InnerBacking",
+    "IF12_C08_R_Rear_OuterStand",
+    "IF12_C08_R_Rear_UpperClamp",
+    "IF12_C08_R_Rear_VisibleCap",
+    "IF12_C09_L_Front_Bolt0",
+    "IF12_C09_L_Front_Bolt0_InnerWasher",
+    "IF12_C09_L_Front_Bolt0_Nut",
+    "IF12_C09_L_Front_Bolt0_Washer",
+    "IF12_C09_L_Front_Bolt1",
+    "IF12_C09_L_Front_Bolt1_InnerWasher",
+    "IF12_C09_L_Front_Bolt1_Nut",
+    "IF12_C09_L_Front_Bolt1_Washer",
+    "IF12_C09_L_Front_InnerBacking",
+    "IF12_C09_L_Front_OuterStand",
+    "IF12_C09_L_Front_UpperClamp",
+    "IF12_C09_L_Front_VisibleCap",
+    "IF12_C09_L_Rear_Bolt0",
+    "IF12_C09_L_Rear_Bolt0_InnerWasher",
+    "IF12_C09_L_Rear_Bolt0_Nut",
+    "IF12_C09_L_Rear_Bolt0_Washer",
+    "IF12_C09_L_Rear_Bolt1",
+    "IF12_C09_L_Rear_Bolt1_InnerWasher",
+    "IF12_C09_L_Rear_Bolt1_Nut",
+    "IF12_C09_L_Rear_Bolt1_Washer",
+    "IF12_C09_L_Rear_InnerBacking",
+    "IF12_C09_L_Rear_OuterStand",
+    "IF12_C09_L_Rear_UpperClamp",
+    "IF12_C09_L_Rear_VisibleCap",
+    "IF12_C09_R_Front_Bolt0",
+    "IF12_C09_R_Front_Bolt0_InnerWasher",
+    "IF12_C09_R_Front_Bolt0_Nut",
+    "IF12_C09_R_Front_Bolt0_Washer",
+    "IF12_C09_R_Front_Bolt1",
+    "IF12_C09_R_Front_Bolt1_InnerWasher",
+    "IF12_C09_R_Front_Bolt1_Nut",
+    "IF12_C09_R_Front_Bolt1_Washer",
+    "IF12_C09_R_Front_InnerBacking",
+    "IF12_C09_R_Front_OuterStand",
+    "IF12_C09_R_Front_UpperClamp",
+    "IF12_C09_R_Front_VisibleCap",
+    "IF12_C09_R_Rear_Bolt0",
+    "IF12_C09_R_Rear_Bolt0_InnerWasher",
+    "IF12_C09_R_Rear_Bolt0_Nut",
+    "IF12_C09_R_Rear_Bolt0_Washer",
+    "IF12_C09_R_Rear_Bolt1",
+    "IF12_C09_R_Rear_Bolt1_InnerWasher",
+    "IF12_C09_R_Rear_Bolt1_Nut",
+    "IF12_C09_R_Rear_Bolt1_Washer",
+    "IF12_C09_R_Rear_InnerBacking",
+    "IF12_C09_R_Rear_OuterStand",
+    "IF12_C09_R_Rear_UpperClamp",
+    "IF12_C09_R_Rear_VisibleCap",
+    "IF12_C04_L_Aft_Bolt0",
+    "IF12_C04_L_Aft_Bolt0_InnerWasher",
+    "IF12_C04_L_Aft_Bolt0_Nut",
+    "IF12_C04_L_Aft_Bolt0_Washer",
+    "IF12_C04_L_Aft_Bolt1",
+    "IF12_C04_L_Aft_Bolt1_InnerWasher",
+    "IF12_C04_L_Aft_Bolt1_Nut",
+    "IF12_C04_L_Aft_Bolt1_Washer",
+    "IF12_C04_L_Aft_InnerBacking",
+    "IF12_C04_L_Aft_OuterStand",
+    "IF12_C04_L_Aft_UpperClamp",
+    "IF12_C04_L_Aft_VisibleCap",
+    "IF12_C04_L_Fore_Bolt0",
+    "IF12_C04_L_Fore_Bolt0_InnerWasher",
+    "IF12_C04_L_Fore_Bolt0_Nut",
+    "IF12_C04_L_Fore_Bolt0_Washer",
+    "IF12_C04_L_Fore_Bolt1",
+    "IF12_C04_L_Fore_Bolt1_InnerWasher",
+    "IF12_C04_L_Fore_Bolt1_Nut",
+    "IF12_C04_L_Fore_Bolt1_Washer",
+    "IF12_C04_L_Fore_InnerBacking",
+    "IF12_C04_L_Fore_OuterStand",
+    "IF12_C04_L_Fore_UpperClamp",
+    "IF12_C04_L_Fore_VisibleCap",
+    "IF12_C04_R_Aft_Bolt0",
+    "IF12_C04_R_Aft_Bolt0_InnerWasher",
+    "IF12_C04_R_Aft_Bolt0_Nut",
+    "IF12_C04_R_Aft_Bolt0_Washer",
+    "IF12_C04_R_Aft_Bolt1",
+    "IF12_C04_R_Aft_Bolt1_InnerWasher",
+    "IF12_C04_R_Aft_Bolt1_Nut",
+    "IF12_C04_R_Aft_Bolt1_Washer",
+    "IF12_C04_R_Aft_InnerBacking",
+    "IF12_C04_R_Aft_OuterStand",
+    "IF12_C04_R_Aft_UpperClamp",
+    "IF12_C04_R_Aft_VisibleCap",
+    "IF12_C04_R_Fore_Bolt0",
+    "IF12_C04_R_Fore_Bolt0_InnerWasher",
+    "IF12_C04_R_Fore_Bolt0_Nut",
+    "IF12_C04_R_Fore_Bolt0_Washer",
+    "IF12_C04_R_Fore_Bolt1",
+    "IF12_C04_R_Fore_Bolt1_InnerWasher",
+    "IF12_C04_R_Fore_Bolt1_Nut",
+    "IF12_C04_R_Fore_Bolt1_Washer",
+    "IF12_C04_R_Fore_InnerBacking",
+    "IF12_C04_R_Fore_OuterStand",
+    "IF12_C04_R_Fore_UpperClamp",
+    "IF12_C04_R_Fore_VisibleCap",
+    "IH11_CoreAnchor_00",
+    "IH11_CoreAnchor_00_Washer",
+    "IH11_CoreAnchor_01",
+    "IH11_CoreAnchor_01_Washer",
+    "IH11_CoreAnchor_02",
+    "IH11_CoreAnchor_02_Washer",
+    "IH11_CoreAnchor_03",
+    "IH11_CoreAnchor_03_Washer",
+    "IH11_FittedHubBacking",
+    "IH11_HubRetainer_00",
+    "IH11_HubRetainer_00_Washer",
+    "IH11_HubRetainer_01",
+    "IH11_HubRetainer_01_Washer",
+    "IH11_HubRetainer_02",
+    "IH11_HubRetainer_02_Washer",
+    "IH11_HubRetainer_03",
+    "IH11_HubRetainer_03_Washer",
+    "IN1_CellDiaphragm_01",
+    "IN1_CellDiaphragm_02",
+    "IN1_CellDiaphragm_03",
+    "IN1_CellDiaphragm_04",
+    "IN1_CellDiaphragm_05",
+    "IN1_CellDiaphragm_06",
+    "IN1_CellDiaphragm_07",
+    "IN1_CellDiaphragm_08",
+    "IN1_CellDiaphragm_09",
+    "IN1_CellDiaphragm_10",
+    "IN1_CellDiaphragm_11",
+    "IN1_CellDiaphragm_12",
+    "IN1_CellFrame_01",
+    "IN1_CellFrame_02",
+    "IN1_CellFrame_03",
+    "IN1_CellFrame_04",
+    "IN1_CellFrame_05",
+    "IN1_CellFrame_06",
+    "IN1_CellFrame_07",
+    "IN1_CellFrame_08",
+    "IN1_CellFrame_09",
+    "IN1_CellFrame_10",
+    "IN1_CellFrame_11",
+    "IN1_CellFrame_12",
+    "IN1_ChamberRib_0_A",
+    "IN1_ChamberRib_10_A",
+    "IN1_ChamberRib_11_A",
+    "IN1_ChamberRib_1_A",
+    "IN1_ChamberRib_2_A",
+    "IN1_ChamberRib_3_A",
+    "IN1_ChamberRib_4_A",
+    "IN1_ChamberRib_4_A.001",
+    "IN1_ChamberRib_5_A",
+    "IN1_ChamberRib_5_A.001",
+    "IN1_ChamberRib_6_A",
+    "IN1_ChamberRib_6_A.001",
+    "IN1_ChamberRib_7_A",
+    "IN1_ChamberRib_7_A.001",
+    "IN1_ChamberRib_8_A",
+    "IN1_ChamberRib_9_A",
+    "IN1_DeckFoot",
+    "IN1_FittedSaddleGasket_1",
+    "IN1_FittedSaddleGasket_2",
+    "IN1_FittedSaddleGasket_3",
+    "IN1_FittedSaddleGasket_4",
+    "IN1_FittedSaddleSeat_1",
+    "IN1_FittedSaddleSeat_2",
+    "IN1_FittedSaddleSeat_3",
+    "IN1_FittedSaddleSeat_4",
+    "IN1_FixedMouthCheek05",
+    "I55_CapMetal_Fixed05",
+    "IN1_FixedRearShell_03",
+    "IN1_HubCeramicFront",
+    "IN1_HubCeramicRear",
+    "IN1_HubInsetFront",
+    "IN1_HubInsetRear",
+    "IN1_HubRecessFront",
+    "IN1_HubRecessRear",
+    "IN1_HubRingFront",
+    "IN1_HubRingRear",
+    "IN1_LowSaddle",
+    "IN1_PanelRim_0_0_0_-2335",
+    "IN1_PanelRim_0_0_0_-3057",
+    "IN1_PorcelainPanel_01",
+    "IN1_PanelRim_1_1_0_-1410",
+    "IN1_PanelRim_1_1_0_-2307",
+    "IN1_PanelRim_1_1_1_-1410",
+    "IN1_PorcelainPanel_02",
+    "IN1_PanelRim_5_5_0_2527",
+    "IN1_PanelRim_5_5_0_3197",
+    "IN1_PorcelainPanel_06",
+    "IN1_SpiralHubFront",
+    "IN1_SpiralHubRear",
+    "IN2_Cassette03Crosshead",
+    "IN2_Cassette03PinBush-1",
+    "IN2_Cassette03PinBush1",
+    "IN2_Cassette03PressurePistonRod",
+    "IN2_Cassette03PressurePistonSeal",
+    "IN2_Cassette03PressureRodThrust",
+    "IN2_Cassette03ThrustWasher-1",
+    "IN2_Cassette03ThrustWasher1",
+    "IN2_Guide03RetainingBolt-1",
+    "IN2_Guide03RetainingBolt1",
+    "IN2_Guide03RetainingWasher-1",
+    "IN2_Guide03RetainingWasher1",
+    "IN2_Guide03Rod-1",
+    "IN2_Guide03Rod1",
+    "IN2_Cassette03BackBlock",
+    "IN2_Cassette03BodyBolt-1Bolt",
+    "IN2_Cassette03BodyBolt-1BoreLiner",
+    "IN2_Cassette03BodyBolt-1InnerWasher",
+    "IN2_Cassette03BodyBolt-1OuterWasher",
+    "IN2_Cassette03BodyBolt-1ThreadedInsert",
+    "IN2_Cassette03BodyBolt1Bolt",
+    "IN2_Cassette03BodyBolt1BoreLiner",
+    "IN2_Cassette03BodyBolt1InnerWasher",
+    "IN2_Cassette03BodyBolt1OuterWasher",
+    "IN2_Cassette03BodyBolt1ThreadedInsert",
+    "IN2_Cassette03PressureGlandSeal",
+    "IN2_Cassette03PressureHousing",
+    "IN2_Cassette03PressureMountBolt-1",
+    "IN2_Cassette03PressureMountBolt1",
+    "IN2_Cassette03PressureMountWasher-1",
+    "IN2_Cassette03PressureMountWasher1",
+    "IN2_Guide03Bronze-1",
+    "IN2_Guide03Bronze1",
+    "IN2_Guide03Jacket-1",
+    "IN2_Guide03Jacket1",
+    "IC1_CollarLower",
+    "IC1_CollarUpper",
+    "IC1_SeamCrossBolt_-1",
+    "IC1_SeamCrossBolt_1",
+    "IC1_SeamWasher_-1_-1",
+    "IC1_SeamWasher_-1_1",
+    "IC1_SeamWasher_1_-1",
+    "IC1_SeamWasher_1_1",
+    "IC1_TrunnionBush_-1_-1",
+    "IC1_TrunnionBush_-1_1",
+    "IC1_TrunnionBush_1_-1",
+    "IC1_TrunnionBush_1_1",
+    "IC1_TrunnionPin_-1",
+    "IC1_TrunnionPin_1",
+    "IC1_TrunnionRetainer_-1_-1",
+    "IC1_TrunnionRetainer_-1_1",
+    "IC1_TrunnionRetainer_1_-1",
+    "IC1_TrunnionRetainer_1_1",
+    "IN3_CouplingBolt_00",
+    "IN3_CouplingBolt_00_Washer",
+    "IN3_CouplingBolt_01",
+    "IN3_CouplingBolt_01_Washer",
+    "IN3_CouplingBolt_02",
+    "IN3_CouplingBolt_02_Washer",
+    "IN3_CouplingBolt_03",
+    "IN3_CouplingBolt_03_Washer",
+    "IN3_CouplingBolt_04",
+    "IN3_CouplingBolt_04_Washer",
+    "IN3_CouplingBolt_05",
+    "IN3_CouplingBolt_05_Washer",
+    "IN3_CouplingSeal",
+    "IN3_ContinuousThroat",
+    "IS9_C02_L_00_Bolt0",
+    "IS9_C02_L_00_Bolt0_Washer",
+    "IS9_C02_L_00_Bolt1",
+    "IS9_C02_L_00_Bolt1_Washer",
+    "IS9_C02_L_00_LowerStand",
+    "IS9_C02_L_00_UpperClamp",
+    "IS9_C02_L_01_Bolt0",
+    "IS9_C02_L_01_Bolt0_Washer",
+    "IS9_C02_L_01_Bolt1",
+    "IS9_C02_L_01_Bolt1_Washer",
+    "IS9_C02_L_01_LowerStand",
+    "IS9_C02_L_01_UpperClamp",
+    "IS9_C02_R_02_Bolt0",
+    "IS9_C02_R_02_Bolt0_Washer",
+    "IS9_C02_R_02_Bolt1",
+    "IS9_C02_R_02_Bolt1_Washer",
+    "IS9_C02_R_02_LowerStand",
+    "IS9_C02_R_02_UpperClamp",
+    "IS9_C02_R_03_Bolt0",
+    "IS9_C02_R_03_Bolt0_Washer",
+    "IS9_C02_R_03_Bolt1",
+    "IS9_C02_R_03_Bolt1_Washer",
+    "IS9_C02_R_03_LowerStand",
+    "IS9_C02_R_03_UpperClamp",
+    "IS9_C03_L_04_Bolt0",
+    "IS9_C03_L_04_Bolt0_Washer",
+    "IS9_C03_L_04_Bolt1",
+    "IS9_C03_L_04_Bolt1_Washer",
+    "IS9_C03_L_04_LowerStand",
+    "IS9_C03_L_04_UpperClamp",
+    "IS9_C03_L_05_Bolt0",
+    "IS9_C03_L_05_Bolt0_Washer",
+    "IS9_C03_L_05_Bolt1",
+    "IS9_C03_L_05_Bolt1_Washer",
+    "IS9_C03_L_05_LowerStand",
+    "IS9_C03_L_05_UpperClamp",
+    "IS9_C03_R_06_Bolt0",
+    "IS9_C03_R_06_Bolt0_Washer",
+    "IS9_C03_R_06_Bolt1",
+    "IS9_C03_R_06_Bolt1_Washer",
+    "IS9_C03_R_06_LowerStand",
+    "IS9_C03_R_06_UpperClamp",
+    "IS9_C03_R_07_Bolt0",
+    "IS9_C03_R_07_Bolt0_Washer",
+    "IS9_C03_R_07_Bolt1",
+    "IS9_C03_R_07_Bolt1_Washer",
+    "IS9_C03_R_07_LowerStand",
+    "IS9_C03_R_07_UpperClamp",
+    "IS9_C10_L_08_Bolt0",
+    "IS9_C10_L_08_Bolt0_Washer",
+    "IS9_C10_L_08_Bolt1",
+    "IS9_C10_L_08_Bolt1_Washer",
+    "IS9_C10_L_08_LowerStand",
+    "IS9_C10_L_08_UpperClamp",
+    "IS9_C10_L_09_Bolt0",
+    "IS9_C10_L_09_Bolt0_Washer",
+    "IS9_C10_L_09_Bolt1",
+    "IS9_C10_L_09_Bolt1_Washer",
+    "IS9_C10_L_09_LowerStand",
+    "IS9_C10_L_09_UpperClamp",
+    "IS9_C10_R_10_Bolt0",
+    "IS9_C10_R_10_Bolt0_Washer",
+    "IS9_C10_R_10_Bolt1",
+    "IS9_C10_R_10_Bolt1_Washer",
+    "IS9_C10_R_10_LowerStand",
+    "IS9_C10_R_10_UpperClamp",
+    "IS9_C10_R_11_Bolt0",
+    "IS9_C10_R_11_Bolt0_Washer",
+    "IS9_C10_R_11_Bolt1",
+    "IS9_C10_R_11_Bolt1_Washer",
+    "IS9_C10_R_11_LowerStand",
+    "IS9_C10_R_11_UpperClamp",
+    "IS9_C11_L_12_Bolt0",
+    "IS9_C11_L_12_Bolt0_Washer",
+    "IS9_C11_L_12_Bolt1",
+    "IS9_C11_L_12_Bolt1_Washer",
+    "IS9_C11_L_12_LowerStand",
+    "IS9_C11_L_12_UpperClamp",
+    "IS9_C11_L_13_Bolt0",
+    "IS9_C11_L_13_Bolt0_Washer",
+    "IS9_C11_L_13_Bolt1",
+    "IS9_C11_L_13_Bolt1_Washer",
+    "IS9_C11_L_13_LowerStand",
+    "IS9_C11_L_13_UpperClamp",
+    "IS9_C11_R_14_Bolt0",
+    "IS9_C11_R_14_Bolt0_Washer",
+    "IS9_C11_R_14_Bolt1",
+    "IS9_C11_R_14_Bolt1_Washer",
+    "IS9_C11_R_14_LowerStand",
+    "IS9_C11_R_14_UpperClamp",
+    "IS9_C11_R_15_Bolt0",
+    "IS9_C11_R_15_Bolt0_Washer",
+    "IS9_C11_R_15_Bolt1",
+    "IS9_C11_R_15_Bolt1_Washer",
+    "IS9_C11_R_15_LowerStand",
+    "IS9_C11_R_15_UpperClamp",
+    "IS9_C12_L_16_Bolt0",
+    "IS9_C12_L_16_Bolt0_Washer",
+    "IS9_C12_L_16_Bolt1",
+    "IS9_C12_L_16_Bolt1_Washer",
+    "IS9_C12_L_16_LowerStand",
+    "IS9_C12_L_16_UpperClamp",
+    "IS9_C12_L_17_Bolt0",
+    "IS9_C12_L_17_Bolt0_Washer",
+    "IS9_C12_L_17_Bolt1",
+    "IS9_C12_L_17_Bolt1_Washer",
+    "IS9_C12_L_17_LowerStand",
+    "IS9_C12_L_17_UpperClamp",
+    "IS9_C12_R_18_Bolt0",
+    "IS9_C12_R_18_Bolt0_Washer",
+    "IS9_C12_R_18_Bolt1",
+    "IS9_C12_R_18_Bolt1_Washer",
+    "IS9_C12_R_18_LowerStand",
+    "IS9_C12_R_18_UpperClamp",
+    "IS9_C12_R_19_Bolt0",
+    "IS9_C12_R_19_Bolt0_Washer",
+    "IS9_C12_R_19_Bolt1",
+    "IS9_C12_R_19_Bolt1_Washer",
+    "IS9_C12_R_19_LowerStand",
+    "IS9_C12_R_19_UpperClamp",
+    "IS18_Leg01_BronzeInlay_0",
+    "IS18_Leg01_BronzeInlay_1",
+    "IS18_Leg01_DeckBolt_-1",
+    "IS18_Leg01_DeckBolt_1",
+    "IS18_Leg01_DeckWasher_-1",
+    "IS18_Leg01_DeckWasher_1",
+    "IS18_Leg01_FootBush_-1",
+    "IS18_Leg01_FootBush_1",
+    "IS18_Leg01_FootPin",
+    "IS18_Leg01_FootPinWasher_-1",
+    "IS18_Leg01_FootPinWasher_1",
+    "IS18_Leg01_FormedBody",
+    "IS18_Leg01_LowerThrust_-1",
+    "IS18_Leg01_LowerThrust_1",
+    "IS18_Leg01_PortLiner",
+    "IS18_Leg01_PortSeal",
+    "IS18_Leg01_FormedShoe",
+    "IS18_Leg01_FormedShoe_Gasket",
+    "IS18_Leg01_UpperThrust_-1",
+    "IS18_Leg01_UpperThrust_1",
+    "IS18_Leg02_BronzeInlay_0",
+    "IS18_Leg02_BronzeInlay_1",
+    "IS18_Leg02_DeckBolt_-1",
+    "IS18_Leg02_DeckBolt_1",
+    "IS18_Leg02_DeckWasher_-1",
+    "IS18_Leg02_DeckWasher_1",
+    "IS18_Leg02_FootBush_-1",
+    "IS18_Leg02_FootBush_1",
+    "IS18_Leg02_FootPin",
+    "IS18_Leg02_FootPinWasher_-1",
+    "IS18_Leg02_FootPinWasher_1",
+    "IS18_Leg02_FormedBody",
+    "IS18_Leg02_LowerThrust_-1",
+    "IS18_Leg02_LowerThrust_1",
+    "IS18_Leg02_PortLiner",
+    "IS18_Leg02_PortSeal",
+    "IS18_Leg02_FormedShoe",
+    "IS18_Leg02_FormedShoe_Gasket",
+    "IS18_Leg02_UpperThrust_-1",
+    "IS18_Leg02_UpperThrust_1",
+    "IS9_C01_L_00_Bolt0",
+    "IS9_C01_L_00_Bolt0_Washer",
+    "IS9_C01_L_00_Bolt1",
+    "IS9_C01_L_00_Bolt1_Washer",
+    "IS9_C01_L_00_LowerStand",
+    "IS9_C01_L_00_UpperClamp",
+    "IS9_C01_L_01_Bolt0",
+    "IS9_C01_L_01_Bolt0_Washer",
+    "IS9_C01_L_01_Bolt1",
+    "IS9_C01_L_01_Bolt1_Washer",
+    "IS9_C01_L_01_LowerStand",
+    "IS9_C01_L_01_UpperClamp",
+    "IS9_C01_R_02_Bolt0",
+    "IS9_C01_R_02_Bolt0_Washer",
+    "IS9_C01_R_02_Bolt1",
+    "IS9_C01_R_02_Bolt1_Washer",
+    "IS9_C01_R_02_LowerStand",
+    "IS9_C01_R_02_UpperClamp",
+    "IS9_C01_R_03_Bolt0",
+    "IS9_C01_R_03_Bolt0_Washer",
+    "IS9_C01_R_03_Bolt1",
+    "IS9_C01_R_03_Bolt1_Washer",
+    "IS9_C01_R_03_LowerStand",
+    "IS9_C01_R_03_UpperClamp"
+  ],
+  "fixed_mesh_count": 629,
+  "total_claimed_meshes": 589,
+  "samples": [
+    {
+      "time": 0.0,
+      "contacts": [
+        {
+          "a": "pin_cap_03",
+          "b": "pin_03",
+          "triangle_pairs": 18
+        }
+      ],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "pin_03": [
+          -0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "time": 0.1,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.0021713352762162685,
+          -7.510184835135547e-11,
+          0.0025641575921326876
+        ],
+        "pin_03": [
+          -0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "time": 0.15,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.008064959198236465,
+          -2.7894972443043287e-10,
+          0.009524013847112656
+        ],
+        "pin_03": [
+          -0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "time": 0.25,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.02729678526520729,
+          -9.441375459218193e-10,
+          0.032235123217105865
+        ],
+        "pin_03": [
+          -0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "time": 0.45,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.0694827288389206,
+          -2.403259147243375e-09,
+          0.082053042948246
+        ],
+        "pin_03": [
+          -0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "time": 0.55,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "time": 0.7,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.018175240606069565,
+          6.286427489676782e-10,
+          -0.02146337181329727
+        ]
+      }
+    },
+    {
+      "time": 0.8,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.04375520721077919,
+          1.5133991837501526e-09,
+          -0.05167108029127121
+        ]
+      }
+    },
+    {
+      "time": 1.0,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.09814629703760147,
+          3.3946709887544557e-09,
+          -0.11590220779180527
+        ]
+      }
+    },
+    {
+      "time": 1.15,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 1.4,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 1.65,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 1.7,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.003307182574644685,
+          -0.002794008469209075,
+          0.0028005302883684635
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 1.75,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.012026118114590645,
+          -0.010160030797123909,
+          0.010183746926486492
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 1.8,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.024352889508008957,
+          -0.020574063062667847,
+          0.02062208764255047
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 1.9,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.05261426791548729,
+          -0.04445013403892517,
+          0.04455389454960823
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 2.0,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.0736599713563919,
+          -0.0622301883995533,
+          0.062375448644161224
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 2.05,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.07696715742349625,
+          -0.06502419710159302,
+          0.06517598032951355
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 2.1,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          -0.07151376456022263,
+          -0.06925223022699356,
+          0.06575740873813629
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 2.25,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          0.002808183431625366,
+          -0.12687425315380096,
+          0.07368146628141403
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 2.5,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          0.2637919783592224,
+          -0.32921576499938965,
+          0.1015070229768753
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 2.8,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          0.6592408418655396,
+          -0.6358084082603455,
+          0.14366896450519562
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 3.25,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          0.9999999403953552,
+          -0.8999999761581421,
+          0.18000000715255737
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    },
+    {
+      "time": 3.5,
+      "contacts": [],
+      "offsets": {
+        "mouth": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_03": [
+          0.9999999403953552,
+          -0.8999999761581421,
+          0.18000000715255737
+        ],
+        "cover_04": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "cover_05": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pin_cap_03": [
+          0.07754768431186676,
+          -2.6822088994293836e-09,
+          0.09157705307006836
+        ],
+        "pin_03": [
+          -0.11632153391838074,
+          4.023313682210983e-09,
+          -0.13736557960510254
+        ]
+      }
+    }
+  ],
+  "new_contact_pairs": [],
+  "baseline_pairs": [
+    [
+      "pin_cap_03",
+      "pin_03"
+    ]
+  ],
+  "status": "tentative_paths_require_contact_review",
+  "scope": "Real source rigid service assemblies AFTER normal guided opening. Original source file unchanged. Triangle intersections sampled; baseline contacts are recorded, NOT accepted or waived. No continuous collision, containment, unfastening, actual animation asset or final art acceptance. This run keeps mouth and other service modules stationary, checking only stage03 withdrawal.",
+  "active_groups": [
+    "cover_03",
+    "pin_cap_03",
+    "pin_03"
+  ]
+}

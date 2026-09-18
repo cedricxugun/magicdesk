@@ -1,0 +1,12 @@
+import bpy,json,hashlib,sys
+from pathlib import Path
+from mathutils import Vector
+ROOT=Path(__file__).resolve().parents[2];args=sys.argv[sys.argv.index('--')+1:]if '--'in sys.argv else [];report=ROOT/next((a.split('=',1)[1]for a in args if a.startswith('--report=')),'review/I_refinement/nautilus_r1/clean_cowl_r23/build.json');OUT=report.parent;s=json.loads(report.read_text());c=json.loads((OUT/'self_contacts.json').read_text());assert c['source_sha256']==s['source_sha256'];assert hashlib.sha256((ROOT/s['source']).read_bytes()).hexdigest()==s['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(ROOT/s['source']));bpy.context.scene.frame_set(1);bpy.context.view_layer.update();inverse=bpy.data.objects['IAM_MODULE'].matrix_world.inverted();rows=[]
+for row in c['rows']:
+    o=bpy.data.objects[row['mesh']];vertices=[o.matrix_world@v.co for v in o.data.vertices];edges={tuple(sorted(e.vertices))for e in o.data.edges};samples=[];all_points=[]
+    for pair in row['contacts']:
+        a,b=[[vertices[i]for i in f]for f in pair['vertices']];na=(a[1]-a[0]).cross(a[2]-a[0]);nb=(b[1]-b[0]).cross(b[2]-b[0]);aa=na.length/2;ab=nb.length/2;na.normalize();nb.normalize();common=sum(any((p-q).length<2e-7 for q in b)for p in a);exact=sum(any(tuple(p)==tuple(q) for q in b)for p in a);points=[inverse@p for p in a+b];all_points+=points
+        zero_edges=[(i,j)for i in pair['vertices'][0]for j in pair['vertices'][1]if tuple(vertices[i])==tuple(vertices[j])and tuple(sorted((i,j)))in edges]
+        samples.append({**pair,'area':[aa,ab],'normal_dot':na.dot(nb),'common_vertices_2e7':common,'exact_common_vertices':exact,'shared_zero_length_edges':zero_edges,'points_mouth':[list(p)for p in points]})
+    result={'mesh':row['mesh'],'count':len(samples),'exact_common_count':sum(r['exact_common_vertices']>0 for r in samples),'zero_edge_contacts':sum(bool(r['shared_zero_length_edges'])for r in samples),'near_common_count':sum(r['common_vertices_2e7']>0 for r in samples),'minimum_area':min((min(r['area'])for r in samples),default=None),'maximum_area':max((max(r['area'])for r in samples),default=None),'bounds_mouth':[[min(p[k]for p in all_points)for k in range(3)],[max(p[k]for p in all_points)for k in range(3)]]if all_points else None,'samples':samples};rows.append(result);print({k:v for k,v in result.items()if k!='samples'},flush=True)
+(OUT/'self_contact_diagnostic.json').write_text(json.dumps({'source_sha256':s['source_sha256'],'rows':rows},indent=2)+'\n')

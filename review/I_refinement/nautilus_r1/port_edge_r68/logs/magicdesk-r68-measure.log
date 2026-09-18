@@ -1,0 +1,5 @@
+00:02.927  blend            | Read blend: "/Users/cedric/Desktop/magic desk/blender/collection/I_nautilus_port_envelope_r67c.blend"
+PORT_EDGE_MEASURE {"source_sha256": "1ae4af0081c6a06ec42eef2e9723cf54465f7bae3f240649cd110bea2584ff73", "minimum_edge_axial_height": 0.004444792866706848, "minimum_edge_length": 0.0013402317943615918, "normal_wall_rays": 2304, "minimum_normal_ray_thickness": 0.0028808035345971586, "scope": "Source edge lengths/heights and inward face-centroid normal rays; not a full minimum-thickness proof."}
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

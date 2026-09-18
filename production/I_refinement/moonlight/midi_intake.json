@@ -1,0 +1,98 @@
+[
+  {
+    "file": "production/I_refinement/moonlight/mutopia/moonlight1.mid",
+    "seconds_at_embedded_tempo": 275.99999999999994,
+    "ticks_per_beat": 384,
+    "tracks": 3,
+    "note_ons": 1142,
+    "meta": [
+      {
+        "type": "time_signature",
+        "numerator": 2,
+        "denominator": 2,
+        "clocks_per_click": 18,
+        "notated_32nd_notes_per_beat": 8,
+        "time": 0
+      },
+      {
+        "type": "set_tempo",
+        "tempo": 1000000,
+        "time": 0
+      },
+      {
+        "type": "key_signature",
+        "key": "E",
+        "time": 0
+      },
+      {
+        "type": "key_signature",
+        "key": "E",
+        "time": 0
+      }
+    ]
+  },
+  {
+    "file": "production/I_refinement/moonlight/mutopia/moonlight2.mid",
+    "seconds_at_embedded_tempo": 179.0,
+    "ticks_per_beat": 384,
+    "tracks": 3,
+    "note_ons": 373,
+    "meta": [
+      {
+        "type": "time_signature",
+        "numerator": 3,
+        "denominator": 4,
+        "clocks_per_click": 18,
+        "notated_32nd_notes_per_beat": 8,
+        "time": 0
+      },
+      {
+        "type": "set_tempo",
+        "tempo": 1000000,
+        "time": 0
+      },
+      {
+        "type": "key_signature",
+        "key": "Db",
+        "time": 0
+      },
+      {
+        "type": "key_signature",
+        "key": "Db",
+        "time": 0
+      }
+    ]
+  },
+  {
+    "file": "production/I_refinement/moonlight/mutopia/moonlight3.mid",
+    "seconds_at_embedded_tempo": 801.7135416666666,
+    "ticks_per_beat": 384,
+    "tracks": 3,
+    "note_ons": 4863,
+    "meta": [
+      {
+        "type": "time_signature",
+        "numerator": 4,
+        "denominator": 4,
+        "clocks_per_click": 18,
+        "notated_32nd_notes_per_beat": 8,
+        "time": 0
+      },
+      {
+        "type": "set_tempo",
+        "tempo": 1000000,
+        "time": 0
+      },
+      {
+        "type": "key_signature",
+        "key": "C#m",
+        "time": 0
+      },
+      {
+        "type": "key_signature",
+        "key": "C#m",
+        "time": 0
+      }
+    ]
+  }
+]

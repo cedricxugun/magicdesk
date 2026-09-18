@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "image": "service_storyboard_r1.png",
+  "image_sha256": "c4cdb03233eae7e7399cada3c2aa2e01015c55338c77303913c3e81da91fd2e4",
+  "prompt": "PROMPT.txt",
+  "prompt_sha256": "497736d386210fc2ef70ba6f20ffe45c59d3773a1f931c12fe8a7a3d1a60b8f8",
+  "original_output": "/Users/cedric/.codex/generated_images/01a081b1-905f-7c82-a411-7499958dad6e/exec-473d23b3-8b8c-4188-b62b-f488f9f67285.png",
+  "references": [
+    "review/I_refinement/nautilus_r1/curved_returns_r61/views_r2/closed.png",
+    "review/I_refinement/nautilus_r1/curved_returns_r61/views_r2/open.png"
+  ],
+  "scope": "Sequencing and visual direction only. Generated long shaft and changed/new coupling details are not existing engineering parts and were not copied into the model. Base/control render is a reference, not a replacement for the current I control cassette."
+}

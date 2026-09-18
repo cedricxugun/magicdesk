@@ -1,0 +1,26 @@
+{
+  "status": "active",
+  "body_source_sha256": "31f87c61f1835a18b8b065eb2f2ec2270a2ab3632f1a331d23036a876d158176",
+  "files": {
+    "app/assets/collection/registry.json": "837a27303a01d8c6f2d071dfcb5d8265028dd3147c7442d1e7dbaeb5351bde64",
+    "app/assets/collection/models/I_nautilus_r59.json": "24a02b595b321ff0537373db7f5bfb413f668a3ba302782b773d4f525da3de5c",
+    "app/collection/service.gd": "750acf94711cf9d4404d79b5a7d50da7237d45b4ce8444c2b95f9279f2e32dd2",
+    "app/collection/control_driver.gd": "0b8ba5a5685510b6021ef87546ac54cf1a244023adc3fabb9747abb0103e2e59",
+    "app/collection/i_nautilus_module.gd": "b4415fc25c4350fcc9b35c9c2e6b95e8bd4436ec0a17bcc053800ff9b0337707",
+    "app/collection/i_nautilus_play.gd": "31b38c51ca8959357fbf47014e7081c7d97a58a6a20ef36b2f7a6a565a05fc22",
+    "app/collection/i_nautilus_archive.gd": "b7489819a0da8f6b2bb4e956794d72d4f0efbed93fbbbb1f42edafe6d1f5b020",
+    "app/collection/i_nautilus_effect_bridge.gd": "6558c277db4ba4608691ee7d66e83c62dd3ed447bcbb89215664d605d8c914d5",
+    "app/collection/i_echo_presentation.gd": "2761cd5a5f439147cf959d1ac2e746ceb37c2ac51b29e76104f9c064c6a2fb61",
+    "app/collection/i_moonlight_staff.gd": "e5377b263408ffe8fb911774439b622a93cd3ab5c26801feffeb4c2fe23a3db3",
+    "app/review/i_collection_preview.gd": "1aea86a70e398c999a057b2bb021f64c3e93a783b38eaab1200bc792c2f4eeee",
+    "tests/collection/i_nautilus_module_qa.gd": "ac2f95b8982f42db34ad19540c54ac7a0fb59e3c384c53d3c287e4b0d9895d8d",
+    "tests/collection/i_nautilus_main_qa.gd": "6e96dc0bb0090d9309e8aed6ba4edad37001f493e709968cff733956c1b41205",
+    "tools/build_i_nautilus_manifest.py": "ab46b43cc6b2629343791998801b8dce03a1f551eca3ab562aa769a42607efde",
+    "tools/run_nautilus_collection_preview.sh": "6fb972541532fb0d01631b64d0bb97d2847c7d0be11530c8ba647148e4f15bc2"
+  },
+  "default_development_registry_updated": true,
+  "installed_app_updated": false,
+  "evidence": "review/I_refinement/nautilus_r1/main_adapter_r59",
+  "previous_goal_turn": "progress: reusable assembly plus OS inputs and full-work transport evidence",
+  "current_turn": "progress: actual main service integration and native console/selector round trip; not final art acceptance"
+}

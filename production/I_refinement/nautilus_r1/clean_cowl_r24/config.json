@@ -1,0 +1,8 @@
+{
+  "panel": 6,
+  "base_report": "review/I_refinement/nautilus_r1/clean_cowl_r23/build.json",
+  "expected_parent_source_sha256": "be709238b61837618e10cfdf8cf1787d7ea067f50ea035e1f2860f734f3bb04e",
+  "out": "review/I_refinement/nautilus_r1/clean_cowl_r24",
+  "source": "blender/collection/I_nautilus_clean_cowl_r24.blend",
+  "component": "app/assets/collection/components/I_nautilus_clean_cowl_r24.glb"
+}

@@ -1,0 +1,30 @@
+{
+  "generator": "built-in image_gen",
+  "image": "app/assets/collection/art/I/acoustic_atlas_r1.png",
+  "sha256": "e2195ee9db3477ad15294fd7f3adc884623451104c148373889634ee71cd30e9",
+  "size": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "sampling": "Use luminance as optical mask on black; tint outgoing amber, returning blue-amber. Tiles2x2 with black border padding; no extraction/repaint applied.",
+  "tiles": {
+    "outgoing": [
+      0,
+      0
+    ],
+    "return_flow": [
+      1,
+      0
+    ],
+    "standing_mode": [
+      0,
+      1
+    ],
+    "release_packet": [
+      1,
+      1
+    ]
+  },
+  "status": "Authored raw atlas ready; not yet integrated into I runtime"
+}

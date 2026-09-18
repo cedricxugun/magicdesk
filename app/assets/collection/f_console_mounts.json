@@ -1,0 +1,26 @@
+{
+  "algorithm": 1,
+  "meshes": {
+    "FCTRL_Legend_0079": "res://assets/collection/f_console_mounts/FCTRL_Legend_0079.res",
+    "FCTRL_Legend_0103": "res://assets/collection/f_console_mounts/FCTRL_Legend_0103.res",
+    "FCTRL_Legend_0125": "res://assets/collection/f_console_mounts/FCTRL_Legend_0125.res",
+    "FCTRL_Legend_0164": "res://assets/collection/f_console_mounts/FCTRL_Legend_0164.res",
+    "FCTRL_Legend_0180": "res://assets/collection/f_console_mounts/FCTRL_Legend_0180.res"
+  },
+  "mount_frames": {
+    "FCTRL_detent": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.0, 0.31, 1.373)]",
+    "FCTRL_gauge": "[X: (0.951057, 0.0, -0.309017), Y: (0.0, 1.0, 0.0), Z: (0.309017, 0.0, 0.951057), O: (0.42428, 0.31, 1.305801)]",
+    "FCTRL_hold": "[X: (0.951057, 0.0, 0.309017), Y: (0.0, 1.0, 0.0), Z: (-0.309017, 0.0, 0.951057), O: (-0.42428, 0.31, 1.305801)]",
+    "FCTRL_rotary": "[X: (0.809017, 0.0, 0.587785), Y: (0.0, 1.0, 0.0), Z: (-0.587785, 0.0, 0.809017), O: (-0.807029, 0.31, 1.11078)]",
+    "FCTRL_service": "[X: (0.809017, 0.0, -0.587785), Y: (0.0, 1.0, 0.0), Z: (0.587785, 0.0, 0.809017), O: (0.807029, 0.31, 1.11078)]"
+  },
+  "offset": 0.00035,
+  "source_hashes": {
+    "FCTRL_Legend_0079": "64af028b013fda102dff9df1779ab6f46c507fd55aab207c5cb000576081ca4a",
+    "FCTRL_Legend_0103": "391a3ae2761e4ad77d52f82831a33d230481c8045cfff92b398fb9f3ab879da0",
+    "FCTRL_Legend_0125": "e51289d27584519a88df5e34c7761930e5f0dc1cf901c834842d096e79fb7554",
+    "FCTRL_Legend_0164": "943ff05a481f44ba7ca669db2ef19f7a052ec908025708efa1c0d88939bfe5e8",
+    "FCTRL_Legend_0180": "7d19d1d33bfbcf5716e22ac800fffc89ad776d5c5a1a890d66fc59da5a1b53ce"
+  },
+  "surface_signature": "5e4053af4fc7489a7418b4c7f95d536923c53e93f3e302045f19ebfa2b7bd71c"
+}

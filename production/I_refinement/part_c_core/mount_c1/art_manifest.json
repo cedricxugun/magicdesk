@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/Users/cedric/.codex/generated_images/01a081b1-905f-7c82-a411-7499958dad6e/exec-a03d06b2-c302-41d1-9d5e-9c1724b995ba.png",
+  "image": "production/I_refinement/part_c_core/mount_c1/C_core_and_mount_study_r1.png",
+  "sha256": "91e7f1198160027ae15620a45cff9f42eaad8e2553712e78af5421a88f7fdd07",
+  "prompt": "PROMPT.md",
+  "review": "Continuous ribbed liner and machined split collar are useful fabrication directions. The image reinterprets whole-mouth placement and its isolated collar is drawn nearly horizontal. Neither is a geometric placement authority; keep actual A/B3 transforms and measured rear-flange axis."
+}

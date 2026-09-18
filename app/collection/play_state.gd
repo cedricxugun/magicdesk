@@ -20,7 +20,7 @@ func setup(owner:Node3D)->void:
 	if module.data.id=="G" and module.data.has("g_mechanism"):
 		g_instrument=load("res://collection/g_archive.gd" if module.data.has("g_archive") else "res://collection/g_instrument.gd").new();g_instrument.setup(module)
 	if module.data.has("record_player"):
-		g_instrument=load("res://collection/record_player.gd").new();g_instrument.setup(module)
+		g_instrument=load("res://collection/optical_curator.gd" if module.data.has("optical_curator") else "res://collection/record_player.gd").new();g_instrument.setup(module)
 
 func value(key:String)->Variant:return values.get(key,0.0)
 func number(key:String)->float:return float(values.get(key,0.0))
@@ -38,7 +38,7 @@ func input(key:String,requested:Variant,event:String)->void:
 		return
 	active=true
 	if event=="begin":
-		if g_instrument:module.host.rotation_enabled=false
+		if g_instrument or instrument:module.host.rotation_enabled=false
 		module.stowing=false;module.explode_target=0.0;module.host.power_target=1.0
 		if module.data.id!="N":module.open_target=1.0;module.effect.resume()
 	match str(module.data.id):
@@ -148,7 +148,7 @@ func gauge_value()->float:
 	if g_instrument and module.data.has("g_archive"):return g_instrument.read_progress if g_instrument.stage=="reading" else g_instrument.display_amount*.25+g_instrument.action_energy*.75
 	if g_instrument:return g_instrument.alignment
 	match str(module.data.id):
-		"F":return float(response.balance)
+		"F":return clampf(.5+(instrument.physics.theta-instrument.physics.REST)/deg_to_rad(24.),0.,1.) if instrument else float(response.balance)
 		"G":return float(response.imprint)
 		"I":return maxf(float(response.pressure),float(response.echo))
 		"J":return float(response.growth[clampi(int(number("branch")),0,2)])

@@ -1,0 +1,74 @@
+{
+  "sha256": "e2195ee9db3477ad15294fd7f3adc884623451104c148373889634ee71cd30e9",
+  "tiles": [
+    {
+      "tile": [
+        0,
+        0
+      ],
+      "weighted_center_uv": [
+        0.496988801600063,
+        0.49301173056631586
+      ],
+      "threshold_bbox_pixels": [
+        48,
+        39,
+        579,
+        578
+      ],
+      "peak": 0.9882352941176471
+    },
+    {
+      "tile": [
+        1,
+        0
+      ],
+      "weighted_center_uv": [
+        0.4722746673023025,
+        0.4940659575151419
+      ],
+      "threshold_bbox_pixels": [
+        26,
+        227,
+        592,
+        394
+      ],
+      "peak": 0.9686274509803922
+    },
+    {
+      "tile": [
+        0,
+        1
+      ],
+      "weighted_center_uv": [
+        0.4965091417024199,
+        0.4507496952546471
+      ],
+      "threshold_bbox_pixels": [
+        43,
+        14,
+        583,
+        550
+      ],
+      "peak": 0.9882352941176471
+    },
+    {
+      "tile": [
+        1,
+        1
+      ],
+      "weighted_center_uv": [
+        0.39327713232249756,
+        0.46203164304778105
+      ],
+      "threshold_bbox_pixels": [
+        16,
+        193,
+        580,
+        386
+      ],
+      "peak": 0.9766089965397925
+    }
+  ],
+  "mask": "RGB max multiplied by generated alpha; low-level colored fringe is not a physical color signal. No bitmap editing performed."
+}

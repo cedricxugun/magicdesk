@@ -1,0 +1,58 @@
+[
+  {
+    "movement": 1,
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ludwig_van_Beethoven_-_sonata_no._14_in_c_sharp_minor_%27moonlight%27,_op._27_no._2_-_i._adagio_sostenuto.ogg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ludwig_van_Beethoven_-_sonata_no._14_in_c_sharp_minor_%27moonlight%27%2C_op._27_no._2_-_i._adagio_sostenuto.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "file": "production/I_refinement/moonlight/pitman_movement_1.ogg",
+    "sha256": "035a31b8d67de4b0574110592a6f8ce2f6e51dfc7f884e16f918e47e327d7d66",
+    "bytes": 10863043,
+    "performer": "Paul Pitman",
+    "attribution": "Ludwig van Beethoven; performed by Paul Pitman, courtesy of Musopen https://musopen.org/; source Wikimedia Commons",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "335.769229"
+      }
+    },
+    "quality_status": "Candidate, requires listening and score alignment; third movement source is low bitrate, not automatically final quality."
+  },
+  {
+    "movement": 2,
+    "source_page": "https://commons.wikimedia.org/wiki/File:Moonlight_Sonata_Allegretto.ogg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Moonlight_Sonata_Allegretto.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "file": "production/I_refinement/moonlight/pitman_movement_2.ogg",
+    "sha256": "41b9b2021e6f9d7f8b4c32aca20fdbbb84f774c01db2be448b348604c5ec6344",
+    "bytes": 5974613,
+    "performer": "Paul Pitman",
+    "attribution": "Ludwig van Beethoven; performed by Paul Pitman, courtesy of Musopen https://musopen.org/; source Wikimedia Commons",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ],
+      "format": {
+        "duration": "131.552653"
+      }
+    },
+    "quality_status": "Candidate, requires listening and score alignment; third movement source is low bitrate, not automatically final quality."
+  },
+  {
+    "movement": 3,
+    "source_page": "https://commons.wikimedia.org/wiki/File:Moonlight_Sonata_Presto.ogg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Moonlight_Sonata_Presto.ogg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "download_error": "HTTP Error 429: Too many requests (f061ab2)"
+  }
+]

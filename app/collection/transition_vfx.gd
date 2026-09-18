@@ -33,6 +33,7 @@ func material(tile:int,crop:Vector2=Vector2.ONE)->ShaderMaterial:
 	return m
 
 func begin(subject:Node3D)->void:
+	var started:=Time.get_ticks_usec()
 	finish();running=true;clock=0
 	ghost_material.set_shader_parameter("front",100.0);ghost_material.set_shader_parameter("gain",0.)
 	ghost_depth.set_shader_parameter("front",100.0)
@@ -47,6 +48,8 @@ func begin(subject:Node3D)->void:
 	front=top
 	radius=clampf(maxf(absf(bounds.position.x),absf(bounds.end.x))+.07,.68,1.35)
 	ring.mesh=annulus(radius)
+	owner_service.load_metrics["transition_ghost_setup_ms"]=(Time.get_ticks_usec()-started)/1000.
+	owner_service.load_metrics["transition_ghost_meshes"]=ghosts.size()
 
 func collect(node:Node,meshes:Array[MeshInstance3D])->void:
 	if node is MeshInstance3D and node.is_visible_in_tree():meshes.append(node)

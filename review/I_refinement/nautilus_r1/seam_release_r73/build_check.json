@@ -1,0 +1,88 @@
+{
+  "source_sha256": "86b25cf745e4e3129d2d88b2743b21e1ea8dadf7642a6a8556337904ad0a9d7a",
+  "parent_source_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b",
+  "changed_meshes": [
+    "IC1_SeamCrossBolt_-1",
+    "IC1_SeamCrossBolt_1"
+  ],
+  "protected_meshes": 1233,
+  "pairs": [
+    {
+      "sign": -1,
+      "pin": {
+        "mesh": "IC1_SeamCrossBolt_-1",
+        "vertices": 6924,
+        "triangles": 13844,
+        "volume": 1.29212990297872e-05,
+        "self_contacts": 0
+      },
+      "socket": {
+        "mesh": "IC73_SeamSocket_-1",
+        "vertices": 9890,
+        "triangles": 19776,
+        "volume": 1.8413179872505303e-06,
+        "self_contacts": 0
+      },
+      "axis_parent": [
+        0,
+        1,
+        0
+      ],
+      "center_parent": [
+        -0.601,
+        0,
+        0.59
+      ],
+      "socket_bounds_parent_y": [
+        -0.079,
+        -0.067
+      ],
+      "thread_pitch": 0.001,
+      "nominal_thread_radial_clearance": 4e-05,
+      "radial_thread_depth": 0.0002,
+      "radial_interlock": 0.00016,
+      "blind_wall_thickness": 0.0007,
+      "pin_socket_contacts": 0,
+      "cap_side": -1
+    },
+    {
+      "sign": 1,
+      "pin": {
+        "mesh": "IC1_SeamCrossBolt_1",
+        "vertices": 6924,
+        "triangles": 13844,
+        "volume": 1.2921329432247796e-05,
+        "self_contacts": 0
+      },
+      "socket": {
+        "mesh": "IC73_SeamSocket_1",
+        "vertices": 9890,
+        "triangles": 19776,
+        "volume": 1.841317966780313e-06,
+        "self_contacts": 0
+      },
+      "axis_parent": [
+        0,
+        1,
+        0
+      ],
+      "center_parent": [
+        0.601,
+        0,
+        0.59
+      ],
+      "socket_bounds_parent_y": [
+        -0.079,
+        -0.067
+      ],
+      "thread_pitch": 0.001,
+      "nominal_thread_radial_clearance": 4e-05,
+      "radial_thread_depth": 0.0002,
+      "radial_interlock": 0.00016,
+      "blind_wall_thickness": 0.0007,
+      "pin_socket_contacts": 0,
+      "cap_side": 1
+    }
+  ],
+  "scope": "Separable stud/retainer with actual male/female relief and blind hex socket. Positive original heads retained, negative caps lengthened outward locally. Neighbor, motion, clamp unlock, import and visual checks pending; no load-bearing certification."
+}

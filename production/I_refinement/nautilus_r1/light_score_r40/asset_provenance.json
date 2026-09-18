@@ -1,0 +1,11 @@
+{
+  "tool": "built-in image_gen",
+  "new_design": "production/I_refinement/nautilus_r1/light_score_r40/lighting_score_detail_r1.png",
+  "design_sha256": "2a9b08908784dd62de5cb53d2d89756f8190e0dc57f9c4919427c4b32eb74ce2",
+  "prompt": "production/I_refinement/nautilus_r1/light_score_r40/PROMPT.txt",
+  "role": "Local lighting/score presentation only; generated geometry drift excluded from production",
+  "existing_conductor_mask": "app/assets/collection/art/I/chamber_response_r35/conductor_mask.png",
+  "existing_scanner_mask": "app/assets/collection/art/I/moonlight_candidate/central_scan_r1/filament_mask.png",
+  "score_catalog": "app/assets/collection/art/I/moonlight_candidate/score/manifest.json",
+  "generated_music_glyphs_used": false
+}

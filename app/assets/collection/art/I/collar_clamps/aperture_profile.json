@@ -1,0 +1,141 @@
+{
+  "source_sha256": "734f5365098133ee372616b0795c7e10b0b5c381961c70db0c63dfb962ec6bd6",
+  "component_sha256": "9e57f33fa026d042c74918e13e9fa8bca73e54a8c0232e347bed000c137486c1",
+  "scope": "Projected unoccluded axial path before the fixed grille, measured on all six evaluated foil surfaces. Excludes a fixed central core disk. Does not model grille porosity, fluid/acoustic losses or full physical conductance.",
+  "samples": [
+    {
+      "opening": 0.0,
+      "clear_fraction": 0.6470356354462314
+    },
+    {
+      "opening": 0.03125,
+      "clear_fraction": 0.6464049195837275
+    },
+    {
+      "opening": 0.0625,
+      "clear_fraction": 0.6454588457899716
+    },
+    {
+      "opening": 0.09375,
+      "clear_fraction": 0.6444339325134028
+    },
+    {
+      "opening": 0.125,
+      "clear_fraction": 0.6444339325134028
+    },
+    {
+      "opening": 0.15625,
+      "clear_fraction": 0.6461684011352885
+    },
+    {
+      "opening": 0.1875,
+      "clear_fraction": 0.6485335856196783
+    },
+    {
+      "opening": 0.21875,
+      "clear_fraction": 0.6547619047619048
+    },
+    {
+      "opening": 0.25,
+      "clear_fraction": 0.6639072847682119
+    },
+    {
+      "opening": 0.28125,
+      "clear_fraction": 0.6792809839167455
+    },
+    {
+      "opening": 0.3125,
+      "clear_fraction": 0.6989908546199937
+    },
+    {
+      "opening": 0.34375,
+      "clear_fraction": 0.7273730684326711
+    },
+    {
+      "opening": 0.375,
+      "clear_fraction": 0.7568590350047304
+    },
+    {
+      "opening": 0.40625,
+      "clear_fraction": 0.7901292967518133
+    },
+    {
+      "opening": 0.4375,
+      "clear_fraction": 0.8215074109113845
+    },
+    {
+      "opening": 0.46875,
+      "clear_fraction": 0.8523336486912646
+    },
+    {
+      "opening": 0.5,
+      "clear_fraction": 0.88040050457269
+    },
+    {
+      "opening": 0.53125,
+      "clear_fraction": 0.9059444970040996
+    },
+    {
+      "opening": 0.5625,
+      "clear_fraction": 0.9281772311573636
+    },
+    {
+      "opening": 0.59375,
+      "clear_fraction": 0.9473352254809209
+    },
+    {
+      "opening": 0.625,
+      "clear_fraction": 0.9630242825607064
+    },
+    {
+      "opening": 0.65625,
+      "clear_fraction": 0.9756385998107853
+    },
+    {
+      "opening": 0.6875,
+      "clear_fraction": 0.9852570167139704
+    },
+    {
+      "opening": 0.71875,
+      "clear_fraction": 0.9917218543046358
+    },
+    {
+      "opening": 0.75,
+      "clear_fraction": 0.9959003468937244
+    },
+    {
+      "opening": 0.78125,
+      "clear_fraction": 0.9982655313781141
+    },
+    {
+      "opening": 0.8125,
+      "clear_fraction": 0.999605802585935
+    },
+    {
+      "opening": 0.84375,
+      "clear_fraction": 0.999921160517187
+    },
+    {
+      "opening": 0.875,
+      "clear_fraction": 1.0
+    },
+    {
+      "opening": 0.90625,
+      "clear_fraction": 1.0
+    },
+    {
+      "opening": 0.9375,
+      "clear_fraction": 1.0
+    },
+    {
+      "opening": 0.96875,
+      "clear_fraction": 1.0
+    },
+    {
+      "opening": 1.0,
+      "clear_fraction": 1.0
+    }
+  ],
+  "max_grid_fraction_difference": 0.0013356907778258043,
+  "measurement_sha256": "cb60f7f6822eea295b4be8dd34c4ab365ce656c103ee515587d6957186b5d236"
+}

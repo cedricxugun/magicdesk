@@ -1,0 +1,10 @@
+{
+  "source_sha256": "cf9bc3d0f2f3fa48139843cc92e3418b33a8fb8a2859ef7ba641291d9a1770af",
+  "maps": [
+    "nickel_roughness.png",
+    "nickel_normal.png"
+  ],
+  "pipeline": "Blender Cycles tangent normal and emission roughness baking from authored input; base color remains measured material choice, not the scan color.",
+  "samples": 1,
+  "resolution": 1024
+}

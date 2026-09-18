@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "status": "G1 isolated candidate finish; native and visual acceptance pending",
+  "color_space": "linear RGB; convert for Godot source_color uniforms",
+  "materials": {
+    "Porcelain": {
+      "color": [
+        0.77,
+        0.735,
+        0.66
+      ],
+      "metallic": 0,
+      "roughness": 0.29,
+      "roughness_map": "res://assets/ceramic_glaze_roughness.png",
+      "roughness_scale": 0.1,
+      "roughness_offset": 0.27,
+      "normal_map": "res://assets/ceramic_glaze_normal.png",
+      "normal_depth": 0.12,
+      "coat": 0.4,
+      "coat_roughness": 0.22,
+      "specular_strength": 0.38,
+      "anisotropy_strength": 0
+    },
+    "ArchiveGold": {
+      "color": [
+        0.55,
+        0.34,
+        0.115
+      ],
+      "metallic": 1,
+      "roughness": 0.3,
+      "roughness_map": "res://assets/metal_roughness.png",
+      "roughness_scale": 0.26,
+      "roughness_offset": 0.2,
+      "normal_map": "res://assets/metal_normal.png",
+      "normal_depth": 0.055,
+      "coat": 0,
+      "coat_roughness": 0.2,
+      "specular_strength": 0.5,
+      "anisotropy_strength": 0.2
+    },
+    "Nickel": {
+      "color": [
+        0.44,
+        0.48,
+        0.5
+      ],
+      "metallic": 1,
+      "roughness": 0.23,
+      "roughness_map": "res://assets/metal_roughness.png",
+      "roughness_scale": 0.18,
+      "roughness_offset": 0.16,
+      "normal_map": "res://assets/metal_normal.png",
+      "normal_depth": 0.04,
+      "coat": 0,
+      "coat_roughness": 0.2,
+      "specular_strength": 0.5,
+      "anisotropy_strength": 0.18
+    },
+    "Red": {
+      "color": [
+        0.19,
+        0.004,
+        0.008
+      ],
+      "metallic": 0,
+      "roughness": 0.16,
+      "coat": 0.6,
+      "coat_roughness": 0.09,
+      "specular_strength": 0.5,
+      "anisotropy_strength": 0
+    },
+    "Satin": {
+      "color": [
+        0.12,
+        0.145,
+        0.15
+      ],
+      "metallic": 0.95,
+      "roughness": 0.34,
+      "roughness_map": "res://assets/metal_roughness.png",
+      "roughness_scale": 0.15,
+      "roughness_offset": 0.28,
+      "normal_map": "res://assets/metal_normal.png",
+      "normal_depth": 0.04,
+      "coat": 0,
+      "coat_roughness": 0.2,
+      "specular_strength": 0.5,
+      "anisotropy_strength": 0.1
+    },
+    "Lens": {
+      "color": [
+        0.015,
+        0.025,
+        0.022
+      ],
+      "metallic": 0.05,
+      "roughness": 0.13,
+      "coat": 0.55,
+      "coat_roughness": 0.06,
+      "specular_strength": 0.5,
+      "anisotropy_strength": 0
+    }
+  }
+}

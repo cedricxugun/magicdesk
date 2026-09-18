@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "parameter_rate": 1.0,
+  "attack_rate": 1.15,
+  "release_rate": 0.85,
+  "time_bias_minutes": 30,
+  "status": "Observatory interaction refinement; visual acceptance pending",
+  "calibration_mask": {
+    "path": "res://assets/collection/art/G_AI/observatory_calibration_mask.png",
+    "center": [
+      0.4993525486518716,
+      0.4944428170551044
+    ],
+    "radius": 0.3857655502392344,
+    "dial_radius": 0.137
+  }
+}

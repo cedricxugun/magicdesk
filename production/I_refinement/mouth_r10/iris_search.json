@@ -1,0 +1,1570 @@
+[
+  {
+    "pivot": 0.45,
+    "aperture": 0.5,
+    "travel": 1.6,
+    "uncovered_fraction": 0.055584415584415584,
+    "points": 27
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.5,
+    "travel": 1.75,
+    "uncovered_fraction": 0.0664935064935065,
+    "points": 27
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.5,
+    "travel": 2.05,
+    "uncovered_fraction": 0.0748051948051948,
+    "points": 28
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.5,
+    "travel": 1.9,
+    "uncovered_fraction": 0.07688311688311689,
+    "points": 27
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.5,
+    "travel": 1.6,
+    "uncovered_fraction": 0.07792207792207792,
+    "points": 28
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.5,
+    "travel": 1.45,
+    "uncovered_fraction": 0.07948051948051948,
+    "points": 27
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.5,
+    "travel": 1.45,
+    "uncovered_fraction": 0.08051948051948052,
+    "points": 27
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.5,
+    "travel": 2.05,
+    "uncovered_fraction": 0.08207792207792208,
+    "points": 27
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.5,
+    "travel": 1.75,
+    "uncovered_fraction": 0.08935064935064935,
+    "points": 28
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.5,
+    "travel": 1.9,
+    "uncovered_fraction": 0.0903896103896104,
+    "points": 28
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.5,
+    "travel": 1.9,
+    "uncovered_fraction": 0.09194805194805195,
+    "points": 30
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.52,
+    "travel": 1.6,
+    "uncovered_fraction": 0.09640287769784173,
+    "points": 25
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.5,
+    "travel": 2.05,
+    "uncovered_fraction": 0.09714285714285714,
+    "points": 30
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.5,
+    "travel": 1.45,
+    "uncovered_fraction": 0.09922077922077922,
+    "points": 28
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.5,
+    "travel": 1.75,
+    "uncovered_fraction": 0.10493506493506494,
+    "points": 30
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.52,
+    "travel": 1.75,
+    "uncovered_fraction": 0.10551558752997602,
+    "points": 25
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.5,
+    "travel": 1.3,
+    "uncovered_fraction": 0.11168831168831168,
+    "points": 27
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.5,
+    "travel": 1.6,
+    "uncovered_fraction": 0.11532467532467533,
+    "points": 29
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.52,
+    "travel": 1.9,
+    "uncovered_fraction": 0.11894484412470024,
+    "points": 25
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.5,
+    "travel": 1.3,
+    "uncovered_fraction": 0.11896103896103896,
+    "points": 26
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.52,
+    "travel": 1.6,
+    "uncovered_fraction": 0.11942446043165468,
+    "points": 26
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.52,
+    "travel": 2.05,
+    "uncovered_fraction": 0.12278177458033573,
+    "points": 26
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.52,
+    "travel": 1.45,
+    "uncovered_fraction": 0.12326139088729017,
+    "points": 25
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.52,
+    "travel": 2.05,
+    "uncovered_fraction": 0.12470023980815348,
+    "points": 25
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.5,
+    "travel": 1.75,
+    "uncovered_fraction": 0.12831168831168832,
+    "points": 30
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.5,
+    "travel": 1.6,
+    "uncovered_fraction": 0.1303896103896104,
+    "points": 29
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.52,
+    "travel": 1.45,
+    "uncovered_fraction": 0.13189448441247004,
+    "points": 26
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.5,
+    "travel": 1.3,
+    "uncovered_fraction": 0.13454545454545455,
+    "points": 27
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.5,
+    "travel": 1.9,
+    "uncovered_fraction": 0.13454545454545455,
+    "points": 32
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.52,
+    "travel": 1.75,
+    "uncovered_fraction": 0.13525179856115108,
+    "points": 26
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.5,
+    "travel": 1.45,
+    "uncovered_fraction": 0.13714285714285715,
+    "points": 28
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.52,
+    "travel": 1.9,
+    "uncovered_fraction": 0.13717026378896882,
+    "points": 26
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.52,
+    "travel": 2.05,
+    "uncovered_fraction": 0.13860911270983214,
+    "points": 28
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.52,
+    "travel": 1.9,
+    "uncovered_fraction": 0.13956834532374102,
+    "points": 28
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.5,
+    "travel": 1.3,
+    "uncovered_fraction": 0.14285714285714285,
+    "points": 26
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.54,
+    "travel": 1.6,
+    "uncovered_fraction": 0.14770191878625613,
+    "points": 25
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.54,
+    "travel": 1.75,
+    "uncovered_fraction": 0.15127175368139223,
+    "points": 25
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.52,
+    "travel": 1.45,
+    "uncovered_fraction": 0.15299760191846523,
+    "points": 27
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.52,
+    "travel": 1.75,
+    "uncovered_fraction": 0.15635491606714627,
+    "points": 28
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.5,
+    "travel": 2.05,
+    "uncovered_fraction": 0.1605194805194805,
+    "points": 32
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.52,
+    "travel": 1.3,
+    "uncovered_fraction": 0.1645083932853717,
+    "points": 25
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.54,
+    "travel": 1.9,
+    "uncovered_fraction": 0.16599732262382866,
+    "points": 25
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.52,
+    "travel": 1.6,
+    "uncovered_fraction": 0.1669064748201439,
+    "points": 28
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.54,
+    "travel": 1.6,
+    "uncovered_fraction": 0.16733601070950468,
+    "points": 26
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.5,
+    "travel": 1.3,
+    "uncovered_fraction": 0.16883116883116883,
+    "points": 28
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.5,
+    "travel": 1.15,
+    "uncovered_fraction": 0.17194805194805196,
+    "points": 26
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.54,
+    "travel": 2.05,
+    "uncovered_fraction": 0.17224453369031684,
+    "points": 26
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.52,
+    "travel": 1.3,
+    "uncovered_fraction": 0.17314148681055155,
+    "points": 26
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.54,
+    "travel": 2.05,
+    "uncovered_fraction": 0.1749219098616689,
+    "points": 25
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.5,
+    "travel": 1.15,
+    "uncovered_fraction": 0.17506493506493506,
+    "points": 26
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.5,
+    "travel": 1.45,
+    "uncovered_fraction": 0.17506493506493506,
+    "points": 29
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.55,
+    "travel": 1.6,
+    "uncovered_fraction": 0.17672229353872487,
+    "points": 24
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.5,
+    "travel": 1.6,
+    "uncovered_fraction": 0.17714285714285713,
+    "points": 30
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.54,
+    "travel": 1.45,
+    "uncovered_fraction": 0.17715305667112896,
+    "points": 25
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.55,
+    "travel": 1.75,
+    "uncovered_fraction": 0.1775780915703894,
+    "points": 25
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.52,
+    "travel": 1.9,
+    "uncovered_fraction": 0.1788968824940048,
+    "points": 30
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.52,
+    "travel": 1.3,
+    "uncovered_fraction": 0.17985611510791366,
+    "points": 25
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.52,
+    "travel": 1.75,
+    "uncovered_fraction": 0.17985611510791366,
+    "points": 29
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.54,
+    "travel": 1.75,
+    "uncovered_fraction": 0.18384649709950915,
+    "points": 26
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.52,
+    "travel": 1.6,
+    "uncovered_fraction": 0.18465227817745802,
+    "points": 28
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.54,
+    "travel": 1.45,
+    "uncovered_fraction": 0.18518518518518517,
+    "points": 26
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.5,
+    "travel": 1.15,
+    "uncovered_fraction": 0.1864935064935065,
+    "points": 27
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.54,
+    "travel": 1.9,
+    "uncovered_fraction": 0.18741633199464525,
+    "points": 26
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.54,
+    "travel": 2.05,
+    "uncovered_fraction": 0.18786256135653726,
+    "points": 27
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.54,
+    "travel": 1.9,
+    "uncovered_fraction": 0.18964747880410532,
+    "points": 27
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.5,
+    "travel": 1.75,
+    "uncovered_fraction": 0.19064935064935065,
+    "points": 31
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.52,
+    "travel": 2.05,
+    "uncovered_fraction": 0.19136690647482013,
+    "points": 30
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.52,
+    "travel": 1.45,
+    "uncovered_fraction": 0.19184652278177458,
+    "points": 27
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.55,
+    "travel": 1.9,
+    "uncovered_fraction": 0.1925545571245186,
+    "points": 24
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.5,
+    "travel": 1.15,
+    "uncovered_fraction": 0.19584415584415585,
+    "points": 26
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.55,
+    "travel": 2.05,
+    "uncovered_fraction": 0.19597774925117672,
+    "points": 25
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.52,
+    "travel": 1.3,
+    "uncovered_fraction": 0.1971223021582734,
+    "points": 26
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.55,
+    "travel": 1.6,
+    "uncovered_fraction": 0.20154043645699615,
+    "points": 26
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.55,
+    "travel": 2.05,
+    "uncovered_fraction": 0.20367993153615746,
+    "points": 26
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.54,
+    "travel": 1.75,
+    "uncovered_fraction": 0.2070504239178938,
+    "points": 27
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.55,
+    "travel": 1.45,
+    "uncovered_fraction": 0.20753102267864784,
+    "points": 25
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.55,
+    "travel": 1.75,
+    "uncovered_fraction": 0.21052631578947367,
+    "points": 26
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.54,
+    "travel": 1.45,
+    "uncovered_fraction": 0.2110664881749219,
+    "points": 26
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.55,
+    "travel": 1.9,
+    "uncovered_fraction": 0.21138211382113822,
+    "points": 26
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.55,
+    "travel": 2.05,
+    "uncovered_fraction": 0.21437740693196405,
+    "points": 27
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.55,
+    "travel": 1.45,
+    "uncovered_fraction": 0.21780059905862217,
+    "points": 26
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.55,
+    "travel": 1.9,
+    "uncovered_fraction": 0.21951219512195122,
+    "points": 27
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.54,
+    "travel": 1.6,
+    "uncovered_fraction": 0.21954484605087016,
+    "points": 27
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.5,
+    "travel": 1.3,
+    "uncovered_fraction": 0.2212987012987013,
+    "points": 28
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.54,
+    "travel": 1.3,
+    "uncovered_fraction": 0.22356091030789826,
+    "points": 24
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.54,
+    "travel": 1.3,
+    "uncovered_fraction": 0.22713074520303436,
+    "points": 25
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.52,
+    "travel": 1.15,
+    "uncovered_fraction": 0.22877697841726619,
+    "points": 25
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.5,
+    "travel": 1.45,
+    "uncovered_fraction": 0.2290909090909091,
+    "points": 29
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.52,
+    "travel": 1.6,
+    "uncovered_fraction": 0.22973621103117506,
+    "points": 29
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.54,
+    "travel": 1.9,
+    "uncovered_fraction": 0.23070058009817046,
+    "points": 29
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.5,
+    "travel": 1.9,
+    "uncovered_fraction": 0.2322077922077922,
+    "points": 32
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.5,
+    "travel": 1.15,
+    "uncovered_fraction": 0.2322077922077922,
+    "points": 27
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.54,
+    "travel": 2.05,
+    "uncovered_fraction": 0.23248549754573852,
+    "points": 29
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.54,
+    "travel": 1.3,
+    "uncovered_fraction": 0.23337795626952254,
+    "points": 25
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.54,
+    "travel": 1.75,
+    "uncovered_fraction": 0.23427041499330656,
+    "points": 29
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.52,
+    "travel": 1.3,
+    "uncovered_fraction": 0.2354916067146283,
+    "points": 26
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.55,
+    "travel": 1.75,
+    "uncovered_fraction": 0.2362002567394095,
+    "points": 27
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.52,
+    "travel": 1.45,
+    "uncovered_fraction": 0.23645083932853717,
+    "points": 28
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.52,
+    "travel": 1.75,
+    "uncovered_fraction": 0.23645083932853717,
+    "points": 30
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.52,
+    "travel": 1.15,
+    "uncovered_fraction": 0.23741007194244604,
+    "points": 25
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.52,
+    "travel": 1.15,
+    "uncovered_fraction": 0.2383693045563549,
+    "points": 24
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.54,
+    "travel": 1.6,
+    "uncovered_fraction": 0.24141008478357875,
+    "points": 28
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.55,
+    "travel": 1.6,
+    "uncovered_fraction": 0.2421908429610612,
+    "points": 27
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.55,
+    "travel": 1.45,
+    "uncovered_fraction": 0.24347454000855798,
+    "points": 26
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.5,
+    "travel": 1.15,
+    "uncovered_fraction": 0.24675324675324675,
+    "points": 25
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.54,
+    "travel": 1.45,
+    "uncovered_fraction": 0.250334672021419,
+    "points": 27
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.55,
+    "travel": 1.3,
+    "uncovered_fraction": 0.25459991442019686,
+    "points": 25
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.55,
+    "travel": 1.9,
+    "uncovered_fraction": 0.25459991442019686,
+    "points": 29
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.55,
+    "travel": 1.3,
+    "uncovered_fraction": 0.2554557124518614,
+    "points": 24
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.5,
+    "travel": 1.0,
+    "uncovered_fraction": 0.2561038961038961,
+    "points": 26
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.5,
+    "travel": 1.6,
+    "uncovered_fraction": 0.2571428571428571,
+    "points": 31
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.55,
+    "travel": 2.05,
+    "uncovered_fraction": 0.2588789045785195,
+    "points": 29
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.5,
+    "travel": 1.0,
+    "uncovered_fraction": 0.26025974025974025,
+    "points": 25
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.54,
+    "travel": 1.3,
+    "uncovered_fraction": 0.26193663543061135,
+    "points": 26
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.52,
+    "travel": 1.15,
+    "uncovered_fraction": 0.26235011990407675,
+    "points": 25
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.52,
+    "travel": 1.9,
+    "uncovered_fraction": 0.2633093525179856,
+    "points": 31
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.55,
+    "travel": 1.75,
+    "uncovered_fraction": 0.26572528883183566,
+    "points": 29
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.5,
+    "travel": 1.0,
+    "uncovered_fraction": 0.27064935064935064,
+    "points": 26
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.52,
+    "travel": 1.15,
+    "uncovered_fraction": 0.2719424460431655,
+    "points": 24
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.55,
+    "travel": 1.3,
+    "uncovered_fraction": 0.2725716730851519,
+    "points": 25
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.55,
+    "travel": 1.6,
+    "uncovered_fraction": 0.2768506632434745,
+    "points": 28
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.5,
+    "travel": 1.0,
+    "uncovered_fraction": 0.2820779220779221,
+    "points": 25
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.55,
+    "travel": 1.45,
+    "uncovered_fraction": 0.2854086435601198,
+    "points": 27
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.54,
+    "travel": 1.15,
+    "uncovered_fraction": 0.2896028558679161,
+    "points": 24
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.54,
+    "travel": 1.6,
+    "uncovered_fraction": 0.29049531459170014,
+    "points": 29
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.54,
+    "travel": 1.75,
+    "uncovered_fraction": 0.29049531459170014,
+    "points": 30
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.54,
+    "travel": 1.15,
+    "uncovered_fraction": 0.2940651494868362,
+    "points": 24
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.52,
+    "travel": 1.45,
+    "uncovered_fraction": 0.29688249400479616,
+    "points": 28
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.5,
+    "travel": 2.05,
+    "uncovered_fraction": 0.29974025974025975,
+    "points": 34
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.55,
+    "travel": 1.3,
+    "uncovered_fraction": 0.29995721009841675,
+    "points": 26
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.54,
+    "travel": 1.45,
+    "uncovered_fraction": 0.3003123605533244,
+    "points": 27
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.52,
+    "travel": 1.3,
+    "uncovered_fraction": 0.30071942446043165,
+    "points": 27
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.5,
+    "travel": 1.15,
+    "uncovered_fraction": 0.30077922077922076,
+    "points": 27
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.5,
+    "travel": 1.75,
+    "uncovered_fraction": 0.30493506493506495,
+    "points": 32
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.52,
+    "travel": 2.05,
+    "uncovered_fraction": 0.3064748201438849,
+    "points": 32
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.54,
+    "travel": 1.9,
+    "uncovered_fraction": 0.30655957161981257,
+    "points": 31
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.5,
+    "travel": 1.3,
+    "uncovered_fraction": 0.3090909090909091,
+    "points": 29
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.54,
+    "travel": 1.15,
+    "uncovered_fraction": 0.3092369477911647,
+    "points": 24
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.54,
+    "travel": 1.15,
+    "uncovered_fraction": 0.3101294065149487,
+    "points": 25
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.52,
+    "travel": 1.6,
+    "uncovered_fraction": 0.3112709832134293,
+    "points": 29
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.5,
+    "travel": 1.0,
+    "uncovered_fraction": 0.3132467532467533,
+    "points": 26
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.52,
+    "travel": 1.0,
+    "uncovered_fraction": 0.31510791366906477,
+    "points": 24
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.54,
+    "travel": 1.3,
+    "uncovered_fraction": 0.31637661758143687,
+    "points": 26
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.55,
+    "travel": 1.15,
+    "uncovered_fraction": 0.31792896876337184,
+    "points": 24
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.52,
+    "travel": 1.15,
+    "uncovered_fraction": 0.31894484412470026,
+    "points": 26
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.55,
+    "travel": 1.75,
+    "uncovered_fraction": 0.32220795892169446,
+    "points": 30
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.52,
+    "travel": 1.0,
+    "uncovered_fraction": 0.32278177458033575,
+    "points": 24
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.55,
+    "travel": 1.6,
+    "uncovered_fraction": 0.32391955498502356,
+    "points": 28
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.55,
+    "travel": 1.15,
+    "uncovered_fraction": 0.3247753530166881,
+    "points": 24
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.52,
+    "travel": 1.0,
+    "uncovered_fraction": 0.3275779376498801,
+    "points": 24
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.5,
+    "travel": 1.45,
+    "uncovered_fraction": 0.3277922077922078,
+    "points": 30
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.54,
+    "travel": 2.05,
+    "uncovered_fraction": 0.3279785809906292,
+    "points": 32
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.5,
+    "travel": 1.0,
+    "uncovered_fraction": 0.32987012987012987,
+    "points": 25
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.55,
+    "travel": 1.9,
+    "uncovered_fraction": 0.3324775353016688,
+    "points": 31
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.55,
+    "travel": 1.15,
+    "uncovered_fraction": 0.33504492939666236,
+    "points": 24
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.55,
+    "travel": 1.45,
+    "uncovered_fraction": 0.33504492939666236,
+    "points": 27
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.52,
+    "travel": 1.75,
+    "uncovered_fraction": 0.34292565947242204,
+    "points": 31
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.55,
+    "travel": 2.05,
+    "uncovered_fraction": 0.34445870774497217,
+    "points": 32
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.54,
+    "travel": 1.15,
+    "uncovered_fraction": 0.34582775546630967,
+    "points": 25
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.55,
+    "travel": 1.15,
+    "uncovered_fraction": 0.34959349593495936,
+    "points": 25
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.52,
+    "travel": 1.0,
+    "uncovered_fraction": 0.35347721822541966,
+    "points": 25
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.52,
+    "travel": 1.0,
+    "uncovered_fraction": 0.3553956834532374,
+    "points": 23
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.55,
+    "travel": 1.3,
+    "uncovered_fraction": 0.35729567821994007,
+    "points": 26
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.54,
+    "travel": 1.45,
+    "uncovered_fraction": 0.36903168228469435,
+    "points": 28
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.5,
+    "travel": 1.6,
+    "uncovered_fraction": 0.3703896103896104,
+    "points": 31
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.54,
+    "travel": 1.6,
+    "uncovered_fraction": 0.3726015171798304,
+    "points": 29
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.54,
+    "travel": 1.3,
+    "uncovered_fraction": 0.37438643462739846,
+    "points": 27
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.54,
+    "travel": 1.0,
+    "uncovered_fraction": 0.37527889335118253,
+    "points": 24
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.52,
+    "travel": 1.3,
+    "uncovered_fraction": 0.3764988009592326,
+    "points": 27
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.54,
+    "travel": 1.0,
+    "uncovered_fraction": 0.37706381079875056,
+    "points": 24
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.5,
+    "travel": 1.9,
+    "uncovered_fraction": 0.3787012987012987,
+    "points": 33
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.52,
+    "travel": 1.15,
+    "uncovered_fraction": 0.381294964028777,
+    "points": 26
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.5,
+    "travel": 1.0,
+    "uncovered_fraction": 0.38285714285714284,
+    "points": 24
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.55,
+    "travel": 1.15,
+    "uncovered_fraction": 0.384681215233205,
+    "points": 25
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.54,
+    "travel": 1.75,
+    "uncovered_fraction": 0.3886657742079429,
+    "points": 30
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.54,
+    "travel": 1.0,
+    "uncovered_fraction": 0.39045069165551094,
+    "points": 23
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.52,
+    "travel": 1.9,
+    "uncovered_fraction": 0.39184652278177456,
+    "points": 32
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.52,
+    "travel": 1.0,
+    "uncovered_fraction": 0.39184652278177456,
+    "points": 25
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.52,
+    "travel": 1.45,
+    "uncovered_fraction": 0.3947242206235012,
+    "points": 29
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.54,
+    "travel": 1.15,
+    "uncovered_fraction": 0.39937527889335117,
+    "points": 26
+  },
+  {
+    "pivot": 0.55,
+    "aperture": 0.55,
+    "travel": 1.0,
+    "uncovered_fraction": 0.40008557980316645,
+    "points": 23
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.54,
+    "travel": 1.0,
+    "uncovered_fraction": 0.4029451137884873,
+    "points": 24
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.55,
+    "travel": 1.45,
+    "uncovered_fraction": 0.40350877192982454,
+    "points": 28
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.55,
+    "travel": 1.6,
+    "uncovered_fraction": 0.40436456996148906,
+    "points": 29
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.52,
+    "travel": 1.0,
+    "uncovered_fraction": 0.4062350119904077,
+    "points": 23
+  },
+  {
+    "pivot": 0.6,
+    "aperture": 0.55,
+    "travel": 1.0,
+    "uncovered_fraction": 0.40864356011981173,
+    "points": 24
+  },
+  {
+    "pivot": 0.5,
+    "aperture": 0.55,
+    "travel": 1.0,
+    "uncovered_fraction": 0.41292255027813435,
+    "points": 23
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.55,
+    "travel": 1.3,
+    "uncovered_fraction": 0.417201540436457,
+    "points": 27
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.55,
+    "travel": 1.75,
+    "uncovered_fraction": 0.41805733846812154,
+    "points": 30
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.54,
+    "travel": 1.9,
+    "uncovered_fraction": 0.42079428826416776,
+    "points": 32
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.52,
+    "travel": 1.6,
+    "uncovered_fraction": 0.42158273381294964,
+    "points": 30
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.54,
+    "travel": 1.0,
+    "uncovered_fraction": 0.42793395805443996,
+    "points": 24
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.54,
+    "travel": 1.0,
+    "uncovered_fraction": 0.43061133422579206,
+    "points": 23
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.55,
+    "travel": 1.15,
+    "uncovered_fraction": 0.4360290971330766,
+    "points": 25
+  },
+  {
+    "pivot": 0.65,
+    "aperture": 0.55,
+    "travel": 1.0,
+    "uncovered_fraction": 0.4368848951647411,
+    "points": 24
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.55,
+    "travel": 1.9,
+    "uncovered_fraction": 0.43859649122807015,
+    "points": 32
+  },
+  {
+    "pivot": 0.45,
+    "aperture": 0.55,
+    "travel": 1.0,
+    "uncovered_fraction": 0.4411638853230638,
+    "points": 23
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.54,
+    "travel": 1.15,
+    "uncovered_fraction": 0.4547077197679607,
+    "points": 26
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.54,
+    "travel": 1.3,
+    "uncovered_fraction": 0.4556001784917448,
+    "points": 27
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.54,
+    "travel": 1.45,
+    "uncovered_fraction": 0.45917001338688085,
+    "points": 28
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.5,
+    "travel": 1.75,
+    "uncovered_fraction": 0.4618181818181818,
+    "points": 33
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.55,
+    "travel": 1.0,
+    "uncovered_fraction": 0.464270432178006,
+    "points": 24
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.54,
+    "travel": 1.0,
+    "uncovered_fraction": 0.465417224453369,
+    "points": 25
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.54,
+    "travel": 1.6,
+    "uncovered_fraction": 0.47434181169120926,
+    "points": 30
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.55,
+    "travel": 1.3,
+    "uncovered_fraction": 0.47796320068463843,
+    "points": 27
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.54,
+    "travel": 2.05,
+    "uncovered_fraction": 0.48326639892904955,
+    "points": 33
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.55,
+    "travel": 2.05,
+    "uncovered_fraction": 0.4856653829696192,
+    "points": 33
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.55,
+    "travel": 1.15,
+    "uncovered_fraction": 0.48737697903294824,
+    "points": 26
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.55,
+    "travel": 1.45,
+    "uncovered_fraction": 0.48737697903294824,
+    "points": 28
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.52,
+    "travel": 1.75,
+    "uncovered_fraction": 0.48776978417266187,
+    "points": 31
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.52,
+    "travel": 2.05,
+    "uncovered_fraction": 0.4935251798561151,
+    "points": 33
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.55,
+    "travel": 1.0,
+    "uncovered_fraction": 0.5019255455712451,
+    "points": 25
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.55,
+    "travel": 1.6,
+    "uncovered_fraction": 0.5062045357295678,
+    "points": 30
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.54,
+    "travel": 1.75,
+    "uncovered_fraction": 0.5234270414993306,
+    "points": 31
+  },
+  {
+    "pivot": 0.7,
+    "aperture": 0.5,
+    "travel": 2.05,
+    "uncovered_fraction": 0.5345454545454545,
+    "points": 35
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.55,
+    "travel": 1.75,
+    "uncovered_fraction": 0.542148053059478,
+    "points": 31
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.52,
+    "travel": 1.9,
+    "uncovered_fraction": 0.5865707434052758,
+    "points": 33
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.54,
+    "travel": 1.9,
+    "uncovered_fraction": 0.5885765283355645,
+    "points": 33
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.55,
+    "travel": 1.9,
+    "uncovered_fraction": 0.5960633290543432,
+    "points": 33
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.5,
+    "travel": 1.9,
+    "uncovered_fraction": 0.6166233766233766,
+    "points": 34
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.55,
+    "travel": 2.05,
+    "uncovered_fraction": 0.7073170731707317,
+    "points": 34
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.54,
+    "travel": 2.05,
+    "uncovered_fraction": 0.7376171352074966,
+    "points": 34
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.52,
+    "travel": 2.05,
+    "uncovered_fraction": 0.7880095923261391,
+    "points": 34
+  },
+  {
+    "pivot": 0.75,
+    "aperture": 0.5,
+    "travel": 2.05,
+    "uncovered_fraction": 0.8441558441558441,
+    "points": 36
+  }
+]

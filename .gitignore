@@ -38,6 +38,7 @@ tests/choreography_live/
 
 # Reproducible Mac bundles and local build output.
 dist/macos/
+dist/macos-review/
 dist/staging/
 dist/HELIOS-macOS*.zip
 dist/HELIOS-macOS*.sha256
@@ -88,3 +89,54 @@ review/G_record_player/native_console/commands.txt
 review/G_record_player/native_console/collection_probe.json
 review/G_record_player/native_console/.*.recording-*.mp4
 review/G_record_player/live/
+
+# Regenerable, per-frame optical-curator motion data.
+review/G_optical_curator/curator_take.json
+review/G_optical_curator/live/
+review/G_optical_curator/head/head_motion.avi
+review/G_optical_curator/service/service_take.json
+review/G_optical_curator/operating/curator_take.json
+review/G_optical_curator/observatory_r2/app/curator_take.json
+# Local pre-edit recovery copies; the current editable source remains tracked.
+blender/collection/checkpoints/
+
+# Regenerable fixed-step butterfly review recording.
+review/G_optical_curator/butterfly_r2/runtime/*.avi
+review/G_optical_curator/butterfly_r2/full_take/curator_take.json
+
+# Local native profiling streams and capture command channels. Selected reports remain tracked.
+review/G_optical_curator/butterfly_r2/native/**/frames.csv
+review/G_optical_curator/butterfly_r2/native/**/control.json
+
+# Retained local pre-update app bundles.
+dist/macos-backups/
+
+# Display review profiling and live commands are local; summaries remain tracked.
+review/desktop_scale/native/*frames.csv
+review/desktop_scale/native/control.json
+
+review/G_optical_curator/ship_r2/full_take/curator_take.json
+
+# Reproducible recording frames, uncompressed takes and audio-analysis caches.
+# Keep authored assets, selected stills, compressed review videos and summaries.
+review/**/*.avi
+review/**/frames/
+review/**/video_frames*/
+review/**/png_r*/
+review/**/physical_take.json
+review/**/curator_take.json
+review/**/*.npz
+
+# Archived verification logs are part of the handoff evidence.
+!review/**/logs/*.log
+
+# Portable handoff is curated; never bulk-stage historical experiment outputs.
+# Current files are explicitly added by tools/prepare_git_handoff.py --stage.
+/review/
+/blender/collection/*.blend
+/app/assets/collection/
+
+# Download bundles and intermediate engraving variants; selected source MIDI/audio
+# are tracked explicitly by the portable handoff tool.
+/production/I_refinement/moonlight/*.zip
+/production/I_refinement/moonlight/engraving/*.midi

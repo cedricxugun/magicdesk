@@ -1,0 +1,23 @@
+[
+  {
+    "image": "production/I_refinement/restore_r9/original_restored_motion.png",
+    "sha256": "886fe92b19e69c0402c00cd2a60285eca6684eed055d4dda0bc8730faabe64cf",
+    "prompt": "production/I_refinement/restore_r9/prompt.txt",
+    "mode": "built-in image_gen",
+    "status": "structural_reference_original_still_authoritative"
+  },
+  {
+    "image": "production/I_refinement/restore_r9/moonlight_motion_rejected_r1.png",
+    "sha256": "49f0cb7c9a2ff61feec39f498f23cd3d18a207b3f4f6fcf5bd71f497776a15ac",
+    "prompt": "production/I_refinement/restore_r9/music_prompt_r1.txt",
+    "mode": "built-in image_gen",
+    "status": "rejected_closed_shell_and_overlong_staff"
+  },
+  {
+    "image": "production/I_refinement/restore_r9/moonlight_motion_r2.png",
+    "sha256": "5b6cc7f19bfce3f7ad26ea6d64d8c513f4445b558e21927d40cf3c8cc28c6121",
+    "prompt": "production/I_refinement/restore_r9/music_prompt_r2.txt",
+    "mode": "built-in image_gen",
+    "status": "placement_reference_not_engraved_score"
+  }
+]

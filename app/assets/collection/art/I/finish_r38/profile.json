@@ -1,0 +1,16 @@
+{
+  "status": "material_candidate_not_final_art",
+  "reference": "production/I_refinement/nautilus_r1/nautilus_states_centered_r2.png",
+  "materials": {
+    "IN1_Porcelain": {"color_linear": [0.66,0.635,0.575], "metallic": 0.0, "roughness": 0.24, "coat": 0.82, "coat_roughness": 0.14},
+    "IN1_AcousticBronze": {"color_linear": [0.27,0.19,0.095], "metallic": 0.95, "roughness": 0.34, "brushing": true},
+    "IN1_FoldedDiaphragm": {"color_linear": [0.023,0.026,0.025], "metallic": 0.02, "roughness": 0.56},
+    "IN1_Nickel": {"color_linear": [0.43,0.45,0.46], "metallic": 0.98, "roughness": 0.25},
+    "Collection_A_Nickel": {"color_linear": [0.43,0.45,0.46], "metallic": 0.98, "roughness": 0.25},
+    "IN1_DarkAcoustic": {"color_linear": [0.032,0.036,0.035], "metallic": 0.6, "roughness": 0.43}
+  },
+  "brushing_texture": "res://assets/collection/art/I/finish_r38/nickel_roughness.png",
+  "brushing_center": 0.32,
+  "brushing_strength": 0.3,
+  "scope": "Isolated material copies on the nautilus body; mouth, original base, topology and authored morphs retained. Existing image-derived roughness sampled with authored chamber UV2."
+}

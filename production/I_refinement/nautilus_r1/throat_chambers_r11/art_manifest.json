@@ -1,0 +1,12 @@
+{
+  "mode": "built_in_image_gen",
+  "image": "production/I_refinement/nautilus_r1/throat_chambers_r11/hub_collector_and_sockets_r1.png",
+  "sha256": "bc52c5a7be9c94a3f45440e56faf6a9383ce5389594ce41601cb2da4870e6c17",
+  "prompt": "production/I_refinement/nautilus_r1/throat_chambers_r11/PROMPT.txt",
+  "status": "connection_intent_not_shape_contract",
+  "limits": [
+    "The generated overview enlarges and shifts the apparent hub/mouth relationship; retain the actual 3D hub and mouth transforms instead.",
+    "Socket shape and workmanship are useful references; branch number, length, dimensions and clearances are not measured evidence.",
+    "No new base or enlarged external mechanism is authorized by this drawing."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "source_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b",
+  "manifest_equal_to_tested_candidate": true,
+  "non_I_registry_rows_unchanged": true,
+  "registry_sha256": "d1ef2d39a7c075a983a864bf640e4bdfcb20eb3cec1955bb6d0774908d8b92ae",
+  "manifest_sha256": "36fd13824f27f9abe6ca25217d1df85088b316c4183679ffc92989cdc97d0b35",
+  "scope": "Default development manifest is byte-content-equivalent JSON to the main-scene-tested candidate; registry only switches I scene/metadata. Not an installed package or final art acceptance."
+}

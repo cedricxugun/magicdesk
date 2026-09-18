@@ -1,0 +1,7 @@
+{
+  "generator": "built_in_image_gen",
+  "image": "staff_motion_r1.png",
+  "image_sha256": "fd9d3534699b2bc5f7eb7b969d6ccc8a45bb383fdde13f67c52cdeaef21e7605",
+  "prompt": "PROMPT.md",
+  "notation_source": "Deterministic LilyPond score tiles; generated musical marks are illustrative only."
+}

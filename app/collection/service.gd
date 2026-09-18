@@ -53,6 +53,7 @@ var prepare_started:=0
 var load_metrics:Dictionary={}
 var abandoned_loads:Array[String]=[]
 const DISCOVERY_VERSION:=1
+const F_GUIDANCE=preload("res://collection/f_guidance.gd")
 var intro_pending:=false
 var archive_guide:PanelContainer
 var archive_guide_text:Label
@@ -71,12 +72,20 @@ var native_regions:Array[Rect2i]=[]
 var regions_clock:=0.0
 var control_library:Node3D
 var record_control_library:Node3D
+var f_control_library:Node3D
+var f_console:RefCounted
+var f_legend_mesh_cache:Dictionary={}
+var f_surface_hash_cache:Dictionary={}
 var record_console:RefCounted
+var rotation_hologram:Node3D
+var lighting:RefCounted
 var read_time:=-1.0
 var help_index:=-1
 var help_since_ms:=0
 var help_point:=Vector2.ZERO
 var help_owned:=false
+var pinned_help_index:=-1
+var pinned_help_until:=0
 var signal_materials:Array[ShaderMaterial]=[]
 var legacy_mount_homes:Array[Transform3D]=[]
 const ARCHIVE_SECONDS:=1.55
@@ -88,9 +97,10 @@ func _pose(p:Dictionary)->Transform3D:
 
 func setup(owner:Node3D)->void:
 	host=owner
+	lighting=load("res://collection/lighting.gd").new();lighting.setup(host)
 	control_driver=load("res://collection/control_driver.gd").new();control_driver.setup(self)
 	g_operator=load("res://collection/g_operator.gd").new();host.tooltip.get_parent().add_child(g_operator);g_operator.setup(self)
-	var config:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://assets/collection/registry.json"))
+	var config:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(str(get_tree().get_meta("collection_registry","res://assets/collection/registry.json"))))
 	registry=config.models
 	base_display=host.named("BASE_FIXED_DisplayMesh");original_base_mesh=base_display.mesh
 	for i in range(base_display.mesh.get_surface_count()):base_materials.append(base_display.get_active_material(i))
@@ -104,6 +114,7 @@ func setup(owner:Node3D)->void:
 	host.menu.add_separator();host.menu.add_item("展示旋转 / 暂停",24)
 	_update_actions()
 	_setup_archive_guide()
+	rotation_hologram=load("res://collection/rotation_hologram.gd").new();add_child(rotation_hologram);rotation_hologram.setup(self)
 	transition_vfx=load("res://collection/transition_vfx.gd").new();add_child(transition_vfx);transition_vfx.setup(self)
 	if not get_tree().get_meta("collection_skip_intro",false):
 		var preferences:=ConfigFile.new();preferences.load("user://collection.cfg")
@@ -176,6 +187,8 @@ func _setup_selector()->void:
 		control_library=load("res://assets/collection/control_library.glb").instantiate();add_child(control_library);control_library.hide()
 	if ResourceLoader.exists("res://assets/collection/record_controls.glb"):
 		record_control_library=load("res://assets/collection/record_controls.glb").instantiate();add_child(record_control_library);record_control_library.hide()
+	if ResourceLoader.exists("res://assets/collection/f_refined_controls.glb"):
+		f_control_library=load("res://assets/collection/f_refined_controls.glb").instantiate();add_child(f_control_library);f_control_library.hide()
 	selector.find_child("S_WIDGET_LIBRARY",true,false).hide()
 	selector.find_child("S_PANEL",true,false).hide()
 	_smoke_glass(selector)
@@ -206,6 +219,22 @@ func _setup_signal_materials(node:Node)->void:
 		var mat:=ShaderMaterial.new();mat.shader=load("res://collection/archive_atlas.gdshader");mat.set_shader_parameter("atlas",load("res://assets/collection/art/archive_atlas.png"));mat.set_shader_parameter("crop",Vector2(1,.055));mat.set_shader_parameter("center",Vector2(.5,.450));node.material_override=mat;signal_materials.append(mat)
 	for child in node.get_children():_setup_signal_materials(child)
 
+func pin_control_help(index:int)->void:
+	if active_id!="F" or current==null:return
+	pinned_help_index=index;pinned_help_until=Time.get_ticks_msec()+6500
+	_show_control_help(index)
+
+func _show_control_help(index:int)->void:
+	var info:Dictionary=control_driver.profile(index)
+	if info.is_empty():return
+	help_owned=true;host.hover=-1;host.tooltip.visible=true;host.toast.hide()
+	host.tooltip_title.text=str(info.label)
+	host.tooltip_title.add_theme_color_override("font_color",Color(.95,.86,.68))
+	host.tooltip_text.text=F_GUIDANCE.hint(current,index) if active_id=="F" else str(info.hint)
+	host.tooltip.reset_size()
+	var band:=control_band()
+	host.tooltip.position=Vector2(clampf(band.get_center().x-host.tooltip.size.x*.5,12,host.canonical_size.x-host.tooltip.size.x-12),band.position.y-host.tooltip.size.y-28)
+
 func _smoke_glass(node:Node)->void:
 	if node is MeshInstance3D and str(node.name).contains("EtchedGlass"):
 		var mat:=StandardMaterial3D.new();mat.albedo_color=Color(.035,.025,.016,.26);mat.transparency=BaseMaterial3D.TRANSPARENCY_ALPHA;mat.metallic=.1;mat.roughness=.2;node.material_override=mat
@@ -219,6 +248,8 @@ func update_hover_ui()->bool:
 	if control_driver.index>=0 or host.drag_kind!=0 or host.pressed>=0 or state!="idle":
 		host.tooltip.hide();help_index=-1;help_since_ms=Time.get_ticks_msec();help_owned=true;host.hover=-1
 		return true
+	if active_id=="F" and current and selector_amount<.01 and pinned_help_index>=0 and Time.get_ticks_msec()<pinned_help_until:
+		_show_control_help(pinned_help_index);return true
 	if selector_hit.is_empty():
 		if card_hint_active:card_hint_active=false;host.hover=-2
 		if current and state=="idle" and selector_amount<.01:
@@ -230,14 +261,7 @@ func update_hover_ui()->bool:
 					help_index=index;help_point=pointer;help_since_ms=Time.get_ticks_msec()
 				help_owned=true;host.hover=-1
 				if Time.get_ticks_msec()-help_since_ms<450:host.tooltip.hide();return true
-				host.tooltip.visible=true;host.toast.hide()
-				host.tooltip_title.text=str(info.label)
-				host.tooltip_title.add_theme_color_override("font_color",Color(.95,.86,.68))
-				var value:Variant=current.play.gauge_value() if info.gesture=="gauge" else current.play.value(str(info.key))
-				host.tooltip_text.text=str(info.hint)
-				host.tooltip.reset_size()
-				var band:=control_band()
-				host.tooltip.position=Vector2(clampf(band.get_center().x-host.tooltip.size.x*.5,12,host.canonical_size.x-host.tooltip.size.x-12),band.position.y-host.tooltip.size.y-28)
+				_show_control_help(index)
 				return true
 		if help_owned:host.tooltip.hide();host.hover=-2;help_owned=false;help_index=-1
 		return false
@@ -277,6 +301,7 @@ func _refresh_cards()->void:
 func toggle_selector()->void:
 	if closing:return
 	control_driver.cancel()
+	if rotation_hologram:rotation_hologram.cancel()
 	_acknowledge_intro()
 	if selector_target>0 or selector_wait:
 		selector_wait=false;selector_target=0
@@ -288,9 +313,13 @@ func toggle_selector()->void:
 		else:selector_target=1
 	host.sound("click",.82)
 
+func toggle_display_rotation()->void:
+	host.rotation_enabled=not host.rotation_enabled
+	if rotation_hologram:rotation_hologram.linger=3.0;rotation_hologram.press_age=0.0
+
 func toggle_rotation()->void:
 	if current and current.data.has("record_player"):
-		host.rotation_enabled=false;current.play.g_instrument.toggle_spin();host.message("唱片慢转已开启 · 60 秒一圈" if current.play.g_instrument.spin_enabled else "唱片已停转",1.5);return
+		current.play.g_instrument.toggle_spin();host.message("唱片慢转已开启 · 60 秒一圈" if current.play.g_instrument.spin_enabled else "唱片已停转",1.5);return
 	host.rotation_enabled=not host.rotation_enabled
 	host.message("展示旋转已开启" if host.rotation_enabled else "展示旋转已暂停",1.5)
 
@@ -311,6 +340,7 @@ func browse(direction:int)->void:
 
 func consume_input(event:InputEvent)->bool:
 	if control_driver.index>=0:return control_driver.consume(event)
+	if rotation_hologram and rotation_hologram.consume(event):return true
 	if g_operator and g_operator.consume(event):return true
 	if control_driver.consume(event):return true
 	if event is InputEventMouseMotion and index_dragging:
@@ -347,7 +377,7 @@ func consume_input(event:InputEvent)->bool:
 func _build_controls()->void:
 	if custom_panel:custom_panel.queue_free()
 	custom_controls.clear()
-	record_console=null
+	record_console=null;f_console=null
 	if active_id=="B":return
 	custom_panel=Node3D.new();add_child(custom_panel)
 	var plate:Node3D=selector.find_child("S_PANEL",true,false).duplicate();custom_panel.add_child(plate);plate.show()
@@ -366,6 +396,7 @@ func _build_controls()->void:
 			if shape=="slider":shape+="_"+str(profile.get("axis","y"))
 			var authored:Node3D=control_library.find_child("CTRL_"+shape,true,false)
 			if current.data.has("record_player") and record_control_library:authored=record_control_library.find_child("GCTRL_"+shape,true,false)
+			if active_id=="F" and f_control_library:authored=f_control_library.find_child("FCTRL_"+shape,true,false)
 			if authored:template=authored
 		var widget:Node3D=template.duplicate();custom_panel.add_child(widget);widget.show()
 		var slot:int=layout.find(i)+1
@@ -391,6 +422,8 @@ func _build_controls()->void:
 		custom_controls.append({"node":widget,"home":widget.transform,"index":i,"kind":kind,"press":0.0,"moving":moving,"turn":initial_turn,"turn_target":initial_turn,"input_value":initial,"rocker_pose":0.0,"rocker_hold":0.0,"rocker_target":0.0})
 	if current.data.has("record_player"):
 		record_console=load("res://collection/record_console.gd").new();record_console.setup(self)
+	if active_id=="F" and f_control_library:
+		f_console=load("res://collection/f_console.gd").new();f_console.setup(self)
 
 func control_local_point(index:int,point:Vector2)->Vector3:
 	for c in custom_controls:
@@ -436,18 +469,36 @@ func _prepare_control_shapes(node:Node)->void:
 	for child in node.get_children():_prepare_control_shapes(child)
 
 func prewarm_shared_surfaces()->void:
-	if not host.native_mode or RenderingServer.get_rendering_device()==null:return
+	if not (host.native_mode or host.mac_desktop) or RenderingServer.get_rendering_device()==null:return
 	var started:=Time.get_ticks_msec()
 	_prepare_control_shapes(control_library)
 	if record_control_library:_prepare_control_shapes(record_control_library)
+	if f_control_library:
+		_prepare_control_shapes(f_control_library)
+		var helper:RefCounted=load("res://collection/f_console.gd").new();helper.service=self
+		helper._hash_mesh(base_mesh_cache.shared)
+		var panel:Node3D=selector.find_child("S_PANEL",true,false)
+		if panel is MeshInstance3D:helper._hash_mesh(panel.mesh)
+		for mesh in panel.find_children("*","MeshInstance3D",true,false):helper._hash_mesh(mesh.mesh)
+		for patch in f_control_library.find_children("*LegendSurface*","Node3D",true,false):
+			for mesh in patch.find_children("*","MeshInstance3D",true,false):helper._hash_mesh(mesh.mesh)
+		if FileAccess.file_exists(helper.CACHE_PATH):
+			var cached:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(helper.CACHE_PATH))
+			for path in cached.get("meshes",{}).values():
+				if not ResourceLoader.exists(path):continue
+				var mesh:ArrayMesh=load(path);f_legend_mesh_cache[path]=mesh
+				control_shape_cache[mesh.get_instance_id()]=mesh.create_trimesh_shape()
+		helper=null
 	_prepare_control_shapes(selector.find_child("S_PANEL",true,false))
-	var view:=SubViewport.new();view.size=Vector2i(96,96);view.own_world_3d=true;view.transparent_bg=true;view.msaa_3d=Viewport.MSAA_4X;view.render_target_update_mode=SubViewport.UPDATE_ALWAYS;add_child(view)
+	var view:=SubViewport.new();view.size=Vector2i(96,96);view.own_world_3d=true;view.transparent_bg=true;view.msaa_3d=host.render_view.msaa_3d;view.render_target_update_mode=SubViewport.UPDATE_ALWAYS;add_child(view)
 	var scene:=Node3D.new();view.add_child(scene)
 	var camera:=Camera3D.new();scene.add_child(camera);camera.position=Vector3(1.4,2.0,4);camera.look_at(Vector3(.65,.8,0));camera.current=true
 	var world:=WorldEnvironment.new();world.environment=host.env;scene.add_child(world)
 	var library:Node3D=control_library.duplicate();scene.add_child(library);library.show();library.position.y=1.0
 	if record_control_library:
 		var record_library:Node3D=record_control_library.duplicate();scene.add_child(record_library);record_library.show();record_library.position.y=.5
+	if f_control_library:
+		var f_library:Node3D=f_control_library.duplicate();scene.add_child(f_library);f_library.show();f_library.position.y=0.
 	var plate:Node3D=selector.find_child("S_PANEL",true,false).duplicate();scene.add_child(plate);plate.show()
 	var base:=MeshInstance3D.new();base.mesh=base_mesh_cache.shared;scene.add_child(base)
 	for i in range(base_frames.variants.shared.source_surfaces.size()):base.set_surface_override_material(i,base_materials[int(base_frames.variants.shared.source_surfaces[i])])
@@ -500,7 +551,7 @@ func request_model(id:String)->void:
 	if state not in ["idle","loading"]:return
 	var definition:=_definition(id)
 	if definition.is_empty():return
-	control_driver.cancel()
+	control_driver.cancel();pinned_help_index=-1;pinned_help_until=0
 	if g_operator:g_operator.cancel()
 	_acknowledge_intro()
 	_abandon_loading()
@@ -538,12 +589,21 @@ func _prepare(packed:PackedScene,definition:Dictionary,version:int)->void:
 	load_metrics.resource_ready_ms=Time.get_ticks_msec()-prepare_started
 	var raw:Variant=JSON.parse_string(FileAccess.get_file_as_string(definition.metadata))
 	if not raw is Dictionary or raw.get("id","")!=definition.id or not raw.has_all(["parts","controls","motions","sockets"]):_fail("装置数据不完整");return
-	var warming:=SubViewport.new();warm_view=warming;warming.size=Vector2i(64,64);warming.own_world_3d=true;warming.transparent_bg=true;warming.msaa_3d=Viewport.MSAA_4X;warming.render_target_update_mode=SubViewport.UPDATE_ALWAYS;add_child(warming)
+	var warming:=SubViewport.new();warm_view=warming;warming.size=Vector2i(64,64);warming.own_world_3d=true;warming.transparent_bg=true;warming.msaa_3d=host.render_view.msaa_3d;warming.render_target_update_mode=SubViewport.UPDATE_ALWAYS;add_child(warming)
 	var scene:=Node3D.new();warming.add_child(scene)
 	var camera:=Camera3D.new();scene.add_child(camera);camera.position=Vector3(.5,3.5,6);camera.look_at(Vector3(0,1.7,0));camera.current=true
 	var environment:=WorldEnvironment.new();environment.environment=host.env;scene.add_child(environment)
+	# Warm the same sample count and light families as the actual desktop viewport.
+	# A 4x unlit preview does not exercise the Retina 2x area-lit material pipelines.
+	var light_count:=0
+	for child in host.get_children():
+		if child is AreaLight3D:scene.add_child(child.duplicate());light_count+=1
+	load_metrics["warm_msaa"]=warming.msaa_3d
+	load_metrics["display_msaa"]=host.render_view.msaa_3d
+	load_metrics["warm_area_lights"]=light_count
 	var setup_started:=Time.get_ticks_msec()
-	var candidate:Node3D=load("res://collection/module.gd").new();prepared=candidate;scene.add_child(candidate);candidate.setup(host,raw,packed);candidate.set_interactive(false)
+	var module_script:String="res://collection/i_nautilus_module.gd" if raw.get("runtime","")=="nautilus_r59" else "res://collection/module.gd"
+	var candidate:Node3D=load(module_script).new();prepared=candidate;scene.add_child(candidate);candidate.setup(host,raw,packed);candidate.set_interactive(false)
 	load_metrics.setup_ms=Time.get_ticks_msec()-setup_started
 	var gpu_started:=Time.get_ticks_msec()
 	if candidate.play.instrument:
@@ -565,7 +625,9 @@ func _prepare(packed:PackedScene,definition:Dictionary,version:int)->void:
 		if prepared==candidate:prepared=null
 		if warm_view==warming:warm_view=null
 		return
-	candidate.reparent(self,false);candidate.hide();warming.queue_free();warm_view=null
+	if candidate.has_method("transfer_to"):candidate.transfer_to(self)
+	else:candidate.reparent(self,false)
+	candidate.hide();warming.queue_free();warm_view=null
 	_begin_stow()
 
 func _fail(message:String)->void:
@@ -618,7 +680,12 @@ func _restore_scan()->void:
 func _set_scan(value:float)->void:
 	if current:current.set_scan(value)
 	else:
-		if scan_materials.is_empty():_wrap_scan(host.turntable)
+		if scan_materials.is_empty():
+			var wrap_started:=Time.get_ticks_usec()
+			_wrap_scan(host.turntable)
+			load_metrics["legacy_scan_wrap_ms"]=(Time.get_ticks_usec()-wrap_started)/1000.
+			load_metrics["legacy_scan_materials"]=scan_materials.size()
+			load_metrics["legacy_scan_shader_variants"]=legacy_scan_shaders.size()
 		for mat in scan_materials:mat.set_shader_parameter("collection_cut",lerpf(3.9,.59,value))
 
 func _commit()->void:
@@ -627,7 +694,7 @@ func _commit()->void:
 	if current:current.queue_free();current=null
 	_restore_scan();_legacy_set_visible(false)
 	active_id=requested;requested=""
-	if active_id=="G":host.rotation_enabled=false;host.angle=0
+	if active_id in ["F","G"] or (prepared and prepared.data.get("runtime","")=="nautilus_r59"):host.rotation_enabled=false;host.angle=0
 	if active_id=="B":
 		_set_base_frame("helios");_legacy_set_visible(true);_set_scan(1.0)
 		host.effects.hide();_legacy_panel_depth(.36)
@@ -670,6 +737,7 @@ func request_shutdown()->bool:
 
 func tick(delta:float)->void:
 	state_time+=delta
+	lighting.select(active_id);lighting.tick(delta)
 	_drain_abandoned_loads()
 	if read_time>=0:read_time+=delta
 	if selector_wait:
@@ -747,14 +815,20 @@ func tick(delta:float)->void:
 			var profile:Dictionary=control_driver.profile(int(c.index))
 			var gesture:String=profile.get("gesture","")
 			var input_value:Variant=c.get("input_value",0.0)
-			if gesture in ["rotary","crank"]:movement.basis=Basis(Vector3.BACK,c.turn)
+			if gesture in ["rotary","crank"]:movement.basis=Basis(Vector3.FORWARD if f_console else Vector3.BACK,c.turn)
 			elif gesture=="joystick" and input_value is Vector2:movement.basis=Basis.from_euler(Vector3(-input_value.y*.3,input_value.x*.3,0))
-			elif gesture=="gauge":movement.basis=Basis(Vector3.BACK,lerpf(-1.0,1.0,float(input_value)))
-			elif gesture=="service":movement.basis=Basis(Vector3.UP,(c.rocker_pose if record_console else float(input_value))*.26)
-			elif gesture=="hold" and record_console:movement.origin.z=-c.press*.015
+			elif gesture=="gauge":movement.basis=Basis(Vector3.FORWARD if f_console else Vector3.BACK,lerpf(-1.0,1.0,float(input_value)))
+			elif gesture=="service":
+				movement.basis=Basis(Vector3.UP,(c.rocker_pose if record_console else float(input_value))*.26)
+				if f_console:
+					var pivot:=Vector3(0,0,.043);movement=Transform3D(Basis.IDENTITY,pivot)*movement*Transform3D(Basis.IDENTITY,-pivot)
+			elif gesture=="hold" and (record_console or f_console):movement.origin.z=-c.press*(.010 if f_console else .015)
 			elif gesture in ["slider","pump","detent"]:
 				var normalized:float=inverse_lerp(float(profile.min),float(profile.max),float(input_value))
-				if gesture=="detent":movement.basis=Basis(Vector3.RIGHT,((c.rocker_pose if record_console else normalized)-.5)*.65)
+				if gesture=="detent":
+					movement.basis=Basis(Vector3.RIGHT,((c.rocker_pose if record_console else normalized)-.5)*(.65 if not f_console else -.65))
+					if f_console:
+						var pivot:=Vector3(0,0,.037);movement=Transform3D(Basis.IDENTITY,pivot)*movement*Transform3D(Basis.IDENTITY,-pivot)
 				else:movement.origin=Vector3((normalized-.5)*.075,0,0) if profile.get("axis","y")=="x" else Vector3(0,(normalized-.5)*.075,0)
 			elif c.kind=="knob":movement.basis=Basis(Vector3.BACK,c.turn)
 			elif c.kind=="lever":
@@ -765,6 +839,8 @@ func tick(delta:float)->void:
 			if item.node.transform!=desired:item.node.transform=desired
 	if g_operator:g_operator.update_state(delta)
 	if record_console:record_console.tick(delta)
+	if f_console:f_console.tick(delta)
+	if rotation_hologram:rotation_hologram.tick(delta)
 	regions_clock+=delta
 	if regions_clock>.05:native_regions=_input_regions();regions_clock=0.0
 	if current:
@@ -804,17 +880,21 @@ func tick(delta:float)->void:
 				transition_vfx.finish();scanner_target=0;state="sealing";selector_target=0;host.sound("seal_close")
 		"sealing":
 			if scanner_amount<.001 and selector_amount<.001:
-				state="idle";selected_slot=-1;read_time=-1;host.message(str(_definition(active_id).title)+" · 已就位",2)
+				state="idle";selected_slot=-1;read_time=-1;host.message("轻触左侧预载轮启动 · 点合衡表查看校准方法" if active_id=="F" else str(_definition(active_id).title)+" · 已就位",4 if active_id=="F" else 2)
 				load_metrics.total_ms=Time.get_ticks_msec()-prepare_started;print("COLLECTION_LOAD ",JSON.stringify(load_metrics))
 		"shutdown_wait":
 			var settled:bool=current.settled() if current else host.openness<.001 and host.explosion<.001
 			if settled:state="shutdown_final";host._start_final_shutdown()
 
 func diagnostics()->Dictionary:
-	return {"active":active_id,"state":state,"requested":requested,"selector":selector_amount,"base_instances":_count_bases(host),"base_bounds":str(base_display.mesh.get_aabb()),"error":last_error,"module":current.diagnostics() if current else {"id":"B","parts":host.parts.size()},"play":current.play.diagnostics() if current else {},"actions":action_log,"load_metrics":load_metrics,"g_operator":g_operator.diagnostics() if g_operator else {}}
+	return {"active":active_id,"pointer_canvas":str(pointer_position()),"pointer_subviewport":str(host.get_viewport().get_mouse_position()),"help_index":help_index,"tooltip_visible":host.tooltip.visible,"rotation_hologram":rotation_hologram.state() if rotation_hologram else {},"state":state,"requested":requested,"selector":selector_amount,"base_instances":_count_bases(host),"base_bounds":str(base_display.mesh.get_aabb()),"error":last_error,"module":current.diagnostics() if current else {"id":"B","parts":host.parts.size()},"play":current.play.diagnostics() if current else {},"actions":action_log,"load_metrics":load_metrics,"g_operator":g_operator.diagnostics() if g_operator else {}}
 
 func pointer_position()->Vector2:
-	return host.native_cursor if host.native_mode else host.get_viewport().get_mouse_position()
+	if host.native_mode:return host.native_cursor
+	# The desktop SubViewport is presented through a transparent container.
+	# Its cached local mouse position can remain stale while Cocoa passes through.
+	# Match main.gd's live hit-test coordinate mapping for hover and discovery.
+	return Vector2(DisplayServer.mouse_get_position()-host.get_window().position+host.crop_rect.position)
 
 func _skin_control(node:Node)->void:
 	if node is MeshInstance3D:
@@ -841,6 +921,7 @@ func _input_regions()->Array[Rect2i]:
 	if current and state=="idle":
 		for control in custom_controls:roots.append(control.node)
 	var regions:Array[Rect2i]=[]
+	if rotation_hologram and rotation_hologram.available():regions.append(rotation_hologram.input_region())
 	if g_operator and g_operator.visible:regions.append(Rect2i(g_operator.panel))
 	for node in roots:
 		if node==null:continue

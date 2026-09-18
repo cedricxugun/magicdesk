@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "scope": "F upper surfaces only; authored UV/texture maps unchanged. No shared base or other devices.",
+  "defaults": {
+    "Collection_Black": "black_lacquer",
+    "Collection_Red": "red_enamel",
+    "Collection_Chrome": "chrome",
+    "Collection_Steel": "steel",
+    "Collection_Copper": "copper",
+    "Collection_Ivory": "porcelain"
+  },
+  "rules": [
+    {
+      "source": "Collection_Black",
+      "ancestors": [
+        "F2_BrakePad"
+      ],
+      "finish": "brake_friction"
+    },
+    {
+      "source": "Collection_Black",
+      "ancestors": [
+        "F2_CounterGear",
+        "F2_MainGear",
+        "F3_BrakeRotor"
+      ],
+      "finish": "blackened_steel"
+    }
+  ],
+  "finishes": {
+    "black_lacquer": {
+      "metallic": 0.0,
+      "roughness": 0.3,
+      "coat": 0.28,
+      "coat_roughness": 0.2,
+      "anisotropy_strength": 0.0
+    },
+    "brake_friction": {
+      "metallic": 0.0,
+      "roughness": 0.68,
+      "roughness_floor": 0.45,
+      "coat": 0.0,
+      "anisotropy_strength": 0.0
+    },
+    "blackened_steel": {
+      "metallic": 0.9,
+      "roughness": 0.4,
+      "coat": 0.0,
+      "anisotropy_strength": 0.12
+    },
+    "red_enamel": {
+      "metallic": 0.0,
+      "roughness": 0.26,
+      "coat": 0.42,
+      "coat_roughness": 0.17,
+      "anisotropy_strength": 0.0
+    },
+    "chrome": {
+      "metallic": 0.96,
+      "roughness_scale": 1.0,
+      "roughness_floor": 0.14,
+      "coat": 0.0,
+      "anisotropy_strength": 0.22
+    },
+    "steel": {
+      "metallic": 0.9,
+      "roughness_scale": 1.0,
+      "roughness_floor": 0.2,
+      "coat": 0.0,
+      "anisotropy_strength": 0.16
+    },
+    "copper": {
+      "metallic": 0.94,
+      "roughness": 0.26,
+      "roughness_scale": 1.0,
+      "coat": 0.0,
+      "anisotropy_strength": 0.12
+    },
+    "porcelain": {
+      "metallic": 0.0,
+      "roughness_floor": 0.2,
+      "coat": 0.48,
+      "coat_roughness": 0.15,
+      "normal_depth": 0.05,
+      "anisotropy_strength": 0.0
+    }
+  }
+}

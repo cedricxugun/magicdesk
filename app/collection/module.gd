@@ -10,6 +10,7 @@ var motions: Array = []
 var bodies: Array[StaticBody3D] = []
 var materials: Array[ShaderMaterial] = []
 var material_cache:Dictionary={}
+var f_finish:RefCounted
 var emissive_materials:Array[ShaderMaterial]=[]
 var meshes: Array[MeshInstance3D] = []
 var effect: Node3D
@@ -40,6 +41,8 @@ func named(label:String)->Node3D:return asset.find_child(label,true,false) as No
 
 func setup(owner:Node3D,definition:Dictionary,packed:PackedScene)->void:
 	host=owner;data=definition
+	if data.id=="F" and data.has("finish_profile"):
+		f_finish=load("res://collection/f_finish.gd").new();f_finish.setup(data.finish_profile)
 	play=load("res://collection/play_state.gd").new();play.setup(self)
 	asset=packed.instantiate();add_child(asset)
 	for p in data.parts:
@@ -72,9 +75,12 @@ func _collect(node:Node)->void:
 		for surface in range(node.mesh.get_surface_count()):
 			var original:Material=node.get_active_material(surface)
 			if not original is StandardMaterial3D:continue
-			if material_cache.has(original.get_instance_id()):
-				node.set_surface_override_material(surface,material_cache[original.get_instance_id()]);continue
-			var mat:=ShaderMaterial.new();mat.shader=load("res://collection/surface.gdshader")
+			var finish_key:String=f_finish.key_for(node,original.resource_name) if f_finish else ""
+			var cache_key:String=str(original.get_instance_id())+":"+finish_key
+			if material_cache.has(cache_key):
+				node.set_surface_override_material(surface,material_cache[cache_key]);continue
+			var mat:=ShaderMaterial.new();mat.shader=load("res://collection/curator_surface.gdshader" if data.has("optical_curator") else "res://collection/surface.gdshader")
+			mat.set_meta("source_material",original.resource_name)
 			mat.set_shader_parameter("scan_fabric",load("res://assets/collection/art/wormhole_fabric.png"))
 			mat.set_shader_parameter("tint",original.albedo_color)
 			mat.set_shader_parameter("metallic",original.metallic)
@@ -94,6 +100,17 @@ func _collect(node:Node)->void:
 				if original.resource_name.contains("RecordBlack"):mat.set_shader_parameter("record_vinyl",true)
 				mat.set_shader_parameter("normal_depth",.065)
 				mat.set_shader_parameter("anisotropy_strength",.23 if original.metallic>.8 else 0.0)
+				if original.resource_name.contains("ShipMainSail") or original.resource_name.contains("ShipJibSail"):
+					# The baked compass is metallic; the surrounding cloth is not.
+					# Keep this opt-in so existing G finishes retain their prior calibration.
+					mat.set_shader_parameter("has_metallic",original.metallic_texture!=null)
+					if original.metallic_texture:
+						mat.set_shader_parameter("metallic_map",original.metallic_texture)
+						var channels:Array[Vector4]=[Vector4(1,0,0,0),Vector4(0,1,0,0),Vector4(0,0,1,0),Vector4(0,0,0,1),Vector4(.299,.587,.114,0)]
+						mat.set_shader_parameter("metallic_channel",channels[clampi(original.metallic_texture_channel,0,4)])
+					mat.set_shader_parameter("normal_depth",original.normal_scale)
+					mat.set_shader_parameter("coat",0.0)
+					mat.set_shader_parameter("anisotropy_strength",0.0)
 				if original.resource_name.contains("Signal"):
 					mat.set_shader_parameter("emission_color",Color(1,.57,.19));mat.set_shader_parameter("emission_energy",1.5);emissive_materials.append(mat)
 			if play.instrument:
@@ -109,8 +126,9 @@ func _collect(node:Node)->void:
 				mat.set_shader_parameter("emission_color",Color(1,.09,.025))
 				mat.set_shader_parameter("emission_energy",1.0)
 				emissive_materials.append(mat)
+			if f_finish:f_finish.apply(mat,finish_key)
 			node.set_surface_override_material(surface,mat);materials.append(mat)
-			material_cache[original.get_instance_id()]=mat
+			material_cache[cache_key]=mat
 	for child in node.get_children():
 		if not child is StaticBody3D:_collect(child)
 
@@ -152,9 +170,9 @@ func tick(delta:float,enabled_power:float)->void:
 	# cannot fight over the same assembly during interrupted actions.
 	if explode_target>0:
 		openness=move_toward(openness,0,delta*(1.5 if data.has("record_player") else .55))
-		if openness<=.001 and _motion_neutral():explosion=move_toward(explosion,1,delta*.42)
+		if openness<=.001 and _motion_neutral():explosion=move_toward(explosion,1,delta*(.22 if data.has("optical_curator") else .42))
 	else:
-		explosion=move_toward(explosion,0,delta*.50)
+		explosion=move_toward(explosion,0,delta*(.26 if data.has("optical_curator") else .50))
 		if explosion<=.001:openness=move_toward(openness,open_target,delta*(1.5 if data.has("record_player") else .42))
 	if pending_burst and openness>.999 and explosion<.001:
 		pending_burst=false;burst=7.0
@@ -184,7 +202,12 @@ func apply_pose()->void:
 			for i in range(p.route.size()-1):
 				var first:Dictionary=p.route[i];var last:Dictionary=p.route[i+1]
 				if explosion<=float(last.at):
-					desired.origin+=v3(first.offset).lerp(v3(last.offset),smoothstep(float(first.at),float(last.at),explosion));break
+					var phase:float=smoothstep(float(first.at),float(last.at),explosion)
+					desired.origin+=v3(first.offset).lerp(v3(last.offset),phase)
+					if first.has("rotation") or last.has("rotation"):
+						var a:=Quaternion.from_euler(v3(first.get("rotation",[0,0,0])));var b:=Quaternion.from_euler(v3(last.get("rotation",[0,0,0])))
+						desired.basis=p.home.basis*Basis(a.slerp(b,phase))
+					break
 		if p.node.transform!=desired:p.node.transform=desired
 
 func _apply_interactive_rig()->void:

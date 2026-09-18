@@ -1,0 +1,5 @@
+00:02.263  blend            | Read blend: "/Users/cedric/Desktop/magic desk/blender/collection/I_nautilus_seam_release_r73.blend"
+THREAD_INTERLOCK_RESULT True [(-1, 0, 5432, 5606), (1, 0, 5437, 5644)]
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

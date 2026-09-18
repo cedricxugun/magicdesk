@@ -10,6 +10,7 @@ uniform bool has_normal=false;
 uniform float metallic=0.0;
 uniform float roughness=.3;
 uniform float coat=.25;
+uniform float coat_roughness=.13;
 uniform float roughness_scale=1.0;
 uniform float roughness_floor=.18;
 uniform float normal_depth=.14;
@@ -69,7 +70,7 @@ void fragment(){
   ALBEDO*=.82+groove*.06;ROUGHNESS=.30+groove*.025;
   ANISOTROPY=.48;ANISOTROPY_FLOW=length(disc_uv)>.001?normalize(vec2(-disc_uv.y,disc_uv.x)):vec2(1,0);
  }
- CLEARCOAT=coat;CLEARCOAT_ROUGHNESS=.13;
+ CLEARCOAT=coat;CLEARCOAT_ROUGHNESS=coat_roughness;
  EMISSION=emission_color.rgb*emission_energy*power;
  if(instrument_gain>=0.0){
   vec3 filament=texture(instrument_profile,vec2(.75,.08+fract(UV.y*.75-instrument_time*.13)*.34)).rgb;

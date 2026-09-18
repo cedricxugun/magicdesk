@@ -1,0 +1,25 @@
+[
+  {
+    "url": "https://www.mutopiaproject.org/ftp/BeethovenLv/O27/moonlight/moonlight-lys.zip",
+    "file": "production/I_refinement/moonlight/moonlight-lys.zip",
+    "sha256": "3863df81f0a3141f3ea7dd901efd9929f90e32c577377b99a7f7ff81b6b33990",
+    "entries": [
+      "moonlight1-a4.ly",
+      "moonlight1-let.ly",
+      "moonlight2-a4.ly",
+      "moonlight2-let.ly",
+      "moonlight3-a4.ly",
+      "moonlight3-let.ly"
+    ]
+  },
+  {
+    "url": "https://www.mutopiaproject.org/ftp/BeethovenLv/O27/moonlight/moonlight-mids.zip",
+    "file": "production/I_refinement/moonlight/moonlight-mids.zip",
+    "sha256": "94915b176f0b999919a6cd1025a45ec8dd0a454dab33b2b332c5026291ea91f5",
+    "entries": [
+      "moonlight1.mid",
+      "moonlight2.mid",
+      "moonlight3.mid"
+    ]
+  }
+]

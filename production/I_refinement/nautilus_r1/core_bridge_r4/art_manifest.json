@@ -1,0 +1,16 @@
+{
+  "mode": "built_in_image_gen",
+  "image": "production/I_refinement/nautilus_r1/core_bridge_r4/throat_connection_sections_r1.png",
+  "sha256": "c6053a49b394745e7d890ecbef88e13e63c2f4c43429eec76f6269304d5a93f1",
+  "prompt": "production/I_refinement/nautilus_r1/core_bridge_r4/PROMPT.txt",
+  "references": [
+    "review/I_refinement/nautilus_r1/mouth_relation_r3/presentations/d84b7d87/relation_open.png",
+    "production/I_refinement/nautilus_r1/chambers_r1/chambers_and_response_r1.png"
+  ],
+  "status": "local_connection_art_intent_not_geometry_contract",
+  "limits": [
+    "Apparent straight/wide liner in the image must not lengthen or reposition the corrected real mouth; measured curved passage defines the fit.",
+    "Image bolt count and flange dimensions are illustrative; use measured existing C1 flange and actual fastener pattern.",
+    "No new base or unverified floating supports may be introduced from the image."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "rounded_rings": [
+    11,
+    12
+  ],
+  "original_selected_edges": 384,
+  "requested_bevel_offset": 0.00012,
+  "bevel_segments": 5,
+  "scope": "Physical bevel only on first liner outer skirt boundaries. Source manifold/self and local clearance checked below; not full sequence or art acceptance.",
+  "parent_source_sha256": "1ae4af0081c6a06ec42eef2e9723cf54465f7bae3f240649cd110bea2584ff73",
+  "volume": 0.00011287333328468975,
+  "self_contacts": 0,
+  "self_pairs": [],
+  "clearance_contacts": []
+}

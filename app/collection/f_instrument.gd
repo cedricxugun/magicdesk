@@ -5,6 +5,7 @@ var physics:RefCounted
 var preload_value:=0.0
 var coherence:=0.0
 var charge:=0.0
+var visual_charge:=0.0
 var peak_time:=-1.0
 var peak_latched:=false
 var release_time:=-1.0
@@ -15,7 +16,12 @@ var peak_count:=0
 var travel_latch:=1.0
 var aborting:=false
 var abort_gain:=1.0
+var abort_peak_value:=0.0
+var abort_crest_value:=0.0
 var disruption:=0.0
+var input_quiet_time:=10.0
+var calibration_ready:=false
+var calibration_reason:="transport"
 
 func setup(owner:Node3D)->void:
 	module=owner;physics=load("res://collection/f_dynamics.gd").new();physics.transport(0,0,10)
@@ -23,13 +29,15 @@ func setup(owner:Node3D)->void:
 
 func changed(key:String,before:Variant,value:Variant,event:String)->void:
 	if event in ["begin","change","release"] and key in ["trim","polarity","brake"]:
-		if event=="begin":peak_latched=false;charge=0
+		# Touching a knob without changing it must not erase earned stability.
 		if absf(float(value)-float(before))>.000001:
-			peak_latched=false;charge=0
-			if peak_time>=0:aborting=true
+			peak_latched=false;input_quiet_time=0.0
+			if peak_time>=0:_begin_abort()
 
 func tick(delta:float)->void:
+	input_quiet_time+=delta
 	var parking:bool=module.stowing or module.open_target<.001
+	if parking and peak_time>=0:_begin_abort()
 	preload_value=move_toward(preload_value,0.0 if parking else module.play.number("trim"),delta*.85)
 	physics.trim=preload_value;physics.brake=0.0 if parking else module.play.number("brake")
 	physics.polarity=0.0 if parking else module.play.number("polarity")
@@ -59,32 +67,46 @@ func tick(delta:float)->void:
 	coherence*=1.0-physics.brake
 	if parking or module.openness<.999 or module.explosion>.001:coherence=0
 	var manipulating:bool=module.host.collection!=null and module.host.collection.current==module and module.host.collection.control_driver.index>=0
-	if coherence>.70 and not peak_latched and not manipulating:charge=minf(1,charge+delta*coherence/1.45)
-	else:charge=move_toward(charge,0,delta*1.5)
-	if charge>=1.0 and not peak_latched:
+	var actuator_settled:bool=absf(preload_value-module.play.number("trim"))<.008
+	calibration_ready=coherence>.70 and actuator_settled and input_quiet_time>=.35 and not parking and module.explosion<.001
+	calibration_reason="transport" if parking or module.openness<.999 else "brake" if physics.brake>.05 else "adjusting" if manipulating or not actuator_settled or input_quiet_time<.35 else "motion" if speed>.35 or absf(physics.omega)>.18 else "alignment" if coherence<=.70 else "calibrated" if peak_latched else "settling"
+	if not peak_latched and calibration_ready:
+		if not manipulating:charge=minf(1,charge+delta*coherence/1.45)
+	else:charge=move_toward(charge,0,delta*(1.5 if peak_latched else .55))
+	if charge>=1.0 and not peak_latched and calibration_ready and not manipulating:
 		peak_latched=true;peak_time=0;peak_count+=1
 		aborting=false;abort_gain=1.0;disruption=0
 	if parking:
 		charge=0
-		if peak_time>=0:aborting=true
+		if peak_time>=0:_begin_abort()
 	if peak_time>=0:
 		disruption=disruption+delta if coherence<.35 else 0.0
-		if disruption>.20:aborting=true
-	stage="recover" if parking and module.openness>.01 else "rest" if module.openness<.01 else "release" if module.openness<.999 or release_time<1.0 else "equilibrium" if peak_time>=0 else "brake" if physics.brake>.5 else "bias" if coherence<.7 else "settling"
+		if disruption>.20:_begin_abort()
+	visual_charge=move_toward(visual_charge,charge,delta*2.0)
+	if module.openness<.001:visual_charge=0.0
+	stage="recover" if parking and module.openness>.01 else "rest" if module.openness<.01 else "release" if module.openness<.999 or release_time<1.0 else "equilibrium" if peak_time>=0 and not aborting else "brake" if physics.brake>.5 else "adjust" if calibration_reason=="adjusting" else "bias" if coherence<.7 else "settling"
 
 func ready_to_fold()->bool:
 	return not physics.free or physics.ready_to_transport()
 
+func _begin_abort()->void:
+	if aborting or peak_time<0:return
+	# Freeze the currently visible envelopes before fading. Advancing a rising
+	# envelope beneath a decay multiplier can otherwise brighten after cancel.
+	abort_peak_value=peak();abort_crest_value=crest();abort_gain=1.0;aborting=true
+
 func peak()->float:
 	if peak_time<0:return 0
+	if aborting:return abort_peak_value*abort_gain
 	return smoothstep(0.0,.85,peak_time)*(1.0-smoothstep(3.0,5.5,peak_time))*abort_gain
 
 func crest()->float:
 	if peak_time<0:return 0
+	if aborting:return abort_crest_value*abort_gain
 	return exp(-pow((peak_time-1.55)/.50,2.0))*abort_gain
 
 func release_flash()->float:
 	return exp(-pow((release_time-.3)/.36,2.0)) if release_time>=0 and release_time<1.5 else 0.0
 
 func diagnostics()->Dictionary:
-	return {"stage":stage,"coherence":coherence,"charge":charge,"peak_time":peak_time,"peak_count":peak_count,"heat":braking_heat,"preload_value":preload_value,"physics":physics.diagnostics()}
+	return {"stage":stage,"calibration_reason":calibration_reason,"calibration_ready":calibration_ready,"input_quiet_time":input_quiet_time,"coherence":coherence,"charge":charge,"visual_charge":visual_charge,"peak_time":peak_time,"peak_count":peak_count,"heat":braking_heat,"preload_value":preload_value,"physics":physics.diagnostics()}

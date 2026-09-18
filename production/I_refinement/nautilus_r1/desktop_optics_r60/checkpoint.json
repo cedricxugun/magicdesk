@@ -1,0 +1,22 @@
+{
+  "status": "active",
+  "body_source_sha256": "31f87c61f1835a18b8b065eb2f2ec2270a2ab3632f1a331d23036a876d158176",
+  "files": {
+    "app/collection/lighting.gd": "24ca6a6b256fbd4d1c1c7fdba959483b84c61a4e3bb3111ce2ae114dc86c06bb",
+    "app/assets/collection/lighting_profiles.json": "bea77808e6186bbb2dcafcaca2aa41043cd0a658a300675cc43f8a67ff36a559",
+    "app/collection/i_moonlight_staff.gd": "dcede555241540b64ab1042ac63cea35a53cf09b6aaf385a667836a8b0ce5bcf",
+    "app/collection/i_moonlight_staff.gdshader": "07eda6d13d2de93162ba2609b96eee9becb674f685936f61220ef5162bdf5b88",
+    "app/assets/collection/art/I/desktop_optics_r60/score_layout.json": "4928c3a90641b131c294d0fd0798257106e32ca311876b58dc6f5065224a99a3",
+    "app/assets/collection/models/I_nautilus_r59.json": "f42ad62d58074dad27dc6d0111ddd20440c00370f9541e462e417cc3c3c9be82",
+    "tools/build_i_nautilus_manifest.py": "5d3d2753cd9e4df241fe86b519c0e55adf2928a68fbccd7f1e4b9e2682d5d160",
+    "tests/collection/i_desktop_optics_r60.gd": "5cb07fb4f81aeddf54f5caba68c5fcd9ee02e67c5a0946b3d732965aa0964465",
+    "tests/collection/i_lighting_restore_r60.gd": "9dd9eaa39c79f4394b125bc96fb0ca5690fe142d57721a5b6cf2a1c9d9909546",
+    "tests/collection/i_staff_sampling_r60.gd": "e0ae0ecbf58ec35f67ce94dd1c754fc915cb4e2b38f50d9d0657bc69804e0e45",
+    "tests/collection/i_nautilus_main_qa.gd": "2891cc745aa023f760eac738e42aaf740349ef2834ac5ef8afbbd0794c74ca8d"
+  },
+  "evidence": "review/I_refinement/nautilus_r1/desktop_optics_r60",
+  "installed_app_updated": false,
+  "previous_goal_turn": "progress: main adapter and native selector round trip",
+  "scope": "Main I lighting and source score sampling refinement. Final all-model goal not complete.",
+  "native_preview": "Default current preview opened and native left console clicked; I idle / music playing, no runtime errors at checkpoint. No speaker recording or full-work audition."
+}

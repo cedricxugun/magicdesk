@@ -1,0 +1,7 @@
+{
+  "method": "built_in_image_gen",
+  "image": "suspension_motion_r1.png",
+  "image_sha256": "c0234f1037d34531cca0c4b3920ce85fdeec1f5bbfd73084e54da809e9227198",
+  "prompt": "PROMPT.md",
+  "scope": "Local diaphragm/spring response art study; not dimensions or whole-model acceptance."
+}

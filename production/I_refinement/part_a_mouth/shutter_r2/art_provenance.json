@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "source_reference": "concepts/collection_20260909/I_\u56de\u58f0\u6d77\u87ba.png",
+  "output": "shutter_motion_r2.png",
+  "generated_output": "exec-c5205336-eefd-4860-a76e-1fef7a8fb4f8.png",
+  "sha256": "7f8cfb2efd0680cdd77f202bb45f79cf8915225240009837aba18ced6eb07027",
+  "scope": "Shutter visual silhouette and desired staged uncovering only, not a validated engineering motion or all-I art acceptance."
+}

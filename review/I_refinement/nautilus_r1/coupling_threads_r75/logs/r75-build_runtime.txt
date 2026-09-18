@@ -1,0 +1,18 @@
+00:02.635  blend            | Read blend: "/Users/cedric/Desktop/magic desk/blender/collection/I_nautilus_seam_release_r73.blend"
+R75_THREAD 0 {'name': 'IN3_CouplingBolt_00', 'nonmanifold': 0, 'volume': 1.355486133510564e-06, 'self_contacts': 0, 'pairs': []}
+R75_THREAD 1 {'name': 'IN3_CouplingBolt_01', 'nonmanifold': 0, 'volume': 1.3554851593822855e-06, 'self_contacts': 0, 'pairs': []}
+R75_THREAD 2 {'name': 'IN3_CouplingBolt_02', 'nonmanifold': 0, 'volume': 1.355486905722416e-06, 'self_contacts': 0, 'pairs': []}
+R75_THREAD 3 {'name': 'IN3_CouplingBolt_03', 'nonmanifold': 0, 'volume': 1.3554844806339898e-06, 'self_contacts': 0, 'pairs': []}
+R75_THREAD 4 {'name': 'IN3_CouplingBolt_04', 'nonmanifold': 0, 'volume': 1.3554848202404462e-06, 'self_contacts': 0, 'pairs': []}
+R75_THREAD 5 {'name': 'IN3_CouplingBolt_05', 'nonmanifold': 0, 'volume': 1.3554885903977771e-06, 'self_contacts': 0, 'pairs': []}
+R75_CHECK [('IN3_CouplingBolt_00', 0, 0), ('IN3_CouplingBolt_01', 0, 0), ('IN3_CouplingBolt_02', 0, 0), ('IN3_CouplingBolt_03', 0, 0), ('IN3_CouplingBolt_04', 0, 0), ('IN3_CouplingBolt_05', 0, 0), ('IC1_CollarUpper', 49, 14), ('IC1_CollarLower', 0, 17)] [{'bolt': 'IN3_CouplingBolt_00', 'collar': 'IC1_CollarUpper', 'contacts': 0}, {'bolt': 'IN3_CouplingBolt_01', 'collar': 'IC1_CollarUpper', 'contacts': 0}, {'bolt': 'IN3_CouplingBolt_02', 'collar': 'IC1_CollarUpper', 'contacts': 0}, {'bolt': 'IN3_CouplingBolt_03', 'collar': 'IC1_CollarLower', 'contacts': 0}, {'bolt': 'IN3_CouplingBolt_04', 'collar': 'IC1_CollarLower', 'contacts': 0}, {'bolt': 'IN3_CouplingBolt_05', 'collar': 'IC1_CollarLower', 'contacts': 0}] [{'collar': 'IC1_CollarUpper', 'samples': 5805, 'max_distance': 0.0}, {'collar': 'IC1_CollarLower', 'samples': 6856, 'max_distance': 7.592284418933559e-07}]
+Traceback (most recent call last):
+  File "/Users/cedric/Desktop/magic desk/blender/collection/build_i_coupling_threads_r75.py", line 81, in <module>
+    assert all(c['nonmanifold']==0 and c['volume']>0 and c['self_contacts']==0 for c in checks);assert all(r['contacts']==0 for r in fit);assert max(r['max_distance']for r in exterior)<2e-6;assert all(fingerprint(bpy.data.objects[n])==p for n,p in protected.items())
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'blender/collection/build_i_coupling_threads_r75.py', exiting.
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

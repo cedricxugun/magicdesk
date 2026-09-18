@@ -1,0 +1,8 @@
+{
+  "mode": "built_in_image_gen",
+  "image": "production/I_refinement/nautilus_r1/power_r1/pressure_and_sector_drive_r1.png",
+  "sha256": "9f1b7ccebf0794e8fc25419d4488cfd85c97d8a54d34ee37be8ba546e0e148f2",
+  "prompt": "production/I_refinement/nautilus_r1/power_r1/PROMPT.txt",
+  "status": "unimplemented_mechanism_reference_paused_for_mouth_relation_correction",
+  "scope": "Pressure cylinder and rotary sector visual intent. Picture is not a geometric or manufacturing contract. Closed-state guide extension and illustrative gear geometry require correction against actual mechanism."
+}

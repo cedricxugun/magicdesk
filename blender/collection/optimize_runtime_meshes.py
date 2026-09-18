@@ -5,14 +5,15 @@ bounds and control hierarchies are preserved in the runtime GLB.
 """
 import bpy,sys
 from pathlib import Path
-def optimize(path):
+def optimize(path, preserve_meshes=None):
+    preserve_meshes=set(preserve_meshes or [])
     bpy.ops.wm.read_factory_settings(use_empty=True)
     bpy.ops.import_scene.gltf(filepath=str(path))
     groups={};before=sum(o.type=='MESH' for o in bpy.data.objects)
     vertices_before=sum(len(o.data.vertices) for o in bpy.data.objects if o.type=='MESH')
     polygons_before=sum(len(o.data.polygons) for o in bpy.data.objects if o.type=='MESH')
     for obj in list(bpy.data.objects):
-        if obj.type=='MESH' and obj.parent and not obj.data.shape_keys:
+        if obj.type=='MESH' and obj.parent and not obj.data.shape_keys and obj.name not in preserve_meshes:
             groups.setdefault(obj.parent,[]).append(obj)
     for parent,items in groups.items():
         if len(items)<2:continue

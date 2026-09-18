@@ -17,15 +17,21 @@ func setup(owner:Node3D)->void:
 	definitions=JSON.parse_string(FileAccess.get_file_as_string("res://assets/collection/control_profiles.json")).models
 
 func profile(slot:int)->Dictionary:
+	if service.current and service.current.data.has("control_profiles"):
+		for item in service.current.data.control_profiles:
+			if int(item.index)==slot:return item
+		return {}
 	if service.active_id=="G" and service.current and service.current.data.has("record_player") and slot==1:return {"index":1,"key":"leaf","label":"选片","gesture":"rotary","min":0.0,"max":5.0,"default":0.0,"steps":6,"cyclic":true,"hint":"单击选下一张，滚轮双向选片；机身编号与选片轮对应。"}
 	if service.active_id=="G" and service.current and service.current.data.has("record_player") and slot==3:return {"index":3,"key":"spin","label":"唱片慢转 / 停转","gesture":"detent","axis":"x","min":0.0,"max":1.0,"default":1.0,"steps":2,"tap_toggle":true,"hint":"单击切换慢转与停转；唱片和藏品同转，约一分钟一圈。"}
 	if service.active_id=="G" and service.current and service.current.data.has("g_archive"):
 		var definition:Dictionary=service.current.data.g_archive.contents[service.current.play.g_instrument.selected]
+		if slot==2 and service.current.play.g_instrument.get("observatory_enabled") and service.current.play.g_instrument.selected==0:
+			return {"index":2,"key":"fold","label":"调时 ±30分钟","gesture":"slider","axis":"x","min":0.0,"max":1.0,"default":.5,"wheel_step":1.0/60.0,"drag_pixels":90.0,"hint":"左右拖动调时；滚轮每格一分钟，Shift微调。操作匣显示偏移量。"}
 		if slot==2:return {"index":2,"key":"fold","label":definition.parameter,"gesture":"slider","axis":"x","min":0.0,"max":1.0,"default":.5,"hint":"拖动或滚轮："+str(definition.parameter)+"。效果直接作用于当前藏品。"}
 		if slot==5:return {"index":5,"key":"imprint","label":definition.action,"gesture":"hold","min":0.0,"max":1.0,"default":0.0,"hint":"按住："+str(definition.action)+"；松手后平缓恢复。"}
 		if slot==3:return {"index":3,"key":"gauge","label":"读取 / 动作状态","gesture":"gauge","min":0.0,"max":1.0,"default":0.0,"readonly":true,"hint":"读盘时显示进度，播放时响应藏品的动作强度。"}
 	if service.active_id=="G" and slot==3:return {"index":3,"key":"gauge","label":"光路对准表","gesture":"gauge","min":0.0,"max":1.0,"default":0.0,"readonly":true,"hint":"向右表示三页光孔已对准；折角回到中央可对准，再按住写入。"}
-	if service.active_id=="F" and slot==3:return {"index":3,"key":"gauge","label":"合衡表","gesture":"gauge","min":0.0,"max":1.0,"default":0.0,"readonly":true,"hint":"指针越靠左，平衡越稳定；稳定后自动校准。"}
+	if service.active_id=="F" and slot==3:return {"index":3,"key":"gauge","label":"合衡表 · 中央为零","gesture":"gauge","min":0.0,"max":1.0,"default":0.5,"readonly":true,"hint":"预载轮补偿偏置，让指针回到中央。松开制动、等待配重停稳；琥珀灯逐渐亮起后完成校准。"}
 	if service.active_id!="B" and slot==3:return {"index":3,"key":"gauge","label":"状态仪表","gesture":"gauge","min":0.0,"max":1.0,"default":0.0,"readonly":true,"hint":"显示装置当前状态，无需点击"}
 	if service.active_id!="B" and slot==4:return {"index":4,"key":"service","label":"拆装拨杆","gesture":"service","axis":"x","min":-1.0,"max":1.0,"default":0.0,"hint":"向左拖动拆解，向右拖动组装；松手回中"}
 	for item in definitions.get(service.active_id,[]):
@@ -42,7 +48,7 @@ func consume(event:InputEvent)->bool:
 		if not definition.is_empty() and definition.get("gesture","") in ["rotary","crank","slider","detent"]:
 			active=definition;index=slot
 			var before:float=service.current.play.number(str(active.key))
-			var amount:float=(float(active.max)-float(active.min))*.045
+			var amount:float=float(active.get("wheel_step",(float(active.max)-float(active.min))*.045))
 			if active.gesture=="crank":amount=1.0/12.0
 			if active.has("steps"):amount=(float(active.max)-float(active.min))/maxf(1.0,float(active.steps)-1.0)
 			elif event.shift_pressed:amount*=.2
@@ -64,7 +70,7 @@ func consume(event:InputEvent)->bool:
 			_set_value(drag_value,"change")
 		elif kind in ["slider","detent","pump","service"]:
 			var movement:float=relative.x if active.get("axis","y")=="x" else -relative.y
-			drag_value+=movement/130.0*(float(active.max)-float(active.min))
+			drag_value+=movement/float(active.get("drag_pixels",130.0))*(float(active.max)-float(active.min))
 			_set_value(drag_value,"change")
 		elif kind=="joystick":
 			var v:Vector2=(point-start_pointer)/80.0
@@ -85,7 +91,10 @@ func consume(event:InputEvent)->bool:
 		var slot:int=service.hit_control(event.position)
 		var definition:=profile(slot)
 		if definition.is_empty():return false
-		if definition.get("readonly",false):return true
+		if definition.get("readonly",false):
+			if service.active_id=="F":service.pin_control_help(slot)
+			return true
+		service.pinned_help_index=-1;service.pinned_help_until=0
 		active=definition;index=slot;start_pointer=event.position;last_pointer=event.position;changed=false
 		service.host.tooltip.hide()
 		origin_value=service.current.play.value(str(active.key))

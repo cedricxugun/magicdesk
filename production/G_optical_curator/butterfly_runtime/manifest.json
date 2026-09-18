@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "image": "fabrication_storyboard.png",
+  "prompt": "fx_prompt.txt",
+  "reference": "review/G_optical_curator/butterfly_r2/component_open.png",
+  "sha256": "8b938c5ceebc63019e5f3aa5375e69d1d133ac8d59b3c120d480c7b90400cdd5",
+  "status": "VFX target; early outline visibility in panels 1/2 corrected during implementation. Not actual App."
+}

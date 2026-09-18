@@ -1,0 +1,383 @@
+{
+  "parent_source_sha256": "86b25cf745e4e3129d2d88b2743b21e1ea8dadf7642a6a8556337904ad0a9d7a",
+  "changed_meshes": [
+    "IC1_CollarLower",
+    "IC1_CollarUpper",
+    "IN3_CouplingBolt_00",
+    "IN3_CouplingBolt_01",
+    "IN3_CouplingBolt_02",
+    "IN3_CouplingBolt_03",
+    "IN3_CouplingBolt_04",
+    "IN3_CouplingBolt_05"
+  ],
+  "protected_meshes": 1229,
+  "threads": [
+    {
+      "index": 0,
+      "bolt": "IN3_CouplingBolt_00",
+      "collar": "IC1_CollarUpper",
+      "center_parent": [
+        0.4347447454929352,
+        0.25099998712539673,
+        0.0
+      ],
+      "axis_parent": [
+        0,
+        0,
+        1
+      ],
+      "pitch_parent": 0.0006,
+      "radial_clearance_parent": 3e-05,
+      "nominal_female_engagement_parent": [
+        0.6286,
+        0.6338
+      ],
+      "release_world_distance": 0.006,
+      "release_parent_distance": 0.008571429457352703
+    },
+    {
+      "index": 1,
+      "bolt": "IN3_CouplingBolt_01",
+      "collar": "IC1_CollarUpper",
+      "center_parent": [
+        3.073863374995645e-17,
+        0.5019999742507935,
+        0.0
+      ],
+      "axis_parent": [
+        0,
+        0,
+        1
+      ],
+      "pitch_parent": 0.0006,
+      "radial_clearance_parent": 3e-05,
+      "nominal_female_engagement_parent": [
+        0.6286,
+        0.6338
+      ],
+      "release_world_distance": 0.006,
+      "release_parent_distance": 0.008571429457352703
+    },
+    {
+      "index": 2,
+      "bolt": "IN3_CouplingBolt_02",
+      "collar": "IC1_CollarUpper",
+      "center_parent": [
+        -0.4347447454929352,
+        0.25099998712539673,
+        0.0
+      ],
+      "axis_parent": [
+        0,
+        0,
+        1
+      ],
+      "pitch_parent": 0.0006,
+      "radial_clearance_parent": 3e-05,
+      "nominal_female_engagement_parent": [
+        0.6286,
+        0.6338
+      ],
+      "release_world_distance": 0.006,
+      "release_parent_distance": 0.008571429457352703
+    },
+    {
+      "index": 3,
+      "bolt": "IN3_CouplingBolt_03",
+      "collar": "IC1_CollarLower",
+      "center_parent": [
+        -0.4347447454929352,
+        -0.25099998712539673,
+        0.0
+      ],
+      "axis_parent": [
+        0,
+        0,
+        1
+      ],
+      "pitch_parent": 0.0006,
+      "radial_clearance_parent": 3e-05,
+      "nominal_female_engagement_parent": [
+        0.6286,
+        0.6338
+      ],
+      "release_world_distance": 0.006,
+      "release_parent_distance": 0.008571429457352703
+    },
+    {
+      "index": 4,
+      "bolt": "IN3_CouplingBolt_04",
+      "collar": "IC1_CollarLower",
+      "center_parent": [
+        -9.221590124986934e-17,
+        -0.5019999742507935,
+        0.0
+      ],
+      "axis_parent": [
+        0,
+        0,
+        1
+      ],
+      "pitch_parent": 0.0006,
+      "radial_clearance_parent": 3e-05,
+      "nominal_female_engagement_parent": [
+        0.6286,
+        0.6338
+      ],
+      "release_world_distance": 0.006,
+      "release_parent_distance": 0.008571429457352703
+    },
+    {
+      "index": 5,
+      "bolt": "IN3_CouplingBolt_05",
+      "collar": "IC1_CollarLower",
+      "center_parent": [
+        0.4347447454929352,
+        -0.25099998712539673,
+        0.0
+      ],
+      "axis_parent": [
+        0,
+        0,
+        1
+      ],
+      "pitch_parent": 0.0006,
+      "radial_clearance_parent": 3e-05,
+      "nominal_female_engagement_parent": [
+        0.6286,
+        0.6338
+      ],
+      "release_world_distance": 0.006,
+      "release_parent_distance": 0.008571429457352703
+    }
+  ],
+  "solids": [
+    {
+      "name": "IN3_CouplingBolt_00",
+      "nonmanifold": 0,
+      "volume": 1.355486133510564e-06,
+      "self_contacts": 0,
+      "pairs": []
+    },
+    {
+      "name": "IN3_CouplingBolt_01",
+      "nonmanifold": 0,
+      "volume": 1.3554851593822855e-06,
+      "self_contacts": 0,
+      "pairs": []
+    },
+    {
+      "name": "IN3_CouplingBolt_02",
+      "nonmanifold": 0,
+      "volume": 1.355486905722416e-06,
+      "self_contacts": 0,
+      "pairs": []
+    },
+    {
+      "name": "IN3_CouplingBolt_03",
+      "nonmanifold": 0,
+      "volume": 1.3554844806339898e-06,
+      "self_contacts": 0,
+      "pairs": []
+    },
+    {
+      "name": "IN3_CouplingBolt_04",
+      "nonmanifold": 0,
+      "volume": 1.3554848202404462e-06,
+      "self_contacts": 0,
+      "pairs": []
+    },
+    {
+      "name": "IN3_CouplingBolt_05",
+      "nonmanifold": 0,
+      "volume": 1.3554885903977771e-06,
+      "self_contacts": 0,
+      "pairs": []
+    },
+    {
+      "name": "IC1_CollarUpper",
+      "nonmanifold": 49,
+      "volume": 0.004093038468192091,
+      "self_contacts": 14,
+      "pairs": [
+        [
+          11784,
+          44292
+        ],
+        [
+          11772,
+          44298
+        ],
+        [
+          11716,
+          44329
+        ],
+        [
+          11710,
+          44332
+        ],
+        [
+          11835,
+          28415
+        ],
+        [
+          11829,
+          28416
+        ],
+        [
+          11813,
+          28427
+        ],
+        [
+          11812,
+          28427
+        ],
+        [
+          11819,
+          28424
+        ],
+        [
+          11819,
+          28422
+        ],
+        [
+          11264,
+          28336
+        ],
+        [
+          11245,
+          12539
+        ],
+        [
+          11250,
+          12539
+        ],
+        [
+          11244,
+          12539
+        ]
+      ]
+    },
+    {
+      "name": "IC1_CollarLower",
+      "nonmanifold": 0,
+      "volume": 0.0043003105326318205,
+      "self_contacts": 17,
+      "pairs": [
+        [
+          13986,
+          46376
+        ],
+        [
+          13991,
+          46376
+        ],
+        [
+          13767,
+          46486
+        ],
+        [
+          13766,
+          46486
+        ],
+        [
+          13972,
+          30540
+        ],
+        [
+          13881,
+          30623
+        ],
+        [
+          13978,
+          30536
+        ],
+        [
+          13997,
+          30581
+        ],
+        [
+          13997,
+          30578
+        ],
+        [
+          13997,
+          30577
+        ],
+        [
+          13827,
+          30653
+        ],
+        [
+          13821,
+          30653
+        ],
+        [
+          14278,
+          46648
+        ],
+        [
+          14268,
+          46651
+        ],
+        [
+          14391,
+          46605
+        ],
+        [
+          14456,
+          62561
+        ],
+        [
+          14477,
+          46744
+        ]
+      ]
+    }
+  ],
+  "closed_fit": [
+    {
+      "bolt": "IN3_CouplingBolt_00",
+      "collar": "IC1_CollarUpper",
+      "contacts": 0
+    },
+    {
+      "bolt": "IN3_CouplingBolt_01",
+      "collar": "IC1_CollarUpper",
+      "contacts": 0
+    },
+    {
+      "bolt": "IN3_CouplingBolt_02",
+      "collar": "IC1_CollarUpper",
+      "contacts": 0
+    },
+    {
+      "bolt": "IN3_CouplingBolt_03",
+      "collar": "IC1_CollarLower",
+      "contacts": 0
+    },
+    {
+      "bolt": "IN3_CouplingBolt_04",
+      "collar": "IC1_CollarLower",
+      "contacts": 0
+    },
+    {
+      "bolt": "IN3_CouplingBolt_05",
+      "collar": "IC1_CollarLower",
+      "contacts": 0
+    }
+  ],
+  "outside_thread_regions": [
+    {
+      "collar": "IC1_CollarUpper",
+      "samples": 5805,
+      "max_distance": 0.0
+    },
+    {
+      "collar": "IC1_CollarLower",
+      "samples": 6856,
+      "max_distance": 7.592284418933559e-07
+    }
+  ],
+  "scope": "Six actual male tips and local same-metal tapped bores in existing clamp halves. Short release engagement specified; source self/closed fit and protected exterior checked. Dynamic helix, assembly clearance, visuals and load behavior pending."
+}

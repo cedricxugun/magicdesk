@@ -1,0 +1,23 @@
+{
+  "movement": 3,
+  "url": "https://archive.org/download/MoonlightSonata_845/Sonata_no_14_in_c_sharp_minor_moonlight_op_27_no_2_Iii.Presto.mp3",
+  "source_metadata": "https://archive.org/metadata/MoonlightSonata_845",
+  "file": "production/I_refinement/moonlight/pitman_movement_3_original.mp3",
+  "sha256": "a4c16b5e2c5ee548be14e74136b687f8586e619fd1c06abc566ebeeae511066f",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    ],
+    "format": {
+      "duration": "493.177000",
+      "bit_rate": "256070"
+    }
+  },
+  "status": "original MP3 candidate linked from Commons derivative metadata; requires listening and alignment"
+}

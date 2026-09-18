@@ -1,0 +1,42 @@
+{
+  "source": "blender/collection/I_scan_cap_r41.blend",
+  "source_sha256": "7f75d8fbb1608da067b673868ca0c51c620a0cf10731fed4ec6ff51c6555a422",
+  "component": "app/assets/collection/art/I/scan_caps_r41/cap.glb",
+  "component_sha256": "7f677b661bafb656cb528bab0530102b7bcd00b03fecc96bb7c215c47e956daf",
+  "mouth_source_sha256": "734f5365098133ee372616b0795c7e10b0b5c381961c70db0c63dfb962ec6bd6",
+  "mouth_component_sha256": "9e57f33fa026d042c74918e13e9fa8bca73e54a8c0232e347bed000c137486c1",
+  "root": "I_ScanCapRoot",
+  "lens": "I_ScanCapLens",
+  "focus_local_blender": [
+    0,
+    0,
+    -0.0109
+  ],
+  "outer_radius": 0.0067,
+  "seat_gap": 2.5e-05,
+  "protected_source_meshes": 465,
+  "geometry_checks": [
+    {
+      "mesh": "I_ScanCapHousing",
+      "vertices": 2208,
+      "triangles": 4416,
+      "self_contacts": [],
+      "terminal_intersections": []
+    },
+    {
+      "mesh": "I_ScanCapSeal",
+      "vertices": 384,
+      "triangles": 768,
+      "self_contacts": [],
+      "terminal_intersections": []
+    },
+    {
+      "mesh": "I_ScanCapLens",
+      "vertices": 1634,
+      "triangles": 3264,
+      "self_contacts": [],
+      "terminal_intersections": []
+    }
+  ],
+  "scope": "New small accessory seated over existing actual red spherical terminal. Original A geometry/transforms preserved. Source self/terminal intersections checked; cap-to-cap interfaces and runtime attachment still pending."
+}

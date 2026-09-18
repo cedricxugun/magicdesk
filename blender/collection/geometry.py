@@ -23,6 +23,20 @@ def pose(matrix):
     p,q,s=(C @ matrix @ C.inverted()).decompose()
     return {'p':list(p),'q':[q.x,q.y,q.z,q.w],'s':list(s)}
 
+def reparent_preserving_world(obj, parent, tolerance=1e-6):
+    """Reparent even newly created objects without inheriting stale dependency-graph matrices."""
+    bpy.context.view_layer.update()
+    world = obj.matrix_world.copy()
+    obj.parent = parent
+    obj.matrix_parent_inverse = Matrix.Identity(4)
+    obj.matrix_basis = parent.matrix_world.inverted() @ world if parent else world
+    bpy.context.view_layer.update()
+    error = max(abs(obj.matrix_world[row][column] - world[row][column])
+                for row in range(4) for column in range(4))
+    if error > tolerance:
+        raise AssertionError(f"World transform drift while parenting {obj.name}: {error}")
+    return error
+
 class Builder:
     def __init__(self, ident, title):
         bpy.ops.wm.read_factory_settings(use_empty=True)
@@ -48,7 +62,7 @@ class Builder:
 
     def material(self,name,color,metal,roughness,albedo=None,rough=None,normal=None,coat=0,emission=0,transmission=0):
         m=bpy.data.materials.new('Collection_'+name);m.use_nodes=True
-        p=m.node_tree.nodes.get('Principled BSDF')
+        p=next(node for node in m.node_tree.nodes if node.type=='BSDF_PRINCIPLED')
         p.inputs['Base Color'].default_value=(*color,1);p.inputs['Metallic'].default_value=metal
         p.inputs['Roughness'].default_value=roughness
         p.inputs['Coat Weight'].default_value=coat;p.inputs['Coat Roughness'].default_value=.12
@@ -231,8 +245,9 @@ class Builder:
         self.scene.render.film_transparent=True
         self.scene.world=bpy.data.worlds.new('Collection_Studio');w=self.scene.world;w.use_nodes=True
         t=w.node_tree.nodes.new('ShaderNodeTexEnvironment');t.image=bpy.data.images.load(str(ASSETS/'studio_small_09_4k.exr'),check_existing=True)
-        w.node_tree.nodes.get('Background').inputs['Strength'].default_value=.35
-        w.node_tree.links.new(t.outputs['Color'],w.node_tree.nodes.get('Background').inputs['Color'])
+        background=next(node for node in w.node_tree.nodes if node.type=='BACKGROUND')
+        background.inputs['Strength'].default_value=.35
+        w.node_tree.links.new(t.outputs['Color'],background.inputs['Color'])
         for index,(pos,power,size) in enumerate([((-3,-4,5),450,4),((4,2,4),550,3),((0,-5,2.5),160,4)]):
             d=bpy.data.lights.new('Studio_'+str(index),'AREA');d.energy=power;d.shape='DISK';d.size=size
             o=bpy.data.objects.new(d.name,d);self.scene.collection.objects.link(o);o.location=pos;o.rotation_euler=(Vector((0,0,1.5))-o.location).to_track_quat('-Z','Y').to_euler()

@@ -1,0 +1,849 @@
+{
+  "source_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b",
+  "prepared_front_and_rear_pose_max_error": 4.209578037261963e-07,
+  "prepared_rear_source_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b",
+  "selected": [
+    "IN1_PanelRim_1_1_0_-1410",
+    "IN1_PanelRim_1_1_0_-2307",
+    "IN1_PanelRim_1_1_1_-1410",
+    "IN1_PorcelainPanel_02"
+  ],
+  "bounds_blender": [
+    [
+      -0.9415626525878906,
+      -0.5096928477287292,
+      1.266889214515686
+    ],
+    [
+      0.7112034559249878,
+      0.8297304511070251,
+      2.5029094219207764
+    ]
+  ],
+  "paths": [
+    {
+      "name": "down",
+      "offset": [
+        0.0,
+        0.0,
+        -0.6000000238418579
+      ],
+      "samples": [
+        {
+          "fraction": 0.0,
+          "contacts": 0,
+          "owners": {}
+        },
+        {
+          "fraction": 0.005,
+          "contacts": 0,
+          "owners": {}
+        },
+        {
+          "fraction": 0.01,
+          "contacts": 0,
+          "owners": {}
+        },
+        {
+          "fraction": 0.02,
+          "contacts": 13,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 13
+          }
+        },
+        {
+          "fraction": 0.05,
+          "contacts": 229,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 155,
+            "IN1_PorcelainPanel_02 / IN1_PanelRim_0_0_0_-2335": 48,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 26
+          }
+        },
+        {
+          "fraction": 0.1,
+          "contacts": 579,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 214,
+            "IN1_PorcelainPanel_02 / IC1_SeamCrossBolt_1": 143,
+            "IN1_PorcelainPanel_02 / IC1_SeamWasher_1_1": 30,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 92,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 48,
+            "IN1_PorcelainPanel_02 / IN1_PanelRim_0_0_0_-2335": 52
+          }
+        },
+        {
+          "fraction": 0.2,
+          "contacts": 1675,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 175,
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 31,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 18,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 26,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 257,
+            "IN1_PorcelainPanel_02 / IC1_SeamCrossBolt_1": 138,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_PortLiner": 429,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 303,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_UpperThrust_1": 84,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_UpperThrust_-1": 88,
+            "IN1_PorcelainPanel_02 / IN1_PanelRim_0_0_0_-2335": 56,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 70
+          }
+        },
+        {
+          "fraction": 0.4,
+          "contacts": 1772,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 18,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 129,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 26,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 20,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_PortLiner": 213,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 382,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_PortSeal": 32,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_BronzeInlay_0": 36,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_PortLiner": 916
+          }
+        },
+        {
+          "fraction": 0.6,
+          "contacts": 318,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 318
+          }
+        },
+        {
+          "fraction": 0.8,
+          "contacts": 2034,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IS18_Leg02_DeckBolt_-1": 226,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_DeckWasher_-1": 66,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 332,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_BronzeInlay_1": 32,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleGasket_4": 196,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleSeat_4": 158,
+            "IN1_PorcelainPanel_02 / IN1_LowSaddle": 74,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleGasket_1": 232,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleSeat_1": 190,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleGasket_2": 265,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleSeat_2": 263
+          }
+        },
+        {
+          "fraction": 1.0,
+          "contacts": 3128,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedShoe": 441,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedShoe_Gasket": 171,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 426,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FootPin": 323,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedShoe": 543,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FootPinWasher_-1": 62,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_LowerThrust_-1": 54,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FootBush_-1": 104,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_LowerThrust_1": 86,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FootBush_1": 34,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedShoe_Gasket": 117,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleSeat_4": 197,
+            "IN1_PorcelainPanel_02 / IN1_LowSaddle": 512,
+            "IN1_PanelRim_1_1_0_-1410 / IN1_LowSaddle": 44,
+            "IN1_PorcelainPanel_02 / IN1_DeckFoot": 14
+          }
+        }
+      ]
+    },
+    {
+      "name": "left_down",
+      "offset": [
+        -0.4242640733718872,
+        0.0,
+        -0.4242640733718872
+      ],
+      "samples": [
+        {
+          "fraction": 0.0,
+          "contacts": 0,
+          "owners": {}
+        },
+        {
+          "fraction": 0.005,
+          "contacts": 70,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 32,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 30,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 8
+          }
+        },
+        {
+          "fraction": 0.01,
+          "contacts": 233,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 47,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 81,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 22,
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 30,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 10,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_PanelRim_0_0_0_-2335": 43
+          }
+        },
+        {
+          "fraction": 0.02,
+          "contacts": 481,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 55,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 209,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 55,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 44,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 50,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_PanelRim_0_0_0_-2335": 68
+          }
+        },
+        {
+          "fraction": 0.05,
+          "contacts": 1104,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 259,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 134,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 90,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 378,
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 64,
+            "IN1_PorcelainPanel_02 / IN1_PanelRim_0_0_0_-2335": 179
+          }
+        },
+        {
+          "fraction": 0.1,
+          "contacts": 2482,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 534,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 86,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 120,
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 237,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 701,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 481,
+            "IN1_PorcelainPanel_02 / IC1_TrunnionRetainer_1_1": 123,
+            "IN1_PorcelainPanel_02 / IC1_TrunnionPin_1": 69,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_PortLiner": 78,
+            "IN1_PorcelainPanel_02 / IN1_PanelRim_0_0_0_-2335": 53
+          }
+        },
+        {
+          "fraction": 0.2,
+          "contacts": 3140,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 257,
+            "IN1_PorcelainPanel_02 / IC1_SeamWasher_1_1": 36,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 238,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 885,
+            "IN1_PorcelainPanel_02 / IC1_TrunnionRetainer_1_1": 49,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_PortLiner": 682,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 451,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_UpperThrust_-1": 98,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_UpperThrust_1": 72,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedBody": 116,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_UpperThrust_1": 84,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_UpperThrust_-1": 90,
+            "IN1_PorcelainPanel_02 / IN1_PanelRim_0_0_0_-2335": 82
+          }
+        },
+        {
+          "fraction": 0.4,
+          "contacts": 4127,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 1191,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 322,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_PortLiner": 1648,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedBody": 408,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_BronzeInlay_0": 40,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_DeckBolt_1": 132,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_DeckBolt_-1": 246,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_PortSeal": 40,
+            "IN1_PanelRim_1_1_0_-1410 / IN1_PanelRim_0_0_0_-2335": 38,
+            "IN1_PorcelainPanel_02 / IN1_PanelRim_0_0_0_-2335": 62
+          }
+        },
+        {
+          "fraction": 0.6,
+          "contacts": 1876,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 900,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 312,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_DeckWasher_1": 50,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_DeckBolt_1": 148,
+            "IN1_PanelRim_1_1_0_-1410 / IS18_Leg02_FormedBody": 36,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedBody": 332,
+            "IN1_PanelRim_1_1_0_-1410 / IN1_PanelRim_0_0_0_-2335": 42,
+            "IN1_PorcelainPanel_02 / IN1_PanelRim_0_0_0_-2335": 56
+          }
+        },
+        {
+          "fraction": 0.8,
+          "contacts": 1075,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 709,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedBody": 318,
+            "IN1_PorcelainPanel_02 / IN1_PanelRim_0_0_0_-2335": 48
+          }
+        },
+        {
+          "fraction": 1.0,
+          "contacts": 734,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 8,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedShoe": 521,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedShoe_Gasket": 205
+          }
+        }
+      ]
+    },
+    {
+      "name": "back_down",
+      "offset": [
+        0.0,
+        0.36000001430511475,
+        -0.48000001907348633
+      ],
+      "samples": [
+        {
+          "fraction": 0.0,
+          "contacts": 0,
+          "owners": {}
+        },
+        {
+          "fraction": 0.005,
+          "contacts": 0,
+          "owners": {}
+        },
+        {
+          "fraction": 0.01,
+          "contacts": 0,
+          "owners": {}
+        },
+        {
+          "fraction": 0.02,
+          "contacts": 0,
+          "owners": {}
+        },
+        {
+          "fraction": 0.05,
+          "contacts": 38,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 15,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_PorcelainPanel_01": 23
+          }
+        },
+        {
+          "fraction": 0.1,
+          "contacts": 2089,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 107,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Front_VisibleCap": 407,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Front_Bolt0": 132,
+            "IN1_PorcelainPanel_02 / IN1_ChamberRib_8_A": 30,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Front_Bolt0_Washer": 134,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Front_VisibleCap": 293,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Front_Bolt0": 134,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Front_Bolt1_Washer": 276,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Front_Bolt1": 168,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_08": 46,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_PorcelainPanel_01": 46,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 97,
+            "IN1_PorcelainPanel_02 / IN1_ChamberRib_9_A": 85,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Front_Bolt1": 134
+          }
+        },
+        {
+          "fraction": 0.2,
+          "contacts": 5022,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IS18_Leg02_PortLiner": 347,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 162,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_UpperThrust_-1": 48,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_UpperThrust_1": 44,
+            "IN1_PorcelainPanel_02 / IN1_ChamberRib_8_A": 138,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_08": 540,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 920,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Front_UpperClamp": 401,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Front_Bolt0": 130,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Front_VisibleCap": 300,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Front_Bolt1": 266,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Front_VisibleCap": 296,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Front_UpperClamp": 457,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Front_Bolt1": 266,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_CellFrame_08": 32,
+            "IN1_PanelRim_1_1_0_-1410 / IN1_CellFrame_10": 44,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 225,
+            "IN1_PorcelainPanel_02 / IN1_ChamberRib_9_A": 98,
+            "IN1_PanelRim_1_1_0_-1410 / IN1_ChamberRib_9_A": 50,
+            "IN1_PanelRim_1_1_0_-1410 / IN1_CellFrame_09": 86,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Front_UpperClamp": 132,
+            "IN1_PanelRim_1_1_0_-1410 / IF12_C09_R_Front_Bolt1": 40
+          }
+        },
+        {
+          "fraction": 0.4,
+          "contacts": 3597,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 451,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_PortLiner": 395,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_PortSeal": 42,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_BronzeInlay_0": 22,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 624,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_08": 214,
+            "IN1_PorcelainPanel_02 / IN1_ChamberRib_8_A": 102,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 626,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_08": 489,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_CellDiaphragm_08": 44,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_CellFrame_08": 64,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_10": 64,
+            "IN1_PanelRim_1_1_0_-1410 / IN1_CellFrame_10": 56,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 238,
+            "IN1_PanelRim_1_1_0_-1410 / IN1_CellDiaphragm_09": 96,
+            "IN1_PorcelainPanel_02 / IN1_ChamberRib_9_A": 70
+          }
+        },
+        {
+          "fraction": 0.6,
+          "contacts": 3624,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 371,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 728,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 451,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_CellFrame_09": 54,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 159,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_08": 110,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_CellDiaphragm_08": 50,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_10": 164,
+            "IN1_PanelRim_1_1_0_-1410 / IN1_CellDiaphragm_10": 50,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 508,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_08_UpperClamp": 306,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_08_Bolt0": 337,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_08_Bolt0_Washer": 140,
+            "IN1_PorcelainPanel_02 / IN1_ChamberRib_9_A": 66,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_08_Bolt1": 130
+          }
+        },
+        {
+          "fraction": 0.8,
+          "contacts": 5028,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 442,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_BronzeInlay_1": 38,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedShoe": 145,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_LowerThrust_1": 70,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_LowerThrust_-1": 26,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FootPin": 180,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FootPinWasher_-1": 38,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FootBush_-1": 38,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleGasket_4": 90,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleSeat_4": 73,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 608,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 705,
+            "IN1_PanelRim_1_1_0_-2307 / IN3_ContinuousThroat": 22,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_CellDiaphragm_09": 44,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_CellFrame_09": 44,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 211,
+            "IN1_PanelRim_1_1_0_-1410 / IN1_CellDiaphragm_10": 84,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_08_LowerStand": 493,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_10": 482,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_08_Bolt0": 258,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_08_UpperClamp": 301,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_08_Bolt1": 260,
+            "IN1_PanelRim_1_1_0_-1410 / IN3_ContinuousThroat": 52,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 256,
+            "IN1_PorcelainPanel_02 / IN1_ChamberRib_9_A": 68
+          }
+        },
+        {
+          "fraction": 1.0,
+          "contacts": 4095,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_LowSaddle": 74,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedShoe": 577,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedShoe_Gasket": 490,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleSeat_4": 225,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleGasket_4": 118,
+            "IN1_PorcelainPanel_02 / IN1_FittedSaddleSeat_3": 368,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 267,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 714,
+            "IN1_PanelRim_1_1_0_-2307 / IN3_ContinuousThroat": 20,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 502,
+            "IN1_PanelRim_1_1_0_-2307 / IN1_CellDiaphragm_09": 48,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_10": 306,
+            "IN1_PanelRim_1_1_0_-1410 / IN1_CellDiaphragm_10": 54,
+            "IN1_PanelRim_1_1_0_-1410 / IN3_ContinuousThroat": 44,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 212,
+            "IN1_PorcelainPanel_02 / IN1_ChamberRib_9_A": 76
+          }
+        }
+      ]
+    },
+    {
+      "name": "front_down",
+      "offset": [
+        0.0,
+        -0.36000001430511475,
+        -0.48000001907348633
+      ],
+      "samples": [
+        {
+          "fraction": 0.0,
+          "contacts": 0,
+          "owners": {}
+        },
+        {
+          "fraction": 0.005,
+          "contacts": 174,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 95,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 35,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 16,
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 28
+          }
+        },
+        {
+          "fraction": 0.01,
+          "contacts": 588,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 251,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 234,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 61,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 42
+          }
+        },
+        {
+          "fraction": 0.02,
+          "contacts": 812,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 205,
+            "IN1_PorcelainPanel_02 / IC1_SeamCrossBolt_1": 66,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 365,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 58,
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 16,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 44,
+            "IN1_PorcelainPanel_02 / IC1_SeamWasher_1_1": 58
+          }
+        },
+        {
+          "fraction": 0.05,
+          "contacts": 2953,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 188,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 339,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 369,
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 760,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 887,
+            "IN1_PorcelainPanel_02 / IC1_SeamCrossBolt_1": 217,
+            "IN1_PorcelainPanel_02 / IC1_SeamWasher_1_1": 46,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 69,
+            "IN1_PorcelainPanel_02 / IC1_SeamWasher_1_-1": 26,
+            "IN1_PorcelainPanel_02 / IN1_PanelRim_0_0_0_-2335": 52
+          }
+        },
+        {
+          "fraction": 0.1,
+          "contacts": 5310,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_08": 197,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Rear_Bolt1": 132,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Rear_VisibleCap": 409,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Rear_Bolt0": 128,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 420,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 589,
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 416,
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 485,
+            "IN1_PorcelainPanel_02 / IAM_GuardToRearStandoff_0075": 39,
+            "IN1_PorcelainPanel_02 / IC1_SeamCrossBolt_1": 196,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 1548,
+            "IN1_PorcelainPanel_02 / IC1_SeamWasher_1_-1": 36,
+            "IN1_PorcelainPanel_02 / IN3_CouplingBolt_05": 296,
+            "IN1_PorcelainPanel_02 / IN3_CouplingBolt_05_Washer": 32,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 111,
+            "IN1_PorcelainPanel_02 / IC1_TrunnionRetainer_1_1": 67,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 125,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 84
+          }
+        },
+        {
+          "fraction": 0.2,
+          "contacts": 6277,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_08": 655,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 705,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Rear_Bolt1": 260,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Rear_UpperClamp": 497,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Rear_Bolt0": 258,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_VisibleCap": 114,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_Bolt1": 197,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_Bolt1_Washer": 266,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_Bolt0": 145,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 548,
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 488,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 285,
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 96,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 762,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 161,
+            "IN1_PorcelainPanel_02 / IC1_TrunnionPin_1": 251,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 566,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 23
+          }
+        },
+        {
+          "fraction": 0.4,
+          "contacts": 10426,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 710,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_OuterStand": 491,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_Bolt1": 260,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_Bolt0": 262,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_UpperClamp": 460,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 754,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_08": 60,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 596,
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 482,
+            "IN1_PorcelainPanel_02 / IAM_SpringSeat_0083": 60,
+            "IN1_PorcelainPanel_02 / IAM_Response0_RearSeatBoss": 63,
+            "IN1_PorcelainPanel_02 / IAM_Response0_RearCupRim": 40,
+            "IN1_PorcelainPanel_02 / IAM_Response0_ReturnSpring": 116,
+            "IN1_PorcelainPanel_02 / IAM_DiaphragmFixedSeat_0073": 30,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_Bolt0": 132,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 137,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 376,
+            "IN1_PorcelainPanel_02 / IAM_GuardToRearStandoff_0080": 126,
+            "IN1_PorcelainPanel_02 / IC1_TrunnionPin_1": 134,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 358,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_PortLiner": 104,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_PortLiner": 1658,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedBody": 430,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_BronzeInlay_0": 36,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_10": 736,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 628,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_Bolt1": 130,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_UpperClamp": 339,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_Bolt1": 258,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_Bolt0": 280,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_Bolt1_Washer": 160,
+            "IN1_PanelRim_1_1_1_-1410 / IN1_CellDiaphragm_10": 20
+          }
+        },
+        {
+          "fraction": 0.6,
+          "contacts": 10219,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_OuterStand": 252,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 1753,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_InnerBacking": 89,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_Bolt0": 264,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 757,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 293,
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 468,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 76,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 308,
+            "IN1_PorcelainPanel_02 / IAM_DomedDiaphragm_0068": 105,
+            "IN1_PorcelainPanel_02 / IAM_DiaphragmRubberSurround_0072": 115,
+            "IN1_PorcelainPanel_02 / IAM_DiaphragmFormedBead_0071": 52,
+            "IN1_PorcelainPanel_02 / IAM_DiaphragmFixedSeat_0073": 146,
+            "IN1_PorcelainPanel_02 / IAM_GuardToRearStandoff_0080": 153,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 439,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_PortLiner": 109,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_PortLiner": 892,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedBody": 340,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_PortSeal": 34,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_DeckBolt_1": 132,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_Bolt1": 260,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_10": 522,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_OuterStand": 82,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_Bolt1": 262,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_Bolt0": 264,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_UpperClamp": 575,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_Bolt1": 262,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_LowerStand": 285,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_Bolt0": 258,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_UpperClamp": 461,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 211
+          }
+        },
+        {
+          "fraction": 0.8,
+          "contacts": 7426,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 1306,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 393,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 334,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 66,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 380,
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 422,
+            "IN1_PorcelainPanel_02 / IAM_DomedDiaphragm_0068": 144,
+            "IN1_PorcelainPanel_02 / IAM_DiaphragmFormedBead_0071": 46,
+            "IN1_PorcelainPanel_02 / IAM_GuardToRearStandoff_0080": 68,
+            "IN1_PorcelainPanel_02 / IAM_DiaphragmRubberSurround_0072": 98,
+            "IN1_PorcelainPanel_02 / IAM_DiaphragmFixedSeat_0073": 112,
+            "IN1_PorcelainPanel_02 / IC1_TrunnionBush_1_1": 72,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 531,
+            "IN1_PorcelainPanel_02 / IAM_EyelidFixedCarrier": 40,
+            "IN1_PorcelainPanel_02 / IAM_IrisOuterCase_Fitted": 22,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedBody": 318,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_Bolt0": 260,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_OuterStand": 854,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_Bolt1": 258,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_LowerStand": 930,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_Bolt1": 264,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_10": 182,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_Bolt0": 262,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 64
+          }
+        },
+        {
+          "fraction": 1.0,
+          "contacts": 5343,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 1101,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 448,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 418,
+            "IN1_PorcelainPanel_02 / IAM_RearMountFlange_0074": 320,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 585,
+            "IN1_PorcelainPanel_02 / IN3_CouplingSeal": 64,
+            "IN1_PorcelainPanel_02 / IC1_TrunnionBush_1_-1": 264,
+            "IN1_PorcelainPanel_02 / IAM_DomedDiaphragm_0068": 104,
+            "IN1_PorcelainPanel_02 / IAM_DiaphragmFormedBead_0071": 50,
+            "IN1_PorcelainPanel_02 / IAM_DiaphragmRubberSurround_0072": 68,
+            "IN1_PorcelainPanel_02 / IAM_DiaphragmFixedSeat_0073": 78,
+            "IN1_PorcelainPanel_02 / IAM_GuardOuterSeat_0056": 138,
+            "IN1_PorcelainPanel_02 / IAM_GuardBoltShank_0051": 96,
+            "IN1_PorcelainPanel_02 / IAM_IrisOuterCase_Fitted": 182,
+            "IN1_PorcelainPanel_02 / IN1_PorcelainPanel_01": 601,
+            "IN1_PorcelainPanel_02 / IAM_EyelidFixedCarrier": 106,
+            "IN1_PorcelainPanel_02 / IAM_PorcelainLower_0002": 76,
+            "IN1_PorcelainPanel_02 / IS18_Leg01_FormedBody": 335,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_Bolt0": 132,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_10": 86,
+            "IN1_PorcelainPanel_02 / IN1_LowSaddle": 91
+          }
+        }
+      ]
+    },
+    {
+      "name": "right_down",
+      "offset": [
+        0.4242640733718872,
+        0.0,
+        -0.4242640733718872
+      ],
+      "samples": [
+        {
+          "fraction": 0.0,
+          "contacts": 0,
+          "owners": {}
+        },
+        {
+          "fraction": 0.005,
+          "contacts": 0,
+          "owners": {}
+        },
+        {
+          "fraction": 0.01,
+          "contacts": 17,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 17
+          }
+        },
+        {
+          "fraction": 0.02,
+          "contacts": 92,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 50,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 42
+          }
+        },
+        {
+          "fraction": 0.05,
+          "contacts": 224,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 138,
+            "IN1_PorcelainPanel_02 / IC1_CollarLower": 86
+          }
+        },
+        {
+          "fraction": 0.1,
+          "contacts": 600,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Rear_Bolt1_Washer": 84,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Rear_Bolt0_Washer": 102,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Rear_VisibleCap": 68,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Rear_Bolt1": 133,
+            "IN1_PorcelainPanel_02 / IF12_C08_R_Rear_Bolt0": 142,
+            "IN1_PorcelainPanel_02 / IC1_CollarUpper": 71
+          }
+        },
+        {
+          "fraction": 0.2,
+          "contacts": 331,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_08": 126,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 149,
+            "IN1_PorcelainPanel_02 / IN3_ContinuousThroat": 56
+          }
+        },
+        {
+          "fraction": 0.4,
+          "contacts": 1898,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 261,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 84,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_UpperClamp": 286,
+            "IN1_PorcelainPanel_02 / IF12_C09_L_Rear_Bolt0": 108,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_PortLiner": 845,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 314
+          }
+        },
+        {
+          "fraction": 0.6,
+          "contacts": 2904,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 490,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 290,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 666,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_UpperClamp": 449,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_Bolt1": 262,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_Bolt0": 258,
+            "IN1_PorcelainPanel_02 / IF12_C09_R_Rear_VisibleCap": 64,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 348,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_11": 40,
+            "IN1_PorcelainPanel_02 / IN1_FixedRearShell_04": 37
+          }
+        },
+        {
+          "fraction": 0.8,
+          "contacts": 1776,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 502,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_10": 274,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_09": 122,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_Bolt1": 35,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_09": 182,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 320,
+            "IN1_PorcelainPanel_02 / IN1_FixedRearShell_04": 99,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_11": 242
+          }
+        },
+        {
+          "fraction": 1.0,
+          "contacts": 3039,
+          "owners": {
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_11": 317,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_11": 24,
+            "IN1_PorcelainPanel_02 / IN1_CellDiaphragm_10": 587,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_10": 459,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_LowerStand": 405,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_Bolt1": 260,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_Bolt0": 262,
+            "IN1_PorcelainPanel_02 / IS9_C10_L_09_UpperClamp": 499,
+            "IN1_PorcelainPanel_02 / IS18_Leg02_FormedBody": 140,
+            "IN1_PorcelainPanel_02 / IN1_FixedRearShell_04": 56,
+            "IN1_PorcelainPanel_02 / IN1_CellFrame_12": 30
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "Actual panel02 carrier and its mesh children against all retained actual body, A, parked support/port groups and real base, after the terminal R65 support, R63 front and R70 rear03 poses. Straight translations only; no new animation, physical fastener release, full sequence or art acceptance."
+}

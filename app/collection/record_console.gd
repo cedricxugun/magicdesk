@@ -3,6 +3,7 @@ extends RefCounted
 var service:Node3D
 var lamps:Dictionary={}
 var levels:Dictionary={}
+var observatory:RefCounted
 
 func setup(owner:Node3D)->void:
 	service=owner
@@ -16,7 +17,11 @@ func setup(owner:Node3D)->void:
 				if child is MeshInstance3D:child.material_override=material
 			lamps[key]=material;levels[key]=0.0
 
+	if service.current.play.g_instrument.get("observatory_enabled"):
+		observatory=load("res://collection/observatory_console.gd").new();observatory.setup(service)
+
 func tick(delta:float)->void:
+	if observatory:observatory.tick(delta)
 	var player:RefCounted=service.current.play.g_instrument
 	var powered:bool=service.host.power>.10 and not player.ready_to_fold()
 	var targets:={"Read":1.0 if player.stage=="reading" else 0.0,"Print":1.0 if player.stage in ["printing","erasing"] else 0.0,"Play":.45+player.action_energy*.55 if player.stage in ["playing","paused"] else 0.0,"Spin":1.0 if powered and player.spin_enabled else 0.0,"Stop":1.0 if powered and not player.spin_enabled else 0.0}

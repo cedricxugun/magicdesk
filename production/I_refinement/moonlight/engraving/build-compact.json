@@ -1,0 +1,23 @@
+[
+  {
+    "movement": 1,
+    "exit_code": 0,
+    "input_sha256": "afdc56dc1ea4d4052333f673ac8e0fabca487bfa77f4a97404a394b6b2ce97ef",
+    "output_source": "production/I_refinement/moonlight/engraving/moonlight1-compact.ly",
+    "scope": "Volta repeats unfolded; movement II Allegretto Da Capo appended without repeats. Requires event/route review and recording alignment; no final App binding."
+  },
+  {
+    "movement": 2,
+    "exit_code": 0,
+    "input_sha256": "6132ec5dd22a626d4bb5c252a011716dc981c160d1d03ecde65fa6e0fd5dd7fd",
+    "output_source": "production/I_refinement/moonlight/engraving/moonlight2-compact.ly",
+    "scope": "Volta repeats unfolded; movement II Allegretto Da Capo appended without repeats. Requires event/route review and recording alignment; no final App binding."
+  },
+  {
+    "movement": 3,
+    "exit_code": 0,
+    "input_sha256": "ba9463e2ccfedc7e65c35592e6f1a131bf75189f1bd96750b1a8f2a707d19d3a",
+    "output_source": "production/I_refinement/moonlight/engraving/moonlight3-compact.ly",
+    "scope": "Volta repeats unfolded; movement II Allegretto Da Capo appended without repeats. Requires event/route review and recording alignment; no final App binding."
+  }
+]

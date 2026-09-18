@@ -1,0 +1,76 @@
+{
+  "actions": [
+    {
+      "action": 1,
+      "id": "I",
+      "time": 23988
+    },
+    {
+      "action": 1,
+      "id": "I",
+      "time": 39568
+    }
+  ],
+  "active": "B",
+  "base_bounds": "[P: (-1.37, 0.005, -1.37), S: (2.74, 0.670608, 2.80256)]",
+  "base_instances": 1,
+  "error": "",
+  "g_operator": {
+    "held": "",
+    "panel": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation_enabled": false,
+    "targets": [],
+    "visible": false
+  },
+  "help_index": -1,
+  "load_metrics": {
+    "archive_started_ms": 7327,
+    "commit_base_ms": 19,
+    "commit_controls_ms": 1,
+    "commit_total_ms": 22,
+    "id": "B",
+    "legacy_scan_materials": 281,
+    "legacy_scan_shader_variants": 5,
+    "legacy_scan_wrap_ms": 15.265,
+    "started_ms": 40441,
+    "stow_started_ms": 0,
+    "total_ms": 13612,
+    "transition_ghost_meshes": 113,
+    "transition_ghost_setup_ms": 1.51
+  },
+  "module": {
+    "id": "B",
+    "parts": 70
+  },
+  "play": {},
+  "pointer_canvas": "(174.0, 758.0)",
+  "pointer_subviewport": "(174.0, 758.0)",
+  "requested": "",
+  "rotation_hologram": {
+    "action_art": "res://assets/collection/art/shared_rotation/contrast_r3/rotate.svg",
+    "face_gain": 0.514398688046647,
+    "face_reveal": 0.756468658892128,
+    "held": false,
+    "hit_radius": 50.486572265625,
+    "hover": false,
+    "port_world": [
+      1.34268999099731,
+      0.144999995827675,
+      0.272179991006851
+    ],
+    "rotation": false,
+    "screen_center": [
+      1498.6455078125,
+      1382.90588378906
+    ],
+    "visible_amount": 0.19
+  },
+  "selector": 0.0,
+  "state": "idle",
+  "tooltip_visible": false
+}

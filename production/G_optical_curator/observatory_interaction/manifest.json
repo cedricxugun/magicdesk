@@ -1,0 +1,22 @@
+{
+  "generator": "built-in image_gen",
+  "files": [
+    {
+      "path": "production/G_optical_curator/observatory_interaction/storyboard.png",
+      "sha256": "992629f2dba50013ac32c897a86b06d1846e9d6bdf3f45f067ac4a1f8b7c0daa"
+    },
+    {
+      "path": "production/G_optical_curator/observatory_interaction/storyboard_prompt.txt",
+      "sha256": "bd1a9e8a11caf5918f41438fcecea6acdfef73836feb0cecc483bf9fbde56dab"
+    },
+    {
+      "path": "production/G_optical_curator/observatory_interaction/mask_prompt.txt",
+      "sha256": "c16d4b97fbff12b2015fffb0c3d81fb450a38fcb439b073a0dda493e00663235"
+    },
+    {
+      "path": "app/assets/collection/art/G_AI/observatory_calibration_mask.png",
+      "sha256": "830511b742393dc0c8141d4d05b959d9255b8e6129015bcd8cd6d8263fd2d60b"
+    }
+  ],
+  "status": "Storyboard and intensity asset; real runtime comparison required"
+}

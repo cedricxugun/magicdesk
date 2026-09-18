@@ -1,0 +1,12 @@
+00:03.195  blend            | Read blend: "/Users/cedric/Desktop/magic desk/blender/collection/I_nautilus_port_edge_r68.blend"
+R73_PROTECTED 1233
+Traceback (most recent call last):
+  File "/Users/cedric/Desktop/magic desk/blender/collection/build_i_seam_release_r73.py", line 86, in <module>
+    assert not pairs,('Stud/socket overlap',sign,len(pairs))
+           ^^^^^^^^^
+AssertionError: ('Stud/socket overlap', -1, 318)
+
+Error: script failed, file: 'blender/collection/build_i_seam_release_r73.py', exiting.
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

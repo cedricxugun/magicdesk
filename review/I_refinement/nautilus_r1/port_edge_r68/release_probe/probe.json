@@ -1,0 +1,390 @@
+{
+  "source_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b",
+  "fixed_adapter_names": [
+    "IN1_DeckFoot",
+    "IN1_FittedSaddleGasket_1",
+    "IN1_FittedSaddleGasket_2",
+    "IN1_FittedSaddleGasket_3",
+    "IN1_FittedSaddleGasket_4",
+    "IN1_FittedSaddleSeat_1",
+    "IN1_FittedSaddleSeat_2",
+    "IN1_FittedSaddleSeat_3",
+    "IN1_FittedSaddleSeat_4",
+    "IN1_LowSaddle"
+  ],
+  "groups": [
+    {
+      "id": "cap_-1_-1",
+      "names": [
+        "IC1_TrunnionRetainer_-1_-1"
+      ],
+      "offset": [
+        0.07459819316864014,
+        -0.10030009597539902,
+        8.459354106093997e-09
+      ]
+    },
+    {
+      "id": "cap_-1_1",
+      "names": [
+        "IC1_TrunnionRetainer_-1_1"
+      ],
+      "offset": [
+        -0.014919638633728027,
+        0.020060019567608833,
+        -1.6918708656277204e-09
+      ]
+    },
+    {
+      "id": "pin_-1",
+      "names": [
+        "IC1_TrunnionPin_-1"
+      ],
+      "offset": [
+        0.05967855453491211,
+        -0.08024007827043533,
+        6.7674834625108815e-09
+      ]
+    },
+    {
+      "id": "cap_1_-1",
+      "names": [
+        "IC1_TrunnionRetainer_1_-1"
+      ],
+      "offset": [
+        0.014919638633728027,
+        -0.020060019567608833,
+        1.6918708656277204e-09
+      ]
+    },
+    {
+      "id": "cap_1_1",
+      "names": [
+        "IC1_TrunnionRetainer_1_1"
+      ],
+      "offset": [
+        -0.07459819316864014,
+        0.10030009597539902,
+        -8.459354106093997e-09
+      ]
+    },
+    {
+      "id": "pin_1",
+      "names": [
+        "IC1_TrunnionPin_1"
+      ],
+      "offset": [
+        -0.05967855453491211,
+        0.08024007827043533,
+        -6.7674834625108815e-09
+      ]
+    },
+    {
+      "id": "deck_1_-1",
+      "names": [
+        "IS18_Leg01_DeckBolt_-1",
+        "IS18_Leg01_DeckWasher_-1"
+      ],
+      "offset": [
+        -0.015212529338896275,
+        0.11903183907270432,
+        0.07999999821186066
+      ],
+      "park_direction": [
+        -0.015212529338896275,
+        0.11903183907270432,
+        0.0
+      ]
+    },
+    {
+      "id": "deck_1_1",
+      "names": [
+        "IS18_Leg01_DeckBolt_1",
+        "IS18_Leg01_DeckWasher_1"
+      ],
+      "offset": [
+        0.015212529338896275,
+        -0.11903183907270432,
+        0.07999999821186066
+      ],
+      "park_direction": [
+        0.015212529338896275,
+        -0.11903183907270432,
+        0.0
+      ]
+    },
+    {
+      "id": "deck_2_-1",
+      "names": [
+        "IS18_Leg02_DeckBolt_-1",
+        "IS18_Leg02_DeckWasher_-1"
+      ],
+      "offset": [
+        0.057373352348804474,
+        0.10539590567350388,
+        0.07999999821186066
+      ],
+      "park_direction": [
+        0.057373352348804474,
+        0.10539590567350388,
+        0.0
+      ]
+    },
+    {
+      "id": "deck_2_1",
+      "names": [
+        "IS18_Leg02_DeckBolt_1",
+        "IS18_Leg02_DeckWasher_1"
+      ],
+      "offset": [
+        -0.057373352348804474,
+        -0.10539590567350388,
+        0.07999999821186066
+      ],
+      "park_direction": [
+        -0.057373352348804474,
+        -0.10539590567350388,
+        0.0
+      ]
+    }
+  ],
+  "legs": [
+    {
+      "id": "leg_01",
+      "names": [
+        "IS18_Leg01_BronzeInlay_0",
+        "IS18_Leg01_BronzeInlay_1",
+        "IS18_Leg01_FootBush_-1",
+        "IS18_Leg01_FootBush_1",
+        "IS18_Leg01_FootPin",
+        "IS18_Leg01_FootPinWasher_-1",
+        "IS18_Leg01_FootPinWasher_1",
+        "IS18_Leg01_FormedBody",
+        "IS18_Leg01_LowerThrust_-1",
+        "IS18_Leg01_LowerThrust_1",
+        "IS18_Leg01_FormedShoe",
+        "IS18_Leg01_FormedShoe_Gasket",
+        "IS18_Leg01_UpperThrust_-1",
+        "IS18_Leg01_UpperThrust_1"
+      ],
+      "offset": [
+        -0.0010680503910407424,
+        -0.0007943807868286967,
+        -0.24999645352363586
+      ]
+    },
+    {
+      "id": "leg_02",
+      "names": [
+        "IS18_Leg02_BronzeInlay_0",
+        "IS18_Leg02_BronzeInlay_1",
+        "IS18_Leg02_FootBush_-1",
+        "IS18_Leg02_FootBush_1",
+        "IS18_Leg02_FootPin",
+        "IS18_Leg02_FootPinWasher_-1",
+        "IS18_Leg02_FootPinWasher_1",
+        "IS18_Leg02_FormedBody",
+        "IS18_Leg02_LowerThrust_-1",
+        "IS18_Leg02_LowerThrust_1",
+        "IS18_Leg02_FormedShoe",
+        "IS18_Leg02_FormedShoe_Gasket",
+        "IS18_Leg02_UpperThrust_-1",
+        "IS18_Leg02_UpperThrust_1"
+      ],
+      "offset": [
+        0.1006799042224884,
+        0.0748806744813919,
+        -0.21623238921165466
+      ]
+    }
+  ],
+  "ports": [
+    {
+      "id": "port_01",
+      "names": [
+        "IS18_Leg01_PortLiner",
+        "IS18_Leg01_PortSeal"
+      ],
+      "offset": [
+        -0.0009398720576427877,
+        -0.0006990711553953588,
+        -0.2199968844652176
+      ]
+    },
+    {
+      "id": "port_02",
+      "names": [
+        "IS18_Leg02_PortLiner",
+        "IS18_Leg02_PortSeal"
+      ],
+      "offset": [
+        0.0885983258485794,
+        0.0658949688076973,
+        -0.19028449058532715
+      ]
+    }
+  ],
+  "results": [
+    {
+      "phase": "lift",
+      "amount": 0.0,
+      "contacts": []
+    },
+    {
+      "phase": "lift",
+      "amount": 0.01,
+      "contacts": []
+    },
+    {
+      "phase": "lift",
+      "amount": 0.025,
+      "contacts": []
+    },
+    {
+      "phase": "lift",
+      "amount": 0.05,
+      "contacts": []
+    },
+    {
+      "phase": "lift",
+      "amount": 0.1,
+      "contacts": []
+    },
+    {
+      "phase": "lift",
+      "amount": 0.2,
+      "contacts": []
+    },
+    {
+      "phase": "lift",
+      "amount": 0.35,
+      "contacts": []
+    },
+    {
+      "phase": "lift",
+      "amount": 0.45,
+      "contacts": []
+    },
+    {
+      "phase": "deck_parking",
+      "amount": 0.0,
+      "contacts": []
+    },
+    {
+      "phase": "deck_parking",
+      "amount": 0.1,
+      "contacts": []
+    },
+    {
+      "phase": "deck_parking",
+      "amount": 0.25,
+      "contacts": []
+    },
+    {
+      "phase": "deck_parking",
+      "amount": 0.5,
+      "contacts": []
+    },
+    {
+      "phase": "deck_parking",
+      "amount": 0.75,
+      "contacts": []
+    },
+    {
+      "phase": "deck_parking",
+      "amount": 1.0,
+      "contacts": []
+    },
+    {
+      "phase": "leg_withdrawal",
+      "amount": 0.0,
+      "contacts": []
+    },
+    {
+      "phase": "leg_withdrawal",
+      "amount": 0.03,
+      "contacts": []
+    },
+    {
+      "phase": "leg_withdrawal",
+      "amount": 0.08,
+      "contacts": []
+    },
+    {
+      "phase": "leg_withdrawal",
+      "amount": 0.15,
+      "contacts": []
+    },
+    {
+      "phase": "leg_withdrawal",
+      "amount": 0.25,
+      "contacts": []
+    },
+    {
+      "phase": "leg_withdrawal",
+      "amount": 0.4,
+      "contacts": []
+    },
+    {
+      "phase": "leg_withdrawal",
+      "amount": 0.6,
+      "contacts": []
+    },
+    {
+      "phase": "leg_withdrawal",
+      "amount": 0.8,
+      "contacts": []
+    },
+    {
+      "phase": "leg_withdrawal",
+      "amount": 1.0,
+      "contacts": []
+    },
+    {
+      "phase": "port_withdrawal",
+      "amount": 0.0,
+      "contacts": []
+    },
+    {
+      "phase": "port_withdrawal",
+      "amount": 0.025,
+      "contacts": []
+    },
+    {
+      "phase": "port_withdrawal",
+      "amount": 0.05,
+      "contacts": []
+    },
+    {
+      "phase": "port_withdrawal",
+      "amount": 0.1,
+      "contacts": []
+    },
+    {
+      "phase": "port_withdrawal",
+      "amount": 0.2,
+      "contacts": []
+    },
+    {
+      "phase": "port_withdrawal",
+      "amount": 0.35,
+      "contacts": []
+    },
+    {
+      "phase": "port_withdrawal",
+      "amount": 0.5,
+      "contacts": []
+    },
+    {
+      "phase": "port_withdrawal",
+      "amount": 0.7,
+      "contacts": []
+    },
+    {
+      "phase": "port_withdrawal",
+      "amount": 1.0,
+      "contacts": []
+    }
+  ],
+  "scope": "Read-only source geometry. Whole stand/seat/gasket remains on real base, upper lifts .45; released deck bolts park outward before legs withdraw, then ports withdraw along their real axes. Every contact retained; parked fastener pairwise/lift sweeps are not complete, not a passed full sequence or animation."
+}

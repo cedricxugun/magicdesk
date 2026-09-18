@@ -1,0 +1,17 @@
+{
+  "generator": "built-in image_gen",
+  "usage": {
+    "expressions.png": "Runtime face atlas used by curator_face.gdshader",
+    "head_connection_target.png": "Model and connection direction; not a rendered acceptance result"
+  },
+  "files": [
+    {
+      "path": "app/assets/collection/art/G_AI/expressions.png",
+      "sha256": "9f40e27488766f6750dd1db59ba86d5ab2fd370da86a8e163bb6d3d0fb63aa86"
+    },
+    {
+      "path": "production/G_optical_curator/head_rework/head_connection_target.png",
+      "sha256": "492f664293fd3656eff9d0fe245106ecc6607b2cf94d54128ef6f484514cb915"
+    }
+  ]
+}

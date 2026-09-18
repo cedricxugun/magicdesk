@@ -1,0 +1,13 @@
+{
+  "base_report": "review/I_refinement/nautilus_r1/uniform_cowl_r28/build.json",
+  "expected_parent_source_sha256": "dbf35b3da400c04eef239c2a6374518bc368120fb44de0887a7fe1dd7681f823",
+  "out": "review/I_refinement/nautilus_r1/uniform_precision_r29",
+  "source": "blender/collection/I_nautilus_uniform_precision_r29.blend",
+  "component": "app/assets/collection/components/I_nautilus_uniform_precision_r29.glb",
+  "all_rebuilt_meshes": [
+    "IN1_PorcelainPanel_01",
+    "IN1_PorcelainPanel_05",
+    "IN1_PorcelainPanel_06",
+    "IN1_FixedMouthCheek05"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tool": "built-in image_gen",
+  "source_references": [
+    "production/I_refinement/part_a_mouth/shutter_r2/shutter_motion_r2.png",
+    "concepts/collection_20260909/I_\u56de\u58f0\u6d77\u87ba.png"
+  ],
+  "output": "tongue_cassette_r1.png",
+  "generated_output": "exec-39668d57-9c19-448f-94ff-ee5e386be53f.png",
+  "sha256": "65455d78a079f7c072d976b9debbad6de077d36dbb183d93f47174fbdc7b44c6",
+  "scope": "Qualitative tongue/guide/coil art. No generated dimensions or packaging accepted as engineering measurements."
+}

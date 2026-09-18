@@ -1,0 +1,8 @@
+{
+  "mode": "built-in image_gen",
+  "image": "production/I_refinement/part_a_mouth/mouth_detail_r1.png",
+  "image_sha256": "5f7d71fbb521f2d4591e0deec5055274d924a29aaf34afcc3edf05f5f7df64b0",
+  "prompt": "production/I_refinement/part_a_mouth/prompt_r1.txt",
+  "original_reference": "concepts/collection_20260909/I_\u56de\u58f0\u6d77\u87ba.png",
+  "scope": "Part A visual/section reference only; generated hidden mechanisms and dimensions are not validated geometry."
+}

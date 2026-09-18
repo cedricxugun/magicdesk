@@ -1,0 +1,18 @@
+{
+  "mode": "built_in_image_gen",
+  "image": "production/I_refinement/moonlight/central_scan_r1/scan_states_r1.png",
+  "sha256": "a7948a6abddd883910a34e3d7f419321be53b1aaa9138c8ce03355278ecaa72b",
+  "prompt": "production/I_refinement/moonlight/central_scan_r1/PROMPT.txt",
+  "status": "effect_direction_before_implementation",
+  "limits": [
+    "Generated score is illustrative, not an audio or score source. Runtime retains engraved Beethoven tiles.",
+    "Generated mouth/prong arrangement is not the current A geometry; beam endpoints must be measured from actual source.",
+    "Paused beam must be dimmer than this image; keep fixed score position."
+  ],
+  "filament": {
+    "path": "app/assets/collection/art/I/moonlight_candidate/central_scan_r1/filament_mask.png",
+    "sha256": "d1d70128c1ce565cab66ed89def8df5d56b91753e3b74eae8ae3148db2c0ee40",
+    "prompt": "production/I_refinement/moonlight/central_scan_r1/MASK_PROMPT.txt",
+    "mode": "built_in_image_gen"
+  }
+}

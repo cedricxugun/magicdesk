@@ -1,0 +1,14 @@
+{
+  "generator": "built-in image_gen",
+  "status": "modeling reference, not implementation or CAD",
+  "files": [
+    {
+      "path": "production/G_optical_curator/observatory_r2/modeling_reference.png",
+      "sha256": "283f0519f04233bc4de346b21d0f1414a1cbdd18aa0325e74e497b5014f0091b"
+    },
+    {
+      "path": "production/G_optical_curator/observatory_r2/prompt.txt",
+      "sha256": "eb75cd24b302bb4f8189c1f43a9ac0de7d57aec5da94b23fd3f1bd1490fb8710"
+    }
+  ]
+}

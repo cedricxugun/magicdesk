@@ -1,0 +1,15 @@
+{
+  "design": "production/I_refinement/nautilus_r1/chambers_r1/chambers_and_response_r1.png",
+  "mask": "app/assets/collection/art/I/chamber_response_r35/conductor_mask.png",
+  "original_prompt": "production/I_refinement/nautilus_r1/chamber_response_r35/MASK_PROMPT.txt",
+  "source_tool": "existing built-in image_gen artwork",
+  "new_image_generation": false,
+  "geometry": "R36, unchanged",
+  "files": {
+    "app/collection/i_chamber_music_response.gd": "be35bb872e4a3360d7d3b2ab51a3d1184be24348297b17209d15aff6ac6dfc5a",
+    "app/collection/i_chamber_conductor.gdshader": "299c9bcb9d375042741a9d4f3f7ac7a577484aea7e4fa2f3fcc7358e0c09bcaa",
+    "app/assets/collection/art/I/chamber_light_r39/layout_r3.json": "f94cef5cc83fcf4b36091fab4a6f278861a74e2ac661562dd0b6294e4cfbd940",
+    "app/assets/collection/art/I/chamber_response_r35/conductor_mask.png": "62efaeb17be28aa90a371febb6891037fc36630e9897ed634b72c326866aebd7",
+    "app/assets/collection/art/I/finish_r38/profile.json": "8cd9dab1c6757815a79aef2092994b880e500f0357bd58f71cecabd287cf6859"
+  }
+}

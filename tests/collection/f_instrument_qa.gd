@@ -53,5 +53,6 @@ func run()->void:
 	m.play.input("service",.8,"change");simulate(m,8)
 	check("all_parts_reassemble_exactly",m.settled() and m.parts.all(func(p):return p.node.transform.is_equal_approx(p.home)))
 	var report:={"all_passed":checks.all(func(c):return c.passed),"checks":checks}
-	FileAccess.open(ProjectSettings.globalize_path("res://../review/F_complete/instrument_qa.json"),FileAccess.WRITE).store_string(JSON.stringify(report,"  "))
+	FileAccess.open(ProjectSettings.globalize_path("res://../review/F_complete/revision_20260911/instrument_qa.json" if OS.get_cmdline_user_args().has("--revision") else "res://../review/F_complete/instrument_qa.json"),FileAccess.WRITE).store_string(JSON.stringify(report,"  "))
+	f=null;m=null;host=null;scene.queue_free();await process_frame;await process_frame
 	quit(0 if report.all_passed else 2)

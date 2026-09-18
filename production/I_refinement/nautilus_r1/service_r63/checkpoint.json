@@ -1,0 +1,22 @@
+{
+  "status": "active",
+  "body_source_unchanged": "0ba13905c764f4420306f1539604574303cdbf42f78d0436f92f0fe35c7baaa0",
+  "motion_source": "blender/collection/I_service03_motion_r63b.blend",
+  "motion_source_sha256": "c5ae9595c816a168ae146b644ddc61237de194e84afbdf28787894ef56c975e5",
+  "motion_asset_sha256": "eeece7bc0c387068230b9eeb02aeedee45b8d6208146ec968cf1a699bc35d837",
+  "files": {
+    "blender/collection/plan_i_service_r63.py": "c17cb4accbf143b224adfe446a46438d9239daad8025892fec4728ed12b2c173",
+    "blender/collection/build_i_service03_motion_r63.py": "526b8b1f8990e0c02541d86e917820d18cd3ab62112529e7cf781edaceb84473",
+    "app/review/i_service03_driver.gd": "f60182fc341b05b9be241aa4715a9f2becf443ec5e5fe6f7c5cb8f83f7ea24de",
+    "app/assets/collection/art/I/service_r63/service03_motion_wide.glb": "eeece7bc0c387068230b9eeb02aeedee45b8d6208146ec968cf1a699bc35d837",
+    "app/assets/collection/art/I/service_r63/service03_motion_wide.glb.import": "456f94f12ff0d4c8c059047e8bcd46d4247c4bc781d91e81f5c3d7dba875c25f",
+    "app/assets/collection/art/I/service_r63/service03_motion_wide.json": "af0cf739bf62444513f60bec0c70ae033da07d70b2a072f5ae3ba4e8a2554cc1",
+    "tests/collection/i_service03_motion_qa.gd": "77b3c04965ee1b73a113702cff6e055d07633dec7ca87e72f170dbf0d29c5051",
+    "tests/collection/i_service03_review.gd": "eaaf55fe88c267ee051b12da3205efb6be0bfac6c0f504e173d57cbc65f7ff33"
+  },
+  "video": "review/I_refinement/nautilus_r1/service_r63/stage03_wide/render/service03_r63b.mp4",
+  "video_sha256": "44f9acb8216117063bb25231bc0071ecd97b10885aed492990144bc5c78f4cdc",
+  "main_app_service_integrated": false,
+  "previous_goal_turn": "progress: built-in storyboard and source collision diagnostics; interrupted after discovering fork contact",
+  "current_turn": "progress: actual fork-exit path, authored Blender animation, precision import fix and reversible review with wide display spacing"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "failure": "细节先于形体锁定",
+    "evidence": "production/I_refinement/restore_r9/REJECTED.md",
+    "cause": "在错误主体上积累连接、扫掠、谱面与播放工作",
+    "rule": "未通过原选图的整体形体对照，不进入最终细节/动效集成",
+    "status": "workflow_changed_current_form_unlocked"
+  },
+  {
+    "failure": "将检修展开当成运行形态依据",
+    "evidence": "production/I_refinement/DESIGN_DRIFT_AUDIT.md",
+    "cause": "后续双半笼图覆盖了原始ACTIVE螺旋展开意图",
+    "rule": "所有图和测量带状态名，REST/ACTIVE/ASSEMBLY分别匹配",
+    "status": "wrong_host_rejected"
+  },
+  {
+    "failure": "辅助图改变底座和单位",
+    "evidence": "concepts/shared_base/底座尺寸契约.md",
+    "cause": "把生成外观或生成数字当作真实几何",
+    "rule": "源模型测量后程序标注；共享底座哈希及D不变",
+    "status": "measurement_and_view_tools_added"
+  },
+  {
+    "failure": "迁移父级时保留了错误世界位置",
+    "evidence": "review/I_refinement/restore_r9/build.json",
+    "cause": "新父级矩阵未求值即设置子件世界矩阵",
+    "rule": "迁移后直接对比世界矩阵及关键点，不只检查父节点动画",
+    "status": "bounded_transfer_check_added_not_art_acceptance"
+  },
+  {
+    "failure": "口径测量移除了父级缩放",
+    "evidence": "review/I_refinement/conch_r12/measured_shape.json",
+    "cause": "将局部未缩放直径误称实际口径",
+    "rule": "同时记录局部尺寸与世界投影直径，所有父级变换参与实际尺寸；均匀缩放时交叉核对比例",
+    "status": "world_scaled_measurement_fixed"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "generator": "built_in_image_gen",
+  "image": "music_response_r1.png",
+  "image_sha256": "aee9186031aa16f450764a8fe458357a9a9abc272103268e9a4aca39d10f17bc",
+  "prompt": "PROMPT.md",
+  "constraints": "Existing IAM geometry, authored Pressure/Rebound springs, three rigid axial prongs; exact score tiles. Do not implement generated glowing rim or oversized motion ghosts."
+}

@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/Users/cedric/.codex/generated_images/01a081b1-905f-7c82-a411-7499958dad6e/exec-4c30318f-0946-46c3-8353-65b517cc3334.png",
+  "asset": "production/I_refinement/nautilus_r1/core_saddle_r14/core_shoes_and_sealed_passages_r1.png",
+  "sha256": "8f4ef0d3aab931989c59119399b471448d8b9c564194e4c487b3bcd50d5719b9",
+  "prompt": "production/I_refinement/nautilus_r1/core_saddle_r14/PROMPT.txt",
+  "role": "Local sculpted core shoes, sealed through-porcelain passages and saddle feet; no permission to change real body height, mouth or common base",
+  "critique": "Useful forged neck and shoe language. Generated base layers, opening size, exact leg number/angle and relative component placement remain illustrative; use measured existing foot locations and source-fit geometry."
+}

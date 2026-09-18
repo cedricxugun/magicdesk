@@ -1,0 +1,20 @@
+{
+  "mode": "built_in_image_gen",
+  "image": "production/I_refinement/nautilus_r1/nautilus_states_r1.png",
+  "sha256": "2b2efd1b10689aae1366fd7c7ba6b6d1ee2693c3e94abd7e8d136f781b2047b9",
+  "prompt": "production/I_refinement/nautilus_r1/PROMPT.txt",
+  "status": "new_shape_direction_not_3d_or_user_acceptance",
+  "observed_limits": [
+    "Generated shared base is a visual reference only; use original actual geometry.",
+    "Music scan is drawn at left third; not valid placement for the required central scanner.",
+    "Source A remains closed in musical panel; runtime must expose acoustic diaphragm.",
+    "Panel count/hinges are design suggestions; numerical contract requires 3D construction."
+  ],
+  "centered_revision": {
+    "image": "production/I_refinement/nautilus_r1/nautilus_states_centered_r2.png",
+    "sha256": "287ca396a02969b5e346b8a969329cba7673415c3c58e9b9dc3c8695e9da92f9",
+    "prompt": "production/I_refinement/nautilus_r1/PROMPT_centered_r2.txt",
+    "mode": "built_in_image_gen",
+    "scope": "User-corrected central staff placement only; generated prongs are missing in music panel and must not be removed from actual geometry."
+  }
+}

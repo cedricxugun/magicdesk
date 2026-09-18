@@ -1,0 +1,40 @@
+{
+  "source_sha256": "6eaf5bb6a3ce26ffa756347ab300acb1685964b955b24fa5bf5bf4ffb06c118b",
+  "passed": true,
+  "contacts": [],
+  "modified_meshes": [
+    "IS18_Leg01_PortLiner"
+  ],
+  "mouth_motion_observed": true,
+  "witnesses": [
+    {
+      "source_frame": 1,
+      "evaluated_geometry_hash": "4384880682beacaab124569f6a2625f3b4180266e1c37e7ffb3dad8cd6be11be"
+    },
+    {
+      "source_frame": 31,
+      "evaluated_geometry_hash": "ae66d6a69d1bc8f059ab0bf868e2b9887667e1fd0d89449fd5b0614356970d50"
+    },
+    {
+      "source_frame": 61,
+      "evaluated_geometry_hash": "7b6be26a3d7fef7ac99d234fc5c3eec30e5d40c5ae7f1fc9c95ec2f1adf8b51d"
+    },
+    {
+      "source_frame": 91,
+      "evaluated_geometry_hash": "9faf59ad9e0ba73be6c304a103d6337fa80d626c238c70cf29062b0240390afc"
+    },
+    {
+      "source_frame": 121,
+      "evaluated_geometry_hash": "360dc695b582aadbcc87a49d124f998ede25936d6b6468b24734742f21f52e95"
+    },
+    {
+      "source_frame": 151,
+      "evaluated_geometry_hash": "e1026a4bfd369cf7411c878188bf8745dd184b9c0dd4f0ef03235e42b07b536c"
+    },
+    {
+      "source_frame": 181,
+      "evaluated_geometry_hash": "c08e0eb841aced661d2823cea37e35a8287bd32a473e49ec3d540fab7b6ed5e6"
+    }
+  ],
+  "scope": "Seven evaluated Blender A poses against the explicitly listed modified cowl meshes with covers closed and open. Source motion is witnessed. No runtime shader deformation, continuous collision, other fixed-part containment or final visual acceptance."
+}

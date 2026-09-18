@@ -1,0 +1,1394 @@
+{
+  "status": "estimated_requires_musical_review",
+  "recording_sha256": "41b9b2021e6f9d7f8b4c32aca20fdbbb84f774c01db2be448b348604c5ec6344",
+  "warp": [
+    {
+      "quarter": 0.0,
+      "seconds": 0.02322
+    },
+    {
+      "quarter": 1.217643,
+      "seconds": 0.487619
+    },
+    {
+      "quarter": 2.435286,
+      "seconds": 0.673379
+    },
+    {
+      "quarter": 3.652928,
+      "seconds": 1.137778
+    },
+    {
+      "quarter": 4.870571,
+      "seconds": 1.509297
+    },
+    {
+      "quarter": 6.088214,
+      "seconds": 1.973696
+    },
+    {
+      "quarter": 7.305857,
+      "seconds": 2.159456
+    },
+    {
+      "quarter": 8.5235,
+      "seconds": 2.438095
+    },
+    {
+      "quarter": 9.741142,
+      "seconds": 2.902494
+    },
+    {
+      "quarter": 10.958785,
+      "seconds": 3.366893
+    },
+    {
+      "quarter": 12.176428,
+      "seconds": 3.599093
+    },
+    {
+      "quarter": 13.394071,
+      "seconds": 4.063492
+    },
+    {
+      "quarter": 14.611714,
+      "seconds": 4.249252
+    },
+    {
+      "quarter": 15.829356,
+      "seconds": 4.574331
+    },
+    {
+      "quarter": 17.046999,
+      "seconds": 5.03873
+    },
+    {
+      "quarter": 18.264642,
+      "seconds": 5.27093
+    },
+    {
+      "quarter": 19.482285,
+      "seconds": 5.642449
+    },
+    {
+      "quarter": 20.699928,
+      "seconds": 6.153288
+    },
+    {
+      "quarter": 21.91757,
+      "seconds": 6.339048
+    },
+    {
+      "quarter": 23.135213,
+      "seconds": 6.664127
+    },
+    {
+      "quarter": 24.352856,
+      "seconds": 7.128526
+    },
+    {
+      "quarter": 25.570499,
+      "seconds": 7.314286
+    },
+    {
+      "quarter": 26.788142,
+      "seconds": 7.639365
+    },
+    {
+      "quarter": 28.005785,
+      "seconds": 8.010884
+    },
+    {
+      "quarter": 29.223427,
+      "seconds": 8.196644
+    },
+    {
+      "quarter": 30.44107,
+      "seconds": 8.661043
+    },
+    {
+      "quarter": 31.658713,
+      "seconds": 8.986122
+    },
+    {
+      "quarter": 32.876356,
+      "seconds": 9.171882
+    },
+    {
+      "quarter": 34.093999,
+      "seconds": 9.496961
+    },
+    {
+      "quarter": 35.311641,
+      "seconds": 9.729161
+    },
+    {
+      "quarter": 36.529284,
+      "seconds": 10.10068
+    },
+    {
+      "quarter": 37.746927,
+      "seconds": 10.42576
+    },
+    {
+      "quarter": 38.96457,
+      "seconds": 10.611519
+    },
+    {
+      "quarter": 40.182213,
+      "seconds": 11.075918
+    },
+    {
+      "quarter": 41.399855,
+      "seconds": 11.308118
+    },
+    {
+      "quarter": 42.617498,
+      "seconds": 11.633197
+    },
+    {
+      "quarter": 43.835141,
+      "seconds": 11.958277
+    },
+    {
+      "quarter": 45.052784,
+      "seconds": 12.283356
+    },
+    {
+      "quarter": 46.270427,
+      "seconds": 12.747755
+    },
+    {
+      "quarter": 47.488069,
+      "seconds": 13.072834
+    },
+    {
+      "quarter": 48.705712,
+      "seconds": 13.397914
+    },
+    {
+      "quarter": 49.923355,
+      "seconds": 13.862313
+    },
+    {
+      "quarter": 51.140998,
+      "seconds": 14.326712
+    },
+    {
+      "quarter": 52.358641,
+      "seconds": 14.791111
+    },
+    {
+      "quarter": 53.576283,
+      "seconds": 14.976871
+    },
+    {
+      "quarter": 54.793926,
+      "seconds": 15.719909
+    },
+    {
+      "quarter": 56.011569,
+      "seconds": 15.905669
+    },
+    {
+      "quarter": 57.229212,
+      "seconds": 16.277188
+    },
+    {
+      "quarter": 58.446855,
+      "seconds": 16.602268
+    },
+    {
+      "quarter": 59.664497,
+      "seconds": 17.113107
+    },
+    {
+      "quarter": 60.88214,
+      "seconds": 17.298866
+    },
+    {
+      "quarter": 62.099783,
+      "seconds": 17.623946
+    },
+    {
+      "quarter": 63.317426,
+      "seconds": 18.088345
+    },
+    {
+      "quarter": 64.535069,
+      "seconds": 18.552744
+    },
+    {
+      "quarter": 65.752711,
+      "seconds": 18.877823
+    },
+    {
+      "quarter": 66.970354,
+      "seconds": 19.249342
+    },
+    {
+      "quarter": 68.187997,
+      "seconds": 19.713741
+    },
+    {
+      "quarter": 69.40564,
+      "seconds": 20.085261
+    },
+    {
+      "quarter": 70.623283,
+      "seconds": 20.50322
+    },
+    {
+      "quarter": 71.840926,
+      "seconds": 21.014059
+    },
+    {
+      "quarter": 73.058568,
+      "seconds": 21.571338
+    },
+    {
+      "quarter": 74.276211,
+      "seconds": 21.757098
+    },
+    {
+      "quarter": 75.493854,
+      "seconds": 22.128617
+    },
+    {
+      "quarter": 76.711497,
+      "seconds": 22.593016
+    },
+    {
+      "quarter": 77.92914,
+      "seconds": 23.057415
+    },
+    {
+      "quarter": 79.146782,
+      "seconds": 23.243175
+    },
+    {
+      "quarter": 80.364425,
+      "seconds": 23.568254
+    },
+    {
+      "quarter": 81.582068,
+      "seconds": 23.893333
+    },
+    {
+      "quarter": 82.799711,
+      "seconds": 24.125533
+    },
+    {
+      "quarter": 84.017354,
+      "seconds": 24.636372
+    },
+    {
+      "quarter": 85.234996,
+      "seconds": 25.007891
+    },
+    {
+      "quarter": 86.452639,
+      "seconds": 25.193651
+    },
+    {
+      "quarter": 87.670282,
+      "seconds": 25.70449
+    },
+    {
+      "quarter": 88.887925,
+      "seconds": 26.029569
+    },
+    {
+      "quarter": 90.105568,
+      "seconds": 26.679728
+    },
+    {
+      "quarter": 91.32321,
+      "seconds": 26.865488
+    },
+    {
+      "quarter": 92.540853,
+      "seconds": 27.190567
+    },
+    {
+      "quarter": 93.758496,
+      "seconds": 27.654966
+    },
+    {
+      "quarter": 94.976139,
+      "seconds": 27.980045
+    },
+    {
+      "quarter": 96.193782,
+      "seconds": 28.258685
+    },
+    {
+      "quarter": 97.411424,
+      "seconds": 28.723084
+    },
+    {
+      "quarter": 98.629067,
+      "seconds": 28.908844
+    },
+    {
+      "quarter": 99.84671,
+      "seconds": 29.559002
+    },
+    {
+      "quarter": 101.064353,
+      "seconds": 30.302041
+    },
+    {
+      "quarter": 102.281996,
+      "seconds": 30.4878
+    },
+    {
+      "quarter": 103.499638,
+      "seconds": 31.230839
+    },
+    {
+      "quarter": 104.717281,
+      "seconds": 31.695238
+    },
+    {
+      "quarter": 105.934924,
+      "seconds": 32.298957
+    },
+    {
+      "quarter": 107.152567,
+      "seconds": 32.809796
+    },
+    {
+      "quarter": 108.37021,
+      "seconds": 33.413515
+    },
+    {
+      "quarter": 109.587852,
+      "seconds": 33.738594
+    },
+    {
+      "quarter": 110.805495,
+      "seconds": 34.017234
+    },
+    {
+      "quarter": 112.023138,
+      "seconds": 34.667392
+    },
+    {
+      "quarter": 113.240781,
+      "seconds": 34.899592
+    },
+    {
+      "quarter": 114.458424,
+      "seconds": 35.363991
+    },
+    {
+      "quarter": 115.676067,
+      "seconds": 35.73551
+    },
+    {
+      "quarter": 116.893709,
+      "seconds": 35.96771
+    },
+    {
+      "quarter": 118.111352,
+      "seconds": 36.524989
+    },
+    {
+      "quarter": 119.328995,
+      "seconds": 36.896508
+    },
+    {
+      "quarter": 120.546638,
+      "seconds": 37.221587
+    },
+    {
+      "quarter": 121.764281,
+      "seconds": 37.546667
+    },
+    {
+      "quarter": 122.981923,
+      "seconds": 37.732426
+    },
+    {
+      "quarter": 124.199566,
+      "seconds": 38.382585
+    },
+    {
+      "quarter": 125.417209,
+      "seconds": 38.846984
+    },
+    {
+      "quarter": 126.634852,
+      "seconds": 39.172063
+    },
+    {
+      "quarter": 127.852495,
+      "seconds": 39.497143
+    },
+    {
+      "quarter": 129.070137,
+      "seconds": 39.961542
+    },
+    {
+      "quarter": 130.28778,
+      "seconds": 40.425941
+    },
+    {
+      "quarter": 131.505423,
+      "seconds": 40.89034
+    },
+    {
+      "quarter": 132.723066,
+      "seconds": 41.354739
+    },
+    {
+      "quarter": 133.940709,
+      "seconds": 41.679819
+    },
+    {
+      "quarter": 135.158351,
+      "seconds": 42.004898
+    },
+    {
+      "quarter": 136.375994,
+      "seconds": 42.515737
+    },
+    {
+      "quarter": 137.593637,
+      "seconds": 42.840816
+    },
+    {
+      "quarter": 138.81128,
+      "seconds": 43.165896
+    },
+    {
+      "quarter": 140.028923,
+      "seconds": 43.490975
+    },
+    {
+      "quarter": 141.246565,
+      "seconds": 43.676735
+    },
+    {
+      "quarter": 142.464208,
+      "seconds": 44.048254
+    },
+    {
+      "quarter": 143.681851,
+      "seconds": 44.234014
+    },
+    {
+      "quarter": 144.899494,
+      "seconds": 44.698413
+    },
+    {
+      "quarter": 146.117137,
+      "seconds": 45.023492
+    },
+    {
+      "quarter": 147.334779,
+      "seconds": 45.395011
+    },
+    {
+      "quarter": 148.552422,
+      "seconds": 45.85941
+    },
+    {
+      "quarter": 149.770065,
+      "seconds": 46.18449
+    },
+    {
+      "quarter": 150.987708,
+      "seconds": 46.370249
+    },
+    {
+      "quarter": 152.205351,
+      "seconds": 46.695329
+    },
+    {
+      "quarter": 153.422993,
+      "seconds": 46.927528
+    },
+    {
+      "quarter": 154.640636,
+      "seconds": 47.391927
+    },
+    {
+      "quarter": 155.858279,
+      "seconds": 47.670567
+    },
+    {
+      "quarter": 157.075922,
+      "seconds": 47.995646
+    },
+    {
+      "quarter": 158.293565,
+      "seconds": 48.320726
+    },
+    {
+      "quarter": 159.511208,
+      "seconds": 48.785125
+    },
+    {
+      "quarter": 160.72885,
+      "seconds": 49.528163
+    },
+    {
+      "quarter": 161.946493,
+      "seconds": 49.713923
+    },
+    {
+      "quarter": 163.164136,
+      "seconds": 50.456961
+    },
+    {
+      "quarter": 164.381779,
+      "seconds": 50.782041
+    },
+    {
+      "quarter": 165.599422,
+      "seconds": 51.38576
+    },
+    {
+      "quarter": 166.817064,
+      "seconds": 52.035918
+    },
+    {
+      "quarter": 168.034707,
+      "seconds": 52.778957
+    },
+    {
+      "quarter": 169.25235,
+      "seconds": 53.150476
+    },
+    {
+      "quarter": 170.469993,
+      "seconds": 53.382676
+    },
+    {
+      "quarter": 171.687636,
+      "seconds": 53.707755
+    },
+    {
+      "quarter": 172.905278,
+      "seconds": 53.893515
+    },
+    {
+      "quarter": 174.122921,
+      "seconds": 54.079274
+    },
+    {
+      "quarter": 175.340564,
+      "seconds": 54.729433
+    },
+    {
+      "quarter": 176.558207,
+      "seconds": 54.915193
+    },
+    {
+      "quarter": 177.77585,
+      "seconds": 55.286712
+    },
+    {
+      "quarter": 178.993492,
+      "seconds": 55.751111
+    },
+    {
+      "quarter": 180.211135,
+      "seconds": 56.12263
+    },
+    {
+      "quarter": 181.428778,
+      "seconds": 56.44771
+    },
+    {
+      "quarter": 182.646421,
+      "seconds": 56.633469
+    },
+    {
+      "quarter": 183.864064,
+      "seconds": 56.958549
+    },
+    {
+      "quarter": 185.081706,
+      "seconds": 57.283628
+    },
+    {
+      "quarter": 186.299349,
+      "seconds": 57.608707
+    },
+    {
+      "quarter": 187.516992,
+      "seconds": 57.980227
+    },
+    {
+      "quarter": 188.734635,
+      "seconds": 58.165986
+    },
+    {
+      "quarter": 189.952278,
+      "seconds": 58.537506
+    },
+    {
+      "quarter": 191.16992,
+      "seconds": 59.048345
+    },
+    {
+      "quarter": 192.387563,
+      "seconds": 59.512744
+    },
+    {
+      "quarter": 193.605206,
+      "seconds": 59.837823
+    },
+    {
+      "quarter": 194.822849,
+      "seconds": 60.209342
+    },
+    {
+      "quarter": 196.040492,
+      "seconds": 60.534422
+    },
+    {
+      "quarter": 197.258134,
+      "seconds": 60.859501
+    },
+    {
+      "quarter": 198.475777,
+      "seconds": 61.18458
+    },
+    {
+      "quarter": 199.69342,
+      "seconds": 61.50966
+    },
+    {
+      "quarter": 200.911063,
+      "seconds": 61.69542
+    },
+    {
+      "quarter": 202.128706,
+      "seconds": 62.159819
+    },
+    {
+      "quarter": 203.346349,
+      "seconds": 62.531338
+    },
+    {
+      "quarter": 204.563991,
+      "seconds": 62.856417
+    },
+    {
+      "quarter": 205.781634,
+      "seconds": 63.181497
+    },
+    {
+      "quarter": 206.999277,
+      "seconds": 63.367256
+    },
+    {
+      "quarter": 208.21692,
+      "seconds": 63.692336
+    },
+    {
+      "quarter": 209.434563,
+      "seconds": 64.296054
+    },
+    {
+      "quarter": 210.652205,
+      "seconds": 64.481814
+    },
+    {
+      "quarter": 211.869848,
+      "seconds": 64.806893
+    },
+    {
+      "quarter": 213.087491,
+      "seconds": 65.039093
+    },
+    {
+      "quarter": 214.305134,
+      "seconds": 65.503492
+    },
+    {
+      "quarter": 215.522777,
+      "seconds": 66.246531
+    },
+    {
+      "quarter": 216.740419,
+      "seconds": 66.71093
+    },
+    {
+      "quarter": 217.958062,
+      "seconds": 67.036009
+    },
+    {
+      "quarter": 219.175705,
+      "seconds": 67.361088
+    },
+    {
+      "quarter": 220.393348,
+      "seconds": 67.825488
+    },
+    {
+      "quarter": 221.610991,
+      "seconds": 68.011247
+    },
+    {
+      "quarter": 222.828633,
+      "seconds": 68.382766
+    },
+    {
+      "quarter": 224.046276,
+      "seconds": 68.847166
+    },
+    {
+      "quarter": 225.263919,
+      "seconds": 69.218685
+    },
+    {
+      "quarter": 226.481562,
+      "seconds": 69.683084
+    },
+    {
+      "quarter": 227.699205,
+      "seconds": 69.868844
+    },
+    {
+      "quarter": 228.916847,
+      "seconds": 70.054603
+    },
+    {
+      "quarter": 230.13449,
+      "seconds": 70.519002
+    },
+    {
+      "quarter": 231.352133,
+      "seconds": 70.844082
+    },
+    {
+      "quarter": 232.569776,
+      "seconds": 71.169161
+    },
+    {
+      "quarter": 233.787419,
+      "seconds": 71.354921
+    },
+    {
+      "quarter": 235.005061,
+      "seconds": 71.81932
+    },
+    {
+      "quarter": 236.222704,
+      "seconds": 72.005079
+    },
+    {
+      "quarter": 237.440347,
+      "seconds": 72.330159
+    },
+    {
+      "quarter": 238.65799,
+      "seconds": 72.655238
+    },
+    {
+      "quarter": 239.875633,
+      "seconds": 73.026757
+    },
+    {
+      "quarter": 241.093275,
+      "seconds": 73.491156
+    },
+    {
+      "quarter": 242.310918,
+      "seconds": 73.676916
+    },
+    {
+      "quarter": 243.528561,
+      "seconds": 74.001995
+    },
+    {
+      "quarter": 244.746204,
+      "seconds": 74.327075
+    },
+    {
+      "quarter": 245.963847,
+      "seconds": 74.512834
+    },
+    {
+      "quarter": 247.18149,
+      "seconds": 75.162993
+    },
+    {
+      "quarter": 248.399132,
+      "seconds": 75.395193
+    },
+    {
+      "quarter": 249.616775,
+      "seconds": 75.720272
+    },
+    {
+      "quarter": 250.834418,
+      "seconds": 75.906032
+    },
+    {
+      "quarter": 252.052061,
+      "seconds": 76.370431
+    },
+    {
+      "quarter": 253.269704,
+      "seconds": 76.74195
+    },
+    {
+      "quarter": 254.487346,
+      "seconds": 77.067029
+    },
+    {
+      "quarter": 255.704989,
+      "seconds": 77.392109
+    },
+    {
+      "quarter": 256.922632,
+      "seconds": 77.717188
+    },
+    {
+      "quarter": 258.140275,
+      "seconds": 78.135147
+    },
+    {
+      "quarter": 259.357918,
+      "seconds": 78.460227
+    },
+    {
+      "quarter": 260.57556,
+      "seconds": 78.645986
+    },
+    {
+      "quarter": 261.793203,
+      "seconds": 79.249705
+    },
+    {
+      "quarter": 263.010846,
+      "seconds": 79.621224
+    },
+    {
+      "quarter": 264.228489,
+      "seconds": 79.992744
+    },
+    {
+      "quarter": 265.446132,
+      "seconds": 80.178503
+    },
+    {
+      "quarter": 266.663774,
+      "seconds": 80.642902
+    },
+    {
+      "quarter": 267.881417,
+      "seconds": 81.014422
+    },
+    {
+      "quarter": 269.09906,
+      "seconds": 81.478821
+    },
+    {
+      "quarter": 270.316703,
+      "seconds": 81.66458
+    },
+    {
+      "quarter": 271.534346,
+      "seconds": 81.98966
+    },
+    {
+      "quarter": 272.751988,
+      "seconds": 82.454059
+    },
+    {
+      "quarter": 273.969631,
+      "seconds": 82.686259
+    },
+    {
+      "quarter": 275.187274,
+      "seconds": 83.150658
+    },
+    {
+      "quarter": 276.404917,
+      "seconds": 83.475737
+    },
+    {
+      "quarter": 277.62256,
+      "seconds": 83.800816
+    },
+    {
+      "quarter": 278.840202,
+      "seconds": 84.125896
+    },
+    {
+      "quarter": 280.057845,
+      "seconds": 84.450975
+    },
+    {
+      "quarter": 281.275488,
+      "seconds": 84.636735
+    },
+    {
+      "quarter": 282.493131,
+      "seconds": 84.961814
+    },
+    {
+      "quarter": 283.710774,
+      "seconds": 85.286893
+    },
+    {
+      "quarter": 284.928416,
+      "seconds": 85.611973
+    },
+    {
+      "quarter": 286.146059,
+      "seconds": 85.937052
+    },
+    {
+      "quarter": 287.363702,
+      "seconds": 86.262132
+    },
+    {
+      "quarter": 288.581345,
+      "seconds": 86.494331
+    },
+    {
+      "quarter": 289.798988,
+      "seconds": 86.95873
+    },
+    {
+      "quarter": 291.016631,
+      "seconds": 87.28381
+    },
+    {
+      "quarter": 292.234273,
+      "seconds": 87.608889
+    },
+    {
+      "quarter": 293.451916,
+      "seconds": 88.026848
+    },
+    {
+      "quarter": 294.669559,
+      "seconds": 88.212608
+    },
+    {
+      "quarter": 295.887202,
+      "seconds": 88.677007
+    },
+    {
+      "quarter": 297.104845,
+      "seconds": 89.002086
+    },
+    {
+      "quarter": 298.322487,
+      "seconds": 89.327166
+    },
+    {
+      "quarter": 299.54013,
+      "seconds": 89.652245
+    },
+    {
+      "quarter": 300.757773,
+      "seconds": 89.838005
+    },
+    {
+      "quarter": 301.975416,
+      "seconds": 90.302404
+    },
+    {
+      "quarter": 303.193059,
+      "seconds": 90.673923
+    },
+    {
+      "quarter": 304.410701,
+      "seconds": 90.999002
+    },
+    {
+      "quarter": 305.628344,
+      "seconds": 91.463401
+    },
+    {
+      "quarter": 306.845987,
+      "seconds": 91.695601
+    },
+    {
+      "quarter": 308.06363,
+      "seconds": 91.881361
+    },
+    {
+      "quarter": 309.281273,
+      "seconds": 92.34576
+    },
+    {
+      "quarter": 310.498915,
+      "seconds": 92.810159
+    },
+    {
+      "quarter": 311.716558,
+      "seconds": 93.274558
+    },
+    {
+      "quarter": 312.934201,
+      "seconds": 93.924717
+    },
+    {
+      "quarter": 314.151844,
+      "seconds": 94.389116
+    },
+    {
+      "quarter": 315.369487,
+      "seconds": 94.760635
+    },
+    {
+      "quarter": 316.587129,
+      "seconds": 94.946395
+    },
+    {
+      "quarter": 317.804772,
+      "seconds": 95.503673
+    },
+    {
+      "quarter": 319.022415,
+      "seconds": 95.875193
+    },
+    {
+      "quarter": 320.240058,
+      "seconds": 96.107392
+    },
+    {
+      "quarter": 321.457701,
+      "seconds": 96.571791
+    },
+    {
+      "quarter": 322.675343,
+      "seconds": 96.803991
+    },
+    {
+      "quarter": 323.892986,
+      "seconds": 97.26839
+    },
+    {
+      "quarter": 325.110629,
+      "seconds": 97.732789
+    },
+    {
+      "quarter": 326.328272,
+      "seconds": 98.104308
+    },
+    {
+      "quarter": 327.545915,
+      "seconds": 98.568707
+    },
+    {
+      "quarter": 328.763557,
+      "seconds": 98.754467
+    },
+    {
+      "quarter": 329.9812,
+      "seconds": 99.218866
+    },
+    {
+      "quarter": 331.198843,
+      "seconds": 99.683265
+    },
+    {
+      "quarter": 332.416486,
+      "seconds": 99.869025
+    },
+    {
+      "quarter": 333.634129,
+      "seconds": 100.333424
+    },
+    {
+      "quarter": 334.851772,
+      "seconds": 100.797823
+    },
+    {
+      "quarter": 336.069414,
+      "seconds": 101.169342
+    },
+    {
+      "quarter": 337.287057,
+      "seconds": 101.540862
+    },
+    {
+      "quarter": 338.5047,
+      "seconds": 101.773061
+    },
+    {
+      "quarter": 339.722343,
+      "seconds": 102.098141
+    },
+    {
+      "quarter": 340.939986,
+      "seconds": 102.2839
+    },
+    {
+      "quarter": 342.157628,
+      "seconds": 102.60898
+    },
+    {
+      "quarter": 343.375271,
+      "seconds": 102.794739
+    },
+    {
+      "quarter": 344.592914,
+      "seconds": 103.259138
+    },
+    {
+      "quarter": 345.810557,
+      "seconds": 103.630658
+    },
+    {
+      "quarter": 347.0282,
+      "seconds": 103.955737
+    },
+    {
+      "quarter": 348.245842,
+      "seconds": 104.327256
+    },
+    {
+      "quarter": 349.463485,
+      "seconds": 104.559456
+    },
+    {
+      "quarter": 350.681128,
+      "seconds": 104.884535
+    },
+    {
+      "quarter": 351.898771,
+      "seconds": 105.209615
+    },
+    {
+      "quarter": 353.116414,
+      "seconds": 105.534694
+    },
+    {
+      "quarter": 354.334056,
+      "seconds": 105.859773
+    },
+    {
+      "quarter": 355.551699,
+      "seconds": 106.045533
+    },
+    {
+      "quarter": 356.769342,
+      "seconds": 106.509932
+    },
+    {
+      "quarter": 357.986985,
+      "seconds": 106.788571
+    },
+    {
+      "quarter": 359.204628,
+      "seconds": 107.113651
+    },
+    {
+      "quarter": 360.42227,
+      "seconds": 107.57805
+    },
+    {
+      "quarter": 361.639913,
+      "seconds": 107.76381
+    },
+    {
+      "quarter": 362.857556,
+      "seconds": 108.367528
+    },
+    {
+      "quarter": 364.075199,
+      "seconds": 108.831927
+    },
+    {
+      "quarter": 365.292842,
+      "seconds": 109.157007
+    },
+    {
+      "quarter": 366.510484,
+      "seconds": 109.574966
+    },
+    {
+      "quarter": 367.728127,
+      "seconds": 109.900045
+    },
+    {
+      "quarter": 368.94577,
+      "seconds": 110.503764
+    },
+    {
+      "quarter": 370.163413,
+      "seconds": 110.689524
+    },
+    {
+      "quarter": 371.381056,
+      "seconds": 111.014603
+    },
+    {
+      "quarter": 372.598698,
+      "seconds": 111.339683
+    },
+    {
+      "quarter": 373.816341,
+      "seconds": 111.850522
+    },
+    {
+      "quarter": 375.033984,
+      "seconds": 112.222041
+    },
+    {
+      "quarter": 376.251627,
+      "seconds": 112.4078
+    },
+    {
+      "quarter": 377.46927,
+      "seconds": 112.8722
+    },
+    {
+      "quarter": 378.686913,
+      "seconds": 113.336599
+    },
+    {
+      "quarter": 379.904555,
+      "seconds": 113.708118
+    },
+    {
+      "quarter": 381.122198,
+      "seconds": 114.172517
+    },
+    {
+      "quarter": 382.339841,
+      "seconds": 114.497596
+    },
+    {
+      "quarter": 383.557484,
+      "seconds": 114.869116
+    },
+    {
+      "quarter": 384.775127,
+      "seconds": 115.379955
+    },
+    {
+      "quarter": 385.992769,
+      "seconds": 115.844354
+    },
+    {
+      "quarter": 387.210412,
+      "seconds": 116.401633
+    },
+    {
+      "quarter": 388.428055,
+      "seconds": 116.587392
+    },
+    {
+      "quarter": 389.645698,
+      "seconds": 116.958912
+    },
+    {
+      "quarter": 390.863341,
+      "seconds": 117.423311
+    },
+    {
+      "quarter": 392.080983,
+      "seconds": 117.74839
+    },
+    {
+      "quarter": 393.298626,
+      "seconds": 118.073469
+    },
+    {
+      "quarter": 394.516269,
+      "seconds": 118.305669
+    },
+    {
+      "quarter": 395.733912,
+      "seconds": 118.770068
+    },
+    {
+      "quarter": 396.951555,
+      "seconds": 119.048707
+    },
+    {
+      "quarter": 398.169197,
+      "seconds": 119.373787
+    },
+    {
+      "quarter": 399.38684,
+      "seconds": 119.791746
+    },
+    {
+      "quarter": 400.604483,
+      "seconds": 119.977506
+    },
+    {
+      "quarter": 401.822126,
+      "seconds": 120.441905
+    },
+    {
+      "quarter": 403.039769,
+      "seconds": 120.766984
+    },
+    {
+      "quarter": 404.257411,
+      "seconds": 121.045624
+    },
+    {
+      "quarter": 405.475054,
+      "seconds": 121.370703
+    },
+    {
+      "quarter": 406.692697,
+      "seconds": 121.602902
+    },
+    {
+      "quarter": 407.91034,
+      "seconds": 121.974422
+    },
+    {
+      "quarter": 409.127983,
+      "seconds": 122.438821
+    },
+    {
+      "quarter": 410.345625,
+      "seconds": 122.81034
+    },
+    {
+      "quarter": 411.563268,
+      "seconds": 123.13542
+    },
+    {
+      "quarter": 412.780911,
+      "seconds": 123.460499
+    },
+    {
+      "quarter": 413.998554,
+      "seconds": 124.203537
+    },
+    {
+      "quarter": 415.216197,
+      "seconds": 124.946576
+    },
+    {
+      "quarter": 416.433839,
+      "seconds": 125.689615
+    },
+    {
+      "quarter": 417.651482,
+      "seconds": 126.432653
+    },
+    {
+      "quarter": 418.869125,
+      "seconds": 127.175692
+    },
+    {
+      "quarter": 420.086768,
+      "seconds": 127.91873
+    },
+    {
+      "quarter": 421.0,
+      "seconds": 128.476009
+    }
+  ]
+}

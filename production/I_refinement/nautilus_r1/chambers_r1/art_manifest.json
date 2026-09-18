@@ -1,0 +1,12 @@
+{
+  "mode": "built_in_image_gen",
+  "image": "production/I_refinement/nautilus_r1/chambers_r1/chambers_and_response_r1.png",
+  "sha256": "a8f9517bca1352ea1af81a54b5c2f47c3fb9ce03233edbd3c80218c3ff02177f",
+  "prompt": "production/I_refinement/nautilus_r1/chambers_r1/PROMPT.txt",
+  "scope": "Formed crescent chambers, diaphragm folds, rims and connected local music light. Numeric dimensions remain source-derived.",
+  "limits": [
+    "Generated music-state mouth shutter remains closed and must not dictate runtime.",
+    "Generated joints and fasteners are appearance suggestions, not verified dimensional placement.",
+    "Music light is a design direction, not implemented merely because this image exists."
+  ]
+}

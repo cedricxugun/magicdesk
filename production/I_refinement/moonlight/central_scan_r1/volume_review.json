@@ -1,0 +1,24 @@
+{
+  "method": "ffmpeg volumedetect, complete recordings, no signal processing",
+  "movements": [
+    {
+      "movement": 1,
+      "mean_dbfs": -34.9,
+      "sample_peak_dbfs": -13.6
+    },
+    {
+      "movement": 2,
+      "mean_dbfs": -29.3,
+      "sample_peak_dbfs": -5.2
+    },
+    {
+      "movement": 3,
+      "mean_dbfs": -23.7,
+      "sample_peak_dbfs": -2.2
+    }
+  ],
+  "old_player_db": -16,
+  "new_player_db": 0,
+  "change_db": 16,
+  "scope": "Remove additional application attenuation; preserve recording waveform/dynamics and system volume. Sample peaks only, not true-peak or native speaker listening acceptance."
+}

@@ -1,0 +1,169 @@
+{
+  "alternate_locations": {
+    "servers": [
+      {
+        "server": "dn721802.ca.archive.org",
+        "dir": "/0/items/MoonlightSonata_845"
+      }
+    ],
+    "workable": [
+      {
+        "server": "dn721802.ca.archive.org",
+        "dir": "/0/items/MoonlightSonata_845"
+      }
+    ]
+  },
+  "created": 1789152546,
+  "d1": "ia601802.us.archive.org",
+  "d2": "ia801802.us.archive.org",
+  "dir": "/1/items/MoonlightSonata_845",
+  "files": [
+    {
+      "name": "MoonlightSonata_845_archive.torrent",
+      "source": "metadata",
+      "btih": "49e00f085245e2552cd0a7e1b23a23afa7141ecb",
+      "mtime": "1757639338",
+      "size": "3200",
+      "md5": "3b44921a88bb98a60d32e58a650d9b64",
+      "crc32": "f8a327e7",
+      "sha1": "b5eaa22b4c9a3c32044f49a09c9fed1ce48b553b",
+      "format": "Archive BitTorrent"
+    },
+    {
+      "name": "MoonlightSonata_845_files.xml",
+      "source": "metadata",
+      "format": "Metadata",
+      "md5": "85fffbfdea6f1528b93a2059852c8c58",
+      "summation": "md5"
+    },
+    {
+      "name": "MoonlightSonata_845_meta.xml",
+      "source": "metadata",
+      "format": "Metadata",
+      "mtime": "1781540288",
+      "size": "2328",
+      "md5": "27204f03c97530499c82ad0bea546db5",
+      "crc32": "686760a5",
+      "sha1": "be3c15a9ad71e271a162c6bc7178716cfaf9ac81"
+    },
+    {
+      "name": "MoonlightSonata_845_reviews.xml",
+      "source": "original",
+      "mtime": "1757639337",
+      "size": "506",
+      "md5": "5fdd40bcfad94ae849493e8d851c69c1",
+      "crc32": "5dd8563e",
+      "sha1": "46076a556fdad9d1fe3873672bd92f12af676192",
+      "format": "Metadata"
+    },
+    {
+      "name": "Sonata_no_14_in_c_sharp_minor_moonlight_op_27_no_2_Iii.Presto.mp3",
+      "source": "original",
+      "format": "VBR MP3",
+      "title": "Sonata_No_14_in_C_Sharp_Minor_Moonlight_Op_27_No_2_ III. Presto",
+      "mtime": "1298827983",
+      "size": "15786016",
+      "md5": "276549aedd2f8b54e4b0b4d1ef552081",
+      "crc32": "bf45cf1b",
+      "sha1": "f4c1ffd284507f31f39a5d371e0be5f6133289af",
+      "creator": "Unknown Artist",
+      "album": "Unknown Album (8/4/2008 11:39:22 AM)",
+      "track": "13",
+      "length": "493.31",
+      "height": "0",
+      "width": "0",
+      "genre": "Unknown Genre",
+      "artist": "Unknown Artist",
+      "external-identifier-match-date": "acoustid:2019-03-23T12:44:15Z",
+      "external-identifier": "urn:acoustid:5b412973-0e00-4b47-9f0c-5546aef74a16"
+    },
+    {
+      "name": "Sonata_no_14_in_c_sharp_minor_moonlight_op_27_no_2_Iii.Presto.ogg",
+      "source": "derivative",
+      "format": "Ogg Vorbis",
+      "original": "Sonata_no_14_in_c_sharp_minor_moonlight_op_27_no_2_Iii.Presto.mp3",
+      "mtime": "1298828067",
+      "size": "4823167",
+      "md5": "9a457cc482f90ab8603f83a8ea38ded7",
+      "crc32": "131ab08a",
+      "sha1": "ee32bb1a1f0c003e3fb0545308dd116d6fbbce55",
+      "length": "493.71",
+      "height": "0",
+      "width": "0"
+    },
+    {
+      "name": "Sonata_no_14_in_c_sharp_minor_moonlight_op_27_no_2_Iii.Presto.png",
+      "source": "derivative",
+      "format": "PNG",
+      "original": "Sonata_no_14_in_c_sharp_minor_moonlight_op_27_no_2_Iii.Presto.mp3",
+      "mtime": "1416366610",
+      "size": "10872",
+      "md5": "ef7a99eddc1ba5f1ec99651c7494ca5f",
+      "crc32": "4779a918",
+      "sha1": "13c6e14e7854aab41943e217f89bb6644fb045d2"
+    },
+    {
+      "name": "Sonata_no_14_in_c_sharp_minor_moonlight_op_27_no_2_Iii.Presto_spectrogram.png",
+      "source": "derivative",
+      "format": "Spectrogram",
+      "original": "Sonata_no_14_in_c_sharp_minor_moonlight_op_27_no_2_Iii.Presto.mp3",
+      "mtime": "1416366616",
+      "size": "246026",
+      "md5": "4ccd2eff2ab0e41c3223c91722c18a2f",
+      "crc32": "3f4b6a5e",
+      "sha1": "191a701017e7994c08047bdb1f53a0417ac6a32f"
+    },
+    {
+      "name": "__ia_thumb.jpg",
+      "source": "original",
+      "mtime": "1613534436",
+      "size": "3310",
+      "md5": "2e5ca69d567381dbb101a9526a8bc044",
+      "crc32": "a8a7d748",
+      "sha1": "4a6c70b2abb62c78561f96a16a5fb49dac0240ce",
+      "format": "Item Tile",
+      "rotation": "0"
+    }
+  ],
+  "files_count": 9,
+  "item_last_updated": 1781540288,
+  "item_size": 20875425,
+  "metadata": {
+    "identifier": "MoonlightSonata_845",
+    "title": "Moonlight Sonata",
+    "creator": "Ludwig van Beethoven / Paul Pitman",
+    "mediatype": "audio",
+    "collection": [
+      "opensource_audio",
+      "community"
+    ],
+    "description": "Composition Licence: This MP3 (or other media file) is in the public  domain because its copyright has expired.This applies to the United  States, where Works published prior to 1978 were copyright protected for  a maximum of 75 years. See  <a href=\"http://www.copyright.gov/circs/circ01.pdf\" rel=\"ugc nofollow\"><em>Circular 1 \"COPYRIGHT BASICS\" PDF</em></a>        from the U.S. Copyright Office. Works published before 1923 (in this case 1801) are now in the public domain.\n\nThis   file is also in the public domain in countries that figure copyright   from the date of death of the artist (post mortem auctoris), in this   case Ludwig von Beethoven (17 December 1770 \u00e2 26 March 1827), and that   most commonly runs for a period of 50 to 70 years from December 31st of   that year.\n\nPerformance Licence: This work has been released into the public domain by its author, <a href=\"http://www.musopen.org/info.php?class=performer&id=45\" rel=\"ugc nofollow\"><em>Paul Pitman</em></a> at musopen.com\n\nCan I use Musopen music in another work that will be sold for profit? Public domain works are not protected by U.S. copyright law and are free to be used, copied, \n\nUPLOADED by <a href=\"http://publicdomainaudiovideo.blogspot.com/2011/02/sonata-no-14-in-c-sharp-minor-moonlight.html\" rel=\"ugc nofollow\"><em>Sookietex</em></a>",
+    "subject": "Beethoven; Moonlight Sonata",
+    "licenseurl": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "publicdate": "2011-02-27 17:34:41",
+    "addeddate": "2011-02-27 17:33:50",
+    "uploader": "sookietex@gmail.com",
+    "updatedate": "2011-02-27 18:33:28",
+    "updater": "sookietex",
+    "curation": "[curator]malware@archive.org[/curator][date]20140329163427[/date][comment]checked for malware[/comment]",
+    "backup_location": "ia903609_0",
+    "external_metadata_update": "2019-03-23T12:44:15Z"
+  },
+  "reviews": [
+    {
+      "reviewtitle": "song",
+      "reviewbody": "It is song",
+      "stars": "5",
+      "reviewer": "gleebustheglorper",
+      "reviewdate": "2025-09-12 01:08:54",
+      "createdate": "2025-09-12 01:08:54",
+      "reviewer_itemname": "@gleebustheglorper"
+    }
+  ],
+  "server": "ia601802.us.archive.org",
+  "uniq": 121481432,
+  "workable_servers": [
+    "ia601802.us.archive.org",
+    "ia801802.us.archive.org"
+  ]
+}

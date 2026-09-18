@@ -1,0 +1,15 @@
+{
+  "body_report": "review/I_refinement/nautilus_r1/cap_lower_trim_r55/build.json",
+  "scripts": {
+    "app/collection/i_nautilus_assembly.gd": "33b4b2258007b289f1b07f41671e793510e895b1d937012860f073122d28490e",
+    "app/collection/i_nautilus_sequence.gd": "0dcfd9353dcce37ad9f2865ae4ee95a1767143f470f1aa542d1487977f61fa3b",
+    "app/collection/i_moonlight_controller.gd": "bfdeb64b851053de9b94adf355a0dc1e4ef6b8cec7c253bc495463a8bbf57181",
+    "app/review/i_mouth_viewer.gd": "aa0eefecdee54bd3d100c830de78733aed4cfcaeff94dc291fd3bb3eacd1fef3",
+    "tests/collection/i_nautilus_assembly_qa.gd": "a695006343cdd26106fa3c762fcc662ec1d824ea746c908429c436c7267c938f",
+    "tools/run_nautilus_preview.sh": "7a48508b63522783f94dc64946ce07c612b4040c6dd15a19b8ad7cd42c9647f6"
+  },
+  "qa": "review/I_refinement/nautilus_r1/interactive_r58",
+  "main_app_updated": false,
+  "status": "active",
+  "scope": "Independent current assembly development preview; native QA uses Dummy audio. Optional embedded-spec compatibility added after native launch and checked separately headless."
+}

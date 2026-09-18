@@ -1,0 +1,103 @@
+{
+  "source": "blender/collection/I_score_readability_r40b.blend",
+  "source_sha256": "dcaefb9b82218938efd6f165a4d488a58762b51ab84dde36724bbbd0adf07ab9",
+  "component": "app/assets/collection/art/I/light_score_r40/score_refined/optics.glb",
+  "component_sha256": "588b329ef062c4bc45a5bcdc752887be720ba3e392e0b88e8391331c667e89c9",
+  "mouth_source_sha256": "734f5365098133ee372616b0795c7e10b0b5c381961c70db0c63dfb962ec6bd6",
+  "mouth_component_sha256": "9e57f33fa026d042c74918e13e9fa8bca73e54a8c0232e347bed000c137486c1",
+  "mouth_node": "IAM_Mouth",
+  "sheet": "I_MoonlightStaff",
+  "width": 1.2,
+  "height": 0.72,
+  "center_y": 0.0,
+  "anchors": [
+    {
+      "sign": -1,
+      "position": [
+        -0.7417176365852356,
+        -0.3090490400791168,
+        0.014999999664723873
+      ]
+    },
+    {
+      "sign": 1,
+      "position": [
+        0.7417176365852356,
+        -0.3090490400791168,
+        0.014999999664723873
+      ]
+    }
+  ],
+  "scanner": {
+    "line": "I_CentralReadingLine",
+    "tips": [
+      {
+        "node": "IAM_TineRoundedAxial_0",
+        "mouth_point": [
+          8.772812476465219e-10,
+          -0.04500000178813934,
+          -0.31700000166893005
+        ],
+        "local_point": [
+          8.772812476465219e-10,
+          0.0,
+          -0.009000003337860107
+        ],
+        "ray": "I_TipReadingRay_0"
+      },
+      {
+        "node": "IAM_TineRoundedAxial_1",
+        "mouth_point": [
+          8.772812476465219e-10,
+          2.513073360521645e-10,
+          -0.31700000166893005
+        ],
+        "local_point": [
+          8.772812476465219e-10,
+          2.513073360521645e-10,
+          -0.009000003337860107
+        ],
+        "ray": "I_TipReadingRay_1"
+      },
+      {
+        "node": "IAM_TineRoundedAxial_2",
+        "mouth_point": [
+          8.772812476465219e-10,
+          0.04500000178813934,
+          -0.31700000166893005
+        ],
+        "local_point": [
+          8.772812476465219e-10,
+          0.0,
+          -0.009000003337860107
+        ],
+        "ray": "I_TipReadingRay_2"
+      }
+    ],
+    "focus": [
+      0.0,
+      0.0,
+      -0.35199999809265137
+    ],
+    "line_end": [
+      0,
+      -0.36,
+      -0.35199999809265137
+    ],
+    "mask": "res://assets/collection/art/I/moonlight_candidate/central_scan_r1/filament_mask.png",
+    "cap_manifest": "res://assets/collection/art/I/scan_caps_r41/cap.json"
+  },
+  "scope": "User explicitly rejects the dark backing. Fully transparent spaces between real engraved glyphs, corrected straight-alpha ink, brighter white/gold score and central scan; existing centered geometry and physical source remain unchanged.",
+  "parent_source_sha256": "2a82f42dc8cbb4727843425b0ff9787d9527d458d422b85db4e487751c4b6611",
+  "scan_gain": 1.0,
+  "score_gain": 1.7,
+  "filament_u_span": 0.8,
+  "optical_backing": 0.0,
+  "correct_alpha": true,
+  "cursor_width": 0.006,
+  "edge_fade": 0.05,
+  "scan_minimum_pixel_width": 1.2,
+  "scan_mask_power": 1.8,
+  "ink_coverage_gain": 1.35,
+  "runtime_refinement": "R60: derivative-safe tile sampling and conservative ink coverage; all source glyphs, full height and centered geometry retained. No black backing."
+}

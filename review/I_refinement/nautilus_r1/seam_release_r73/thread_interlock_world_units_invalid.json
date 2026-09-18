@@ -1,0 +1,1033 @@
+{
+  "source_sha256": "86b25cf745e4e3129d2d88b2743b21e1ea8dadf7642a6a8556337904ad0a9d7a",
+  "passed": false,
+  "results": [
+    {
+      "sign": -1,
+      "closed_contacts": 0,
+      "helical_samples": [
+        {
+          "distance": -0.0,
+          "twist": 0.0,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00014000000000000001,
+          "twist": 0.8796459430051421,
+          "contacts": 303
+        },
+        {
+          "distance": -0.00028000000000000003,
+          "twist": 1.7592918860102842,
+          "contacts": 5620
+        },
+        {
+          "distance": -0.00042,
+          "twist": 2.6389378290154264,
+          "contacts": 5319
+        },
+        {
+          "distance": -0.0005600000000000001,
+          "twist": 3.5185837720205684,
+          "contacts": 5182
+        },
+        {
+          "distance": -0.0007000000000000001,
+          "twist": 4.398229715025711,
+          "contacts": 4886
+        },
+        {
+          "distance": -0.00084,
+          "twist": 5.277875658030853,
+          "contacts": 4744
+        },
+        {
+          "distance": -0.00098,
+          "twist": 6.157521601035994,
+          "contacts": 4656
+        },
+        {
+          "distance": -0.0011200000000000001,
+          "twist": 7.037167544041137,
+          "contacts": 4468
+        },
+        {
+          "distance": -0.00126,
+          "twist": 7.916813487046278,
+          "contacts": 4332
+        },
+        {
+          "distance": -0.0014000000000000002,
+          "twist": 8.796459430051423,
+          "contacts": 4184
+        },
+        {
+          "distance": -0.00154,
+          "twist": 9.676105373056561,
+          "contacts": 4056
+        },
+        {
+          "distance": -0.00168,
+          "twist": 10.555751316061706,
+          "contacts": 3986
+        },
+        {
+          "distance": -0.00182,
+          "twist": 11.435397259066848,
+          "contacts": 3826
+        },
+        {
+          "distance": -0.00196,
+          "twist": 12.315043202071989,
+          "contacts": 3780
+        },
+        {
+          "distance": -0.0021,
+          "twist": 13.19468914507713,
+          "contacts": 3894
+        },
+        {
+          "distance": -0.0022400000000000002,
+          "twist": 14.074335088082274,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00238,
+          "twist": 14.953981031087416,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00252,
+          "twist": 15.833626974092557,
+          "contacts": 3969
+        },
+        {
+          "distance": -0.00266,
+          "twist": 16.7132729170977,
+          "contacts": 3088
+        },
+        {
+          "distance": -0.0028000000000000004,
+          "twist": 17.592918860102845,
+          "contacts": 2900
+        },
+        {
+          "distance": -0.00294,
+          "twist": 18.472564803107982,
+          "contacts": 2732
+        },
+        {
+          "distance": -0.00308,
+          "twist": 19.352210746113123,
+          "contacts": 2592
+        },
+        {
+          "distance": -0.00322,
+          "twist": 20.231856689118267,
+          "contacts": 2452
+        },
+        {
+          "distance": -0.00336,
+          "twist": 21.11150263212341,
+          "contacts": 2299
+        },
+        {
+          "distance": -0.0035000000000000005,
+          "twist": 21.991148575128555,
+          "contacts": 2156
+        },
+        {
+          "distance": -0.00364,
+          "twist": 22.870794518133696,
+          "contacts": 2024
+        },
+        {
+          "distance": -0.00378,
+          "twist": 23.750440461138837,
+          "contacts": 1895
+        },
+        {
+          "distance": -0.00392,
+          "twist": 24.630086404143977,
+          "contacts": 1748
+        },
+        {
+          "distance": -0.00406,
+          "twist": 25.50973234714912,
+          "contacts": 1595
+        },
+        {
+          "distance": -0.0042,
+          "twist": 26.38937829015426,
+          "contacts": 1460
+        },
+        {
+          "distance": -0.00434,
+          "twist": 27.269024233159403,
+          "contacts": 1324
+        },
+        {
+          "distance": -0.0044800000000000005,
+          "twist": 28.148670176164547,
+          "contacts": 1324
+        },
+        {
+          "distance": -0.00462,
+          "twist": 29.028316119169688,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00476,
+          "twist": 29.907962062174832,
+          "contacts": 0
+        },
+        {
+          "distance": -0.0049,
+          "twist": 30.787608005179973,
+          "contacts": 738
+        },
+        {
+          "distance": -0.00504,
+          "twist": 31.667253948185113,
+          "contacts": 618
+        },
+        {
+          "distance": -0.005180000000000001,
+          "twist": 32.54689989119026,
+          "contacts": 512
+        },
+        {
+          "distance": -0.00532,
+          "twist": 33.4265458341954,
+          "contacts": 384
+        },
+        {
+          "distance": -0.0054600000000000004,
+          "twist": 34.306191777200546,
+          "contacts": 216
+        },
+        {
+          "distance": -0.005600000000000001,
+          "twist": 35.18583772020569,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00574,
+          "twist": 36.06548366321083,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00588,
+          "twist": 36.945129606215964,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00602,
+          "twist": 37.82477554922111,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00616,
+          "twist": 38.704421492226246,
+          "contacts": 0
+        },
+        {
+          "distance": -0.0063,
+          "twist": 39.58406743523139,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00644,
+          "twist": 40.463713378236534,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00658,
+          "twist": 41.34335932124167,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00672,
+          "twist": 42.22300526424682,
+          "contacts": 0
+        },
+        {
+          "distance": -0.006860000000000001,
+          "twist": 43.10265120725197,
+          "contacts": 0
+        },
+        {
+          "distance": -0.007000000000000001,
+          "twist": 43.98229715025711,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00714,
+          "twist": 44.86194309326225,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00728,
+          "twist": 45.74158903626739,
+          "contacts": 0
+        },
+        {
+          "distance": -0.0074199999999999995,
+          "twist": 46.62123497927253,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00756,
+          "twist": 47.50088092227767,
+          "contacts": 0
+        },
+        {
+          "distance": -0.0077,
+          "twist": 48.38052686528282,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00784,
+          "twist": 49.260172808287955,
+          "contacts": 0
+        },
+        {
+          "distance": -0.007980000000000001,
+          "twist": 50.139818751293106,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00812,
+          "twist": 51.01946469429824,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00826,
+          "twist": 51.89911063730338,
+          "contacts": 0
+        },
+        {
+          "distance": -0.0084,
+          "twist": 52.77875658030852,
+          "contacts": 0
+        },
+        {
+          "distance": -0.008539999999999999,
+          "twist": 53.658402523313654,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00868,
+          "twist": 54.538048466318806,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00882,
+          "twist": 55.41769440932394,
+          "contacts": 0
+        },
+        {
+          "distance": -0.008960000000000001,
+          "twist": 56.297340352329094,
+          "contacts": 0
+        },
+        {
+          "distance": -0.0091,
+          "twist": 57.17698629533423,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00924,
+          "twist": 58.056632238339375,
+          "contacts": 0
+        },
+        {
+          "distance": -0.009380000000000001,
+          "twist": 58.93627818134453,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00952,
+          "twist": 59.815924124349664,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00966,
+          "twist": 60.69557006735481,
+          "contacts": 0
+        },
+        {
+          "distance": -0.0098,
+          "twist": 61.575216010359945,
+          "contacts": 0
+        },
+        {
+          "distance": -0.00994,
+          "twist": 62.45486195336508,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01008,
+          "twist": 63.334507896370226,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01022,
+          "twist": 64.21415383937537,
+          "contacts": 0
+        },
+        {
+          "distance": -0.010360000000000001,
+          "twist": 65.09379978238051,
+          "contacts": 0
+        },
+        {
+          "distance": -0.0105,
+          "twist": 65.97344572538566,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01064,
+          "twist": 66.8530916683908,
+          "contacts": 0
+        },
+        {
+          "distance": -0.010780000000000001,
+          "twist": 67.73273761139595,
+          "contacts": 0
+        },
+        {
+          "distance": -0.010920000000000001,
+          "twist": 68.61238355440109,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01106,
+          "twist": 69.49202949740622,
+          "contacts": 0
+        },
+        {
+          "distance": -0.011200000000000002,
+          "twist": 70.37167544041138,
+          "contacts": 0
+        },
+        {
+          "distance": -0.011340000000000001,
+          "twist": 71.25132138341651,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01148,
+          "twist": 72.13096732642165,
+          "contacts": 0
+        },
+        {
+          "distance": -0.011619999999999998,
+          "twist": 73.01061326942678,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01176,
+          "twist": 73.89025921243193,
+          "contacts": 0
+        },
+        {
+          "distance": -0.011899999999999999,
+          "twist": 74.76990515543707,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01204,
+          "twist": 75.64955109844222,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01218,
+          "twist": 76.52919704144735,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01232,
+          "twist": 77.40884298445249,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01246,
+          "twist": 78.28848892745764,
+          "contacts": 0
+        },
+        {
+          "distance": -0.0126,
+          "twist": 79.16813487046278,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01274,
+          "twist": 80.04778081346792,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01288,
+          "twist": 80.92742675647307,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01302,
+          "twist": 81.80707269947821,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01316,
+          "twist": 82.68671864248334,
+          "contacts": 0
+        },
+        {
+          "distance": -0.013300000000000001,
+          "twist": 83.5663645854885,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01344,
+          "twist": 84.44601052849364,
+          "contacts": 0
+        },
+        {
+          "distance": -0.013580000000000002,
+          "twist": 85.3256564714988,
+          "contacts": 0
+        },
+        {
+          "distance": -0.013720000000000001,
+          "twist": 86.20530241450393,
+          "contacts": 0
+        },
+        {
+          "distance": -0.01386,
+          "twist": 87.08494835750908,
+          "contacts": 0
+        },
+        {
+          "distance": -0.014000000000000002,
+          "twist": 87.96459430051422,
+          "contacts": 0
+        }
+      ],
+      "quarter_pitch_axial_only_contacts": 5334,
+      "quarter_turn_only_contacts": 5606
+    },
+    {
+      "sign": 1,
+      "closed_contacts": 0,
+      "helical_samples": [
+        {
+          "distance": 0.0,
+          "twist": -0.0,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00014000000000000001,
+          "twist": -0.8796459430051421,
+          "contacts": 365
+        },
+        {
+          "distance": 0.00028000000000000003,
+          "twist": -1.7592918860102842,
+          "contacts": 5628
+        },
+        {
+          "distance": 0.00042,
+          "twist": -2.6389378290154264,
+          "contacts": 5331
+        },
+        {
+          "distance": 0.0005600000000000001,
+          "twist": -3.5185837720205684,
+          "contacts": 5192
+        },
+        {
+          "distance": 0.0007000000000000001,
+          "twist": -4.398229715025711,
+          "contacts": 4897
+        },
+        {
+          "distance": 0.00084,
+          "twist": -5.277875658030853,
+          "contacts": 4744
+        },
+        {
+          "distance": 0.00098,
+          "twist": -6.157521601035994,
+          "contacts": 4647
+        },
+        {
+          "distance": 0.0011200000000000001,
+          "twist": -7.037167544041137,
+          "contacts": 4468
+        },
+        {
+          "distance": 0.00126,
+          "twist": -7.916813487046278,
+          "contacts": 4330
+        },
+        {
+          "distance": 0.0014000000000000002,
+          "twist": -8.796459430051423,
+          "contacts": 4214
+        },
+        {
+          "distance": 0.00154,
+          "twist": -9.676105373056561,
+          "contacts": 4067
+        },
+        {
+          "distance": 0.00168,
+          "twist": -10.555751316061706,
+          "contacts": 3980
+        },
+        {
+          "distance": 0.00182,
+          "twist": -11.435397259066848,
+          "contacts": 3844
+        },
+        {
+          "distance": 0.00196,
+          "twist": -12.315043202071989,
+          "contacts": 3778
+        },
+        {
+          "distance": 0.0021,
+          "twist": -13.19468914507713,
+          "contacts": 3885
+        },
+        {
+          "distance": 0.0022400000000000002,
+          "twist": -14.074335088082274,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00238,
+          "twist": -14.953981031087416,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00252,
+          "twist": -15.833626974092557,
+          "contacts": 3850
+        },
+        {
+          "distance": 0.00266,
+          "twist": -16.7132729170977,
+          "contacts": 3090
+        },
+        {
+          "distance": 0.0028000000000000004,
+          "twist": -17.592918860102845,
+          "contacts": 2916
+        },
+        {
+          "distance": 0.00294,
+          "twist": -18.472564803107982,
+          "contacts": 2733
+        },
+        {
+          "distance": 0.00308,
+          "twist": -19.352210746113123,
+          "contacts": 2592
+        },
+        {
+          "distance": 0.00322,
+          "twist": -20.231856689118267,
+          "contacts": 2452
+        },
+        {
+          "distance": 0.00336,
+          "twist": -21.11150263212341,
+          "contacts": 2300
+        },
+        {
+          "distance": 0.0035000000000000005,
+          "twist": -21.991148575128555,
+          "contacts": 2154
+        },
+        {
+          "distance": 0.00364,
+          "twist": -22.870794518133696,
+          "contacts": 2024
+        },
+        {
+          "distance": 0.00378,
+          "twist": -23.750440461138837,
+          "contacts": 1890
+        },
+        {
+          "distance": 0.00392,
+          "twist": -24.630086404143977,
+          "contacts": 1748
+        },
+        {
+          "distance": 0.00406,
+          "twist": -25.50973234714912,
+          "contacts": 1596
+        },
+        {
+          "distance": 0.0042,
+          "twist": -26.38937829015426,
+          "contacts": 1462
+        },
+        {
+          "distance": 0.00434,
+          "twist": -27.269024233159403,
+          "contacts": 1322
+        },
+        {
+          "distance": 0.0044800000000000005,
+          "twist": -28.148670176164547,
+          "contacts": 1324
+        },
+        {
+          "distance": 0.00462,
+          "twist": -29.028316119169688,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00476,
+          "twist": -29.907962062174832,
+          "contacts": 0
+        },
+        {
+          "distance": 0.0049,
+          "twist": -30.787608005179973,
+          "contacts": 727
+        },
+        {
+          "distance": 0.00504,
+          "twist": -31.667253948185113,
+          "contacts": 620
+        },
+        {
+          "distance": 0.005180000000000001,
+          "twist": -32.54689989119026,
+          "contacts": 512
+        },
+        {
+          "distance": 0.00532,
+          "twist": -33.4265458341954,
+          "contacts": 384
+        },
+        {
+          "distance": 0.0054600000000000004,
+          "twist": -34.306191777200546,
+          "contacts": 216
+        },
+        {
+          "distance": 0.005600000000000001,
+          "twist": -35.18583772020569,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00574,
+          "twist": -36.06548366321083,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00588,
+          "twist": -36.945129606215964,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00602,
+          "twist": -37.82477554922111,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00616,
+          "twist": -38.704421492226246,
+          "contacts": 0
+        },
+        {
+          "distance": 0.0063,
+          "twist": -39.58406743523139,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00644,
+          "twist": -40.463713378236534,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00658,
+          "twist": -41.34335932124167,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00672,
+          "twist": -42.22300526424682,
+          "contacts": 0
+        },
+        {
+          "distance": 0.006860000000000001,
+          "twist": -43.10265120725197,
+          "contacts": 0
+        },
+        {
+          "distance": 0.007000000000000001,
+          "twist": -43.98229715025711,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00714,
+          "twist": -44.86194309326225,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00728,
+          "twist": -45.74158903626739,
+          "contacts": 0
+        },
+        {
+          "distance": 0.0074199999999999995,
+          "twist": -46.62123497927253,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00756,
+          "twist": -47.50088092227767,
+          "contacts": 0
+        },
+        {
+          "distance": 0.0077,
+          "twist": -48.38052686528282,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00784,
+          "twist": -49.260172808287955,
+          "contacts": 0
+        },
+        {
+          "distance": 0.007980000000000001,
+          "twist": -50.139818751293106,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00812,
+          "twist": -51.01946469429824,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00826,
+          "twist": -51.89911063730338,
+          "contacts": 0
+        },
+        {
+          "distance": 0.0084,
+          "twist": -52.77875658030852,
+          "contacts": 0
+        },
+        {
+          "distance": 0.008539999999999999,
+          "twist": -53.658402523313654,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00868,
+          "twist": -54.538048466318806,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00882,
+          "twist": -55.41769440932394,
+          "contacts": 0
+        },
+        {
+          "distance": 0.008960000000000001,
+          "twist": -56.297340352329094,
+          "contacts": 0
+        },
+        {
+          "distance": 0.0091,
+          "twist": -57.17698629533423,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00924,
+          "twist": -58.056632238339375,
+          "contacts": 0
+        },
+        {
+          "distance": 0.009380000000000001,
+          "twist": -58.93627818134453,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00952,
+          "twist": -59.815924124349664,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00966,
+          "twist": -60.69557006735481,
+          "contacts": 0
+        },
+        {
+          "distance": 0.0098,
+          "twist": -61.575216010359945,
+          "contacts": 0
+        },
+        {
+          "distance": 0.00994,
+          "twist": -62.45486195336508,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01008,
+          "twist": -63.334507896370226,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01022,
+          "twist": -64.21415383937537,
+          "contacts": 0
+        },
+        {
+          "distance": 0.010360000000000001,
+          "twist": -65.09379978238051,
+          "contacts": 0
+        },
+        {
+          "distance": 0.0105,
+          "twist": -65.97344572538566,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01064,
+          "twist": -66.8530916683908,
+          "contacts": 0
+        },
+        {
+          "distance": 0.010780000000000001,
+          "twist": -67.73273761139595,
+          "contacts": 0
+        },
+        {
+          "distance": 0.010920000000000001,
+          "twist": -68.61238355440109,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01106,
+          "twist": -69.49202949740622,
+          "contacts": 0
+        },
+        {
+          "distance": 0.011200000000000002,
+          "twist": -70.37167544041138,
+          "contacts": 0
+        },
+        {
+          "distance": 0.011340000000000001,
+          "twist": -71.25132138341651,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01148,
+          "twist": -72.13096732642165,
+          "contacts": 0
+        },
+        {
+          "distance": 0.011619999999999998,
+          "twist": -73.01061326942678,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01176,
+          "twist": -73.89025921243193,
+          "contacts": 0
+        },
+        {
+          "distance": 0.011899999999999999,
+          "twist": -74.76990515543707,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01204,
+          "twist": -75.64955109844222,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01218,
+          "twist": -76.52919704144735,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01232,
+          "twist": -77.40884298445249,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01246,
+          "twist": -78.28848892745764,
+          "contacts": 0
+        },
+        {
+          "distance": 0.0126,
+          "twist": -79.16813487046278,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01274,
+          "twist": -80.04778081346792,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01288,
+          "twist": -80.92742675647307,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01302,
+          "twist": -81.80707269947821,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01316,
+          "twist": -82.68671864248334,
+          "contacts": 0
+        },
+        {
+          "distance": 0.013300000000000001,
+          "twist": -83.5663645854885,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01344,
+          "twist": -84.44601052849364,
+          "contacts": 0
+        },
+        {
+          "distance": 0.013580000000000002,
+          "twist": -85.3256564714988,
+          "contacts": 0
+        },
+        {
+          "distance": 0.013720000000000001,
+          "twist": -86.20530241450393,
+          "contacts": 0
+        },
+        {
+          "distance": 0.01386,
+          "twist": -87.08494835750908,
+          "contacts": 0
+        },
+        {
+          "distance": 0.014000000000000002,
+          "twist": -87.96459430051422,
+          "contacts": 0
+        }
+      ],
+      "quarter_pitch_axial_only_contacts": 5334,
+      "quarter_turn_only_contacts": 5644
+    }
+  ],
+  "scope": "Two actual male/female meshes, 101 helical positions each, closed mating and deliberate axial-only / twist-only interference witnesses. Not whole-assembly clearance, continuous collision, torque/load or final art acceptance."
+}

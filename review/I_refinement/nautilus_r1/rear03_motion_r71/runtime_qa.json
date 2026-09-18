@@ -1,0 +1,8 @@
+{
+  "maximum_source_error": 0.000000292001942625575,
+  "motion_asset_sha256": "8fcd4c4b3602164f0898629a4dad9e3339a43abbfbb76068e489dc64c30bb1fd",
+  "motion_source_sha256": "d7b59bde4d90fdcaa5b8fda16f832eae69eece2638babbe89ee34005011c367e",
+  "passed": true,
+  "scope": "Actual body plus imported authored marker animation. Independent Blender target landmarks, smooth time reversal, full return and exact prepared-pose restoration. No full service, native input or continuous collision acceptance.",
+  "source_landmarks": 2448
+}

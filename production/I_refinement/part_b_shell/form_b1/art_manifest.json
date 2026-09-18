@@ -1,0 +1,7 @@
+{
+  "generator": "built_in_image_gen",
+  "image": "B_shell_motion_study_r1.png",
+  "image_sha256": "3d87c3b4cab3ee78efab8cea2e497c4debb380a31285ef9933b60369dad16c92",
+  "prompt": "PROMPT.md",
+  "status": "motion_interface_study_not_geometry_approval"
+}

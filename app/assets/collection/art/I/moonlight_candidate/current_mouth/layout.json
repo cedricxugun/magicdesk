@@ -1,0 +1,32 @@
+{
+  "source": "blender/collection/I_music_optics.blend",
+  "source_sha256": "35427961eee8694eb9b0293511263c56a5e91bd80e5cbcae517cf8807f596a63",
+  "component": "app/assets/collection/art/I/moonlight_candidate/current_mouth/optics.glb",
+  "component_sha256": "c62bb5f916df1764240dca587e8069c2ac4154bfd9398acb6964e306eeb722b5",
+  "mouth_source_sha256": "1d4b2301b18fc6b19c8fdedaa81d6ff3d9f78f8d0284d304e6427a204ce6158b",
+  "mouth_component_sha256": "ff174d8f9d33388b05eda983976f1b4fa4ae990352d17960713a3fdd2d7a2138",
+  "mouth_node": "IAM_Mouth",
+  "sheet": "I_MoonlightStaff",
+  "width": 1.16,
+  "height": 0.4,
+  "center_y": 0.34,
+  "anchors": [
+    {
+      "sign": -1,
+      "position": [
+        -0.7417176365852356,
+        0.3090490400791168,
+        0.014999999664723873
+      ]
+    },
+    {
+      "sign": 1,
+      "position": [
+        0.7417176365852356,
+        0.3090490400791168,
+        0.014999999664723873
+      ]
+    }
+  ],
+  "scope": "Separate authored staff carrier and small slit-projector assembly, placed using current mouth/liner coordinates. Optical plane intentionally open; mount/collision/visual verification pending, no full-conch acceptance."
+}

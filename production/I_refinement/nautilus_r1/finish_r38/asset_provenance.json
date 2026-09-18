@@ -1,0 +1,9 @@
+{
+  "asset": "app/assets/collection/art/I/finish_r38/nickel_roughness.png",
+  "sha256": "9f2b4d84a78596cf24688e754176965dbd7db1e9a802119c4ca93a8896a21e50",
+  "original": "production/I_refinement/part_a_mouth/material_r2/nickel_roughness.png",
+  "original_design": "production/I_refinement/part_a_mouth/material_r2/nickel_brushing.png",
+  "original_prompt": "production/I_refinement/part_a_mouth/material_r2/prompt.txt",
+  "source_tool": "built-in image_gen, existing asset reused",
+  "new_image_generation": false
+}

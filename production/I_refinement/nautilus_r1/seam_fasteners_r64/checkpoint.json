@@ -1,0 +1,27 @@
+{
+  "status": "active",
+  "reliable_body_source": "0ba13905c764f4420306f1539604574303cdbf42f78d0436f92f0fe35c7baaa0",
+  "candidates": [
+    {
+      "source": "blender/collection/I_nautilus_seam_fasteners_r64.blend",
+      "source_sha256": "bb7d0589e4ee031825fa9e8fdda65e3c48f227f7cb12d0cf968b8cae2d86b6d1",
+      "component_sha256": "2bb8239237ce2210eaab80d426b2ba90bbd49af0696a2f6034e13663dea39dd6",
+      "release_passed": false
+    },
+    {
+      "source": "blender/collection/I_nautilus_seam_fasteners_r64b.blend",
+      "source_sha256": "2441d501c5ceadd4f275a586d3b0fa4926193a7d5a293955cc33b6d83dda4059",
+      "component_sha256": "386a1c4d8456e6afa2cba6407f52d80c8127ade32004b67eded54a49c83b634c",
+      "release_passed": false
+    }
+  ],
+  "files": {
+    "blender/collection/build_i_seam_fasteners_r64.py": "c4615c6ffc08e752990cc7e14f1c74fa74c3ad984dcc3feda19095a6684e51f5",
+    "blender/collection/orient_i_seam_fasteners_r64b.py": "34a01055d0737486338136d2bdfc451b5e1abff5d72f02bc883760119cf69aa8",
+    "blender/collection/check_i_seam_release_r64.py": "0a372db128f626b1524b6f8d82c58c4ee82410e46acd62ca05e8c4e0e36aa95f",
+    "tests/collection/i_seam_fastener_r64_review.gd": "c9241224d86b54b4465882ebbeb2ccac96dbda53b183429c0436a59735c61c6a"
+  },
+  "main_app_updated": false,
+  "previous_goal_turn": "progress: authored 03 service animation and precision import correction",
+  "current_turn": "progress: real separable threaded seam fasteners and diagnosis of support/02-shell prerequisite; full release not achieved"
+}

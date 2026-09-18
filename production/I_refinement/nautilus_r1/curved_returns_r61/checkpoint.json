@@ -1,0 +1,23 @@
+{
+  "status": "active",
+  "source": "blender/collection/I_nautilus_front_return_r61.blend",
+  "source_sha256": "0ba13905c764f4420306f1539604574303cdbf42f78d0436f92f0fe35c7baaa0",
+  "component": "app/assets/collection/components/I_nautilus_front_return_r61.glb",
+  "component_sha256": "7fbc14774406908ffaa1bc7a71085fa04b559dcf4c47fd99142b781d8ca18b1d",
+  "files": {
+    "blender/collection/probe_i_front_cap_r61.py": "286d128c86eaa4cadcf794d3364f79fd85ad86334761b71ca55e8fc852b904b1",
+    "blender/collection/build_i_front_cap_r61.py": "18ced18f0a27352eb93616e2d064cbb4bded976a93f87c91d716efa9f5c79033",
+    "tools/geometry/build_i_planar_trim_r52.py": "781d31f1875685e290529706e5d863a73d4de5039481371d3443669f55bd2dd8",
+    "tools/geometry/export_i_nautilus_pose_reference.py": "3a6dc6de22d18eac69adec41385fdc45b1374c296ef9f0d0b380f7862924f539",
+    "tests/collection/i_front_return_r61_review.gd": "814b130b74f2728ec54f870379702e02297d5c491c70e331c98e6f72efc5b025",
+    "tests/collection/i_chamber_light_r40_qa.gd": "ef750f743eae1402c726b188698474a611d39f2894811815e0782318ea66b18b",
+    "app/assets/collection/models/I_nautilus_r59.json": "b37882d9a886eba76b528618e7b657ab2b2f3f159060702006161a4b765ab9f8",
+    "app/assets/collection/registry.json": "e43da22f56e32fa5626bff9f8f3c67ffd248bb4bb5633afd7524e66b20a782bc",
+    "tools/build_i_nautilus_manifest.py": "dd7d50287d1d5330bad3b2bd859404b4e3a46e3f81a5965655d19190f62602af"
+  },
+  "evidence": "review/I_refinement/nautilus_r1/curved_returns_r61",
+  "installed_app_updated": false,
+  "development_registry_updated": true,
+  "previous_goal_turn": "progress: light balance and actual score seam correction",
+  "scope": "Front end return only; side returns and whole model/art/performance remain incomplete. runtime_pose_witnesses added to report after generation to include actual new child in independent import check."
+}

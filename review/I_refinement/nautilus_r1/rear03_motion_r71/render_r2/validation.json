@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "media": "review/I_refinement/nautilus_r1/rear03_motion_r71/render_r2/rear03_release_r71_r2.mp4",
+  "sha256": "8ea393a9e5233b802726de9b866bd86bf568807d379e3ecc9aff5dbff2829b56",
+  "decoded_video": {
+    "codec_type": "video",
+    "width": 1400,
+    "height": 1100,
+    "r_frame_rate": "30/1",
+    "duration": "24.000000",
+    "nb_read_frames": "720"
+  },
+  "audio_tracks": 0,
+  "raw_first_last_pixels_equal": true,
+  "prepared_pose_restored": true,
+  "motion_source_sha256": "d7b59bde4d90fdcaa5b8fda16f832eae69eece2638babbe89ee34005011c367e",
+  "motion_asset_sha256": "8fcd4c4b3602164f0898629a4dad9e3339a43abbfbb76068e489dc64c30bb1fd",
+  "scope": "Actual revised-lighting 720-frame/24-second video, silent by design; complete local rear03 translation excursion and reversal/return. Does not include prior preparation, threaded rotation, full service, native App or final art acceptance."
+}

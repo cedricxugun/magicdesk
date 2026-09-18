@@ -1,0 +1,8 @@
+{
+  "image": "production/I_refinement/service_r7/split_cage_storyboard.png",
+  "sha256": "097fdb8d51259efb93c9a1593422c6358c1995e91099a0e1971e161726b6e92a",
+  "generator": "built-in image_gen",
+  "original": "/Users/cedric/.codex/generated_images/01a081b1-905f-7c82-a411-7499958dad6e/exec-67dcec32-de67-4391-8b33-981d648bba62.png",
+  "prompt": "production/I_refinement/service_r7/prompt.txt",
+  "scope": "Design storyboard; not a rendered app frame or precise dimension authority."
+}

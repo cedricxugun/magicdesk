@@ -1,0 +1,11 @@
+{
+  "tool": "built-in image_gen",
+  "image": "production/I_refinement/nautilus_r1/mouth_finish_r21/mouth_junction_close_open_r1.png",
+  "sha256": "4dcef806c760aa6607dd77a947980527bfd2500e3914cbf4da7237eef53345f2",
+  "prompt": "production/I_refinement/nautilus_r1/mouth_finish_r21/PROMPT.txt",
+  "references": [
+    "production/I_refinement/nautilus_r1/nautilus_states_centered_r2.png",
+    "review/I_refinement/nautilus_r1/linear_drives_r20/presentations/8b5c91f8/relation_rest.png"
+  ],
+  "use": "Mouth-junction craft reference: continuous porcelain to outlet, fixed lower cheek, complete raised-hood binding. Not metrology, exact source reconstruction or acceptance. Longer tines and invented fastener positions are not authoritative."
+}

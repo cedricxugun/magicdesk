@@ -1,0 +1,134 @@
+00:02.209  blend            | Read blend: "/Users/cedric/Desktop/magic desk/blender/collection/I_nautilus_port_edge_r68.blend"
+23:56:13 | INFO: Data are loaded, start creating Blender stuff
+23:56:13 | INFO: Blender create Mesh node BASE_FIXED_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh.001
+23:56:13 | INFO: Blender create Mesh node Button_Index
+23:56:13 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh
+23:56:13 | INFO: Blender create Mesh node Button_Index.001
+23:56:13 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh.003
+23:56:13 | INFO: Blender create Mesh node Button_Index.002
+23:56:13 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh.004
+23:56:13 | INFO: Blender create Mesh node Button_Index.003
+23:56:13 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh.002
+23:56:13 | INFO: Blender create Mesh node Button_Index.004
+23:56:13 | INFO: Blender create Mesh node BUTTON_00_CAP_Mesh.005
+23:56:13 | INFO: Blender create Mesh node Button_Index.005
+23:56:13 | INFO: Blender create Mesh node BUTTON_06_CAP_Mesh
+23:56:13 | INFO: Blender create Mesh node Button_6_Bezel_Mesh
+23:56:13 | INFO: Blender create Mesh node Button_6_Index
+23:56:13 | INFO: Blender create Mesh node Deck_Serial
+23:56:13 | INFO: Blender create Mesh node P_Actuator_00_Barrel_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Actuator_00_Rod_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Actuator_01_Barrel_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Actuator_01_Rod_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Actuator_02_Barrel_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Actuator_02_Rod_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Actuator_03_Barrel_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Actuator_03_Rod_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Actuator_04_Barrel_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Actuator_04_Rod_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Actuator_05_Barrel_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Actuator_05_Rod_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node Icosphere
+23:56:13 | INFO: Blender create Mesh node P_Solar_Lattice_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Gimbal_2_Ring_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Gimbal_1_Ring_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Inner_Trunnions_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Core_Bottom_Bearing_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Gimbal_0_Ring_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Middle_Trunnions_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Core_Support_Post_JoinedMesh
+23:56:13 | INFO: Blender create Mesh node P_Lower_Stator_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_00_BaseJoint_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_01_BaseJoint_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_02_BaseJoint_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_03_BaseJoint_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_04_BaseJoint_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_05_BaseJoint_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Socket_Crown_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Thermal_Valve_0_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Thermal_Valve_1_JoinedMesh_CompactFeedthrough
+23:56:14 | INFO: Blender create Mesh node P_Thermal_Valve_2_JoinedMesh_CompactFeedthrough
+23:56:14 | INFO: Blender create Mesh node P_Crown_Sector_00_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Inspection_Filament_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Inspection_Window_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_00_Enamel_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_00_HingeCap_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_00_Latch_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node Petal_00_InnerSkin_Mesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_00_RibFrame_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Crown_Sector_01_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_01_Enamel_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_01_HingeCap_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_01_Latch_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node Petal_01_InnerSkin_Mesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_01_RibFrame_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Crown_Sector_02_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_02_Enamel_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_02_HingeCap_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_02_Latch_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node Petal_02_InnerSkin_Mesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_02_RibFrame_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Crown_Sector_03_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_03_Enamel_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_03_HingeCap_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_03_Latch_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node Petal_03_InnerSkin_Mesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_03_RibFrame_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Crown_Sector_04_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_04_Enamel_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_04_HingeCap_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_04_Latch_JoinedMesh
+23:56:14 | INFO: Blender create Mesh node Petal_04_InnerSkin_Mesh
+23:56:14 | INFO: Blender create Mesh node P_Petal_04_RibFrame_JoinedMesh
+23:56:15 | INFO: Blender create Mesh node P_Crown_Sector_05_JoinedMesh
+23:56:15 | INFO: Blender create Mesh node P_Petal_05_Enamel_JoinedMesh
+23:56:15 | INFO: Blender create Mesh node P_Petal_05_HingeCap_JoinedMesh
+23:56:15 | INFO: Blender create Mesh node P_Petal_05_Latch_JoinedMesh
+23:56:15 | INFO: Blender create Mesh node Petal_05_InnerSkin_Mesh
+23:56:15 | INFO: Blender create Mesh node P_Petal_05_RibFrame_JoinedMesh
+23:56:15 | INFO: Blender create Mesh node TURNTABLE_JoinedMesh
+23:56:15 | INFO: glTF import finished in 2.11s
+REAR03_PHASE 0 0.0 []
+REAR03_PHASE 0 0.02 []
+REAR03_PHASE 0 0.05 []
+REAR03_PHASE 0 0.1 []
+REAR03_PHASE 0 0.2 []
+REAR03_PHASE 0 0.35 []
+REAR03_PHASE 0 0.5 [('rear_bolt_-1 / cassette03', 179), ('rear_bolt_1 / cassette03', 509)]
+REAR03_PHASE 0 0.7 [('rear_bolt_-1 / cassette03', 1150), ('rear_bolt_1 / cassette03', 1060)]
+REAR03_PHASE 0 0.85 [('rear_bolt_-1 / cassette03', 969), ('rear_bolt_1 / cassette03', 975)]
+REAR03_PHASE 0 1.0 [('rear_bolt_-1 / cassette03', 1280), ('rear_bolt_1 / cassette03', 680)]
+REAR03_PHASE 1 0.0 [('rear_bolt_-1 / cassette03', 1280), ('rear_bolt_1 / cassette03', 680)]
+REAR03_PHASE 1 0.02 [('rear_bolt_-1 / cassette03', 1231), ('rear_bolt_1 / cassette03', 1060)]
+REAR03_PHASE 1 0.05 [('rear_bolt_-1 / cassette03', 1265), ('rear_bolt_1 / cassette03', 1156)]
+REAR03_PHASE 1 0.1 [('rear_bolt_-1 / cassette03', 1010), ('rear_bolt_1 / cassette03', 1160)]
+REAR03_PHASE 1 0.2 [('rear_bolt_1 / cassette03', 290)]
+REAR03_PHASE 1 0.35 []
+REAR03_PHASE 1 0.5 []
+REAR03_PHASE 1 0.7 []
+REAR03_PHASE 1 0.85 []
+REAR03_PHASE 1 1.0 []
+REAR03_PHASE 2 0.0 []
+REAR03_PHASE 2 0.02 []
+REAR03_PHASE 2 0.05 []
+REAR03_PHASE 2 0.1 []
+REAR03_PHASE 2 0.2 []
+REAR03_PHASE 2 0.35 []
+REAR03_PHASE 2 0.5 []
+REAR03_PHASE 2 0.7 []
+REAR03_PHASE 2 0.85 []
+REAR03_PHASE 2 1.0 []
+REAR03_PHASE 3 0.0 []
+REAR03_PHASE 3 0.02 [('rear_shell03 / fixed', 34)]
+REAR03_PHASE 3 0.05 [('rear_shell03 / fixed', 98)]
+REAR03_PHASE 3 0.1 [('rear_bolt_1 / rear_shell03', 130)]
+REAR03_PHASE 3 0.2 [('rear_bolt_-1 / rear_shell03', 206)]
+REAR03_PHASE 3 0.35 []
+REAR03_PHASE 3 0.5 []
+REAR03_PHASE 3 0.7 []
+REAR03_PHASE 3 0.85 []
+REAR03_PHASE 3 1.0 []
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

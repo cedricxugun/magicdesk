@@ -1,0 +1,12 @@
+00:03.092  blend            | Read blend: "/Users/cedric/Desktop/magic desk/blender/collection/I_nautilus_seam_release_r73.blend"
+Traceback (most recent call last):
+  File "/Users/cedric/Desktop/magic desk/blender/collection/check_i_thread_interlock_r73.py", line 23, in <module>
+    r={'source_sha256':s['source_sha256'],'passed':passed,'results':results,'scope':'Two actual male/female meshes, 101 helical positions each, closed mating and deliberate axial-only / twist-only interference witnesses. Not whole-assembly clearance, continuous collision, torque/load or final art acceptance.'};(OUT/'thread_interlock.json').write_text(json.dumps(r,indent=2)+'\n');print('THREAD_INTERLOCK_RESULT',passed,[(x['sign'],sum(y['contacts']for y in x['helical_samples']),x['quarter_pitch_axial_only_contacts'],x['quarter_turn_only_contacts'])for x in results]);assert passed
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^
+AssertionError
+THREAD_INTERLOCK_RESULT False [(-1, 99262, 5334, 5606), (1, 99282, 5334, 5644)]
+
+Error: script failed, file: 'blender/collection/check_i_thread_interlock_r73.py', exiting.
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:30:33)
+
+Blender quit

@@ -1,0 +1,31 @@
+{
+  "method": "Original offline modal synthesis from listed partials and deterministic transient; no third-party recording.",
+  "sample_rate": 48000,
+  "partials_hz": [
+    196.0,
+    392.4,
+    537.2,
+    783.6,
+    1051.3,
+    1452.7
+  ],
+  "files": [
+    {
+      "file": "app/assets/collection/art/I/echo_r2/send.wav",
+      "sha256": "ad20171863327647ab8ec3a624fa948c0b7fd563582306c6de5c54c5da0aa784",
+      "duration": 1.6,
+      "peak_linear": 0.24,
+      "rms": 0.049852786836397184,
+      "dc": 1.951019626080693e-05
+    },
+    {
+      "file": "app/assets/collection/art/I/echo_r2/return.wav",
+      "sha256": "a47bc1323a74369948b6637abb98f232d3162c9a83b86ede8524c0029125c489",
+      "duration": 1.6,
+      "peak_linear": 0.18982075590062703,
+      "rms": 0.04004456073171419,
+      "dc": -4.766888211234895e-06
+    }
+  ],
+  "scope": "Candidate mechanical acoustic cues. PCM/level checks are technical evidence, not listening or final audio acceptance."
+}

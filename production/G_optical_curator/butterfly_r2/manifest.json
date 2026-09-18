@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Design target and independent component work in progress, not App integration or acceptance",
+  "references": [
+    "production/G_archive/images/G_six_specimens.png",
+    "review/G_archive/reference_rework/butterfly_closeup.png"
+  ],
+  "generated_image": "production/G_optical_curator/butterfly_r2/structure_and_motion.png",
+  "prompt": "production/G_optical_curator/butterfly_r2/prompt.txt",
+  "image_sha256": "73eda505c3de3cfd520ca0e58bacdd6eaf59c6f676d45812ea2f00d42edc2db4",
+  "implementation": "blender/collection/build_butterfly_component.py",
+  "source": "blender/collection/G_butterfly_r2.blend",
+  "runtime_component": "app/assets/collection/components/G_butterfly_r2.glb",
+  "metadata_coordinate_system": "Blender Z-up; no Godot driver adapter yet",
+  "main_app_changed": false,
+  "latest_geometry_review": "review/G_optical_curator/butterfly_r2/rear_and_mount_report.json",
+  "source_sha256": "984d673aadfde9a2ebe8134b47eda9c2e9529eb4ddba436ace13337e73649ac3",
+  "component_sha256": "2f4e5949da4494c10ce985bcb2faaf75606c9273234e6984bda199b95750b118"
+}

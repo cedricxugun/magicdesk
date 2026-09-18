@@ -67,6 +67,9 @@ var crop_rect := Rect2i()
 var desktop_anchor := Vector2i.ZERO
 var canonical_size := Vector2i(1920,1400)
 var reference_focal_pixels := 1500.0
+var desktop_unit_focal := 1500.0
+var desktop_base_points := 0.0
+const DesktopScale=preload("res://desktop_scale.gd")
 var native_mode := false
 var native_port := 0
 var native_cursor := Vector2(-10000,-10000)
@@ -136,7 +139,9 @@ func _ready() -> void:
 	if usable.size.x<=0 or usable.size.y<=0:usable=Rect2i(0,0,1920,1040)
 	var wh := mini(940, int(usable.size.y * 0.88))
 	if mac_desktop:
-		canonical_size = Vector2i(mini(1920,usable.size.x),mini(1400,usable.size.y))
+		# Retina render pixels and apparent desktop points are separate units.
+		# Keep enough transparent canvas for the enlarged mechanisms and plaques.
+		canonical_size = Vector2i(mini(2048,usable.size.x),usable.size.y)
 	# Reserve enough horizontal desktop space for the open mechanism at its original scale.
 	get_window().size = Vector2i(mini(int(wh * 1.70),int(usable.size.x*.94)), wh)
 	get_window().position = usable.position + (usable.size - get_window().size) / 2
@@ -147,7 +152,7 @@ func _ready() -> void:
 	render_view.size=canonical_size
 	render_view.transparent_bg=true
 	render_view.own_world_3d=true
-	render_view.msaa_3d=Viewport.MSAA_4X
+	render_view.msaa_3d=Viewport.MSAA_2X if mac_desktop and DisplayServer.screen_get_scale()>=2.0 else Viewport.MSAA_4X
 	render_view.use_taa=false
 	render_view.scaling_3d_scale=1.0
 	render_view.render_target_update_mode=SubViewport.UPDATE_ALWAYS
@@ -219,6 +224,7 @@ func _ready() -> void:
 	effects.setup(self)
 	_apply_mechanism()
 	_load_settings()
+	DesktopScale.apply(self,true)
 	_fit_window(false)
 	await get_tree().physics_frame
 	# Keep the native window region stable. Reassigning it during animation causes
@@ -233,6 +239,10 @@ func _ready() -> void:
 		else:message("装置档案未能加载，请重新打开完整的 MagicDesk App。",12)
 	if native_mode and native_port>0:
 		native_bridge=Node.new();native_bridge.set_script(load("res://native_bridge.gd"));add_child(native_bridge);native_bridge.setup(self,native_port)
+
+	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("--review-profile="):
+			var profiler:Node=load("res://review_profiler.gd").new();add_child(profiler);profiler.setup(self,arg.trim_prefix("--review-profile="))
 
 func _collect_meshes(node: Node) -> void:
 	if node is MeshInstance3D:
@@ -282,6 +292,7 @@ func _make_studio() -> void:
 	camera.keep_aspect = Camera3D.KEEP_HEIGHT
 	camera.position = Vector3(0.65, 3.95, 7.65)
 	camera.look_at(Vector3(0, 1.92, 0))
+	if mac_desktop:camera.position+=camera.basis.y*.36
 	camera.near = 0.05
 	camera.far = 60.0
 	camera.current = true
@@ -420,6 +431,11 @@ func _make_ui() -> void:
 	menu.add_check_item("静音",21)
 	menu.add_check_item("始终置顶",22)
 	menu.add_item("重置视角与位置",23)
+	if mac_desktop:
+		menu.add_separator()
+		menu.add_item("放大摆件  ⌘+",35)
+		menu.add_item("缩小摆件  ⌘−",36)
+		menu.add_item("恢复默认大小",37)
 	menu.add_separator()
 	menu.add_item("退出",99)
 	menu.id_pressed.connect(_menu_action)
@@ -442,7 +458,7 @@ func _make_audio() -> void:
 		hum.stream.loop_end = 44100
 	hum.volume_db = -40
 	add_child(hum)
-	hum.play()
+	if not get_tree().has_meta("collection_no_audio"):hum.play()
 
 func sound(name_string: String, pitch := 1.0) -> void:
 	if muted or test_mode: return
@@ -694,17 +710,25 @@ func _update_hover() -> void:
 		var anchor:Vector3=collection.action_anchor(hover) if collection and collection.active_id!="B" else buttons[hover].mount.global_position
 		var pt := camera.unproject_position(anchor)
 		tooltip.position = Vector2(clampf(pt.x-tooltip.size.x*.5,crop_rect.position.x+8,crop_rect.end.x-tooltip.size.x-8),pt.y-tooltip.size.y-25)
-	if not native_mode:Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND if hover >= 0 else Input.CURSOR_ARROW)
+	if not native_mode:Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND if hover >= 0 or (collection and collection.rotation_hologram and collection.rotation_hologram.hover) else Input.CURSOR_ARROW)
 
 func _input(event: InputEvent) -> void:
 	if native_mode:return
+	if mac_desktop and event is InputEventKey and event.pressed and not event.echo and event.meta_pressed:
+		if event.keycode in [KEY_PLUS,KEY_EQUAL,KEY_MINUS]:
+			_set_desktop_zoom(zoom+(-.10 if event.keycode==KEY_MINUS else .10))
+			get_viewport().set_input_as_handled();return
+	if mac_desktop and event is InputEventMouseButton and event.pressed and event.meta_pressed:
+		if event.button_index in [MOUSE_BUTTON_WHEEL_UP,MOUSE_BUTTON_WHEEL_DOWN]:
+			_set_desktop_zoom(zoom+(.05 if event.button_index==MOUSE_BUTTON_WHEEL_UP else -.05))
+			get_viewport().set_input_as_handled();return
 	if collection and collection.consume_input(event):
 		get_viewport().set_input_as_handled();return
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.keycode >= KEY_1 and event.keycode <= KEY_7: activate(event.keycode-KEY_1)
 		if event.keycode == KEY_ESCAPE: _show_menu()
 		if event.keycode == KEY_SPACE:
-			if collection:collection.toggle_rotation()
+			if collection:collection.toggle_display_rotation()
 			else:activate(5)
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_RIGHT and event.pressed: _show_menu(); return
@@ -735,18 +759,32 @@ func _show_menu() -> void:
 	menu.popup()
 
 func _menu_action(id: int) -> void:
-	if id==24 and collection:collection.toggle_rotation()
+	if id in [35,36,37]:
+		_set_desktop_zoom(1.0 if id==37 else zoom+(.10 if id==35 else -.10));return
+	if id==24 and collection:collection.toggle_display_rotation()
 	if id==25 and collection:collection.toggle_selector()
 	if id >= 10 and id <= 16: activate(id-10)
 	if id == 21: muted = not muted; _save_settings()
 	if id == 22: get_window().always_on_top = not get_window().always_on_top; _save_settings()
 	if id == 23:
 		zoom = 1.0
+		DesktopScale.apply(self)
 		angle = 0.0
 		var usable := DisplayServer.screen_get_usable_rect()
 		desktop_anchor=usable.position+usable.size/2-canonical_size/2
 		get_window().position=desktop_anchor+crop_rect.position
+		_save_settings()
 	if id == 99: _quit()
+
+func _set_desktop_zoom(value:float)->void:
+	if not mac_desktop:return
+	if collection and collection.control_driver:collection.control_driver.cancel()
+	if collection and collection.rotation_hologram:collection.rotation_hologram.cancel()
+	zoom=clampf(value,.70,1.10)
+	DesktopScale.apply(self)
+	_fit_window(false)
+	_save_settings()
+	message("摆件大小 %d%% · ⌘滚轮可调节"%roundi(zoom*100.0),1.6)
 
 func _update_hit_region() -> void:
 	if native_mode:return
@@ -756,6 +794,8 @@ func _update_hit_region() -> void:
 	var query:=PhysicsRayQueryParameters3D.create(from,from+camera.project_ray_normal(cursor)*50,31)
 	var on_model:=not get_world_3d().direct_space_state.intersect_ray(query).is_empty()
 	var on_ui:=tooltip.visible and tooltip.get_global_rect().has_point(cursor)
+	if collection and collection.rotation_hologram:
+		on_ui=on_ui or collection.rotation_hologram.contains(cursor) or collection.rotation_hologram.held
 	var should_pass := not on_model and not on_ui and drag_kind==0 and pressed<0 and not menu.visible
 	if should_pass != passthrough_active:
 		passthrough_active=should_pass
@@ -845,10 +885,11 @@ func _live_commands() -> void:
 	if cmd.has("quit"): _quit()
 
 func _save_settings() -> void:
-	if test_mode or demo_mode or not control_path.is_empty(): return
+	if test_mode or demo_mode or not control_path.is_empty() or get_tree().has_meta("collection_no_save"): return
 	var cf := ConfigFile.new()
 	cf.set_value("desktop","muted",muted)
 	cf.set_value("desktop","top",get_window().always_on_top)
+	cf.set_value("desktop","display_zoom",zoom)
 	cf.save("user://settings.cfg")
 
 func _load_settings() -> void:
@@ -856,6 +897,9 @@ func _load_settings() -> void:
 	if cf.load("user://settings.cfg") == OK and not test_mode and not demo_mode:
 		muted = cf.get_value("desktop","muted",false)
 		get_window().always_on_top = cf.get_value("desktop","top",false)
+		var saved_zoom:Variant=cf.get_value("desktop","display_zoom",1.0)
+		if saved_zoom is float or saved_zoom is int:
+			zoom=clampf(float(saved_zoom),.70,1.10) if is_finite(float(saved_zoom)) else 1.0
 
 func _quit() -> void:
 	begin_shutdown()
