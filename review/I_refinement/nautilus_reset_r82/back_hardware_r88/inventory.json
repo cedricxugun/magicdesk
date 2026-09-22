@@ -1,0 +1,94 @@
+{
+  "source_sha256": "12add633e5550d3c6a9cd9059f01a5b476bdc9c948e52b02f2bf02573f14d4e5",
+  "rear_guide_flanges": [],
+  "new_fixed_parts": 50,
+  "legacy_targets": 50,
+  "contacts": [
+    {
+      "new": "I85_SupportA_2_1",
+      "existing": "R82_Fixed_Rear_Keel",
+      "triangle_pairs": 32,
+      "new_triangle_bounds": [
+        [
+          0.04243612289428711,
+          0.041035305708646774,
+          1.5069348812103271
+        ],
+        [
+          0.04551128298044205,
+          0.04315442219376564,
+          1.5108566284179688
+        ]
+      ]
+    },
+    {
+      "new": "I85_SupportA_5_-1",
+      "existing": "R82_Fixed_Rear_Keel",
+      "triangle_pairs": 34,
+      "new_triangle_bounds": [
+        [
+          0.25649717450141907,
+          0.08312401920557022,
+          2.7860403060913086
+        ],
+        [
+          0.26087063550949097,
+          0.09162730723619461,
+          2.7882609367370605
+        ]
+      ]
+    },
+    {
+      "new": "I85_SupportA_5_1",
+      "existing": "R82_Fixed_Rear_Keel",
+      "triangle_pairs": 40,
+      "new_triangle_bounds": [
+        [
+          0.06496086716651917,
+          0.08528417348861694,
+          2.793149948120117
+        ],
+        [
+          0.08979780226945877,
+          0.09547875076532364,
+          2.821211099624634
+        ]
+      ]
+    },
+    {
+      "new": "I85_SupportA_6_-1",
+      "existing": "R82_Fixed_Rear_Keel",
+      "triangle_pairs": 42,
+      "new_triangle_bounds": [
+        [
+          -0.8863375782966614,
+          0.07844728231430054,
+          2.193000078201294
+        ],
+        [
+          -0.8437456488609314,
+          0.09168174117803574,
+          2.2057993412017822
+        ]
+      ]
+    },
+    {
+      "new": "I85_SupportA_6_1",
+      "existing": "R82_Fixed_Rear_Keel",
+      "triangle_pairs": 71,
+      "new_triangle_bounds": [
+        [
+          -0.9641745090484619,
+          0.029884083196520805,
+          1.9383876323699951
+        ],
+        [
+          -0.9432672262191772,
+          0.05191474407911301,
+          2.0115716457366943
+        ]
+      ]
+    }
+  ],
+  "scope": "Read-only closed pose of new fixed supports/shoes/guides vs selected existing rear structure. Contacts include intentional joining; require geometric classification. Not a whole-assembly pass."
+}

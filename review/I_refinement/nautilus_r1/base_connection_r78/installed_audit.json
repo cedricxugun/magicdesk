@@ -1,0 +1,242 @@
+{
+  "source_sha256": "31a7b616db0f0fab0e9c42ecbb3077b1628292b4bba576e6411b1ef098c7f7df",
+  "state": "ordinary installed, source frame 1, no .45 lift or parked service parts",
+  "seats": [
+    {
+      "id": 1,
+      "gasket_bounds": [
+        [
+          -0.22499999403953552,
+          0.054999999701976776,
+          0.8269858956336975
+        ],
+        [
+          -0.13500000536441803,
+          0.14499999582767487,
+          0.8686187267303467
+        ]
+      ],
+      "seat_bounds": [
+        [
+          -0.22499999403953552,
+          0.054999999701976776,
+          0.7965002655982971
+        ],
+        [
+          -0.13500000536441803,
+          0.14499999582767487,
+          0.8626186847686768
+        ]
+      ],
+      "surface_contacts": 0,
+      "contact_owners": {},
+      "top_face_centroid_samples": 98,
+      "min_nearest_gap": 0.00016634041094221175,
+      "max_nearest_gap": 0.00019629986491054296,
+      "nearest_owners": {
+        "IN1_PorcelainPanel_02": 98
+      }
+    },
+    {
+      "id": 2,
+      "gasket_bounds": [
+        [
+          0.13500000536441803,
+          -0.004999999888241291,
+          0.8214033246040344
+        ],
+        [
+          0.22499999403953552,
+          0.08499999344348907,
+          0.8489038944244385
+        ]
+      ],
+      "seat_bounds": [
+        [
+          0.13500000536441803,
+          -0.004999999888241291,
+          0.7965002655982971
+        ],
+        [
+          0.22499999403953552,
+          0.08499999344348907,
+          0.8429038524627686
+        ]
+      ],
+      "surface_contacts": 0,
+      "contact_owners": {},
+      "top_face_centroid_samples": 94,
+      "min_nearest_gap": 0.0001893096778076142,
+      "max_nearest_gap": 0.00019820648594759405,
+      "nearest_owners": {
+        "IN1_PorcelainPanel_02": 94
+      }
+    },
+    {
+      "id": 3,
+      "gasket_bounds": [
+        [
+          0.125,
+          0.29500001668930054,
+          0.8598260879516602
+        ],
+        [
+          0.2150000035762787,
+          0.38499999046325684,
+          0.8840216994285583
+        ]
+      ],
+      "seat_bounds": [
+        [
+          0.125,
+          0.29500001668930054,
+          0.7965002655982971
+        ],
+        [
+          0.2150000035762787,
+          0.38499999046325684,
+          0.8780216574668884
+        ]
+      ],
+      "surface_contacts": 0,
+      "contact_owners": {},
+      "top_face_centroid_samples": 90,
+      "min_nearest_gap": 0.0001913923624670133,
+      "max_nearest_gap": 0.0001987965079024434,
+      "nearest_owners": {
+        "IN1_FixedRearShell_03": 90
+      }
+    },
+    {
+      "id": 4,
+      "gasket_bounds": [
+        [
+          -0.24500000476837158,
+          0.2750000059604645,
+          0.8824873566627502
+        ],
+        [
+          -0.1550000011920929,
+          0.36500000953674316,
+          0.9545935988426208
+        ]
+      ],
+      "seat_bounds": [
+        [
+          -0.24500000476837158,
+          0.2750000059604645,
+          0.7965002655982971
+        ],
+        [
+          -0.1550000011920929,
+          0.36500000953674316,
+          0.9485935568809509
+        ]
+      ],
+      "surface_contacts": 0,
+      "contact_owners": {},
+      "top_face_centroid_samples": 94,
+      "min_nearest_gap": 0.00015000533312559128,
+      "max_nearest_gap": 0.00017107960593421012,
+      "nearest_owners": {
+        "IN1_PorcelainPanel_02": 94
+      }
+    }
+  ],
+  "bounds": {
+    "IN1_DeckFoot": [
+      [
+        -0.5300000309944153,
+        -0.48000001907348633,
+        0.5625002384185791
+      ],
+      [
+        0.6899999976158142,
+        0.7400000095367432,
+        0.6675002574920654
+      ]
+    ],
+    "IN1_LowSaddle": [
+      [
+        -0.3999999761581421,
+        -0.3499999940395355,
+        0.6675002574920654
+      ],
+      [
+        0.5600000023841858,
+        0.6100000143051147,
+        0.7975002527236938
+      ]
+    ],
+    "IN3_ContinuousThroat": [
+      [
+        -0.7487322092056274,
+        -0.3295043110847473,
+        1.0401450395584106
+      ],
+      [
+        0.9499716758728027,
+        0.6499788761138916,
+        2.879847764968872
+      ]
+    ]
+  },
+  "support_parts": [
+    "IN1_DeckFoot",
+    "IN1_FittedSaddleGasket_1",
+    "IN1_FittedSaddleGasket_2",
+    "IN1_FittedSaddleGasket_3",
+    "IN1_FittedSaddleGasket_4",
+    "IN1_FittedSaddleSeat_1",
+    "IN1_FittedSaddleSeat_2",
+    "IN1_FittedSaddleSeat_3",
+    "IN1_FittedSaddleSeat_4",
+    "IN1_LowSaddle",
+    "IS18_Leg01_BronzeInlay_0",
+    "IS18_Leg01_BronzeInlay_1",
+    "IS18_Leg01_DeckBolt_-1",
+    "IS18_Leg01_DeckBolt_1",
+    "IS18_Leg01_DeckWasher_-1",
+    "IS18_Leg01_DeckWasher_1",
+    "IS18_Leg01_FootBush_-1",
+    "IS18_Leg01_FootBush_1",
+    "IS18_Leg01_FootPin",
+    "IS18_Leg01_FootPinWasher_-1",
+    "IS18_Leg01_FootPinWasher_1",
+    "IS18_Leg01_FormedBody",
+    "IS18_Leg01_LowerThrust_-1",
+    "IS18_Leg01_LowerThrust_1",
+    "IS18_Leg01_PortLiner",
+    "IS18_Leg01_PortSeal",
+    "IS18_Leg01_FormedShoe",
+    "IS18_Leg01_FormedShoe_Gasket",
+    "IS18_Leg01_UpperThrust_-1",
+    "IS18_Leg01_UpperThrust_1",
+    "IS18_Leg02_BronzeInlay_0",
+    "IS18_Leg02_BronzeInlay_1",
+    "IS18_Leg02_DeckBolt_-1",
+    "IS18_Leg02_DeckBolt_1",
+    "IS18_Leg02_DeckWasher_-1",
+    "IS18_Leg02_DeckWasher_1",
+    "IS18_Leg02_FootBush_-1",
+    "IS18_Leg02_FootBush_1",
+    "IS18_Leg02_FootPin",
+    "IS18_Leg02_FootPinWasher_-1",
+    "IS18_Leg02_FootPinWasher_1",
+    "IS18_Leg02_FormedBody",
+    "IS18_Leg02_LowerThrust_-1",
+    "IS18_Leg02_LowerThrust_1",
+    "IS18_Leg02_PortLiner",
+    "IS18_Leg02_PortSeal",
+    "IS18_Leg02_FormedShoe",
+    "IS18_Leg02_FormedShoe_Gasket",
+    "IS18_Leg02_UpperThrust_-1",
+    "IS18_Leg02_UpperThrust_1"
+  ],
+  "fixed_panels": [
+    "IN1_PorcelainPanel_01",
+    "IN1_PorcelainPanel_02",
+    "IN1_PorcelainPanel_06"
+  ],
+  "scope": "Surface fit observations only. Touching a shell does not certify a load-bearing joint or locking/retention. Source construction explicitly labels the original saddle as a shape-study interface."
+}

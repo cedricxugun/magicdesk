@@ -1,0 +1,67 @@
+{
+  "component_sha256": "16fc9b825dd173df46f4a74dfc275cda43aa4b7811840f5f1585bc6debb5bfee",
+  "fixed_dock_meshes": 39,
+  "fixed_dock_transform_check": true,
+  "fps": 30,
+  "frames": 420,
+  "samples": [
+    {
+      "frame": 0,
+      "opening": 0.0
+    },
+    {
+      "frame": 30,
+      "opening": 0.0
+    },
+    {
+      "frame": 60,
+      "opening": 0.0
+    },
+    {
+      "frame": 90,
+      "opening": 0.15625
+    },
+    {
+      "frame": 120,
+      "opening": 0.5
+    },
+    {
+      "frame": 150,
+      "opening": 0.84375
+    },
+    {
+      "frame": 180,
+      "opening": 1.0
+    },
+    {
+      "frame": 210,
+      "opening": 1.0
+    },
+    {
+      "frame": 240,
+      "opening": 1.0
+    },
+    {
+      "frame": 270,
+      "opening": 0.84375
+    },
+    {
+      "frame": 300,
+      "opening": 0.5
+    },
+    {
+      "frame": 330,
+      "opening": 0.15625
+    },
+    {
+      "frame": 360,
+      "opening": 0.0
+    },
+    {
+      "frame": 390,
+      "opening": 0.0
+    }
+  ],
+  "scope": "Offline real-source closed/open/closed demonstration at normal playback speed. No service release, audio or native performance claim.",
+  "source_sha256": "6e365b7932d94754a2d0b7f31abc242800defb608bd31735900aedffec8087be"
+}

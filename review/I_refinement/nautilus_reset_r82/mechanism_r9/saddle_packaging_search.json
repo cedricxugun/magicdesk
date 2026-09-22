@@ -1,0 +1,12 @@
+{
+  "scope": "300 sampled poses; all six ceramics versus complete moved front bearing stack; ceramic-peer pairs also checked. Not a continuous-time or all-internals proof.",
+  "frame_samples": 300,
+  "results": [
+    {
+      "delta_y": 0.15,
+      "conflicts": []
+    }
+  ],
+  "selected_delta_y": 0.15,
+  "peer_contacts": []
+}

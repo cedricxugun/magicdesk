@@ -1,0 +1,63 @@
+{
+  "angle_range": [
+    -0.3,
+    0.65
+  ],
+  "samples": [
+    {
+      "z_range": [
+        0.245,
+        0.27
+      ],
+      "maximum_radius": 0.5619739862491796,
+      "owner": "IAM_GuardToRearStandoff_0075",
+      "frame": 1
+    },
+    {
+      "z_range": [
+        0.27,
+        0.3
+      ],
+      "maximum_radius": 0.6764110668076941,
+      "owner": "IAM_TongueSpoolFlange.001",
+      "frame": 145
+    },
+    {
+      "z_range": [
+        0.3,
+        0.34
+      ],
+      "maximum_radius": 0.6764110668076941,
+      "owner": "IAM_TongueSpoolFlange.001",
+      "frame": 145
+    },
+    {
+      "z_range": [
+        0.34,
+        0.38
+      ],
+      "maximum_radius": 0.6764110668076941,
+      "owner": "IAM_TongueSpoolFlange.001",
+      "frame": 145
+    },
+    {
+      "z_range": [
+        0.38,
+        0.42
+      ],
+      "maximum_radius": 0.5670000777190844,
+      "owner": "IAM_DiaphragmFixedSeat_0073",
+      "frame": 1
+    },
+    {
+      "z_range": [
+        0.42,
+        0.45
+      ],
+      "maximum_radius": 0.5670000777190844,
+      "owner": "IAM_DiaphragmFixedSeat_0073",
+      "frame": 1
+    }
+  ],
+  "scope": "Conservative triangle angular/Z-bounds on actual physical core through 12 source poses; excludes projection meshes. Radius bounds use complete triangles, not isolated vertices."
+}

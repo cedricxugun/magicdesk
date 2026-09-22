@@ -1,0 +1,2246 @@
+{
+  "source": "blender/collection/I_r88_forged_supports_r4.blend",
+  "source_sha256": "5825d6ba5e34526a3cea4e9b0f818d619f006382fb4ccd2a606c9e329210d35b",
+  "body_parent": "blender/collection/I_nautilus_reset_r82_mechanism_r9.blend",
+  "body_parent_sha256": "16248c30cf082b54c4fdb6b9507eed354daebde1638ed916d65ddcd97031ed8a",
+  "core_source": "blender/collection/I_r82_acoustic_optics_r2.blend",
+  "core_component": "app/assets/collection/components/I_r82_acoustic_optics_r2.glb",
+  "core_component_sha256": "1f70b619ae3959bb29f550a7ce8b8ee5e54d3ff511f8f07a955b1caac100f105",
+  "placement": {
+    "matrix_blender": [
+      [
+        -0.5407212972640991,
+        0.06622067838907242,
+        -0.07573202252388,
+        -0.5368849635124207
+      ],
+      [
+        -0.10060077905654907,
+        -0.35593095421791077,
+        0.407053679227829,
+        -0.4177970588207245
+      ],
+      [
+        -4.0978194171259474e-09,
+        0.41403862833976746,
+        0.36203867197036743,
+        1.46467125415802
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "scale": 0.55,
+    "score_center_world": [
+      -0.532754123210907,
+      -0.7300000190734863,
+      1.4699236154556274
+    ],
+    "score_focus_world": [
+      -0.5356941819190979,
+      -0.7363526821136475,
+      1.4699236154556274
+    ],
+    "world_width": 0.84,
+    "world_height": 0.504,
+    "reader_normal_world": [
+      -0.42000919580459595,
+      -0.9075199365615845,
+      0.0
+    ],
+    "reason": "Separate physical core diameter from original score legibility. Uniform cartridge scale includes installation wall allowance; projection keeps .84 x .504 world area."
+  },
+  "retained_ceramic_and_base_meshes": 23,
+  "retained_hashes": {
+    "BASE_FIXED_DisplayMesh": "6880310e2a91b522210e61fe018cf651ed6a81c25d82c24b10b1fa570c14e9de",
+    "BUTTON_00_CAP": "4357c2167bbb366e103ca3b91cf14cd78057d40ada50325895c54caa0250cbe6",
+    "BUTTON_01_CAP": "0cf44362e95a0ea3fecbf8d3107a0ac6f44e860fb28decf58f9544b1eb01dbfa",
+    "BUTTON_02_CAP": "7a43194d36600c9ddb76e2026edf90abd45d980539b6f998999a052982a25461",
+    "BUTTON_03_CAP": "14ec1a4afc812d1d8d82457b8d0eb26ddf2cd181072e4c61bd46c68d52150ec0",
+    "BUTTON_04_CAP": "a1e3a26cdb7b1c2523b8428aa4bd99a6e12e0a84f6f8ccdab55e83eb638999d2",
+    "BUTTON_05_CAP": "eef23c29c72646fa86414b6d967f0a19780ed126470d9628d6ee1c10930882ae",
+    "BUTTON_06_CAP": "80ed7bbe4f26c4748843a2072c43ef2034fc3928e979dca60aa5f510991c9066",
+    "BUTTON_06_FIXED": "d2c57996e86feb3f7c7008563444698e4a6181a7a3d5fc680cfb29b88ebbf880",
+    "Button_6_Index": "32a242fd3700d7e4780866a5a5fde68400e58316812a24e2875c868ba2a2c6a8",
+    "Button_Index": "5ac5883de03653c6334587b0a2757a8f4977c058f18618fe14ab7a81aebc628e",
+    "Button_Index.001": "24864ce910a108bc0c719992db8ee51de4986d896aa7e0c2870c644f43f8b508",
+    "Button_Index.002": "e1ffeafc12faf0d5ce1b28cf81317fbd7e96b4d7d6f0a39461d5e79b36a6c1b1",
+    "Button_Index.003": "b2ccc4f2a51ddb7ebe37a6609ea38c1fa373f87f7ae79ff5e5add97cd5eb65aa",
+    "Button_Index.004": "964da5faa3bfd17be7109afcd59f9ecb360173b9e15b295b466bbc3a58acb067",
+    "Button_Index.005": "a232961f3edbe3adc28173db151ffb851460d4aa723702b235947ec084edde6b",
+    "Deck_Serial": "d5bd5e5e56f1216f3365697545e4e093836c2ec7dd9a4492f4f8b94ec4f29042",
+    "R82_Porcelain_01": "ede6a5df596353720f61e6c5a50fdb36f97fd8a2a4b145629f2cc3468a1f22f9",
+    "R82_Porcelain_02": "caea7fb8964c82c50f0b9b95baf3a2f6aa10da591468d38e14c9a34936678ca1",
+    "R82_Porcelain_03": "75b31c69db9fb91932e44eb1c6bb09890ee4567e470c8c48c5529cb0aa42b111",
+    "R82_Porcelain_04": "184aeb9521a59a8d30a32361a662e3ca6e607c081bd89e6f3b48bcf4bd0a9aab",
+    "R82_Porcelain_05": "36fe1d3010d2708aad5b7db10f37ad788b10b6d0236167733f64c903d3e250c3",
+    "R82_Porcelain_06": "600c8ed4e8dfd5b70780cbfc3250cf2a4250842516a250b8dcf2a743fe0b3fb5"
+  },
+  "removed_generic_return": {
+    "name": "R82_Aperture_Inner_Return",
+    "vertices": 4462
+  },
+  "modified_fixed_metal": [
+    "R82_Fixed_Rear_Keel",
+    "R82_Acoustic_Chamber_Liner"
+  ],
+  "receiver_fasteners": [
+    {
+      "id": 0,
+      "root": "I83_RetainingScrew_0",
+      "axis_blender": [
+        0,
+        0,
+        1
+      ],
+      "station": "I83_ReceiverStation_0",
+      "stud_radius": 0.838,
+      "receiver_front": 0.23,
+      "receiver_back": 0.248,
+      "shaft_end": 0.242,
+      "thread_geometry_complete": false
+    },
+    {
+      "id": 1,
+      "root": "I83_RetainingScrew_1",
+      "axis_blender": [
+        0,
+        0,
+        1
+      ],
+      "station": "I83_ReceiverStation_1",
+      "stud_radius": 0.838,
+      "receiver_front": 0.23,
+      "receiver_back": 0.248,
+      "shaft_end": 0.242,
+      "thread_geometry_complete": false
+    },
+    {
+      "id": 2,
+      "root": "I83_RetainingScrew_2",
+      "axis_blender": [
+        0,
+        0,
+        1
+      ],
+      "station": "I83_ReceiverStation_2",
+      "stud_radius": 0.838,
+      "receiver_front": 0.23,
+      "receiver_back": 0.248,
+      "shaft_end": 0.242,
+      "thread_geometry_complete": false
+    },
+    {
+      "id": 3,
+      "root": "I83_RetainingScrew_3",
+      "axis_blender": [
+        0,
+        0,
+        1
+      ],
+      "station": "I83_ReceiverStation_3",
+      "stud_radius": 0.838,
+      "receiver_front": 0.23,
+      "receiver_back": 0.248,
+      "shaft_end": 0.242,
+      "thread_geometry_complete": false
+    },
+    {
+      "id": 4,
+      "root": "I83_RetainingScrew_4",
+      "axis_blender": [
+        0,
+        0,
+        1
+      ],
+      "station": "I83_ReceiverStation_4",
+      "stud_radius": 0.838,
+      "receiver_front": 0.23,
+      "receiver_back": 0.248,
+      "shaft_end": 0.242,
+      "thread_geometry_complete": false
+    },
+    {
+      "id": 5,
+      "root": "I83_RetainingScrew_5",
+      "axis_blender": [
+        0,
+        0,
+        1
+      ],
+      "station": "I83_ReceiverStation_5",
+      "stud_radius": 0.838,
+      "receiver_front": 0.23,
+      "receiver_back": 0.248,
+      "shaft_end": 0.242,
+      "thread_geometry_complete": false
+    }
+  ],
+  "scope": "Forged curved supports with external annular collars and twenty real blind-fastened foot screws. Working motion and functional core retained. Complete clearance, joining and art review pending.",
+  "component": "app/assets/collection/components/I_r88_forged_supports_r4.glb",
+  "component_sha256": "da3597b14130aaac9c54dfde5098057ff5e7cf00cca804e04616f94ffdd38cca",
+  "core_report": "review/I_refinement/nautilus_reset_r82/music_interface_r1/optical_core_build_r2.json",
+  "music_optics_layout": "res://assets/collection/art/I/r82_music_interface/r2/layout.json",
+  "mouth_placement": {
+    "p": [
+      -0.5368849635124207,
+      1.46467125415802,
+      0.4177970588207245
+    ],
+    "q": [
+      0.03796523064374924,
+      -0.9067150950431824,
+      0.41162189841270447,
+      0.08362928032875061
+    ],
+    "s": [
+      0.55,
+      0.55,
+      0.55
+    ]
+  },
+  "panels": [
+    {
+      "id": 1,
+      "node": "R82_Panel_01_Motion",
+      "mesh": "R82_Porcelain_01",
+      "pivot": [
+        0.38654959201812744,
+        -0.00914377998560667,
+        1.732995867729187
+      ],
+      "axis": [
+        0.9271584749221802,
+        -0.0,
+        0.37466949224472046
+      ],
+      "translation": [
+        0.0,
+        -0.18000000715255737,
+        0.0
+      ],
+      "angle": 0.07489441646932428,
+      "ta": 0.02,
+      "tb": 7.875485471872028
+    },
+    {
+      "id": 2,
+      "node": "R82_Panel_02_Motion",
+      "mesh": "R82_Porcelain_02",
+      "pivot": [
+        -0.03901650011539459,
+        -0.004461139440536499,
+        1.5037816762924194
+      ],
+      "axis": [
+        0.8035226464271545,
+        0.34202006459236145,
+        -0.48720991611480713
+      ],
+      "translation": [
+        -0.016625553369522095,
+        -0.05999999865889549,
+        -0.011117148213088512
+      ],
+      "angle": 0.7853981633974483,
+      "ta": 7.8954854718720275,
+      "tb": 9.835485471872028,
+      "latch_axis": [
+        0.5558574795722961,
+        -0.0,
+        -0.8312776684761047
+      ]
+    },
+    {
+      "id": 3,
+      "node": "R82_Panel_03_Motion",
+      "mesh": "R82_Porcelain_03",
+      "pivot": [
+        0.814037561416626,
+        -0.005867745261639357,
+        1.365431547164917
+      ],
+      "axis": [
+        0.7657448053359985,
+        -0.0,
+        0.6431445479393005
+      ],
+      "translation": [
+        0.01286289095878601,
+        -0.05999999865889549,
+        -0.015314895659685135
+      ],
+      "angle": 0.7853981633974483,
+      "ta": 9.855485471872028,
+      "tb": 11.235485471872028
+    },
+    {
+      "id": 4,
+      "node": "R82_Panel_04_Motion",
+      "mesh": "R82_Porcelain_04",
+      "pivot": [
+        1.0540863275527954,
+        -0.00734209967777133,
+        2.262451171875
+      ],
+      "axis": [
+        -0.41487133502960205,
+        -0.0,
+        0.9098800420761108
+      ],
+      "translation": [
+        0.018197601661086082,
+        -0.05999999865889549,
+        0.00829742755740881
+      ],
+      "angle": 0.7853981633974483,
+      "ta": 11.255485471872028,
+      "tb": 12.435485471872028
+    },
+    {
+      "id": 5,
+      "node": "R82_Panel_05_Motion",
+      "mesh": "R82_Porcelain_05",
+      "pivot": [
+        0.16412243247032166,
+        -0.009058571420609951,
+        2.8721470832824707
+      ],
+      "axis": [
+        -0.9994878768920898,
+        -0.0,
+        -0.0319996103644371
+      ],
+      "translation": [
+        -0.0006399924168363214,
+        -0.05999999865889549,
+        0.019989758729934692
+      ],
+      "angle": 0.7853981633974483,
+      "ta": 12.455485471872027,
+      "tb": 13.585485471872028
+    },
+    {
+      "id": 6,
+      "node": "R82_Panel_06_Motion",
+      "mesh": "R82_Porcelain_06",
+      "pivot": [
+        -0.9691927433013916,
+        -0.044059041887521744,
+        2.1467087268829346
+      ],
+      "axis": [
+        -0.348910391330719,
+        -0.33132389187812805,
+        -0.8766332864761353
+      ],
+      "translation": [
+        -0.018705587834119797,
+        -0.05872124433517456,
+        0.006961738225072622
+      ],
+      "angle": 0.7853981633974483,
+      "ta": 13.605485471872028,
+      "tb": 14.755485471872028
+    }
+  ],
+  "joints": [
+    {
+      "id": 1,
+      "carriage": "R82_R3_Carriage_01",
+      "pivot": [
+        0.38654959201812744,
+        -0.00914377998560667,
+        1.732995867729187
+      ],
+      "axis": [
+        0.9271584749221802,
+        -0.0,
+        0.37466949224472046
+      ],
+      "slide_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "stroke": 0.18000000233451524,
+      "guide_length": 0.23500000233451523,
+      "rod_radius": 0.004,
+      "bore_radius": 0.0055,
+      "minimum_rod_engagement": 0.055,
+      "crosshead_span": 0.018,
+      "latch": "R82_R3_Latch_Pivot_01",
+      "extension_nodes": [
+        {
+          "node": "I84_TelescopeStage_01",
+          "fraction": 0.5
+        }
+      ],
+      "stage_length": 0.21499999797903
+    },
+    {
+      "id": 2,
+      "carriage": "R82_R3_Carriage_02",
+      "pivot": [
+        -0.03901650011539459,
+        -0.004461139440536499,
+        1.5037816762924194
+      ],
+      "axis": [
+        0.8035226464271545,
+        0.34202006459236145,
+        -0.48720991611480713
+      ],
+      "slide_direction": [
+        -0.2628730833530426,
+        -0.9486833214759827,
+        -0.17577755451202393
+      ],
+      "stroke": 0.06324555286468102,
+      "guide_length": 0.11824555286468102,
+      "rod_radius": 0.006169803869447832,
+      "bore_radius": 0.0076698038694478325,
+      "minimum_rod_engagement": 0.055,
+      "crosshead_span": 0.03926238826012257,
+      "latch": "R82_R3_Latch_Pivot_02",
+      "extension_nodes": [],
+      "stage_length": 0.2351735275665179
+    },
+    {
+      "id": 3,
+      "carriage": "R82_R3_Carriage_03",
+      "pivot": [
+        0.814037561416626,
+        -0.005867745261639357,
+        1.365431547164917
+      ],
+      "axis": [
+        0.7657448053359985,
+        -0.0,
+        0.6431445479393005
+      ],
+      "slide_direction": [
+        0.20338016748428345,
+        -0.9486833214759827,
+        -0.24214977025985718
+      ],
+      "stroke": 0.06324555263459504,
+      "guide_length": 0.11824555263459505,
+      "rod_radius": 0.008706475417257446,
+      "bore_radius": 0.010206475417257445,
+      "minimum_rod_engagement": 0.055,
+      "crosshead_span": 0.05540484356436558,
+      "latch": "R82_R3_Latch_Pivot_03",
+      "extension_nodes": [],
+      "stage_length": 0.23517352885877568
+    },
+    {
+      "id": 4,
+      "carriage": "R82_R3_Carriage_04",
+      "pivot": [
+        1.0540863275527954,
+        -0.00734209967777133,
+        2.262451171875
+      ],
+      "axis": [
+        -0.4148713946342468,
+        -0.0,
+        0.9098801612854004
+      ],
+      "slide_direction": [
+        0.2877293527126312,
+        -0.9486833214759827,
+        0.1311938613653183
+      ],
+      "stroke": 0.06324555269211653,
+      "guide_length": 0.11824555269211653,
+      "rod_radius": 0.009,
+      "bore_radius": 0.010499999999999999,
+      "minimum_rod_engagement": 0.055,
+      "crosshead_span": 0.065,
+      "latch": "R82_R3_Latch_Pivot_04",
+      "extension_nodes": [],
+      "stage_length": 0.23517352885877568
+    },
+    {
+      "id": 5,
+      "carriage": "R82_R3_Carriage_05",
+      "pivot": [
+        0.16412243247032166,
+        -0.009058571420609951,
+        2.8721470832824707
+      ],
+      "axis": [
+        -0.9994878768920898,
+        -0.0,
+        -0.0319996103644371
+      ],
+      "slide_direction": [
+        -0.010119169019162655,
+        -0.9486833214759827,
+        0.31606584787368774
+      ],
+      "stroke": 0.06324555296017569,
+      "guide_length": 0.11824555296017569,
+      "rod_radius": 0.009,
+      "bore_radius": 0.010499999999999999,
+      "minimum_rod_engagement": 0.055,
+      "crosshead_span": 0.065,
+      "latch": "R82_R3_Latch_Pivot_05",
+      "extension_nodes": [],
+      "stage_length": 0.2351735262742601
+    },
+    {
+      "id": 6,
+      "carriage": "R82_R3_Carriage_06",
+      "pivot": [
+        -0.9691927433013916,
+        -0.044059041887521744,
+        2.1467087268829346
+      ],
+      "axis": [
+        -0.3489104211330414,
+        -0.33132392168045044,
+        -0.8766334056854248
+      ],
+      "slide_direction": [
+        -0.3016030192375183,
+        -0.9468029141426086,
+        0.11224888265132904
+      ],
+      "stroke": 0.06202055629816273,
+      "guide_length": 0.11702055629816273,
+      "rod_radius": 0.009,
+      "bore_radius": 0.010499999999999999,
+      "minimum_rod_engagement": 0.055,
+      "crosshead_span": 0.065,
+      "latch": "R82_R3_Latch_Pivot_06",
+      "extension_nodes": [],
+      "stage_length": 0.23517352530506677
+    }
+  ],
+  "source_timing_shift_frames": 60,
+  "source_score_preview_quarter": 4.0,
+  "parent_source": "blender/collection/I_r87_oblique_hinge_r1.blend",
+  "hierarchy_witness": {
+    "frames": [
+      1,
+      68,
+      85,
+      100,
+      125,
+      145,
+      175,
+      205,
+      234,
+      290,
+      350,
+      430
+    ],
+    "objects": [
+      "R82_Panel_01_Motion",
+      "R82_Panel_02_Motion",
+      "R82_Panel_03_Motion",
+      "R82_Panel_04_Motion",
+      "R82_Panel_05_Motion",
+      "R82_Panel_06_Motion",
+      "R82_Porcelain_01",
+      "R82_Porcelain_02",
+      "R82_Porcelain_03",
+      "R82_Porcelain_04",
+      "R82_Porcelain_05",
+      "R82_Porcelain_06",
+      "R82_R3_Carriage_01",
+      "R82_R3_Carriage_02",
+      "R82_R3_Carriage_03",
+      "R82_R3_Carriage_04",
+      "R82_R3_Carriage_05",
+      "R82_R3_Carriage_06",
+      "R82_R3_Latch_Pivot_01",
+      "R82_R3_Latch_Pivot_02",
+      "R82_R3_Latch_Pivot_03",
+      "R82_R3_Latch_Pivot_04",
+      "R82_R3_Latch_Pivot_05",
+      "R82_R3_Latch_Pivot_06"
+    ],
+    "max_world_matrix_error": 0.0
+  },
+  "parent_component": "app/assets/collection/components/I_r82_music_body_r3.glb",
+  "liner_rebuild": {
+    "minimum_wall": 0.0016799999999999986,
+    "minimum_inner_radius": 0.0023199999999999983,
+    "topology": {
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "volume": 0.035361695983445206
+    },
+    "guide_ports": [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        -1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        -1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        -1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        -1
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "global_bevel_removed": true
+  },
+  "export_settings": {
+    "apply_static_modifiers": true,
+    "export_morph": false,
+    "export_animations": false,
+    "export_tangents": true
+  },
+  "chamber_response_layout": "res://assets/collection/art/I/r88_forged_supports/r4/chamber_layout.json",
+  "new_cells": [
+    {
+      "frame": "I84_Cell_01_Frame",
+      "diaphragm": "I84_Cell_01_Diaphragm",
+      "cell_index": 0,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.0,
+      "light_position_godot": [
+        0.08076608926057816,
+        1.9784765243530273,
+        0.061957165598869324
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_01_Opal",
+          "runtime_mesh": "I84_Cell_01_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_01_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.005528475282012392,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 7.5654854718720275,
+        "u": 0.6,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.21483705890925525,
+        "centre": [
+          0.09435749053955078,
+          -0.05028175562620163,
+          1.9640557765960693
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_02_Frame",
+      "diaphragm": "I84_Cell_02_Diaphragm",
+      "cell_index": 1,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.08333333333333333,
+      "light_position_godot": [
+        0.06829849630594254,
+        1.8008545637130737,
+        0.1270681917667389
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_02_Opal",
+          "runtime_mesh": "I84_Cell_02_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_02_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.00566308667375739,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 8.165485471872028,
+        "u": 1.4,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.24295588296265483,
+        "centre": [
+          0.0724373608827591,
+          -0.10465780645608902,
+          1.7977490425109863
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_03_Frame",
+      "diaphragm": "I84_Cell_03_Diaphragm",
+      "cell_index": 2,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.16666666666666666,
+      "light_position_godot": [
+        0.168856680393219,
+        1.7186226844787598,
+        0.11355163902044296
+      ],
+      "light_enabled": true,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_03_Opal",
+          "runtime_mesh": "I84_Cell_03_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_03_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.005762479187365284,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 8.565485471872028,
+        "u": 2.2,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 0.6153846153846154,
+        "radius": 0.26371787469408164,
+        "centre": [
+          0.15586397051811218,
+          -0.09610427170991898,
+          1.7111541032791138
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_04_Frame",
+      "diaphragm": "I84_Cell_04_Diaphragm",
+      "cell_index": 3,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.25,
+      "light_position_godot": [
+        0.25200480222702026,
+        1.5944687128067017,
+        0.14784488081932068
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_04_Opal",
+          "runtime_mesh": "I84_Cell_04_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_04_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.00595728832447797,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 9.265485471872028,
+        "u": 2.04,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.3044113388909538,
+        "centre": [
+          0.24854660034179688,
+          -0.12816204130649567,
+          1.5830832719802856
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_05_Frame",
+      "diaphragm": "I84_Cell_05_Diaphragm",
+      "cell_index": 4,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.3333333333333333,
+      "light_position_godot": [
+        0.4450511634349823,
+        1.6147937774658203,
+        0.13947591185569763
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_05_Opal",
+          "runtime_mesh": "I84_Cell_05_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_05_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.006216997965117432,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 10.065485471872028,
+        "u": 2.36,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 0.6923076923076923,
+        "radius": 0.35866179715786367,
+        "centre": [
+          0.45243436098098755,
+          -0.12452834099531174,
+          1.5989489555358887
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_06_Frame",
+      "diaphragm": "I84_Cell_06_Diaphragm",
+      "cell_index": 5,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.4166666666666667,
+      "light_position_godot": [
+        0.5580397844314575,
+        1.483729362487793,
+        0.20566469430923462
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_06_Opal",
+          "runtime_mesh": "I84_Cell_06_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_06_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.0062888579451749,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 10.265485471872028,
+        "u": 1.4,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.3736725485476459,
+        "centre": [
+          0.5586430430412292,
+          -0.1832347810268402,
+          1.488782525062561
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_07_Frame",
+      "diaphragm": "I84_Cell_07_Diaphragm",
+      "cell_index": 6,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.5,
+      "light_position_godot": [
+        0.8005244135856628,
+        1.7367275953292847,
+        0.24570012092590332
+      ],
+      "light_enabled": true,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_07_Opal",
+          "runtime_mesh": "I84_Cell_07_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_07_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.006607658038672418,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 11.065485471872027,
+        "u": 1.4,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 0.8461538461538461,
+        "radius": 0.4402663458560165,
+        "centre": [
+          0.7973283529281616,
+          -0.22326593101024628,
+          1.7406636476516724
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_08_Frame",
+      "diaphragm": "I84_Cell_08_Diaphragm",
+      "cell_index": 7,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.5833333333333334,
+      "light_position_godot": [
+        0.7029004693031311,
+        2.0124340057373047,
+        0.27073854207992554
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_08_Opal",
+          "runtime_mesh": "I84_Cell_08_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_08_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.006883517640619381,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 11.665485471872028,
+        "u": 1.88,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.49789035159604844,
+        "centre": [
+          0.7095714211463928,
+          -0.24930168688297272,
+          2.017430067062378
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_09_Frame",
+      "diaphragm": "I84_Cell_09_Diaphragm",
+      "cell_index": 8,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.6666666666666666,
+      "light_position_godot": [
+        0.48320379853248596,
+        2.1057989597320557,
+        0.18365149199962616
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_09_Opal",
+          "runtime_mesh": "I84_Cell_09_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_09_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.00714078810380226,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 12.165485471872028,
+        "u": 2.52,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.5516312927942499,
+        "centre": [
+          0.4943476915359497,
+          -0.1714935153722763,
+          2.1218299865722656
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_10_Frame",
+      "diaphragm": "I84_Cell_10_Diaphragm",
+      "cell_index": 9,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.75,
+      "light_position_godot": [
+        0.3135671615600586,
+        2.2969119548797607,
+        0.3217354416847229
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_10_Opal",
+          "runtime_mesh": "I84_Cell_10_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_10_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.007486426125613437,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 12.765485471872028,
+        "u": 2.04,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.6238312351281402,
+        "centre": [
+          0.31267231702804565,
+          -0.3019509017467499,
+          2.3086068630218506
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_11_Frame",
+      "diaphragm": "I84_Cell_11_Diaphragm",
+      "cell_index": 10,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.8333333333333334,
+      "light_position_godot": [
+        -0.11848845332860947,
+        2.244527816772461,
+        0.4085789620876312
+      ],
+      "light_enabled": true,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_11_Opal",
+          "runtime_mesh": "I84_Cell_11_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_11_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.008018650012164646,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 13.565485471872028,
+        "u": 1.88,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 0.7692307692307693,
+        "radius": 0.7350068914299487,
+        "centre": [
+          -0.1255522221326828,
+          -0.38716158270835876,
+          2.249044418334961
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_12_Frame",
+      "diaphragm": "I84_Cell_12_Diaphragm",
+      "cell_index": 11,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.9166666666666666,
+      "light_position_godot": [
+        -0.192869633436203,
+        1.960117220878601,
+        0.4366670548915863
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_12_Opal",
+          "runtime_mesh": "I84_Cell_12_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_12_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.008561601673888164,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 14.265485471872028,
+        "u": 2.36,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 0.46153846153846156,
+        "radius": 0.84842346076775,
+        "centre": [
+          -0.21084988117218018,
+          -0.42348355054855347,
+          1.9544687271118164
+        ]
+      },
+      "pinned_vertices": 192
+    }
+  ],
+  "removed_shape_hoops": [
+    "R82_Acoustic_Rib_00",
+    "R82_Acoustic_Rib_01",
+    "R82_Acoustic_Rib_02",
+    "R82_Acoustic_Rib_03",
+    "R82_Acoustic_Rib_04",
+    "R82_Acoustic_Rib_05",
+    "R82_Acoustic_Rib_06",
+    "R82_Acoustic_Rib_07",
+    "R82_Acoustic_Rib_08",
+    "R82_Acoustic_Rib_09",
+    "R82_Acoustic_Rib_10",
+    "R82_Acoustic_Rib_11",
+    "R82_Acoustic_Rib_12",
+    "R82_Acoustic_Rib_13",
+    "R82_Acoustic_Rib_14",
+    "R82_Acoustic_Rib_15",
+    "R82_Acoustic_Rib_16",
+    "R82_Acoustic_Rib_17",
+    "R82_Acoustic_Rib_18",
+    "R82_Acoustic_Rib_19"
+  ],
+  "motion_profile": "outer_edge_r85",
+  "motion_open_frames": [
+    85,
+    175
+  ],
+  "motion_close_frames": [
+    234,
+    324
+  ],
+  "closed_ceramic_world_error": 0.0,
+  "new_mechanism_parts": [
+    "I85_Guide_2_-1",
+    "I85_FixedShoe_2_-1",
+    "I85_CoverShoe_2_-1",
+    "I85_Guide_2_1",
+    "I85_FixedShoe_2_1",
+    "I85_CoverShoe_2_1",
+    "I85_Guide_3_-1",
+    "I85_FixedShoe_3_-1",
+    "I85_CoverShoe_3_-1",
+    "I85_Guide_3_1",
+    "I85_FixedShoe_3_1",
+    "I85_CoverShoe_3_1",
+    "I85_Guide_4_-1",
+    "I85_FixedShoe_4_-1",
+    "I85_CoverShoe_4_-1",
+    "I85_Guide_4_1",
+    "I85_FixedShoe_4_1",
+    "I85_CoverShoe_4_1",
+    "I85_Guide_5_-1",
+    "I85_FixedShoe_5_-1",
+    "I85_CoverShoe_5_-1",
+    "I85_Guide_5_1",
+    "I85_FixedShoe_5_1",
+    "I85_CoverShoe_5_1",
+    "I85_Guide_6_-1",
+    "I85_FixedShoe_6_-1",
+    "I85_CoverShoe_6_-1",
+    "I85_Guide_6_1",
+    "I85_FixedShoe_6_1",
+    "I85_CoverShoe_6_1"
+  ],
+  "removed_central_parts": [
+    "I84_ExtensionSeal_2_-1",
+    "I84_ExtensionSeal_2_1",
+    "I84_ExtensionTube_2_-1",
+    "I84_ExtensionTube_2_1",
+    "R82_R3_Crosshead_02",
+    "R82_R3_Guide_Foot_2_-1",
+    "R82_R3_Guide_Foot_2_1",
+    "R82_R3_Guide_Sleeve_2_-1",
+    "R82_R3_Guide_Sleeve_2_1",
+    "R82_R3_Guide_Wiper_2_-1",
+    "R82_R3_Guide_Wiper_2_1",
+    "R82_R3_Pin_Stop_2_-1",
+    "R82_R3_Pin_Stop_2_1",
+    "R82_R3_Rotating_Pin_02",
+    "R82_R3_Slider_Rod_2_-1",
+    "R82_R3_Slider_Rod_2_1",
+    "R82_R5_Cover_Pad_2_-1",
+    "R82_R5_Cover_Pad_2_1",
+    "R82_R5_Short_Rotor_Ear_2_-1",
+    "R82_R5_Short_Rotor_Ear_2_1",
+    "I84_ExtensionSeal_3_-1",
+    "I84_ExtensionSeal_3_1",
+    "I84_ExtensionTube_3_-1",
+    "I84_ExtensionTube_3_1",
+    "R82_R3_Crosshead_03",
+    "R82_R3_Guide_Foot_3_-1",
+    "R82_R3_Guide_Foot_3_1",
+    "R82_R3_Guide_Sleeve_3_-1",
+    "R82_R3_Guide_Sleeve_3_1",
+    "R82_R3_Guide_Wiper_3_-1",
+    "R82_R3_Guide_Wiper_3_1",
+    "R82_R3_Pin_Stop_3_-1",
+    "R82_R3_Pin_Stop_3_1",
+    "R82_R3_Rotating_Pin_03",
+    "R82_R3_Slider_Rod_3_-1",
+    "R82_R3_Slider_Rod_3_1",
+    "R82_R5_Cover_Pad_3_-1",
+    "R82_R5_Cover_Pad_3_1",
+    "R82_R5_Short_Rotor_Ear_3_-1",
+    "R82_R5_Short_Rotor_Ear_3_1",
+    "I84_ExtensionSeal_4_-1",
+    "I84_ExtensionSeal_4_1",
+    "I84_ExtensionTube_4_-1",
+    "I84_ExtensionTube_4_1",
+    "R82_R3_Crosshead_04",
+    "R82_R3_Guide_Foot_4_-1",
+    "R82_R3_Guide_Foot_4_1",
+    "R82_R3_Guide_Sleeve_4_-1",
+    "R82_R3_Guide_Sleeve_4_1",
+    "R82_R3_Guide_Wiper_4_-1",
+    "R82_R3_Guide_Wiper_4_1",
+    "R82_R3_Pin_Stop_4_-1",
+    "R82_R3_Pin_Stop_4_1",
+    "R82_R3_Rotating_Pin_04",
+    "R82_R3_Slider_Rod_4_-1",
+    "R82_R3_Slider_Rod_4_1",
+    "R82_R5_Cover_Pad_4_-1",
+    "R82_R5_Cover_Pad_4_1",
+    "R82_R5_Short_Rotor_Ear_4_-1",
+    "R82_R5_Short_Rotor_Ear_4_1",
+    "I84_ExtensionSeal_5_-1",
+    "I84_ExtensionSeal_5_1",
+    "I84_ExtensionTube_5_-1",
+    "I84_ExtensionTube_5_1",
+    "R82_R3_Crosshead_05",
+    "R82_R3_Guide_Foot_5_-1",
+    "R82_R3_Guide_Foot_5_1",
+    "R82_R3_Guide_Sleeve_5_-1",
+    "R82_R3_Guide_Sleeve_5_1",
+    "R82_R3_Guide_Wiper_5_-1",
+    "R82_R3_Guide_Wiper_5_1",
+    "R82_R3_Pin_Stop_5_-1",
+    "R82_R3_Pin_Stop_5_1",
+    "R82_R3_Rotating_Pin_05",
+    "R82_R3_Slider_Rod_5_-1",
+    "R82_R3_Slider_Rod_5_1",
+    "R82_R5_Cover_Pad_5_-1",
+    "R82_R5_Cover_Pad_5_1",
+    "R82_R5_Short_Rotor_Ear_5_-1",
+    "R82_R5_Short_Rotor_Ear_5_1",
+    "I84_ExtensionSeal_6_-1",
+    "I84_ExtensionSeal_6_1",
+    "I84_ExtensionTube_6_-1",
+    "I84_ExtensionTube_6_1",
+    "R82_R3_Crosshead_06",
+    "R82_R3_Guide_Foot_6_-1",
+    "R82_R3_Guide_Foot_6_1",
+    "R82_R3_Guide_Sleeve_6_-1",
+    "R82_R3_Guide_Sleeve_6_1",
+    "R82_R3_Guide_Wiper_6_-1",
+    "R82_R3_Guide_Wiper_6_1",
+    "R82_R3_Pin_Stop_6_-1",
+    "R82_R3_Pin_Stop_6_1",
+    "R82_R3_Rotating_Pin_06",
+    "R82_R3_Slider_Rod_6_-1",
+    "R82_R3_Slider_Rod_6_1",
+    "R82_R5_Cover_Pad_6_-1",
+    "R82_R5_Cover_Pad_6_1",
+    "R82_R5_Short_Rotor_Ear_6_-1",
+    "R82_R5_Short_Rotor_Ear_6_1"
+  ],
+  "liner_receiver_profile": [
+    [
+      -0.16,
+      0.851
+    ],
+    [
+      -0.09,
+      0.851
+    ],
+    [
+      0.2,
+      0.856
+    ],
+    [
+      0.235,
+      0.863
+    ],
+    [
+      0.25,
+      0.854
+    ],
+    [
+      0.43,
+      0.848
+    ],
+    [
+      0.48,
+      0.62
+    ],
+    [
+      0.62,
+      0.5
+    ]
+  ],
+  "surface_validation": [
+    {
+      "name": "R82_Acoustic_Chamber_Liner",
+      "automatic_repairs": false,
+      "nonmanifold": 0,
+      "degenerate_faces": 1,
+      "volume": 0.032820704106132435,
+      "cleanup_edge_length_limit": 1e-07
+    },
+    {
+      "name": "R82_Fixed_Rear_Keel",
+      "automatic_repairs": false,
+      "nonmanifold": 0,
+      "degenerate_faces": 0,
+      "volume": 0.09134140625592763,
+      "cleanup_edge_length_limit": 1e-07
+    },
+    {
+      "name": "I86_ReceiverCasting",
+      "automatic_repairs": false,
+      "nonmanifold": 0,
+      "degenerate_faces": 2,
+      "volume": 0.005589683076273633,
+      "cleanup_edge_length_limit": 1e-07
+    }
+  ],
+  "receiver_sector_clearance": {
+    "angle": [
+      -0.3,
+      -0.2,
+      0.5,
+      0.65
+    ],
+    "depth": [
+      0.245,
+      0.27,
+      0.43,
+      0.45
+    ],
+    "radius": 0.78,
+    "measured_core_bound": 0.6764110668076941,
+    "evidence": "review/I_refinement/nautilus_reset_r82/finish_r86/gap_sector_wide.json"
+  },
+  "rear_angular_domain": [
+    3.1445926535897932,
+    6.280185307179586
+  ],
+  "formed_liner_return": {
+    "maximum_normal_shift": 0.012,
+    "angle": [
+      -0.42,
+      -0.26,
+      0.28,
+      0.48
+    ],
+    "depth": [
+      0.09,
+      0.15,
+      0.255,
+      0.3
+    ]
+  },
+  "rebuilt_oblique_parts": [
+    "I85_Guide_2_-1",
+    "I85_Wiper_2_-1",
+    "I85_Rod_2_-1",
+    "I85_SupportA_2_-1",
+    "I85_SupportB_2_-1",
+    "I85_CoverEar_2_-1",
+    "I85_RotorStop_2_-1",
+    "I85_Guide_2_1",
+    "I85_Wiper_2_1",
+    "I85_Rod_2_1",
+    "I85_SupportA_2_1",
+    "I85_SupportB_2_1",
+    "I85_CoverEar_2_1",
+    "I85_RotorStop_2_1",
+    "I85_Crosshead_02",
+    "I85_HingePin_02"
+  ],
+  "oblique_axis_study": {
+    "source_sha256": "a5fe1c329d8d3f4881e552fc54f0518011cd35158274d9c3f2ccb4a93a22c5fe",
+    "candidates": [
+      {
+        "translation": [
+          -0.016625553369522095,
+          -0.05999999865889549,
+          -0.011117148213088512
+        ],
+        "axis": [
+          0.8035227656364441,
+          0.34202009439468384,
+          -0.4872099757194519
+        ],
+        "axis_adjust_degrees": [
+          -25.0,
+          -20.0
+        ],
+        "contacts": []
+      }
+    ],
+    "scope": "41 sampled closed-to-open poses against actual core, skins, receiver, cells and other covers. Own linkage not rebuilt; no production motion claim."
+  },
+  "forged_supports": [
+    {
+      "id": 2,
+      "side": -1,
+      "support": "I85_FixedShoe_2_-1",
+      "collar": "I85_FixedShoe_2_-1",
+      "bearing": "I88_BronzeBearing_2_-1",
+      "end_cap": "I88_GuideEndCap_2_-1",
+      "shoe": "I85_FixedShoe_2_-1",
+      "guide": "I85_Guide_2_-1",
+      "rod": "I85_Rod_2_-1",
+      "guide_axis_point": [
+        -0.04316136986017227,
+        0.08100635558366776,
+        1.5412347316741943
+      ],
+      "collar_inner": 0.014182058706257623,
+      "collar_outer": 0.018200921414871105,
+      "fasteners": [
+        "I88_FootBolt_2_-1_0",
+        "I88_FootBolt_2_-1_1"
+      ]
+    },
+    {
+      "id": 2,
+      "side": 1,
+      "support": "I85_FixedShoe_2_1",
+      "collar": "I85_FixedShoe_2_1",
+      "bearing": "I88_BronzeBearing_2_1",
+      "end_cap": "I88_GuideEndCap_2_1",
+      "shoe": "I85_FixedShoe_2_1",
+      "guide": "I85_Guide_2_1",
+      "rod": "I85_Rod_2_1",
+      "guide_axis_point": [
+        0.019935065880417824,
+        0.1078634038567543,
+        1.502976655960083
+      ],
+      "collar_inner": 0.014182058706257623,
+      "collar_outer": 0.018200921414871105,
+      "fasteners": [
+        "I88_FootBolt_2_1_0",
+        "I88_FootBolt_2_1_1"
+      ]
+    },
+    {
+      "id": 3,
+      "side": -1,
+      "support": "I85_FixedShoe_3_-1",
+      "collar": "I85_FixedShoe_3_-1",
+      "bearing": "I88_BronzeBearing_3_-1",
+      "end_cap": "I88_GuideEndCap_3_-1",
+      "shoe": "I85_FixedShoe_3_-1",
+      "guide": "I85_Guide_3_-1",
+      "rod": "I85_Rod_3_-1",
+      "guide_axis_point": [
+        0.7504100799560547,
+        0.09302827715873718,
+        1.355041265487671
+      ],
+      "collar_inner": 0.019889569688829253,
+      "collar_outer": 0.025684102480909465,
+      "fasteners": [
+        "I88_FootBolt_3_-1_0",
+        "I88_FootBolt_3_-1_1"
+      ]
+    },
+    {
+      "id": 3,
+      "side": 1,
+      "support": "I85_FixedShoe_3_1",
+      "collar": "I85_FixedShoe_3_1",
+      "bearing": "I88_BronzeBearing_3_1",
+      "end_cap": "I88_GuideEndCap_3_1",
+      "shoe": "I85_FixedShoe_3_1",
+      "guide": "I85_Guide_3_1",
+      "rod": "I85_Rod_3_1",
+      "guide_axis_point": [
+        0.8352620601654053,
+        0.09302827715873718,
+        1.4263079166412354
+      ],
+      "collar_inner": 0.019889569688829253,
+      "collar_outer": 0.025684102480909465,
+      "fasteners": [
+        "I88_FootBolt_3_1_0",
+        "I88_FootBolt_3_1_1"
+      ]
+    },
+    {
+      "id": 4,
+      "side": -1,
+      "support": "I85_FixedShoe_4_-1",
+      "collar": "I85_FixedShoe_4_-1",
+      "bearing": "I88_BronzeBearing_4_-1",
+      "end_cap": "I88_GuideEndCap_4_-1",
+      "shoe": "I85_FixedShoe_4_-1",
+      "guide": "I85_Guide_4_-1",
+      "rod": "I85_Rod_4_-1",
+      "guide_axis_point": [
+        1.0510585308074951,
+        0.09155391901731491,
+        2.1896326541900635
+      ],
+      "collar_inner": 0.02055,
+      "collar_outer": 0.02655,
+      "fasteners": [
+        "I88_FootBolt_4_-1_0",
+        "I88_FootBolt_4_-1_1"
+      ]
+    },
+    {
+      "id": 4,
+      "side": 1,
+      "support": "I85_FixedShoe_4_1",
+      "collar": "I85_FixedShoe_4_1",
+      "bearing": "I88_BronzeBearing_4_1",
+      "end_cap": "I88_GuideEndCap_4_1",
+      "shoe": "I85_FixedShoe_4_1",
+      "guide": "I85_Guide_4_1",
+      "rod": "I85_Rod_4_1",
+      "guide_axis_point": [
+        0.9971251487731934,
+        0.09155391901731491,
+        2.3079168796539307
+      ],
+      "collar_inner": 0.02055,
+      "collar_outer": 0.02655,
+      "fasteners": [
+        "I88_FootBolt_4_1_0",
+        "I88_FootBolt_4_1_1"
+      ]
+    },
+    {
+      "id": 5,
+      "side": -1,
+      "support": "I85_FixedShoe_5_-1",
+      "collar": "I85_FixedShoe_5_-1",
+      "bearing": "I88_BronzeBearing_5_-1",
+      "end_cap": "I88_GuideEndCap_5_-1",
+      "shoe": "I85_FixedShoe_5_-1",
+      "guide": "I85_Guide_5_-1",
+      "rod": "I85_Rod_5_-1",
+      "guide_axis_point": [
+        0.23014402389526367,
+        0.089837446808815,
+        2.841278553009033
+      ],
+      "collar_inner": 0.02055,
+      "collar_outer": 0.02655,
+      "fasteners": [
+        "I88_FootBolt_5_-1_0",
+        "I88_FootBolt_5_-1_1"
+      ]
+    },
+    {
+      "id": 5,
+      "side": 1,
+      "support": "I85_FixedShoe_5_1",
+      "collar": "I85_FixedShoe_5_1",
+      "bearing": "I88_BronzeBearing_5_1",
+      "end_cap": "I88_GuideEndCap_5_1",
+      "shoe": "I85_FixedShoe_5_1",
+      "guide": "I85_Guide_5_1",
+      "rod": "I85_Rod_5_1",
+      "guide_axis_point": [
+        0.10021059960126877,
+        0.089837446808815,
+        2.837118625640869
+      ],
+      "collar_inner": 0.02055,
+      "collar_outer": 0.02655,
+      "fasteners": [
+        "I88_FootBolt_5_1_0",
+        "I88_FootBolt_5_1_1"
+      ]
+    },
+    {
+      "id": 6,
+      "side": -1,
+      "support": "I85_FixedShoe_6_-1",
+      "collar": "I85_FixedShoe_6_-1",
+      "bearing": "I88_BronzeBearing_6_-1",
+      "end_cap": "I88_GuideEndCap_6_-1",
+      "shoe": "I85_FixedShoe_6_-1",
+      "guide": "I85_Guide_6_-1",
+      "rod": "I85_Rod_6_-1",
+      "guide_axis_point": [
+        -0.9154422879219055,
+        0.07501716911792755,
+        2.1921257972717285
+      ],
+      "collar_inner": 0.02055,
+      "collar_outer": 0.02655,
+      "fasteners": [
+        "I88_FootBolt_6_-1_0",
+        "I88_FootBolt_6_-1_1"
+      ]
+    },
+    {
+      "id": 6,
+      "side": 1,
+      "support": "I85_FixedShoe_6_1",
+      "collar": "I85_FixedShoe_6_1",
+      "bearing": "I88_BronzeBearing_6_1",
+      "end_cap": "I88_GuideEndCap_6_1",
+      "shoe": "I85_FixedShoe_6_1",
+      "guide": "I85_Guide_6_1",
+      "rod": "I85_Rod_6_1",
+      "guide_axis_point": [
+        -0.9608005881309509,
+        0.03194507211446762,
+        2.0781636238098145
+      ],
+      "collar_inner": 0.02055,
+      "collar_outer": 0.02655,
+      "fasteners": [
+        "I88_FootBolt_6_1_0",
+        "I88_FootBolt_6_1_1"
+      ]
+    }
+  ],
+  "removed_wire_supports": [
+    "I85_SupportA_2_-1",
+    "I85_SupportB_2_-1",
+    "I85_SupportA_2_1",
+    "I85_SupportB_2_1",
+    "I85_SupportA_3_-1",
+    "I85_SupportB_3_-1",
+    "I85_SupportA_3_1",
+    "I85_SupportB_3_1",
+    "I85_SupportA_4_-1",
+    "I85_SupportB_4_-1",
+    "I85_SupportA_4_1",
+    "I85_SupportB_4_1",
+    "I85_SupportA_5_-1",
+    "I85_SupportB_5_-1",
+    "I85_SupportA_5_1",
+    "I85_SupportB_5_1",
+    "I85_SupportA_6_-1",
+    "I85_SupportB_6_-1",
+    "I85_SupportA_6_1",
+    "I85_SupportB_6_1"
+  ],
+  "former_rod_contacts": [
+    {
+      "frame": 1,
+      "rod": "I85_Rod_2_-1",
+      "support": "I85_SupportB_2_-1",
+      "triangle_pairs": 286
+    },
+    {
+      "frame": 1,
+      "rod": "I85_Rod_2_1",
+      "support": "I85_SupportA_2_1",
+      "triangle_pairs": 62
+    },
+    {
+      "frame": 1,
+      "rod": "I85_Rod_2_1",
+      "support": "I85_SupportB_2_1",
+      "triangle_pairs": 438
+    },
+    {
+      "frame": 1,
+      "rod": "I85_Rod_3_-1",
+      "support": "I85_SupportB_3_-1",
+      "triangle_pairs": 294
+    },
+    {
+      "frame": 1,
+      "rod": "I85_Rod_3_1",
+      "support": "I85_SupportB_3_1",
+      "triangle_pairs": 322
+    },
+    {
+      "frame": 1,
+      "rod": "I85_Rod_4_-1",
+      "support": "I85_SupportB_4_-1",
+      "triangle_pairs": 304
+    },
+    {
+      "frame": 1,
+      "rod": "I85_Rod_4_1",
+      "support": "I85_SupportB_4_1",
+      "triangle_pairs": 280
+    },
+    {
+      "frame": 1,
+      "rod": "I85_Rod_5_-1",
+      "support": "I85_SupportB_5_-1",
+      "triangle_pairs": 259
+    },
+    {
+      "frame": 1,
+      "rod": "I85_Rod_5_1",
+      "support": "I85_SupportB_5_1",
+      "triangle_pairs": 276
+    },
+    {
+      "frame": 1,
+      "rod": "I85_Rod_6_-1",
+      "support": "I85_SupportB_6_-1",
+      "triangle_pairs": 265
+    },
+    {
+      "frame": 1,
+      "rod": "I85_Rod_6_1",
+      "support": "I85_SupportB_6_1",
+      "triangle_pairs": 263
+    }
+  ],
+  "support_topology": [
+    {
+      "name": "I85_FixedShoe_2_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 1.6629370727235717e-05,
+      "components": 1
+    },
+    {
+      "name": "I88_BronzeBearing_2_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.2574409539157506e-06,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_2_-1_0",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.968816747127645e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_2_-1_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.968815131515951e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_GuideEndCap_2_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.5850910530190617e-06,
+      "components": 1
+    },
+    {
+      "name": "I85_FixedShoe_2_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 3,
+      "nonmanifold": 0,
+      "volume": 1.948619322084128e-05,
+      "components": 1
+    },
+    {
+      "name": "I88_BronzeBearing_2_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.2574409539157506e-06,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_2_1_0",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.968816557826656e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_2_1_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.968814292097591e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_GuideEndCap_2_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.585089177265475e-06,
+      "components": 1
+    },
+    {
+      "name": "I85_FixedShoe_3_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.6446030942116718e-05,
+      "components": 1
+    },
+    {
+      "name": "I88_BronzeBearing_3_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 4.833043278489421e-06,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_3_-1_0",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.968820916679626e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_3_-1_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.9688203652044687e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_GuideEndCap_3_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.077333189826362e-06,
+      "components": 1
+    },
+    {
+      "name": "I85_FixedShoe_3_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.4833641244373296e-05,
+      "components": 1
+    },
+    {
+      "name": "I88_BronzeBearing_3_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 4.833043278489421e-06,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_3_1_0",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.968826973952026e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_3_1_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.9688317926439047e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_GuideEndCap_3_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.077335669126958e-06,
+      "components": 1
+    },
+    {
+      "name": "I85_FixedShoe_4_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 3.027081181230885e-05,
+      "components": 1
+    },
+    {
+      "name": "I88_BronzeBearing_4_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.192995908446146e-06,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_4_-1_0",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.9688294511130673e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_4_-1_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.968812382246185e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_GuideEndCap_4_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.419634165053165e-06,
+      "components": 1
+    },
+    {
+      "name": "I85_FixedShoe_4_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.803033044554928e-05,
+      "components": 1
+    },
+    {
+      "name": "I88_BronzeBearing_4_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.192995908446146e-06,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_4_1_0",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.9688112792958685e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_4_1_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.9688196780991065e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_GuideEndCap_4_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.419634165053165e-06,
+      "components": 1
+    },
+    {
+      "name": "I85_FixedShoe_5_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 4.375327343491504e-05,
+      "components": 1
+    },
+    {
+      "name": "I88_BronzeBearing_5_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.192995908446146e-06,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_5_-1_0",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.9688456271906985e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_5_-1_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.968818850886367e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_GuideEndCap_5_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.419622480500226e-06,
+      "components": 1
+    },
+    {
+      "name": "I85_FixedShoe_5_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 4.2357817549886935e-05,
+      "components": 1
+    },
+    {
+      "name": "I88_BronzeBearing_5_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.192995908446146e-06,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_5_1_0",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.968813683013092e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_5_1_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.9688206214787095e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_GuideEndCap_5_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.419626466428037e-06,
+      "components": 1
+    },
+    {
+      "name": "I85_FixedShoe_6_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 6.743810996830047e-05,
+      "components": 1
+    },
+    {
+      "name": "I88_BronzeBearing_6_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.192995908446146e-06,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_6_-1_0",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.9688112792958685e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_6_-1_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.968820916679626e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_GuideEndCap_6_-1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.41964351269552e-06,
+      "components": 1
+    },
+    {
+      "name": "I85_FixedShoe_6_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 9.569599094660172e-05,
+      "components": 1
+    },
+    {
+      "name": "I88_BronzeBearing_6_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.192995908446146e-06,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_6_1_0",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.968817336568268e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_FootBolt_6_1_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 2.9688196780991065e-07,
+      "components": 1
+    },
+    {
+      "name": "I88_GuideEndCap_6_1",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 5.419634165053165e-06,
+      "components": 1
+    },
+    {
+      "name": "R82_Fixed_Rear_Keel",
+      "automatic_repair": false,
+      "initial_nonmanifold": 0,
+      "nonmanifold": 0,
+      "volume": 0.09133752708788745,
+      "components": 1
+    }
+  ],
+  "foot_corner_preservation": [
+    {
+      "name": "I85_FixedShoe_2_-1",
+      "corner_samples": 8,
+      "maximum_distance": 0.0
+    },
+    {
+      "name": "I85_FixedShoe_2_1",
+      "corner_samples": 8,
+      "maximum_distance": 0.0
+    },
+    {
+      "name": "I85_FixedShoe_3_-1",
+      "corner_samples": 8,
+      "maximum_distance": 0.0
+    },
+    {
+      "name": "I85_FixedShoe_3_1",
+      "corner_samples": 8,
+      "maximum_distance": 0.0
+    },
+    {
+      "name": "I85_FixedShoe_4_-1",
+      "corner_samples": 8,
+      "maximum_distance": 0.0
+    },
+    {
+      "name": "I85_FixedShoe_4_1",
+      "corner_samples": 8,
+      "maximum_distance": 0.0
+    },
+    {
+      "name": "I85_FixedShoe_5_-1",
+      "corner_samples": 8,
+      "maximum_distance": 0.0
+    },
+    {
+      "name": "I85_FixedShoe_5_1",
+      "corner_samples": 8,
+      "maximum_distance": 0.0
+    },
+    {
+      "name": "I85_FixedShoe_6_-1",
+      "corner_samples": 8,
+      "maximum_distance": 0.0
+    },
+    {
+      "name": "I85_FixedShoe_6_1",
+      "corner_samples": 8,
+      "maximum_distance": 0.0
+    }
+  ]
+}

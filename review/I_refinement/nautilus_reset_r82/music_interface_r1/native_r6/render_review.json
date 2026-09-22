@@ -1,0 +1,489 @@
+{
+  "body_sha256": "72cd83a904f6fc6964b8ee1f1c9a4a6332b6da2c67e633900c99169e6bff1bd0",
+  "core_sha256": "1f70b619ae3959bb29f550a7ce8b8ee5e54d3ff511f8f07a955b1caac100f105",
+  "optics_sha256": "d4bdf0afd5eec0be00bf8220a5b597f9e7765f6147e594fe565cb1cc715b1b38",
+  "polished_studio": true,
+  "samples": [
+    {
+      "driver": {
+        "opening": 0.0,
+        "panels": [
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.38655, 1.732996, 0.009144)",
+            "id": 1,
+            "position": "(0.38655, 1.732996, 0.009144)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.132862, 1.618713, 0.111673)",
+            "id": 2,
+            "position": "(0.132862, 1.618713, 0.111673)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.640132, 1.572488, 0.174855)",
+            "id": 3,
+            "position": "(0.640132, 1.572488, 0.174855)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.747367, 2.122598, 0.247749)",
+            "id": 4,
+            "position": "(0.747367, 2.122598, 0.247749)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.177394, 2.457608, 0.333579)",
+            "id": 5,
+            "position": "(0.177394, 2.457608, 0.333579)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(-0.464711, 2.111284, 0.48159)",
+            "id": 6,
+            "position": "(-0.464711, 2.111284, 0.48159)"
+          }
+        ]
+      },
+      "elapsed": 0.02618,
+      "music": {
+        "active": true,
+        "close_pending": false,
+        "pause_pending": false,
+        "response_level": 0.0,
+        "reveal": 0.0,
+        "staff": {
+          "cache_size": 3,
+          "first_tile": -1,
+          "movement": 1,
+          "note_x": 76.0239926815192,
+          "offset": -63.1426739851475,
+          "pending_tiles": 0,
+          "playhead": 0.5,
+          "quarter_estimate": 0.0,
+          "ready": true,
+          "reveal": 0.0,
+          "scan_intensity": 0.0,
+          "scan_level": 0.0,
+          "scan_playing": false,
+          "scanner_caps": {
+            "attached": 3,
+            "mode": "authored_directional_heads"
+          },
+          "valid_tiles": [
+            0.0,
+            1.0,
+            1.0
+          ],
+          "width": 278.333333333333
+        },
+        "starting": true,
+        "transport": {
+          "alignment_status": "estimated_requires_musical_review",
+          "clock_mode": "realtime_audio_compensated",
+          "duration": 961.036178588867,
+          "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+          "local_seconds": 0.0,
+          "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+          "movement": 1,
+          "score_quarter_estimate": 0.0,
+          "state": "stopped",
+          "total_seconds": 0.0
+        }
+      },
+      "sequence": {
+        "desired_open": true,
+        "mouth_closing_held": false,
+        "mouth_open": 0.0100692307692308,
+        "shell_open": 0.0,
+        "stage": "opening_mouth"
+      }
+    },
+    {
+      "driver": {
+        "opening": 0.368417105263158,
+        "panels": [
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.38655, 1.732996, 0.166867)",
+            "id": 1,
+            "position": "(0.38655, 1.732996, 0.166867)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.076921, 1.562074, 0.254968)",
+            "id": 2,
+            "position": "(0.076921, 1.562074, 0.254968)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.69494, 1.529066, 0.300719)",
+            "id": 3,
+            "position": "(0.69494, 1.529066, 0.300719)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.795109, 2.157408, 0.354103)",
+            "id": 4,
+            "position": "(0.795109, 2.157408, 0.354103)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.166322, 2.504016, 0.419458)",
+            "id": 5,
+            "position": "(0.166322, 2.504016, 0.419458)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(-0.500615, 2.117691, 0.54724)",
+            "id": 6,
+            "position": "(-0.500615, 2.117691, 0.54724)"
+          }
+        ]
+      },
+      "elapsed": 4.026129,
+      "music": {
+        "active": true,
+        "close_pending": false,
+        "pause_pending": false,
+        "response_level": 0.0,
+        "reveal": 0.0,
+        "staff": {
+          "cache_size": 3,
+          "first_tile": -1,
+          "movement": 1,
+          "note_x": 76.0239926815192,
+          "offset": -63.1426739851475,
+          "pending_tiles": 0,
+          "playhead": 0.5,
+          "quarter_estimate": 0.0,
+          "ready": true,
+          "reveal": 0.0,
+          "scan_intensity": 0.0,
+          "scan_level": 0.0,
+          "scan_playing": false,
+          "scanner_caps": {
+            "attached": 3,
+            "mode": "authored_directional_heads"
+          },
+          "valid_tiles": [
+            0.0,
+            1.0,
+            1.0
+          ],
+          "width": 278.333333333333
+        },
+        "starting": true,
+        "transport": {
+          "alignment_status": "estimated_requires_musical_review",
+          "clock_mode": "realtime_audio_compensated",
+          "duration": 961.036178588867,
+          "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+          "local_seconds": 0.0,
+          "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+          "movement": 1,
+          "score_quarter_estimate": 0.0,
+          "state": "stopped",
+          "total_seconds": 0.0
+        }
+      },
+      "sequence": {
+        "desired_open": true,
+        "mouth_closing_held": false,
+        "mouth_open": 1.0,
+        "shell_open": 0.368417105263158,
+        "stage": "opening_shell"
+      }
+    },
+    {
+      "driver": {
+        "opening": 1.0,
+        "panels": [
+          {
+            "basis": "[X: (0.999606, 0.000974, -0.028034), Y: (0.000974, 0.99759, 0.069374), Z: (0.028034, -0.069374, 0.997197)]",
+            "carriage_position": "(0.38655, 1.732996, 0.189144)",
+            "id": 1,
+            "position": "(0.38655, 1.732996, 0.189144)"
+          },
+          {
+            "basis": "[X: (0.981382, -0.01245, 0.191664), Y: (-0.01245, 0.991675, 0.128162), Z: (-0.191664, -0.128162, 0.973057)]",
+            "carriage_position": "(0.062591, 1.547566, 0.291673)",
+            "id": 2,
+            "position": "(0.062591, 1.547566, 0.291673)"
+          },
+          {
+            "basis": "[X: (0.989509, 0.012491, -0.143929), Y: (0.012491, 0.985128, 0.171366), Z: (0.143929, -0.171366, 0.974637)]",
+            "carriage_position": "(0.718514, 1.51039, 0.354855)",
+            "id": 3,
+            "position": "(0.718514, 1.51039, 0.354855)"
+          },
+          {
+            "basis": "[X: (0.980332, -0.008968, -0.197149), Y: (-0.008968, 0.995911, -0.089893), Z: (0.197149, 0.089893, 0.976244)]",
+            "carriage_position": "(0.828169, 2.181513, 0.427749)",
+            "id": 4,
+            "position": "(0.828169, 2.181513, 0.427749)"
+          },
+          {
+            "basis": "[X: (0.999978, 0.000702, 0.006668), Y: (0.000702, 0.978071, -0.208273), Z: (-0.006668, 0.208273, 0.978048)]",
+            "carriage_position": "(0.154187, 2.554878, 0.513579)",
+            "id": 5,
+            "position": "(0.154187, 2.554878, 0.513579)"
+          },
+          {
+            "basis": "[X: (0.98262, 0.071639, 0.171245), Y: (-0.059534, 0.995419, -0.074815), Z: (-0.17582, 0.06332, 0.982384)]",
+            "carriage_position": "(-0.563155, 2.128852, 0.66159)",
+            "id": 6,
+            "position": "(-0.563155, 2.128852, 0.66159)"
+          }
+        ]
+      },
+      "elapsed": 8.026078,
+      "music": {
+        "active": true,
+        "close_pending": false,
+        "pause_pending": false,
+        "response_level": 0.0,
+        "reveal": 1.0,
+        "staff": {
+          "cache_size": 3,
+          "first_tile": -1,
+          "movement": 1,
+          "note_x": 76.0239926815192,
+          "offset": -63.1426739851475,
+          "pending_tiles": 0,
+          "playhead": 0.5,
+          "quarter_estimate": 0.0,
+          "ready": true,
+          "reveal": 1.0,
+          "scan_intensity": 0.415,
+          "scan_level": 0.0,
+          "scan_playing": true,
+          "scanner_caps": {
+            "attached": 3,
+            "mode": "authored_directional_heads"
+          },
+          "valid_tiles": [
+            0.0,
+            1.0,
+            1.0
+          ],
+          "width": 278.333333333333
+        },
+        "starting": false,
+        "transport": {
+          "alignment_status": "estimated_requires_musical_review",
+          "clock_mode": "realtime_audio_compensated",
+          "duration": 961.036178588867,
+          "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+          "local_seconds": 1.05343647866821,
+          "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+          "movement": 1,
+          "score_quarter_estimate": 0.0,
+          "state": "playing",
+          "total_seconds": 1.05343647866821
+        }
+      },
+      "sequence": {
+        "desired_open": true,
+        "mouth_closing_held": false,
+        "mouth_open": 1.0,
+        "shell_open": 1.0,
+        "stage": "ready"
+      }
+    },
+    {
+      "driver": {
+        "opening": 1.0,
+        "panels": [
+          {
+            "basis": "[X: (0.999606, 0.000974, -0.028034), Y: (0.000974, 0.99759, 0.069374), Z: (0.028034, -0.069374, 0.997197)]",
+            "carriage_position": "(0.38655, 1.732996, 0.189144)",
+            "id": 1,
+            "position": "(0.38655, 1.732996, 0.189144)"
+          },
+          {
+            "basis": "[X: (0.981382, -0.01245, 0.191664), Y: (-0.01245, 0.991675, 0.128162), Z: (-0.191664, -0.128162, 0.973057)]",
+            "carriage_position": "(0.062591, 1.547566, 0.291673)",
+            "id": 2,
+            "position": "(0.062591, 1.547566, 0.291673)"
+          },
+          {
+            "basis": "[X: (0.989509, 0.012491, -0.143929), Y: (0.012491, 0.985128, 0.171366), Z: (0.143929, -0.171366, 0.974637)]",
+            "carriage_position": "(0.718514, 1.51039, 0.354855)",
+            "id": 3,
+            "position": "(0.718514, 1.51039, 0.354855)"
+          },
+          {
+            "basis": "[X: (0.980332, -0.008968, -0.197149), Y: (-0.008968, 0.995911, -0.089893), Z: (0.197149, 0.089893, 0.976244)]",
+            "carriage_position": "(0.828169, 2.181513, 0.427749)",
+            "id": 4,
+            "position": "(0.828169, 2.181513, 0.427749)"
+          },
+          {
+            "basis": "[X: (0.999978, 0.000702, 0.006668), Y: (0.000702, 0.978071, -0.208273), Z: (-0.006668, 0.208273, 0.978048)]",
+            "carriage_position": "(0.154187, 2.554878, 0.513579)",
+            "id": 5,
+            "position": "(0.154187, 2.554878, 0.513579)"
+          },
+          {
+            "basis": "[X: (0.98262, 0.071639, 0.171245), Y: (-0.059534, 0.995419, -0.074815), Z: (-0.17582, 0.06332, 0.982384)]",
+            "carriage_position": "(-0.563155, 2.128852, 0.66159)",
+            "id": 6,
+            "position": "(-0.563155, 2.128852, 0.66159)"
+          }
+        ]
+      },
+      "elapsed": 15.025984,
+      "music": {
+        "active": true,
+        "close_pending": false,
+        "pause_pending": false,
+        "response_level": 0.137435759012107,
+        "reveal": 1.0,
+        "staff": {
+          "cache_size": 4,
+          "first_tile": 0,
+          "movement": 1,
+          "note_x": 199.602659561258,
+          "offset": 60.435992894591,
+          "pending_tiles": 0,
+          "playhead": 0.5,
+          "quarter_estimate": 3.18379685312082,
+          "ready": true,
+          "reveal": 1.0,
+          "scan_intensity": 0.51807681925908,
+          "scan_level": 0.137435759012107,
+          "scan_playing": true,
+          "scanner_caps": {
+            "attached": 3,
+            "mode": "authored_directional_heads"
+          },
+          "valid_tiles": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "width": 278.333333333333
+        },
+        "starting": false,
+        "transport": {
+          "alignment_status": "estimated_requires_musical_review",
+          "clock_mode": "realtime_audio_compensated",
+          "duration": 961.036178588867,
+          "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+          "local_seconds": 8.12218350268555,
+          "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+          "movement": 1,
+          "score_quarter_estimate": 3.18379685312082,
+          "state": "playing",
+          "total_seconds": 8.12218350268555
+        }
+      },
+      "sequence": {
+        "desired_open": true,
+        "mouth_closing_held": false,
+        "mouth_open": 1.0,
+        "shell_open": 1.0,
+        "stage": "ready"
+      }
+    },
+    {
+      "driver": {
+        "opening": 1.0,
+        "panels": [
+          {
+            "basis": "[X: (0.999606, 0.000974, -0.028034), Y: (0.000974, 0.99759, 0.069374), Z: (0.028034, -0.069374, 0.997197)]",
+            "carriage_position": "(0.38655, 1.732996, 0.189144)",
+            "id": 1,
+            "position": "(0.38655, 1.732996, 0.189144)"
+          },
+          {
+            "basis": "[X: (0.981382, -0.01245, 0.191664), Y: (-0.01245, 0.991675, 0.128162), Z: (-0.191664, -0.128162, 0.973057)]",
+            "carriage_position": "(0.062591, 1.547566, 0.291673)",
+            "id": 2,
+            "position": "(0.062591, 1.547566, 0.291673)"
+          },
+          {
+            "basis": "[X: (0.989509, 0.012491, -0.143929), Y: (0.012491, 0.985128, 0.171366), Z: (0.143929, -0.171366, 0.974637)]",
+            "carriage_position": "(0.718514, 1.51039, 0.354855)",
+            "id": 3,
+            "position": "(0.718514, 1.51039, 0.354855)"
+          },
+          {
+            "basis": "[X: (0.980332, -0.008968, -0.197149), Y: (-0.008968, 0.995911, -0.089893), Z: (0.197149, 0.089893, 0.976244)]",
+            "carriage_position": "(0.828169, 2.181513, 0.427749)",
+            "id": 4,
+            "position": "(0.828169, 2.181513, 0.427749)"
+          },
+          {
+            "basis": "[X: (0.999978, 0.000702, 0.006668), Y: (0.000702, 0.978071, -0.208273), Z: (-0.006668, 0.208273, 0.978048)]",
+            "carriage_position": "(0.154187, 2.554878, 0.513579)",
+            "id": 5,
+            "position": "(0.154187, 2.554878, 0.513579)"
+          },
+          {
+            "basis": "[X: (0.98262, 0.071639, 0.171245), Y: (-0.059534, 0.995419, -0.074815), Z: (-0.17582, 0.06332, 0.982384)]",
+            "carriage_position": "(-0.563155, 2.128852, 0.66159)",
+            "id": 6,
+            "position": "(-0.563155, 2.128852, 0.66159)"
+          }
+        ]
+      },
+      "elapsed": 30.02584,
+      "music": {
+        "active": true,
+        "close_pending": false,
+        "pause_pending": false,
+        "response_level": 0.185418482066969,
+        "reveal": 1.0,
+        "staff": {
+          "cache_size": 4,
+          "first_tile": 1,
+          "movement": 1,
+          "note_x": 731.646655043374,
+          "offset": 592.479988376707,
+          "pending_tiles": 0,
+          "playhead": 0.5,
+          "quarter_estimate": 16.1094157092705,
+          "ready": true,
+          "reveal": 1.0,
+          "scan_intensity": 0.554063861550227,
+          "scan_level": 0.185418482066969,
+          "scan_playing": true,
+          "scanner_caps": {
+            "attached": 3,
+            "mode": "authored_directional_heads"
+          },
+          "valid_tiles": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "width": 278.333333333333
+        },
+        "starting": false,
+        "transport": {
+          "alignment_status": "estimated_requires_musical_review",
+          "clock_mode": "realtime_audio_compensated",
+          "duration": 961.036178588867,
+          "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+          "local_seconds": 23.1744541799316,
+          "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+          "movement": 1,
+          "score_quarter_estimate": 16.1094157092705,
+          "state": "playing",
+          "total_seconds": 23.1744541799316
+        }
+      },
+      "sequence": {
+        "desired_open": true,
+        "mouth_closing_held": false,
+        "mouth_open": 1.0,
+        "shell_open": 1.0,
+        "stage": "ready"
+      }
+    }
+  ],
+  "scope": "Actual Godot combined renderer and real audio-clock first-movement excerpt, fixed camera and authored mechanism. Explicit draw; no native performance or full art/fit acceptance."
+}

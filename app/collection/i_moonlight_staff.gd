@@ -41,6 +41,10 @@ func setup(asset:Node3D,component_sha256:String,layout_path:String="res://assets
     material.set_shader_parameter("edge_fade",float(layout.get("edge_fade",.025)))
     material.set_shader_parameter("ink_coverage_gain",float(layout.get("ink_coverage_gain",1.)))
     material.set_shader_parameter("center_z",-float(layout.center_y))
+    if bool(layout.get("oriented_reveal",false)):
+        material.set_shader_parameter("oriented_reveal",true)
+        material.set_shader_parameter("reveal_center",_from_blender(layout.reveal_center_blender))
+        material.set_shader_parameter("reveal_axis",_from_blender(layout.reveal_axis_blender).normalized())
     catalog=JSON.parse_string(FileAccess.get_file_as_string("res://assets/collection/art/I/moonlight_candidate/score/manifest.json"))
     var blank:=Image.create(1,1,false,Image.FORMAT_RGBA8);blank.fill(Color.TRANSPARENT)
     blank_tile=ImageTexture.create_from_image(blank)
@@ -73,8 +77,15 @@ func _setup_scanner(asset:Node3D)->void:
     for tip in spec.tips:
         var node:=asset.find_child(str(tip.node),true,false) as MeshInstance3D;assert(node!=null)
         var finish_node:MeshInstance3D=node
+        var point_node:Node3D=node
         var local_point:Vector3=_from_blender(tip.local_point)
-        if cap_scene!=null:
+        if tip.has("lens_node"):
+            finish_node=asset.find_child(str(tip.lens_node),true,false) as MeshInstance3D
+            assert(finish_node!=null,"Missing authored reading lens")
+            point_node=finish_node
+            local_point=_from_blender(tip.lens_focus_local_blender)
+            cap_status={"mode":"authored_directional_heads","attached":int(cap_status.get("attached",0))+1}
+        elif cap_scene!=null:
             var attachment:Node3D=cap_scene.instantiate();node.add_child(attachment)
             assert(attachment.transform==Transform3D.IDENTITY)
             scanner_caps.append(attachment)
@@ -88,10 +99,18 @@ func _setup_scanner(asset:Node3D)->void:
             finish.clearcoat_enabled=true;finish.clearcoat=.85;finish.clearcoat_roughness=.08
         finish.emission_enabled=true;finish.emission=Color(1.,.55,.13);finish.emission_energy_multiplier=0.
         finish_node.set_surface_override_material(0,finish)
-        scan_tips.append({"node":node,"finish_node":finish_node,"local_point":local_point,"rest_point":_from_blender(tip.mouth_point),"finish":finish,"original":original})
+        var binding:Dictionary={"node":point_node,"finish_node":finish_node,"local_point":local_point,"rest_point":_from_blender(tip.mouth_point),"finish":finish,"original":original}
+        if tip.has("head_node"):
+            var head:=asset.find_child(str(tip.head_node),true,false) as Node3D
+            assert(head!=null,"Missing reading-head gimbal")
+            binding["head"]=head;binding["head_rest_basis"]=head.basis
+            binding["head_forward"]=_from_blender(tip.head_forward_local_blender).normalized()
+            binding["head_target"]=_from_blender(spec.focus)
+        scan_tips.append(binding)
 func pointer_target(camera:Camera3D,screen:Vector2)->String:
     var toward_viewer:Vector3=(camera.global_position-optics.global_position).normalized()
-    if (optics.global_basis*Vector3(0,-1,0)).normalized().dot(toward_viewer)<.15:return ""
+    var reading_normal:Vector3=_from_blender(layout.reading_normal_blender) if layout.has("reading_normal_blender") else Vector3(0,-1,0)
+    if (optics.global_basis*reading_normal).normalized().dot(toward_viewer)<.15:return ""
     var origin:=camera.project_ray_origin(screen);var direction:=camera.project_ray_normal(screen)
     if sheet.visible and float(status.get("reveal",0.))>.98:
         var inverse:=sheet.global_transform.affine_inverse();var local_origin:=inverse*origin;var local_direction:=inverse.basis*direction
@@ -173,6 +192,14 @@ func set_music_response(level:float,playing:bool,started:bool=true)->void:
         scan_materials[index].set_shader_parameter("strength",intensity*(1. if index in [0,2] else .35))
     for index in range(scan_tips.size()):
         var tip:Dictionary=scan_tips[index]
+        if tip.has("head"):
+            var head:Node3D=tip.head
+            var parent:=head.get_parent() as Node3D
+            var rest_world:Basis=parent.global_basis*tip.head_rest_basis
+            var from_axis:Vector3=(rest_world*tip.head_forward).normalized()
+            var to_target:Vector3=mouth.to_global(tip.head_target)-head.global_position
+            if to_target.length_squared()>.0000001:
+                head.global_basis=Basis(Quaternion(from_axis,to_target.normalized()))*rest_world
         var point:Vector3=mouth.to_local(tip.node.to_global(tip.local_point))
         scan_materials[index+1].set_shader_parameter("tip_delta",point-tip.rest_point)
         tip.finish.emission_energy_multiplier=intensity*.85
@@ -188,6 +215,7 @@ func _exit_tree()->void:
     requested.clear();cache.clear()
     for tip in scan_tips:
         if is_instance_valid(tip.finish_node):tip.finish_node.set_surface_override_material(0,tip.original)
+        if tip.has("head") and is_instance_valid(tip.head):tip.head.basis=tip.head_rest_basis
     for cap in scanner_caps:
         if is_instance_valid(cap):cap.queue_free()
     if is_instance_valid(optics):optics.queue_free()

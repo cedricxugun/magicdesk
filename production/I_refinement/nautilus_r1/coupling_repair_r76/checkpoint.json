@@ -1,0 +1,18 @@
+{
+  "body_source": "blender/collection/I_nautilus_coupling_r76.blend",
+  "body_source_sha256": "31a7b616db0f0fab0e9c42ecbb3077b1628292b4bba576e6411b1ef098c7f7df",
+  "component": "app/assets/collection/components/I_nautilus_coupling_r76.glb",
+  "component_sha256": "8ca319b00d89a9fbed29f191a10b282243c95f3176c062caa13f9dca3951ef74",
+  "motion_source": "blender/collection/I_coupling_motion_r76.blend",
+  "motion_source_sha256": "ac086bd334877d38fcb0a2a3e38f7fa341911a14300109d47406d8a4481815af",
+  "motion_asset": "res://assets/collection/art/I/coupling_r76/coupling_motion.glb",
+  "motion_asset_sha256": "fc94f0d54745de4fb78b50ad0e84598e0cfdda118cef7192997c281f91fe3b39",
+  "main_app": "R68 unchanged",
+  "technical_evidence_passed": true,
+  "overall_art_or_structure_accepted": false,
+  "current_priority": "base_connection_r78 user correction",
+  "video": "review/I_refinement/nautilus_r1/coupling_repair_r76/motion_review/coupling_r76.mp4",
+  "source_points_checked": 36825,
+  "source_max_error": 1.06998220417154e-06,
+  "exact_local_restore": true
+}

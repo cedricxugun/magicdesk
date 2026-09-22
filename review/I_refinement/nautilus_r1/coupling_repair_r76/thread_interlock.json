@@ -1,0 +1,3698 @@
+{
+  "source_sha256": "31a7b616db0f0fab0e9c42ecbb3077b1628292b4bba576e6411b1ef098c7f7df",
+  "passed": true,
+  "installed_axis_scale": 0.6999999276495368,
+  "results": [
+    {
+      "bolt": "IN3_CouplingBolt_00",
+      "closed_contacts": 0,
+      "samples": [
+        {
+          "local_distance": 0.0,
+          "angle": 0.0,
+          "contacts": 0
+        },
+        {
+          "local_distance": 7.142857881127252e-05,
+          "angle": 0.7479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00014285715762254504,
+          "angle": 1.4959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00021428573643381756,
+          "angle": 2.243994984498533,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0002857143152450901,
+          "angle": 2.991993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0003571428940563626,
+          "angle": 3.7399916408308886,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0004285714728676351,
+          "angle": 4.487989968997066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005000000516789077,
+          "angle": 5.235988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005714286304901802,
+          "angle": 5.983986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0006428572093014527,
+          "angle": 6.7319849534956,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007142857881127252,
+          "angle": 7.479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007857143669239978,
+          "angle": 8.227981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0008571429457352702,
+          "angle": 8.975979937994133,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0009285715245465428,
+          "angle": 9.723978266160312,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010000001033578154,
+          "angle": 10.47197659432649,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010714286821690878,
+          "angle": 11.219974922492666,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0011428572609803603,
+          "angle": 11.967973250658844,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001214285839791633,
+          "angle": 12.715971578825023,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0012857144186029055,
+          "angle": 13.4639699069912,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001357142997414178,
+          "angle": 14.211968235157377,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0014285715762254504,
+          "angle": 14.959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001500000155036723,
+          "angle": 15.707964891489734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0015714287338479955,
+          "angle": 16.455963219655914,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001642857312659268,
+          "angle": 17.20396154782209,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017142858914705405,
+          "angle": 17.951959875988265,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017857144702818132,
+          "angle": 18.699958204154445,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0018571430490930856,
+          "angle": 19.447956532320624,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001928571627904358,
+          "angle": 20.1959548604868,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020000002067156308,
+          "angle": 20.94395318865298,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020714287855269032,
+          "angle": 21.691951516819156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0021428573643381757,
+          "angle": 22.439949844985332,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022142859431494486,
+          "angle": 23.187948173151515,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022857145219607206,
+          "angle": 23.935946501317687,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002357143100771993,
+          "angle": 24.683944829483867,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002428571679583266,
+          "angle": 25.431943157650046,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0025000002583945385,
+          "angle": 26.179941485816226,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002571428837205811,
+          "angle": 26.9279398139824,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002642857416017083,
+          "angle": 27.67593814214857,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002714285994828356,
+          "angle": 28.423936470314754,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0027857145736396288,
+          "angle": 29.17193479848094,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002857143152450901,
+          "angle": 29.91993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0029285717312621732,
+          "angle": 30.667931454813285,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003000000310073446,
+          "angle": 31.415929782979468,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0030714288888847186,
+          "angle": 32.16392811114565,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003142857467695991,
+          "angle": 32.91192643931183,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003214286046507263,
+          "angle": 33.659924767477996,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003285714625318536,
+          "angle": 34.40792309564418,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003357143204129809,
+          "angle": 35.155921423810355,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003428571782941081,
+          "angle": 35.90391975197653,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035000003617523534,
+          "angle": 36.65191808014271,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035714289405636263,
+          "angle": 37.39991640830889,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0036428575193748988,
+          "angle": 38.147914736475066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037142860981861712,
+          "angle": 38.89591306464125,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037857146769974437,
+          "angle": 39.643911392807425,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003857143255808716,
+          "angle": 40.3919097209736,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003928571834619989,
+          "angle": 41.139908049139784,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0040000004134312615,
+          "angle": 41.88790637730596,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004071428992242534,
+          "angle": 42.635904705472136,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0041428575710538065,
+          "angle": 43.38390303363831,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004214286149865079,
+          "angle": 44.13190136180449,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004285714728676351,
+          "angle": 44.879899689970664,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004357143307487624,
+          "angle": 45.62789801813685,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004428571886298897,
+          "angle": 46.37589634630303,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004500000465110169,
+          "angle": 47.1238946744692,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004571429043921441,
+          "angle": 47.871893002635375,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004642857622732714,
+          "angle": 48.61989133080156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004714286201543986,
+          "angle": 49.367889658967734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0047857147803552595,
+          "angle": 50.11588798713392,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004857143359166532,
+          "angle": 50.86388631530009,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004928571937977804,
+          "angle": 51.61188464346626,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005000000516789077,
+          "angle": 52.35988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005071429095600349,
+          "angle": 53.10788129979862,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005142857674411622,
+          "angle": 53.8558796279648,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005214286253222894,
+          "angle": 54.60387795613099,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005285714832034166,
+          "angle": 55.35187628429714,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005357143410845439,
+          "angle": 56.09987461246334,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005428571989656712,
+          "angle": 56.84787294062951,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005500000568467984,
+          "angle": 57.59587126879569,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0055714291472792575,
+          "angle": 58.34386959696188,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00564285772609053,
+          "angle": 59.09186792512805,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005714286304901802,
+          "angle": 59.83986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005785714883713074,
+          "angle": 60.5878645814604,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0058571434625243465,
+          "angle": 61.33586290962657,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00592857204133562,
+          "angle": 62.08386123779277,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006000000620146892,
+          "angle": 62.831859565958936,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006071429198958164,
+          "angle": 63.579857894125105,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006142857777769437,
+          "angle": 64.3278562222913,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00621428635658071,
+          "angle": 65.07585455045746,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006285714935391982,
+          "angle": 65.82385287862365,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006357143514203255,
+          "angle": 66.57185120678982,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006428572093014526,
+          "angle": 67.31984953495599,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0065000006718257996,
+          "angle": 68.06784786312218,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006571429250637072,
+          "angle": 68.81584619128836,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0066428578294483445,
+          "angle": 69.56384451945453,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006714286408259618,
+          "angle": 70.31184284762071,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00678571498707089,
+          "angle": 71.0598411757869,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006857143565882162,
+          "angle": 71.80783950395306,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006928572144693434,
+          "angle": 72.55583783211924,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007000000723504707,
+          "angle": 73.30383616028541,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00707142930231598,
+          "angle": 74.0518344884516,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007142857881127253,
+          "angle": 74.79983281661778,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007214286459938524,
+          "angle": 75.54783114478396,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0072857150387497975,
+          "angle": 76.29582947295013,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00735714361756107,
+          "angle": 77.04382780111631,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0074285721963723425,
+          "angle": 77.7918261292825,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007500000775183615,
+          "angle": 78.53982445744866,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007571429353994887,
+          "angle": 79.28782278561485,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00764285793280616,
+          "angle": 80.03582111378101,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007714286511617432,
+          "angle": 80.7838194419472,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007785715090428705,
+          "angle": 81.53181777011338,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007857143669239978,
+          "angle": 82.27981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00792857224805125,
+          "angle": 83.02781442644573,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008000000826862523,
+          "angle": 83.77581275461192,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008071429405673795,
+          "angle": 84.52381108277808,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008142857984485068,
+          "angle": 85.27180941094427,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00821428656329634,
+          "angle": 86.01980773911043,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008285715142107613,
+          "angle": 86.76780606727662,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008357143720918886,
+          "angle": 87.51580439544281,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008428572299730158,
+          "angle": 88.26380272360898,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008500000878541431,
+          "angle": 89.01180105177517,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008571429457352703,
+          "angle": 89.75979937994133,
+          "contacts": 0
+        }
+      ],
+      "axial_only_contacts": 5336,
+      "spin_only_contacts": 5447,
+      "release_tip_parent": 0.6365714294573527,
+      "female_thread_exit_parent": 0.6345
+    },
+    {
+      "bolt": "IN3_CouplingBolt_01",
+      "closed_contacts": 0,
+      "samples": [
+        {
+          "local_distance": 0.0,
+          "angle": 0.0,
+          "contacts": 0
+        },
+        {
+          "local_distance": 7.142857881127252e-05,
+          "angle": 0.7479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00014285715762254504,
+          "angle": 1.4959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00021428573643381756,
+          "angle": 2.243994984498533,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0002857143152450901,
+          "angle": 2.991993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0003571428940563626,
+          "angle": 3.7399916408308886,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0004285714728676351,
+          "angle": 4.487989968997066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005000000516789077,
+          "angle": 5.235988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005714286304901802,
+          "angle": 5.983986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0006428572093014527,
+          "angle": 6.7319849534956,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007142857881127252,
+          "angle": 7.479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007857143669239978,
+          "angle": 8.227981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0008571429457352702,
+          "angle": 8.975979937994133,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0009285715245465428,
+          "angle": 9.723978266160312,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010000001033578154,
+          "angle": 10.47197659432649,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010714286821690878,
+          "angle": 11.219974922492666,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0011428572609803603,
+          "angle": 11.967973250658844,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001214285839791633,
+          "angle": 12.715971578825023,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0012857144186029055,
+          "angle": 13.4639699069912,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001357142997414178,
+          "angle": 14.211968235157377,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0014285715762254504,
+          "angle": 14.959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001500000155036723,
+          "angle": 15.707964891489734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0015714287338479955,
+          "angle": 16.455963219655914,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001642857312659268,
+          "angle": 17.20396154782209,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017142858914705405,
+          "angle": 17.951959875988265,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017857144702818132,
+          "angle": 18.699958204154445,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0018571430490930856,
+          "angle": 19.447956532320624,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001928571627904358,
+          "angle": 20.1959548604868,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020000002067156308,
+          "angle": 20.94395318865298,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020714287855269032,
+          "angle": 21.691951516819156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0021428573643381757,
+          "angle": 22.439949844985332,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022142859431494486,
+          "angle": 23.187948173151515,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022857145219607206,
+          "angle": 23.935946501317687,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002357143100771993,
+          "angle": 24.683944829483867,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002428571679583266,
+          "angle": 25.431943157650046,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0025000002583945385,
+          "angle": 26.179941485816226,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002571428837205811,
+          "angle": 26.9279398139824,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002642857416017083,
+          "angle": 27.67593814214857,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002714285994828356,
+          "angle": 28.423936470314754,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0027857145736396288,
+          "angle": 29.17193479848094,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002857143152450901,
+          "angle": 29.91993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0029285717312621732,
+          "angle": 30.667931454813285,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003000000310073446,
+          "angle": 31.415929782979468,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0030714288888847186,
+          "angle": 32.16392811114565,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003142857467695991,
+          "angle": 32.91192643931183,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003214286046507263,
+          "angle": 33.659924767477996,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003285714625318536,
+          "angle": 34.40792309564418,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003357143204129809,
+          "angle": 35.155921423810355,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003428571782941081,
+          "angle": 35.90391975197653,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035000003617523534,
+          "angle": 36.65191808014271,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035714289405636263,
+          "angle": 37.39991640830889,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0036428575193748988,
+          "angle": 38.147914736475066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037142860981861712,
+          "angle": 38.89591306464125,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037857146769974437,
+          "angle": 39.643911392807425,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003857143255808716,
+          "angle": 40.3919097209736,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003928571834619989,
+          "angle": 41.139908049139784,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0040000004134312615,
+          "angle": 41.88790637730596,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004071428992242534,
+          "angle": 42.635904705472136,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0041428575710538065,
+          "angle": 43.38390303363831,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004214286149865079,
+          "angle": 44.13190136180449,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004285714728676351,
+          "angle": 44.879899689970664,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004357143307487624,
+          "angle": 45.62789801813685,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004428571886298897,
+          "angle": 46.37589634630303,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004500000465110169,
+          "angle": 47.1238946744692,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004571429043921441,
+          "angle": 47.871893002635375,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004642857622732714,
+          "angle": 48.61989133080156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004714286201543986,
+          "angle": 49.367889658967734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0047857147803552595,
+          "angle": 50.11588798713392,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004857143359166532,
+          "angle": 50.86388631530009,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004928571937977804,
+          "angle": 51.61188464346626,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005000000516789077,
+          "angle": 52.35988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005071429095600349,
+          "angle": 53.10788129979862,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005142857674411622,
+          "angle": 53.8558796279648,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005214286253222894,
+          "angle": 54.60387795613099,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005285714832034166,
+          "angle": 55.35187628429714,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005357143410845439,
+          "angle": 56.09987461246334,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005428571989656712,
+          "angle": 56.84787294062951,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005500000568467984,
+          "angle": 57.59587126879569,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0055714291472792575,
+          "angle": 58.34386959696188,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00564285772609053,
+          "angle": 59.09186792512805,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005714286304901802,
+          "angle": 59.83986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005785714883713074,
+          "angle": 60.5878645814604,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0058571434625243465,
+          "angle": 61.33586290962657,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00592857204133562,
+          "angle": 62.08386123779277,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006000000620146892,
+          "angle": 62.831859565958936,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006071429198958164,
+          "angle": 63.579857894125105,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006142857777769437,
+          "angle": 64.3278562222913,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00621428635658071,
+          "angle": 65.07585455045746,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006285714935391982,
+          "angle": 65.82385287862365,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006357143514203255,
+          "angle": 66.57185120678982,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006428572093014526,
+          "angle": 67.31984953495599,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0065000006718257996,
+          "angle": 68.06784786312218,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006571429250637072,
+          "angle": 68.81584619128836,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0066428578294483445,
+          "angle": 69.56384451945453,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006714286408259618,
+          "angle": 70.31184284762071,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00678571498707089,
+          "angle": 71.0598411757869,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006857143565882162,
+          "angle": 71.80783950395306,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006928572144693434,
+          "angle": 72.55583783211924,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007000000723504707,
+          "angle": 73.30383616028541,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00707142930231598,
+          "angle": 74.0518344884516,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007142857881127253,
+          "angle": 74.79983281661778,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007214286459938524,
+          "angle": 75.54783114478396,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0072857150387497975,
+          "angle": 76.29582947295013,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00735714361756107,
+          "angle": 77.04382780111631,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0074285721963723425,
+          "angle": 77.7918261292825,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007500000775183615,
+          "angle": 78.53982445744866,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007571429353994887,
+          "angle": 79.28782278561485,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00764285793280616,
+          "angle": 80.03582111378101,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007714286511617432,
+          "angle": 80.7838194419472,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007785715090428705,
+          "angle": 81.53181777011338,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007857143669239978,
+          "angle": 82.27981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00792857224805125,
+          "angle": 83.02781442644573,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008000000826862523,
+          "angle": 83.77581275461192,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008071429405673795,
+          "angle": 84.52381108277808,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008142857984485068,
+          "angle": 85.27180941094427,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00821428656329634,
+          "angle": 86.01980773911043,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008285715142107613,
+          "angle": 86.76780606727662,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008357143720918886,
+          "angle": 87.51580439544281,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008428572299730158,
+          "angle": 88.26380272360898,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008500000878541431,
+          "angle": 89.01180105177517,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008571429457352703,
+          "angle": 89.75979937994133,
+          "contacts": 0
+        }
+      ],
+      "axial_only_contacts": 5378,
+      "spin_only_contacts": 5277,
+      "release_tip_parent": 0.6365714294573527,
+      "female_thread_exit_parent": 0.6345
+    },
+    {
+      "bolt": "IN3_CouplingBolt_02",
+      "closed_contacts": 0,
+      "samples": [
+        {
+          "local_distance": 0.0,
+          "angle": 0.0,
+          "contacts": 0
+        },
+        {
+          "local_distance": 7.142857881127252e-05,
+          "angle": 0.7479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00014285715762254504,
+          "angle": 1.4959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00021428573643381756,
+          "angle": 2.243994984498533,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0002857143152450901,
+          "angle": 2.991993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0003571428940563626,
+          "angle": 3.7399916408308886,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0004285714728676351,
+          "angle": 4.487989968997066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005000000516789077,
+          "angle": 5.235988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005714286304901802,
+          "angle": 5.983986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0006428572093014527,
+          "angle": 6.7319849534956,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007142857881127252,
+          "angle": 7.479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007857143669239978,
+          "angle": 8.227981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0008571429457352702,
+          "angle": 8.975979937994133,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0009285715245465428,
+          "angle": 9.723978266160312,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010000001033578154,
+          "angle": 10.47197659432649,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010714286821690878,
+          "angle": 11.219974922492666,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0011428572609803603,
+          "angle": 11.967973250658844,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001214285839791633,
+          "angle": 12.715971578825023,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0012857144186029055,
+          "angle": 13.4639699069912,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001357142997414178,
+          "angle": 14.211968235157377,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0014285715762254504,
+          "angle": 14.959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001500000155036723,
+          "angle": 15.707964891489734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0015714287338479955,
+          "angle": 16.455963219655914,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001642857312659268,
+          "angle": 17.20396154782209,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017142858914705405,
+          "angle": 17.951959875988265,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017857144702818132,
+          "angle": 18.699958204154445,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0018571430490930856,
+          "angle": 19.447956532320624,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001928571627904358,
+          "angle": 20.1959548604868,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020000002067156308,
+          "angle": 20.94395318865298,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020714287855269032,
+          "angle": 21.691951516819156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0021428573643381757,
+          "angle": 22.439949844985332,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022142859431494486,
+          "angle": 23.187948173151515,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022857145219607206,
+          "angle": 23.935946501317687,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002357143100771993,
+          "angle": 24.683944829483867,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002428571679583266,
+          "angle": 25.431943157650046,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0025000002583945385,
+          "angle": 26.179941485816226,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002571428837205811,
+          "angle": 26.9279398139824,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002642857416017083,
+          "angle": 27.67593814214857,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002714285994828356,
+          "angle": 28.423936470314754,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0027857145736396288,
+          "angle": 29.17193479848094,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002857143152450901,
+          "angle": 29.91993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0029285717312621732,
+          "angle": 30.667931454813285,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003000000310073446,
+          "angle": 31.415929782979468,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0030714288888847186,
+          "angle": 32.16392811114565,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003142857467695991,
+          "angle": 32.91192643931183,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003214286046507263,
+          "angle": 33.659924767477996,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003285714625318536,
+          "angle": 34.40792309564418,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003357143204129809,
+          "angle": 35.155921423810355,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003428571782941081,
+          "angle": 35.90391975197653,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035000003617523534,
+          "angle": 36.65191808014271,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035714289405636263,
+          "angle": 37.39991640830889,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0036428575193748988,
+          "angle": 38.147914736475066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037142860981861712,
+          "angle": 38.89591306464125,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037857146769974437,
+          "angle": 39.643911392807425,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003857143255808716,
+          "angle": 40.3919097209736,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003928571834619989,
+          "angle": 41.139908049139784,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0040000004134312615,
+          "angle": 41.88790637730596,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004071428992242534,
+          "angle": 42.635904705472136,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0041428575710538065,
+          "angle": 43.38390303363831,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004214286149865079,
+          "angle": 44.13190136180449,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004285714728676351,
+          "angle": 44.879899689970664,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004357143307487624,
+          "angle": 45.62789801813685,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004428571886298897,
+          "angle": 46.37589634630303,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004500000465110169,
+          "angle": 47.1238946744692,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004571429043921441,
+          "angle": 47.871893002635375,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004642857622732714,
+          "angle": 48.61989133080156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004714286201543986,
+          "angle": 49.367889658967734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0047857147803552595,
+          "angle": 50.11588798713392,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004857143359166532,
+          "angle": 50.86388631530009,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004928571937977804,
+          "angle": 51.61188464346626,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005000000516789077,
+          "angle": 52.35988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005071429095600349,
+          "angle": 53.10788129979862,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005142857674411622,
+          "angle": 53.8558796279648,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005214286253222894,
+          "angle": 54.60387795613099,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005285714832034166,
+          "angle": 55.35187628429714,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005357143410845439,
+          "angle": 56.09987461246334,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005428571989656712,
+          "angle": 56.84787294062951,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005500000568467984,
+          "angle": 57.59587126879569,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0055714291472792575,
+          "angle": 58.34386959696188,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00564285772609053,
+          "angle": 59.09186792512805,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005714286304901802,
+          "angle": 59.83986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005785714883713074,
+          "angle": 60.5878645814604,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0058571434625243465,
+          "angle": 61.33586290962657,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00592857204133562,
+          "angle": 62.08386123779277,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006000000620146892,
+          "angle": 62.831859565958936,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006071429198958164,
+          "angle": 63.579857894125105,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006142857777769437,
+          "angle": 64.3278562222913,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00621428635658071,
+          "angle": 65.07585455045746,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006285714935391982,
+          "angle": 65.82385287862365,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006357143514203255,
+          "angle": 66.57185120678982,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006428572093014526,
+          "angle": 67.31984953495599,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0065000006718257996,
+          "angle": 68.06784786312218,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006571429250637072,
+          "angle": 68.81584619128836,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0066428578294483445,
+          "angle": 69.56384451945453,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006714286408259618,
+          "angle": 70.31184284762071,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00678571498707089,
+          "angle": 71.0598411757869,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006857143565882162,
+          "angle": 71.80783950395306,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006928572144693434,
+          "angle": 72.55583783211924,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007000000723504707,
+          "angle": 73.30383616028541,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00707142930231598,
+          "angle": 74.0518344884516,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007142857881127253,
+          "angle": 74.79983281661778,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007214286459938524,
+          "angle": 75.54783114478396,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0072857150387497975,
+          "angle": 76.29582947295013,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00735714361756107,
+          "angle": 77.04382780111631,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0074285721963723425,
+          "angle": 77.7918261292825,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007500000775183615,
+          "angle": 78.53982445744866,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007571429353994887,
+          "angle": 79.28782278561485,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00764285793280616,
+          "angle": 80.03582111378101,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007714286511617432,
+          "angle": 80.7838194419472,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007785715090428705,
+          "angle": 81.53181777011338,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007857143669239978,
+          "angle": 82.27981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00792857224805125,
+          "angle": 83.02781442644573,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008000000826862523,
+          "angle": 83.77581275461192,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008071429405673795,
+          "angle": 84.52381108277808,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008142857984485068,
+          "angle": 85.27180941094427,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00821428656329634,
+          "angle": 86.01980773911043,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008285715142107613,
+          "angle": 86.76780606727662,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008357143720918886,
+          "angle": 87.51580439544281,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008428572299730158,
+          "angle": 88.26380272360898,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008500000878541431,
+          "angle": 89.01180105177517,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008571429457352703,
+          "angle": 89.75979937994133,
+          "contacts": 0
+        }
+      ],
+      "axial_only_contacts": 5496,
+      "spin_only_contacts": 5503,
+      "release_tip_parent": 0.6365714294573527,
+      "female_thread_exit_parent": 0.6345
+    },
+    {
+      "bolt": "IN3_CouplingBolt_03",
+      "closed_contacts": 0,
+      "samples": [
+        {
+          "local_distance": 0.0,
+          "angle": 0.0,
+          "contacts": 0
+        },
+        {
+          "local_distance": 7.142857881127252e-05,
+          "angle": 0.7479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00014285715762254504,
+          "angle": 1.4959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00021428573643381756,
+          "angle": 2.243994984498533,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0002857143152450901,
+          "angle": 2.991993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0003571428940563626,
+          "angle": 3.7399916408308886,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0004285714728676351,
+          "angle": 4.487989968997066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005000000516789077,
+          "angle": 5.235988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005714286304901802,
+          "angle": 5.983986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0006428572093014527,
+          "angle": 6.7319849534956,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007142857881127252,
+          "angle": 7.479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007857143669239978,
+          "angle": 8.227981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0008571429457352702,
+          "angle": 8.975979937994133,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0009285715245465428,
+          "angle": 9.723978266160312,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010000001033578154,
+          "angle": 10.47197659432649,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010714286821690878,
+          "angle": 11.219974922492666,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0011428572609803603,
+          "angle": 11.967973250658844,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001214285839791633,
+          "angle": 12.715971578825023,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0012857144186029055,
+          "angle": 13.4639699069912,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001357142997414178,
+          "angle": 14.211968235157377,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0014285715762254504,
+          "angle": 14.959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001500000155036723,
+          "angle": 15.707964891489734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0015714287338479955,
+          "angle": 16.455963219655914,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001642857312659268,
+          "angle": 17.20396154782209,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017142858914705405,
+          "angle": 17.951959875988265,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017857144702818132,
+          "angle": 18.699958204154445,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0018571430490930856,
+          "angle": 19.447956532320624,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001928571627904358,
+          "angle": 20.1959548604868,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020000002067156308,
+          "angle": 20.94395318865298,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020714287855269032,
+          "angle": 21.691951516819156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0021428573643381757,
+          "angle": 22.439949844985332,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022142859431494486,
+          "angle": 23.187948173151515,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022857145219607206,
+          "angle": 23.935946501317687,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002357143100771993,
+          "angle": 24.683944829483867,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002428571679583266,
+          "angle": 25.431943157650046,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0025000002583945385,
+          "angle": 26.179941485816226,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002571428837205811,
+          "angle": 26.9279398139824,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002642857416017083,
+          "angle": 27.67593814214857,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002714285994828356,
+          "angle": 28.423936470314754,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0027857145736396288,
+          "angle": 29.17193479848094,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002857143152450901,
+          "angle": 29.91993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0029285717312621732,
+          "angle": 30.667931454813285,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003000000310073446,
+          "angle": 31.415929782979468,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0030714288888847186,
+          "angle": 32.16392811114565,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003142857467695991,
+          "angle": 32.91192643931183,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003214286046507263,
+          "angle": 33.659924767477996,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003285714625318536,
+          "angle": 34.40792309564418,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003357143204129809,
+          "angle": 35.155921423810355,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003428571782941081,
+          "angle": 35.90391975197653,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035000003617523534,
+          "angle": 36.65191808014271,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035714289405636263,
+          "angle": 37.39991640830889,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0036428575193748988,
+          "angle": 38.147914736475066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037142860981861712,
+          "angle": 38.89591306464125,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037857146769974437,
+          "angle": 39.643911392807425,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003857143255808716,
+          "angle": 40.3919097209736,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003928571834619989,
+          "angle": 41.139908049139784,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0040000004134312615,
+          "angle": 41.88790637730596,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004071428992242534,
+          "angle": 42.635904705472136,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0041428575710538065,
+          "angle": 43.38390303363831,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004214286149865079,
+          "angle": 44.13190136180449,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004285714728676351,
+          "angle": 44.879899689970664,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004357143307487624,
+          "angle": 45.62789801813685,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004428571886298897,
+          "angle": 46.37589634630303,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004500000465110169,
+          "angle": 47.1238946744692,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004571429043921441,
+          "angle": 47.871893002635375,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004642857622732714,
+          "angle": 48.61989133080156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004714286201543986,
+          "angle": 49.367889658967734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0047857147803552595,
+          "angle": 50.11588798713392,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004857143359166532,
+          "angle": 50.86388631530009,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004928571937977804,
+          "angle": 51.61188464346626,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005000000516789077,
+          "angle": 52.35988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005071429095600349,
+          "angle": 53.10788129979862,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005142857674411622,
+          "angle": 53.8558796279648,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005214286253222894,
+          "angle": 54.60387795613099,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005285714832034166,
+          "angle": 55.35187628429714,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005357143410845439,
+          "angle": 56.09987461246334,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005428571989656712,
+          "angle": 56.84787294062951,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005500000568467984,
+          "angle": 57.59587126879569,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0055714291472792575,
+          "angle": 58.34386959696188,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00564285772609053,
+          "angle": 59.09186792512805,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005714286304901802,
+          "angle": 59.83986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005785714883713074,
+          "angle": 60.5878645814604,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0058571434625243465,
+          "angle": 61.33586290962657,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00592857204133562,
+          "angle": 62.08386123779277,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006000000620146892,
+          "angle": 62.831859565958936,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006071429198958164,
+          "angle": 63.579857894125105,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006142857777769437,
+          "angle": 64.3278562222913,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00621428635658071,
+          "angle": 65.07585455045746,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006285714935391982,
+          "angle": 65.82385287862365,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006357143514203255,
+          "angle": 66.57185120678982,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006428572093014526,
+          "angle": 67.31984953495599,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0065000006718257996,
+          "angle": 68.06784786312218,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006571429250637072,
+          "angle": 68.81584619128836,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0066428578294483445,
+          "angle": 69.56384451945453,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006714286408259618,
+          "angle": 70.31184284762071,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00678571498707089,
+          "angle": 71.0598411757869,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006857143565882162,
+          "angle": 71.80783950395306,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006928572144693434,
+          "angle": 72.55583783211924,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007000000723504707,
+          "angle": 73.30383616028541,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00707142930231598,
+          "angle": 74.0518344884516,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007142857881127253,
+          "angle": 74.79983281661778,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007214286459938524,
+          "angle": 75.54783114478396,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0072857150387497975,
+          "angle": 76.29582947295013,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00735714361756107,
+          "angle": 77.04382780111631,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0074285721963723425,
+          "angle": 77.7918261292825,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007500000775183615,
+          "angle": 78.53982445744866,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007571429353994887,
+          "angle": 79.28782278561485,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00764285793280616,
+          "angle": 80.03582111378101,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007714286511617432,
+          "angle": 80.7838194419472,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007785715090428705,
+          "angle": 81.53181777011338,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007857143669239978,
+          "angle": 82.27981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00792857224805125,
+          "angle": 83.02781442644573,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008000000826862523,
+          "angle": 83.77581275461192,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008071429405673795,
+          "angle": 84.52381108277808,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008142857984485068,
+          "angle": 85.27180941094427,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00821428656329634,
+          "angle": 86.01980773911043,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008285715142107613,
+          "angle": 86.76780606727662,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008357143720918886,
+          "angle": 87.51580439544281,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008428572299730158,
+          "angle": 88.26380272360898,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008500000878541431,
+          "angle": 89.01180105177517,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008571429457352703,
+          "angle": 89.75979937994133,
+          "contacts": 0
+        }
+      ],
+      "axial_only_contacts": 5150,
+      "spin_only_contacts": 5062,
+      "release_tip_parent": 0.6365714294573527,
+      "female_thread_exit_parent": 0.6345
+    },
+    {
+      "bolt": "IN3_CouplingBolt_04",
+      "closed_contacts": 0,
+      "samples": [
+        {
+          "local_distance": 0.0,
+          "angle": 0.0,
+          "contacts": 0
+        },
+        {
+          "local_distance": 7.142857881127252e-05,
+          "angle": 0.7479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00014285715762254504,
+          "angle": 1.4959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00021428573643381756,
+          "angle": 2.243994984498533,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0002857143152450901,
+          "angle": 2.991993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0003571428940563626,
+          "angle": 3.7399916408308886,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0004285714728676351,
+          "angle": 4.487989968997066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005000000516789077,
+          "angle": 5.235988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005714286304901802,
+          "angle": 5.983986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0006428572093014527,
+          "angle": 6.7319849534956,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007142857881127252,
+          "angle": 7.479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007857143669239978,
+          "angle": 8.227981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0008571429457352702,
+          "angle": 8.975979937994133,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0009285715245465428,
+          "angle": 9.723978266160312,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010000001033578154,
+          "angle": 10.47197659432649,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010714286821690878,
+          "angle": 11.219974922492666,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0011428572609803603,
+          "angle": 11.967973250658844,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001214285839791633,
+          "angle": 12.715971578825023,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0012857144186029055,
+          "angle": 13.4639699069912,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001357142997414178,
+          "angle": 14.211968235157377,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0014285715762254504,
+          "angle": 14.959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001500000155036723,
+          "angle": 15.707964891489734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0015714287338479955,
+          "angle": 16.455963219655914,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001642857312659268,
+          "angle": 17.20396154782209,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017142858914705405,
+          "angle": 17.951959875988265,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017857144702818132,
+          "angle": 18.699958204154445,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0018571430490930856,
+          "angle": 19.447956532320624,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001928571627904358,
+          "angle": 20.1959548604868,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020000002067156308,
+          "angle": 20.94395318865298,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020714287855269032,
+          "angle": 21.691951516819156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0021428573643381757,
+          "angle": 22.439949844985332,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022142859431494486,
+          "angle": 23.187948173151515,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022857145219607206,
+          "angle": 23.935946501317687,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002357143100771993,
+          "angle": 24.683944829483867,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002428571679583266,
+          "angle": 25.431943157650046,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0025000002583945385,
+          "angle": 26.179941485816226,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002571428837205811,
+          "angle": 26.9279398139824,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002642857416017083,
+          "angle": 27.67593814214857,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002714285994828356,
+          "angle": 28.423936470314754,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0027857145736396288,
+          "angle": 29.17193479848094,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002857143152450901,
+          "angle": 29.91993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0029285717312621732,
+          "angle": 30.667931454813285,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003000000310073446,
+          "angle": 31.415929782979468,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0030714288888847186,
+          "angle": 32.16392811114565,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003142857467695991,
+          "angle": 32.91192643931183,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003214286046507263,
+          "angle": 33.659924767477996,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003285714625318536,
+          "angle": 34.40792309564418,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003357143204129809,
+          "angle": 35.155921423810355,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003428571782941081,
+          "angle": 35.90391975197653,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035000003617523534,
+          "angle": 36.65191808014271,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035714289405636263,
+          "angle": 37.39991640830889,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0036428575193748988,
+          "angle": 38.147914736475066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037142860981861712,
+          "angle": 38.89591306464125,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037857146769974437,
+          "angle": 39.643911392807425,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003857143255808716,
+          "angle": 40.3919097209736,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003928571834619989,
+          "angle": 41.139908049139784,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0040000004134312615,
+          "angle": 41.88790637730596,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004071428992242534,
+          "angle": 42.635904705472136,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0041428575710538065,
+          "angle": 43.38390303363831,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004214286149865079,
+          "angle": 44.13190136180449,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004285714728676351,
+          "angle": 44.879899689970664,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004357143307487624,
+          "angle": 45.62789801813685,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004428571886298897,
+          "angle": 46.37589634630303,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004500000465110169,
+          "angle": 47.1238946744692,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004571429043921441,
+          "angle": 47.871893002635375,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004642857622732714,
+          "angle": 48.61989133080156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004714286201543986,
+          "angle": 49.367889658967734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0047857147803552595,
+          "angle": 50.11588798713392,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004857143359166532,
+          "angle": 50.86388631530009,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004928571937977804,
+          "angle": 51.61188464346626,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005000000516789077,
+          "angle": 52.35988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005071429095600349,
+          "angle": 53.10788129979862,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005142857674411622,
+          "angle": 53.8558796279648,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005214286253222894,
+          "angle": 54.60387795613099,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005285714832034166,
+          "angle": 55.35187628429714,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005357143410845439,
+          "angle": 56.09987461246334,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005428571989656712,
+          "angle": 56.84787294062951,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005500000568467984,
+          "angle": 57.59587126879569,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0055714291472792575,
+          "angle": 58.34386959696188,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00564285772609053,
+          "angle": 59.09186792512805,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005714286304901802,
+          "angle": 59.83986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005785714883713074,
+          "angle": 60.5878645814604,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0058571434625243465,
+          "angle": 61.33586290962657,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00592857204133562,
+          "angle": 62.08386123779277,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006000000620146892,
+          "angle": 62.831859565958936,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006071429198958164,
+          "angle": 63.579857894125105,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006142857777769437,
+          "angle": 64.3278562222913,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00621428635658071,
+          "angle": 65.07585455045746,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006285714935391982,
+          "angle": 65.82385287862365,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006357143514203255,
+          "angle": 66.57185120678982,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006428572093014526,
+          "angle": 67.31984953495599,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0065000006718257996,
+          "angle": 68.06784786312218,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006571429250637072,
+          "angle": 68.81584619128836,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0066428578294483445,
+          "angle": 69.56384451945453,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006714286408259618,
+          "angle": 70.31184284762071,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00678571498707089,
+          "angle": 71.0598411757869,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006857143565882162,
+          "angle": 71.80783950395306,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006928572144693434,
+          "angle": 72.55583783211924,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007000000723504707,
+          "angle": 73.30383616028541,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00707142930231598,
+          "angle": 74.0518344884516,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007142857881127253,
+          "angle": 74.79983281661778,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007214286459938524,
+          "angle": 75.54783114478396,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0072857150387497975,
+          "angle": 76.29582947295013,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00735714361756107,
+          "angle": 77.04382780111631,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0074285721963723425,
+          "angle": 77.7918261292825,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007500000775183615,
+          "angle": 78.53982445744866,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007571429353994887,
+          "angle": 79.28782278561485,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00764285793280616,
+          "angle": 80.03582111378101,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007714286511617432,
+          "angle": 80.7838194419472,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007785715090428705,
+          "angle": 81.53181777011338,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007857143669239978,
+          "angle": 82.27981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00792857224805125,
+          "angle": 83.02781442644573,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008000000826862523,
+          "angle": 83.77581275461192,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008071429405673795,
+          "angle": 84.52381108277808,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008142857984485068,
+          "angle": 85.27180941094427,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00821428656329634,
+          "angle": 86.01980773911043,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008285715142107613,
+          "angle": 86.76780606727662,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008357143720918886,
+          "angle": 87.51580439544281,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008428572299730158,
+          "angle": 88.26380272360898,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008500000878541431,
+          "angle": 89.01180105177517,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008571429457352703,
+          "angle": 89.75979937994133,
+          "contacts": 0
+        }
+      ],
+      "axial_only_contacts": 5043,
+      "spin_only_contacts": 5455,
+      "release_tip_parent": 0.6365714294573527,
+      "female_thread_exit_parent": 0.6345
+    },
+    {
+      "bolt": "IN3_CouplingBolt_05",
+      "closed_contacts": 0,
+      "samples": [
+        {
+          "local_distance": 0.0,
+          "angle": 0.0,
+          "contacts": 0
+        },
+        {
+          "local_distance": 7.142857881127252e-05,
+          "angle": 0.7479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00014285715762254504,
+          "angle": 1.4959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00021428573643381756,
+          "angle": 2.243994984498533,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0002857143152450901,
+          "angle": 2.991993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0003571428940563626,
+          "angle": 3.7399916408308886,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0004285714728676351,
+          "angle": 4.487989968997066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005000000516789077,
+          "angle": 5.235988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0005714286304901802,
+          "angle": 5.983986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0006428572093014527,
+          "angle": 6.7319849534956,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007142857881127252,
+          "angle": 7.479983281661777,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0007857143669239978,
+          "angle": 8.227981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0008571429457352702,
+          "angle": 8.975979937994133,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0009285715245465428,
+          "angle": 9.723978266160312,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010000001033578154,
+          "angle": 10.47197659432649,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0010714286821690878,
+          "angle": 11.219974922492666,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0011428572609803603,
+          "angle": 11.967973250658844,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001214285839791633,
+          "angle": 12.715971578825023,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0012857144186029055,
+          "angle": 13.4639699069912,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001357142997414178,
+          "angle": 14.211968235157377,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0014285715762254504,
+          "angle": 14.959966563323555,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001500000155036723,
+          "angle": 15.707964891489734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0015714287338479955,
+          "angle": 16.455963219655914,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001642857312659268,
+          "angle": 17.20396154782209,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017142858914705405,
+          "angle": 17.951959875988265,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0017857144702818132,
+          "angle": 18.699958204154445,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0018571430490930856,
+          "angle": 19.447956532320624,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.001928571627904358,
+          "angle": 20.1959548604868,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020000002067156308,
+          "angle": 20.94395318865298,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0020714287855269032,
+          "angle": 21.691951516819156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0021428573643381757,
+          "angle": 22.439949844985332,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022142859431494486,
+          "angle": 23.187948173151515,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0022857145219607206,
+          "angle": 23.935946501317687,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002357143100771993,
+          "angle": 24.683944829483867,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002428571679583266,
+          "angle": 25.431943157650046,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0025000002583945385,
+          "angle": 26.179941485816226,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002571428837205811,
+          "angle": 26.9279398139824,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002642857416017083,
+          "angle": 27.67593814214857,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002714285994828356,
+          "angle": 28.423936470314754,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0027857145736396288,
+          "angle": 29.17193479848094,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.002857143152450901,
+          "angle": 29.91993312664711,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0029285717312621732,
+          "angle": 30.667931454813285,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003000000310073446,
+          "angle": 31.415929782979468,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0030714288888847186,
+          "angle": 32.16392811114565,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003142857467695991,
+          "angle": 32.91192643931183,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003214286046507263,
+          "angle": 33.659924767477996,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003285714625318536,
+          "angle": 34.40792309564418,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003357143204129809,
+          "angle": 35.155921423810355,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003428571782941081,
+          "angle": 35.90391975197653,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035000003617523534,
+          "angle": 36.65191808014271,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0035714289405636263,
+          "angle": 37.39991640830889,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0036428575193748988,
+          "angle": 38.147914736475066,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037142860981861712,
+          "angle": 38.89591306464125,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0037857146769974437,
+          "angle": 39.643911392807425,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003857143255808716,
+          "angle": 40.3919097209736,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.003928571834619989,
+          "angle": 41.139908049139784,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0040000004134312615,
+          "angle": 41.88790637730596,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004071428992242534,
+          "angle": 42.635904705472136,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0041428575710538065,
+          "angle": 43.38390303363831,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004214286149865079,
+          "angle": 44.13190136180449,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004285714728676351,
+          "angle": 44.879899689970664,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004357143307487624,
+          "angle": 45.62789801813685,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004428571886298897,
+          "angle": 46.37589634630303,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004500000465110169,
+          "angle": 47.1238946744692,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004571429043921441,
+          "angle": 47.871893002635375,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004642857622732714,
+          "angle": 48.61989133080156,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004714286201543986,
+          "angle": 49.367889658967734,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0047857147803552595,
+          "angle": 50.11588798713392,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004857143359166532,
+          "angle": 50.86388631530009,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.004928571937977804,
+          "angle": 51.61188464346626,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005000000516789077,
+          "angle": 52.35988297163245,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005071429095600349,
+          "angle": 53.10788129979862,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005142857674411622,
+          "angle": 53.8558796279648,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005214286253222894,
+          "angle": 54.60387795613099,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005285714832034166,
+          "angle": 55.35187628429714,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005357143410845439,
+          "angle": 56.09987461246334,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005428571989656712,
+          "angle": 56.84787294062951,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005500000568467984,
+          "angle": 57.59587126879569,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0055714291472792575,
+          "angle": 58.34386959696188,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00564285772609053,
+          "angle": 59.09186792512805,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005714286304901802,
+          "angle": 59.83986625329422,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.005785714883713074,
+          "angle": 60.5878645814604,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0058571434625243465,
+          "angle": 61.33586290962657,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00592857204133562,
+          "angle": 62.08386123779277,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006000000620146892,
+          "angle": 62.831859565958936,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006071429198958164,
+          "angle": 63.579857894125105,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006142857777769437,
+          "angle": 64.3278562222913,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00621428635658071,
+          "angle": 65.07585455045746,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006285714935391982,
+          "angle": 65.82385287862365,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006357143514203255,
+          "angle": 66.57185120678982,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006428572093014526,
+          "angle": 67.31984953495599,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0065000006718257996,
+          "angle": 68.06784786312218,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006571429250637072,
+          "angle": 68.81584619128836,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0066428578294483445,
+          "angle": 69.56384451945453,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006714286408259618,
+          "angle": 70.31184284762071,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00678571498707089,
+          "angle": 71.0598411757869,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006857143565882162,
+          "angle": 71.80783950395306,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.006928572144693434,
+          "angle": 72.55583783211924,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007000000723504707,
+          "angle": 73.30383616028541,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00707142930231598,
+          "angle": 74.0518344884516,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007142857881127253,
+          "angle": 74.79983281661778,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007214286459938524,
+          "angle": 75.54783114478396,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0072857150387497975,
+          "angle": 76.29582947295013,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00735714361756107,
+          "angle": 77.04382780111631,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.0074285721963723425,
+          "angle": 77.7918261292825,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007500000775183615,
+          "angle": 78.53982445744866,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007571429353994887,
+          "angle": 79.28782278561485,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00764285793280616,
+          "angle": 80.03582111378101,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007714286511617432,
+          "angle": 80.7838194419472,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007785715090428705,
+          "angle": 81.53181777011338,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.007857143669239978,
+          "angle": 82.27981609827957,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00792857224805125,
+          "angle": 83.02781442644573,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008000000826862523,
+          "angle": 83.77581275461192,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008071429405673795,
+          "angle": 84.52381108277808,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008142857984485068,
+          "angle": 85.27180941094427,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.00821428656329634,
+          "angle": 86.01980773911043,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008285715142107613,
+          "angle": 86.76780606727662,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008357143720918886,
+          "angle": 87.51580439544281,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008428572299730158,
+          "angle": 88.26380272360898,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008500000878541431,
+          "angle": 89.01180105177517,
+          "contacts": 0
+        },
+        {
+          "local_distance": 0.008571429457352703,
+          "angle": 89.75979937994133,
+          "contacts": 0
+        }
+      ],
+      "axial_only_contacts": 5511,
+      "spin_only_contacts": 5511,
+      "release_tip_parent": 0.6365714294573527,
+      "female_thread_exit_parent": 0.6345
+    }
+  ],
+  "scope": "Six saved male/female mesh pairs, 121 installed helical positions each; closed clearance, geometric interlock and tip-release witnesses. Not torque/strength or continuous collision certification."
+}

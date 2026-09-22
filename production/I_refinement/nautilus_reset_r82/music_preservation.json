@@ -1,0 +1,37 @@
+{
+  "scope": "Read-only verification of existing full audio files, not new-body runtime playback",
+  "three_movements": [
+    {
+      "movement": 1,
+      "audio": "app/assets/collection/art/I/moonlight_candidate/pitman_movement_1.ogg",
+      "hash_matches_manifest": true,
+      "duration": 335.7678004535147
+    },
+    {
+      "movement": 2,
+      "audio": "app/assets/collection/art/I/moonlight_candidate/pitman_movement_2.ogg",
+      "hash_matches_manifest": true,
+      "duration": 131.5526530612245
+    },
+    {
+      "movement": 3,
+      "audio": "app/assets/collection/art/I/moonlight_candidate/pitman_movement_3_clean.mp3",
+      "hash_matches_manifest": true,
+      "duration": 493.714294433594
+    }
+  ],
+  "main_runtime": "I_nautilus_port_edge_r68",
+  "new_shape_runtime_connected": false,
+  "preserve": [
+    "full three movements and aligned score pages",
+    "audio transport timing, pause/resume",
+    "centered real staff, transparent spaces, central gold scan",
+    "physical scan tips and interior membrane/light response"
+  ],
+  "must_adapt": [
+    "mouth transform and clearance",
+    "staff visibility at desktop camera",
+    "new twelve chamber identities and deformation binding",
+    "new six-cover sequence and source import"
+  ]
+}

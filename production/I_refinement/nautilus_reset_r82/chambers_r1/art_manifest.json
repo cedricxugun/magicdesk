@@ -1,0 +1,8 @@
+{
+  "tool": "subscription built-in image_gen",
+  "underlying_model": "not exposed or asserted",
+  "image": "chamber_detail_r1.png",
+  "sha256": "583094c0c6c0d77906b1f6d734de95bfeb1219e85afe266d5870d87523a1d359",
+  "prompt": "PROMPT.txt",
+  "assessment": "Interior manufacturing and light direction only. Generated proportions/count/hinges are not measured geometry."
+}

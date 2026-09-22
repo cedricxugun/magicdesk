@@ -1,0 +1,771 @@
+{
+  "body_sha256": "da3597b14130aaac9c54dfde5098057ff5e7cf00cca804e04616f94ffdd38cca",
+  "core_sha256": "1f70b619ae3959bb29f550a7ce8b8ee5e54d3ff511f8f07a955b1caac100f105",
+  "optics_sha256": "d4bdf0afd5eec0be00bf8220a5b597f9e7765f6147e594fe565cb1cc715b1b38",
+  "polished_studio": true,
+  "rear_review": true,
+  "samples": [
+    {
+      "chambers": {
+        "authored_mask_sha256": "62efaeb17be28aa90a371febb6891037fc36630e9897ed634b72c326866aebd7",
+        "bands": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clock": 0.0,
+        "frames": 12,
+        "levels": [
+          0.00211648619733751,
+          0.00211648619733751,
+          0.00211648619733751
+        ],
+        "light_floor": 0.0,
+        "membranes": [
+          {
+            "maximum_world_stroke": 0.0000000516729050034733,
+            "mesh": "I84_Cell_01_Diaphragm",
+            "velocity": -0.0000980300291233243,
+            "weight": 0.00000934668283162951
+          },
+          {
+            "maximum_world_stroke": 0.0000000529310749876381,
+            "mesh": "I84_Cell_02_Diaphragm",
+            "velocity": -0.0000980300291233243,
+            "weight": 0.00000934668283162951
+          },
+          {
+            "maximum_world_stroke": 0.0000000538600652881694,
+            "mesh": "I84_Cell_03_Diaphragm",
+            "velocity": -0.0000980300291233243,
+            "weight": 0.00000934668283162951
+          },
+          {
+            "maximum_world_stroke": 0.0000000556808845054652,
+            "mesh": "I84_Cell_04_Diaphragm",
+            "velocity": -0.0000980300291233243,
+            "weight": 0.00000934668283162951
+          },
+          {
+            "maximum_world_stroke": 0.000000398774444008011,
+            "mesh": "I84_Cell_05_Diaphragm",
+            "velocity": 0.000223008166949385,
+            "weight": -0.0000641426048786681
+          },
+          {
+            "maximum_world_stroke": 0.000000403383730315426,
+            "mesh": "I84_Cell_06_Diaphragm",
+            "velocity": 0.000223008166949385,
+            "weight": -0.0000641426048786681
+          },
+          {
+            "maximum_world_stroke": 0.000000423832398747919,
+            "mesh": "I84_Cell_07_Diaphragm",
+            "velocity": 0.000223008166949385,
+            "weight": -0.0000641426048786681
+          },
+          {
+            "maximum_world_stroke": 0.000000441526752197591,
+            "mesh": "I84_Cell_08_Diaphragm",
+            "velocity": 0.000223008166949385,
+            "weight": -0.0000641426048786681
+          },
+          {
+            "maximum_world_stroke": 0.00000299981903114425,
+            "mesh": "I84_Cell_09_Diaphragm",
+            "velocity": 0.000359581231282325,
+            "weight": 0.000420096351766401
+          },
+          {
+            "maximum_world_stroke": 0.00000314502030313888,
+            "mesh": "I84_Cell_10_Diaphragm",
+            "velocity": 0.000359581231282325,
+            "weight": 0.000420096351766401
+          },
+          {
+            "maximum_world_stroke": 0.00000336860561620197,
+            "mesh": "I84_Cell_11_Diaphragm",
+            "velocity": 0.000359581231282325,
+            "weight": 0.000420096351766401
+          },
+          {
+            "maximum_world_stroke": 0.00000359669762847753,
+            "mesh": "I84_Cell_12_Diaphragm",
+            "velocity": 0.000359581231282325,
+            "weight": 0.000420096351766401
+          }
+        ],
+        "motion": "authored_membrane_shapes",
+        "opening": 0.0,
+        "playing": false,
+        "source_sha256": "5825d6ba5e34526a3cea4e9b0f818d619f006382fb4ccd2a606c9e329210d35b"
+      },
+      "driver": {
+        "opening": 0.0,
+        "panels": [
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.38655, 1.732996, 0.009144)",
+            "id": 1,
+            "position": "(0.38655, 1.732996, 0.009144)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(-0.039017, 1.503782, 0.004461)",
+            "id": 2,
+            "position": "(-0.039017, 1.503782, 0.004461)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.814038, 1.365432, 0.005868)",
+            "id": 3,
+            "position": "(0.814038, 1.365432, 0.005868)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(1.054086, 2.262451, 0.007342)",
+            "id": 4,
+            "position": "(1.054086, 2.262451, 0.007342)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(0.164122, 2.872147, 0.009059)",
+            "id": 5,
+            "position": "(0.164122, 2.872147, 0.009059)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+            "carriage_position": "(-0.969193, 2.146709, 0.044059)",
+            "id": 6,
+            "position": "(-0.969193, 2.146709, 0.044059)"
+          }
+        ]
+      },
+      "elapsed": 0.016428,
+      "music": {
+        "active": true,
+        "close_pending": false,
+        "pause_pending": false,
+        "response_level": 0.0,
+        "reveal": 0.0,
+        "staff": {
+          "cache_size": 3,
+          "first_tile": -1,
+          "movement": 1,
+          "note_x": 76.0239926815192,
+          "offset": -63.1426739851475,
+          "pending_tiles": 0,
+          "playhead": 0.5,
+          "quarter_estimate": 0.0,
+          "ready": true,
+          "reveal": 0.0,
+          "scan_intensity": 0.0,
+          "scan_level": 0.0,
+          "scan_playing": false,
+          "scanner_caps": {
+            "attached": 3,
+            "mode": "authored_directional_heads"
+          },
+          "valid_tiles": [
+            0.0,
+            1.0,
+            1.0
+          ],
+          "width": 278.333333333333
+        },
+        "starting": true,
+        "transport": {
+          "alignment_status": "estimated_requires_musical_review",
+          "clock_mode": "realtime_audio_compensated",
+          "duration": 961.036178588867,
+          "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+          "local_seconds": 0.0,
+          "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+          "movement": 1,
+          "score_quarter_estimate": 0.0,
+          "state": "stopped",
+          "total_seconds": 0.0
+        }
+      },
+      "sequence": {
+        "desired_open": true,
+        "mouth_closing_held": false,
+        "mouth_open": 0.00631846153846154,
+        "shell_open": 0.0,
+        "stage": "opening_mouth"
+      }
+    },
+    {
+      "chambers": {
+        "authored_mask_sha256": "62efaeb17be28aa90a371febb6891037fc36630e9897ed634b72c326866aebd7",
+        "bands": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clock": 0.0,
+        "frames": 12,
+        "levels": [
+          0.000000000000450153830227132,
+          0.000000000000450153830227132,
+          0.000000000000450153830227132
+        ],
+        "light_floor": 0.00076869637032609,
+        "membranes": [
+          {
+            "maximum_world_stroke": 0.00000000000000000000000000704768,
+            "mesh": "I84_Cell_01_Diaphragm",
+            "velocity": -0.00000000000000000000004610666007,
+            "weight": 0.0000000000000000000000012747956
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000000000000721928,
+            "mesh": "I84_Cell_02_Diaphragm",
+            "velocity": -0.00000000000000000000004610666007,
+            "weight": 0.0000000000000000000000012747956
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000000000000734598,
+            "mesh": "I84_Cell_03_Diaphragm",
+            "velocity": -0.00000000000000000000004610666007,
+            "weight": 0.0000000000000000000000012747956
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000000000000759432,
+            "mesh": "I84_Cell_04_Diaphragm",
+            "velocity": -0.00000000000000000000004610666007,
+            "weight": 0.0000000000000000000000012747956
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000000021650014565,
+            "mesh": "I84_Cell_05_Diaphragm",
+            "velocity": 0.00000000000000000000704160713088,
+            "weight": -0.00000000000000000003482390485984
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000000021900259076,
+            "mesh": "I84_Cell_06_Diaphragm",
+            "velocity": 0.00000000000000000000704160713088,
+            "weight": -0.00000000000000000003482390485984
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000000023010445489,
+            "mesh": "I84_Cell_07_Diaphragm",
+            "velocity": 0.00000000000000000000704160713088,
+            "weight": -0.00000000000000000003482390485984
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000000023971096342,
+            "mesh": "I84_Cell_08_Diaphragm",
+            "velocity": 0.00000000000000000000704160713088,
+            "weight": -0.00000000000000000003482390485984
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000062856719940676,
+            "mesh": "I84_Cell_09_Diaphragm",
+            "velocity": 0.00000000000000865591256414053,
+            "weight": -0.0000000000000000880249056924222
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000065899195368041,
+            "mesh": "I84_Cell_10_Diaphragm",
+            "velocity": 0.00000000000000865591256414053,
+            "weight": -0.0000000000000000880249056924222
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000070584091110133,
+            "mesh": "I84_Cell_11_Diaphragm",
+            "velocity": 0.00000000000000865591256414053,
+            "weight": -0.0000000000000000880249056924222
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000075363417992009,
+            "mesh": "I84_Cell_12_Diaphragm",
+            "velocity": 0.00000000000000865591256414053,
+            "weight": -0.0000000000000000880249056924222
+          }
+        ],
+        "motion": "authored_membrane_shapes",
+        "opening": 0.393417757009346,
+        "playing": false,
+        "source_sha256": "5825d6ba5e34526a3cea4e9b0f818d619f006382fb4ccd2a606c9e329210d35b"
+      },
+      "driver": {
+        "opening": 0.393417757009346,
+        "panels": [
+          {
+            "basis": "[X: (1.0, 0.0, -0.000015), Y: (0.0, 1.0, 0.000037), Z: (0.000015, -0.000037, 1.0)]",
+            "carriage_position": "(0.38655, 1.732996, 0.189144)",
+            "id": 1,
+            "position": "(0.38655, 1.732996, 0.189144)"
+          },
+          {
+            "basis": "[X: (1.0, -0.000144, 0.000205), Y: (0.000144, 1.0, 0.000339), Z: (-0.000205, -0.000338, 1.0)]",
+            "carriage_position": "(-0.055642, 1.492665, 0.064461)",
+            "id": 2,
+            "position": "(-0.055642, 1.492665, 0.064461)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, -0.000271), Y: (0.0, 1.0, 0.000323), Z: (0.000271, -0.000323, 1.0)]",
+            "carriage_position": "(0.8269, 1.350117, 0.065868)",
+            "id": 3,
+            "position": "(0.8269, 1.350117, 0.065868)"
+          },
+          {
+            "basis": "[X: (1.0, -0.0, -0.000383), Y: (-0.0, 1.0, -0.000175), Z: (0.000383, 0.000175, 1.0)]",
+            "carriage_position": "(1.072284, 2.270749, 0.067342)",
+            "id": 4,
+            "position": "(1.072284, 2.270749, 0.067342)"
+          },
+          {
+            "basis": "[X: (1.0, 0.0, 0.000013), Y: (0.0, 1.0, -0.000421), Z: (-0.000013, 0.000421, 1.0)]",
+            "carriage_position": "(0.163482, 2.892137, 0.069059)",
+            "id": 5,
+            "position": "(0.163482, 2.892137, 0.069059)"
+          },
+          {
+            "basis": "[X: (1.0, 0.00014, 0.000369), Y: (-0.00014, 1.0, -0.000147), Z: (-0.000369, 0.000147, 1.0)]",
+            "carriage_position": "(-0.987898, 2.153671, 0.10278)",
+            "id": 6,
+            "position": "(-0.987898, 2.153671, 0.10278)"
+          }
+        ]
+      },
+      "elapsed": 4.025242,
+      "music": {
+        "active": true,
+        "close_pending": false,
+        "pause_pending": false,
+        "response_level": 0.0,
+        "reveal": 0.0,
+        "staff": {
+          "cache_size": 3,
+          "first_tile": -1,
+          "movement": 1,
+          "note_x": 76.0239926815192,
+          "offset": -63.1426739851475,
+          "pending_tiles": 0,
+          "playhead": 0.5,
+          "quarter_estimate": 0.0,
+          "ready": true,
+          "reveal": 0.0,
+          "scan_intensity": 0.0,
+          "scan_level": 0.0,
+          "scan_playing": false,
+          "scanner_caps": {
+            "attached": 3,
+            "mode": "authored_directional_heads"
+          },
+          "valid_tiles": [
+            0.0,
+            1.0,
+            1.0
+          ],
+          "width": 278.333333333333
+        },
+        "starting": true,
+        "transport": {
+          "alignment_status": "estimated_requires_musical_review",
+          "clock_mode": "realtime_audio_compensated",
+          "duration": 961.036178588867,
+          "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+          "local_seconds": 0.0,
+          "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+          "movement": 1,
+          "score_quarter_estimate": 0.0,
+          "state": "stopped",
+          "total_seconds": 0.0
+        }
+      },
+      "sequence": {
+        "desired_open": true,
+        "mouth_closing_held": false,
+        "mouth_open": 1.0,
+        "shell_open": 0.393417757009346,
+        "stage": "opening_shell"
+      }
+    },
+    {
+      "chambers": {
+        "authored_mask_sha256": "62efaeb17be28aa90a371febb6891037fc36630e9897ed634b72c326866aebd7",
+        "bands": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clock": 1.16959916829908,
+        "frames": 12,
+        "levels": [
+          0.00000000000000000000010951008738,
+          0.00000000000000000000010951008738,
+          0.00000000000000000000010951008738
+        ],
+        "light_floor": 0.379429734237902,
+        "membranes": [
+          {
+            "maximum_world_stroke": 0.0,
+            "mesh": "I84_Cell_01_Diaphragm",
+            "velocity": -0.0,
+            "weight": 0.0
+          },
+          {
+            "maximum_world_stroke": 0.0,
+            "mesh": "I84_Cell_02_Diaphragm",
+            "velocity": -0.0,
+            "weight": 0.0
+          },
+          {
+            "maximum_world_stroke": 0.0,
+            "mesh": "I84_Cell_03_Diaphragm",
+            "velocity": -0.0,
+            "weight": 0.0
+          },
+          {
+            "maximum_world_stroke": 0.0,
+            "mesh": "I84_Cell_04_Diaphragm",
+            "velocity": -0.0,
+            "weight": 0.0
+          },
+          {
+            "maximum_world_stroke": 0.0,
+            "mesh": "I84_Cell_05_Diaphragm",
+            "velocity": -0.0,
+            "weight": -0.0
+          },
+          {
+            "maximum_world_stroke": 0.0,
+            "mesh": "I84_Cell_06_Diaphragm",
+            "velocity": -0.0,
+            "weight": -0.0
+          },
+          {
+            "maximum_world_stroke": 0.0,
+            "mesh": "I84_Cell_07_Diaphragm",
+            "velocity": -0.0,
+            "weight": -0.0
+          },
+          {
+            "maximum_world_stroke": 0.0,
+            "mesh": "I84_Cell_08_Diaphragm",
+            "velocity": -0.0,
+            "weight": -0.0
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000000000000000721,
+            "mesh": "I84_Cell_09_Diaphragm",
+            "velocity": 0.00000000000000000000000000623425,
+            "weight": -0.00000000000000000000000000101011
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000000000000000756,
+            "mesh": "I84_Cell_10_Diaphragm",
+            "velocity": 0.00000000000000000000000000623425,
+            "weight": -0.00000000000000000000000000101011
+          },
+          {
+            "maximum_world_stroke": 0.0000000000000000000000000000081,
+            "mesh": "I84_Cell_11_Diaphragm",
+            "velocity": 0.00000000000000000000000000623425,
+            "weight": -0.00000000000000000000000000101011
+          },
+          {
+            "maximum_world_stroke": 0.00000000000000000000000000000865,
+            "mesh": "I84_Cell_12_Diaphragm",
+            "velocity": 0.00000000000000000000000000623425,
+            "weight": -0.00000000000000000000000000101011
+          }
+        ],
+        "motion": "authored_membrane_shapes",
+        "opening": 1.0,
+        "playing": true,
+        "source_sha256": "5825d6ba5e34526a3cea4e9b0f818d619f006382fb4ccd2a606c9e329210d35b"
+      },
+      "driver": {
+        "opening": 1.0,
+        "panels": [
+          {
+            "basis": "[X: (0.999606, 0.000974, -0.028034), Y: (0.000974, 0.99759, 0.069374), Z: (0.028034, -0.069374, 0.997197)]",
+            "carriage_position": "(0.38655, 1.732996, 0.189144)",
+            "id": 1,
+            "position": "(0.38655, 1.732996, 0.189144)"
+          },
+          {
+            "basis": "[X: (0.896213, -0.356508, 0.264016), Y: (0.127182, 0.776632, 0.616983), Z: (-0.425003, -0.51937, 0.741369)]",
+            "carriage_position": "(-0.055642, 1.492665, 0.064461)",
+            "id": 2,
+            "position": "(-0.055642, 1.492665, 0.064461)"
+          },
+          {
+            "basis": "[X: (0.878849, 0.144245, -0.454772), Y: (0.144245, 0.828258, 0.541463), Z: (0.454772, -0.541463, 0.707107)]",
+            "carriage_position": "(0.8269, 1.350117, 0.065868)",
+            "id": 3,
+            "position": "(0.8269, 1.350117, 0.065868)"
+          },
+          {
+            "basis": "[X: (0.757519, -0.110562, -0.643382), Y: (-0.110562, 0.949588, -0.293358), Z: (0.643382, 0.293358, 0.707107)]",
+            "carriage_position": "(1.072284, 2.270749, 0.067342)",
+            "id": 4,
+            "position": "(1.072284, 2.270749, 0.067342)"
+          },
+          {
+            "basis": "[X: (0.9997, 0.009368, 0.022627), Y: (0.009368, 0.707407, -0.706745), Z: (-0.022627, 0.706745, 0.707107)]",
+            "carriage_position": "(0.163482, 2.892137, 0.069059)",
+            "id": 5,
+            "position": "(0.163482, 2.892137, 0.069059)"
+          },
+          {
+            "basis": "[X: (0.742763, 0.323868, 0.586014), Y: (-0.144695, 0.932191, -0.331788), Z: (-0.653733, 0.161646, 0.739259)]",
+            "carriage_position": "(-0.987898, 2.153671, 0.10278)",
+            "id": 6,
+            "position": "(-0.987898, 2.153671, 0.10278)"
+          }
+        ]
+      },
+      "elapsed": 8.00987299999999,
+      "music": {
+        "active": true,
+        "close_pending": false,
+        "pause_pending": false,
+        "response_level": 0.0,
+        "reveal": 1.0,
+        "staff": {
+          "cache_size": 3,
+          "first_tile": -1,
+          "movement": 1,
+          "note_x": 76.0239926815192,
+          "offset": -63.1426739851475,
+          "pending_tiles": 0,
+          "playhead": 0.5,
+          "quarter_estimate": 0.0,
+          "ready": true,
+          "reveal": 1.0,
+          "scan_intensity": 0.415,
+          "scan_level": 0.0,
+          "scan_playing": true,
+          "scanner_caps": {
+            "attached": 3,
+            "mode": "authored_directional_heads"
+          },
+          "valid_tiles": [
+            0.0,
+            1.0,
+            1.0
+          ],
+          "width": 278.333333333333
+        },
+        "starting": false,
+        "transport": {
+          "alignment_status": "estimated_requires_musical_review",
+          "clock_mode": "realtime_audio_compensated",
+          "duration": 961.036178588867,
+          "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+          "local_seconds": 1.16959916829908,
+          "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+          "movement": 1,
+          "score_quarter_estimate": 0.0,
+          "state": "playing",
+          "total_seconds": 1.16959916829908
+        }
+      },
+      "sequence": {
+        "desired_open": true,
+        "mouth_closing_held": false,
+        "mouth_open": 1.0,
+        "shell_open": 1.0,
+        "stage": "ready"
+      }
+    },
+    {
+      "chambers": {
+        "authored_mask_sha256": "62efaeb17be28aa90a371febb6891037fc36630e9897ed634b72c326866aebd7",
+        "bands": [
+          0.294931054115295,
+          0.121244095265865,
+          0.0879482254385948
+        ],
+        "clock": 8.25469801615369,
+        "frames": 12,
+        "levels": [
+          0.293186247348785,
+          0.116876773536205,
+          0.0697810500860214
+        ],
+        "light_floor": 0.38,
+        "membranes": [
+          {
+            "maximum_world_stroke": 0.000232425715983826,
+            "mesh": "I84_Cell_01_Diaphragm",
+            "velocity": 0.373187763709867,
+            "weight": 0.0420415583189914
+          },
+          {
+            "maximum_world_stroke": 0.000238084988660274,
+            "mesh": "I84_Cell_02_Diaphragm",
+            "velocity": 0.373187763709867,
+            "weight": 0.0420415583189914
+          },
+          {
+            "maximum_world_stroke": 0.000242263604817591,
+            "mesh": "I84_Cell_03_Diaphragm",
+            "velocity": 0.373187763709867,
+            "weight": 0.0420415583189914
+          },
+          {
+            "maximum_world_stroke": 0.000250453684516587,
+            "mesh": "I84_Cell_04_Diaphragm",
+            "velocity": 0.373187763709867,
+            "weight": 0.0420415583189914
+          },
+          {
+            "maximum_world_stroke": 0.000502891234960239,
+            "mesh": "I84_Cell_05_Diaphragm",
+            "velocity": 0.028575587378849,
+            "weight": 0.0808897216601775
+          },
+          {
+            "maximum_world_stroke": 0.000508703968745593,
+            "mesh": "I84_Cell_06_Diaphragm",
+            "velocity": 0.028575587378849,
+            "weight": 0.0808897216601775
+          },
+          {
+            "maximum_world_stroke": 0.000534491619573845,
+            "mesh": "I84_Cell_07_Diaphragm",
+            "velocity": 0.028575587378849,
+            "weight": 0.0808897216601775
+          },
+          {
+            "maximum_world_stroke": 0.000556805825992623,
+            "mesh": "I84_Cell_08_Diaphragm",
+            "velocity": 0.028575587378849,
+            "weight": 0.0808897216601775
+          },
+          {
+            "maximum_world_stroke": 0.00144800439312789,
+            "mesh": "I84_Cell_09_Diaphragm",
+            "velocity": 0.0484544081288629,
+            "weight": 0.20277935321409
+          },
+          {
+            "maximum_world_stroke": 0.00151809264763696,
+            "mesh": "I84_Cell_10_Diaphragm",
+            "velocity": 0.0484544081288629,
+            "weight": 0.20277935321409
+          },
+          {
+            "maximum_world_stroke": 0.0016260166631169,
+            "mesh": "I84_Cell_11_Diaphragm",
+            "velocity": 0.0484544081288629,
+            "weight": 0.20277935321409
+          },
+          {
+            "maximum_world_stroke": 0.00173611604990771,
+            "mesh": "I84_Cell_12_Diaphragm",
+            "velocity": 0.0484544081288629,
+            "weight": 0.20277935321409
+          }
+        ],
+        "motion": "authored_membrane_shapes",
+        "opening": 1.0,
+        "playing": true,
+        "source_sha256": "5825d6ba5e34526a3cea4e9b0f818d619f006382fb4ccd2a606c9e329210d35b"
+      },
+      "driver": {
+        "opening": 1.0,
+        "panels": [
+          {
+            "basis": "[X: (0.999606, 0.000974, -0.028034), Y: (0.000974, 0.99759, 0.069374), Z: (0.028034, -0.069374, 0.997197)]",
+            "carriage_position": "(0.38655, 1.732996, 0.189144)",
+            "id": 1,
+            "position": "(0.38655, 1.732996, 0.189144)"
+          },
+          {
+            "basis": "[X: (0.896213, -0.356508, 0.264016), Y: (0.127182, 0.776632, 0.616983), Z: (-0.425003, -0.51937, 0.741369)]",
+            "carriage_position": "(-0.055642, 1.492665, 0.064461)",
+            "id": 2,
+            "position": "(-0.055642, 1.492665, 0.064461)"
+          },
+          {
+            "basis": "[X: (0.878849, 0.144245, -0.454772), Y: (0.144245, 0.828258, 0.541463), Z: (0.454772, -0.541463, 0.707107)]",
+            "carriage_position": "(0.8269, 1.350117, 0.065868)",
+            "id": 3,
+            "position": "(0.8269, 1.350117, 0.065868)"
+          },
+          {
+            "basis": "[X: (0.757519, -0.110562, -0.643382), Y: (-0.110562, 0.949588, -0.293358), Z: (0.643382, 0.293358, 0.707107)]",
+            "carriage_position": "(1.072284, 2.270749, 0.067342)",
+            "id": 4,
+            "position": "(1.072284, 2.270749, 0.067342)"
+          },
+          {
+            "basis": "[X: (0.9997, 0.009368, 0.022627), Y: (0.009368, 0.707407, -0.706745), Z: (-0.022627, 0.706745, 0.707107)]",
+            "carriage_position": "(0.163482, 2.892137, 0.069059)",
+            "id": 5,
+            "position": "(0.163482, 2.892137, 0.069059)"
+          },
+          {
+            "basis": "[X: (0.742763, 0.323868, 0.586014), Y: (-0.144695, 0.932191, -0.331788), Z: (-0.653733, 0.161646, 0.739259)]",
+            "carriage_position": "(-0.987898, 2.153671, 0.10278)",
+            "id": 6,
+            "position": "(-0.987898, 2.153671, 0.10278)"
+          }
+        ]
+      },
+      "elapsed": 15.026336,
+      "music": {
+        "active": true,
+        "close_pending": false,
+        "pause_pending": false,
+        "response_level": 0.195238495177877,
+        "reveal": 1.0,
+        "staff": {
+          "cache_size": 4,
+          "first_tile": 0,
+          "movement": 1,
+          "note_x": 203.236887272357,
+          "offset": 64.07022060569,
+          "pending_tiles": 0,
+          "playhead": 0.5,
+          "quarter_estimate": 3.27208783396654,
+          "ready": true,
+          "reveal": 1.0,
+          "scan_intensity": 0.561428871383408,
+          "scan_level": 0.195238495177877,
+          "scan_playing": true,
+          "scanner_caps": {
+            "attached": 3,
+            "mode": "authored_directional_heads"
+          },
+          "valid_tiles": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "width": 278.333333333333
+        },
+        "starting": false,
+        "transport": {
+          "alignment_status": "estimated_requires_musical_review",
+          "clock_mode": "realtime_audio_compensated",
+          "duration": 961.036178588867,
+          "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+          "local_seconds": 8.25469801615369,
+          "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+          "movement": 1,
+          "score_quarter_estimate": 3.27208783396654,
+          "state": "playing",
+          "total_seconds": 8.25469801615369
+        }
+      },
+      "sequence": {
+        "desired_open": true,
+        "mouth_closing_held": false,
+        "mouth_open": 1.0,
+        "shell_open": 1.0,
+        "stage": "ready"
+      }
+    }
+  ],
+  "scope": "Actual Godot combined renderer and real audio-clock first-movement excerpt, fixed camera and authored mechanism. Explicit draw; no native performance or full art/fit acceptance.",
+  "temporal_polish": true
+}

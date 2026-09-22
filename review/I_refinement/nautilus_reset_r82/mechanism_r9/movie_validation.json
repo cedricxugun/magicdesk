@@ -1,0 +1,22 @@
+{
+  "video": "nautilus_mechanism_r82_r9.mp4",
+  "sha256": "f755cf6367e02c754bc6f061af1c696ddd3d9c82031c4064d601a7941c12e02b",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 720,
+        "height": 792,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "300"
+      }
+    ],
+    "format": {
+      "duration": "10.000000"
+    }
+  },
+  "first_last_pixels_identical": true,
+  "open_pixels_differ": true,
+  "scope": "10 second neutral motion witness, no acceleration; not native FPS, final material, music or effects acceptance"
+}

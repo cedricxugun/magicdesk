@@ -1,0 +1,806 @@
+{
+  "source": "blender/collection/I_r89_graduated_resonators_r3.blend",
+  "source_sha256": "c521ab4ffe7211cd83c9ac458999c9b57112627848472032bf418158d1764707",
+  "scope": "13 saved-source body/throat working states and diaphragm pressure extremes, physical cartridge/projector parts vs complete upper body. Holographic surfaces excluded. Carrier seating only classified if both triangle half-spaces meet the exact .230/.214 plane. Not self-contact, all-pair mechanical certification, continuous motion or art acceptance.",
+  "body_parts": 350,
+  "core_parts": 421,
+  "poses": [
+    {
+      "frame": 1,
+      "stroke": 0.0,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 40,
+      "stroke": 0.0,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 78,
+      "stroke": 0.0,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 100,
+      "stroke": 0.0,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 145,
+      "stroke": 0.0,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 175,
+      "stroke": 0.0,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 205,
+      "stroke": -0.006,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 205,
+      "stroke": 0.0,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 205,
+      "stroke": 0.006,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 260,
+      "stroke": 0.0,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 330,
+      "stroke": 0.0,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 400,
+      "stroke": 0.0,
+      "contact_pairs": 7
+    },
+    {
+      "frame": 430,
+      "stroke": 0.0,
+      "contact_pairs": 7
+    }
+  ],
+  "intentional_seating": [
+    {
+      "frame": 1,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 1,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 1,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 1,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 1,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 1,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 1,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 40,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 40,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 40,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 40,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 40,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 40,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 40,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 78,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 78,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 78,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 78,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 78,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 78,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 78,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 100,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 100,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 100,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 100,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 100,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 100,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 100,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 145,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 145,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 145,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 145,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 145,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 145,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 145,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 175,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 175,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 175,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 175,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 175,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 175,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 175,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 205,
+      "stroke": -0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": -0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": -0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": -0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": -0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": -0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": -0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 205,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 205,
+      "stroke": 0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 205,
+      "stroke": 0.006,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 260,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 260,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 260,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 260,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 260,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 260,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 260,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 330,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 330,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 330,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 330,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 330,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 330,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 330,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 400,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 400,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 400,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 400,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 400,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 400,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 400,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    },
+    {
+      "frame": 430,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_0",
+      "triangle_pairs": 638,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 430,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_1",
+      "triangle_pairs": 445,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 430,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_2",
+      "triangle_pairs": 324,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 430,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_3",
+      "triangle_pairs": 611,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 430,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_4",
+      "triangle_pairs": 32,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 430,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I83_HeadWasher_5",
+      "triangle_pairs": 74,
+      "mating_plane_mouth_z": 0.214
+    },
+    {
+      "frame": 430,
+      "stroke": 0.0,
+      "core": "IAM_EyelidFixedCarrier",
+      "body": "I86_ReceiverCasting",
+      "triangle_pairs": 2871,
+      "mating_plane_mouth_z": 0.23
+    }
+  ],
+  "unexpected": [],
+  "subset_clear": true
+}

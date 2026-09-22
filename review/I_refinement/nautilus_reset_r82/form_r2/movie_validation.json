@@ -1,0 +1,22 @@
+{
+  "video": "nautilus_form_motion_r82.mp4",
+  "sha256": "c50670b19315ff5332e4001a47ecfc0adaa7c521244ce0c552382243c528a78e",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 720,
+        "height": 792,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "300"
+      }
+    ],
+    "format": {
+      "duration": "10.000000"
+    }
+  },
+  "first_last_pixels_identical": false,
+  "open_pixels_differ": true,
+  "status": "motion-study-only, no final art/runtime acceptance"
+}

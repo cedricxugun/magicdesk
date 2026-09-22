@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Porcelain real edge radius",
+    "type": "BEVEL",
+    "show_render": true,
+    "width": 0.0035000001080334187,
+    "angle_limit": 0.44999998807907104,
+    "segments": 3,
+    "harden_normals": false
+  }
+]

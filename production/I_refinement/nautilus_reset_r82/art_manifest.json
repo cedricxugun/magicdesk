@@ -1,0 +1,60 @@
+{
+  "tool": "subscription built-in image_gen",
+  "underlying_model": "not exposed or asserted",
+  "status": "whole_form_redesign_with_independent_3d_shape_motion_prototype_not_final_or_accepted",
+  "current_closed_direction": "closed_master_r2.png",
+  "source_of_truth": "User rejection + BRIEF.md + SHAPE_AND_MOTION.md; real shared BASE_FIXED for dimensions",
+  "assets": [
+    {
+      "file": "closed_master_r1.png",
+      "prompt": "PROMPT_closed.txt",
+      "sha256": "fb568022692e91896f9559555ee348a4be852a0823e5345d6884d21129f3ed64",
+      "assessment": "Superseded: saddle/coil/material direction improves, mouth remains too large and round."
+    },
+    {
+      "file": "closed_master_r2.png",
+      "prompt": "PROMPT_closed_v2.txt",
+      "sha256": "c7900e1bf830ef9b9dc81871efa1b4ae8c98cf00cc5323c23738e2767e3672c8",
+      "assessment": "Preferred closed art direction pending coherent opening: smaller oblique short aperture, curled center and sculpted saddle. Six-part topology is not certified by this painting."
+    },
+    {
+      "file": "opening_study_r1.png",
+      "prompt": "PROMPT_opening.txt",
+      "sha256": "76126231e79573e2e341667fab28152703ae0d196de06c0415b38acb524362ce",
+      "assessment": "Not a reliable all-six-open map: central belly and mouth shoulder appear fixed. Interior finish reference only."
+    },
+    {
+      "file": "opening_study_r2.png",
+      "prompt": "PROMPT_opening_v2.txt",
+      "sha256": "aff63adda50f3357c4774e304c23b73963dd849c0a0f674b43f331537da55649",
+      "assessment": "Preferred interior/short-link art exploration; center is visibly unseated but lower saddle interface and exact six identities remain ambiguous. Do not infer engineering clearance from this image."
+    },
+    {
+      "file": "joint_detail_r1.png",
+      "prompt": "PROMPT_joint_detail.txt",
+      "sha256": "ded9056314aed76ef305bc34735fdc5e64aa1e2dc4e9c72c4fe8a5be09896fed",
+      "assessment": "Built-in joint finish and forging study; generated left panel shows front despite rear prompt. Not engineering dimensions, no exact per-cover fit guarantee."
+    }
+  ],
+  "invariants_not_guaranteed_by_generation": [
+    "Original BASE_FIXED geometry and button details must be reused from the source; image pedestal is approximate.",
+    "All six panel identities, hinge positions and motion envelopes require a new 3D prototype.",
+    "Source materials and AAA final quality not implemented by producing a concept image."
+  ],
+  "frozen_rejected_source": "blender/collection/I_base_dock_r81.blend",
+  "current_open_direction": "opening_study_r2.png",
+  "independent_3d_prototype": {
+    "source": "blender/collection/I_nautilus_reset_r82_mechanism_r9.blend",
+    "sha256": "16248c30cf082b54c4fdb6b9507eed354daebde1638ed916d65ddcd97031ed8a",
+    "report": "review/I_refinement/nautilus_reset_r82/mechanism_r9/build.json",
+    "assessment": "Independent refined mechanism candidate r9. 300 integer-frame ceramic/front-bearing and peer subset plus 13-pose named guide/saddle checks clear; not whole model, continuous collision, art or runtime acceptance. Music interface/readability still need adaptation."
+  },
+  "known_rejected_local_iterations": [
+    "mechanism_r3: double local offset during resampling",
+    "mechanism_r3b/r4: guide hardware crossed narrow ceramic edge",
+    "mechanism_r5: covers collide during rotation",
+    "mechanism_r6: lower cover clips front saddle",
+    "mechanism_r7: lifting lower cover creates peer collisions",
+    "mechanism_r8: 31-frame scan missed frame44 saddle contact; do not treat as cleared"
+  ]
+}

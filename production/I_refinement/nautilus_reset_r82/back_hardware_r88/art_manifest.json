@@ -1,0 +1,12 @@
+{
+  "tool": "subscription built-in image_gen",
+  "underlying_model": "not exposed or asserted",
+  "image": "forged_joint_detail_r1.png",
+  "sha256": "aafd613e42ceafdf947102ab5ecbf21af6a4fd2fe900b280fd971350e8512d91",
+  "prompt": "PROMPT.txt",
+  "references": [
+    "review/I_refinement/nautilus_reset_r82/back_hardware_r88/rear_open.png",
+    "review/I_refinement/nautilus_reset_r82/back_hardware_r88/rear_closed.png"
+  ],
+  "assessment": "Finish/chamfer/formed-foot art direction only. Generated macro depicts a simplified single coaxial joint and is not a valid replacement for the authored twin guides, cross-pin, oblique axis or measured envelope. Actual geometry follows R87 working locations and requires its own joining/clearance checks."
+}

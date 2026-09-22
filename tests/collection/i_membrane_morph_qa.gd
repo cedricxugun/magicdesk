@@ -3,6 +3,8 @@ func _initialize()->void:run.call_deferred()
 func vector(p:Array)->Vector3:return Vector3(p[0],p[1],p[2])
 func run()->void:
     var folder:="res://../review/I_refinement/nautilus_r1/chamber_motion_r36/"
+    for arg in OS.get_cmdline_user_args():
+        if arg.begins_with("--folder="):folder=arg.trim_prefix("--folder=").trim_suffix("/")+"/"
     var spec:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(folder+"build.json"));var ref:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(folder+"morph_witnesses.json"));assert(ref.source_sha256==spec.source_sha256 and ref.component_sha256==spec.component_sha256)
     var path:String="res://"+str(spec.component).trim_prefix("app/");assert(FileAccess.get_sha256(path)==spec.component_sha256)
     var asset:Node3D=load(path).instantiate();root.add_child(asset);var response=load("res://collection/i_chamber_music_response.gd").new();response.bind(asset,spec)
@@ -38,6 +40,13 @@ func run()->void:
             var m:Dictionary=binding.motion;var a:float=m.mesh.get_blend_shape_value(m.pressure);var b:float=m.mesh.get_blend_shape_value(m.rebound);assert(a>=0 and b>=0 and a<=1 and b<=1 and minf(a,b)==0.);assert(absf(a-b-m.position)<.000001);peak=maxf(peak,absf(m.position))
     assert(peak>.5)
     for row in response.bindings:assert(absf(row.motion.position)<.0001 and absf(row.motion.velocity)<.001)
+    var shadow_config:Array=[]
+    for row in response.bindings:
+        if row.light==null:continue
+        if response.illumination.has("shadow_normal_bias"):assert(is_equal_approx(row.light.shadow_normal_bias,float(response.illumination.shadow_normal_bias)))
+        if response.illumination.has("shadow_bias"):assert(is_equal_approx(row.light.shadow_bias,float(response.illumination.shadow_bias)))
+        shadow_config.append({"normal_bias":row.light.shadow_normal_bias,"bias":row.light.shadow_bias,"shadows":row.light.shadow_enabled})
     response.release();response=null
     var output:Dictionary={"passed":true,"source_sha256":spec.source_sha256,"component_sha256":spec.component_sha256,"witness_checks":checked,"maximum_world_error":max_error,"meshes":summaries,"maximum_runtime_shape_weight":peak,"settles_on_pause_and_stop":true,"scope":"Actual imported morph arrays match source world-space witnesses at signed amplitudes; no automatic LOD/compression/proxy on twelve membrane meshes. Runtime bounded spring weights, exclusive pressure/rebound and settling checked. No full-work playback, continuous collision or final art acceptance."}
+    output["light_shadow_config"]=shadow_config
     FileAccess.open(folder+"runtime_morph_qa.json",FileAccess.WRITE).store_string(JSON.stringify(output,"  "));asset.queue_free();await process_frame;print("I_MEMBRANE_MORPH_QA true ",checked," max_error=",max_error);quit()

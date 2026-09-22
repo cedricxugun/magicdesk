@@ -1,0 +1,23 @@
+{
+  "source_sha256": "a5fe1c329d8d3f4881e552fc54f0518011cd35158274d9c3f2ccb4a93a22c5fe",
+  "candidates": [
+    {
+      "translation": [
+        -0.016625553369522095,
+        -0.05999999865889549,
+        -0.011117148213088512
+      ],
+      "axis": [
+        0.8035227656364441,
+        0.34202009439468384,
+        -0.4872099757194519
+      ],
+      "axis_adjust_degrees": [
+        -25.0,
+        -20.0
+      ],
+      "contacts": []
+    }
+  ],
+  "scope": "41 sampled closed-to-open poses against actual core, skins, receiver, cells and other covers. Own linkage not rebuilt; no production motion claim."
+}

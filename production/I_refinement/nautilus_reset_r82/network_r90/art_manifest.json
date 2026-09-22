@@ -1,0 +1,9 @@
+{
+  "tool": "subscription built-in image_gen",
+  "backend_model": "not independently verified",
+  "image": "production/I_refinement/nautilus_reset_r82/network_r90/network_concept_r1.png",
+  "sha256": "b129b36c85ee8415d8f148f83e22dcdff21e1ce3b3a66e62d4aa54e57141f41c",
+  "prompt": "production/I_refinement/nautilus_reset_r82/network_r90/PROMPT.txt",
+  "reference": "review/I_refinement/nautilus_reset_r82/chambers_r89/built_r3/native/state_03.png",
+  "use": "Concept-only finish and branched-conductor direction; not measured CAD or evidence of final runtime appearance."
+}

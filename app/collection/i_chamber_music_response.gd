@@ -5,6 +5,11 @@ var status:Dictionary={}
 var levels:=Vector3.ZERO
 var illumination:Dictionary={}
 var light_floor:=0.
+var network_bindings:Array=[]
+var network_spec:Dictionary={}
+var network_clock:=0.
+func wants_work_clock()->bool:
+    return str(network_spec.get("clock_mode","movement"))=="work"
 func bind(asset:Node3D,spec:Dictionary)->void:
     var layout:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(str(spec.chamber_response_layout)))
     assert(layout.source_sha256==spec.source_sha256 and layout.component_sha256==spec.component_sha256)
@@ -43,22 +48,47 @@ func bind(asset:Node3D,spec:Dictionary)->void:
                 finish.set_shader_parameter("emission_gain",float(illumination.emission_gain))
                 var tint:Array=illumination.get("light_color",[1.,.42,.09])
                 finish.set_shader_parameter("diffuser_color",Vector3(tint[0],tint[1],tint[2]))
+                if bool(illumination.get("wavefront",false)):
+                    finish.set_shader_parameter("wavefront_enabled",true)
+                    finish.set_shader_parameter("phase_offset",float(row.phase_offset))
                 conduit.set_surface_override_material(i,finish)
                 materials.append({"index":i,"original":original,"material":finish,"mesh":conduit,"emits":true});matched+=1
             assert(matched>0,"Missing authored opal conductor surface")
         var light:OmniLight3D=null
         if bool(row.light_enabled):
             light=OmniLight3D.new();asset.add_child(light);var p:Array=row.light_position_godot;light.position=Vector3(p[0],p[1],p[2]);light.light_color=Color(1.,.56,.19);light.omni_range=.48;light.light_energy=0.;light.shadow_enabled=true
+            light.shadow_normal_bias=float(illumination.get("shadow_normal_bias",light.shadow_normal_bias))
+            light.shadow_bias=float(illumination.get("shadow_bias",light.shadow_bias))
         var binding:Dictionary={"mesh":mesh,"materials":materials,"band":int(row.band),"light":light}
         if row.has("membrane_motion"):
             var m:Dictionary=row.membrane_motion;var membrane:=asset.find_child(str(m.mesh),true,false)as MeshInstance3D;assert(membrane!=null)
             var pressure:int=membrane.find_blend_shape_by_name(str(m.pressure_key));var rebound:int=membrane.find_blend_shape_by_name(str(m.rebound_key));assert(pressure>=0 and rebound>=0)
             binding["motion"]={"mesh":membrane,"pressure":pressure,"rebound":rebound,"position":0.,"velocity":0.,"frequency":float(m.natural_frequency_hz),"damping":float(m.damping_ratio),"max_world_stroke":float(m.max_world_stroke)}
         bindings.append(binding)
-    status={"source_sha256":layout.source_sha256,"frames":bindings.size(),"motion":"authored_membrane_shapes"if bindings.any(func(r):return r.has("motion"))else "emission_only","authored_mask_sha256":layout.mask_sha256}
+    network_spec=layout.get("network",{})
+    for entry in network_spec.get("segments",[]):
+        var mesh:=asset.find_child(str(entry.mesh),true,false) as MeshInstance3D;assert(mesh!=null)
+        var materials:Array=[]
+        for i in range(mesh.mesh.get_surface_count()):
+            var original:=mesh.get_active_material(i) as BaseMaterial3D
+            if original==null or not original.resource_name.begins_with(str(entry.material)):continue
+            var finish:=ShaderMaterial.new();finish.shader=load("res://collection/i_opal_conductor.gdshader")
+            finish.set_shader_parameter("conductor_mask",texture);finish.set_shader_parameter("emission_gain",float(network_spec.get("emission_gain",illumination.get("emission_gain",6.))))
+            var tint:Array=network_spec.get("light_color",illumination.get("light_color",[1.,.55,.16]));finish.set_shader_parameter("diffuser_color",Vector3(tint[0],tint[1],tint[2]))
+            finish.set_shader_parameter("guided_network",true)
+            finish.set_shader_parameter("wavefront_enabled",true);finish.set_shader_parameter("phase_offset",float(entry.get("phase_offset",0.)))
+            mesh.set_surface_override_material(i,finish);materials.append({"index":i,"original":original,"material":finish})
+        assert(not materials.is_empty() and not entry.bands.is_empty())
+        network_bindings.append({"mesh":mesh,"materials":materials,"bands":entry.bands})
+    status={"source_sha256":layout.source_sha256,"frames":bindings.size(),"motion":"authored_membrane_shapes"if bindings.any(func(r):return r.has("motion"))else "emission_only","authored_mask_sha256":layout.mask_sha256,"network_segments":network_bindings.size()}
     update(Vector3.ZERO,0.,false,0.,0.)
 func update(bands:Vector3,clock:float,playing:bool,opening:float,delta:float)->void:
     var gate:=smoothstep(.35,.90,opening)
+    var visual_clock:=clock
+    if not network_bindings.is_empty():
+        if playing:network_clock=clock
+        elif gate==0.:network_clock=0.
+        visual_clock=network_clock
     var target:=bands.clamp(Vector3.ZERO,Vector3.ONE)*gate if playing else Vector3.ZERO
     var factor:=1.-exp(-maxf(delta,0.)/ (.05 if target.length()>levels.length()else .18))
     levels=levels.lerp(target,factor)
@@ -74,7 +104,7 @@ func update(bands:Vector3,clock:float,playing:bool,opening:float,delta:float)->v
         for material in row.materials:
             material.material.set_shader_parameter("response",(value if illumination.is_empty() else value*gate) if material.emits else 0.)
             material.material.set_shader_parameter("base_response",light_floor if material.emits else 0.)
-            material.material.set_shader_parameter("travel",clock)
+            material.material.set_shader_parameter("travel",visual_clock)
         if row.light!=null:row.light.light_energy=value*.16 if illumination.is_empty() else gate*(light_floor+value)*float(illumination.spill_gain)
         if row.has("motion"):
             var m:Dictionary=row.motion;var omega:float=TAU*m.frequency;var remaining:=maxf(delta,0.)
@@ -90,10 +120,19 @@ func update(bands:Vector3,clock:float,playing:bool,opening:float,delta:float)->v
             if m.mesh.get_blend_shape_value(m.pressure)!=pressure_value:m.mesh.set_blend_shape_value(m.pressure,pressure_value)
             if m.mesh.get_blend_shape_value(m.rebound)!=rebound_value:m.mesh.set_blend_shape_value(m.rebound,rebound_value)
             strokes.append({"mesh":str(m.mesh.name),"weight":m.position,"velocity":m.velocity,"maximum_world_stroke":absf(m.position)*m.max_world_stroke})
-    status["bands"]=[bands.x,bands.y,bands.z];status["levels"]=[levels.x,levels.y,levels.z];status["clock"]=clock;status["playing"]=playing;status["opening"]=opening
+    for row in network_bindings:
+        var value:=0.
+        for band in row.bands:value=maxf(value,levels[int(band)])
+        for material in row.materials:
+            material.material.set_shader_parameter("response",value*gate);material.material.set_shader_parameter("base_response",light_floor);material.material.set_shader_parameter("travel",visual_clock)
+    status["bands"]=[bands.x,bands.y,bands.z];status["levels"]=[levels.x,levels.y,levels.z];status["clock"]=clock;status["playing"]=playing;status["opening"]=opening;status["network_clock"]=network_clock
     status["membranes"]=strokes
     status["light_floor"]=light_floor
 func release()->void:
+    for row in network_bindings:
+        if is_instance_valid(row.mesh):
+            for material in row.materials:row.mesh.set_surface_override_material(material.index,material.original)
+    network_bindings.clear();network_spec.clear();network_clock=0.
     for row in bindings:
         if is_instance_valid(row.mesh):
             for material in row.materials:

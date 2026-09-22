@@ -1,0 +1,542 @@
+{
+  "source_sha256": "a6d66269efbd56ddc60228e0aa2a324c851f015cab0dce3d7ff944b9c9deaf7d",
+  "self_checks": [
+    {
+      "name": "ID79_BaseBolt_0",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_BaseBolt_1",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_BaseBolt_2",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_BaseBolt_3",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_BaseBolt_4",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_BaseBolt_5",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_BaseWasher_0",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_BaseWasher_1",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_BaseWasher_2",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_BaseWasher_3",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_BaseWasher_4",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_BaseWasher_5",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Carrier",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_DockSeatGasket",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Locator_0",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Locator_1",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Locator_2",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_LockBolt_0",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_LockBolt_1",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_LockBolt_2",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_LockBolt_3",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_LockWasher_0",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_LockWasher_1",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_LockWasher_2",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_LockWasher_3",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion0_CoreBolt_0",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion0_CoreBolt_1",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion0_CoreBolt_2",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion0_CoreBolt_3",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion0_CoreWasher_0",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion0_CoreWasher_1",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion0_CoreWasher_2",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion0_CoreWasher_3",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion0_InnerBacking",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion1_CoreBolt_0",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion1_CoreBolt_1",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion1_CoreBolt_2",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion1_CoreBolt_3",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion1_CoreWasher_0",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion1_CoreWasher_1",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion1_CoreWasher_2",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion1_CoreWasher_3",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion1_InnerBacking",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion0_PortRim",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID79_Stanchion1_PortRim",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "IN1_DeckFoot",
+      "self_contacts": 7,
+      "examples": [
+        [
+          [
+            [
+              0.29664918780326843,
+              -0.4395732581615448,
+              0.5962000489234924
+            ],
+            [
+              0.2570735514163971,
+              -0.4537336528301239,
+              0.6615002155303955
+            ],
+            [
+              0.2570735514163971,
+              -0.4537336528301239,
+              0.5962000489234924
+            ]
+          ],
+          [
+            [
+              0.2570735812187195,
+              -0.4537336528301239,
+              0.5962000489234924
+            ],
+            [
+              0.25620272755622864,
+              -0.4508627951145172,
+              0.5962000489234924
+            ],
+            [
+              0.312288761138916,
+              -0.43079492449760437,
+              0.5962000489234924
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -0.48957327008247375,
+              -0.08664919435977936,
+              0.5962000489234924
+            ],
+            [
+              -0.5037336349487305,
+              -0.04707355797290802,
+              0.6615002155303955
+            ],
+            [
+              -0.5037336349487305,
+              -0.04707355797290802,
+              0.5962000489234924
+            ]
+          ],
+          [
+            [
+              -0.5037336349487305,
+              -0.047073572874069214,
+              0.5962000489234924
+            ],
+            [
+              -0.5008627772331238,
+              -0.04620271921157837,
+              0.5962000489234924
+            ],
+            [
+              -0.4807949364185333,
+              -0.10228876024484634,
+              0.5962000489234924
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -0.4579720199108124,
+              -0.15755195915699005,
+              0.6615002155303955
+            ],
+            [
+              -0.483566552400589,
+              -0.10343683511018753,
+              0.6615002155303955
+            ],
+            [
+              -0.4655952751636505,
+              -0.1414339244365692,
+              0.5962000489234924
+            ]
+          ],
+          [
+            [
+              -0.4807949364185333,
+              -0.10228876024484634,
+              0.5962000489234924
+            ],
+            [
+              -0.4579720199108124,
+              -0.15755195915699005,
+              0.5962000489234924
+            ],
+            [
+              -0.483566552400589,
+              -0.10343683511018753,
+              0.5962000489234924
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "IN1_PorcelainPanel_02",
+      "self_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "IN3_ContinuousThroat",
+      "self_contacts": 1,
+      "examples": [
+        [
+          [
+            [
+              -0.0922936201095581,
+              -0.1852383315563202,
+              1.8694978952407837
+            ],
+            [
+              -0.08985111117362976,
+              -0.1865791231393814,
+              1.852980375289917
+            ],
+            [
+              -0.08938619494438171,
+              -0.1869209110736847,
+              1.8534083366394043
+            ]
+          ],
+          [
+            [
+              -0.08939018845558167,
+              -0.18691885471343994,
+              1.8534353971481323
+            ],
+            [
+              -0.08936237543821335,
+              -0.18693073093891144,
+              1.8531960248947144
+            ],
+            [
+              -0.08770248293876648,
+              -0.1769522875547409,
+              1.85389244556427
+            ]
+          ]
+        ]
+      ]
+    }
+  ],
+  "new_vs_new": {
+    "ID79_Carrier / ID79_DockSeatGasket": 1026
+  },
+  "operating_samples": [
+    {
+      "opening": 0.0,
+      "contacts": {
+        "ID79_Stanchion0_CoreBolt_2 / IN1_CellDiaphragm_08": 264,
+        "ID79_Stanchion0_CoreBolt_1 / IN1_CellDiaphragm_09": 132,
+        "ID79_Carrier / IN1_CellDiaphragm_08": 500,
+        "ID79_Carrier / IN1_CellFrame_08": 68,
+        "ID79_Carrier / IN1_CellFrame_09": 1220,
+        "ID79_Carrier / IN1_CellDiaphragm_09": 2342,
+        "ID79_DockSeatGasket / IN1_DeckFoot": 2092,
+        "ID79_Carrier / IN1_ChamberRib_9_A": 84,
+        "ID79_Stanchion1_CoreBolt_3 / IN1_CellDiaphragm_09": 132,
+        "ID79_Stanchion1_CoreBolt_2 / IN1_CellDiaphragm_09": 91,
+        "ID79_Carrier / IN1_CellDiaphragm_10": 13
+      }
+    },
+    {
+      "opening": 0.125,
+      "contacts": {
+        "ID79_Stanchion0_CoreBolt_2 / IN1_CellDiaphragm_08": 264,
+        "ID79_Stanchion0_CoreBolt_1 / IN1_CellDiaphragm_09": 132,
+        "ID79_Carrier / IN1_CellDiaphragm_08": 500,
+        "ID79_Carrier / IN1_CellFrame_08": 68,
+        "ID79_Carrier / IN1_CellFrame_09": 1220,
+        "ID79_Carrier / IN1_CellDiaphragm_09": 2342,
+        "ID79_DockSeatGasket / IN1_DeckFoot": 2092,
+        "ID79_Carrier / IN1_ChamberRib_9_A": 84,
+        "ID79_Stanchion1_CoreBolt_3 / IN1_CellDiaphragm_09": 132,
+        "ID79_Stanchion1_CoreBolt_2 / IN1_CellDiaphragm_09": 91,
+        "ID79_Carrier / IN1_CellDiaphragm_10": 13
+      }
+    },
+    {
+      "opening": 0.25,
+      "contacts": {
+        "ID79_Stanchion0_CoreBolt_2 / IN1_CellDiaphragm_08": 264,
+        "ID79_Stanchion0_CoreBolt_1 / IN1_CellDiaphragm_09": 132,
+        "ID79_Carrier / IN1_CellFrame_08": 68,
+        "ID79_Carrier / IN1_CellDiaphragm_08": 500,
+        "ID79_Carrier / IN1_CellFrame_09": 1220,
+        "ID79_Carrier / IN1_CellDiaphragm_09": 2342,
+        "ID79_DockSeatGasket / IN1_DeckFoot": 2092,
+        "ID79_Carrier / IN1_ChamberRib_9_A": 84,
+        "ID79_Stanchion1_CoreBolt_3 / IN1_CellDiaphragm_09": 132,
+        "ID79_Stanchion1_CoreBolt_2 / IN1_CellDiaphragm_09": 91,
+        "ID79_Carrier / IN1_CellDiaphragm_10": 13
+      }
+    },
+    {
+      "opening": 0.375,
+      "contacts": {
+        "ID79_Stanchion0_CoreBolt_2 / IN1_CellDiaphragm_08": 264,
+        "ID79_Stanchion0_CoreBolt_1 / IN1_CellDiaphragm_09": 132,
+        "ID79_Carrier / IN1_CellFrame_08": 68,
+        "ID79_Carrier / IN1_CellDiaphragm_08": 500,
+        "ID79_Carrier / IN1_CellFrame_09": 1220,
+        "ID79_Carrier / IN1_CellDiaphragm_09": 2342,
+        "ID79_DockSeatGasket / IN1_DeckFoot": 2092,
+        "ID79_Carrier / IN1_ChamberRib_9_A": 84,
+        "ID79_Stanchion1_CoreBolt_3 / IN1_CellDiaphragm_09": 132,
+        "ID79_Stanchion1_CoreBolt_2 / IN1_CellDiaphragm_09": 91,
+        "ID79_Carrier / IN1_CellDiaphragm_10": 13
+      }
+    },
+    {
+      "opening": 0.5,
+      "contacts": {
+        "ID79_Stanchion0_CoreBolt_2 / IN1_CellDiaphragm_08": 264,
+        "ID79_Stanchion0_CoreBolt_1 / IN1_CellDiaphragm_09": 132,
+        "ID79_Carrier / IN1_CellFrame_08": 68,
+        "ID79_Carrier / IN1_CellDiaphragm_08": 500,
+        "ID79_Carrier / IN1_CellFrame_09": 1220,
+        "ID79_Carrier / IN1_CellDiaphragm_09": 2342,
+        "ID79_DockSeatGasket / IN1_DeckFoot": 2092,
+        "ID79_Carrier / IN1_ChamberRib_9_A": 84,
+        "ID79_Stanchion1_CoreBolt_3 / IN1_CellDiaphragm_09": 132,
+        "ID79_Stanchion1_CoreBolt_2 / IN1_CellDiaphragm_09": 91,
+        "ID79_Carrier / IN1_CellDiaphragm_10": 13
+      }
+    },
+    {
+      "opening": 0.625,
+      "contacts": {
+        "ID79_Stanchion0_CoreBolt_2 / IN1_CellDiaphragm_08": 264,
+        "ID79_Stanchion0_CoreBolt_1 / IN1_CellDiaphragm_09": 132,
+        "ID79_Carrier / IN1_CellFrame_08": 68,
+        "ID79_Carrier / IN1_CellDiaphragm_08": 500,
+        "ID79_Carrier / IN1_CellFrame_09": 1220,
+        "ID79_Carrier / IN1_CellDiaphragm_09": 2342,
+        "ID79_DockSeatGasket / IN1_DeckFoot": 2092,
+        "ID79_Carrier / IN1_ChamberRib_9_A": 84,
+        "ID79_Stanchion1_CoreBolt_3 / IN1_CellDiaphragm_09": 132,
+        "ID79_Stanchion1_CoreBolt_2 / IN1_CellDiaphragm_09": 91,
+        "ID79_Carrier / IN1_CellDiaphragm_10": 13
+      }
+    },
+    {
+      "opening": 0.75,
+      "contacts": {
+        "ID79_Stanchion0_CoreBolt_2 / IN1_CellDiaphragm_08": 264,
+        "ID79_Stanchion0_CoreBolt_1 / IN1_CellDiaphragm_09": 132,
+        "ID79_Carrier / IN1_CellFrame_08": 68,
+        "ID79_Carrier / IN1_CellDiaphragm_08": 500,
+        "ID79_Carrier / IN1_CellFrame_09": 1220,
+        "ID79_Carrier / IN1_CellDiaphragm_09": 2342,
+        "ID79_DockSeatGasket / IN1_DeckFoot": 2092,
+        "ID79_Carrier / IN1_ChamberRib_9_A": 84,
+        "ID79_Stanchion1_CoreBolt_3 / IN1_CellDiaphragm_09": 132,
+        "ID79_Stanchion1_CoreBolt_2 / IN1_CellDiaphragm_09": 91,
+        "ID79_Carrier / IN1_CellDiaphragm_10": 13
+      }
+    },
+    {
+      "opening": 0.875,
+      "contacts": {
+        "ID79_Stanchion0_CoreBolt_2 / IN1_CellDiaphragm_08": 264,
+        "ID79_Stanchion0_CoreBolt_1 / IN1_CellDiaphragm_09": 132,
+        "ID79_Carrier / IN1_CellFrame_08": 68,
+        "ID79_Carrier / IN1_CellDiaphragm_08": 500,
+        "ID79_Carrier / IN1_CellFrame_09": 1220,
+        "ID79_Carrier / IN1_CellDiaphragm_09": 2342,
+        "ID79_DockSeatGasket / IN1_DeckFoot": 2092,
+        "ID79_Carrier / IN1_ChamberRib_9_A": 84,
+        "ID79_Stanchion1_CoreBolt_3 / IN1_CellDiaphragm_09": 132,
+        "ID79_Stanchion1_CoreBolt_2 / IN1_CellDiaphragm_09": 91,
+        "ID79_Carrier / IN1_CellDiaphragm_10": 13
+      }
+    },
+    {
+      "opening": 1.0,
+      "contacts": {
+        "ID79_Stanchion0_CoreBolt_2 / IN1_CellDiaphragm_08": 264,
+        "ID79_Stanchion0_CoreBolt_1 / IN1_CellDiaphragm_09": 132,
+        "ID79_Carrier / IN1_CellFrame_08": 68,
+        "ID79_Carrier / IN1_CellDiaphragm_08": 500,
+        "ID79_Carrier / IN1_CellFrame_09": 1220,
+        "ID79_Carrier / IN1_CellDiaphragm_09": 2342,
+        "ID79_DockSeatGasket / IN1_DeckFoot": 2092,
+        "ID79_Carrier / IN1_ChamberRib_9_A": 84,
+        "ID79_Stanchion1_CoreBolt_3 / IN1_CellDiaphragm_09": 132,
+        "ID79_Stanchion1_CoreBolt_2 / IN1_CellDiaphragm_09": 91,
+        "ID79_Carrier / IN1_CellDiaphragm_10": 13
+      }
+    }
+  ],
+  "passed": false,
+  "scope": "Current new hardware self/pair contacts and nine actual opening poses against all retained body/mouth/base meshes. Does not certify continuous motion, loads, hidden threads or full service."
+}

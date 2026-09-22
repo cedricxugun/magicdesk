@@ -22,9 +22,17 @@ uniform float cursor_width=.010;
 uniform float edge_fade=.025;
 uniform bool tile_gradients=true;
 uniform float ink_coverage_gain=1.;
+uniform bool oriented_reveal=false;
+uniform vec3 reveal_center=vec3(0.);
+uniform vec3 reveal_axis=vec3(0.,0.,1.);
 void vertex(){
     float spread=smoothstep(.05,.72,reveal);
-    VERTEX.z=center_z+(VERTEX.z-center_z)*max(.005,spread);
+    if(oriented_reveal){
+        vec3 axis=normalize(reveal_axis);
+        VERTEX+=axis*dot(VERTEX-reveal_center,axis)*(max(.005,spread)-1.);
+    }else{
+        VERTEX.z=center_z+(VERTEX.z-center_z)*max(.005,spread);
+    }
 }
 void fragment(){
     float x=offset_in_tile+UV.x*window_width;

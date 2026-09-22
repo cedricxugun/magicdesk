@@ -1,0 +1,156 @@
+{
+  "source": "blender/collection/I_r82_acoustic_optics_r2.blend",
+  "source_sha256": "9a2cda1756f106f850c83f0ebdfcb27befabdd1d8bec4bf9899e6c763eef10ae",
+  "component": "app/assets/collection/art/I/r82_music_interface/r2/optics.glb",
+  "component_sha256": "d4bdf0afd5eec0be00bf8220a5b597f9e7765f6147e594fe565cb1cc715b1b38",
+  "mouth_source_sha256": "9a2cda1756f106f850c83f0ebdfcb27befabdd1d8bec4bf9899e6c763eef10ae",
+  "mouth_component_sha256": "1f70b619ae3959bb29f550a7ce8b8ee5e54d3ff511f8f07a955b1caac100f105",
+  "mouth_node": "IAM_Mouth",
+  "sheet": "I_MoonlightStaff",
+  "width": 1.5272727272727271,
+  "height": 0.9163636363636363,
+  "center_y": 0.0,
+  "anchors": [
+    {
+      "sign": -1,
+      "position": [
+        -0.7417176365852356,
+        -0.3090490400791168,
+        0.014999999664723873
+      ]
+    },
+    {
+      "sign": 1,
+      "position": [
+        0.7417176365852356,
+        -0.3090490400791168,
+        0.014999999664723873
+      ]
+    }
+  ],
+  "scanner": {
+    "line": "I_CentralReadingLine",
+    "tips": [
+      {
+        "node": "IAM_TineRoundedAxial_0",
+        "lens_node": "I83_ReadingLens_0",
+        "head_node": "I83_ReadingHead_0",
+        "head_forward_local_blender": [
+          0,
+          0,
+          -1
+        ],
+        "lens_focus_local_blender": [
+          0.0,
+          0.0,
+          -0.003000000026077032
+        ],
+        "mouth_point": [
+          0.015957912430167198,
+          -0.05729684233665466,
+          -0.3422701358795166
+        ],
+        "local_point": [
+          0.0,
+          0.0,
+          -0.003000000026077032
+        ],
+        "ray": "I_TipReadingRay_0"
+      },
+      {
+        "node": "IAM_TineRoundedAxial_1",
+        "lens_node": "I83_ReadingLens_1",
+        "head_node": "I83_ReadingHead_1",
+        "head_forward_local_blender": [
+          0,
+          0,
+          -1
+        ],
+        "lens_focus_local_blender": [
+          0.0,
+          0.0,
+          -0.003000000026077032
+        ],
+        "mouth_point": [
+          0.0178803950548172,
+          0.021138254553079605,
+          -0.34182077646255493
+        ],
+        "local_point": [
+          0.0,
+          0.0,
+          -0.003000000026077032
+        ],
+        "ray": "I_TipReadingRay_1"
+      },
+      {
+        "node": "IAM_TineRoundedAxial_2",
+        "lens_node": "I83_ReadingLens_2",
+        "head_node": "I83_ReadingHead_2",
+        "head_forward_local_blender": [
+          0,
+          0,
+          -1
+        ],
+        "lens_focus_local_blender": [
+          0.0,
+          0.0,
+          -0.003000000026077032
+        ],
+        "mouth_point": [
+          0.02009526826441288,
+          0.09892404824495316,
+          -0.3413030803203583
+        ],
+        "local_point": [
+          0.0,
+          0.0,
+          -0.003000000026077032
+        ],
+        "ray": "I_TipReadingRay_2"
+      }
+    ],
+    "focus": [
+      0.3326587677001953,
+      0.3932701349258423,
+      -0.2682468891143799
+    ],
+    "line_end": [
+      0.3326587677001953,
+      0.048352017998695374,
+      -0.5698460340499878
+    ],
+    "mask": "res://assets/collection/art/I/moonlight_candidate/central_scan_r1/filament_mask.png"
+  },
+  "scope": "Upright authored optical carrier centered on mouth, original world-readable area, real score alpha only. New glass heads are in the physical core component; emitter fixtures retained. Not runtime acceptance.",
+  "parent_source_sha256": "2a82f42dc8cbb4727843425b0ff9787d9527d458d422b85db4e487751c4b6611",
+  "scan_gain": 1.0,
+  "score_gain": 1.7,
+  "filament_u_span": 0.8,
+  "optical_backing": 0.0,
+  "correct_alpha": true,
+  "cursor_width": 0.006,
+  "edge_fade": 0.05,
+  "scan_minimum_pixel_width": 1.2,
+  "scan_mask_power": 1.8,
+  "ink_coverage_gain": 1.35,
+  "runtime_refinement": "R60: derivative-safe tile sampling and conservative ink coverage; all source glyphs, full height and centered geometry retained. No black backing.",
+  "world_width": 0.84,
+  "world_height": 0.504,
+  "oriented_reveal": true,
+  "reveal_center_blender": [
+    0.3326587677001953,
+    0.3932701349258423,
+    -0.2682468891143799
+  ],
+  "reveal_axis_blender": [
+    -6.157503840142908e-09,
+    0.752797544002533,
+    0.6582521200180054
+  ],
+  "reading_normal_blender": [
+    0.6211168766021729,
+    0.5158841013908386,
+    -0.5899809002876282
+  ]
+}

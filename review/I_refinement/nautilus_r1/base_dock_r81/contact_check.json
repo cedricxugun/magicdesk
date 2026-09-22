@@ -1,0 +1,916 @@
+{
+  "source_sha256": "6e365b7932d94754a2d0b7f31abc242800defb608bd31735900aedffec8087be",
+  "self_checks": [
+    {
+      "name": "ID80_BaseBolt_0",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_BaseBolt_1",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_BaseBolt_2",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_BaseBolt_3",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_BaseBolt_4",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_BaseBolt_5",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_BaseWasher_0",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_BaseWasher_1",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_BaseWasher_2",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_BaseWasher_3",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_BaseWasher_4",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_BaseWasher_5",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Carrier",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_DockSeatGasket",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Locator_0",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Locator_1",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Locator_2",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_LockBolt_0",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_LockBolt_1",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_LockBolt_2",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_LockBolt_3",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_LockWasher_0",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_LockWasher_1",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_LockWasher_2",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_LockWasher_3",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion0_FrameBolt_0",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion0_FrameBolt_1",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion0_FrameBolt_2",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion0_FrameWasher_0",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion0_FrameWasher_1",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion0_FrameWasher_2",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion1_FrameBolt_0",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion1_FrameBolt_1",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion1_FrameBolt_2",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion1_FrameWasher_0",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion1_FrameWasher_1",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion1_FrameWasher_2",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion0_PortRim",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "ID80_Stanchion1_PortRim",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "IN1_CellFrame_09",
+      "self_contacts": 3,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 3,
+      "examples": [
+        [
+          [
+            [
+              -0.591174304485321,
+              0.48021042346954346,
+              1.5519092082977295
+            ],
+            [
+              -0.5908832550048828,
+              0.48011696338653564,
+              1.551649808883667
+            ],
+            [
+              -0.5957379341125488,
+              0.48663583397865295,
+              1.537607192993164
+            ]
+          ],
+          [
+            [
+              -0.5944309830665588,
+              0.4812973439693451,
+              1.5546594858169556
+            ],
+            [
+              -0.5884469747543335,
+              0.4793348014354706,
+              1.5494786500930786
+            ],
+            [
+              -0.5908792018890381,
+              0.4801156520843506,
+              1.551646113395691
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -0.591174304485321,
+              0.48021042346954346,
+              1.5519092082977295
+            ],
+            [
+              -0.5908832550048828,
+              0.48011696338653564,
+              1.551649808883667
+            ],
+            [
+              -0.5957379341125488,
+              0.48663583397865295,
+              1.537607192993164
+            ]
+          ],
+          [
+            [
+              -0.5944309830665588,
+              0.4812973439693451,
+              1.5546594858169556
+            ],
+            [
+              -0.5919709801673889,
+              0.4791411757469177,
+              1.5449713468551636
+            ],
+            [
+              -0.5884469747543335,
+              0.4793348014354706,
+              1.5494786500930786
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -0.5908832550048828,
+              0.48011696338653564,
+              1.551649808883667
+            ],
+            [
+              -0.5908792018890381,
+              0.4801156520843506,
+              1.551646113395691
+            ],
+            [
+              -0.5957379341125488,
+              0.48663583397865295,
+              1.537607192993164
+            ]
+          ],
+          [
+            [
+              -0.5944309830665588,
+              0.4812973439693451,
+              1.5546594858169556
+            ],
+            [
+              -0.5919709801673889,
+              0.4791411757469177,
+              1.5449713468551636
+            ],
+            [
+              -0.5884469747543335,
+              0.4793348014354706,
+              1.5494786500930786
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "IN1_CellFrame_10",
+      "self_contacts": 333,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 333,
+      "examples": [
+        [
+          [
+            [
+              -0.31822115182876587,
+              0.4857906699180603,
+              1.2095330953598022
+            ],
+            [
+              -0.3322739899158478,
+              0.5095181465148926,
+              1.2514817714691162
+            ],
+            [
+              -0.3308309316635132,
+              0.5088342428207397,
+              1.2499637603759766
+            ]
+          ],
+          [
+            [
+              -0.33084729313850403,
+              0.5088175535202026,
+              1.2499449253082275
+            ],
+            [
+              -0.3163607120513916,
+              0.5088338851928711,
+              1.2391955852508545
+            ],
+            [
+              -0.31586700677871704,
+              0.5081302523612976,
+              1.2393689155578613
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -0.31822115182876587,
+              0.4857906699180603,
+              1.2095330953598022
+            ],
+            [
+              -0.3322739899158478,
+              0.5095181465148926,
+              1.2514817714691162
+            ],
+            [
+              -0.3308309316635132,
+              0.5088342428207397,
+              1.2499637603759766
+            ]
+          ],
+          [
+            [
+              -0.33084729313850403,
+              0.5088175535202026,
+              1.2499449253082275
+            ],
+            [
+              -0.31586700677871704,
+              0.5081302523612976,
+              1.2393689155578613
+            ],
+            [
+              -0.32892513275146484,
+              0.5081306099891663,
+              1.2490439414978027
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -0.3295399844646454,
+              0.5075440406799316,
+              1.2487545013427734
+            ],
+            [
+              -0.3308309316635132,
+              0.5088342428207397,
+              1.2499637603759766
+            ],
+            [
+              -0.33039212226867676,
+              0.5085869431495667,
+              1.2495362758636475
+            ]
+          ],
+          [
+            [
+              -0.33084729313850403,
+              0.5088175535202026,
+              1.2499449253082275
+            ],
+            [
+              -0.31586700677871704,
+              0.5081302523612976,
+              1.2393689155578613
+            ],
+            [
+              -0.32892513275146484,
+              0.5081306099891663,
+              1.2490439414978027
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "IN1_DeckFoot",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "IN1_PanelRim_1_1_0_-1410",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    },
+    {
+      "name": "IN1_PorcelainPanel_02",
+      "self_contacts": 0,
+      "new_self_contacts": 0,
+      "exact_baseline_contacts": 0,
+      "examples": []
+    }
+  ],
+  "new_vs_new": {},
+  "operating_samples": [
+    {
+      "opening": 0.0,
+      "contacts": {}
+    },
+    {
+      "opening": 0.125,
+      "contacts": {}
+    },
+    {
+      "opening": 0.25,
+      "contacts": {}
+    },
+    {
+      "opening": 0.375,
+      "contacts": {}
+    },
+    {
+      "opening": 0.5,
+      "contacts": {}
+    },
+    {
+      "opening": 0.625,
+      "contacts": {}
+    },
+    {
+      "opening": 0.75,
+      "contacts": {}
+    },
+    {
+      "opening": 0.875,
+      "contacts": {}
+    },
+    {
+      "opening": 1.0,
+      "contacts": {}
+    }
+  ],
+  "membrane_extremes": [
+    {
+      "signed_extreme": -1.0,
+      "contacts": {},
+      "evaluated_motion": [
+        {
+          "name": "IN1_CellDiaphragm_01",
+          "measured_displacement": 0.003000074858061549
+        },
+        {
+          "name": "IN1_CellDiaphragm_02",
+          "measured_displacement": 0.0030000956621615985
+        },
+        {
+          "name": "IN1_CellDiaphragm_03",
+          "measured_displacement": 0.003000107433087818
+        },
+        {
+          "name": "IN1_CellDiaphragm_04",
+          "measured_displacement": 0.0030001010028994396
+        },
+        {
+          "name": "IN1_CellDiaphragm_05",
+          "measured_displacement": 0.003000102686828557
+        },
+        {
+          "name": "IN1_CellDiaphragm_06",
+          "measured_displacement": 0.0030000749433245484
+        },
+        {
+          "name": "IN1_CellDiaphragm_07",
+          "measured_displacement": 0.0030000451484955147
+        },
+        {
+          "name": "IN1_CellDiaphragm_08",
+          "measured_displacement": 0.003000043954801446
+        },
+        {
+          "name": "IN1_CellDiaphragm_09",
+          "measured_displacement": 0.0030000571327786964
+        },
+        {
+          "name": "IN1_CellDiaphragm_10",
+          "measured_displacement": 0.0030000593531816382
+        },
+        {
+          "name": "IN1_CellDiaphragm_11",
+          "measured_displacement": 0.0030000561516561265
+        },
+        {
+          "name": "IN1_CellDiaphragm_12",
+          "measured_displacement": 0.0030000551794148564
+        }
+      ]
+    },
+    {
+      "signed_extreme": -0.5,
+      "contacts": {},
+      "evaluated_motion": [
+        {
+          "name": "IN1_CellDiaphragm_01",
+          "measured_displacement": 0.0015001131596111149
+        },
+        {
+          "name": "IN1_CellDiaphragm_02",
+          "measured_displacement": 0.001500149555159776
+        },
+        {
+          "name": "IN1_CellDiaphragm_03",
+          "measured_displacement": 0.001500153065182882
+        },
+        {
+          "name": "IN1_CellDiaphragm_04",
+          "measured_displacement": 0.0015001488141966081
+        },
+        {
+          "name": "IN1_CellDiaphragm_05",
+          "measured_displacement": 0.001500144562902257
+        },
+        {
+          "name": "IN1_CellDiaphragm_06",
+          "measured_displacement": 0.0015001100902949046
+        },
+        {
+          "name": "IN1_CellDiaphragm_07",
+          "measured_displacement": 0.001500071742259287
+        },
+        {
+          "name": "IN1_CellDiaphragm_08",
+          "measured_displacement": 0.001500060520915737
+        },
+        {
+          "name": "IN1_CellDiaphragm_09",
+          "measured_displacement": 0.0015000811381160343
+        },
+        {
+          "name": "IN1_CellDiaphragm_10",
+          "measured_displacement": 0.0015000831932483233
+        },
+        {
+          "name": "IN1_CellDiaphragm_11",
+          "measured_displacement": 0.0015000726327633268
+        },
+        {
+          "name": "IN1_CellDiaphragm_12",
+          "measured_displacement": 0.00150007774900668
+        }
+      ]
+    },
+    {
+      "signed_extreme": 0.0,
+      "contacts": {},
+      "evaluated_motion": [
+        {
+          "name": "IN1_CellDiaphragm_01",
+          "measured_displacement": 0.0
+        },
+        {
+          "name": "IN1_CellDiaphragm_02",
+          "measured_displacement": 0.0
+        },
+        {
+          "name": "IN1_CellDiaphragm_03",
+          "measured_displacement": 0.0
+        },
+        {
+          "name": "IN1_CellDiaphragm_04",
+          "measured_displacement": 0.0
+        },
+        {
+          "name": "IN1_CellDiaphragm_05",
+          "measured_displacement": 0.0
+        },
+        {
+          "name": "IN1_CellDiaphragm_06",
+          "measured_displacement": 0.0
+        },
+        {
+          "name": "IN1_CellDiaphragm_07",
+          "measured_displacement": 0.0
+        },
+        {
+          "name": "IN1_CellDiaphragm_08",
+          "measured_displacement": 0.0
+        },
+        {
+          "name": "IN1_CellDiaphragm_09",
+          "measured_displacement": 0.0
+        },
+        {
+          "name": "IN1_CellDiaphragm_10",
+          "measured_displacement": 0.0
+        },
+        {
+          "name": "IN1_CellDiaphragm_11",
+          "measured_displacement": 0.0
+        },
+        {
+          "name": "IN1_CellDiaphragm_12",
+          "measured_displacement": 0.0
+        }
+      ]
+    },
+    {
+      "signed_extreme": 0.5,
+      "contacts": {},
+      "evaluated_motion": [
+        {
+          "name": "IN1_CellDiaphragm_01",
+          "measured_displacement": 0.0015001131596111149
+        },
+        {
+          "name": "IN1_CellDiaphragm_02",
+          "measured_displacement": 0.001500149555159776
+        },
+        {
+          "name": "IN1_CellDiaphragm_03",
+          "measured_displacement": 0.001500153065182882
+        },
+        {
+          "name": "IN1_CellDiaphragm_04",
+          "measured_displacement": 0.0015001488141966081
+        },
+        {
+          "name": "IN1_CellDiaphragm_05",
+          "measured_displacement": 0.001500144562902257
+        },
+        {
+          "name": "IN1_CellDiaphragm_06",
+          "measured_displacement": 0.0015001100902949046
+        },
+        {
+          "name": "IN1_CellDiaphragm_07",
+          "measured_displacement": 0.001500071742259287
+        },
+        {
+          "name": "IN1_CellDiaphragm_08",
+          "measured_displacement": 0.001500060520915737
+        },
+        {
+          "name": "IN1_CellDiaphragm_09",
+          "measured_displacement": 0.0015000811381160343
+        },
+        {
+          "name": "IN1_CellDiaphragm_10",
+          "measured_displacement": 0.0015000831932483233
+        },
+        {
+          "name": "IN1_CellDiaphragm_11",
+          "measured_displacement": 0.0015000726327633268
+        },
+        {
+          "name": "IN1_CellDiaphragm_12",
+          "measured_displacement": 0.0015000867806937625
+        }
+      ]
+    },
+    {
+      "signed_extreme": 1.0,
+      "contacts": {},
+      "evaluated_motion": [
+        {
+          "name": "IN1_CellDiaphragm_01",
+          "measured_displacement": 0.003000074858061549
+        },
+        {
+          "name": "IN1_CellDiaphragm_02",
+          "measured_displacement": 0.0030000956621615985
+        },
+        {
+          "name": "IN1_CellDiaphragm_03",
+          "measured_displacement": 0.003000107433087818
+        },
+        {
+          "name": "IN1_CellDiaphragm_04",
+          "measured_displacement": 0.0030001010028994396
+        },
+        {
+          "name": "IN1_CellDiaphragm_05",
+          "measured_displacement": 0.003000102686828557
+        },
+        {
+          "name": "IN1_CellDiaphragm_06",
+          "measured_displacement": 0.0030000749433245484
+        },
+        {
+          "name": "IN1_CellDiaphragm_07",
+          "measured_displacement": 0.0030000451484955147
+        },
+        {
+          "name": "IN1_CellDiaphragm_08",
+          "measured_displacement": 0.003000043954801446
+        },
+        {
+          "name": "IN1_CellDiaphragm_09",
+          "measured_displacement": 0.0030000571327786964
+        },
+        {
+          "name": "IN1_CellDiaphragm_10",
+          "measured_displacement": 0.0030000593531816382
+        },
+        {
+          "name": "IN1_CellDiaphragm_11",
+          "measured_displacement": 0.0030000561516561265
+        },
+        {
+          "name": "IN1_CellDiaphragm_12",
+          "measured_displacement": 0.003000057900150139
+        }
+      ]
+    }
+  ],
+  "mating_planes": [
+    {
+      "pair": "ID80_Carrier / ID80_DockSeatGasket",
+      "raw_triangle_contacts": 1026,
+      "measured_axial_overlap": 0.0,
+      "tolerance": 5e-07,
+      "proof": "Whole-solid Z extrema, intended horizontal mating plane"
+    },
+    {
+      "pair": "ID80_DockSeatGasket / IN1_DeckFoot",
+      "raw_triangle_contacts": 2092,
+      "measured_axial_overlap": 2.384185791015625e-07,
+      "tolerance": 5e-07,
+      "proof": "Whole-solid Z extrema, intended horizontal mating plane"
+    },
+    {
+      "pair": "ID80_DockSeatGasket / IN1_DeckFoot",
+      "raw_triangle_contacts": 2092,
+      "measured_axial_overlap": 2.384185791015625e-07,
+      "tolerance": 5e-07,
+      "proof": "Whole-solid Z extrema, intended horizontal mating plane"
+    },
+    {
+      "pair": "ID80_DockSeatGasket / IN1_DeckFoot",
+      "raw_triangle_contacts": 2092,
+      "measured_axial_overlap": 2.384185791015625e-07,
+      "tolerance": 5e-07,
+      "proof": "Whole-solid Z extrema, intended horizontal mating plane"
+    },
+    {
+      "pair": "ID80_DockSeatGasket / IN1_DeckFoot",
+      "raw_triangle_contacts": 2092,
+      "measured_axial_overlap": 2.384185791015625e-07,
+      "tolerance": 5e-07,
+      "proof": "Whole-solid Z extrema, intended horizontal mating plane"
+    },
+    {
+      "pair": "ID80_DockSeatGasket / IN1_DeckFoot",
+      "raw_triangle_contacts": 2092,
+      "measured_axial_overlap": 2.384185791015625e-07,
+      "tolerance": 5e-07,
+      "proof": "Whole-solid Z extrema, intended horizontal mating plane"
+    },
+    {
+      "pair": "ID80_DockSeatGasket / IN1_DeckFoot",
+      "raw_triangle_contacts": 2092,
+      "measured_axial_overlap": 2.384185791015625e-07,
+      "tolerance": 5e-07,
+      "proof": "Whole-solid Z extrema, intended horizontal mating plane"
+    },
+    {
+      "pair": "ID80_DockSeatGasket / IN1_DeckFoot",
+      "raw_triangle_contacts": 2092,
+      "measured_axial_overlap": 2.384185791015625e-07,
+      "tolerance": 5e-07,
+      "proof": "Whole-solid Z extrema, intended horizontal mating plane"
+    },
+    {
+      "pair": "ID80_DockSeatGasket / IN1_DeckFoot",
+      "raw_triangle_contacts": 2092,
+      "measured_axial_overlap": 2.384185791015625e-07,
+      "tolerance": 5e-07,
+      "proof": "Whole-solid Z extrema, intended horizontal mating plane"
+    },
+    {
+      "pair": "ID80_DockSeatGasket / IN1_DeckFoot",
+      "raw_triangle_contacts": 2092,
+      "measured_axial_overlap": 2.384185791015625e-07,
+      "tolerance": 5e-07,
+      "proof": "Whole-solid Z extrema, intended horizontal mating plane"
+    }
+  ],
+  "passed": true,
+  "scope": "Current new hardware self/pair contacts, nine actual opening poses against retained body/mouth/base and five membrane extreme samples. Exact unchanged baseline self-contacts and float-scale horizontal mating contacts are explicitly recorded. Does not certify continuous motion, loads, hidden threads or full service."
+}

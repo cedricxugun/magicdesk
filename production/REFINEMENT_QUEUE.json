@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_on": "2026-09-18",
+  "updated_on": "2026-09-22",
   "authorization": "Latest user direction: finish the tidal ship G2 first, then pause G and do F/I/J/K/L/M/N; return to remaining G last. Continue autonomously without per-stage prompts.",
   "automation_id": "magicdesk",
   "status": "active",
@@ -17,7 +17,7 @@
   ],
   "preserve": "B",
   "current_model": "I",
-  "current_work": "Git handoff: main R68 unchanged. R73 independent seam-thread candidate has corrected radial interlock and passing local scaled-helical checks; early whole-clamp probe has invalid screw sign/unit assumptions. R74 intact mouth+closed collar path clears 82 old-source poses but does not prove coupling thread disengagement. R75 six true short coupling threads failed collar topology/self checks before save; no R75 model exists. Continue actual thread/bore joins and old upper-collar contacts, then real full-mouth extraction and complete service. R71 animation and entire refinement goal remain active.",
+  "current_work": "R90 r5 continuous formed acoustic backbone, real sockets and 44 optical meshes connect twelve resonators. Scoped contact, 1440 imported morph witness and 29184 UV-vertex/phase/clock checks pass. Latest guided-network contrast needs visual validation; Movie Maker attempt produced zero-byte AVI with no receipt. Manual pressure/echo network, controls/full service/main App/EXE/transparent performance and remaining queue incomplete. Main registry R68.",
   "quality_target": "AAA game quality target; completion requires real visual and interaction evidence, not script pass or concept images.",
   "models": [
     {
@@ -368,7 +368,7 @@
     },
     {
       "id": "I",
-      "status": "one_actual_nautilus_hinge_candidate_others_and_art_pending",
+      "status": "base_connection_rework_prioritized_by_user",
       "stages": {
         "design_match": {
           "status": "mouth_relation_corrected_candidate_unlocked",
@@ -505,6 +505,20 @@
             "review/I_refinement/moonlight/current_mouth/readability/native/native_check.json"
           ],
           "remaining": "Manual H hold, focus cancellation and full native story/whole App acceptance remain. Exported part viewer intentionally has no audio or full conch."
+        },
+        "base_connection": {
+          "status": "r81_visual_rejected_frozen_r82_integrated_shape_and_saddle_redesign",
+          "evidence": [
+            "production/I_refinement/nautilus_r1/base_connection_r78/BRIEF.md",
+            "review/I_refinement/nautilus_r1/base_connection_r78/installed_audit.json",
+            "production/I_refinement/nautilus_r1/base_connection_r78/docking_connection_study_r1.png",
+            "production/I_refinement/nautilus_r1/base_dock_r81/README.md",
+            "review/I_refinement/nautilus_r1/base_dock_r81/build.json",
+            "review/I_refinement/nautilus_r1/base_dock_r81/contact_check.json",
+            "review/I_refinement/nautilus_r1/base_dock_r81/motion/validation.json",
+            "review/I_refinement/nautilus_r1/base_dock_r81/motion/qa_receipt.json"
+          ],
+          "remaining": "R81 local fit checks are historical only. Rebuild recognizable coiled form, complete six-segment opening and coherent sculpted saddle together under R82; no continued A-frame detailing as primary work."
         }
       },
       "issues": [
@@ -557,8 +571,14 @@
         "Receiver arrival now visible in isolated Metal preview; overall materials and visual refinement remain below final target.",
         "Physical console/audio/main module integration and native input not yet done."
       ],
-      "current_entry": "production/I_refinement/nautilus_r1/receiver_pocket_r8/README.md",
-      "latest_checkpoint": "review/I_refinement/nautilus_r1/receiver_pocket_r8/checkpoint.json"
+      "current_entry": "production/I_refinement/nautilus_reset_r82/network_r90/README.md",
+      "latest_checkpoint": "review/I_refinement/nautilus_reset_r82/network_r90/built_r5/build.json",
+      "latest_user_feedback": "2026-09-21: overall model rejected: ugly, wrinkles/ripples, crude connection, partial opening, hair dryer rather than nautilus.",
+      "active_design_rework": "production/I_refinement/nautilus_reset_r82/network_r90/README.md",
+      "active_shape_prototype": "blender/collection/I_r90_acoustic_network_r5.blend",
+      "active_shape_status": "R90 r5 continuous formed acoustic backbone, real sockets and 44 optical meshes connect twelve resonators. Scoped contact, 1440 imported morph witness and 29184 UV-vertex/phase/clock checks pass. Latest guided-network contrast needs visual validation; Movie Maker attempt produced zero-byte AVI with no receipt. Manual pressure/echo network, controls/full service/main App/EXE/transparent performance and remaining queue incomplete. Main registry R68.",
+      "music_continuity": "new core natural 3 movements plus interface/legacy scoped tests; speaker/precise alignment/whole instrument still incomplete",
+      "active_chamber_candidate": "blender/collection/I_r90_acoustic_network_r5.blend"
     },
     {
       "id": "J",

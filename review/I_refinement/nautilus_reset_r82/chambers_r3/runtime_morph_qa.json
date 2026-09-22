@@ -1,0 +1,84 @@
+{
+  "component_sha256": "50b3ed52a9a094609ea804cd3ff1470dd6239521d35b1389ae6a0c82404a5b9f",
+  "maximum_runtime_shape_weight": 0.880049854117489,
+  "maximum_world_error": 0.0,
+  "meshes": [
+    {
+      "mesh": "I84_Cell_01_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_02_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_03_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_04_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_05_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_06_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_07_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_08_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_09_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_10_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_11_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_12_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    }
+  ],
+  "passed": true,
+  "scope": "Actual imported morph arrays match source world-space witnesses at signed amplitudes; no automatic LOD/compression/proxy on twelve membrane meshes. Runtime bounded spring weights, exclusive pressure/rebound and settling checked. No full-work playback, continuous collision or final art acceptance.",
+  "settles_on_pause_and_stop": true,
+  "source_sha256": "f502e9225cb8fa5e0c3065e0274e8fa49a8ac4bf23a320e57de0ca80bc6f6110",
+  "witness_checks": 1440
+}

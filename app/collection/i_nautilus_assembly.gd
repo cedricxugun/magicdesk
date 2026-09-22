@@ -38,7 +38,8 @@ func tick(delta:float)->void:
     music.transport._process(0.)
     music.tick(delta);rig.tick(delta)
     echo.update(delta,rig,rig.drain_events())
-    chambers.update(music.transport.chamber_bands(),music.transport.local_clock,music.transport.state=="playing",sequence.shell_open,delta)
+    var chamber_clock:float=music.transport.position_seconds() if chambers.wants_work_clock() else music.transport.local_clock
+    chambers.update(music.transport.chamber_bands(),chamber_clock,music.transport.state=="playing",sequence.shell_open,delta)
     status["sequence"]=sequence.snapshot();status["music"]=music.status.duplicate(true);status["chambers"]=chambers.status.duplicate(true)
 func shutdown()->void:
     if disposed:return

@@ -1,0 +1,101 @@
+{
+  "component_sha256": "2bbbc6f7ce05d67a34c715c0958ec94ddf913b380dca44e4c7c489d96d09c271",
+  "light_shadow_config": [
+    {
+      "bias": 0.00999999977648258,
+      "normal_bias": 0.00499999988824129,
+      "shadows": true
+    },
+    {
+      "bias": 0.00999999977648258,
+      "normal_bias": 0.00499999988824129,
+      "shadows": true
+    },
+    {
+      "bias": 0.00999999977648258,
+      "normal_bias": 0.00499999988824129,
+      "shadows": true
+    }
+  ],
+  "maximum_runtime_shape_weight": 0.880049854117489,
+  "maximum_world_error": 0.0,
+  "meshes": [
+    {
+      "mesh": "I84_Cell_01_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_02_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_03_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_04_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_05_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_06_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_07_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_08_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_09_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_10_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_11_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    },
+    {
+      "mesh": "I84_Cell_12_Diaphragm",
+      "morph_mode": 0,
+      "vertices": 4898,
+      "witnesses": 24
+    }
+  ],
+  "passed": true,
+  "scope": "Actual imported morph arrays match source world-space witnesses at signed amplitudes; no automatic LOD/compression/proxy on twelve membrane meshes. Runtime bounded spring weights, exclusive pressure/rebound and settling checked. No full-work playback, continuous collision or final art acceptance.",
+  "settles_on_pause_and_stop": true,
+  "source_sha256": "29eeed37d405bdd6e7982395bda921db53dfc3d6c01c7fe0a2ce23598d590444",
+  "witness_checks": 1440
+}

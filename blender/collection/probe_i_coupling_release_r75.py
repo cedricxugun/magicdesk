@@ -1,10 +1,12 @@
 """Read-only panel02 release after the currently checked support/port poses."""
-import bpy,json,hashlib,collections,math
+import bpy,json,hashlib,collections,math,sys,argparse
 from pathlib import Path
 from mathutils import Vector,Quaternion
 from mathutils.bvhtree import BVHTree
-ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'review/I_refinement/nautilus_r1/coupling_release_r75';OUT.mkdir(parents=True,exist_ok=True)
-s=json.loads((ROOT/'review/I_refinement/nautilus_r1/coupling_threads_r75/build.json').read_text());plan=json.loads((ROOT/'review/I_refinement/nautilus_r1/port_edge_r68/release_probe/probe.json').read_text());assert plan['source_sha256']==s['seam_fasteners']['parent_source_sha256'];assert hashlib.sha256((ROOT/s['source']).read_bytes()).hexdigest()==s['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(ROOT/s['source']));bpy.context.scene.frame_set(1)
+ROOT=Path(__file__).resolve().parents[2]
+parser=argparse.ArgumentParser();parser.add_argument('--build',default='review/I_refinement/nautilus_r1/coupling_threads_r75/build.json');parser.add_argument('--output',default='review/I_refinement/nautilus_r1/coupling_release_r75');parser.add_argument('--steps',type=int,default=40)
+args=parser.parse_args(sys.argv[sys.argv.index('--')+1:] if '--'in sys.argv else []);OUT=ROOT/args.output;OUT.mkdir(parents=True,exist_ok=True)
+s=json.loads((ROOT/args.build).read_text());plan=json.loads((ROOT/'review/I_refinement/nautilus_r1/port_edge_r68/release_probe/probe.json').read_text());assert plan['source_sha256']==s['seam_fasteners']['parent_source_sha256'];assert hashlib.sha256((ROOT/s['source']).read_bytes()).hexdigest()==s['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(ROOT/s['source']));bpy.context.scene.frame_set(1)
 for row in s['form_panels']:
  o=bpy.data.objects[row['node']];o.animation_data_clear();o.location=Vector(row['pivot_blender'])+Vector(row['lift_blender']);o.rotation_quaternion=Quaternion(Vector(row['axis_blender']),row['angle'])
  if 'mechanism'in row:
@@ -52,7 +54,7 @@ for i,row in enumerate(s['coupling_threads']['threads']):
 axis_scale=mount.matrix_world.to_3x3().col[2].length
 rows=[]
 for phase in ['loosen','extract']:
- for fraction in [i/40 for i in range(41)]:
+ for fraction in [i/args.steps for i in range(args.steps+1)]:
   distance=.006*(fraction if phase=='loosen'else 1.);d=axis*distance;ad=-axis*.8*fraction if phase=='extract'else Vector();at=BVHTree.FromPolygons([p+ad for p in av],af,all_triangles=True)
   vertices=[];faces=[];names=[]
   for g in bolt_groups:
@@ -65,3 +67,4 @@ for phase in ['loosen','extract']:
    if hits:contacts.append({'pair':label,'count':len(hits),'owners':dict(collections.Counter(owners[a]+' / '+on[b]for a,b in hits))})
   rows.append({'phase':phase,'fraction':fraction,'contacts':contacts});print('MOUTH_CASSETTE',phase,fraction,[(c['pair'],c['count'])for c in contacts],flush=True)
 result={'source_sha256':s['source_sha256'],'assembly_members':[o.name for o in assembly],'bolt_members':[o.name for o in bolts],'coupling_withdrawal':.006,'mouth_offset':list(-axis*.8),'samples':rows,'scope':'Authored short-thread geometry and helical release route check: intact A with both collar halves/seam hardware/bushes, six coupling bolts/washer sets moved .006 before withdrawal. Actual six screws rotate by the local modeled pitch with world/mount scale conversion; independent thread-disengagement witness still required. Finite source poses, not continuous collision, load/torque, animation or art acceptance.'};(OUT/'probe.json').write_text(json.dumps(result,indent=2)+'\n')
+assert all(not row['contacts'] for row in rows)

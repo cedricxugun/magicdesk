@@ -1,0 +1,23 @@
+{
+  "body_source_sha256": "6e365b7932d94754a2d0b7f31abc242800defb608bd31735900aedffec8087be",
+  "source": "blender/collection/I_base_dock_opening_r81.blend",
+  "source_sha256": "e0c6d12c993a91abf7ad37e287a7d93d967ac41575718bc8e1f76719e10a8e64",
+  "frames": 420,
+  "fps": 30,
+  "duration": 14,
+  "animated_nodes": [
+    "IN1_PanelPivot_01",
+    "IN1_PanelPivot_02",
+    "IN1_PanelPivot_03",
+    "IN2_Cassette03_Carriage",
+    "IN2_Cassette03_Rotor",
+    "IN1_PanelPivot_04",
+    "IN2_Cassette04_Carriage",
+    "IN2_Cassette04_Rotor",
+    "IN1_PanelPivot_05",
+    "IN2_Cassette05_Carriage",
+    "IN2_Cassette05_Rotor",
+    "IN1_PanelPivot_06"
+  ],
+  "scope": "Ordinary closed/open/closed body review only. Fixed adapter stays installed. This is not service, new VFX or full App integration."
+}

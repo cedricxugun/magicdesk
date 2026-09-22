@@ -1,0 +1,367 @@
+{
+  "body_sha256": "da3597b14130aaac9c54dfde5098057ff5e7cf00cca804e04616f94ffdd38cca",
+  "rows": [
+    {
+      "hits": [
+        {
+          "distance": 8.17451286315918,
+          "geometric_normal_dot_ray": 0.464486330747604,
+          "local_triangle": [
+            "(-0.052878, 1.913157, -0.070561)",
+            "(-0.055916, 1.913484, -0.085279)",
+            "(-0.060586, 1.903163, -0.082023)"
+          ],
+          "material": "R88_Burnished_Rear_Nickel",
+          "mesh": "R82_Fixed_Rear_Keel",
+          "normal_dot_ray": -0.465008139610291,
+          "world_point": "(-0.053469, 1.913199, -0.073374)"
+        },
+        {
+          "distance": 8.86553287506104,
+          "geometric_normal_dot_ray": 0.396083414554596,
+          "local_triangle": [
+            "(-0.20581, 0.081275, -0.440178)",
+            "(-0.21164, 0.081625, -0.447475)",
+            "(-0.208744, 0.081625, -0.448833)"
+          ],
+          "material": "Collection_A_FinishedGuard",
+          "mesh": "IAM_OuterGuard_0007",
+          "normal_dot_ray": -0.769345104694366,
+          "world_point": "(-0.385441, 1.740574, 0.507577)"
+        },
+        {
+          "distance": 8.96500682830811,
+          "geometric_normal_dot_ray": 0.415061414241791,
+          "local_triangle": [
+            "(-0.120374, 0.041506, -0.57103)",
+            "(-0.123789, 0.041258, -0.567195)",
+            "(-0.131963, 0.041002, -0.571232)"
+          ],
+          "material": "Collection_A_LeafNickelReverse",
+          "mesh": "IAM_Tongue1_Foil1",
+          "normal_dot_ray": -0.757150769233704,
+          "world_point": "(-0.43323, 1.715725, 0.591206)"
+        },
+        {
+          "distance": 8.96762657165527,
+          "geometric_normal_dot_ray": 0.415075063705444,
+          "local_triangle": [
+            "(-0.120374, 0.037906, -0.57103)",
+            "(-0.131963, 0.037402, -0.571232)",
+            "(-0.128404, 0.037655, -0.574996)"
+          ],
+          "material": "Collection_A_LeafNickel",
+          "mesh": "IAM_Tongue1_Foil0",
+          "normal_dot_ray": -0.752398073673248,
+          "world_point": "(-0.434488, 1.71507, 0.593408)"
+        }
+      ],
+      "pixel": "(470.0, 417.0)"
+    },
+    {
+      "hits": [
+        {
+          "distance": 8.19079494476318,
+          "geometric_normal_dot_ray": 0.50549727678299,
+          "local_triangle": [
+            "(-0.06915, 1.881905, -0.074228)",
+            "(-0.076868, 1.870374, -0.084476)",
+            "(-0.073021, 1.870996, -0.069652)"
+          ],
+          "material": "R88_Burnished_Rear_Nickel",
+          "mesh": "R82_Fixed_Rear_Keel",
+          "normal_dot_ray": -0.50578761100769,
+          "world_point": "(-0.071568, 1.877051, -0.07509)"
+        },
+        {
+          "distance": 8.673828125,
+          "geometric_normal_dot_ray": 0.186878323554993,
+          "local_triangle": [
+            "(-0.438297, 0.292, -0.359701)",
+            "(-0.448245, 0.333, -0.34395)",
+            "(-0.449831, 0.292, -0.345168)"
+          ],
+          "material": "Collection_A_Dark",
+          "mesh": "IAM_DiaphragmFixedSeat_0073",
+          "normal_dot_ray": -0.343175441026688,
+          "world_point": "(-0.303621, 1.756384, 0.331003)"
+        },
+        {
+          "distance": 8.82918834686279,
+          "geometric_normal_dot_ray": 0.396275520324707,
+          "local_triangle": [
+            "(-0.234462, 0.114, -0.377046)",
+            "(-0.226013, 0.114, -0.363459)",
+            "(-0.237784, 0.114, -0.355869)"
+          ],
+          "material": "Collection_A_Nickel",
+          "mesh": "IAM_SteppedGuardRetainer_0012",
+          "normal_dot_ray": -0.769587516784668,
+          "world_point": "(-0.378257, 1.717573, 0.461616)"
+        },
+        {
+          "distance": 8.84299564361572,
+          "geometric_normal_dot_ray": 0.263592958450317,
+          "local_triangle": [
+            "(-0.210243, 0.085, -0.393337)",
+            "(-0.208, 0.124, -0.360267)",
+            "(-0.223, 0.085, -0.386247)"
+          ],
+          "material": "Collection_A_Dark",
+          "mesh": "IAM_SteppedScreenBridge_0018",
+          "normal_dot_ray": -0.503736734390259,
+          "world_point": "(-0.384891, 1.714123, 0.473225)"
+        },
+        {
+          "distance": 8.9509334564209,
+          "geometric_normal_dot_ray": 0.437277972698212,
+          "local_triangle": [
+            "(-0.124903, 0.045322, -0.50122)",
+            "(-0.127699, 0.045194, -0.497035)",
+            "(-0.137665, 0.042696, -0.501957)"
+          ],
+          "material": "Collection_A_LeafNickelReverse",
+          "mesh": "IAM_Tongue1_Foil1",
+          "normal_dot_ray": -0.795862257480621,
+          "world_point": "(-0.436745, 1.687159, 0.56397)"
+        },
+        {
+          "distance": 8.9533634185791,
+          "geometric_normal_dot_ray": 0.437277734279633,
+          "local_triangle": [
+            "(-0.124903, 0.041722, -0.50122)",
+            "(-0.127699, 0.041594, -0.497035)",
+            "(-0.137665, 0.039096, -0.501957)"
+          ],
+          "material": "Collection_A_LeafNickel",
+          "mesh": "IAM_Tongue1_Foil0",
+          "normal_dot_ray": -0.795862257480621,
+          "world_point": "(-0.437913, 1.686552, 0.566013)"
+        }
+      ],
+      "pixel": "(474.0, 425.0)"
+    },
+    {
+      "hits": [
+        {
+          "distance": 8.20939636230469,
+          "geometric_normal_dot_ray": 0.532650053501129,
+          "local_triangle": [
+            "(-0.079887, 1.848697, -0.05905)",
+            "(-0.083919, 1.847353, -0.073945)",
+            "(-0.086971, 1.835611, -0.06791)"
+          ],
+          "material": "R88_Burnished_Rear_Nickel",
+          "mesh": "R82_Fixed_Rear_Keel",
+          "normal_dot_ray": -0.53186023235321,
+          "world_point": "(-0.084103, 1.844333, -0.069849)"
+        },
+        {
+          "distance": 8.64773368835449,
+          "geometric_normal_dot_ray": 0.396275520324707,
+          "local_triangle": [
+            "(-0.479799, 0.333, -0.298358)",
+            "(-0.450333, 0.333, -0.26)",
+            "(-0.489304, 0.333, -0.2825)"
+          ],
+          "material": "Collection_A_Dark",
+          "mesh": "IAM_DiaphragmFixedSeat_0073",
+          "normal_dot_ray": -0.720496296882629,
+          "world_point": "(-0.294684, 1.734831, 0.298668)"
+        },
+        {
+          "distance": 8.93391132354736,
+          "geometric_normal_dot_ray": 0.442556232213974,
+          "local_triangle": [
+            "(-0.138053, 0.050628, -0.435053)",
+            "(-0.152131, 0.046973, -0.436391)",
+            "(-0.149503, 0.04705, -0.440709)"
+          ],
+          "material": "Collection_A_LeafNickelReverse",
+          "mesh": "IAM_Tongue1_Foil1",
+          "normal_dot_ray": -0.803719818592072,
+          "world_point": "(-0.432165, 1.663341, 0.539261)"
+        },
+        {
+          "distance": 8.93627834320068,
+          "geometric_normal_dot_ray": 0.442417174577713,
+          "local_triangle": [
+            "(-0.135538, 0.047068, -0.439423)",
+            "(-0.138053, 0.047028, -0.435053)",
+            "(-0.149503, 0.04345, -0.440709)"
+          ],
+          "material": "Collection_A_LeafNickel",
+          "mesh": "IAM_Tongue1_Foil0",
+          "normal_dot_ray": -0.804511845111847,
+          "world_point": "(-0.433303, 1.66275, 0.541252)"
+        }
+      ],
+      "pixel": "(476.0, 432.0)"
+    },
+    {
+      "hits": [
+        {
+          "distance": 8.13580894470215,
+          "geometric_normal_dot_ray": 0.373473286628723,
+          "local_triangle": [
+            "(-0.013269, 1.975809, -0.069496)",
+            "(-0.015126, 1.977224, -0.083818)",
+            "(-0.021061, 1.968801, -0.082842)"
+          ],
+          "material": "R88_Burnished_Rear_Nickel",
+          "mesh": "R82_Fixed_Rear_Keel",
+          "normal_dot_ray": -0.375387012958527,
+          "world_point": "(-0.019461, 1.970989, -0.082805)"
+        },
+        {
+          "distance": 8.8801383972168,
+          "geometric_normal_dot_ray": 0.397101789712906,
+          "local_triangle": [
+            "(-0.210468, 0.085048, -0.536541)",
+            "(-0.210118, 0.084945, -0.53423)",
+            "(-0.219988, 0.084981, -0.531099)"
+          ],
+          "material": "Collection_A_FinishedGuard",
+          "mesh": "IAM_OuterGuard_0007",
+          "normal_dot_ray": -0.76790851354599,
+          "world_point": "(-0.377043, 1.785047, 0.542963)"
+        }
+      ],
+      "pixel": "(464.0, 405.0)"
+    },
+    {
+      "hits": [
+        {
+          "distance": 8.25960731506348,
+          "geometric_normal_dot_ray": 0.543390989303589,
+          "local_triangle": [
+            "(-0.086049, 1.80582, -0.016564)",
+            "(-0.089887, 1.802637, -0.031595)",
+            "(-0.091575, 1.790917, -0.023343)"
+          ],
+          "material": "R88_Burnished_Rear_Nickel",
+          "mesh": "R82_Fixed_Rear_Keel",
+          "normal_dot_ray": -0.54157567024231,
+          "world_point": "(-0.089735, 1.799709, -0.026603)"
+        },
+        {
+          "distance": 8.64073657989502,
+          "geometric_normal_dot_ray": 0.260186612606049,
+          "local_triangle": [
+            "(-0.508527, 0.292, -0.250778)",
+            "(-0.514638, 0.333, -0.233179)",
+            "(-0.51646, 0.292, -0.234005)"
+          ],
+          "material": "Collection_A_Dark",
+          "mesh": "IAM_DiaphragmFixedSeat_0073",
+          "normal_dot_ray": -0.475986480712891,
+          "world_point": "(-0.272833, 1.704499, 0.293818)"
+        },
+        {
+          "distance": 8.77293968200684,
+          "geometric_normal_dot_ray": 0.383213639259338,
+          "local_triangle": [
+            "(-0.312632, 0.124203, -0.260412)",
+            "(-0.313132, 0.124957, -0.277411)",
+            "(-0.309882, 0.124668, -0.274531)"
+          ],
+          "material": "Collection_A_FinishedRecess",
+          "mesh": "IAM_MiddleGuard_0008",
+          "normal_dot_ray": -0.752205491065979,
+          "world_point": "(-0.336344, 1.671472, 0.404963)"
+        },
+        {
+          "distance": 8.90615749359131,
+          "geometric_normal_dot_ray": 0.438012599945068,
+          "local_triangle": [
+            "(-0.20159, 0.04222, -0.381787)",
+            "(-0.217376, 0.038796, -0.383911)",
+            "(-0.214617, 0.038911, -0.388221)"
+          ],
+          "material": "Collection_A_LeafNickelReverse",
+          "mesh": "IAM_Tongue1_Foil1",
+          "normal_dot_ray": -0.794814348220825,
+          "world_point": "(-0.400343, 1.638193, 0.516961)"
+        },
+        {
+          "distance": 8.90858173370361,
+          "geometric_normal_dot_ray": 0.437938302755356,
+          "local_triangle": [
+            "(-0.198918, 0.038711, -0.386137)",
+            "(-0.20159, 0.03862, -0.381787)",
+            "(-0.214617, 0.035311, -0.388221)"
+          ],
+          "material": "Collection_A_LeafNickel",
+          "mesh": "IAM_Tongue1_Foil0",
+          "normal_dot_ray": -0.797110259532928,
+          "world_point": "(-0.401508, 1.637588, 0.518999)"
+        },
+        {
+          "distance": 8.92563056945801,
+          "geometric_normal_dot_ray": 0.368831634521484,
+          "local_triangle": [
+            "(-0.185862, 0.013662, -0.392805)",
+            "(-0.204824, 0.01835, -0.40082)",
+            "(-0.199872, 0.01835, -0.404037)"
+          ],
+          "material": "Collection_A_LeafNickelReverse",
+          "mesh": "IAM_TongueFoil_1",
+          "normal_dot_ray": -0.707059025764465,
+          "world_point": "(-0.409699, 1.633329, 0.533332)"
+        }
+      ],
+      "pixel": "(472.0, 440.0)"
+    },
+    {
+      "hits": [
+        {
+          "distance": 8.09079265594482,
+          "geometric_normal_dot_ray": -0.840171813964844,
+          "local_triangle": [
+            "(0.291268, 1.836864, -0.00006)",
+            "(0.280389, 1.846575, -0.000016)",
+            "(0.281354, 1.847629, -0.000016)"
+          ],
+          "material": "R88_Burnished_Rear_Nickel",
+          "mesh": "R82_Fixed_Rear_Keel",
+          "normal_dot_ray": 0.844739139080048,
+          "world_point": "(0.286217, 1.841881, -0.000041)"
+        }
+      ],
+      "pixel": "(390.0, 440.0)"
+    },
+    {
+      "hits": [
+        {
+          "distance": 7.64170932769775,
+          "geometric_normal_dot_ray": 0.92387056350708,
+          "local_triangle": [
+            "(0.229593, 2.512784, -0.373813)",
+            "(0.212153, 2.524641, -0.373559)",
+            "(0.211952, 2.513617, -0.375782)"
+          ],
+          "material": "R88_Burnished_Rear_Nickel",
+          "mesh": "R82_Fixed_Rear_Keel",
+          "normal_dot_ray": -0.922704994678497,
+          "world_point": "(0.214354, 2.515482, -0.375118)"
+        },
+        {
+          "distance": 8.58407020568848,
+          "geometric_normal_dot_ray": 0.743853747844696,
+          "local_triangle": [
+            "(-0.237828, 2.272936, 0.417584)",
+            "(-0.235262, 2.279466, 0.416737)",
+            "(-0.241088, 2.280823, 0.417475)"
+          ],
+          "material": "I84_Diaphragm_Titanium",
+          "mesh": "I84_Cell_11_Diaphragm",
+          "normal_dot_ray": -0.713932156562805,
+          "world_point": "(-0.238364, 2.280069, 0.417139)"
+        }
+      ],
+      "pixel": "(450.0, 300.0)"
+    }
+  ],
+  "scope": "Actual imported body at full opening and source-rest core, same rear camera. Triangle ray attribution; core shader deformations and separate live optics not included.",
+  "viewport": "(900, 990)"
+}

@@ -1,0 +1,8 @@
+{
+  "tool": "subscription built-in image_gen",
+  "underlying_model": "not exposed or asserted",
+  "image": "interface_concept_r1.png",
+  "sha256": "1c6c43a310debb755b94734df37f12558211abc476b30dbd587c1995eb098353",
+  "prompt": "PROMPT.txt",
+  "assessment": "Integration/design only. The generated glass rectangle is not adopted; production uses real transparent score glyphs. Not geometry, dimensions or final runtime evidence."
+}

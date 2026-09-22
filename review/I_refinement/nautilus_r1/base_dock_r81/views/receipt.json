@@ -1,0 +1,84 @@
+{
+  "baseline": false,
+  "cameras": [
+    {
+      "basis": "[X: (0.983521, 0.0, 0.180794), Y: (0.051394, 0.958744, -0.279586), Z: (-0.173335, 0.28427, 0.942945)]",
+      "fov": 37.0,
+      "image": "01_installed_closed",
+      "position": [
+        -1.39999997615814,
+        3.90000009536743,
+        6.80000019073486
+      ]
+    },
+    {
+      "basis": "[X: (0.983521, 0.0, 0.180794), Y: (0.051394, 0.958744, -0.279586), Z: (-0.173335, 0.28427, 0.942945)]",
+      "fov": 37.0,
+      "image": "02_installed_open",
+      "position": [
+        -1.39999997615814,
+        3.90000009536743,
+        6.80000019073486
+      ]
+    },
+    {
+      "basis": "[X: (0.83957, 0.0, -0.543251), Y: (-0.079619, 0.989202, -0.123047), Z: (0.537385, 0.14656, 0.830504)]",
+      "fov": 29.0,
+      "image": "03_support_front",
+      "position": [
+        2.20000004768372,
+        1.64999997615814,
+        3.40000009536743
+      ]
+    },
+    {
+      "basis": "[X: (-0.83957, 0.0, 0.543251), Y: (0.079619, 0.989202, 0.123047), Z: (-0.537385, 0.14656, -0.830504)]",
+      "fov": 29.0,
+      "image": "04_support_rear",
+      "position": [
+        -2.20000004768372,
+        1.64999997615814,
+        -3.40000009536743
+      ]
+    },
+    {
+      "basis": "[X: (-0.83957, 0.0, 0.543251), Y: (0.079619, 0.989202, 0.123047), Z: (-0.537385, 0.14656, -0.830504)]",
+      "fov": 29.0,
+      "image": "05_metal_path_cutaway",
+      "position": [
+        -2.20000004768372,
+        1.64999997615814,
+        -3.40000009536743
+      ]
+    }
+  ],
+  "component_sha256": "16fc9b825dd173df46f4a74dfc275cda43aa4b7811840f5f1585bc6debb5bfee",
+  "cutaway_hidden": [
+    "IN1_FixedMouthCheek05",
+    "IN1_FixedRearShell_03",
+    "IN1_FixedRearShell_04",
+    "IN1_FixedRearShell_05",
+    "IN1_PanelRim_0_0_0_-2335",
+    "IN1_PanelRim_0_0_0_-3057",
+    "IN1_PorcelainPanel_01",
+    "ID80_Stanchion0_PortRim",
+    "ID80_Stanchion1_PortRim",
+    "IN1_PanelRim_1_1_0_-1410",
+    "IN1_PanelRim_1_1_0_-2307",
+    "IN1_PanelRim_1_1_1_-1410",
+    "IN1_PorcelainPanel_02",
+    "IN1_PanelRim_2_2_0_-153",
+    "IN1_PanelRim_2_2_0_-1382",
+    "IN1_PorcelainPanel_03",
+    "IN1_PanelRim_3_3_0_1312",
+    "IN1_PanelRim_3_3_0_-125",
+    "IN1_PorcelainPanel_04",
+    "IN1_PanelRim_4_4_0_1340",
+    "IN1_PorcelainPanel_05",
+    "IN1_PanelRim_5_5_0_2527",
+    "IN1_PanelRim_5_5_0_3197",
+    "IN1_PorcelainPanel_06"
+  ],
+  "scope": "Actual installed candidate and explicitly hidden-skin structural inspection. Cutaway is diagnostic, not normal operation or exploded service.",
+  "source_sha256": "6e365b7932d94754a2d0b7f31abc242800defb608bd31735900aedffec8087be"
+}

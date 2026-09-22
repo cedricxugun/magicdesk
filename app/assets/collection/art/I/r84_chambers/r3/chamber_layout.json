@@ -1,0 +1,551 @@
+{
+  "source_sha256": "f502e9225cb8fa5e0c3065e0274e8fa49a8ac4bf23a320e57de0ca80bc6f6110",
+  "component_sha256": "50b3ed52a9a094609ea804cd3ff1470dd6239521d35b1389ae6a0c82404a5b9f",
+  "mask": "res://assets/collection/art/I/chamber_response_r35/conductor_mask.png",
+  "mask_sha256": "62efaeb17be28aa90a371febb6891037fc36630e9897ed634b72c326866aebd7",
+  "cells": [
+    {
+      "frame": "I84_Cell_01_Frame",
+      "diaphragm": "I84_Cell_01_Diaphragm",
+      "cell_index": 0,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.0,
+      "light_position_godot": [
+        0.08076608926057816,
+        1.9784765243530273,
+        0.061957165598869324
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_01_Opal",
+          "runtime_mesh": "I84_Cell_01_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_01_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.005528475282012392,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 7.5654854718720275,
+        "u": 0.6,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.21483705890925525,
+        "centre": [
+          0.09435749053955078,
+          -0.05028175562620163,
+          1.9640557765960693
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_02_Frame",
+      "diaphragm": "I84_Cell_02_Diaphragm",
+      "cell_index": 1,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.08333333333333333,
+      "light_position_godot": [
+        0.06829849630594254,
+        1.8008545637130737,
+        0.1270681917667389
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_02_Opal",
+          "runtime_mesh": "I84_Cell_02_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_02_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.00566308667375739,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 8.165485471872028,
+        "u": 1.4,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.24295588296265483,
+        "centre": [
+          0.0724373608827591,
+          -0.10465780645608902,
+          1.7977490425109863
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_03_Frame",
+      "diaphragm": "I84_Cell_03_Diaphragm",
+      "cell_index": 2,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.16666666666666666,
+      "light_position_godot": [
+        0.168856680393219,
+        1.7186226844787598,
+        0.11355163902044296
+      ],
+      "light_enabled": true,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_03_Opal",
+          "runtime_mesh": "I84_Cell_03_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_03_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.005762479187365284,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 8.565485471872028,
+        "u": 2.2,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 0.6153846153846154,
+        "radius": 0.26371787469408164,
+        "centre": [
+          0.15586397051811218,
+          -0.09610427170991898,
+          1.7111541032791138
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_04_Frame",
+      "diaphragm": "I84_Cell_04_Diaphragm",
+      "cell_index": 3,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.25,
+      "light_position_godot": [
+        0.25200480222702026,
+        1.5944687128067017,
+        0.14784488081932068
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_04_Opal",
+          "runtime_mesh": "I84_Cell_04_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_04_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.00595728832447797,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 9.265485471872028,
+        "u": 2.04,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.3044113388909538,
+        "centre": [
+          0.24854660034179688,
+          -0.12816204130649567,
+          1.5830832719802856
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_05_Frame",
+      "diaphragm": "I84_Cell_05_Diaphragm",
+      "cell_index": 4,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.3333333333333333,
+      "light_position_godot": [
+        0.4450511634349823,
+        1.6147937774658203,
+        0.13947591185569763
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_05_Opal",
+          "runtime_mesh": "I84_Cell_05_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_05_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.006216997965117432,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 10.065485471872028,
+        "u": 2.36,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 0.6923076923076923,
+        "radius": 0.35866179715786367,
+        "centre": [
+          0.45243436098098755,
+          -0.12452834099531174,
+          1.5989489555358887
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_06_Frame",
+      "diaphragm": "I84_Cell_06_Diaphragm",
+      "cell_index": 5,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.4166666666666667,
+      "light_position_godot": [
+        0.5580397844314575,
+        1.483729362487793,
+        0.20566469430923462
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_06_Opal",
+          "runtime_mesh": "I84_Cell_06_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_06_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.0062888579451749,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 10.265485471872028,
+        "u": 1.4,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.3736725485476459,
+        "centre": [
+          0.5586430430412292,
+          -0.1832347810268402,
+          1.488782525062561
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_07_Frame",
+      "diaphragm": "I84_Cell_07_Diaphragm",
+      "cell_index": 6,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.5,
+      "light_position_godot": [
+        0.8005244135856628,
+        1.7367275953292847,
+        0.24570012092590332
+      ],
+      "light_enabled": true,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_07_Opal",
+          "runtime_mesh": "I84_Cell_07_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_07_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.006607658038672418,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 11.065485471872027,
+        "u": 1.4,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 0.8461538461538461,
+        "radius": 0.4402663458560165,
+        "centre": [
+          0.7973283529281616,
+          -0.22326593101024628,
+          1.7406636476516724
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_08_Frame",
+      "diaphragm": "I84_Cell_08_Diaphragm",
+      "cell_index": 7,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.5833333333333334,
+      "light_position_godot": [
+        0.7029004693031311,
+        2.0124340057373047,
+        0.27073854207992554
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_08_Opal",
+          "runtime_mesh": "I84_Cell_08_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_08_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.006883517640619381,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 11.665485471872028,
+        "u": 1.88,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.49789035159604844,
+        "centre": [
+          0.7095714211463928,
+          -0.24930168688297272,
+          2.017430067062378
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_09_Frame",
+      "diaphragm": "I84_Cell_09_Diaphragm",
+      "cell_index": 8,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.6666666666666666,
+      "light_position_godot": [
+        0.48320379853248596,
+        2.1057989597320557,
+        0.18365149199962616
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_09_Opal",
+          "runtime_mesh": "I84_Cell_09_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_09_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.00714078810380226,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 12.165485471872028,
+        "u": 2.52,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.5516312927942499,
+        "centre": [
+          0.4943476915359497,
+          -0.1714935153722763,
+          2.1218299865722656
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_10_Frame",
+      "diaphragm": "I84_Cell_10_Diaphragm",
+      "cell_index": 9,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.75,
+      "light_position_godot": [
+        0.3135671615600586,
+        2.2969119548797607,
+        0.3217354416847229
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_10_Opal",
+          "runtime_mesh": "I84_Cell_10_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_10_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.007486426125613437,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 12.765485471872028,
+        "u": 2.04,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 1.0,
+        "radius": 0.6238312351281402,
+        "centre": [
+          0.31267231702804565,
+          -0.3019509017467499,
+          2.3086068630218506
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_11_Frame",
+      "diaphragm": "I84_Cell_11_Diaphragm",
+      "cell_index": 10,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.8333333333333334,
+      "light_position_godot": [
+        -0.11848845332860947,
+        2.244527816772461,
+        0.4085789620876312
+      ],
+      "light_enabled": true,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_11_Opal",
+          "runtime_mesh": "I84_Cell_11_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_11_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.008018650012164646,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 13.565485471872028,
+        "u": 1.88,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 0.7692307692307693,
+        "radius": 0.7350068914299487,
+        "centre": [
+          -0.1255522221326828,
+          -0.38716158270835876,
+          2.249044418334961
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_12_Frame",
+      "diaphragm": "I84_Cell_12_Diaphragm",
+      "cell_index": 11,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.9166666666666666,
+      "light_position_godot": [
+        -0.192869633436203,
+        1.960117220878601,
+        0.4366670548915863
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_12_Opal",
+          "runtime_mesh": "I84_Cell_12_Opal",
+          "material": "I84_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_12_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.008561601673888164,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 14.265485471872028,
+        "u": 2.36,
+        "half_t": 0.28,
+        "half_u": 0.4,
+        "visibility": 0.46153846153846156,
+        "radius": 0.84842346076775,
+        "centre": [
+          -0.21084988117218018,
+          -0.42348355054855347,
+          1.9544687271118164
+        ]
+      },
+      "pinned_vertices": 192
+    }
+  ],
+  "illumination": {
+    "open_floor": 0.15,
+    "playing_floor": 0.38,
+    "emission_gain": 6.0,
+    "mask_cross_scale": 1.0,
+    "packet_floor": 0.75,
+    "spill_gain": 0.4,
+    "light_color": [
+      1.0,
+      0.55,
+      0.16
+    ],
+    "physical_conductors": true,
+    "wavefront": true
+  }
+}

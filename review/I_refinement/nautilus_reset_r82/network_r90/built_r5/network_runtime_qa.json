@@ -1,0 +1,72 @@
+{
+  "closed_resets_wave": true,
+  "component_sha256": "2bbbc6f7ce05d67a34c715c0958ec94ddf913b380dca44e4c7c489d96d09c271",
+  "connections": [
+    {
+      "actual_branch_end_uv": 1.0,
+      "cell": 0.0,
+      "ring_entry_phase": 1.0
+    },
+    {
+      "actual_branch_end_uv": 0.94172078371048,
+      "cell": 1.0,
+      "ring_entry_phase": 0.94172077079617
+    },
+    {
+      "actual_branch_end_uv": 0.861878097057343,
+      "cell": 2.0,
+      "ring_entry_phase": 0.861878120529504
+    },
+    {
+      "actual_branch_end_uv": 0.874876260757446,
+      "cell": 3.0,
+      "ring_entry_phase": 0.87487628742227
+    },
+    {
+      "actual_branch_end_uv": 0.764862179756165,
+      "cell": 4.0,
+      "ring_entry_phase": 0.764862163154168
+    },
+    {
+      "actual_branch_end_uv": 0.819712340831757,
+      "cell": 5.0,
+      "ring_entry_phase": 0.819712349621311
+    },
+    {
+      "actual_branch_end_uv": 0.665201127529144,
+      "cell": 6.0,
+      "ring_entry_phase": 0.665201150337459
+    },
+    {
+      "actual_branch_end_uv": 0.928132891654968,
+      "cell": 7.0,
+      "ring_entry_phase": 0.928132903488378
+    },
+    {
+      "actual_branch_end_uv": 0.544720947742462,
+      "cell": 8.0,
+      "ring_entry_phase": 0.544720923313078
+    },
+    {
+      "actual_branch_end_uv": 0.6266028881073,
+      "cell": 9.0,
+      "ring_entry_phase": 0.626602903384731
+    },
+    {
+      "actual_branch_end_uv": 0.0151391737163067,
+      "cell": 10.0,
+      "ring_entry_phase": 0.0151391740504735
+    },
+    {
+      "actual_branch_end_uv": 0.225010827183723,
+      "cell": 11.0,
+      "ring_entry_phase": 0.225010823083386
+    }
+  ],
+  "network_segments": 44,
+  "passed": true,
+  "pause_holds_wave": true,
+  "scope": "Actual imported UV ranges meet the physical-distance model and 12 cell-entry phases. Material clock updates, pause/stop hold and closed reset verified. Not all visual/performance/pressure-control or full-song acceptance.",
+  "source_sha256": "29eeed37d405bdd6e7982395bda921db53dfc3d6c01c7fe0a2ce23598d590444",
+  "uv_vertices_checked": 29184
+}

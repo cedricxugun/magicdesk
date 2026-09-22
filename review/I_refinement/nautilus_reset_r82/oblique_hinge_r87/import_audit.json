@@ -1,0 +1,27 @@
+[
+  {
+    "component": "app\\assets\\collection\\components\\I_r86_inner_finish_r1.glb",
+    "normal_mapped_missing_tangents": [],
+    "morph_primitive_count": 24
+  },
+  {
+    "component": "app\\assets\\collection\\components\\I_r86_inner_finish_r2.glb",
+    "normal_mapped_missing_tangents": [],
+    "morph_primitive_count": 24
+  },
+  {
+    "component": "app\\assets\\collection\\components\\I_r86_inner_finish_r3.glb",
+    "normal_mapped_missing_tangents": [],
+    "morph_primitive_count": 24
+  },
+  {
+    "component": "app\\assets\\collection\\components\\I_r86_inner_finish_r4.glb",
+    "normal_mapped_missing_tangents": [],
+    "morph_primitive_count": 24
+  },
+  {
+    "component": "app\\assets\\collection\\components\\I_r87_oblique_hinge_r1.glb",
+    "normal_mapped_missing_tangents": [],
+    "morph_primitive_count": 24
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "file": "review/I_refinement/nautilus_r1/base_dock_r81/motion/dock_opening_r81.mp4",
+  "sha256": "7e7163830928199d10e7db91c4a74e08b3254586b64f9c8cf775eb6a91fc37bc",
+  "stream": {
+    "width": 1600,
+    "height": 1200,
+    "avg_frame_rate": "30/1",
+    "duration": "14.000000",
+    "nb_read_frames": "420"
+  },
+  "png_count": 420,
+  "first_last_identical": true,
+  "frame0_sha256": "82e25229931bb9b3061329054f815771fed8ac3ee6707365df63315fb23ce5b4",
+  "frame419_sha256": "82e25229931bb9b3061329054f815771fed8ac3ee6707365df63315fb23ce5b4",
+  "scope": "Decoded 14-second 420-frame normal-speed offline video; does not measure native real-time frame rate."
+}

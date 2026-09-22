@@ -1,0 +1,915 @@
+{
+  "source_sha256": "f502e9225cb8fa5e0c3065e0274e8fa49a8ac4bf23a320e57de0ca80bc6f6110",
+  "poses": [
+    {
+      "frame": 1,
+      "weight": 0
+    },
+    {
+      "frame": 85,
+      "weight": 0
+    },
+    {
+      "frame": 100,
+      "weight": 0
+    },
+    {
+      "frame": 125,
+      "weight": 0
+    },
+    {
+      "frame": 145,
+      "weight": 0
+    },
+    {
+      "frame": 175,
+      "weight": 0
+    },
+    {
+      "frame": 205,
+      "weight": -1
+    },
+    {
+      "frame": 205,
+      "weight": 0
+    },
+    {
+      "frame": 205,
+      "weight": 1
+    },
+    {
+      "frame": 260,
+      "weight": 0
+    },
+    {
+      "frame": 300,
+      "weight": 0
+    },
+    {
+      "frame": 350,
+      "weight": 0
+    },
+    {
+      "frame": 430,
+      "weight": 0
+    }
+  ],
+  "contacts": [
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_02",
+      "b": "R82_Porcelain_06",
+      "pairs": 230
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_05_Frame",
+      "pairs": 30
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_05_LightChannel",
+      "pairs": 32
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_05_Opal",
+      "pairs": 70
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_05_Retainer_3",
+      "pairs": 175
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_09_Diaphragm",
+      "pairs": 1135
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_09_Frame",
+      "pairs": 202
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_09_LightChannel",
+      "pairs": 42
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_09_Opal",
+      "pairs": 76
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_09_Seat",
+      "pairs": 74
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Frame",
+      "pairs": 98
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_LightChannel",
+      "pairs": 132
+    },
+    {
+      "frame": 100,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Opal",
+      "pairs": 254
+    },
+    {
+      "frame": 125,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Frame",
+      "pairs": 70
+    },
+    {
+      "frame": 125,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_LightChannel",
+      "pairs": 38
+    },
+    {
+      "frame": 125,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Opal",
+      "pairs": 70
+    },
+    {
+      "frame": 125,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Frame",
+      "pairs": 216
+    },
+    {
+      "frame": 125,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_LightChannel",
+      "pairs": 58
+    },
+    {
+      "frame": 125,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Opal",
+      "pairs": 68
+    },
+    {
+      "frame": 125,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Diaphragm",
+      "pairs": 1104
+    },
+    {
+      "frame": 125,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Frame",
+      "pairs": 258
+    },
+    {
+      "frame": 125,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_LightChannel",
+      "pairs": 72
+    },
+    {
+      "frame": 125,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Opal",
+      "pairs": 126
+    },
+    {
+      "frame": 125,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Seat",
+      "pairs": 60
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_08_Diaphragm",
+      "pairs": 596
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_08_Frame",
+      "pairs": 230
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_08_LightChannel",
+      "pairs": 52
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_08_Opal",
+      "pairs": 74
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_08_Seat",
+      "pairs": 56
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Diaphragm",
+      "pairs": 544
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Frame",
+      "pairs": 176
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_LightChannel",
+      "pairs": 44
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Opal",
+      "pairs": 66
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Seat",
+      "pairs": 44
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Diaphragm",
+      "pairs": 254
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Frame",
+      "pairs": 164
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_LightChannel",
+      "pairs": 40
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Opal",
+      "pairs": 62
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Seat",
+      "pairs": 42
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Diaphragm",
+      "pairs": 346
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Frame",
+      "pairs": 486
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_LightChannel",
+      "pairs": 112
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Opal",
+      "pairs": 150
+    },
+    {
+      "frame": 145,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Seat",
+      "pairs": 206
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Diaphragm",
+      "pairs": 248
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Frame",
+      "pairs": 122
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_LightChannel",
+      "pairs": 46
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Opal",
+      "pairs": 68
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Retainer_2",
+      "pairs": 82
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Seat",
+      "pairs": 50
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Frame",
+      "pairs": 62
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Diaphragm",
+      "pairs": 184
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Frame",
+      "pairs": 130
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_LightChannel",
+      "pairs": 34
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Opal",
+      "pairs": 60
+    },
+    {
+      "frame": 175,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Seat",
+      "pairs": 36
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Diaphragm",
+      "pairs": 246
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Frame",
+      "pairs": 122
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_LightChannel",
+      "pairs": 46
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Opal",
+      "pairs": 68
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Retainer_2",
+      "pairs": 82
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Seat",
+      "pairs": 50
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Frame",
+      "pairs": 62
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Diaphragm",
+      "pairs": 182
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Frame",
+      "pairs": 130
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_LightChannel",
+      "pairs": 34
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Opal",
+      "pairs": 60
+    },
+    {
+      "frame": 205,
+      "weight": -1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Seat",
+      "pairs": 36
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Diaphragm",
+      "pairs": 248
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Frame",
+      "pairs": 122
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_LightChannel",
+      "pairs": 46
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Opal",
+      "pairs": 68
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Retainer_2",
+      "pairs": 82
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Seat",
+      "pairs": 50
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Frame",
+      "pairs": 62
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Diaphragm",
+      "pairs": 184
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Frame",
+      "pairs": 130
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_LightChannel",
+      "pairs": 34
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Opal",
+      "pairs": 60
+    },
+    {
+      "frame": 205,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Seat",
+      "pairs": 36
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Diaphragm",
+      "pairs": 256
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Frame",
+      "pairs": 122
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_LightChannel",
+      "pairs": 46
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Opal",
+      "pairs": 68
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Retainer_2",
+      "pairs": 82
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Seat",
+      "pairs": 50
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Frame",
+      "pairs": 62
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Diaphragm",
+      "pairs": 192
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Frame",
+      "pairs": 130
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_LightChannel",
+      "pairs": 34
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Opal",
+      "pairs": 60
+    },
+    {
+      "frame": 205,
+      "weight": 1,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Seat",
+      "pairs": 36
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_03",
+      "b": "I84_Cell_07_Diaphragm",
+      "pairs": 100
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_08_Diaphragm",
+      "pairs": 274
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_08_Frame",
+      "pairs": 464
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_08_LightChannel",
+      "pairs": 64
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_08_Opal",
+      "pairs": 84
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_04",
+      "b": "I84_Cell_08_Seat",
+      "pairs": 132
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Diaphragm",
+      "pairs": 404
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Frame",
+      "pairs": 208
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_LightChannel",
+      "pairs": 52
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Opal",
+      "pairs": 66
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Seat",
+      "pairs": 60
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Diaphragm",
+      "pairs": 258
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Frame",
+      "pairs": 150
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_LightChannel",
+      "pairs": 40
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Opal",
+      "pairs": 64
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_11_Seat",
+      "pairs": 32
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Frame",
+      "pairs": 648
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_LightChannel",
+      "pairs": 180
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Opal",
+      "pairs": 144
+    },
+    {
+      "frame": 260,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Seat",
+      "pairs": 96
+    },
+    {
+      "frame": 300,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Diaphragm",
+      "pairs": 358
+    },
+    {
+      "frame": 300,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Frame",
+      "pairs": 164
+    },
+    {
+      "frame": 300,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_LightChannel",
+      "pairs": 44
+    },
+    {
+      "frame": 300,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Opal",
+      "pairs": 60
+    },
+    {
+      "frame": 300,
+      "weight": 0,
+      "a": "R82_Porcelain_05",
+      "b": "I84_Cell_10_Seat",
+      "pairs": 40
+    },
+    {
+      "frame": 300,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Diaphragm",
+      "pairs": 1024
+    },
+    {
+      "frame": 300,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Frame",
+      "pairs": 298
+    },
+    {
+      "frame": 300,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_LightChannel",
+      "pairs": 66
+    },
+    {
+      "frame": 300,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Opal",
+      "pairs": 134
+    },
+    {
+      "frame": 300,
+      "weight": 0,
+      "a": "R82_Porcelain_06",
+      "b": "I84_Cell_12_Seat",
+      "pairs": 68
+    }
+  ],
+  "subset_clear": false,
+  "scope": "Six ceramic covers against each other and new chamber meshes, 13 poses including membrane extremes. Not telescopic hardware, all internals, continuous motion or art acceptance."
+}

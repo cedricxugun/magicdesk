@@ -1,0 +1,229 @@
+{
+  "body_source_sha256": "31a7b616db0f0fab0e9c42ecbb3077b1628292b4bba576e6411b1ef098c7f7df",
+  "fps": 30,
+  "frames": 1080,
+  "motion_source_sha256": "ac086bd334877d38fcb0a2a3e38f7fa341911a14300109d47406d8a4481815af",
+  "passed": true,
+  "return_pose_error": 0.000000523028631960187,
+  "samples": [
+    {
+      "frame": 0,
+      "target": 0.0,
+      "time": 0.0,
+      "velocity": 0.0
+    },
+    {
+      "frame": 30,
+      "target": 6.4,
+      "time": 0.00277777777777778,
+      "velocity": 0.133333333333333
+    },
+    {
+      "frame": 60,
+      "target": 6.4,
+      "time": 0.912499999999999,
+      "velocity": 1.0
+    },
+    {
+      "frame": 90,
+      "target": 6.4,
+      "time": 1.9125,
+      "velocity": 1.0
+    },
+    {
+      "frame": 120,
+      "target": 6.4,
+      "time": 2.91249999999999,
+      "velocity": 1.0
+    },
+    {
+      "frame": 150,
+      "target": 6.4,
+      "time": 3.91249999999999,
+      "velocity": 1.0
+    },
+    {
+      "frame": 180,
+      "target": 6.4,
+      "time": 4.91250000000003,
+      "velocity": 1.0
+    },
+    {
+      "frame": 210,
+      "target": 6.4,
+      "time": 5.91250000000008,
+      "velocity": 1.0
+    },
+    {
+      "frame": 240,
+      "target": 6.4,
+      "time": 6.39769011146746,
+      "velocity": 0.0145887696792038
+    },
+    {
+      "frame": 270,
+      "target": 6.4,
+      "time": 6.4,
+      "velocity": 0.0
+    },
+    {
+      "frame": 300,
+      "target": 6.4,
+      "time": 6.4,
+      "velocity": 0.0
+    },
+    {
+      "frame": 330,
+      "target": 0.0,
+      "time": 6.39722222222222,
+      "velocity": -0.133333333333333
+    },
+    {
+      "frame": 360,
+      "target": 0.0,
+      "time": 5.48749999999996,
+      "velocity": -1.0
+    },
+    {
+      "frame": 390,
+      "target": 0.0,
+      "time": 4.48749999999991,
+      "velocity": -1.0
+    },
+    {
+      "frame": 420,
+      "target": 0.0,
+      "time": 3.48749999999989,
+      "velocity": -1.0
+    },
+    {
+      "frame": 450,
+      "target": 0.0,
+      "time": 2.48749999999989,
+      "velocity": -1.0
+    },
+    {
+      "frame": 480,
+      "target": 0.0,
+      "time": 1.48749999999989,
+      "velocity": -1.0
+    },
+    {
+      "frame": 510,
+      "target": 0.0,
+      "time": 0.487499999999898,
+      "velocity": -1.0
+    },
+    {
+      "frame": 540,
+      "target": 0.0,
+      "time": 0.00230988853254024,
+      "velocity": -0.0145887696792015
+    },
+    {
+      "frame": 570,
+      "target": 0.0,
+      "time": 0.0,
+      "velocity": 0.0
+    },
+    {
+      "frame": 600,
+      "target": 6.4,
+      "time": 0.00277777777777778,
+      "velocity": 0.133333333333333
+    },
+    {
+      "frame": 630,
+      "target": 6.4,
+      "time": 0.912499999999999,
+      "velocity": 1.0
+    },
+    {
+      "frame": 660,
+      "target": 6.4,
+      "time": 1.9125,
+      "velocity": 1.0
+    },
+    {
+      "frame": 690,
+      "target": 6.4,
+      "time": 2.91249999999999,
+      "velocity": 1.0
+    },
+    {
+      "frame": 720,
+      "target": 6.4,
+      "time": 3.91249999999999,
+      "velocity": 1.0
+    },
+    {
+      "frame": 750,
+      "target": 0.0,
+      "time": 4.90972222222226,
+      "velocity": 0.866666666666667
+    },
+    {
+      "frame": 780,
+      "target": 0.0,
+      "time": 4.33750000000001,
+      "velocity": -1.0
+    },
+    {
+      "frame": 810,
+      "target": 0.0,
+      "time": 3.33749999999999,
+      "velocity": -1.0
+    },
+    {
+      "frame": 840,
+      "target": 0.0,
+      "time": 2.3375,
+      "velocity": -1.0
+    },
+    {
+      "frame": 870,
+      "target": 0.0,
+      "time": 1.3375,
+      "velocity": -1.0
+    },
+    {
+      "frame": 900,
+      "target": 0.0,
+      "time": 0.337500000000001,
+      "velocity": -1.0
+    },
+    {
+      "frame": 930,
+      "target": 0.0,
+      "time": 0.000917520799167425,
+      "velocity": -0.00579486820526795
+    },
+    {
+      "frame": 960,
+      "target": 0.0,
+      "time": 0.0,
+      "velocity": 0.0
+    },
+    {
+      "frame": 990,
+      "target": 0.0,
+      "time": 0.0,
+      "velocity": 0.0
+    },
+    {
+      "frame": 1020,
+      "target": 0.0,
+      "time": 0.0,
+      "velocity": 0.0
+    },
+    {
+      "frame": 1050,
+      "target": 0.0,
+      "time": 0.0,
+      "velocity": 0.0
+    }
+  ],
+  "scope": "Blender-authored 13-group clip, source points including display rotation, full round trip and interrupted second extraction. Review renderer only, not prior-stage playback or native product controls.",
+  "source_max_error": 0.00000106998220417154,
+  "source_points_checked": 36825
+}

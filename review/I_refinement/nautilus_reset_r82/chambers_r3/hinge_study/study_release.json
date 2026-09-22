@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "degrees": 45.0,
+      "unseat": 0.06,
+      "radial_offset": 0.02,
+      "contact_pair_states": 0,
+      "first_contacts": []
+    }
+  ],
+  "selected": {
+    "degrees": 45.0,
+    "unseat": 0.06,
+    "radial_offset": 0.02,
+    "contact_pair_states": 0,
+    "first_contacts": []
+  },
+  "scope": "41-phase ceramic/cell and ceramic/ceramic surface checks only, existing actuator hardware not fitted. Outer-edge hinge with slight radial release, not accepted design."
+}

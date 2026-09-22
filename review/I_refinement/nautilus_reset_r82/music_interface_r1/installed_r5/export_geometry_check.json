@@ -1,0 +1,2808 @@
+{
+  "source_sha256": "c1942bd1caa70800323351368a17c748cee7d3562829d5039d48e2e15df5f910",
+  "component_sha256": "72cd83a904f6fc6964b8ee1f1c9a4a6332b6da2c67e633900c99169e6bff1bd0",
+  "passed": true,
+  "objects": [
+    {
+      "name": "I83_Continuous_Throat_Transition",
+      "source_triangles": 19200,
+      "gltf_triangles": 19200,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_CarrierBushing_0",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_HeadWasher_0",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewHead_0",
+      "source_triangles": 1044,
+      "gltf_triangles": 1044,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewShank_0",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_CarrierBushing_1",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_HeadWasher_1",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewHead_1",
+      "source_triangles": 1044,
+      "gltf_triangles": 1044,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewShank_1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_CarrierBushing_2",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_HeadWasher_2",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewHead_2",
+      "source_triangles": 1044,
+      "gltf_triangles": 1044,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewShank_2",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_CarrierBushing_3",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_HeadWasher_3",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewHead_3",
+      "source_triangles": 1044,
+      "gltf_triangles": 1044,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewShank_3",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_CarrierBushing_4",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_HeadWasher_4",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewHead_4",
+      "source_triangles": 1044,
+      "gltf_triangles": 1044,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewShank_4",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_CarrierBushing_5",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_HeadWasher_5",
+      "source_triangles": 512,
+      "gltf_triangles": 512,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewHead_5",
+      "source_triangles": 1044,
+      "gltf_triangles": 1044,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "I83_ScrewShank_5",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Chamber_Liner",
+      "source_triangles": 235124,
+      "gltf_triangles": 235124,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_00",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_01",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_02",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_03",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_04",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_05",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_06",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_07",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_08",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_09",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_10",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_11",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_12",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_13",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_14",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_15",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_16",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_17",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_18",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Acoustic_Rib_19",
+      "source_triangles": 1456,
+      "gltf_triangles": 1456,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Base_Locating_Flange",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Fixed_Rear_Keel",
+      "source_triangles": 271217,
+      "gltf_triangles": 271217,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Inner_Curl_Termination",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Porcelain_01",
+      "source_triangles": 132596,
+      "gltf_triangles": 132596,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_01",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Pin_01",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Tip_01",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_1_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_1_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_01",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_1_-1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_1_1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_1_-1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_1_1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_01_Inboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_01_Outboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_01_Inner",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_01_Outer",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Porcelain_02",
+      "source_triangles": 55552,
+      "gltf_triangles": 55552,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_02",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Pin_02",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Tip_02",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_2_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_2_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_02",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_2_-1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_2_1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_2_-1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_2_1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_02_Inboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_02_Outboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_02_Inner",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_02_Outer",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Porcelain_03",
+      "source_triangles": 55552,
+      "gltf_triangles": 55552,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_03",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Pin_03",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Tip_03",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_3_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_3_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_03",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_3_-1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_3_1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_3_-1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_3_1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_03_Inboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_03_Outboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_03_Inner",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_03_Outer",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Porcelain_04",
+      "source_triangles": 55552,
+      "gltf_triangles": 55552,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_04",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Pin_04",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Tip_04",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_4_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_4_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_04",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_4_-1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_4_1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_4_-1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_4_1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_04_Inboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_04_Outboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_04_Inner",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_04_Outer",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Porcelain_05",
+      "source_triangles": 55552,
+      "gltf_triangles": 55552,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_05",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Pin_05",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Tip_05",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_5_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_5_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_05",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_5_-1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_5_1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_5_-1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_5_1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_05_Inboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_05_Outboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_05_Inner",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_05_Outer",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Porcelain_06",
+      "source_triangles": 55552,
+      "gltf_triangles": 55552,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_06",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Pin_06",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Latch_Tip_06",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_6_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Pin_Stop_6_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_06",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_6_-1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Cover_Pad_6_1",
+      "source_triangles": 672,
+      "gltf_triangles": 672,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_6_-1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R5_Short_Rotor_Ear_6_1",
+      "source_triangles": 252,
+      "gltf_triangles": 252,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_06_Inboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Rolled_Edge_06_Outboard",
+      "source_triangles": 1816,
+      "gltf_triangles": 1816,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_06_Inner",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Seal_06_Outer",
+      "source_triangles": 2416,
+      "gltf_triangles": 2416,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Axle_Endcap_-1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Axle_Endcap_1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Axle_Index_-1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Axle_Index_1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Bearing_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Bearing_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Bearing_Shoulder_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Bearing_Shoulder_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Crosshead_01",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_1_-1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_1_1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Crosshead_02",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_2_-1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_2_1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Crosshead_03",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_3_-1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_3_1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Crosshead_04",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_4_-1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_4_1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Crosshead_05",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_5_-1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_5_1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Crosshead_06",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_6_-1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Slider_Rod_6_1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_1_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_1_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_2_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_2_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_3_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_3_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_4_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_4_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_5_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_5_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_6_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Foot_6_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_1_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_1_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_2_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_2_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_3_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_3_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_4_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_4_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_5_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_5_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_6_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_6_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_1_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_1_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_2_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_2_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_3_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_3_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_4_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_4_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_5_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_5_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_6_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_6_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Keel_Capture_Pin_0",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Keel_Capture_Pin_1",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Keel_Capture_Rim_0",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Keel_Capture_Rim_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Keel_Fitted_Pad_0",
+      "source_triangles": 3296,
+      "gltf_triangles": 3296,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Keel_Fitted_Pad_1",
+      "source_triangles": 3296,
+      "gltf_triangles": 3296,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Locked_Trunnion",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Lower_Bridge_-0.28",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Lower_Bridge_0.28",
+      "source_triangles": 1020,
+      "gltf_triangles": 1020,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Seal_-1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R3_Seal_1",
+      "source_triangles": 2304,
+      "gltf_triangles": 2304,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R4_Curved_Keel_Web_0",
+      "source_triangles": 3132,
+      "gltf_triangles": 3132,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R4_Curved_Keel_Web_1",
+      "source_triangles": 3132,
+      "gltf_triangles": 3132,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R4_Forged_Saddle_-1",
+      "source_triangles": 7008,
+      "gltf_triangles": 7008,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_R4_Forged_Saddle_1",
+      "source_triangles": 7008,
+      "gltf_triangles": 7008,
+      "samples": 10,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    },
+    {
+      "name": "R82_Tangential_Aperture_Rolled_Lip",
+      "source_triangles": 3216,
+      "gltf_triangles": 3216,
+      "samples": 8,
+      "max_local_sample_error": 0.0,
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "old_export_omissions": [
+    {
+      "name": "R82_Acoustic_Chamber_Liner",
+      "old_triangles": 65542,
+      "evaluated_triangles": 235124,
+      "modifiers": []
+    },
+    {
+      "name": "R82_Base_Locating_Flange",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_Fixed_Rear_Keel",
+      "old_triangles": 237141,
+      "evaluated_triangles": 271217,
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "R82_Inner_Curl_Termination",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_Porcelain_01",
+      "old_triangles": 122604,
+      "evaluated_triangles": 132596,
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_01",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Pin_01",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Tip_01",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_1_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_1_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_01",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_Porcelain_02",
+      "old_triangles": 50048,
+      "evaluated_triangles": 55552,
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_02",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Pin_02",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Tip_02",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_2_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_2_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_02",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_Porcelain_03",
+      "old_triangles": 50048,
+      "evaluated_triangles": 55552,
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_03",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Pin_03",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Tip_03",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_3_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_3_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_03",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_Porcelain_04",
+      "old_triangles": 50048,
+      "evaluated_triangles": 55552,
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_04",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Pin_04",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Tip_04",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_4_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_4_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_04",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_Porcelain_05",
+      "old_triangles": 50048,
+      "evaluated_triangles": 55552,
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_05",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Pin_05",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Tip_05",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_5_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_5_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_05",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_Porcelain_06",
+      "old_triangles": 50048,
+      "evaluated_triangles": 55552,
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "R82_R3_Enamel_Lock_Handle_06",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Pin_06",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Latch_Tip_06",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_6_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Pin_Stop_6_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Rotating_Pin_06",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Axle_Endcap_-1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Axle_Endcap_1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Axle_Index_-1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Axle_Index_1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Bearing_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Bearing_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Bearing_Shoulder_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Bearing_Shoulder_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Crosshead_01",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_1_-1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_1_1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Crosshead_02",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_2_-1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_2_1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Crosshead_03",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_3_-1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_3_1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Crosshead_04",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_4_-1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_4_1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Crosshead_05",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_5_-1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_5_1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Crosshead_06",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_6_-1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Slider_Rod_6_1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_1_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_1_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_2_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_2_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_3_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_3_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_4_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_4_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_5_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_5_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_6_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Foot_6_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_1_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_1_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_2_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_2_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_3_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_3_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_4_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_4_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_5_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_5_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_6_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Sleeve_6_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_1_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_1_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_2_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_2_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_3_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_3_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_4_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_4_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_5_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_5_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_6_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Guide_Wiper_6_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Keel_Capture_Pin_0",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Keel_Capture_Pin_1",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Keel_Capture_Rim_0",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Keel_Capture_Rim_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Locked_Trunnion",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Lower_Bridge_-0.28",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Lower_Bridge_0.28",
+      "old_triangles": 252,
+      "evaluated_triangles": 1020,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Seal_-1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R3_Seal_1",
+      "old_triangles": 576,
+      "evaluated_triangles": 2304,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R4_Forged_Saddle_-1",
+      "old_triangles": 2034,
+      "evaluated_triangles": 7008,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    },
+    {
+      "name": "R82_R4_Forged_Saddle_1",
+      "old_triangles": 2034,
+      "evaluated_triangles": 7008,
+      "modifiers": [
+        "BEVEL",
+        "WEIGHTED_NORMAL"
+      ]
+    }
+  ],
+  "scope": "Raw glTF versus independent evaluated Blender source: all body object triangle counts and sampled local coordinates, including modifier-added vertices. Not full directed triangles/normals, Godot imported pose, continuous collision or art acceptance."
+}

@@ -1,0 +1,428 @@
+{
+  "checks": [
+    {
+      "check": "Ready score before playback",
+      "passed": true
+    },
+    {
+      "check": "No opaque score backing",
+      "passed": true
+    },
+    {
+      "check": "Authored reading-plane pointer projection",
+      "passed": true
+    },
+    {
+      "check": "Rear-side optical hit rejection",
+      "passed": true
+    },
+    {
+      "check": "Two authored start-edge vertices per reading beam",
+      "passed": true
+    },
+    {
+      "check": "Beam follows real lens surface under diaphragm motion",
+      "passed": true
+    },
+    {
+      "check": "Two authored start-edge vertices per reading beam",
+      "passed": true
+    },
+    {
+      "check": "Beam follows real lens surface under diaphragm motion",
+      "passed": true
+    },
+    {
+      "check": "Two authored start-edge vertices per reading beam",
+      "passed": true
+    },
+    {
+      "check": "Beam follows real lens surface under diaphragm motion",
+      "passed": true
+    },
+    {
+      "check": "Two authored start-edge vertices per reading beam",
+      "passed": true
+    },
+    {
+      "check": "Beam follows real lens surface under diaphragm motion",
+      "passed": true
+    },
+    {
+      "check": "Two authored start-edge vertices per reading beam",
+      "passed": true
+    },
+    {
+      "check": "Beam follows real lens surface under diaphragm motion",
+      "passed": true
+    },
+    {
+      "check": "Two authored start-edge vertices per reading beam",
+      "passed": true
+    },
+    {
+      "check": "Beam follows real lens surface under diaphragm motion",
+      "passed": true
+    },
+    {
+      "check": "Two authored start-edge vertices per reading beam",
+      "passed": true
+    },
+    {
+      "check": "Beam follows real lens surface under diaphragm motion",
+      "passed": true
+    },
+    {
+      "check": "Two authored start-edge vertices per reading beam",
+      "passed": true
+    },
+    {
+      "check": "Beam follows real lens surface under diaphragm motion",
+      "passed": true
+    },
+    {
+      "check": "Two authored start-edge vertices per reading beam",
+      "passed": true
+    },
+    {
+      "check": "Beam follows real lens surface under diaphragm motion",
+      "passed": true
+    },
+    {
+      "check": "Reading lens actually moves with the driven diaphragm",
+      "passed": true
+    },
+    {
+      "check": "Reading lens actually moves with the driven diaphragm",
+      "passed": true
+    },
+    {
+      "check": "Reading lens actually moves with the driven diaphragm",
+      "passed": true
+    },
+    {
+      "check": "Pause freezes audio clock and real score position",
+      "passed": true
+    },
+    {
+      "check": "Paused seek across complete work at 20.0",
+      "passed": true
+    },
+    {
+      "check": "Paused seek across complete work at 350.0",
+      "passed": true
+    },
+    {
+      "check": "Paused seek across complete work at 490.0",
+      "passed": true
+    },
+    {
+      "check": "Paused seek across complete work at 920.0",
+      "passed": true
+    },
+    {
+      "check": "Resume from paused seek",
+      "passed": true
+    },
+    {
+      "check": "Fade, remove projection, settle and close throat",
+      "passed": true
+    }
+  ],
+  "component_sha256": "1f70b619ae3959bb29f550a7ce8b8ee5e54d3ff511f8f07a955b1caac100f105",
+  "head_witnesses": [
+    {
+      "actual_lens_world": [
+        0.0159352570772171,
+        -0.347987979650497,
+        0.0573290772736073
+      ],
+      "axis_dot_focus": 1.00000011920929,
+      "beam_lens_error": 0.000000157973829573166,
+      "lens": "I83_ReadingLens_0",
+      "stroke": -0.006,
+      "surface_vertex_error": 0.0
+    },
+    {
+      "actual_lens_world": [
+        0.0178485512733459,
+        -0.347506314516068,
+        -0.0211006067693233
+      ],
+      "axis_dot_focus": 1.0,
+      "beam_lens_error": 0.000000133488128994941,
+      "lens": "I83_ReadingLens_1",
+      "stroke": -0.006,
+      "surface_vertex_error": 0.0
+    },
+    {
+      "actual_lens_world": [
+        0.0200501028448343,
+        -0.346952021121979,
+        -0.0988815054297447
+      ],
+      "axis_dot_focus": 1.0,
+      "beam_lens_error": 0.000000117700899693318,
+      "lens": "I83_ReadingLens_2",
+      "stroke": -0.006,
+      "surface_vertex_error": 0.0
+    },
+    {
+      "actual_lens_world": [
+        0.0159579049795866,
+        -0.342270135879517,
+        0.0572968572378159
+      ],
+      "axis_dot_focus": 1.0,
+      "beam_lens_error": 0.000000157973829573166,
+      "lens": "I83_ReadingLens_0",
+      "stroke": 0.0,
+      "surface_vertex_error": 0.0
+    },
+    {
+      "actual_lens_world": [
+        0.0178803913295269,
+        -0.341820776462555,
+        -0.0211382489651442
+      ],
+      "axis_dot_focus": 0.999999940395355,
+      "beam_lens_error": 0.000000133488128994941,
+      "lens": "I83_ReadingLens_1",
+      "stroke": 0.0,
+      "surface_vertex_error": 0.0
+    },
+    {
+      "actual_lens_world": [
+        0.0200952664017677,
+        -0.341303080320358,
+        -0.0989240482449532
+      ],
+      "axis_dot_focus": 1.0,
+      "beam_lens_error": 0.000000117700899693318,
+      "lens": "I83_ReadingLens_2",
+      "stroke": 0.0,
+      "surface_vertex_error": 0.0
+    },
+    {
+      "actual_lens_world": [
+        0.0159789528697729,
+        -0.336553364992142,
+        0.0572669096291065
+      ],
+      "axis_dot_focus": 1.0,
+      "beam_lens_error": 0.000000157973829573166,
+      "lens": "I83_ReadingLens_0",
+      "stroke": 0.006,
+      "surface_vertex_error": 0.0
+    },
+    {
+      "actual_lens_world": [
+        0.0179100148379803,
+        -0.336136877536774,
+        -0.0211732741445303
+      ],
+      "axis_dot_focus": 0.999999940395355,
+      "beam_lens_error": 0.000000133488128994941,
+      "lens": "I83_ReadingLens_1",
+      "stroke": 0.006,
+      "surface_vertex_error": 0.0
+    },
+    {
+      "actual_lens_world": [
+        0.0201373491436243,
+        -0.335656404495239,
+        -0.0989636704325676
+      ],
+      "axis_dot_focus": 1.0,
+      "beam_lens_error": 0.000000117700899693318,
+      "lens": "I83_ReadingLens_2",
+      "stroke": 0.006,
+      "surface_vertex_error": 0.0
+    }
+  ],
+  "movement_samples": [
+    {
+      "active": true,
+      "close_pending": false,
+      "pause_pending": false,
+      "response_level": 0.0,
+      "reveal": 1.0,
+      "staff": {
+        "cache_size": 4,
+        "first_tile": 0,
+        "movement": 1,
+        "note_x": 633.433233436664,
+        "offset": 494.266566769998,
+        "pending_tiles": 0,
+        "playhead": 0.5,
+        "quarter_estimate": 13.6611581652791,
+        "ready": true,
+        "reveal": 1.0,
+        "scan_intensity": 0.055,
+        "scan_level": 0.0,
+        "scan_playing": false,
+        "scanner_caps": {
+          "attached": 3,
+          "mode": "authored_directional_heads"
+        },
+        "valid_tiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "width": 278.333333333333
+      },
+      "starting": false,
+      "transport": {
+        "alignment_status": "estimated_requires_musical_review",
+        "clock_mode": "realtime_audio_compensated",
+        "duration": 961.036178588867,
+        "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+        "local_seconds": 20.0,
+        "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+        "movement": 1,
+        "score_quarter_estimate": 13.6611581652791,
+        "state": "paused",
+        "total_seconds": 20.0
+      }
+    },
+    {
+      "active": true,
+      "close_pending": false,
+      "pause_pending": false,
+      "response_level": 0.0,
+      "reveal": 1.0,
+      "staff": {
+        "cache_size": 4,
+        "first_tile": 1,
+        "movement": 2,
+        "note_x": 923.39086322592,
+        "offset": 780.89086322592,
+        "pending_tiles": 0,
+        "playhead": 0.5,
+        "quarter_estimate": 50.8894506786105,
+        "ready": true,
+        "reveal": 1.0,
+        "scan_intensity": 0.055,
+        "scan_level": 0.0,
+        "scan_playing": false,
+        "scanner_caps": {
+          "attached": 3,
+          "mode": "authored_directional_heads"
+        },
+        "valid_tiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "width": 285.0
+      },
+      "starting": false,
+      "transport": {
+        "alignment_status": "estimated_requires_musical_review",
+        "clock_mode": "realtime_audio_compensated",
+        "duration": 961.036178588867,
+        "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+        "local_seconds": 14.2307739257813,
+        "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+        "movement": 2,
+        "score_quarter_estimate": 50.8894506786105,
+        "state": "paused",
+        "total_seconds": 350.0
+      }
+    },
+    {
+      "active": true,
+      "close_pending": false,
+      "pause_pending": false,
+      "response_level": 0.0,
+      "reveal": 1.0,
+      "staff": {
+        "cache_size": 4,
+        "first_tile": 4,
+        "movement": 3,
+        "note_x": 2635.37339620407,
+        "offset": 2472.04006287073,
+        "pending_tiles": 0,
+        "playhead": 0.5,
+        "quarter_estimate": 46.9728078274726,
+        "ready": true,
+        "reveal": 1.0,
+        "scan_intensity": 0.055,
+        "scan_level": 0.0,
+        "scan_playing": false,
+        "scanner_caps": {
+          "attached": 3,
+          "mode": "authored_directional_heads"
+        },
+        "valid_tiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "width": 326.666666666667
+      },
+      "starting": false,
+      "transport": {
+        "alignment_status": "estimated_requires_musical_review",
+        "clock_mode": "realtime_audio_compensated",
+        "duration": 961.036178588867,
+        "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+        "local_seconds": 22.6781158447266,
+        "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+        "movement": 3,
+        "score_quarter_estimate": 46.9728078274726,
+        "state": "paused",
+        "total_seconds": 490.0
+      }
+    },
+    {
+      "active": true,
+      "close_pending": false,
+      "pause_pending": false,
+      "response_level": 0.0,
+      "reveal": 1.0,
+      "staff": {
+        "cache_size": 4,
+        "first_tile": 99,
+        "movement": 3,
+        "note_x": 50901.1327348523,
+        "offset": 50737.799401519,
+        "pending_tiles": 0,
+        "playhead": 0.5,
+        "quarter_estimate": 999.707242580683,
+        "ready": true,
+        "reveal": 1.0,
+        "scan_intensity": 0.055,
+        "scan_level": 0.0,
+        "scan_playing": false,
+        "scanner_caps": {
+          "attached": 3,
+          "mode": "authored_directional_heads"
+        },
+        "valid_tiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "width": 326.666666666667
+      },
+      "starting": false,
+      "transport": {
+        "alignment_status": "estimated_requires_musical_review",
+        "clock_mode": "realtime_audio_compensated",
+        "duration": 961.036178588867,
+        "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+        "local_seconds": 452.678115844727,
+        "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+        "movement": 3,
+        "score_quarter_estimate": 999.707242580683,
+        "state": "paused",
+        "total_seconds": 920.0
+      }
+    }
+  ],
+  "passed": true,
+  "scope": "Actual new or legacy core, six foil runtime bindings, complete-work transport/seek/pause/close, transparent score and real reading-lens/ribbon geometry under pressure extremes. Dummy audio; no speaker audition, whole-body fit, final art or exact musical alignment proof.",
+  "source_sha256": "9a2cda1756f106f850c83f0ebdfcb27befabdd1d8bec4bf9899e6c763eef10ae"
+}

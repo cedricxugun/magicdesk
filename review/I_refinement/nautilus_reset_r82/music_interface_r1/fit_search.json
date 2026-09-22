@@ -1,0 +1,282 @@
+{
+  "body_source": "blender/collection/I_nautilus_reset_r82_mechanism_r9.blend",
+  "body_sha256": "16248c30cf082b54c4fdb6b9507eed354daebde1638ed916d65ddcd97031ed8a",
+  "core_component": "app/assets/collection/components/I_r82_acoustic_cartridge_r1.glb",
+  "core_sha256": "ebd481da5d72e3f4abba325e83a0e68325c7a03b0f1a1ca7ff02a32056d00b03",
+  "states": "Body closed and fully open against actual static REST cartridge. No tongue-motion, pressure extremes, fixtures or full acceptance.",
+  "trials": [
+    {
+      "scale": 0.565,
+      "depth": 0.03,
+      "contacts": [
+        {
+          "frame": 1,
+          "core": "IAM_Cassette0_CarrierPillarR",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 64
+        },
+        {
+          "frame": 145,
+          "core": "IAM_Cassette0_CarrierPillarR",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 64
+        },
+        {
+          "frame": 1,
+          "core": "IAM_EyelidFixedCarrier",
+          "body": "R82_Fixed_Rear_Keel",
+          "pairs": 357
+        },
+        {
+          "frame": 1,
+          "core": "IAM_EyelidFixedCarrier",
+          "body": "R82_Acoustic_Chamber_Liner",
+          "pairs": 659
+        },
+        {
+          "frame": 1,
+          "core": "IAM_EyelidFixedCarrier",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 1516
+        },
+        {
+          "frame": 145,
+          "core": "IAM_EyelidFixedCarrier",
+          "body": "R82_Fixed_Rear_Keel",
+          "pairs": 357
+        },
+        {
+          "frame": 145,
+          "core": "IAM_EyelidFixedCarrier",
+          "body": "R82_Acoustic_Chamber_Liner",
+          "pairs": 659
+        },
+        {
+          "frame": 145,
+          "core": "IAM_EyelidFixedCarrier",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 1516
+        },
+        {
+          "frame": 1,
+          "core": "IAM_FrontGuide2_LinerSaddleL",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 227
+        },
+        {
+          "frame": 145,
+          "core": "IAM_FrontGuide2_LinerSaddleL",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 227
+        },
+        {
+          "frame": 1,
+          "core": "IAM_FrontGuide2_LinerSaddleLFastenerStem-1",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 128
+        },
+        {
+          "frame": 145,
+          "core": "IAM_FrontGuide2_LinerSaddleLFastenerStem-1",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 128
+        },
+        {
+          "frame": 1,
+          "core": "IAM_IrisOuterCase_Fitted",
+          "body": "R82_Acoustic_Chamber_Liner",
+          "pairs": 714
+        },
+        {
+          "frame": 1,
+          "core": "IAM_IrisOuterCase_Fitted",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 4768
+        },
+        {
+          "frame": 145,
+          "core": "IAM_IrisOuterCase_Fitted",
+          "body": "R82_Acoustic_Chamber_Liner",
+          "pairs": 714
+        },
+        {
+          "frame": 145,
+          "core": "IAM_IrisOuterCase_Fitted",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 4768
+        },
+        {
+          "frame": 1,
+          "core": "IAM_TongueSpoolFlange.001",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 70
+        },
+        {
+          "frame": 145,
+          "core": "IAM_TongueSpoolFlange.001",
+          "body": "R82_Aperture_Inner_Return",
+          "pairs": 70
+        }
+      ],
+      "hard_contacts": 0,
+      "score": 18
+    }
+  ],
+  "selected": {
+    "scale": 0.565,
+    "depth": 0.03,
+    "contacts": [
+      {
+        "frame": 1,
+        "core": "IAM_Cassette0_CarrierPillarR",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 64
+      },
+      {
+        "frame": 145,
+        "core": "IAM_Cassette0_CarrierPillarR",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 64
+      },
+      {
+        "frame": 1,
+        "core": "IAM_EyelidFixedCarrier",
+        "body": "R82_Fixed_Rear_Keel",
+        "pairs": 357
+      },
+      {
+        "frame": 1,
+        "core": "IAM_EyelidFixedCarrier",
+        "body": "R82_Acoustic_Chamber_Liner",
+        "pairs": 659
+      },
+      {
+        "frame": 1,
+        "core": "IAM_EyelidFixedCarrier",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 1516
+      },
+      {
+        "frame": 145,
+        "core": "IAM_EyelidFixedCarrier",
+        "body": "R82_Fixed_Rear_Keel",
+        "pairs": 357
+      },
+      {
+        "frame": 145,
+        "core": "IAM_EyelidFixedCarrier",
+        "body": "R82_Acoustic_Chamber_Liner",
+        "pairs": 659
+      },
+      {
+        "frame": 145,
+        "core": "IAM_EyelidFixedCarrier",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 1516
+      },
+      {
+        "frame": 1,
+        "core": "IAM_FrontGuide2_LinerSaddleL",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 227
+      },
+      {
+        "frame": 145,
+        "core": "IAM_FrontGuide2_LinerSaddleL",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 227
+      },
+      {
+        "frame": 1,
+        "core": "IAM_FrontGuide2_LinerSaddleLFastenerStem-1",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 128
+      },
+      {
+        "frame": 145,
+        "core": "IAM_FrontGuide2_LinerSaddleLFastenerStem-1",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 128
+      },
+      {
+        "frame": 1,
+        "core": "IAM_IrisOuterCase_Fitted",
+        "body": "R82_Acoustic_Chamber_Liner",
+        "pairs": 714
+      },
+      {
+        "frame": 1,
+        "core": "IAM_IrisOuterCase_Fitted",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 4768
+      },
+      {
+        "frame": 145,
+        "core": "IAM_IrisOuterCase_Fitted",
+        "body": "R82_Acoustic_Chamber_Liner",
+        "pairs": 714
+      },
+      {
+        "frame": 145,
+        "core": "IAM_IrisOuterCase_Fitted",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 4768
+      },
+      {
+        "frame": 1,
+        "core": "IAM_TongueSpoolFlange.001",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 70
+      },
+      {
+        "frame": 145,
+        "core": "IAM_TongueSpoolFlange.001",
+        "body": "R82_Aperture_Inner_Return",
+        "pairs": 70
+      }
+    ],
+    "hard_contacts": 0,
+    "score": 18
+  },
+  "placement": {
+    "matrix_blender": [
+      [
+        -0.5554682016372681,
+        0.06802669167518616,
+        -0.07779743522405624,
+        -0.5368849635124207
+      ],
+      [
+        -0.10334443300962448,
+        -0.3656381666660309,
+        0.41815513372421265,
+        -0.4177970588207245
+      ],
+      [
+        -4.2095780194983945e-09,
+        0.42533057928085327,
+        0.3719124495983124,
+        1.46467125415802
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "center": [
+      -0.532754123210907,
+      -0.4399999976158142,
+      1.4449236392974854
+    ],
+    "front": [
+      0.1376945823431015,
+      -0.7400975823402405,
+      -0.6582521200180054
+    ],
+    "scale": 0.565,
+    "depth": 0.03
+  },
+  "source": "blender/collection/I_r82_cartridge_fit_r2.blend"
+}

@@ -1,0 +1,1645 @@
+{
+  "source_sha256": "6e365b7932d94754a2d0b7f31abc242800defb608bd31735900aedffec8087be",
+  "component_sha256": "16fc9b825dd173df46f4a74dfc275cda43aa4b7811840f5f1585bc6debb5bfee",
+  "mask": "res://assets/collection/art/I/chamber_response_r35/conductor_mask.png",
+  "mask_sha256": "62efaeb17be28aa90a371febb6891037fc36630e9897ed634b72c326866aebd7",
+  "cells": [
+    {
+      "frame": "IN1_CellFrame_01",
+      "diaphragm": "IN1_CellDiaphragm_01",
+      "cell_index": 0,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.0,
+      "light_position_godot": [
+        0.4371415078639984,
+        2.626950263977051,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.7124076525324912,
+            0.7977354196113533
+          ]
+        },
+        {
+          "vertex": 581,
+          "uv2": [
+            0.172746508771383,
+            0.21421852772509428
+          ]
+        },
+        {
+          "vertex": 1162,
+          "uv2": [
+            0.1338933731931179,
+            0.23925427654397313
+          ]
+        },
+        {
+          "vertex": 1743,
+          "uv2": [
+            0.06466825774301392,
+            0.2969144677353058
+          ]
+        },
+        {
+          "vertex": 2324,
+          "uv2": [
+            0.3228524690392757,
+            0.7467150974126215
+          ]
+        },
+        {
+          "vertex": 2905,
+          "uv2": [
+            0.6360734050485186,
+            0.9038145296761002
+          ]
+        },
+        {
+          "vertex": 3486,
+          "uv2": [
+            0.935329459939366,
+            0.17195270330942114
+          ]
+        },
+        {
+          "vertex": 4067,
+          "uv2": [
+            0.30358936663071845,
+            0.13558586114549673
+          ]
+        },
+        {
+          "vertex": 4648,
+          "uv2": [
+            0.6050507245597537,
+            -0.01395853359471137
+          ]
+        },
+        {
+          "vertex": 5229,
+          "uv2": [
+            0.8558478609665242,
+            -0.07278061822409031
+          ]
+        },
+        {
+          "vertex": 5810,
+          "uv2": [
+            0.7120205168323137,
+            0.2078773461462547
+          ]
+        },
+        {
+          "vertex": 6391,
+          "uv2": [
+            0.3333441057887272,
+            0.7687955267682587
+          ]
+        },
+        {
+          "vertex": 6972,
+          "uv2": [
+            0.7202008156340962,
+            0.7911747617813538
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_01",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2220,
+        "throat_cut_pinned_vertices": 0,
+        "unchanged_vertices": 2656,
+        "vertex_count": 4297,
+        "minimum_fixture_clearance_of_moving_vertices": 0.0221108365803957,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_0_A",
+          "cell_index": 0,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 122,
+          "metal_faces": 284,
+          "vertex_count": 400,
+          "runtime_mesh": "IN1_ChamberRib_0_A"
+        }
+      ]
+    },
+    {
+      "frame": "IN1_CellFrame_02",
+      "diaphragm": "IN1_CellDiaphragm_02",
+      "cell_index": 1,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.08333333333333333,
+      "light_position_godot": [
+        0.08895277976989746,
+        2.711021661758423,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.3267831817698532,
+            0.7778627601325471
+          ]
+        },
+        {
+          "vertex": 582,
+          "uv2": [
+            0.172746508771383,
+            0.7857817442654405
+          ]
+        },
+        {
+          "vertex": 1164,
+          "uv2": [
+            0.1338933731931179,
+            0.8489331410849941
+          ]
+        },
+        {
+          "vertex": 1746,
+          "uv2": [
+            0.06466780126995715,
+            0.33769346981137155
+          ]
+        },
+        {
+          "vertex": 2328,
+          "uv2": [
+            0.33637323345688275,
+            0.013992366535135001
+          ]
+        },
+        {
+          "vertex": 2910,
+          "uv2": [
+            0.636268359678723,
+            0.9077244563604914
+          ]
+        },
+        {
+          "vertex": 3492,
+          "uv2": [
+            0.9333576861529156,
+            0.24990993969717223
+          ]
+        },
+        {
+          "vertex": 4074,
+          "uv2": [
+            0.30342365654807113,
+            0.22204276296202138
+          ]
+        },
+        {
+          "vertex": 4656,
+          "uv2": [
+            0.6052727033037663,
+            0.22911275183507976
+          ]
+        },
+        {
+          "vertex": 5238,
+          "uv2": [
+            0.8567706099274779,
+            0.6621330907468513
+          ]
+        },
+        {
+          "vertex": 5820,
+          "uv2": [
+            0.7126353802363469,
+            0.20155840549824416
+          ]
+        },
+        {
+          "vertex": 6402,
+          "uv2": [
+            0.33349070291005045,
+            0.7724872719597112
+          ]
+        },
+        {
+          "vertex": 6984,
+          "uv2": [
+            0.7204465803632959,
+            0.7874741432120153
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_02",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2205,
+        "throat_cut_pinned_vertices": 0,
+        "unchanged_vertices": 2647,
+        "vertex_count": 4296,
+        "minimum_fixture_clearance_of_moving_vertices": 0.02207236737012863,
+        "band": 1,
+        "natural_frequency_hz": 3.0,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_1_A",
+          "cell_index": 1,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 131,
+          "metal_faces": 305,
+          "vertex_count": 430,
+          "runtime_mesh": "IN1_ChamberRib_1_A"
+        }
+      ]
+    },
+    {
+      "frame": "IN1_CellFrame_03",
+      "diaphragm": "IN1_CellDiaphragm_03",
+      "cell_index": 2,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.16666666666666666,
+      "light_position_godot": [
+        -0.24304983019828796,
+        2.598320960998535,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.7194557485381862,
+            0.7969229745856312
+          ]
+        },
+        {
+          "vertex": 584,
+          "uv2": [
+            0.3274567681226882,
+            0.1799420013117623
+          ]
+        },
+        {
+          "vertex": 1168,
+          "uv2": [
+            0.1338933731931179,
+            0.9760415635153502
+          ]
+        },
+        {
+          "vertex": 1752,
+          "uv2": [
+            0.06664231384708445,
+            0.42197397611580206
+          ]
+        },
+        {
+          "vertex": 2336,
+          "uv2": [
+            0.3503237194201426,
+            0.09660415406311731
+          ]
+        },
+        {
+          "vertex": 2920,
+          "uv2": [
+            0.649671321548308,
+            0.25289795482729194
+          ]
+        },
+        {
+          "vertex": 3504,
+          "uv2": [
+            0.9333576861529156,
+            0.4134942834770239
+          ]
+        },
+        {
+          "vertex": 4088,
+          "uv2": [
+            0.30337778979438573,
+            0.8677465422915337
+          ]
+        },
+        {
+          "vertex": 4672,
+          "uv2": [
+            0.6051162140474899,
+            0.9602062032285836
+          ]
+        },
+        {
+          "vertex": 5256,
+          "uv2": [
+            0.867546512819859,
+            0.18045252739528797
+          ]
+        },
+        {
+          "vertex": 5840,
+          "uv2": [
+            0.7123121037837978,
+            0.20247487287620636
+          ]
+        },
+        {
+          "vertex": 6424,
+          "uv2": [
+            0.49408753863720606,
+            0.759345418772385
+          ]
+        },
+        {
+          "vertex": 7008,
+          "uv2": [
+            0.7206731439385375,
+            0.7873519224251161
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_03",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2228,
+        "throat_cut_pinned_vertices": 0,
+        "unchanged_vertices": 2673,
+        "vertex_count": 4305,
+        "minimum_fixture_clearance_of_moving_vertices": 0.02207302115857601,
+        "band": 2,
+        "natural_frequency_hz": 3.8000000000000003,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_2_A",
+          "cell_index": 2,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 146,
+          "metal_faces": 330,
+          "vertex_count": 470,
+          "runtime_mesh": "IN1_ChamberRib_2_A"
+        }
+      ]
+    },
+    {
+      "frame": "IN1_CellFrame_04",
+      "diaphragm": "IN1_CellDiaphragm_04",
+      "cell_index": 3,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.25,
+      "light_position_godot": [
+        -0.4787523150444031,
+        2.3289968967437744,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.14623155813700264,
+            0.050915102138935873
+          ]
+        },
+        {
+          "vertex": 424,
+          "uv2": [
+            0.9112552777626781,
+            0.4591745641219573
+          ]
+        },
+        {
+          "vertex": 848,
+          "uv2": [
+            0.8488742905618457,
+            0.012145155427250242
+          ]
+        },
+        {
+          "vertex": 1272,
+          "uv2": [
+            0.4597891732418889,
+            0.011693977686219848
+          ]
+        },
+        {
+          "vertex": 1696,
+          "uv2": [
+            0.6475710873931925,
+            0.7427750796066792
+          ]
+        },
+        {
+          "vertex": 2120,
+          "uv2": [
+            0.8231714840410544,
+            0.7454015641338665
+          ]
+        },
+        {
+          "vertex": 2544,
+          "uv2": [
+            0.3168314264975371,
+            0.21806804712327152
+          ]
+        },
+        {
+          "vertex": 2968,
+          "uv2": [
+            0.5460314707917545,
+            0.08025655217182089
+          ]
+        },
+        {
+          "vertex": 3392,
+          "uv2": [
+            0.7021391465944343,
+            0.856490899562971
+          ]
+        },
+        {
+          "vertex": 3816,
+          "uv2": [
+            0.8700606621956135,
+            0.9174545993395522
+          ]
+        },
+        {
+          "vertex": 4240,
+          "uv2": [
+            0.3431159903682922,
+            0.25396009677373094
+          ]
+        },
+        {
+          "vertex": 4664,
+          "uv2": [
+            0.4921547960383954,
+            0.8003871102281305
+          ]
+        },
+        {
+          "vertex": 5088,
+          "uv2": [
+            0.6655041549453091,
+            0.746459689284308
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_04",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2384,
+        "throat_cut_pinned_vertices": 166,
+        "unchanged_vertices": 2709,
+        "vertex_count": 3958,
+        "minimum_fixture_clearance_of_moving_vertices": 0.018274059519171715,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_3_A",
+          "cell_index": 3,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 157,
+          "metal_faces": 332,
+          "vertex_count": 495,
+          "runtime_mesh": "IN1_ChamberRib_3_A"
+        }
+      ]
+    },
+    {
+      "frame": "IN1_CellFrame_05",
+      "diaphragm": "IN1_CellDiaphragm_05",
+      "cell_index": 4,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.3333333333333333,
+      "light_position_godot": [
+        -0.567138671875,
+        1.972062349319458,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.07729757127442279,
+            0.05091448714436085
+          ]
+        },
+        {
+          "vertex": 219,
+          "uv2": [
+            0.5954489411113012,
+            0.7857814921704623
+          ]
+        },
+        {
+          "vertex": 438,
+          "uv2": [
+            0.11440295481502447,
+            0.4595896796825586
+          ]
+        },
+        {
+          "vertex": 657,
+          "uv2": [
+            0.5919513061169573,
+            0.1460800071909224
+          ]
+        },
+        {
+          "vertex": 876,
+          "uv2": [
+            0.06366378103045148,
+            0.2550472011327039
+          ]
+        },
+        {
+          "vertex": 1095,
+          "uv2": [
+            0.8136174660998323,
+            0.9899065153904798
+          ]
+        },
+        {
+          "vertex": 1314,
+          "uv2": [
+            0.6312001391924988,
+            0.13638455879725636
+          ]
+        },
+        {
+          "vertex": 1533,
+          "uv2": [
+            0.14134691632397658,
+            0.9392921469590653
+          ]
+        },
+        {
+          "vertex": 1752,
+          "uv2": [
+            0.12479466186064908,
+            0.27623820260271753
+          ]
+        },
+        {
+          "vertex": 1971,
+          "uv2": [
+            0.6736597889398509,
+            0.23316364695075623
+          ]
+        },
+        {
+          "vertex": 2190,
+          "uv2": [
+            0.11977295062780288,
+            0.8652786540239633
+          ]
+        },
+        {
+          "vertex": 2409,
+          "uv2": [
+            0.6667577660062457,
+            0.800018497822017
+          ]
+        },
+        {
+          "vertex": 2628,
+          "uv2": [
+            0.6656495838389004,
+            0.7486756271664762
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_05",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2141,
+        "throat_cut_pinned_vertices": 144,
+        "unchanged_vertices": 2390,
+        "vertex_count": 3396,
+        "minimum_fixture_clearance_of_moving_vertices": 0.0220758356153965,
+        "band": 1,
+        "natural_frequency_hz": 3.0,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_4_A",
+          "cell_index": 4,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 12,
+          "metal_faces": 34,
+          "vertex_count": 48,
+          "runtime_mesh": "IN1_ChamberRib_4_A"
+        },
+        {
+          "mesh": "IN1_ChamberRib_4_A.001",
+          "cell_index": 4,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 111,
+          "metal_faces": 218,
+          "vertex_count": 331,
+          "runtime_mesh": "IN1_ChamberRib_4_A_001"
+        }
+      ]
+    },
+    {
+      "frame": "IN1_CellFrame_06",
+      "diaphragm": "IN1_CellDiaphragm_06",
+      "cell_index": 5,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.4166666666666667,
+      "light_position_godot": [
+        -0.48833054304122925,
+        1.6102535724639893,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.07729757127442279,
+            0.050914685475561536
+          ]
+        },
+        {
+          "vertex": 210,
+          "uv2": [
+            0.7727112516937967,
+            0.05091466113434456
+          ]
+        },
+        {
+          "vertex": 420,
+          "uv2": [
+            0.5131498736712459,
+            0.08597619022893879
+          ]
+        },
+        {
+          "vertex": 630,
+          "uv2": [
+            0.8661067019893198,
+            0.8810093375759616
+          ]
+        },
+        {
+          "vertex": 840,
+          "uv2": [
+            0.6908999314139487,
+            0.09172228324057258
+          ]
+        },
+        {
+          "vertex": 1050,
+          "uv2": [
+            0.15561668590613678,
+            0.9126077070210076
+          ]
+        },
+        {
+          "vertex": 1260,
+          "uv2": [
+            0.8443833140938632,
+            0.1863715245656796
+          ]
+        },
+        {
+          "vertex": 1470,
+          "uv2": [
+            0.08614082282736119,
+            0.20875007820307845
+          ]
+        },
+        {
+          "vertex": 1680,
+          "uv2": [
+            0.0915662603023328,
+            0.2271293953249861
+          ]
+        },
+        {
+          "vertex": 1890,
+          "uv2": [
+            0.6741367789945124,
+            0.22327037945061187
+          ]
+        },
+        {
+          "vertex": 2100,
+          "uv2": [
+            0.12078207667877719,
+            0.8928375518186498
+          ]
+        },
+        {
+          "vertex": 2310,
+          "uv2": [
+            0.6685202297835131,
+            0.8061124000000167
+          ]
+        },
+        {
+          "vertex": 2520,
+          "uv2": [
+            0.6657246217100222,
+            0.7489374249294434
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_06",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2124,
+        "throat_cut_pinned_vertices": 80,
+        "unchanged_vertices": 2359,
+        "vertex_count": 3238,
+        "minimum_fixture_clearance_of_moving_vertices": 0.02232755534350872,
+        "band": 2,
+        "natural_frequency_hz": 3.8000000000000003,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_5_A",
+          "cell_index": 5,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 12,
+          "metal_faces": 45,
+          "vertex_count": 59,
+          "runtime_mesh": "IN1_ChamberRib_5_A"
+        },
+        {
+          "mesh": "IN1_ChamberRib_5_A.001",
+          "cell_index": 5,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 97,
+          "metal_faces": 182,
+          "vertex_count": 280,
+          "runtime_mesh": "IN1_ChamberRib_5_A_001"
+        }
+      ]
+    },
+    {
+      "frame": "IN1_CellFrame_07",
+      "diaphragm": "IN1_CellDiaphragm_07",
+      "cell_index": 6,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.5,
+      "light_position_godot": [
+        -0.25529852509498596,
+        1.3302139043807983,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.07729757127442279,
+            0.05091487027409664
+          ]
+        },
+        {
+          "vertex": 390,
+          "uv2": [
+            0.1338933731931179,
+            0.18123187992456502
+          ]
+        },
+        {
+          "vertex": 780,
+          "uv2": [
+            0.09097727715460835,
+            0.9898191800788411
+          ]
+        },
+        {
+          "vertex": 1170,
+          "uv2": [
+            0.5818016761602958,
+            0.09183616627266941
+          ]
+        },
+        {
+          "vertex": 1560,
+          "uv2": [
+            0.7863302637496579,
+            0.25488560765605983
+          ]
+        },
+        {
+          "vertex": 1950,
+          "uv2": [
+            0.10575509007423986,
+            0.4700424051733264
+          ]
+        },
+        {
+          "vertex": 2340,
+          "uv2": [
+            0.2653253898894082,
+            0.9725922068136054
+          ]
+        },
+        {
+          "vertex": 2730,
+          "uv2": [
+            0.7346387205722533,
+            0.12033465096279367
+          ]
+        },
+        {
+          "vertex": 3120,
+          "uv2": [
+            0.8941450875145786,
+            0.35005762862356704
+          ]
+        },
+        {
+          "vertex": 3510,
+          "uv2": [
+            0.6154994644331097,
+            0.9214287794837807
+          ]
+        },
+        {
+          "vertex": 3900,
+          "uv2": [
+            0.7028309294924577,
+            0.15789063455111976
+          ]
+        },
+        {
+          "vertex": 4290,
+          "uv2": [
+            0.21517420206482035,
+            0.870629918935825
+          ]
+        },
+        {
+          "vertex": 4680,
+          "uv2": [
+            0.7111901067163297,
+            0.7441065078865859
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_07",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2270,
+        "throat_cut_pinned_vertices": 27,
+        "unchanged_vertices": 2539,
+        "vertex_count": 3427,
+        "minimum_fixture_clearance_of_moving_vertices": 0.022294096648693085,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_6_A",
+          "cell_index": 6,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 18,
+          "metal_faces": 58,
+          "vertex_count": 70,
+          "runtime_mesh": "IN1_ChamberRib_6_A"
+        },
+        {
+          "mesh": "IN1_ChamberRib_6_A.001",
+          "cell_index": 6,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 63,
+          "metal_faces": 162,
+          "vertex_count": 227,
+          "runtime_mesh": "IN1_ChamberRib_6_A_001"
+        }
+      ]
+    },
+    {
+      "frame": "IN1_CellFrame_08",
+      "diaphragm": "IN1_CellDiaphragm_08",
+      "cell_index": 7,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.5833333333333334,
+      "light_position_godot": [
+        0.08197028189897537,
+        1.2093627452850342,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.07729757127442279,
+            0.050914810786460804
+          ]
+        },
+        {
+          "vertex": 449,
+          "uv2": [
+            0.1237998792726529,
+            1.0357693463540434
+          ]
+        },
+        {
+          "vertex": 898,
+          "uv2": [
+            0.07729757127442279,
+            0.9889327333579528
+          ]
+        },
+        {
+          "vertex": 1347,
+          "uv2": [
+            0.29548309467672057,
+            0.8267062560860398
+          ]
+        },
+        {
+          "vertex": 1796,
+          "uv2": [
+            0.7454837400067231,
+            0.8262394772598597
+          ]
+        },
+        {
+          "vertex": 2245,
+          "uv2": [
+            0.10584569611900296,
+            0.3870946573781654
+          ]
+        },
+        {
+          "vertex": 2694,
+          "uv2": [
+            0.2653897023303994,
+            0.9685081723044284
+          ]
+        },
+        {
+          "vertex": 3143,
+          "uv2": [
+            0.7218948605671279,
+            0.12564455782591702
+          ]
+        },
+        {
+          "vertex": 3592,
+          "uv2": [
+            0.894280212881074,
+            0.6378597170427555
+          ]
+        },
+        {
+          "vertex": 4041,
+          "uv2": [
+            0.11994627450866806,
+            0.30498674927722835
+          ]
+        },
+        {
+          "vertex": 4490,
+          "uv2": [
+            0.08530634938240096,
+            0.7686333938664104
+          ]
+        },
+        {
+          "vertex": 4939,
+          "uv2": [
+            0.7539661916700221,
+            0.8015731132204925
+          ]
+        },
+        {
+          "vertex": 5388,
+          "uv2": [
+            0.08622301070127994,
+            0.7847367915944086
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_08",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2463,
+        "throat_cut_pinned_vertices": 0,
+        "unchanged_vertices": 2977,
+        "vertex_count": 4134,
+        "minimum_fixture_clearance_of_moving_vertices": 0.01442688051611185,
+        "band": 1,
+        "natural_frequency_hz": 3.0,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_7_A",
+          "cell_index": 7,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 60,
+          "metal_faces": 106,
+          "vertex_count": 160,
+          "runtime_mesh": "IN1_ChamberRib_7_A"
+        },
+        {
+          "mesh": "IN1_ChamberRib_7_A.001",
+          "cell_index": 7,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 12,
+          "metal_faces": 44,
+          "vertex_count": 50,
+          "runtime_mesh": "IN1_ChamberRib_7_A_001"
+        }
+      ]
+    },
+    {
+      "frame": "IN1_CellFrame_09",
+      "diaphragm": "IN1_CellDiaphragm_09",
+      "cell_index": 8,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.6666666666666666,
+      "light_position_godot": [
+        0.4376203417778015,
+        1.2933225631713867,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.07729757127442279,
+            0.05091501197386643
+          ]
+        },
+        {
+          "vertex": 403,
+          "uv2": [
+            0.6499911906766079,
+            0.9082592756599915
+          ]
+        },
+        {
+          "vertex": 806,
+          "uv2": [
+            0.44741757709283914,
+            0.228608152244183
+          ]
+        },
+        {
+          "vertex": 1209,
+          "uv2": [
+            0.09095342720408597,
+            0.01013424738871418
+          ]
+        },
+        {
+          "vertex": 1612,
+          "uv2": [
+            0.5818091833241136,
+            0.1733878567719417
+          ]
+        },
+        {
+          "vertex": 2015,
+          "uv2": [
+            0.8954349961327716,
+            0.7041303992500428
+          ]
+        },
+        {
+          "vertex": 2418,
+          "uv2": [
+            0.2909845446560359,
+            0.06371057822723603
+          ]
+        },
+        {
+          "vertex": 2821,
+          "uv2": [
+            0.5788393797875024,
+            0.8911039948161963
+          ]
+        },
+        {
+          "vertex": 3224,
+          "uv2": [
+            0.5681757106871345,
+            0.9898847085114135
+          ]
+        },
+        {
+          "vertex": 3627,
+          "uv2": [
+            0.12429039106346913,
+            0.2938581691030891
+          ]
+        },
+        {
+          "vertex": 4030,
+          "uv2": [
+            0.08601072703990763,
+            0.8022208170934578
+          ]
+        },
+        {
+          "vertex": 4433,
+          "uv2": [
+            0.7220292244936382,
+            0.7971565737027184
+          ]
+        },
+        {
+          "vertex": 4836,
+          "uv2": [
+            0.5616611037594456,
+            0.03517263261066345
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_09",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2066,
+        "throat_cut_pinned_vertices": 0,
+        "unchanged_vertices": 2757,
+        "vertex_count": 4515,
+        "minimum_fixture_clearance_of_moving_vertices": 0.012780662626028061,
+        "band": 2,
+        "natural_frequency_hz": 3.8000000000000003,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_8_A",
+          "cell_index": 8,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 78,
+          "metal_faces": 188,
+          "vertex_count": 260,
+          "runtime_mesh": "IN1_ChamberRib_8_A"
+        }
+      ]
+    },
+    {
+      "frame": "IN1_CellFrame_10",
+      "diaphragm": "IN1_CellDiaphragm_10",
+      "cell_index": 9,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.75,
+      "light_position_godot": [
+        0.7079036235809326,
+        1.5706868171691895,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.3340007249835253,
+            0.7785774402996669
+          ]
+        },
+        {
+          "vertex": 583,
+          "uv2": [
+            0.3276425358225284,
+            0.18162193773326873
+          ]
+        },
+        {
+          "vertex": 1166,
+          "uv2": [
+            0.1338933731931179,
+            0.9436409163406182
+          ]
+        },
+        {
+          "vertex": 1749,
+          "uv2": [
+            0.06467723440078249,
+            0.3787985586903737
+          ]
+        },
+        {
+          "vertex": 2332,
+          "uv2": [
+            0.33637323345688275,
+            0.25112898025921815
+          ]
+        },
+        {
+          "vertex": 2915,
+          "uv2": [
+            0.6368723465158421,
+            0.8674956859853108
+          ]
+        },
+        {
+          "vertex": 3498,
+          "uv2": [
+            0.9359043757683688,
+            0.1735072894808019
+          ]
+        },
+        {
+          "vertex": 4081,
+          "uv2": [
+            0.30349591164049206,
+            0.1359712085780626
+          ]
+        },
+        {
+          "vertex": 4664,
+          "uv2": [
+            0.592146017639505,
+            0.23555984396846655
+          ]
+        },
+        {
+          "vertex": 5247,
+          "uv2": [
+            0.84438187596943,
+            0.6835421587250533
+          ]
+        },
+        {
+          "vertex": 5830,
+          "uv2": [
+            0.7158959689919996,
+            0.2145505597483937
+          ]
+        },
+        {
+          "vertex": 6413,
+          "uv2": [
+            0.33592651136845175,
+            0.7931002791230394
+          ]
+        },
+        {
+          "vertex": 6996,
+          "uv2": [
+            0.721989210714164,
+            0.8038564873428763
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_10",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2231,
+        "throat_cut_pinned_vertices": 0,
+        "unchanged_vertices": 2646,
+        "vertex_count": 4298,
+        "minimum_fixture_clearance_of_moving_vertices": 0.022061727941036224,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_9_A",
+          "cell_index": 9,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 122,
+          "metal_faces": 234,
+          "vertex_count": 350,
+          "runtime_mesh": "IN1_ChamberRib_9_A"
+        }
+      ]
+    },
+    {
+      "frame": "IN1_CellFrame_11",
+      "diaphragm": "IN1_CellDiaphragm_11",
+      "cell_index": 10,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.8333333333333334,
+      "light_position_godot": [
+        0.8072152733802795,
+        1.9644147157669067,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.7196799375337034,
+            0.7976390857346274
+          ]
+        },
+        {
+          "vertex": 583,
+          "uv2": [
+            0.3276917571830437,
+            0.18366055851968902
+          ]
+        },
+        {
+          "vertex": 1166,
+          "uv2": [
+            0.1338933731931179,
+            0.9392214361448498
+          ]
+        },
+        {
+          "vertex": 1749,
+          "uv2": [
+            0.06467723440078249,
+            0.3787214169351272
+          ]
+        },
+        {
+          "vertex": 2332,
+          "uv2": [
+            0.33637323345688275,
+            0.2513132248853569
+          ]
+        },
+        {
+          "vertex": 2915,
+          "uv2": [
+            0.6368769568006265,
+            0.8674937853303706
+          ]
+        },
+        {
+          "vertex": 3498,
+          "uv2": [
+            0.9359227981238907,
+            0.1735127105176244
+          ]
+        },
+        {
+          "vertex": 4081,
+          "uv2": [
+            0.3035002977784797,
+            0.13406619645668516
+          ]
+        },
+        {
+          "vertex": 4664,
+          "uv2": [
+            0.5921452168121674,
+            0.2332731101606424
+          ]
+        },
+        {
+          "vertex": 5247,
+          "uv2": [
+            0.84438187596943,
+            0.6761593569151003
+          ]
+        },
+        {
+          "vertex": 5830,
+          "uv2": [
+            0.7122736952528727,
+            0.20830177516553333
+          ]
+        },
+        {
+          "vertex": 6413,
+          "uv2": [
+            0.33291064350195215,
+            0.7616821858760507
+          ]
+        },
+        {
+          "vertex": 6996,
+          "uv2": [
+            0.7210336953583268,
+            0.7997745920424285
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_11",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2182,
+        "throat_cut_pinned_vertices": 0,
+        "unchanged_vertices": 2624,
+        "vertex_count": 4289,
+        "minimum_fixture_clearance_of_moving_vertices": 0.02206209860742092,
+        "band": 1,
+        "natural_frequency_hz": 3.0,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_10_A",
+          "cell_index": 10,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 140,
+          "metal_faces": 276,
+          "vertex_count": 410,
+          "runtime_mesh": "IN1_ChamberRib_10_A"
+        }
+      ]
+    },
+    {
+      "frame": "IN1_CellFrame_12",
+      "diaphragm": "IN1_CellDiaphragm_12",
+      "cell_index": 11,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.9166666666666666,
+      "light_position_godot": [
+        0.7047463059425354,
+        2.3549628257751465,
+        0.3055647647380829
+      ],
+      "light_enabled": true,
+      "samples": [
+        {
+          "vertex": 0,
+          "uv2": [
+            0.33421528406039813,
+            0.7775743851037549
+          ]
+        },
+        {
+          "vertex": 583,
+          "uv2": [
+            0.3276220076580366,
+            0.1839717165079995
+          ]
+        },
+        {
+          "vertex": 1166,
+          "uv2": [
+            0.1338933731931179,
+            0.9347240765946807
+          ]
+        },
+        {
+          "vertex": 1749,
+          "uv2": [
+            0.06467267015208068,
+            0.3786378803253784
+          ]
+        },
+        {
+          "vertex": 2332,
+          "uv2": [
+            0.33637323345688275,
+            0.2514455991156513
+          ]
+        },
+        {
+          "vertex": 2915,
+          "uv2": [
+            0.6368863125642491,
+            0.8674939128781411
+          ]
+        },
+        {
+          "vertex": 3498,
+          "uv2": [
+            0.9333576861529156,
+            0.2094967009648052
+          ]
+        },
+        {
+          "vertex": 4081,
+          "uv2": [
+            0.30339515042330856,
+            0.17664983561408337
+          ]
+        },
+        {
+          "vertex": 4664,
+          "uv2": [
+            0.592144031588809,
+            0.72164446306242
+          ]
+        },
+        {
+          "vertex": 5247,
+          "uv2": [
+            0.84438187596943,
+            0.8992133801684153
+          ]
+        },
+        {
+          "vertex": 5830,
+          "uv2": [
+            0.7121659520290013,
+            0.21482386490874042
+          ]
+        },
+        {
+          "vertex": 6413,
+          "uv2": [
+            0.3334160268942382,
+            0.7701603374773077
+          ]
+        },
+        {
+          "vertex": 6996,
+          "uv2": [
+            0.7204803688664214,
+            0.7939898586317595
+          ]
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "IN1_CellDiaphragm_12",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.003,
+        "pinned_vertices": 2211,
+        "throat_cut_pinned_vertices": 0,
+        "unchanged_vertices": 2650,
+        "vertex_count": 4294,
+        "minimum_fixture_clearance_of_moving_vertices": 0.022114384919404984,
+        "band": 2,
+        "natural_frequency_hz": 3.8000000000000003,
+        "damping_ratio": 0.45
+      },
+      "diffusers": [
+        {
+          "mesh": "IN1_ChamberRib_11_A",
+          "cell_index": 11,
+          "material": "IN1_OpalConductor_R40",
+          "diffuser_faces": 125,
+          "metal_faces": 291,
+          "vertex_count": 410,
+          "runtime_mesh": "IN1_ChamberRib_11_A"
+        }
+      ]
+    }
+  ],
+  "scope": "Existing rounded conduit outward faces become opal diffuser; nickel backs/end caps remain. Source vertices, triangles, normals, transforms and morph keys preserved. Needs actual render review.",
+  "illumination": {
+    "open_floor": 0.24,
+    "playing_floor": 0.64,
+    "emission_gain": 14.0,
+    "mask_cross_scale": 1.0,
+    "packet_floor": 0.78,
+    "spill_gain": 0.7,
+    "light_color": [
+      1.0,
+      0.31,
+      0.04
+    ],
+    "conductor_offset": 0.045,
+    "conductor_half_width": 0.026,
+    "physical_conductors": true
+  }
+}

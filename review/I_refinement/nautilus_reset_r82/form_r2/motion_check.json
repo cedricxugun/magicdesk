@@ -1,0 +1,65 @@
+{
+  "source": "blender/collection/I_nautilus_reset_r82_form_r2.blend",
+  "sha256": "e16562cbac32531773c906c0cd6691c0f153238e0e1a7e9aa9abe4ce5b319c45",
+  "scope": "Six saved panel transforms + raw closed manifold topology; finite ceramic/saddle and ceramic/ceramic triangle surface intersections only. No continuous collision or assembly certification.",
+  "panels": [
+    {
+      "id": 1,
+      "translation": 0.08780701637460257,
+      "rotation_degrees": 21.455666409571883,
+      "return_matrix_error": 0.0,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "faces": 11824
+    },
+    {
+      "id": 2,
+      "translation": 0.10714158179432896,
+      "rotation_degrees": 20.508264530177755,
+      "return_matrix_error": 0.0,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "faces": 11824
+    },
+    {
+      "id": 3,
+      "translation": 0.11986166172579144,
+      "rotation_degrees": 19.89491866535249,
+      "return_matrix_error": 0.0,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "faces": 11824
+    },
+    {
+      "id": 4,
+      "translation": 0.13330737804370307,
+      "rotation_degrees": 19.252045892745254,
+      "return_matrix_error": 0.0,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "faces": 11824
+    },
+    {
+      "id": 5,
+      "translation": 0.14906582035683358,
+      "rotation_degrees": 18.50362108425194,
+      "return_matrix_error": 0.0,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "faces": 11824
+    },
+    {
+      "id": 6,
+      "translation": 0.1689292018969863,
+      "rotation_degrees": 17.564963554542718,
+      "return_matrix_error": 0.0,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "faces": 11824
+    }
+  ],
+  "all_six_move": true,
+  "all_return": true,
+  "contacts": [],
+  "full_art_or_runtime_pass": false
+}

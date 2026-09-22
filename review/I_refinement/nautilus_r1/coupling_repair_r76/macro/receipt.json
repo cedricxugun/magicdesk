@@ -1,0 +1,12 @@
+{
+  "component_sha256": "8ca319b00d89a9fbed29f191a10b282243c95f3176c062caa13f9dca3951ef74",
+  "part": "IN3_CouplingBolt_00",
+  "scale_changed": false,
+  "scope": "Exact imported mesh, isolated/recentered for macro readability. Environment reflections and directional fill, no whole-assembly shadow culler.",
+  "source_sha256": "31a7b616db0f0fab0e9c42ecbb3077b1628292b4bba576e6411b1ef098c7f7df",
+  "source_world_focus": [
+    -0.707938551902771,
+    1.78620409965515,
+    -0.419796764850616
+  ]
+}

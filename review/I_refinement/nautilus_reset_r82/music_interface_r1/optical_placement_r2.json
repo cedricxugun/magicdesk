@@ -1,0 +1,47 @@
+{
+  "matrix_blender": [
+    [
+      -0.5407212972640991,
+      0.06622067838907242,
+      -0.07573202252388,
+      -0.5368849635124207
+    ],
+    [
+      -0.10060077905654907,
+      -0.35593095421791077,
+      0.407053679227829,
+      -0.4177970588207245
+    ],
+    [
+      -4.0978194171259474e-09,
+      0.41403862833976746,
+      0.36203867197036743,
+      1.46467125415802
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "scale": 0.55,
+  "score_center_world": [
+    -0.6671321392059326,
+    -0.694242000579834,
+    1.5303845405578613
+  ],
+  "score_focus_world": [
+    -0.6704031825065613,
+    -0.7004307508468628,
+    1.5303845405578613
+  ],
+  "world_width": 0.84,
+  "world_height": 0.504,
+  "reader_normal_world": [
+    -0.467288076877594,
+    -0.8841050863265991,
+    0.0
+  ],
+  "reason": "Separate physical core diameter from original score legibility. Uniform cartridge scale includes installation wall allowance; projection keeps .84 x .504 world area. The centered variant offsets toward the actual hero camera to avoid perspective drift."
+}

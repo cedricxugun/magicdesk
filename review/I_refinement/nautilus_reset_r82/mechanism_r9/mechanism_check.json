@@ -1,0 +1,48 @@
+{
+  "source": "blender/collection/I_nautilus_reset_r82_mechanism_r9.blend",
+  "sha256": "16248c30cf082b54c4fdb6b9507eed354daebde1638ed916d65ddcd97031ed8a",
+  "scope": "13 finite poses, ceramic against ceramic and listed guide/saddle parts. Not whole model, source self-intersection, continuous collision or manufacturing acceptance.",
+  "panels": [
+    {
+      "id": 1,
+      "displacement": 0.18000000233451524,
+      "angle": 4.29114958899102,
+      "return_error": 0.0
+    },
+    {
+      "id": 2,
+      "displacement": 0.20591259979482296,
+      "angle": 13.330359821029765,
+      "return_error": 0.0
+    },
+    {
+      "id": 3,
+      "displacement": 0.20591261788643142,
+      "angle": 12.931679971628828,
+      "return_error": 0.0
+    },
+    {
+      "id": 4,
+      "displacement": 0.20591257604958443,
+      "angle": 12.51385168688976,
+      "return_error": 0.0
+    },
+    {
+      "id": 5,
+      "displacement": 0.20591266283276435,
+      "angle": 12.02739024627582,
+      "return_error": 0.0
+    },
+    {
+      "id": 6,
+      "displacement": 0.20591261590766183,
+      "angle": 11.417263961870567,
+      "return_error": 0.0
+    }
+  ],
+  "contacts": [],
+  "guide_off_axis_max": 8.786079596780803e-08,
+  "guide_engagement_min": 0.05499994662864244,
+  "phase_errors": [],
+  "full_art_or_runtime_pass": false
+}

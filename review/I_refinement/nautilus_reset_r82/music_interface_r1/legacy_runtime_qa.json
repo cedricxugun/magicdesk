@@ -1,0 +1,238 @@
+{
+  "checks": [
+    {
+      "check": "Ready score before playback",
+      "passed": true
+    },
+    {
+      "check": "No opaque score backing",
+      "passed": true
+    },
+    {
+      "check": "Authored reading-plane pointer projection",
+      "passed": true
+    },
+    {
+      "check": "Rear-side optical hit rejection",
+      "passed": true
+    },
+    {
+      "check": "Pause freezes audio clock and real score position",
+      "passed": true
+    },
+    {
+      "check": "Paused seek across complete work at 20.0",
+      "passed": true
+    },
+    {
+      "check": "Paused seek across complete work at 350.0",
+      "passed": true
+    },
+    {
+      "check": "Paused seek across complete work at 490.0",
+      "passed": true
+    },
+    {
+      "check": "Paused seek across complete work at 920.0",
+      "passed": true
+    },
+    {
+      "check": "Resume from paused seek",
+      "passed": true
+    },
+    {
+      "check": "Fade, remove projection, settle and close throat",
+      "passed": true
+    }
+  ],
+  "component_sha256": "9e57f33fa026d042c74918e13e9fa8bca73e54a8c0232e347bed000c137486c1",
+  "movement_samples": [
+    {
+      "active": true,
+      "close_pending": false,
+      "pause_pending": false,
+      "response_level": 0.0,
+      "reveal": 1.0,
+      "staff": {
+        "cache_size": 4,
+        "first_tile": 0,
+        "movement": 1,
+        "note_x": 633.433233436664,
+        "offset": 494.266566769998,
+        "pending_tiles": 0,
+        "playhead": 0.5,
+        "quarter_estimate": 13.6611581652791,
+        "ready": true,
+        "reveal": 1.0,
+        "scan_intensity": 0.055,
+        "scan_level": 0.0,
+        "scan_playing": false,
+        "scanner_caps": {
+          "attached": 3,
+          "component_sha256": "7f677b661bafb656cb528bab0530102b7bcd00b03fecc96bb7c215c47e956daf",
+          "source_sha256": "7f75d8fbb1608da067b673868ca0c51c620a0cf10731fed4ec6ff51c6555a422"
+        },
+        "valid_tiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "width": 278.333333333333
+      },
+      "starting": false,
+      "transport": {
+        "alignment_status": "estimated_requires_musical_review",
+        "clock_mode": "realtime_audio_compensated",
+        "duration": 961.036178588867,
+        "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+        "local_seconds": 20.0,
+        "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+        "movement": 1,
+        "score_quarter_estimate": 13.6611581652791,
+        "state": "paused",
+        "total_seconds": 20.0
+      }
+    },
+    {
+      "active": true,
+      "close_pending": false,
+      "pause_pending": false,
+      "response_level": 0.0,
+      "reveal": 1.0,
+      "staff": {
+        "cache_size": 4,
+        "first_tile": 1,
+        "movement": 2,
+        "note_x": 923.39086322592,
+        "offset": 780.89086322592,
+        "pending_tiles": 0,
+        "playhead": 0.5,
+        "quarter_estimate": 50.8894506786105,
+        "ready": true,
+        "reveal": 1.0,
+        "scan_intensity": 0.055,
+        "scan_level": 0.0,
+        "scan_playing": false,
+        "scanner_caps": {
+          "attached": 3,
+          "component_sha256": "7f677b661bafb656cb528bab0530102b7bcd00b03fecc96bb7c215c47e956daf",
+          "source_sha256": "7f75d8fbb1608da067b673868ca0c51c620a0cf10731fed4ec6ff51c6555a422"
+        },
+        "valid_tiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "width": 285.0
+      },
+      "starting": false,
+      "transport": {
+        "alignment_status": "estimated_requires_musical_review",
+        "clock_mode": "realtime_audio_compensated",
+        "duration": 961.036178588867,
+        "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+        "local_seconds": 14.2307739257813,
+        "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+        "movement": 2,
+        "score_quarter_estimate": 50.8894506786105,
+        "state": "paused",
+        "total_seconds": 350.0
+      }
+    },
+    {
+      "active": true,
+      "close_pending": false,
+      "pause_pending": false,
+      "response_level": 0.0,
+      "reveal": 1.0,
+      "staff": {
+        "cache_size": 4,
+        "first_tile": 4,
+        "movement": 3,
+        "note_x": 2635.37339620407,
+        "offset": 2472.04006287073,
+        "pending_tiles": 0,
+        "playhead": 0.5,
+        "quarter_estimate": 46.9728078274726,
+        "ready": true,
+        "reveal": 1.0,
+        "scan_intensity": 0.055,
+        "scan_level": 0.0,
+        "scan_playing": false,
+        "scanner_caps": {
+          "attached": 3,
+          "component_sha256": "7f677b661bafb656cb528bab0530102b7bcd00b03fecc96bb7c215c47e956daf",
+          "source_sha256": "7f75d8fbb1608da067b673868ca0c51c620a0cf10731fed4ec6ff51c6555a422"
+        },
+        "valid_tiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "width": 326.666666666667
+      },
+      "starting": false,
+      "transport": {
+        "alignment_status": "estimated_requires_musical_review",
+        "clock_mode": "realtime_audio_compensated",
+        "duration": 961.036178588867,
+        "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+        "local_seconds": 22.6781158447266,
+        "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+        "movement": 3,
+        "score_quarter_estimate": 46.9728078274726,
+        "state": "paused",
+        "total_seconds": 490.0
+      }
+    },
+    {
+      "active": true,
+      "close_pending": false,
+      "pause_pending": false,
+      "response_level": 0.0,
+      "reveal": 1.0,
+      "staff": {
+        "cache_size": 4,
+        "first_tile": 99,
+        "movement": 3,
+        "note_x": 50901.1327348523,
+        "offset": 50737.799401519,
+        "pending_tiles": 0,
+        "playhead": 0.5,
+        "quarter_estimate": 999.707242580683,
+        "ready": true,
+        "reveal": 1.0,
+        "scan_intensity": 0.055,
+        "scan_level": 0.0,
+        "scan_playing": false,
+        "scanner_caps": {
+          "attached": 3,
+          "component_sha256": "7f677b661bafb656cb528bab0530102b7bcd00b03fecc96bb7c215c47e956daf",
+          "source_sha256": "7f75d8fbb1608da067b673868ca0c51c620a0cf10731fed4ec6ff51c6555a422"
+        },
+        "valid_tiles": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "width": 326.666666666667
+      },
+      "starting": false,
+      "transport": {
+        "alignment_status": "estimated_requires_musical_review",
+        "clock_mode": "realtime_audio_compensated",
+        "duration": 961.036178588867,
+        "envelope_sha256": "c82e43f933ad9281dda04e8455532ee16427aa785b175da3c4325c41af1e2c21",
+        "local_seconds": 452.678115844727,
+        "manifest_sha256": "970578cc06b217d9a2eaec883863e864b70ab81ad868562adbf724f2baa5c8de",
+        "movement": 3,
+        "score_quarter_estimate": 999.707242580683,
+        "state": "paused",
+        "total_seconds": 920.0
+      }
+    }
+  ],
+  "passed": true,
+  "scope": "Actual new or legacy core, six foil runtime bindings, complete-work transport/seek/pause/close, transparent score and real reading-lens/ribbon geometry under pressure extremes. Dummy audio; no speaker audition, whole-body fit, final art or exact musical alignment proof.",
+  "source_sha256": "734f5365098133ee372616b0795c7e10b0b5c381961c70db0c63dfb962ec6bd6"
+}

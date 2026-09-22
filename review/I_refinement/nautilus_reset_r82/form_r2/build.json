@@ -1,0 +1,155 @@
+{
+  "source": "blender/collection/I_nautilus_reset_r82_form_r2.blend",
+  "status": "isolated_shape_motion_prototype_not_final_or_integrated",
+  "panels": [
+    {
+      "id": 1,
+      "node": "R82_Panel_01_Motion",
+      "mesh": "R82_Porcelain_01",
+      "pivot": [
+        0.398700088262558,
+        -0.0023040438536554575,
+        1.7029281854629517
+      ],
+      "axis": [
+        0.9271584749221802,
+        -0.0,
+        0.37466949224472046
+      ],
+      "translation": [
+        0.011989422798156738,
+        -0.08176841754168582,
+        -0.029669071197509767
+      ],
+      "angle": 0.3744720823466214,
+      "ta": 0.02,
+      "tb": 7.875485471872028
+    },
+    {
+      "id": 2,
+      "node": "R82_Panel_02_Motion",
+      "mesh": "R82_Porcelain_02",
+      "pivot": [
+        0.02432188391685486,
+        -0.008819016627967358,
+        1.5461347103118896
+      ],
+      "axis": [
+        0.5558574795722961,
+        -0.0,
+        -0.8312776684761047
+      ],
+      "translation": [
+        -0.02660088539123535,
+        -0.10225124749938641,
+        -0.017787437438964843
+      ],
+      "angle": 0.35793679914181076,
+      "ta": 7.8954854718720275,
+      "tb": 9.835485471872028
+    },
+    {
+      "id": 3,
+      "node": "R82_Panel_03_Motion",
+      "mesh": "R82_Porcelain_03",
+      "pivot": [
+        0.7649682760238647,
+        -0.013036583550274372,
+        1.4238547086715698
+      ],
+      "axis": [
+        0.7657448053359985,
+        -0.0,
+        0.6431445479393005
+      ],
+      "translation": [
+        0.02058062553405762,
+        -0.11551112149930029,
+        -0.024503833770751954
+      ],
+      "angle": 0.34723243005309257,
+      "ta": 9.855485471872028,
+      "tb": 11.235485471872028
+    },
+    {
+      "id": 4,
+      "node": "R82_Panel_04_Motion",
+      "mesh": "R82_Porcelain_04",
+      "pivot": [
+        0.9845691919326782,
+        -0.01745728962123394,
+        2.2307538986206055
+      ],
+      "axis": [
+        -0.41487133502960205,
+        -0.0,
+        0.9098800420761108
+      ],
+      "translation": [
+        0.02911616325378418,
+        -0.12940965318191935,
+        0.013275883674621583
+      ],
+      "angle": 0.33601248837619846,
+      "ta": 11.255485471872028,
+      "tb": 12.435485471872028
+    },
+    {
+      "id": 5,
+      "node": "R82_Panel_05_Motion",
+      "mesh": "R82_Porcelain_05",
+      "pivot": [
+        0.1665712594985962,
+        -0.0226039569824934,
+        2.7956595420837402
+      ],
+      "axis": [
+        -0.9994878768920898,
+        -0.0,
+        -0.0319996103644371
+      ],
+      "translation": [
+        -0.001023987889289856,
+        -0.14559058396078772,
+        0.03198361396789551
+      ],
+      "angle": 0.3229500222277922,
+      "ta": 12.455485471872027,
+      "tb": 13.585485471872028
+    },
+    {
+      "id": 6,
+      "node": "R82_Panel_06_Motion",
+      "mesh": "R82_Porcelain_06",
+      "pivot": [
+        -0.896415114402771,
+        -0.06576241552829742,
+        2.1259450912475586
+      ],
+      "axis": [
+        -0.348910391330719,
+        -0.33132389187812805,
+        -0.8766332864761353
+      ],
+      "translation": [
+        -0.029928939819335938,
+        -0.16588329018622372,
+        0.011138781547546387
+      ],
+      "angle": 0.306568221220678,
+      "ta": 13.605485471872028,
+      "tb": 14.755485471872028
+    }
+  ],
+  "base_source": "app/assets/helios_model.glb",
+  "not_yet_done": [
+    "matching final art",
+    "full joint topology and collision sweep",
+    "aperture optics and score/music adaptation",
+    "Godot runtime and final material match",
+    "full service/explosion and effects"
+  ],
+  "source_sha256": "e16562cbac32531773c906c0cd6691c0f153238e0e1a7e9aa9abe4ce5b319c45",
+  "base_source_sha256": "a113215111d527ab71bd5130d55d19712ae0ae130ab0b5875f90082d45d274d4",
+  "editorial_review": "Actual render improves coil recognition and broad surface continuity; saddle is still a simplified casting, inner acoustic chambers and front score/optics absent. No art approval."
+}

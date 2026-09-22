@@ -1,0 +1,691 @@
+{
+  "parent_source_sha256": "31a7b616db0f0fab0e9c42ecbb3077b1628292b4bba576e6411b1ef098c7f7df",
+  "protected_meshes": 1223,
+  "protected_unchanged": true,
+  "modified": [
+    "BASE_FIXED_DisplayMesh",
+    "IN1_CellFrame_09",
+    "IN1_CellFrame_10",
+    "IN1_DeckFoot",
+    "IN1_PorcelainPanel_02"
+  ],
+  "removed": [
+    "IN1_FittedSaddleGasket_1",
+    "IN1_FittedSaddleGasket_2",
+    "IN1_FittedSaddleGasket_3",
+    "IN1_FittedSaddleGasket_4",
+    "IN1_FittedSaddleSeat_1",
+    "IN1_FittedSaddleSeat_2",
+    "IN1_FittedSaddleSeat_3",
+    "IN1_FittedSaddleSeat_4",
+    "IN1_LowSaddle"
+  ],
+  "new_meshes": [
+    "ID80_Carrier",
+    "ID80_DockSeatGasket",
+    "ID80_Locator_0",
+    "ID80_Locator_1",
+    "ID80_Locator_2",
+    "ID80_LockWasher_0",
+    "ID80_LockBolt_0",
+    "ID80_LockWasher_1",
+    "ID80_LockBolt_1",
+    "ID80_LockWasher_2",
+    "ID80_LockBolt_2",
+    "ID80_LockWasher_3",
+    "ID80_LockBolt_3",
+    "ID80_BaseWasher_0",
+    "ID80_BaseBolt_0",
+    "ID80_BaseWasher_1",
+    "ID80_BaseBolt_1",
+    "ID80_BaseWasher_2",
+    "ID80_BaseBolt_2",
+    "ID80_BaseWasher_3",
+    "ID80_BaseBolt_3",
+    "ID80_BaseWasher_4",
+    "ID80_BaseBolt_4",
+    "ID80_BaseWasher_5",
+    "ID80_BaseBolt_5",
+    "ID80_Stanchion0_PortRim",
+    "ID80_Stanchion0_FrameWasher_0",
+    "ID80_Stanchion0_FrameBolt_0",
+    "ID80_Stanchion0_FrameWasher_1",
+    "ID80_Stanchion0_FrameBolt_1",
+    "ID80_Stanchion0_FrameWasher_2",
+    "ID80_Stanchion0_FrameBolt_2",
+    "ID80_Stanchion1_PortRim",
+    "ID80_Stanchion1_FrameWasher_0",
+    "ID80_Stanchion1_FrameBolt_0",
+    "ID80_Stanchion1_FrameWasher_1",
+    "ID80_Stanchion1_FrameBolt_1",
+    "ID80_Stanchion1_FrameWasher_2",
+    "ID80_Stanchion1_FrameBolt_2"
+  ],
+  "solids": [
+    {
+      "name": "BASE_FIXED_DisplayMesh",
+      "nonmanifold": 32,
+      "signed_volume": 3.69696517549472,
+      "vertices": 35796
+    },
+    {
+      "name": "ID80_BaseBolt_0",
+      "nonmanifold": 0,
+      "signed_volume": 1.447254629014008e-05,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_BaseBolt_1",
+      "nonmanifold": 0,
+      "signed_volume": 1.447254629014008e-05,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_BaseBolt_2",
+      "nonmanifold": 0,
+      "signed_volume": 1.447254629014008e-05,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_BaseBolt_3",
+      "nonmanifold": 0,
+      "signed_volume": 1.447254629014008e-05,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_BaseBolt_4",
+      "nonmanifold": 0,
+      "signed_volume": 1.447254629014008e-05,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_BaseBolt_5",
+      "nonmanifold": 0,
+      "signed_volume": 1.447254629014008e-05,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_BaseWasher_0",
+      "nonmanifold": 0,
+      "signed_volume": 6.8080662096239e-07,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_BaseWasher_1",
+      "nonmanifold": 0,
+      "signed_volume": 6.8080662096239e-07,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_BaseWasher_2",
+      "nonmanifold": 0,
+      "signed_volume": 6.8080662096239e-07,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_BaseWasher_3",
+      "nonmanifold": 0,
+      "signed_volume": 6.8080662096239e-07,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_BaseWasher_4",
+      "nonmanifold": 0,
+      "signed_volume": 6.8080662096239e-07,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_BaseWasher_5",
+      "nonmanifold": 0,
+      "signed_volume": 6.8080662096239e-07,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_Carrier",
+      "nonmanifold": 0,
+      "signed_volume": 0.018191403299942503,
+      "vertices": 4352
+    },
+    {
+      "name": "ID80_DockSeatGasket",
+      "nonmanifold": 0,
+      "signed_volume": 0.0002693203803544525,
+      "vertices": 1024
+    },
+    {
+      "name": "ID80_Locator_0",
+      "nonmanifold": 0,
+      "signed_volume": 1.0324300655835441e-05,
+      "vertices": 512
+    },
+    {
+      "name": "ID80_Locator_1",
+      "nonmanifold": 0,
+      "signed_volume": 1.0324300655835441e-05,
+      "vertices": 512
+    },
+    {
+      "name": "ID80_Locator_2",
+      "nonmanifold": 0,
+      "signed_volume": 1.0324300655835441e-05,
+      "vertices": 512
+    },
+    {
+      "name": "ID80_LockBolt_0",
+      "nonmanifold": 0,
+      "signed_volume": 7.546998702353333e-06,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_LockBolt_1",
+      "nonmanifold": 0,
+      "signed_volume": 7.546998702353333e-06,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_LockBolt_2",
+      "nonmanifold": 0,
+      "signed_volume": 7.546998702353333e-06,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_LockBolt_3",
+      "nonmanifold": 0,
+      "signed_volume": 7.546998702353333e-06,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_LockWasher_0",
+      "nonmanifold": 0,
+      "signed_volume": 5.930335081320627e-07,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_LockWasher_1",
+      "nonmanifold": 0,
+      "signed_volume": 5.930335081320627e-07,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_LockWasher_2",
+      "nonmanifold": 0,
+      "signed_volume": 5.930335081320627e-07,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_LockWasher_3",
+      "nonmanifold": 0,
+      "signed_volume": 5.930335081320627e-07,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_Stanchion0_FrameBolt_0",
+      "nonmanifold": 0,
+      "signed_volume": 7.58250245034896e-07,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_Stanchion0_FrameBolt_1",
+      "nonmanifold": 0,
+      "signed_volume": 8.908860391714504e-07,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_Stanchion0_FrameBolt_2",
+      "nonmanifold": 0,
+      "signed_volume": 6.768062510138865e-07,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_Stanchion0_FrameWasher_0",
+      "nonmanifold": 0,
+      "signed_volume": 7.025868855073692e-08,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_Stanchion0_FrameWasher_1",
+      "nonmanifold": 0,
+      "signed_volume": 7.025868855073692e-08,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_Stanchion0_FrameWasher_2",
+      "nonmanifold": 0,
+      "signed_volume": 7.025868855073692e-08,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_Stanchion0_PortRim",
+      "nonmanifold": 0,
+      "signed_volume": 8.22034126746775e-06,
+      "vertices": 424
+    },
+    {
+      "name": "ID80_Stanchion1_FrameBolt_0",
+      "nonmanifold": 0,
+      "signed_volume": 6.613558326541127e-07,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_Stanchion1_FrameBolt_1",
+      "nonmanifold": 0,
+      "signed_volume": 6.892395903177126e-07,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_Stanchion1_FrameBolt_2",
+      "nonmanifold": 0,
+      "signed_volume": 7.787130873572209e-07,
+      "vertices": 908
+    },
+    {
+      "name": "ID80_Stanchion1_FrameWasher_0",
+      "nonmanifold": 0,
+      "signed_volume": 7.025868855073692e-08,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_Stanchion1_FrameWasher_1",
+      "nonmanifold": 0,
+      "signed_volume": 7.025868855073692e-08,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_Stanchion1_FrameWasher_2",
+      "nonmanifold": 0,
+      "signed_volume": 7.025868855073692e-08,
+      "vertices": 256
+    },
+    {
+      "name": "ID80_Stanchion1_PortRim",
+      "nonmanifold": 0,
+      "signed_volume": 8.220347521411307e-06,
+      "vertices": 414
+    },
+    {
+      "name": "IN1_CellFrame_09",
+      "nonmanifold": 0,
+      "signed_volume": 0.008038242142203715,
+      "vertices": 5237
+    },
+    {
+      "name": "IN1_CellFrame_10",
+      "nonmanifold": 0,
+      "signed_volume": 0.008628411421677527,
+      "vertices": 7394
+    },
+    {
+      "name": "IN1_DeckFoot",
+      "nonmanifold": 0,
+      "signed_volume": 0.1223584169723112,
+      "vertices": 2695
+    },
+    {
+      "name": "IN1_PorcelainPanel_02",
+      "nonmanifold": 0,
+      "signed_volume": 0.03779953461183271,
+      "vertices": 7833
+    }
+  ],
+  "stations": [
+    {
+      "id": 0,
+      "center": [
+        -0.2,
+        0.14
+      ],
+      "carrier": "ID80_Carrier",
+      "frame": "IN1_CellFrame_09",
+      "shoe_bottom": 0.9464567031860351,
+      "frame_surface_min": 0.9624567031860352,
+      "column_outer_radius": 0.032,
+      "shell_hole_radius": 0.04,
+      "lip_inner_radius": 0.035,
+      "shell_rim": "ID80_Stanchion0_PortRim"
+    },
+    {
+      "id": 1,
+      "center": [
+        0.26,
+        0.1
+      ],
+      "carrier": "ID80_Carrier",
+      "frame": "IN1_CellFrame_10",
+      "shoe_bottom": 0.9066885437965393,
+      "frame_surface_min": 0.9226885437965393,
+      "column_outer_radius": 0.032,
+      "shell_hole_radius": 0.04,
+      "lip_inner_radius": 0.035,
+      "shell_rim": "ID80_Stanchion1_PortRim"
+    }
+  ],
+  "connections": [
+    {
+      "type": "alignment",
+      "pin": "ID80_Locator_0",
+      "fixed": "IN1_DeckFoot",
+      "moving": "ID80_Carrier",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "insertion": 0.012
+    },
+    {
+      "type": "alignment",
+      "pin": "ID80_Locator_1",
+      "fixed": "IN1_DeckFoot",
+      "moving": "ID80_Carrier",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "insertion": 0.012
+    },
+    {
+      "type": "alignment",
+      "pin": "ID80_Locator_2",
+      "fixed": "IN1_DeckFoot",
+      "moving": "ID80_Carrier",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "insertion": 0.012
+    },
+    {
+      "type": "blind_bolted_frame_shoe",
+      "outer": "ID80_Carrier",
+      "frame": "IN1_CellFrame_09",
+      "fasteners": [
+        "ID80_Stanchion0_FrameBolt_0",
+        "ID80_Stanchion0_FrameBolt_1",
+        "ID80_Stanchion0_FrameBolt_2"
+      ],
+      "surface_gap": 0.00025,
+      "note": "Frame retains existing metal-to-housing clamps. No shaft passes through the active membrane."
+    },
+    {
+      "type": "blind_bolted_frame_shoe",
+      "outer": "ID80_Carrier",
+      "frame": "IN1_CellFrame_10",
+      "fasteners": [
+        "ID80_Stanchion1_FrameBolt_0",
+        "ID80_Stanchion1_FrameBolt_1",
+        "ID80_Stanchion1_FrameBolt_2"
+      ],
+      "surface_gap": 0.00025,
+      "note": "Frame retains existing metal-to-housing clamps. No shaft passes through the active membrane."
+    }
+  ],
+  "fasteners": [
+    {
+      "id": "ID80_LockBolt_0",
+      "group": "carrier_release",
+      "washer": "ID80_LockWasher_0",
+      "xy": [
+        -0.2,
+        -0.1
+      ],
+      "bottom": 0.633,
+      "release_axis": [
+        0,
+        0,
+        1
+      ],
+      "release_distance": 0.081
+    },
+    {
+      "id": "ID80_LockBolt_1",
+      "group": "carrier_release",
+      "washer": "ID80_LockWasher_1",
+      "xy": [
+        0.36,
+        -0.1
+      ],
+      "bottom": 0.633,
+      "release_axis": [
+        0,
+        0,
+        1
+      ],
+      "release_distance": 0.081
+    },
+    {
+      "id": "ID80_LockBolt_2",
+      "group": "carrier_release",
+      "washer": "ID80_LockWasher_2",
+      "xy": [
+        -0.2,
+        0.36
+      ],
+      "bottom": 0.633,
+      "release_axis": [
+        0,
+        0,
+        1
+      ],
+      "release_distance": 0.081
+    },
+    {
+      "id": "ID80_LockBolt_3",
+      "group": "carrier_release",
+      "washer": "ID80_LockWasher_3",
+      "xy": [
+        0.36,
+        0.36
+      ],
+      "bottom": 0.633,
+      "release_axis": [
+        0,
+        0,
+        1
+      ],
+      "release_distance": 0.081
+    },
+    {
+      "id": "ID80_BaseBolt_0",
+      "group": "base_fixed",
+      "washer": "ID80_BaseWasher_0",
+      "xy": [
+        0.5768410648580014,
+        0.2204099345800412
+      ],
+      "bottom": 0.5385,
+      "blind_floor": 0.5345,
+      "original_base_top": 0.5625
+    },
+    {
+      "id": "ID80_BaseBolt_1",
+      "group": "base_fixed",
+      "washer": "ID80_BaseWasher_1",
+      "xy": [
+        0.2501232323281959,
+        0.6054819511003616
+      ],
+      "bottom": 0.5385,
+      "blind_floor": 0.5345,
+      "original_base_top": 0.5625
+    },
+    {
+      "id": "ID80_BaseBolt_2",
+      "group": "base_fixed",
+      "washer": "ID80_BaseWasher_2",
+      "xy": [
+        -0.2467178325298055,
+        0.5150720165203204
+      ],
+      "bottom": 0.5385,
+      "blind_floor": 0.5345,
+      "original_base_top": 0.5625
+    },
+    {
+      "id": "ID80_BaseBolt_3",
+      "group": "base_fixed",
+      "washer": "ID80_BaseWasher_3",
+      "xy": [
+        -0.4168410648580013,
+        0.039590065419958784
+      ],
+      "bottom": 0.5385,
+      "blind_floor": 0.5345,
+      "original_base_top": 0.5625
+    },
+    {
+      "id": "ID80_BaseBolt_4",
+      "group": "base_fixed",
+      "washer": "ID80_BaseWasher_4",
+      "xy": [
+        -0.09012323232819615,
+        -0.34548195110036156
+      ],
+      "bottom": 0.5385,
+      "blind_floor": 0.5345,
+      "original_base_top": 0.5625
+    },
+    {
+      "id": "ID80_BaseBolt_5",
+      "group": "base_fixed",
+      "washer": "ID80_BaseWasher_5",
+      "xy": [
+        0.4067178325298055,
+        -0.2550720165203205
+      ],
+      "bottom": 0.5385,
+      "blind_floor": 0.5345,
+      "original_base_top": 0.5625
+    },
+    {
+      "id": "ID80_Stanchion0_FrameBolt_0",
+      "group": "frame_hardpoint",
+      "target": "IN1_CellFrame_09",
+      "xy": [
+        -0.2,
+        0.163
+      ],
+      "frame_surface": 0.9724186062812805,
+      "frame_back_surface": 0.9962137937545776,
+      "tip": 0.9814186062812805,
+      "bore_top": 0.9844186062812805,
+      "head_top": 0.9451567031860352,
+      "access": "from below after lower cover removal",
+      "hole_radius": 0.0025,
+      "shaft_radius": 0.0021
+    },
+    {
+      "id": "ID80_Stanchion0_FrameBolt_1",
+      "group": "frame_hardpoint",
+      "target": "IN1_CellFrame_09",
+      "xy": [
+        -0.2199185842870421,
+        0.12850000000000003
+      ],
+      "frame_surface": 0.9820075035095215,
+      "frame_back_surface": 1.0061861276626587,
+      "tip": 0.9910075035095215,
+      "bore_top": 0.9940075035095215,
+      "head_top": 0.9451567031860352,
+      "access": "from below after lower cover removal",
+      "hole_radius": 0.0025,
+      "shaft_radius": 0.0021
+    },
+    {
+      "id": "ID80_Stanchion0_FrameBolt_2",
+      "group": "frame_hardpoint",
+      "target": "IN1_CellFrame_09",
+      "xy": [
+        -0.18008141571295794,
+        0.1285
+      ],
+      "frame_surface": 0.9665305614471436,
+      "frame_back_surface": 0.9902254939079285,
+      "tip": 0.9755305614471436,
+      "bore_top": 0.9785305614471436,
+      "head_top": 0.9451567031860352,
+      "access": "from below after lower cover removal",
+      "hole_radius": 0.0025,
+      "shaft_radius": 0.0021
+    },
+    {
+      "id": "ID80_Stanchion1_FrameBolt_0",
+      "group": "frame_hardpoint",
+      "target": "IN1_CellFrame_10",
+      "xy": [
+        0.26,
+        0.123
+      ],
+      "frame_surface": 0.9256454110145569,
+      "frame_back_surface": 0.9482311010360718,
+      "tip": 0.9346454110145569,
+      "bore_top": 0.9376454110145569,
+      "head_top": 0.9053885437965393,
+      "access": "from below after lower cover removal",
+      "hole_radius": 0.0025,
+      "shaft_radius": 0.0021
+    },
+    {
+      "id": "ID80_Stanchion1_FrameBolt_1",
+      "group": "frame_hardpoint",
+      "target": "IN1_CellFrame_10",
+      "xy": [
+        0.2400814157129579,
+        0.08850000000000001
+      ],
+      "frame_surface": 0.9276612997055054,
+      "frame_back_surface": 0.950391411781311,
+      "tip": 0.9366612997055054,
+      "bore_top": 0.9396612997055054,
+      "head_top": 0.9053885437965393,
+      "access": "from below after lower cover removal",
+      "hole_radius": 0.0025,
+      "shaft_radius": 0.0021
+    },
+    {
+      "id": "ID80_Stanchion1_FrameBolt_2",
+      "group": "frame_hardpoint",
+      "target": "IN1_CellFrame_10",
+      "xy": [
+        0.2799185842870421,
+        0.0885
+      ],
+      "frame_surface": 0.9341297745704651,
+      "frame_back_surface": 0.9570423364639282,
+      "tip": 0.9431297745704651,
+      "bore_top": 0.9461297745704651,
+      "head_top": 0.9053885437965393,
+      "access": "from below after lower cover removal",
+      "hole_radius": 0.0025,
+      "shaft_radius": 0.0021
+    }
+  ],
+  "original_base_bounds": [
+    [
+      -1.3700000047683716,
+      -1.432559609413147,
+      0.004999998956918716
+    ],
+    [
+      1.3700000047683716,
+      1.3700000047683716,
+      0.6756084561347961
+    ]
+  ],
+  "candidate_base_bounds": [
+    [
+      -1.3700000047683716,
+      -1.432559609413147,
+      0.004999998956918716
+    ],
+    [
+      1.3700000047683716,
+      1.3700000047683716,
+      0.6756084561347961
+    ]
+  ],
+  "base_existing_nonmanifold_edges": 32,
+  "base_existing_edge_signature_preserved": true,
+  "scope": "Independent frame-supported dock candidate. First version R79 rejected for membrane interference. Detailed geometry, imports, surrounding contact, release motion and art still require separate checks. Base blind bores exist only in this candidate copy; current shared runtime base untouched. Existing merged pedestal boundaries are compared exactly rather than called watertight."
+}

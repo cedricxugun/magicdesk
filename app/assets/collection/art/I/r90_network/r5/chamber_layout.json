@@ -1,0 +1,1381 @@
+{
+  "source_sha256": "29eeed37d405bdd6e7982395bda921db53dfc3d6c01c7fe0a2ce23598d590444",
+  "component_sha256": "2bbbc6f7ce05d67a34c715c0958ec94ddf913b380dca44e4c7c489d96d09c271",
+  "mask": "res://assets/collection/art/I/chamber_response_r35/conductor_mask.png",
+  "mask_sha256": "62efaeb17be28aa90a371febb6891037fc36630e9897ed634b72c326866aebd7",
+  "cells": [
+    {
+      "frame": "I84_Cell_01_Frame",
+      "diaphragm": "I84_Cell_01_Diaphragm",
+      "cell_index": 0,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.953125,
+      "light_position_godot": [
+        0.19018308818340302,
+        2.039747953414917,
+        0.0666588544845581
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_01_Opal",
+          "runtime_mesh": "I84_Cell_01_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_01_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.005439767661182903,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 7.125485471872029,
+        "u": 0.74,
+        "half_t": 0.36,
+        "half_u": 0.56,
+        "radius": 0.19630702255820653,
+        "visibility": 0.696969696969697,
+        "projected_area": 0.009433855758342944,
+        "score": 0.004582653531830503,
+        "centre": [
+          0.19550131261348724,
+          -0.052424054592847824,
+          2.0224828720092773
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_02_Frame",
+      "diaphragm": "I84_Cell_02_Diaphragm",
+      "cell_index": 1,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.5615124374628366,
+      "light_position_godot": [
+        0.14755074679851532,
+        1.7209701538085938,
+        0.12580887973308563
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_02_Opal",
+          "runtime_mesh": "I84_Cell_02_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_02_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.005752169186801505,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 8.52548547187203,
+        "u": 2.02,
+        "half_t": 0.44,
+        "half_u": 0.68,
+        "radius": 0.2615642301318701,
+        "visibility": 0.6060606060606061,
+        "projected_area": 0.01304979391774646,
+        "score": 0.004793312733791169,
+        "centre": [
+          0.13767623901367188,
+          -0.10589200258255005,
+          1.7150700092315674
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_03_Frame",
+      "diaphragm": "I84_Cell_03_Diaphragm",
+      "cell_index": 2,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.5650031205295035,
+      "light_position_godot": [
+        0.3455510139465332,
+        1.5819710493087769,
+        0.14801505208015442
+      ],
+      "light_enabled": true,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_03_Opal",
+          "runtime_mesh": "I84_Cell_03_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_03_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.006075349884942988,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 9.645485471872028,
+        "u": 2.18,
+        "half_t": 0.44,
+        "half_u": 0.68,
+        "radius": 0.32907308707697963,
+        "visibility": 0.8787878787878788,
+        "projected_area": 0.029262103783917928,
+        "score": 0.0225981903418503,
+        "centre": [
+          0.3461824357509613,
+          -0.13017885386943817,
+          1.5674633979797363
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_04_Frame",
+      "diaphragm": "I84_Cell_04_Diaphragm",
+      "cell_index": 3,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 2,
+      "phase_offset": 0.6613346207556037,
+      "light_position_godot": [
+        0.4987131357192993,
+        1.380800485610962,
+        0.15550243854522705
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_04_Opal",
+          "runtime_mesh": "I84_Cell_04_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_04_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.006216997965117432,
+        "band": 2,
+        "natural_frequency_hz": 3.4,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 10.065485471872028,
+        "u": 0.8999999999999999,
+        "half_t": 0.28,
+        "half_u": 0.42,
+        "radius": 0.35866179715786367,
+        "visibility": 0.7272727272727273,
+        "projected_area": 0.01211254213318245,
+        "score": 0.006406633855567578,
+        "centre": [
+          0.4974707067012787,
+          -0.13847942650318146,
+          1.3962171077728271
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_05_Frame",
+      "diaphragm": "I84_Cell_05_Diaphragm",
+      "cell_index": 4,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.5096538298208346,
+      "light_position_godot": [
+        0.6527531147003174,
+        1.6723427772521973,
+        0.22339211404323578
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_05_Opal",
+          "runtime_mesh": "I84_Cell_05_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_05_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.006481942445276997,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 10.76548547187203,
+        "u": 1.8599999999999999,
+        "half_t": 0.44,
+        "half_u": 0.68,
+        "radius": 0.4140057552356394,
+        "visibility": 1.0,
+        "projected_area": 0.06415147627360249,
+        "score": 0.06415147627360249,
+        "centre": [
+          0.6604472994804382,
+          -0.2017999142408371,
+          1.6704515218734741
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_06_Frame",
+      "diaphragm": "I84_Cell_06_Diaphragm",
+      "cell_index": 5,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.5228373496213109,
+      "light_position_godot": [
+        0.9391633868217468,
+        1.853466510772705,
+        0.20607206225395203
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_06_Opal",
+          "runtime_mesh": "I84_Cell_06_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_06_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.006723043930902614,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 11.325485471872028,
+        "u": 0.8999999999999999,
+        "half_t": 0.2,
+        "half_u": 0.32,
+        "radius": 0.46436917667743505,
+        "visibility": 0.45454545454545453,
+        "projected_area": 0.007539605266891203,
+        "score": 0.0015577696832419841,
+        "centre": [
+          0.9241626262664795,
+          -0.188989520072937,
+          1.8569543361663818
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_07_Frame",
+      "diaphragm": "I84_Cell_07_Diaphragm",
+      "cell_index": 6,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.40999281700412554,
+      "light_position_godot": [
+        0.6349216103553772,
+        2.085697889328003,
+        0.2683825194835663
+      ],
+      "light_enabled": true,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_07_Opal",
+          "runtime_mesh": "I84_Cell_07_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_07_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.006993475191723977,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 11.885485471872029,
+        "u": 2.02,
+        "half_t": 0.44,
+        "half_u": 0.68,
+        "radius": 0.5208592622712308,
+        "visibility": 0.9696969696969697,
+        "projected_area": 0.08278380171649416,
+        "score": 0.0778426197958586,
+        "centre": [
+          0.6430361270904541,
+          -0.2483704388141632,
+          2.093614339828491
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_08_Frame",
+      "diaphragm": "I84_Cell_08_Diaphragm",
+      "cell_index": 7,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 1,
+      "phase_offset": 0.5062579034883782,
+      "light_position_godot": [
+        0.8073147535324097,
+        2.4094088077545166,
+        0.21303468942642212
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_08_Opal",
+          "runtime_mesh": "I84_Cell_08_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_08_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.00714078810380226,
+        "band": 1,
+        "natural_frequency_hz": 2.8,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 12.165485471872028,
+        "u": 0.74,
+        "half_t": 0.2,
+        "half_u": 0.32,
+        "radius": 0.5516312927942499,
+        "visibility": 0.8484848484848485,
+        "projected_area": 0.014744657787803386,
+        "score": 0.010615070436765708,
+        "centre": [
+          0.7929366230964661,
+          -0.1985744833946228,
+          2.398770570755005
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_09_Frame",
+      "diaphragm": "I84_Cell_09_Diaphragm",
+      "cell_index": 8,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.289512589979745,
+      "light_position_godot": [
+        0.1944659799337387,
+        2.2610323429107666,
+        0.3112761676311493
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_09_Opal",
+          "runtime_mesh": "I84_Cell_09_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_09_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.007637032836931839,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 13.005485471872028,
+        "u": 2.18,
+        "half_t": 0.28,
+        "half_u": 0.42,
+        "radius": 0.6552913037146509,
+        "visibility": 0.7878787878787878,
+        "projected_area": 0.02548106531671304,
+        "score": 0.015817447340769522,
+        "centre": [
+          0.19055137038230896,
+          -0.29337388277053833,
+          2.2749314308166504
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_10_Frame",
+      "diaphragm": "I84_Cell_10_Diaphragm",
+      "cell_index": 9,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": 0.329727903384731,
+      "light_position_godot": [
+        -0.19334615767002106,
+        2.6044700145721436,
+        0.32551947236061096
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_10_Opal",
+          "runtime_mesh": "I84_Cell_10_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_10_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.00791910013070745,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 13.42548547187203,
+        "u": 0.8999999999999999,
+        "half_t": 0.44,
+        "half_u": 0.68,
+        "radius": 0.7142120273033341,
+        "visibility": 0.7272727272727273,
+        "projected_area": 0.29061638803299294,
+        "score": 0.1537144531744756,
+        "centre": [
+          -0.18880227208137512,
+          -0.30837178230285645,
+          2.5898306369781494
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_11_Frame",
+      "diaphragm": "I84_Cell_11_Diaphragm",
+      "cell_index": 10,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": -0.7817358259495265,
+      "light_position_godot": [
+        -0.8378915786743164,
+        2.0167839527130127,
+        0.4733803868293762
+      ],
+      "light_enabled": true,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_11_Opal",
+          "runtime_mesh": "I84_Cell_11_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_11_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.008679858510396274,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 14.405485471872028,
+        "u": 0.8999999999999999,
+        "half_t": 0.2,
+        "half_u": 0.32,
+        "radius": 0.873125999949444,
+        "visibility": 0.45454545454545453,
+        "projected_area": 0.08103031504239529,
+        "score": 0.016741800628594067,
+        "centre": [
+          -0.8229184150695801,
+          -0.4618328809738159,
+          2.003689765930176
+        ]
+      },
+      "pinned_vertices": 192
+    },
+    {
+      "frame": "I84_Cell_12_Frame",
+      "diaphragm": "I84_Cell_12_Diaphragm",
+      "cell_index": 11,
+      "uv2_layer": "ChamberConductorUV",
+      "band": 0,
+      "phase_offset": -0.7385308435832801,
+      "light_position_godot": [
+        -0.4226921498775482,
+        2.022789478302002,
+        0.5880699157714844
+      ],
+      "light_enabled": false,
+      "diffusers": [
+        {
+          "mesh": "I84_Cell_12_Opal",
+          "runtime_mesh": "I84_Cell_12_Opal",
+          "material": "I89_OpalConduit"
+        }
+      ],
+      "membrane_motion": {
+        "mesh": "I84_Cell_12_Diaphragm",
+        "pressure_key": "MusicPressure",
+        "rebound_key": "MusicRebound",
+        "max_world_stroke": 0.008679858510396274,
+        "band": 0,
+        "natural_frequency_hz": 2.2,
+        "damping_ratio": 0.48
+      },
+      "surface_chart": {
+        "t": 14.405485471872028,
+        "u": 1.8599999999999999,
+        "half_t": 0.2,
+        "half_u": 0.32,
+        "radius": 0.873125999949444,
+        "visibility": 0.36363636363636365,
+        "projected_area": 0.03073209692561555,
+        "score": 0.004063748353800404,
+        "centre": [
+          -0.429715096950531,
+          -0.5709880590438843,
+          2.009082317352295
+        ]
+      },
+      "pinned_vertices": 192
+    }
+  ],
+  "illumination": {
+    "open_floor": 0.15,
+    "playing_floor": 0.38,
+    "emission_gain": 6.0,
+    "mask_cross_scale": 1.0,
+    "packet_floor": 0.75,
+    "spill_gain": 0.4,
+    "light_color": [
+      1.0,
+      0.55,
+      0.16
+    ],
+    "physical_conductors": true,
+    "wavefront": true,
+    "shadow_normal_bias": 0.005,
+    "shadow_bias": 0.01
+  },
+  "network": {
+    "root": 37501,
+    "maximum_distance": 3.1895106142649974,
+    "segments": [
+      {
+        "mesh": "I90_OpalPath_00",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0,
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "uv_start": 0.0018811732749778336,
+        "uv_end": 0.008510642010723324,
+        "length": 0.0321448037010498,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_01",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0,
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11
+        ],
+        "uv_start": 0.011645927552251004,
+        "uv_end": 0.21937565608219986,
+        "length": 0.6725563726146544,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_02",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0,
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "uv_start": 0.22251107541280496,
+        "uv_end": 0.5041242241882249,
+        "length": 0.9082085041324229,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_03",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0,
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "uv_start": 0.5072595792558534,
+        "uv_end": 0.5385107130602429,
+        "length": 0.1096760535137928,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_04",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0
+        ],
+        "cells": [
+          9
+        ],
+        "uv_start": 0.5072595635143134,
+        "uv_end": 0.6196195514823801,
+        "length": 0.36837369708240625,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_05",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "uv_start": 0.5416460871718881,
+        "uv_end": 0.6583089687946716,
+        "length": 0.3820979436516753,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_06",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7
+        ],
+        "uv_start": 0.6614443580249264,
+        "uv_end": 0.7164065551752538,
+        "length": 0.18530280387248443,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_07",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "uv_start": 0.7195419390628336,
+        "uv_end": 0.758866341905444,
+        "length": 0.13542605851290448,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_08",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1
+        ],
+        "cells": [
+          5,
+          7
+        ],
+        "uv_start": 0.7195419929309497,
+        "uv_end": 0.7928789346647979,
+        "length": 0.24390999541309055,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_09",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "uv_start": 0.7620017956954237,
+        "uv_end": 0.8054894462262401,
+        "length": 0.14870510667678336,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_10",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1
+        ],
+        "cells": [
+          7
+        ],
+        "uv_start": 0.7960144397595099,
+        "uv_end": 0.9253592887998925,
+        "length": 0.4175467967367963,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_11",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1
+        ],
+        "cells": [
+          5
+        ],
+        "uv_start": 0.796014649123083,
+        "uv_end": 0.8131948809011309,
+        "length": 0.06479785787424273,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_12",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2
+        ],
+        "uv_start": 0.8086248932279358,
+        "uv_end": 0.8553206595210467,
+        "length": 0.1589373646863585,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_13",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          3
+        ],
+        "uv_start": 0.808625093306495,
+        "uv_end": 0.8694862164524694,
+        "length": 0.20411897687210548,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_14",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          0,
+          1
+        ],
+        "uv_start": 0.8584563108808875,
+        "uv_end": 0.9353690334825677,
+        "length": 0.2553146099852552,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_15",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          0
+        ],
+        "uv_start": 0.9385045774125587,
+        "uv_end": 0.9934741848450463,
+        "length": 0.1853279460893647,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_16",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          0
+        ],
+        "uv_start": 0.9966099485215715,
+        "uv_end": 1.0,
+        "length": 0.01581304682825224,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_17",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          1
+        ],
+        "uv_start": 0.93850442410847,
+        "uv_end": 0.94172077079617,
+        "length": 0.01525877278081823,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_18",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          2
+        ],
+        "uv_start": 0.8584562846845275,
+        "uv_end": 0.8618781205295035,
+        "length": 0.015914402269492416,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_19",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          3
+        ],
+        "uv_start": 0.8726221388348363,
+        "uv_end": 0.8748762874222703,
+        "length": 0.012190581354212594,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_20",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1
+        ],
+        "cells": [
+          4
+        ],
+        "uv_start": 0.7620018387414621,
+        "uv_end": 0.7648621631541679,
+        "length": 0.014123447830920687,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_21",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1
+        ],
+        "cells": [
+          5
+        ],
+        "uv_start": 0.8163305039973761,
+        "uv_end": 0.8197123496213109,
+        "length": 0.015786904987859337,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_22",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1
+        ],
+        "cells": [
+          6
+        ],
+        "uv_start": 0.6614443787302654,
+        "uv_end": 0.6652011503374589,
+        "length": 0.016982452009016213,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_23",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1
+        ],
+        "cells": [
+          7
+        ],
+        "uv_start": 0.9253592887998925,
+        "uv_end": 0.9281329034883782,
+        "length": 0.008846473488806579,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_24",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0
+        ],
+        "cells": [
+          8
+        ],
+        "uv_start": 0.5416460555736047,
+        "uv_end": 0.5447209233130783,
+        "length": 0.014807432757373158,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_25",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0
+        ],
+        "cells": [
+          9
+        ],
+        "uv_start": 0.6227549563195665,
+        "uv_end": 0.626602903384731,
+        "length": 0.01727323374433075,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_26",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0
+        ],
+        "cells": [
+          10
+        ],
+        "uv_start": 0.01164595424678938,
+        "uv_end": 0.015139174050473455,
+        "length": 0.016141752624140502,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_OpalPath_27",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0
+        ],
+        "cells": [
+          11
+        ],
+        "uv_start": 0.22251099622582798,
+        "uv_end": 0.22501082308338646,
+        "length": 0.01297323223326036,
+        "phase_offset": 0.0
+      },
+      {
+        "mesh": "I90_HubOpal_37501",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0,
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "uv_start": 0.0,
+        "uv_end": 0.0,
+        "length": 0.03769911184307752,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_22302",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1
+        ],
+        "cells": [
+          5
+        ],
+        "uv_start": 0.8147627172491054,
+        "uv_end": 0.8147627172491054,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_4678",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          0
+        ],
+        "uv_start": 0.9950421714361042,
+        "uv_end": 0.9950421714361042,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_32074",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0
+        ],
+        "cells": [
+          9
+        ],
+        "uv_start": 0.6211872657420542,
+        "uv_end": 0.6211872657420542,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_22433",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1
+        ],
+        "cells": [
+          5,
+          7
+        ],
+        "uv_start": 0.7944467924221316,
+        "uv_end": 0.7944467924221316,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_37621",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0,
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "uv_start": 0.010078287106894412,
+        "uv_end": 0.010078287106894412,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_17239",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "uv_start": 0.8070572441938578,
+        "uv_end": 0.8070572441938578,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_7362",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          0,
+          1
+        ],
+        "uv_start": 0.9369367225122189,
+        "uv_end": 0.9369367225122189,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_14040",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2
+        ],
+        "uv_start": 0.8568885142249137,
+        "uv_end": 0.8568885142249137,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_22477",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7
+        ],
+        "uv_start": 0.7179742469719895,
+        "uv_end": 0.7179742469719895,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_25457",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "uv_start": 0.6598766808301111,
+        "uv_end": 0.6598766808301111,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_31996",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0,
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "uv_start": 0.5056918993260074,
+        "uv_end": 0.5056918993260074,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_30687",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0,
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "uv_start": 0.5400783826389237,
+        "uv_end": 0.5400783826389237,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_20096",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "uv_start": 0.7604340707164898,
+        "uv_end": 0.7604340707164898,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_38386",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          0,
+          1,
+          2
+        ],
+        "cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11
+        ],
+        "uv_start": 0.22094335512286675,
+        "uv_end": 0.22094335512286675,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      },
+      {
+        "mesh": "I90_HubOpal_17071",
+        "material": "Collection_I90_Opal",
+        "bands": [
+          2
+        ],
+        "cells": [
+          3
+        ],
+        "uv_start": 0.8710542022096703,
+        "uv_end": 0.8710542022096703,
+        "length": 0.031415926535897934,
+        "phase_offset": 0.0,
+        "manifold": true
+      }
+    ],
+    "clock_mode": "work",
+    "emission_gain": 3.8,
+    "light_color": [
+      1.0,
+      0.38,
+      0.065
+    ]
+  }
+}

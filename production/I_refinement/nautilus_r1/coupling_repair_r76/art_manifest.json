@@ -1,0 +1,15 @@
+{
+  "tool": "subscription built-in image_gen",
+  "image": "release_storyboard.png",
+  "sha256": "cadb0f08bc2ae46e58b53bcafd6ab2e7483c5bfb4af00b8a91961cb5586dd7ed",
+  "prompt": "PROMPT.txt",
+  "status": "rejected_overall_support_depiction",
+  "original_partial_use": "Timing direction used for bounded R76 motion experiment before user correction.",
+  "rejection_reasons": [
+    "Prepared service state with body raised .45 and supports removed mislabeled ready for operation.",
+    "Macro depicts external latch instead of six rear axial screws.",
+    "Arrows may imply whole-mouth rotation.",
+    "Generated finish and internal structure are not implemented or accepted."
+  ],
+  "superseded_direction": "../base_connection_r78/BRIEF.md"
+}

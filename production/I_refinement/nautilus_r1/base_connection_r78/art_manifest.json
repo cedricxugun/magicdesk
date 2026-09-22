@@ -1,0 +1,24 @@
+{
+  "tool": "subscription built-in image_gen",
+  "image": "docking_connection_study_r1.png",
+  "sha256": "44c56a5e9f1cb8eb9cddc0f392ea95c536c3623054d1ad2adcc0b232d68d2733",
+  "prompt": "PROMPT.txt",
+  "status": "design_direction_partially_realized_in_independent_r81_not_final_art",
+  "references": [
+    "review/I_refinement/nautilus_r1/coupling_repair_r76/installed/01_installed_closed.png",
+    "review/I_refinement/nautilus_r1/coupling_repair_r76/installed/04_support_rear.png"
+  ],
+  "adopted_direction": [
+    "Compact bolted flange and readable keyed seam.",
+    "Short broad metallic carrier connected to internal metal chassis.",
+    "Porcelain as removable cover, not sole support."
+  ],
+  "not_verified": [
+    "Generated inner backbone, sockets and fasteners are proposed new geometry, not existing source.",
+    "Actual dimensions, fit, release access and collision envelope remain to build and check.",
+    "Generated base/proportion details must not override original shared base."
+  ],
+  "current_entity_source": "blender/collection/I_nautilus_coupling_r76.blend",
+  "source_sha256": "31a7b616db0f0fab0e9c42ecbb3077b1628292b4bba576e6411b1ef098c7f7df",
+  "implementation": "production/I_refinement/nautilus_r1/base_dock_r81/README.md"
+}

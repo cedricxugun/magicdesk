@@ -1,0 +1,7 @@
+{
+  "source_sha256": "29eeed37d405bdd6e7982395bda921db53dfc3d6c01c7fe0a2ce23598d590444",
+  "contacts": [],
+  "glass_channel_contacts": [],
+  "glass_hardware_contacts": [],
+  "scope": "New network meshes against old fixed body/cell meshes at three membrane extremes; optical solids also against casing and mechanical caps/seals/pins/collars. Only the designed shallow integral liner/backbone bond omitted. Covers and music-core checked separately; remaining new-new junction seats are not certified here."
+}

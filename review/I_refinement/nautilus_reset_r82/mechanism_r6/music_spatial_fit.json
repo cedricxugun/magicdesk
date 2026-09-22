@@ -1,0 +1,34 @@
+{
+  "body_source": "blender/collection/I_nautilus_reset_r82_mechanism_r6.blend",
+  "old_mouth_source": "blender/collection/I_collar_clamps.blend",
+  "old_mouth_sha256": "734f5365098133ee372616b0795c7e10b0b5c381961c70db0c63dfb962ec6bd6",
+  "scale": 0.64,
+  "old_runtime_scale": 0.7,
+  "mouth_center": [
+    -0.532754123210907,
+    -0.4399999976158142,
+    1.4449236392974854
+  ],
+  "mouth_front": [
+    0.1376945823431015,
+    -0.7400975823402405,
+    -0.6582521200180054
+  ],
+  "mouth_bbox": {
+    "x": [
+      -1.0965383052825928,
+      0.04046906530857086
+    ],
+    "y": [
+      -0.9059695601463318,
+      0.09361687302589417
+    ],
+    "z": [
+      0.9586523771286011,
+      2.010359048843384
+    ]
+  },
+  "score_world_nominal_width": 0.768,
+  "score_world_nominal_height": 0.4608,
+  "scope": "Actual old mouth and optical geometry statically trial-positioned. Static real score alpha only, no playback; all mouth-shell collisions, leaf travel and desktop readability remain to inspect. Original music manifests/audio/controller not changed."
+}

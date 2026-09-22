@@ -1,0 +1,35 @@
+{
+  "roi_xyxy": [
+    466,
+    400,
+    486,
+    445
+  ],
+  "rows": {
+    "original": {
+      "image": "review\\I_refinement\\nautilus_reset_r82\\back_hardware_r88\\built_r4\\native\\state_03.png",
+      "warm_pixels": 86,
+      "dimensions": [
+        990,
+        900
+      ]
+    },
+    "spill_off": {
+      "image": "review\\I_refinement\\nautilus_reset_r82\\chambers_r89\\rear_no_chamber_spill\\state_03.png",
+      "warm_pixels": 0,
+      "dimensions": [
+        990,
+        900
+      ]
+    },
+    "bias_fixed": {
+      "image": "review\\I_refinement\\nautilus_reset_r82\\chambers_r89\\rear_shadow_bias\\state_03.png",
+      "warm_pixels": 0,
+      "dimensions": [
+        990,
+        900
+      ]
+    }
+  },
+  "scope": "Same fixed rear projection and unchanged body component. Local warm-leak pixel observation; not a general light correctness or performance test."
+}

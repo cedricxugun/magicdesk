@@ -1,0 +1,102 @@
+{
+  "results": [
+    {
+      "degrees": 45.0,
+      "unseat": 0.06,
+      "contact_pair_states": 1,
+      "first_contacts": [
+        {
+          "phase": 0.35,
+          "cover": 5,
+          "other_cover": 6
+        }
+      ]
+    },
+    {
+      "degrees": 45.0,
+      "unseat": 0.1,
+      "contact_pair_states": 1,
+      "first_contacts": [
+        {
+          "phase": 0.35,
+          "cover": 5,
+          "other_cover": 6
+        }
+      ]
+    },
+    {
+      "degrees": 45.0,
+      "unseat": 0.15,
+      "contact_pair_states": 1,
+      "first_contacts": [
+        {
+          "phase": 0.35,
+          "cover": 5,
+          "other_cover": 6
+        }
+      ]
+    },
+    {
+      "degrees": 45.0,
+      "unseat": 0.2,
+      "contact_pair_states": 1,
+      "first_contacts": [
+        {
+          "phase": 0.35,
+          "cover": 5,
+          "other_cover": 6
+        }
+      ]
+    },
+    {
+      "degrees": 55.0,
+      "unseat": 0.06,
+      "contact_pair_states": 1,
+      "first_contacts": [
+        {
+          "phase": 0.35,
+          "cover": 5,
+          "other_cover": 6
+        }
+      ]
+    },
+    {
+      "degrees": 55.0,
+      "unseat": 0.1,
+      "contact_pair_states": 1,
+      "first_contacts": [
+        {
+          "phase": 0.35,
+          "cover": 5,
+          "other_cover": 6
+        }
+      ]
+    },
+    {
+      "degrees": 55.0,
+      "unseat": 0.15,
+      "contact_pair_states": 1,
+      "first_contacts": [
+        {
+          "phase": 0.35,
+          "cover": 5,
+          "other_cover": 6
+        }
+      ]
+    },
+    {
+      "degrees": 55.0,
+      "unseat": 0.2,
+      "contact_pair_states": 1,
+      "first_contacts": [
+        {
+          "phase": 0.35,
+          "cover": 5,
+          "other_cover": 6
+        }
+      ]
+    }
+  ],
+  "selected": null,
+  "scope": "41-phase ceramic/cell and ceramic/ceramic surface checks only, existing actuator hardware not fitted. Outer-edge hinge articulation study, not accepted design."
+}

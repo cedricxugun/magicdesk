@@ -1,0 +1,24 @@
+{
+  "source_sha256": "531359c5f4345b97da74d384c876ccdf346d60795699a395f940d5defb2ded02",
+  "contacts": [
+    {
+      "weight": 0.0,
+      "a": "I84_Cell_01_Frame",
+      "b": "R82_Acoustic_Chamber_Liner",
+      "triangle_pairs": 3
+    },
+    {
+      "weight": 1.0,
+      "a": "I84_Cell_01_Frame",
+      "b": "R82_Acoustic_Chamber_Liner",
+      "triangle_pairs": 3
+    },
+    {
+      "weight": -1.0,
+      "a": "I84_Cell_01_Frame",
+      "b": "R82_Acoustic_Chamber_Liner",
+      "triangle_pairs": 3
+    }
+  ],
+  "scope": "All actual new cell parts against fixed gold liner/rear sheet and other cell groups at zero, pressure and rebound extremes. Within-cell mates excluded; cover/core checks are separate. Not continuous-time or whole assembly certification."
+}
